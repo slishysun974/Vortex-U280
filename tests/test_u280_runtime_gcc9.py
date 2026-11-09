@@ -14,7 +14,10 @@ from prepare_u280_runtime_gcc9 import patch_make, patch_vm
 class Gcc9RuntimePatchTests(unittest.TestCase):
     @unittest.skipUnless(shutil.which("g++"), "host g++ required")
     def test_actual_mapping_method_allocation_success_failure_and_cache(self):
-        source = (ROOT / "upstream/vortex/sw/runtime/common/vm.cpp").read_text(encoding="utf-8")
+        vm_source = ROOT / "upstream/vortex/sw/runtime/common/vm.cpp"
+        if not vm_source.is_file():
+            self.skipTest("Pinned Vortex submodule is required")
+        source = vm_source.read_text(encoding="utf-8")
         patched = patch_vm(source)
         body = patched.split("uint64_t VMManager::map_p2v(", 1)[1].split("\nint VMManager::phy_to_virt_map", 1)[0]
         method = "uint64_t VMManager::map_p2v(" + body

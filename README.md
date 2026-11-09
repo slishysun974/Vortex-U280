@@ -45,6 +45,8 @@ python -B -m unittest discover -s tests -v
 
 也可从 GitHub 的 **Code → Download ZIP** 下载本仓库文件，固定上游通过 Git 子模块单独取得。欢迎 Fork，在自己的分支上编辑或上传文件，再提交 Pull Request。提交时请说明验证命令、退出码和范围。服务器脚本中的地址、账号与本机路径是示例，实际连接需使用获授权的环境配置。
 
+依赖本地 D8 输入、服务器 runtime 输入或完整 Vivado 报告的历史复核测试会在缺少对应材料时跳过。未初始化子模块时，依赖固定上游源码的测试也会跳过。
+
 ## 目录约定
 
 ```text

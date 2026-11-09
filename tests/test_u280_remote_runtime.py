@@ -53,6 +53,8 @@ class RemoteRuntimeTests(unittest.TestCase):
 
     def test_real_package_and_existing_directory(self):
         archive = ROOT / "results/u280-runtime-prepare-20261109-v1/u280-runtime200-input.tar.gz"
+        if not archive.is_file():
+            self.skipTest("Archived runtime input is required")
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "input"
             source = unpack_archive(archive, target)
