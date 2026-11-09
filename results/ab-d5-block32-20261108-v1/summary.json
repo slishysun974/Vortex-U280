@@ -1,0 +1,188 @@
+{
+  "schema_version": "ab-block32-validation-v1",
+  "status": "PASS",
+  "started_at": "2026-11-08T13:28:45.384989+00:00",
+  "commands": [
+    {
+      "label": "runner_tests",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-08T13:28:45.460622+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_runner_tests.log",
+      "finished_at": "2026-11-08T13:28:47.816410+00:00",
+      "elapsed_seconds": 2.342,
+      "log_sha256": "a8db89d0519ec52214178e648595d6e4ef734b76dd39747ef9b987c4680ecd68"
+    }
+  ],
+  "implementation_sha256": {
+    "scripts/capture_target.py": "9b9140fc459a474775e305f9ce88cc23361065ec1ef9228a6917b9201a19b411",
+    "scripts/native_boundary.py": "46d015d95ee6a7d6f44ea713adbddf49995fe88a0f924707ce1aa73eb0efed36",
+    "scripts/native_dependencies.py": "deb1b0e5c958bcbd7d748946f4b78ad69867d883668cc5a97373c78c7bde1265",
+    "scripts/platform_inventory.py": "866be169b1422b09500d0e9c9a33144026c7491ed768d7828197b954b41404fd",
+    "scripts/prepare_block32_candidate.py": "da27b402bd55060f394cd0ab8895f74c3d76f3c8bca6bafbdbfcc8b79792067a",
+    "scripts/prepare_toolchain.py": "daa3906c45d04ff9a38e5d96d62cee61841f411850d7536e3f95ba911df66f8c",
+    "scripts/probe_u280_endpoint.py": "9c915f27610245540d70f666a32aecec848da3a220bbaee8b7365d46eb28dd43",
+    "scripts/run_block32_validation.py": "a47b4a2d576665cb461f601349728a475a61d7efb5b10bee815011c6276452e5",
+    "scripts/run_native_smoke.py": "033dca25c452f49f1e8d0f35baebb6c1e04bdc8242d3fba37b53e74fa983212b",
+    "tests/test_backend_routing.py": "179832e6c609df713cffb58274a935f13d49f20757d4271272819ea0dc7dcdaf",
+    "tests/test_native_boundary.py": "9e7f10bafaacd782fb6888d632b6e7c508dd3a188ff9207d69d84df269b1a79e",
+    "tests/test_native_dependencies.py": "248b13a817da8e53d180ff8f06020cee0d51140fbc059f566586eca7f46d1d21",
+    "tests/test_native_smoke.py": "075dbc33d339a5d293dbbad5284c201e0b33d5db56c4b942d323fe1c209b2db4",
+    "tests/test_target_profiles.py": "a37c80e535703148cce1df748e231b1ae3c1603a404f651efe2a269695509b25",
+    "tests/test_toolchain_preparation.py": "c577f4d101f37b71e341bb84dd043adfb1fe24ed6180235a52b6c2b8afb09526",
+    "native/boundary/common.h": "15fe42b1c93b5b8e4cc5eefd147c5632ccf83486c08ac6e95763fd1c18c3acfe",
+    "native/boundary/kernel.cpp": "01cff2015db9e061927497d0ba08fce09b8dfacf6c4fd615b98c1523cf381fca",
+    "native/boundary/main.cpp": "ef10e4c13807420e8f52e6099086484ba2e3c0f1c69ca4d6d9b73306f43b3f41",
+    "native/boundary/Makefile": "1207a6854645c65ca945ce792820a8464b540ae1c34e1e07a81f4bab23d350b3",
+    "native/boundary/README.md": "af01d67f4657b2f8047db8ec3dce263240c37f97f8f51c046f9fb68a673d1226"
+  },
+  "scope": "A/B native self-test; no PTX, E acceptance or board execution",
+  "backends": [
+    {
+      "backend": "simx",
+      "status": "PASS",
+      "commands": [
+        {
+          "label": "native_validation",
+          "argv": [
+            "/usr/bin/python3",
+            "-B",
+            "/mnt/d/Vortex-U280/scripts/run_native_smoke.py",
+            "--target-profile",
+            "block32-v1",
+            "--backend",
+            "simx",
+            "--native-boundary",
+            "--source",
+            "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+            "--tooldir",
+            "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+            "--ramulator-deps",
+            "/mnt/d/Vortex-U280/results/ab-d2-ramulator-deps-20261108-v1/dependencies",
+            "--build-dir",
+            "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx",
+            "--run-id",
+            "ab-d5-block32-20261108-v1-simx",
+            "--jobs",
+            "4",
+            "--timeout",
+            "1800"
+          ],
+          "cwd": "/mnt/d/Vortex-U280",
+          "started_at": "2026-11-08T13:28:47.841744+00:00",
+          "timeout_seconds": 5400,
+          "returncode": 0,
+          "timed_out": false,
+          "log": "logs/01_native_validation.log",
+          "finished_at": "2026-11-08T13:41:20.876482+00:00",
+          "elapsed_seconds": 753.026,
+          "log_sha256": "d5404f538adc0507b293eab42c1fa3e3b9c2dc7a7b16f881224ad772e840b07c"
+        }
+      ],
+      "run_id": "ab-d5-block32-20261108-v1-simx",
+      "evidence": "results/ab-d5-block32-20261108-v1-simx/summary.json"
+    },
+    {
+      "backend": "rtlsim",
+      "status": "PASS",
+      "commands": [
+        {
+          "label": "native_validation",
+          "argv": [
+            "/usr/bin/python3",
+            "-B",
+            "/mnt/d/Vortex-U280/scripts/run_native_smoke.py",
+            "--target-profile",
+            "block32-v1",
+            "--backend",
+            "rtlsim",
+            "--native-boundary",
+            "--source",
+            "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+            "--tooldir",
+            "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+            "--ramulator-deps",
+            "/mnt/d/Vortex-U280/results/ab-d2-ramulator-deps-20261108-v1/dependencies",
+            "--build-dir",
+            "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim",
+            "--run-id",
+            "ab-d5-block32-20261108-v1-rtlsim",
+            "--jobs",
+            "4",
+            "--timeout",
+            "1800"
+          ],
+          "cwd": "/mnt/d/Vortex-U280",
+          "started_at": "2026-11-08T13:28:47.842204+00:00",
+          "timeout_seconds": 5400,
+          "returncode": 0,
+          "timed_out": false,
+          "log": "logs/01_native_validation.log",
+          "finished_at": "2026-11-08T13:42:46.450038+00:00",
+          "elapsed_seconds": 838.597,
+          "log_sha256": "eaa41935f8e9a0fe245d6d0993e4adaae5292611b6e7658f49db769834c31a49"
+        }
+      ],
+      "run_id": "ab-d5-block32-20261108-v1-rtlsim",
+      "evidence": "results/ab-d5-block32-20261108-v1-rtlsim/summary.json"
+    },
+    {
+      "backend": "xrtsim",
+      "status": "PASS",
+      "commands": [
+        {
+          "label": "native_validation",
+          "argv": [
+            "/usr/bin/python3",
+            "-B",
+            "/mnt/d/Vortex-U280/scripts/run_native_smoke.py",
+            "--target-profile",
+            "block32-v1",
+            "--backend",
+            "xrtsim",
+            "--native-boundary",
+            "--source",
+            "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+            "--tooldir",
+            "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+            "--ramulator-deps",
+            "/mnt/d/Vortex-U280/results/ab-d2-ramulator-deps-20261108-v1/dependencies",
+            "--build-dir",
+            "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim",
+            "--run-id",
+            "ab-d5-block32-20261108-v1-xrtsim",
+            "--jobs",
+            "4",
+            "--timeout",
+            "1800"
+          ],
+          "cwd": "/mnt/d/Vortex-U280",
+          "started_at": "2026-11-08T13:28:47.842051+00:00",
+          "timeout_seconds": 5400,
+          "returncode": 0,
+          "timed_out": false,
+          "log": "logs/01_native_validation.log",
+          "finished_at": "2026-11-08T13:42:47.202917+00:00",
+          "elapsed_seconds": 839.352,
+          "log_sha256": "d4452e0ccaf7d172525cd977a11f08a90ace2e33a863c5ce00d16374cbad1832"
+        }
+      ],
+      "run_id": "ab-d5-block32-20261108-v1-xrtsim",
+      "evidence": "results/ab-d5-block32-20261108-v1-xrtsim/summary.json"
+    }
+  ],
+  "implementation_unchanged": true,
+  "finished_at": "2026-11-08T13:42:47.557861+00:00"
+}

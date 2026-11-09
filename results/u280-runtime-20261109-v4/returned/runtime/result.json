@@ -1,0 +1,685 @@
+{
+  "schema_version": "u280-host-runtime-build-v1",
+  "status": "PASS",
+  "argv": [
+    "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/input/u280-runtime200-input/build_runtime.py",
+    "--input",
+    "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/input/u280-runtime200-input",
+    "--output",
+    "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+    "--cxx",
+    "/opt/rh/devtoolset-9/root/usr/bin/g++"
+  ],
+  "scope": "host shared-library compilation and dependency inspection only",
+  "commands": [
+    {
+      "label": "compiler",
+      "argv": [
+        "/opt/rh/devtoolset-9/root/usr/bin/g++",
+        "--version"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.006
+    },
+    {
+      "label": "glibc",
+      "argv": [
+        "getconf",
+        "GNU_LIBC_VERSION"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.004
+    },
+    {
+      "label": "stub",
+      "argv": [
+        "make",
+        "-C",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/build/sw/runtime/stub",
+        "-j2",
+        "VORTEX_HOME=/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/input/u280-runtime200-input/source",
+        "XLEN=64",
+        "XCONFIGS=-DVX_CFG_XLEN=64 -DVX_CFG_XLEN_64 -DVX_CFG_FLEN=64 -DVX_CFG_FLEN_64 -DVX_CFG_FPU_TYPE=DSP -DVX_CFG_FPU_TYPE_DSP -DVX_CFG_TCU_TYPE=TFR -DVX_CFG_TCU_TYPE_TFR -DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_SOCKET_SIZE=1 -DVX_CFG_RESET_DELAY=8 -DVX_CFG_ICACHE_ENABLE -DVX_CFG_ICACHE_ENABLED=1 -DVX_CFG_DCACHE_ENABLE -DVX_CFG_DCACHE_ENABLED=1 -DVX_CFG_LMEM_ENABLE -DVX_CFG_LMEM_ENABLED=1 -DVX_CFG_L2_ENABLED=0 -DVX_CFG_L3_ENABLED=0 -DVX_CFG_VM_ENABLED=0 -DVX_CFG_EXT_D_ENABLE -DVX_CFG_EXT_D_ENABLED=1 -DVX_CFG_FLEN=64 -DVX_CFG_EXT_M_ENABLE -DVX_CFG_EXT_M_ENABLED=1 -DVX_CFG_EXT_F_ENABLE -DVX_CFG_EXT_F_ENABLED=1 -DVX_CFG_EXT_C_ENABLED=0 -DVX_CFG_EXT_A_ENABLED=0 -DVX_CFG_EXT_ZACAS_ENABLED=0 -DVX_CFG_EXT_ZICOND_ENABLE -DVX_CFG_EXT_ZICOND_ENABLED=1 -DVX_CFG_EXT_TCU_ENABLED=0 -DVX_CFG_EXT_DMA_ENABLED=0 -DVX_CFG_EXT_DXA_ENABLED=0 -DVX_CFG_EXT_TEX_ENABLED=0 -DVX_CFG_EXT_RASTER_ENABLED=0 -DVX_CFG_EXT_OM_ENABLED=0 -DVX_CFG_EXT_RTU_ENABLED=0 -DVX_CFG_VLEN=256 -DVX_CFG_NUM_WARPS=8 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_BARRIERS=8 -DVX_CFG_MAX_BAR_EVENTS=32 -DVX_CFG_IBUF_SIZE=4 -DVX_CFG_DISPATCH_QUEUE_SIZE=4 -DVX_CFG_ISSUE_WIDTH=1 -DVX_CFG_SIMD_WIDTH=4 -DVX_CFG_NUM_OPCS=2 -DVX_CFG_NUM_GPR_BANKS=4 -DVX_CFG_NUM_VGPR_BANKS=2 -DVX_CFG_MEM_BLOCK_SIZE=64 -DVX_CFG_MEM_ADDR_WIDTH=48 -DVX_CFG_L1_LINE_SIZE=64 -DVX_CFG_L2_LINE_SIZE=64 -DVX_CFG_L2_SECTOR_SIZE=64 -DVX_CFG_L3_LINE_SIZE=64 -DVX_CFG_L3_SECTOR_SIZE=64 -DVX_CFG_PLATFORM_MEMORY_NUM_BANKS=32 -DVX_CFG_PLATFORM_MEMORY_ADDR_WIDTH=33 -DVX_CFG_PLATFORM_MEMORY_DATA_SIZE=64 -DVX_CFG_PLATFORM_MEMORY_INTERLEAVE=1 -DVX_CFG_PLATFORM_MEMORY_PEAK_BW=460000 -DVX_CFG_PLATFORM_CLOCK_RATE=200 -DVX_CFG_NUM_ALU_LANES=4 -DVX_CFG_NUM_ALU_BLOCKS=1 -DVX_CFG_NUM_SFU_LANES=4 -DVX_CFG_NUM_SFU_BLOCKS=1 -DVX_CFG_NUM_LSU_LANES=4 -DVX_CFG_NUM_LSU_BLOCKS=1 -DVX_CFG_LSU_STACK_INTERLEAVE_ENABLE -DVX_CFG_LSU_STACK_INTERLEAVE_ENABLED=1 -DVX_CFG_LSU_LINE_SIZE=32 -DVX_CFG_LSU_QUEUE_IN_SIZE=4 -DVX_CFG_LSU_PENDING_SIZE=16 -DVX_CFG_FPU_TYPE=DSP -DVX_CFG_NUM_FPU_LANES=4 -DVX_CFG_NUM_FPU_BLOCKS=1 -DVX_CFG_FPU_QUEUE_SIZE=2 -DVX_CFG_FPU_USE_DSP=1 -DVX_CFG_FMA_LATENCY=16 -DVX_CFG_FDIV_LATENCY=28 -DVX_CFG_FSQRT_LATENCY=28 -DVX_CFG_FNCP_LATENCY=2 -DVX_CFG_FCVT_LATENCY=5 -DVX_CFG_FMA_PE_RATIO=1 -DVX_CFG_FDIV_PE_RATIO=1 -DVX_CFG_FSQRT_PE_RATIO=1 -DVX_CFG_FCVT_PE_RATIO=1 -DVX_CFG_FNCP_PE_RATIO=1 -DVX_CFG_AMO_RS_SIZE=8 -DVX_CFG_NUM_VPU_LANES=4 -DVX_CFG_NUM_VPU_BLOCKS=1 -DVX_CFG_TLB_SIZE=32 -DVX_CFG_DTLB_SIZE=16 -DVX_CFG_ITLB_SIZE=8 -DVX_CFG_L1_TLB_MSHR_SIZE=4 -DVX_CFG_L2_TLB_SIZE=512 -DVX_CFG_L2_TLB_NUM_WAYS=4 -DVX_CFG_L2_TLB_MEGA_SIZE=8 -DVX_CFG_L2_TLB_MSHR_SIZE=8 -DVX_CFG_L2_TLB_LATENCY=4 -DVX_CFG_PTW_NUM_WALKERS=2 -DVX_CFG_PTW_WALK_CACHE_SIZE=16 -DVX_CFG_VM_PINNED_REGION_SIZE=0x10000000 -DVX_CFG_ICACHE_SIZE=16384 -DVX_CFG_ICACHE_NUM_WAYS=4 -DVX_CFG_ICACHE_REPL_POLICY=1 -DVX_CFG_ICACHE_MSHR_SIZE=16 -DVX_CFG_ICACHE_MRSQ_SIZE=0 -DVX_CFG_ICACHE_MREQ_SIZE=0 -DVX_CFG_ICACHE_CRSQ_SIZE=0 -DVX_CFG_ICACHE_MEM_PORTS=1 -DVX_CFG_ICACHE_LATENCY=2 -DVX_CFG_DCACHE_SIZE=16384 -DVX_CFG_DCACHE_NUM_WAYS=4 -DVX_CFG_DCACHE_WORD_SIZE=16 -DVX_CFG_DCACHE_WRITEBACK=1 -DVX_CFG_DCACHE_DIRTYBYTES=0 -DVX_CFG_DCACHE_REPL_POLICY=1 -DVX_CFG_DCACHE_MSHR_SIZE=16 -DVX_CFG_DCACHE_LINE_SIZE=64 -DVX_CFG_DCACHE_SECTOR_SIZE=64 -DVX_CFG_DCACHE_LATENCY=2 -DVX_CFG_DCACHE_MRSQ_SIZE=4 -DVX_CFG_DCACHE_MREQ_SIZE=0 -DVX_CFG_DCACHE_CRSQ_SIZE=0 -DVX_CFG_NUM_ICACHES=1 -DVX_CFG_NUM_DCACHES=1 -DVX_CFG_DCACHE_NUM_BANKS=1 -DVX_CFG_L1_MEM_PORTS=1 -DVX_CFG_L2_SIZE=1048576 -DVX_CFG_L2_NUM_WAYS=8 -DVX_CFG_L2_WRITEBACK=0 -DVX_CFG_L2_DIRTYBYTES=0 -DVX_CFG_L2_REPL_POLICY=1 -DVX_CFG_L2_MSHR_SIZE=16 -DVX_CFG_L2_LATENCY=4 -DVX_CFG_L2_MRSQ_SIZE=4 -DVX_CFG_L2_MREQ_SIZE=0 -DVX_CFG_L2_CRSQ_SIZE=0 -DVX_CFG_L2_NUM_BANKS=1 -DVX_CFG_L2_MEM_PORTS=0 -DVX_CFG_L3_SIZE=2097152 -DVX_CFG_L3_NUM_WAYS=8 -DVX_CFG_L3_WRITEBACK=0 -DVX_CFG_L3_DIRTYBYTES=0 -DVX_CFG_L3_REPL_POLICY=1 -DVX_CFG_L3_MSHR_SIZE=16 -DVX_CFG_L3_LATENCY=4 -DVX_CFG_L3_MRSQ_SIZE=4 -DVX_CFG_L3_MREQ_SIZE=0 -DVX_CFG_L3_CRSQ_SIZE=0 -DVX_CFG_L3_NUM_BANKS=1 -DVX_CFG_L3_MEM_PORTS=0 -DVX_CFG_LMEM_NUM_BANKS=4 -DVX_CFG_LMEM_LOG_SIZE=14 -DVX_CFG_TCU_TYPE=TFR -DVX_CFG_NUM_TCU_LANES=4 -DVX_CFG_NUM_TCU_BLOCKS=1 -DVX_CFG_TCU_USE_DSP=1 -DVX_CFG_TCU_LATENCY=5 -DVX_CFG_TCU_TF32_ENABLED=0 -DVX_CFG_TCU_FP16_ENABLE -DVX_CFG_TCU_FP16_ENABLED=1 -DVX_CFG_TCU_FP8_ENABLED=0 -DVX_CFG_TCU_FP4_ENABLED=0 -DVX_CFG_TCU_INT8_ENABLED=0 -DVX_CFG_TCU_INT4_ENABLED=0 -DVX_CFG_TCU_MX_ENABLED=0 -DVX_CFG_TCU_MXFP4_ENABLED=0 -DVX_CFG_TCU_NVFP4_ENABLED=0 -DVX_CFG_TCU_SPARSE_ENABLED=0 -DVX_CFG_TCU_DSM_ENABLED=0 -DVX_CFG_TCU_WGMMA_ENABLED=0 -DVX_CFG_NUM_DXA_CORES=1 -DVX_CFG_DXA_MEM_PORTS=1 -DVX_CFG_DXA_QUEUE_SIZE=16 -DVX_CFG_DXA_MAX_INFLIGHT=8 -DVX_CFG_NUM_RTU_CORES=1 -DVX_CFG_RTU_BVH_WIDTH=4 -DVX_CFG_RTU_TLAS_ENABLED=0 -DVX_CFG_RTU_STACK_DEPTH=16 -DVX_CFG_RTU_RECIP_DSP_SEED=0 -DVX_CFG_RTU_USE_DSP=1 -DVX_CFG_RTU_FDIV_LATENCY=28 -DVX_CFG_RTU_NUM_SLOTS=1 -DVX_CFG_RTU_NUM_CTX=4 -DVX_CFG_RTU_MERGE_DEPTH=0 -DVX_CFG_NUM_RTU_BLOCKS=2 -DVX_CFG_NUM_TEX_CORES=1 -DVX_CFG_TEX_REQ_QUEUE_SIZE=8 -DVX_CFG_TEX_MEM_QUEUE_SIZE=8 -DVX_CFG_NUM_RASTER_CORES=1 -DVX_CFG_RASTER_NUM_SLICES=1 -DVX_CFG_RASTER_TILE_LOG_SIZE=5 -DVX_CFG_RASTER_BIN_LOG_SIZE=7 -DVX_CFG_RASTER_BLOCK_LOG_SIZE=2 -DVX_CFG_RASTER_MEM_FIFO_DEPTH=8 -DVX_CFG_RASTER_QUAD_FIFO_DEPTH=32 -DVX_CFG_RASTER_MEM_QUEUE_SIZE=4 -DVX_CFG_RASTER_EARLYZ_ENABLED=0 -DVX_CFG_NUM_OM_CORES=1 -DVX_CFG_OM_MEM_QUEUE_SIZE=4 -DVX_CFG_TCACHE_SIZE=8192 -DVX_CFG_TCACHE_NUM_BANKS=1 -DVX_CFG_TCACHE_NUM_WAYS=2 -DVX_CFG_TCACHE_CRSQ_SIZE=0 -DVX_CFG_TCACHE_MSHR_SIZE=16 -DVX_CFG_TCACHE_MRSQ_SIZE=0 -DVX_CFG_TCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_TCACHES=1 -DVX_CFG_RCACHE_SIZE=4096 -DVX_CFG_RCACHE_NUM_BANKS=1 -DVX_CFG_RCACHE_NUM_WAYS=2 -DVX_CFG_RCACHE_CRSQ_SIZE=0 -DVX_CFG_RCACHE_MSHR_SIZE=16 -DVX_CFG_RCACHE_MRSQ_SIZE=0 -DVX_CFG_RCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_RCACHES=1 -DVX_CFG_RTCACHE_SIZE=8192 -DVX_CFG_RTCACHE_NUM_BANKS=1 -DVX_CFG_RTCACHE_NUM_WAYS=2 -DVX_CFG_RTCACHE_CRSQ_SIZE=2 -DVX_CFG_RTCACHE_MSHR_SIZE=16 -DVX_CFG_RTCACHE_MREQ_SIZE=4 -DVX_CFG_RTCACHE_MRSQ_SIZE=0 -DVX_CFG_NUM_RTCACHES=1 -DVX_CFG_OCACHE_SIZE=16384 -DVX_CFG_OCACHE_NUM_BANKS=1 -DVX_CFG_OCACHE_NUM_WAYS=2 -DVX_CFG_OCACHE_CRSQ_SIZE=0 -DVX_CFG_OCACHE_MSHR_SIZE=16 -DVX_CFG_OCACHE_MRSQ_SIZE=0 -DVX_CFG_OCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_OCACHES=1 -DVX_CFG_MISA_STD=9441576 -DVX_CFG_MISA_EXT=51 -DSYNTHESIS -DVIVADO -DVX_DBG_STALL_TIMEOUT=100000 -DVX_DBG_DEBUG_LEVEL=3",
+        "CONFIGS=",
+        "CXX=/opt/rh/devtoolset-9/root/usr/bin/g++",
+        "TARGET=hw",
+        "DESTDIR=/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 10.833
+    },
+    {
+      "label": "xrt",
+      "argv": [
+        "make",
+        "-C",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/build/sw/runtime/xrt",
+        "-j2",
+        "VORTEX_HOME=/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/input/u280-runtime200-input/source",
+        "XLEN=64",
+        "XCONFIGS=-DVX_CFG_XLEN=64 -DVX_CFG_XLEN_64 -DVX_CFG_FLEN=64 -DVX_CFG_FLEN_64 -DVX_CFG_FPU_TYPE=DSP -DVX_CFG_FPU_TYPE_DSP -DVX_CFG_TCU_TYPE=TFR -DVX_CFG_TCU_TYPE_TFR -DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_SOCKET_SIZE=1 -DVX_CFG_RESET_DELAY=8 -DVX_CFG_ICACHE_ENABLE -DVX_CFG_ICACHE_ENABLED=1 -DVX_CFG_DCACHE_ENABLE -DVX_CFG_DCACHE_ENABLED=1 -DVX_CFG_LMEM_ENABLE -DVX_CFG_LMEM_ENABLED=1 -DVX_CFG_L2_ENABLED=0 -DVX_CFG_L3_ENABLED=0 -DVX_CFG_VM_ENABLED=0 -DVX_CFG_EXT_D_ENABLE -DVX_CFG_EXT_D_ENABLED=1 -DVX_CFG_FLEN=64 -DVX_CFG_EXT_M_ENABLE -DVX_CFG_EXT_M_ENABLED=1 -DVX_CFG_EXT_F_ENABLE -DVX_CFG_EXT_F_ENABLED=1 -DVX_CFG_EXT_C_ENABLED=0 -DVX_CFG_EXT_A_ENABLED=0 -DVX_CFG_EXT_ZACAS_ENABLED=0 -DVX_CFG_EXT_ZICOND_ENABLE -DVX_CFG_EXT_ZICOND_ENABLED=1 -DVX_CFG_EXT_TCU_ENABLED=0 -DVX_CFG_EXT_DMA_ENABLED=0 -DVX_CFG_EXT_DXA_ENABLED=0 -DVX_CFG_EXT_TEX_ENABLED=0 -DVX_CFG_EXT_RASTER_ENABLED=0 -DVX_CFG_EXT_OM_ENABLED=0 -DVX_CFG_EXT_RTU_ENABLED=0 -DVX_CFG_VLEN=256 -DVX_CFG_NUM_WARPS=8 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_BARRIERS=8 -DVX_CFG_MAX_BAR_EVENTS=32 -DVX_CFG_IBUF_SIZE=4 -DVX_CFG_DISPATCH_QUEUE_SIZE=4 -DVX_CFG_ISSUE_WIDTH=1 -DVX_CFG_SIMD_WIDTH=4 -DVX_CFG_NUM_OPCS=2 -DVX_CFG_NUM_GPR_BANKS=4 -DVX_CFG_NUM_VGPR_BANKS=2 -DVX_CFG_MEM_BLOCK_SIZE=64 -DVX_CFG_MEM_ADDR_WIDTH=48 -DVX_CFG_L1_LINE_SIZE=64 -DVX_CFG_L2_LINE_SIZE=64 -DVX_CFG_L2_SECTOR_SIZE=64 -DVX_CFG_L3_LINE_SIZE=64 -DVX_CFG_L3_SECTOR_SIZE=64 -DVX_CFG_PLATFORM_MEMORY_NUM_BANKS=32 -DVX_CFG_PLATFORM_MEMORY_ADDR_WIDTH=33 -DVX_CFG_PLATFORM_MEMORY_DATA_SIZE=64 -DVX_CFG_PLATFORM_MEMORY_INTERLEAVE=1 -DVX_CFG_PLATFORM_MEMORY_PEAK_BW=460000 -DVX_CFG_PLATFORM_CLOCK_RATE=200 -DVX_CFG_NUM_ALU_LANES=4 -DVX_CFG_NUM_ALU_BLOCKS=1 -DVX_CFG_NUM_SFU_LANES=4 -DVX_CFG_NUM_SFU_BLOCKS=1 -DVX_CFG_NUM_LSU_LANES=4 -DVX_CFG_NUM_LSU_BLOCKS=1 -DVX_CFG_LSU_STACK_INTERLEAVE_ENABLE -DVX_CFG_LSU_STACK_INTERLEAVE_ENABLED=1 -DVX_CFG_LSU_LINE_SIZE=32 -DVX_CFG_LSU_QUEUE_IN_SIZE=4 -DVX_CFG_LSU_PENDING_SIZE=16 -DVX_CFG_FPU_TYPE=DSP -DVX_CFG_NUM_FPU_LANES=4 -DVX_CFG_NUM_FPU_BLOCKS=1 -DVX_CFG_FPU_QUEUE_SIZE=2 -DVX_CFG_FPU_USE_DSP=1 -DVX_CFG_FMA_LATENCY=16 -DVX_CFG_FDIV_LATENCY=28 -DVX_CFG_FSQRT_LATENCY=28 -DVX_CFG_FNCP_LATENCY=2 -DVX_CFG_FCVT_LATENCY=5 -DVX_CFG_FMA_PE_RATIO=1 -DVX_CFG_FDIV_PE_RATIO=1 -DVX_CFG_FSQRT_PE_RATIO=1 -DVX_CFG_FCVT_PE_RATIO=1 -DVX_CFG_FNCP_PE_RATIO=1 -DVX_CFG_AMO_RS_SIZE=8 -DVX_CFG_NUM_VPU_LANES=4 -DVX_CFG_NUM_VPU_BLOCKS=1 -DVX_CFG_TLB_SIZE=32 -DVX_CFG_DTLB_SIZE=16 -DVX_CFG_ITLB_SIZE=8 -DVX_CFG_L1_TLB_MSHR_SIZE=4 -DVX_CFG_L2_TLB_SIZE=512 -DVX_CFG_L2_TLB_NUM_WAYS=4 -DVX_CFG_L2_TLB_MEGA_SIZE=8 -DVX_CFG_L2_TLB_MSHR_SIZE=8 -DVX_CFG_L2_TLB_LATENCY=4 -DVX_CFG_PTW_NUM_WALKERS=2 -DVX_CFG_PTW_WALK_CACHE_SIZE=16 -DVX_CFG_VM_PINNED_REGION_SIZE=0x10000000 -DVX_CFG_ICACHE_SIZE=16384 -DVX_CFG_ICACHE_NUM_WAYS=4 -DVX_CFG_ICACHE_REPL_POLICY=1 -DVX_CFG_ICACHE_MSHR_SIZE=16 -DVX_CFG_ICACHE_MRSQ_SIZE=0 -DVX_CFG_ICACHE_MREQ_SIZE=0 -DVX_CFG_ICACHE_CRSQ_SIZE=0 -DVX_CFG_ICACHE_MEM_PORTS=1 -DVX_CFG_ICACHE_LATENCY=2 -DVX_CFG_DCACHE_SIZE=16384 -DVX_CFG_DCACHE_NUM_WAYS=4 -DVX_CFG_DCACHE_WORD_SIZE=16 -DVX_CFG_DCACHE_WRITEBACK=1 -DVX_CFG_DCACHE_DIRTYBYTES=0 -DVX_CFG_DCACHE_REPL_POLICY=1 -DVX_CFG_DCACHE_MSHR_SIZE=16 -DVX_CFG_DCACHE_LINE_SIZE=64 -DVX_CFG_DCACHE_SECTOR_SIZE=64 -DVX_CFG_DCACHE_LATENCY=2 -DVX_CFG_DCACHE_MRSQ_SIZE=4 -DVX_CFG_DCACHE_MREQ_SIZE=0 -DVX_CFG_DCACHE_CRSQ_SIZE=0 -DVX_CFG_NUM_ICACHES=1 -DVX_CFG_NUM_DCACHES=1 -DVX_CFG_DCACHE_NUM_BANKS=1 -DVX_CFG_L1_MEM_PORTS=1 -DVX_CFG_L2_SIZE=1048576 -DVX_CFG_L2_NUM_WAYS=8 -DVX_CFG_L2_WRITEBACK=0 -DVX_CFG_L2_DIRTYBYTES=0 -DVX_CFG_L2_REPL_POLICY=1 -DVX_CFG_L2_MSHR_SIZE=16 -DVX_CFG_L2_LATENCY=4 -DVX_CFG_L2_MRSQ_SIZE=4 -DVX_CFG_L2_MREQ_SIZE=0 -DVX_CFG_L2_CRSQ_SIZE=0 -DVX_CFG_L2_NUM_BANKS=1 -DVX_CFG_L2_MEM_PORTS=0 -DVX_CFG_L3_SIZE=2097152 -DVX_CFG_L3_NUM_WAYS=8 -DVX_CFG_L3_WRITEBACK=0 -DVX_CFG_L3_DIRTYBYTES=0 -DVX_CFG_L3_REPL_POLICY=1 -DVX_CFG_L3_MSHR_SIZE=16 -DVX_CFG_L3_LATENCY=4 -DVX_CFG_L3_MRSQ_SIZE=4 -DVX_CFG_L3_MREQ_SIZE=0 -DVX_CFG_L3_CRSQ_SIZE=0 -DVX_CFG_L3_NUM_BANKS=1 -DVX_CFG_L3_MEM_PORTS=0 -DVX_CFG_LMEM_NUM_BANKS=4 -DVX_CFG_LMEM_LOG_SIZE=14 -DVX_CFG_TCU_TYPE=TFR -DVX_CFG_NUM_TCU_LANES=4 -DVX_CFG_NUM_TCU_BLOCKS=1 -DVX_CFG_TCU_USE_DSP=1 -DVX_CFG_TCU_LATENCY=5 -DVX_CFG_TCU_TF32_ENABLED=0 -DVX_CFG_TCU_FP16_ENABLE -DVX_CFG_TCU_FP16_ENABLED=1 -DVX_CFG_TCU_FP8_ENABLED=0 -DVX_CFG_TCU_FP4_ENABLED=0 -DVX_CFG_TCU_INT8_ENABLED=0 -DVX_CFG_TCU_INT4_ENABLED=0 -DVX_CFG_TCU_MX_ENABLED=0 -DVX_CFG_TCU_MXFP4_ENABLED=0 -DVX_CFG_TCU_NVFP4_ENABLED=0 -DVX_CFG_TCU_SPARSE_ENABLED=0 -DVX_CFG_TCU_DSM_ENABLED=0 -DVX_CFG_TCU_WGMMA_ENABLED=0 -DVX_CFG_NUM_DXA_CORES=1 -DVX_CFG_DXA_MEM_PORTS=1 -DVX_CFG_DXA_QUEUE_SIZE=16 -DVX_CFG_DXA_MAX_INFLIGHT=8 -DVX_CFG_NUM_RTU_CORES=1 -DVX_CFG_RTU_BVH_WIDTH=4 -DVX_CFG_RTU_TLAS_ENABLED=0 -DVX_CFG_RTU_STACK_DEPTH=16 -DVX_CFG_RTU_RECIP_DSP_SEED=0 -DVX_CFG_RTU_USE_DSP=1 -DVX_CFG_RTU_FDIV_LATENCY=28 -DVX_CFG_RTU_NUM_SLOTS=1 -DVX_CFG_RTU_NUM_CTX=4 -DVX_CFG_RTU_MERGE_DEPTH=0 -DVX_CFG_NUM_RTU_BLOCKS=2 -DVX_CFG_NUM_TEX_CORES=1 -DVX_CFG_TEX_REQ_QUEUE_SIZE=8 -DVX_CFG_TEX_MEM_QUEUE_SIZE=8 -DVX_CFG_NUM_RASTER_CORES=1 -DVX_CFG_RASTER_NUM_SLICES=1 -DVX_CFG_RASTER_TILE_LOG_SIZE=5 -DVX_CFG_RASTER_BIN_LOG_SIZE=7 -DVX_CFG_RASTER_BLOCK_LOG_SIZE=2 -DVX_CFG_RASTER_MEM_FIFO_DEPTH=8 -DVX_CFG_RASTER_QUAD_FIFO_DEPTH=32 -DVX_CFG_RASTER_MEM_QUEUE_SIZE=4 -DVX_CFG_RASTER_EARLYZ_ENABLED=0 -DVX_CFG_NUM_OM_CORES=1 -DVX_CFG_OM_MEM_QUEUE_SIZE=4 -DVX_CFG_TCACHE_SIZE=8192 -DVX_CFG_TCACHE_NUM_BANKS=1 -DVX_CFG_TCACHE_NUM_WAYS=2 -DVX_CFG_TCACHE_CRSQ_SIZE=0 -DVX_CFG_TCACHE_MSHR_SIZE=16 -DVX_CFG_TCACHE_MRSQ_SIZE=0 -DVX_CFG_TCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_TCACHES=1 -DVX_CFG_RCACHE_SIZE=4096 -DVX_CFG_RCACHE_NUM_BANKS=1 -DVX_CFG_RCACHE_NUM_WAYS=2 -DVX_CFG_RCACHE_CRSQ_SIZE=0 -DVX_CFG_RCACHE_MSHR_SIZE=16 -DVX_CFG_RCACHE_MRSQ_SIZE=0 -DVX_CFG_RCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_RCACHES=1 -DVX_CFG_RTCACHE_SIZE=8192 -DVX_CFG_RTCACHE_NUM_BANKS=1 -DVX_CFG_RTCACHE_NUM_WAYS=2 -DVX_CFG_RTCACHE_CRSQ_SIZE=2 -DVX_CFG_RTCACHE_MSHR_SIZE=16 -DVX_CFG_RTCACHE_MREQ_SIZE=4 -DVX_CFG_RTCACHE_MRSQ_SIZE=0 -DVX_CFG_NUM_RTCACHES=1 -DVX_CFG_OCACHE_SIZE=16384 -DVX_CFG_OCACHE_NUM_BANKS=1 -DVX_CFG_OCACHE_NUM_WAYS=2 -DVX_CFG_OCACHE_CRSQ_SIZE=0 -DVX_CFG_OCACHE_MSHR_SIZE=16 -DVX_CFG_OCACHE_MRSQ_SIZE=0 -DVX_CFG_OCACHE_MREQ_SIZE=0 -DVX_CFG_NUM_OCACHES=1 -DVX_CFG_MISA_STD=9441576 -DVX_CFG_MISA_EXT=51 -DSYNTHESIS -DVIVADO -DVX_DBG_STALL_TIMEOUT=100000 -DVX_DBG_DEBUG_LEVEL=3",
+        "CONFIGS=",
+        "CXX=/opt/rh/devtoolset-9/root/usr/bin/g++",
+        "TARGET=hw",
+        "DESTDIR=/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 1.42
+    },
+    {
+      "label": "ldd_libvortex-xrt",
+      "argv": [
+        "ldd",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex-xrt.so"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.019
+    },
+    {
+      "label": "ldd_libvortex",
+      "argv": [
+        "ldd",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex.so"
+      ],
+      "cwd": "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build",
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.019
+    }
+  ],
+  "board_load": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "host_configuration": "NOT_RUN",
+  "binding": {
+    "schema_version": "u280-runtime200-binding-v2",
+    "frozen": false,
+    "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+    "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "fpga_build_result_sha256": "1a14f3035ca73fc10b33acf57ae4b14266ecd18332a89f12a262c3f406164e68",
+    "xclbin": {
+      "path": "out/vortex_afu.xclbin",
+      "sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+      "bytes": 53950442
+    },
+    "resolved_cflags_sha256": "9b4e0608559fdf96baee3b0e883a8d51a6885ba25375763e01c21e86b7efe45c",
+    "changed_definitions": {
+      "VX_CFG_PLATFORM_CLOCK_RATE": [
+        "400",
+        "200"
+      ]
+    },
+    "note": "Isolated host source/scaffold patch; identical FPGA/clock/defines and exported C API. VM remains disabled; not VM acceptance.",
+    "source_files": [
+      {
+        "bytes": 59,
+        "path": "VERSION",
+        "sha256": "bdd9a1a6ec595aff3c410983b128f9a295d382dfb7731546a9f624c8678397b3"
+      },
+      {
+        "bytes": 21421,
+        "path": "VX_config.toml",
+        "sha256": "b0bba05aeef9bec1797c85f69978dc1f2a8bf5687e86834fc5bfe600333e1d0c"
+      },
+      {
+        "bytes": 34505,
+        "path": "VX_types.toml",
+        "sha256": "363cbf95a0f55425da8fca2574290ea635c84f1304d114d42455242d4756ebe8"
+      },
+      {
+        "bytes": 49322,
+        "path": "ci/gen_config.py",
+        "sha256": "10bdf9730e1d397e32820c8de11cea17acc43e7a3c0858f1f0c8acd6e21681fa"
+      },
+      {
+        "bytes": 1892,
+        "path": "config.mk.in",
+        "sha256": "83f01b834110142a4fee05496b695a6c66b7b67595f91f39d6566fc759264375"
+      },
+      {
+        "bytes": 9551,
+        "path": "configure",
+        "sha256": "5c95414e272f2ee91d03dc6e360091740cdfc987277b468832994c80fd5d2ad7"
+      },
+      {
+        "bytes": 4873,
+        "path": "sw/common/bitmanip.h",
+        "sha256": "972f44f7274c9bf11cd1d608db6d351a0b0ec43bbd7d4c55bd37a65d3c1a88f1"
+      },
+      {
+        "bytes": 13572,
+        "path": "sw/common/bitvector.h",
+        "sha256": "84ef691ea21678e2f446c92868e0fecaa546c3d02564ed50e506ef67989d3d46"
+      },
+      {
+        "bytes": 1647,
+        "path": "sw/common/dxa_meta.h",
+        "sha256": "bd57790b136bdad1f5b945459bad508aec667373e82bd3cde6cbc9044551689c"
+      },
+      {
+        "bytes": 1416,
+        "path": "sw/common/gfx_dcr.h",
+        "sha256": "1cc8deb52e0f8d95d678e53d9ba31b2dc27ba7f2a368e902eb0257480fbc0c83"
+      },
+      {
+        "bytes": 10528,
+        "path": "sw/common/gfx_ff_model.cpp",
+        "sha256": "486cd7d32252de73e117c334c9312e882b5b120aed1d3959934aee364dbfa88e"
+      },
+      {
+        "bytes": 9295,
+        "path": "sw/common/gfx_ff_model.h",
+        "sha256": "4dec88ec11b12f251c1845e430ffe761b82471a165b11e1f1a74d9d862723eb5"
+      },
+      {
+        "bytes": 13862,
+        "path": "sw/common/gfx_frag_rast.h",
+        "sha256": "7e4488c17bc413e021aa5d6ba401f8f1e01d94eabc220a40cf3c503b3a61bd49"
+      },
+      {
+        "bytes": 27326,
+        "path": "sw/common/gfx_frag_tex.h",
+        "sha256": "bda61c204dd9df5f64a446b33fcd7f9c0676879b6c9dd38184ca5d34249abdba"
+      },
+      {
+        "bytes": 10522,
+        "path": "sw/common/gfx_frontend_abi.h",
+        "sha256": "09d8379be0ef87edd17b22951e03085227cf1cdfe85ccf142d4fdf74b86d1feb"
+      },
+      {
+        "bytes": 5359,
+        "path": "sw/common/gfx_fs_desc_abi.h",
+        "sha256": "1c2b1b2991386121a5b504eb4b7de2fb3c78ed82c12c3f55e4f90a02f6248d5f"
+      },
+      {
+        "bytes": 17888,
+        "path": "sw/common/gfx_setup.h",
+        "sha256": "286716cc469d31de9709f9044101fb16b7a990991188ebe9247b85f1baa455ef"
+      },
+      {
+        "bytes": 68226,
+        "path": "sw/common/gfx_sw.h",
+        "sha256": "029255e6722412236f6484688b5949c9d1474d49ca07435a099e89222d4378b7"
+      },
+      {
+        "bytes": 18583,
+        "path": "sw/common/gfx_sw_abi.h",
+        "sha256": "c511028ff7434ee2e068e4257c1e18ff24dd4beccaff82b1389e28fc3ad7005e"
+      },
+      {
+        "bytes": 1105,
+        "path": "sw/common/gfx_tex_const.h",
+        "sha256": "ace318fdb6be1837c12ad909edb055b3818ab6bb2e8bd75214b54d6c44b2ea7a"
+      },
+      {
+        "bytes": 7212,
+        "path": "sw/common/linked_list.h",
+        "sha256": "69626e43c322a42c426f06a714e0291e78add23b1925fe2e371183a96d2f2478"
+      },
+      {
+        "bytes": 13300,
+        "path": "sw/common/mem_alloc.h",
+        "sha256": "3efb41d6ae9359640304f73f5f8d5e422f2c5aa3096339761192bd9bd15eabbe"
+      },
+      {
+        "bytes": 5963,
+        "path": "sw/common/mempool.h",
+        "sha256": "f3a5ad6bca40e6dc9fffe9d8b2e99865dee02b52f603764cc221022d0c5f3143"
+      },
+      {
+        "bytes": 23533,
+        "path": "sw/common/mp_macros.h",
+        "sha256": "d2422863ee4bc95c7c4a0f2f35dad14836caaed9279b3730830f906ffe05139c"
+      },
+      {
+        "bytes": 3327,
+        "path": "sw/common/ringqueue.h",
+        "sha256": "09ec27281a56f3da7d8657a4a3ec16f450f0ad98dc2fb057f088339a22d27405"
+      },
+      {
+        "bytes": 6195,
+        "path": "sw/common/rtu_cfg.h",
+        "sha256": "d406d46279e6437493487b3f7db7b690f677551926573579cb7f606782fecc56"
+      },
+      {
+        "bytes": 20939,
+        "path": "sw/common/rvfloats.cpp",
+        "sha256": "38b41646f2f6a318abbde25829bb73c91214a6749d768e68720e4ed9f882a282"
+      },
+      {
+        "bytes": 6317,
+        "path": "sw/common/rvfloats.h",
+        "sha256": "794043122bd863a085adf8af2b5056bd67b921202fa03cd4625cc58262ffd256"
+      },
+      {
+        "bytes": 5413,
+        "path": "sw/common/smallfunc.h",
+        "sha256": "ca87b450a9910b8421df4dc61a16f172fbc1c494fb36864f0178fa7706fabef4"
+      },
+      {
+        "bytes": 31846,
+        "path": "sw/common/softfloat_ext.cpp",
+        "sha256": "4bc6beb8a4bd39407a440021d20bfd044ea32211fae1eea3504ab1c68daeb2f0"
+      },
+      {
+        "bytes": 3041,
+        "path": "sw/common/softfloat_ext.h",
+        "sha256": "eaef5771cd5c1271917c3fe9777a02d8b8ecdc5c00527bfb988f6dfe904ed375"
+      },
+      {
+        "bytes": 2478,
+        "path": "sw/common/stringutil.h",
+        "sha256": "0f5a111a509303962ccc7999383b6bd7f1be52c226457f6e80037864359d14e3"
+      },
+      {
+        "bytes": 12423,
+        "path": "sw/common/tensor_cfg.h",
+        "sha256": "8e57f622cc1154799528b3a708fd7c0b50d20dd8a57e4da5e2762d5fbad5e8da"
+      },
+      {
+        "bytes": 2090,
+        "path": "sw/common/util.cpp",
+        "sha256": "9033fed4f1c88b0c3d4c225b10fa68e191dcc86608a29bf531e6d144a36eaea3"
+      },
+      {
+        "bytes": 5708,
+        "path": "sw/common/util.h",
+        "sha256": "22df04c6d7242b40fc63f1701643d5eed8601f64893104567580bab80360a884"
+      },
+      {
+        "bytes": 4946,
+        "path": "sw/common/vm_types.h",
+        "sha256": "20e4c8a7fba500a0ee948b9afdd59a22b43f03e5c45b3fac68e9120ecccb9252"
+      },
+      {
+        "bytes": 11816,
+        "path": "sw/common/vx_gfx_abi.h",
+        "sha256": "138ecd5cb93280947d7f3958d52802ffc191aee294fe52ec62cc04af8272cd34"
+      },
+      {
+        "bytes": 4723,
+        "path": "sw/common/vx_tex_lod.h",
+        "sha256": "5be88e6895595055f1e0db173918cac44c108ca952358e184ebc5c24678b0faa"
+      },
+      {
+        "bytes": 4085,
+        "path": "sw/kernel/include/vx_barrier.h",
+        "sha256": "523e44e423f594f14c9aabe95cf82481d7223ffceb405344e08fe5268274b5c8"
+      },
+      {
+        "bytes": 19947,
+        "path": "sw/kernel/include/vx_dxa.h",
+        "sha256": "ba837bf2616c2252216db46b4d180a34b7271887e99c87ac2b3a524b737db5ad"
+      },
+      {
+        "bytes": 6017,
+        "path": "sw/kernel/include/vx_graphics.h",
+        "sha256": "d2074b1b36e56478a9d0fa95f7583cb3c71a3fec0a726e57efc4c13e4cbc988c"
+      },
+      {
+        "bytes": 23187,
+        "path": "sw/kernel/include/vx_intrinsics.h",
+        "sha256": "383426948cb37f7aac1f46d052ae96350aaa69d0f5e4519cf6c77dbad83e4a31"
+      },
+      {
+        "bytes": 938,
+        "path": "sw/kernel/include/vx_print.h",
+        "sha256": "ad363c358f8b24ebc5d4c173128aebbaad5694cdc2c079f57445fde14adbda85"
+      },
+      {
+        "bytes": 18026,
+        "path": "sw/kernel/include/vx_raytrace.h",
+        "sha256": "4b348ff40cf9c137775f63810b5ff0fe38b9010000dfba270aa705770b719ddb"
+      },
+      {
+        "bytes": 2170,
+        "path": "sw/kernel/include/vx_spawn.h",
+        "sha256": "d044bdcd47c9f5d1bcce481bc808af7e355293058d65df663ff09eba1711ceb8"
+      },
+      {
+        "bytes": 4530,
+        "path": "sw/kernel/include/vx_spawn2.h",
+        "sha256": "7865a242249cdc66d2843780ff9208b1e0970124001ea9927529acb18a5ac2ab"
+      },
+      {
+        "bytes": 53823,
+        "path": "sw/kernel/include/vx_tensor.h",
+        "sha256": "61bf1ac4e0dea9e8721b6c1148452ff1a63ac0bc11b368afbc8b53c7d31e40ed"
+      },
+      {
+        "bytes": 454,
+        "path": "sw/runtime/Makefile",
+        "sha256": "7f415f52e9e99057ba3ee493137e57fdc12fb2a73c4d6c55afb737126d102ce9"
+      },
+      {
+        "bytes": 2745,
+        "path": "sw/runtime/aved/Makefile",
+        "sha256": "49cc19bd9dbd0c7df78478c2290e0b250d9823fa0a4404e5fe98a92483cc6618"
+      },
+      {
+        "bytes": 64130,
+        "path": "sw/runtime/aved/vortex.cpp",
+        "sha256": "70445ad26ba114d00fbc1b0f4ca6b8332664450c7409600e701e3e1aa8b8b7ad"
+      },
+      {
+        "bytes": 618,
+        "path": "sw/runtime/common.mk",
+        "sha256": "2af4343c0738db4a665c96e24f90f78912302b20597dda74d9592afb6676736e"
+      },
+      {
+        "bytes": 6551,
+        "path": "sw/runtime/common/buffer.cpp",
+        "sha256": "7c0c31f33367aa22430d4dbd59d827b1339565086cfb6fdc070f0975ac621cf9"
+      },
+      {
+        "bytes": 4532,
+        "path": "sw/runtime/common/callbacks.h",
+        "sha256": "2105743e37226644faf52b4766738b85dd1de687af614fd548723bf08fee9a0d"
+      },
+      {
+        "bytes": 3813,
+        "path": "sw/runtime/common/callbacks.inc",
+        "sha256": "13852934ab10776964fd2a68036ac8876303a60d2a3f3fce415186a3a13d10f2"
+      },
+      {
+        "bytes": 4097,
+        "path": "sw/runtime/common/caps.h",
+        "sha256": "22f8211f04d5dcc0ca55aaadc87ac15681b051e94ba1bd7e2b00f3a0bdb44516"
+      },
+      {
+        "bytes": 1997,
+        "path": "sw/runtime/common/common.h",
+        "sha256": "3504e28ddde5e0ab5f34de9dbe5f9b51ffc637cdb303c31f0d2ddd4f81b03c83"
+      },
+      {
+        "bytes": 62500,
+        "path": "sw/runtime/common/device.cpp",
+        "sha256": "dbb0124855861148275928c946c5c9971994e01d73099fd2dc123e6ce643b8cc"
+      },
+      {
+        "bytes": 1176,
+        "path": "sw/runtime/common/dispatcher.h",
+        "sha256": "702fd81a2f0b1a15eea612b0da6b3293827b36063357a8a924b71abfb3d17259"
+      },
+      {
+        "bytes": 5146,
+        "path": "sw/runtime/common/event.cpp",
+        "sha256": "7a9b9a39a0d77295f62a8435a0a962d367fa0d2623d3ca580a3b2ba748c11b67"
+      },
+      {
+        "bytes": 23442,
+        "path": "sw/runtime/common/graphics.cpp",
+        "sha256": "ec5da9577e58dd8d3edf38651922fff8b0938d499df7a6591a818aa7de1f19bf"
+      },
+      {
+        "bytes": 10959,
+        "path": "sw/runtime/common/legacy_runtime.cpp",
+        "sha256": "23250707d656cf96c46d2dcdb49904c823e34b426642dbdaee256ae0cc783eb8"
+      },
+      {
+        "bytes": 6370,
+        "path": "sw/runtime/common/legacy_utils.cpp",
+        "sha256": "e1863ab5b1feeeaadde2a9333a3f4681328f5ecf7375b2ee16277b7585317eef"
+      },
+      {
+        "bytes": 12747,
+        "path": "sw/runtime/common/module.cpp",
+        "sha256": "a8ade3f9dad14bf7811017cef8010b0df7fe5313a4e2b79a768e12a710c2288b"
+      },
+      {
+        "bytes": 914637,
+        "path": "sw/runtime/common/nlohmann_json.hpp",
+        "sha256": "3dd4b858daf50eed95e720e7679ca31d1cc9808e4e43bdcd096256fd4a0818f9"
+      },
+      {
+        "bytes": 39518,
+        "path": "sw/runtime/common/perf.cpp",
+        "sha256": "76544c99fa36ffe8b5a6858b99602dc29074073bf59ed61f0646034de9045747"
+      },
+      {
+        "bytes": 64813,
+        "path": "sw/runtime/common/queue.cpp",
+        "sha256": "fb53e69273dcb01d286daa23ac7c84a677d3f78e98da030a831219399142df30"
+      },
+      {
+        "bytes": 1168,
+        "path": "sw/runtime/common/result.cpp",
+        "sha256": "051f6234ddf5973ed9f01bfaf22a159292983c6fa8287eff0f9d1a427d9a7aea"
+      },
+      {
+        "bytes": 2310,
+        "path": "sw/runtime/common/runtime_helpers.cpp",
+        "sha256": "8d140762330b3200fb198eb3a75f8480b189550130ad84247dda6869f91712cd"
+      },
+      {
+        "bytes": 17558,
+        "path": "sw/runtime/common/scope.cpp",
+        "sha256": "2a40a40344f74cc2e614971f116130b044e7247215040b3bf53c70194b46693f"
+      },
+      {
+        "bytes": 1285,
+        "path": "sw/runtime/common/scope.h",
+        "sha256": "a6f376f0f227ddf1d907af56cc0b3bc90e4ace399adaea1ee9cbc3337e3eb202"
+      },
+      {
+        "bytes": 1532,
+        "path": "sw/runtime/common/utils.cpp",
+        "sha256": "a5a268ef8c4a84964a71adfb310832278204f74e7222cb35b333a0bda47cc433"
+      },
+      {
+        "bytes": 16518,
+        "path": "sw/runtime/common/vm.cpp",
+        "sha256": "bc82d4c52b4efe3719c10bc52e94463608903848fd68b0c26b94642c9450479c"
+      },
+      {
+        "bytes": 5373,
+        "path": "sw/runtime/common/vm.h",
+        "sha256": "8b4cc226319685a7a8c150be7b4f1d90a831f14e5f402d6715c46d6b6e2af319"
+      },
+      {
+        "bytes": 41626,
+        "path": "sw/runtime/common/vortex2_internal.h",
+        "sha256": "c1746f2bb62429d54df1318a5999e4f3b545fd3a502dc11ee9a109bccf20819e"
+      },
+      {
+        "bytes": 1520,
+        "path": "sw/runtime/firesim/Makefile",
+        "sha256": "0283453852c71673492875d252e8ac1fa92c54d942343736a444c39cd33f7d1e"
+      },
+      {
+        "bytes": 5954,
+        "path": "sw/runtime/firesim/vortex.cpp",
+        "sha256": "86767eeab3f55cf370b9720a45458f31f6dbcc6d37fe903e9b66a3095e5fb348"
+      },
+      {
+        "bytes": 1976,
+        "path": "sw/runtime/gem5/Makefile",
+        "sha256": "ce91c04c4440b33ec2dc9c0742e81b08bcd1e922480b0534dbe924fa02bdd984"
+      },
+      {
+        "bytes": 1586,
+        "path": "sw/runtime/gem5/driver.cpp",
+        "sha256": "0a4096812e2f25d509e592f6e413e4f172030fb275d128c3abea95070d1b2fa2"
+      },
+      {
+        "bytes": 2999,
+        "path": "sw/runtime/gem5/driver.h",
+        "sha256": "e519160e72cfbd312b4fa5c8b1019b6cfd47685df8efd24b02e7be9788600c84"
+      },
+      {
+        "bytes": 4453,
+        "path": "sw/runtime/gem5/vortex.cpp",
+        "sha256": "0c3b16c068fa7c81cc5d39373b59fc6325ef63eac5e6a2004c8799111f9fd7c2"
+      },
+      {
+        "bytes": 12882,
+        "path": "sw/runtime/include/dxa.h",
+        "sha256": "7db1a124216bf159ed6fbc84524a43034c8f1acfdd70254575df258d39a2be7f"
+      },
+      {
+        "bytes": 17563,
+        "path": "sw/runtime/include/graphics.h",
+        "sha256": "438eaad00823b3b433e7bcdc923f73baac24347477834426ec7e6799fa4e0033"
+      },
+      {
+        "bytes": 20807,
+        "path": "sw/runtime/include/raytrace.h",
+        "sha256": "4d82b18a21ddf7ac8129af0984f1b9feed531e9580433ad41ed9efbf65ed103c"
+      },
+      {
+        "bytes": 10557,
+        "path": "sw/runtime/include/tensor_mx.h",
+        "sha256": "bd29b743eaa75a620536a85e0a0d1e69fddaf3c779758de035c3ee7f5da0e449"
+      },
+      {
+        "bytes": 8421,
+        "path": "sw/runtime/include/tensor_sp.h",
+        "sha256": "3c46d7663d8412e3473d0f7dbbebb9b863e7d3e33d5e1227f0ec8389bc41d885"
+      },
+      {
+        "bytes": 4261,
+        "path": "sw/runtime/include/vortex.h",
+        "sha256": "aad4d5b79f7b2f1525759c3ac6af88ef9006e5ed83b7276c505fc9e160b26026"
+      },
+      {
+        "bytes": 27240,
+        "path": "sw/runtime/include/vortex2.h",
+        "sha256": "6b7bfcf4c040fcc5085f1a7682e0fa9ac74f6c81d491e421b240d1416dbdc753"
+      },
+      {
+        "bytes": 2109,
+        "path": "sw/runtime/opae/Makefile",
+        "sha256": "12a0a0e7feb216aedf22dd0736ec706890284d6a3e7c88e284eba21c82b4fb90"
+      },
+      {
+        "bytes": 2334,
+        "path": "sw/runtime/opae/driver.cpp",
+        "sha256": "ea1de902706180f7029b67f605c5021b72a8c57a031f3420326c6721bee37159"
+      },
+      {
+        "bytes": 3114,
+        "path": "sw/runtime/opae/driver.h",
+        "sha256": "e1981c4406b07aec6b583e67d1062d80eb028bb3117149bc9507b38259cadae2"
+      },
+      {
+        "bytes": 8083,
+        "path": "sw/runtime/opae/vortex.cpp",
+        "sha256": "239e3752484e96a081086b858b2bfb4732206e11d5ace49048202bdd01a72b74"
+      },
+      {
+        "bytes": 1795,
+        "path": "sw/runtime/rtlsim/Makefile",
+        "sha256": "4c9a1b7c64d40a9726d1aafda30b416ebb08fde10d3f4dbde584c76aa45e03d3"
+      },
+      {
+        "bytes": 6157,
+        "path": "sw/runtime/rtlsim/vortex.cpp",
+        "sha256": "e4d432664298c48a871275b339930f8b2880de424805ffbbcdb0a1c84e577375"
+      },
+      {
+        "bytes": 1649,
+        "path": "sw/runtime/rtlsim_config.stamp",
+        "sha256": "c86188f4810b858c39e49febc770c251f5950845677919c7beb6daaecf305492"
+      },
+      {
+        "bytes": 1737,
+        "path": "sw/runtime/simx/Makefile",
+        "sha256": "eefd2bab7846916f5d102a61ace6855f05e47361e03ad5594da6c975b0173630"
+      },
+      {
+        "bytes": 6477,
+        "path": "sw/runtime/simx/vortex.cpp",
+        "sha256": "e706cbd94bf7f312b19f80b7086a3335621c7dc45cb2e91dd3fa503d2806513e"
+      },
+      {
+        "bytes": 2931,
+        "path": "sw/runtime/stub/Makefile",
+        "sha256": "e6aae339e07e2a3086cc0334c9353001521f774afdc9e921acf1e126b115b941"
+      },
+      {
+        "bytes": 3138,
+        "path": "sw/runtime/stub/vortex.cpp",
+        "sha256": "6a1f791d430f6bc9b6111eb13de39e4171f91e8eb7664d83d4d29dbabcdcbb77"
+      },
+      {
+        "bytes": 624,
+        "path": "sw/runtime/vortex-kernel.pc.in",
+        "sha256": "f87f8e79c5c5957878765a455ac72f48987085427d4c0f11a0dc2020a95750c8"
+      },
+      {
+        "bytes": 797,
+        "path": "sw/runtime/vortex-runtime.pc.in",
+        "sha256": "86f749215d627f0a71a0b688785ce2fb9d37f6aee378a8bd0f54e5f2ba8a085c"
+      },
+      {
+        "bytes": 1892,
+        "path": "sw/runtime/xrt/Makefile",
+        "sha256": "89dded3790a87aa3aeeea5b1dfdfb638380efeb4dd5821610b48972a348f5b5b"
+      },
+      {
+        "bytes": 11568,
+        "path": "sw/runtime/xrt/vortex.cpp",
+        "sha256": "0f5e4079b6888a3fd0502da40f3d7f76b5a9e6bb178de9516fed7874f64bff45"
+      },
+      {
+        "bytes": 181,
+        "path": "sw/runtime/xrt/xrt.ini.in",
+        "sha256": "06c0aa0e3d1a63b71b03f0226b053e06c1f5c4ad13f9a0936fb443d79b0ac5c8"
+      },
+      {
+        "bytes": 651,
+        "path": "sw/runtime/xrt/xsim.tcl",
+        "sha256": "874c3153a6f43fb66cb478c52b0438855e2b516aba72f23ceb074ccaf9442058"
+      }
+    ],
+    "runtime_profile": "gcc9-vm-allocation-v1",
+    "parent_package_sha256": "9976e187005d38005c1733d0bc5e9f337450109252bb908662fc9c4839c79b84",
+    "parent_binding_sha256": "3567d1f91911edba24f21897f3f7d1d92b98c60b2220a3b8befb69db431254a3",
+    "patches": [
+      {
+        "path": "source/sw/runtime/common/vm.cpp",
+        "before_sha256": "b367c933869218aee55529f92d2f1ef4e75e0ed8ed2e8a7d0b341822e9ab2580",
+        "after_sha256": "bc82d4c52b4efe3719c10bc52e94463608903848fd68b0c26b94642c9450479c"
+      },
+      {
+        "path": "source/sw/runtime/common/vm.h",
+        "before_sha256": "4165ba34e877a86405f783b757ec1756c2fc1efa178413b95bf9d422ed6db754",
+        "after_sha256": "8b4cc226319685a7a8c150be7b4f1d90a831f14e5f402d6715c46d6b6e2af319"
+      },
+      {
+        "path": "build/sw/runtime/common.mk",
+        "before_sha256": "2af4343c0738db4a665c96e24f90f78912302b20597dda74d9592afb6676736e",
+        "after_sha256": "f0036d5281a7797e075ebc4ddea2475f70c67427d76520eab71a0ad0e6a4615c"
+      }
+    ],
+    "followup": "D12-VM-01: before VM enable, review map_p2v failure API, unused callers, page-table and flush error propagation."
+  },
+  "stub_only": false,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "artifacts": [
+    {
+      "path": "lib/libvortex-xrt.so",
+      "sha256": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1",
+      "bytes": 45168
+    },
+    {
+      "path": "lib/libvortex.so",
+      "sha256": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e",
+      "bytes": 307488
+    }
+  ],
+  "xrt_backend": "PASS",
+  "exit_code": 0
+}

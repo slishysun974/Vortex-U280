@@ -1,0 +1,928 @@
+{
+  "schema_version": "ab-d7-closeout-v1",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "transport and synthesis exit",
+      "status": "PASS"
+    },
+    {
+      "name": "identity",
+      "status": "PASS"
+    },
+    {
+      "name": "input payload.py",
+      "status": "PASS"
+    },
+    {
+      "name": "input bundle.json",
+      "status": "PASS"
+    },
+    {
+      "name": "input u280_remote_probe.py",
+      "status": "PASS"
+    },
+    {
+      "name": "executed remote code identity",
+      "status": "PASS"
+    },
+    {
+      "name": "raw output",
+      "status": "PASS"
+    },
+    {
+      "name": "raw result agrees",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen manifest",
+      "status": "PASS"
+    },
+    {
+      "name": "bundled rtl/VX_afu_axi_limit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned source rtl/VX_afu_axi_limit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "bundled rtl/VX_platform.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned source rtl/VX_platform.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "bundled rtl/VX_scope.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned source rtl/VX_scope.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "bundled probe.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/configure_help.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/configure_help.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/device_list.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/device_list.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/examine_help.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/examine_help.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_3d_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_3d_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_3e_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_3e_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_40_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_40_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_41_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_41_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b1_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b1_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b2_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b2_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b4_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b4_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b5_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/holders_0000_b5_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_3d_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_3d_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_3e_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_3e_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_40_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_40_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_41_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_41_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b1_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b1_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b2_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b2_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b4_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b4_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b5_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/reports_0000_b5_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/small_synthesis.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "returned logs/small_synthesis.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_list.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_3d_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_3e_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_40_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_41_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_b1_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_b2_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_b4_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned device_0000_b5_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "returned vivado.log",
+      "status": "PASS"
+    },
+    {
+      "name": "returned vivado.jou",
+      "status": "PASS"
+    },
+    {
+      "name": "returned post_synth_utilization.rpt",
+      "status": "PASS"
+    },
+    {
+      "name": "returned post_synth.dcp",
+      "status": "PASS"
+    },
+    {
+      "name": "examine_help stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "examine_help stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "examine_help command",
+      "status": "PASS"
+    },
+    {
+      "name": "configure_help stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "configure_help stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "configure_help command",
+      "status": "PASS"
+    },
+    {
+      "name": "device_list stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "device_list stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "device_list command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3d_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3d_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3d_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3d_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3d_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3e_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3e_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3e_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3e_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3e_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_40_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_40_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_40_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_40_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_40_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_41_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_41_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_41_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_41_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_41_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b1_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b1_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b1_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b1_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b1_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b2_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b2_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b2_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b2_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b2_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b4_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b4_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b4_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b4_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b4_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b5_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b5_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b5_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b5_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b5_00_1 command",
+      "status": "PASS"
+    },
+    {
+      "name": "small_synthesis stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "small_synthesis stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "small_synthesis command",
+      "status": "PASS"
+    },
+    {
+      "name": "bounded build",
+      "status": "PASS"
+    },
+    {
+      "name": "actual license checkout",
+      "status": "PASS"
+    },
+    {
+      "name": "synthesis completed",
+      "status": "PASS"
+    },
+    {
+      "name": "scope board_programming",
+      "status": "PASS"
+    },
+    {
+      "name": "scope board_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "scope device_configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "scope full_vortex_synthesis",
+      "status": "PASS"
+    },
+    {
+      "name": "scope place_route",
+      "status": "PASS"
+    },
+    {
+      "name": "scope board_execution",
+      "status": "PASS"
+    },
+    {
+      "name": "eight physical card reports",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 report identity",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 before ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 before host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 after ready",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 after host observation",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 idle snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "ab-d7-script-checks-20261108-v1",
+      "status": "PASS"
+    },
+    {
+      "name": "ab-d7-windows-bundle-checks-20261109-v1",
+      "status": "PASS"
+    },
+    {
+      "name": "default unchanged target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "default unchanged target_caps.json",
+      "status": "PASS"
+    },
+    {
+      "name": "default unchanged native_smoke.json",
+      "status": "PASS"
+    }
+  ],
+  "passed": 184,
+  "total": 184,
+  "cards": [
+    {
+      "bdf": "0000:3d:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 8,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "7f39731e-59e6-d65f-8119-cf169c4bc463"
+    },
+    {
+      "bdf": "0000:3e:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 1,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "49fb33b7-44a7-b8eb-4130-44720bc86a15"
+    },
+    {
+      "bdf": "0000:40:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 8,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "7f39731e-59e6-d65f-8119-cf169c4bc463"
+    },
+    {
+      "bdf": "0000:41:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 8,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "7f39731e-59e6-d65f-8119-cf169c4bc463"
+    },
+    {
+      "bdf": "0000:b1:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 1,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.27",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "c65e251d-c737-a347-1e22-9269ae04c26b"
+    },
+    {
+      "bdf": "0000:b2:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 8,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "7f39731e-59e6-d65f-8119-cf169c4bc463"
+    },
+    {
+      "bdf": "0000:b4:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 1,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "6bb0a608-1624-259d-5cff-76487c984653"
+    },
+    {
+      "bdf": "0000:b5:00.1",
+      "observed_idle_candidate": true,
+      "cu_count": 1,
+      "no_visible_fuser_output": true,
+      "fuser_exit_code": 1,
+      "reservation": "NOT_ACQUIRED",
+      "host_mem_size": 0,
+      "shell": {
+        "vbnv": "xilinx_u280_gen3x16_xdma_base_1",
+        "logic_uuid": "283BAB8F-654D-8674-968F-4DA57F7FA5D7",
+        "jtag_idcode": "0x14b7d093",
+        "fpga_name": ""
+      },
+      "controller": {
+        "version": "4.3.28",
+        "expected_version": "4.3.27"
+      },
+      "interface_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "xclbin_uuid": "d3fbbb72-4537-16db-9b54-a4a37943a1d4"
+    }
+  ],
+  "probe_run": "u280-preflight-20261109-001732-931",
+  "probe_sha256": "f29459acf40434c600ba827014756cbebb0974c958788031316f6040407771e0",
+  "scope": "Evidence verification; small component synthesis and read-only observations only; no full FPGA or board acceptance",
+  "host_memory": "NOT_ENABLED",
+  "board_ready_for_vortex": false,
+  "argv": [
+    "scripts/verify_ab_d7_results.py",
+    "--run-id",
+    "ab-d7-closeout-20261109-v1",
+    "--probe",
+    "u280-preflight-20261109-001732-931"
+  ],
+  "finished_at": "2026-11-08T16:21:43.960413+00:00",
+  "exit_code": 0
+}

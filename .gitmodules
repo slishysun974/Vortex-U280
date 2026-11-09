@@ -1,0 +1,3 @@
+[submodule "upstream/vortex"]
+    path = upstream/vortex
+    url = https://github.com/vortexgpgpu/vortex.git

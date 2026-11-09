@@ -1,0 +1,1168 @@
+{
+  "schema_version": "u280-d13-review-v1",
+  "status": "PASS",
+  "argv": [
+    "scripts/review_u280_readiness_results.py",
+    "--readiness-run",
+    "u280-readiness-20261109-v2",
+    "--run-id",
+    "u280-readiness-review-20261109-v2"
+  ],
+  "scope": "returned DCP reports, provenance, and frozen input verification; no automatic timing waiver",
+  "checks": [
+    {
+      "check": "response identity",
+      "status": "PASS"
+    },
+    {
+      "check": "worker identity",
+      "status": "PASS"
+    },
+    {
+      "check": "Tcl identity",
+      "status": "PASS"
+    },
+    {
+      "check": "returned stdout",
+      "status": "PASS"
+    },
+    {
+      "check": "returned audit.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/check_timing.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/clock_interaction.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/clocks.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/effective.xdc",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/methodology.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/objects.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/optional_errors.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/timing7_forward.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline/timing7_reverse.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline.log",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline.stderr",
+      "status": "PASS"
+    },
+    {
+      "check": "returned baseline.stdout",
+      "status": "PASS"
+    },
+    {
+      "check": "returned dcp_inventory.json",
+      "status": "PASS"
+    },
+    {
+      "check": "returned hd_visual/pblock_dynamic_region_Placement_AllTiles.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned hd_visual/pblock_dynamic_region_Routing_AllTiles.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/check_timing.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/clock_interaction.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/clocks.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/effective.xdc",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/methodology.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/objects.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/optional_errors.txt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/timing7_forward.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented/timing7_reverse.rpt",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented.log",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented.stderr",
+      "status": "PASS"
+    },
+    {
+      "check": "returned implemented.stdout",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/impl.xdc",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/postlink.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/postopt.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/postroute.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/prelink.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "returned platform/tcl_hooks/preopt.tcl",
+      "status": "PASS"
+    },
+    {
+      "check": "both DCP commands completed",
+      "status": "PASS"
+    },
+    {
+      "check": "implemented summary/detail consistency",
+      "status": "PASS"
+    },
+    {
+      "check": "baseline summary/detail consistency",
+      "status": "PASS"
+    },
+    {
+      "check": "exact nine implemented/eight baseline warnings",
+      "status": "PASS"
+    },
+    {
+      "check": "optional queries succeeded",
+      "status": "PASS"
+    },
+    {
+      "check": "ten missing-delay ports match baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "BSCAN fanout matches baseline and stays in static partition",
+      "status": "PASS"
+    },
+    {
+      "check": "all 12 clock-group commands and scopes preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "no kernel00 asynchronous-group interaction reported",
+      "status": "PASS"
+    },
+    {
+      "check": "TIMING-7 sampled path identities/slacks/exceptions match",
+      "status": "PASS"
+    },
+    {
+      "check": "one inherited unsafe clock interaction remains",
+      "status": "PASS"
+    },
+    {
+      "check": "D10 timing report identity",
+      "status": "PASS"
+    },
+    {
+      "check": "root lock preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "source manifest identity",
+      "status": "PASS"
+    },
+    {
+      "check": "3329 fixed source files",
+      "status": "PASS"
+    }
+  ],
+  "board_readiness": "BLOCKED",
+  "board_load": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "processor_rtl": "NOT_RUN",
+  "afu_model": "NOT_RUN",
+  "ptx_device": "NOT_RUN",
+  "collection": {
+    "status": "PASS",
+    "commands": [
+      {
+        "label": "implemented",
+        "argv": [
+          "bash",
+          "-c",
+          ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && exec vivado -mode batch -nojournal -log /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/implemented.log -source /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/audit.tcl -tclargs /home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper_postroute_physopt.dcp /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/implemented"
+        ],
+        "started_at": "2026-11-09T11:53:56.793367+00:00",
+        "timeout_seconds": 900,
+        "exit_code": 0,
+        "elapsed_seconds": 718.449
+      },
+      {
+        "label": "baseline",
+        "argv": [
+          "bash",
+          "-c",
+          ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && exec vivado -mode batch -nojournal -log /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/baseline.log -source /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/audit.tcl -tclargs /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/platform/hw_bb_locked.dcp /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/baseline"
+        ],
+        "started_at": "2026-11-09T12:05:55.243763+00:00",
+        "timeout_seconds": 900,
+        "exit_code": 0,
+        "elapsed_seconds": 435.335
+      }
+    ],
+    "transport_exit_code": 0
+  },
+  "dcps": {
+    "final_checkpoint": {
+      "path": "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/_x/link/vivado/vpl/prj/prj.runs/impl_1/level0_wrapper_postroute_physopt.dcp",
+      "bytes": 273620447,
+      "sha256": "4942bb1979f74e60bbbd8d20ce9779ec1cdee675d2a3217453e505ac4cd26c19"
+    },
+    "baseline_checkpoint": {
+      "path": "/home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/platform/hw_bb_locked.dcp",
+      "sha256": "f5cee615c973ebd572f85ce6d412edbf273115b8f7b061874d286caa3408bcf3"
+    }
+  },
+  "reports": {
+    "implemented": {
+      "rules": [
+        {
+          "rule": "TIMING-1",
+          "severity": "Critical Warning",
+          "description": "Invalid clock waveform on Clock Modifying Block",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-7",
+          "severity": "Critical Warning",
+          "description": "No common node between related clocks",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-14",
+          "severity": "Critical Warning",
+          "description": "LUT on the clock tree",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-54",
+          "severity": "Critical Warning",
+          "description": "Scoped false path, clock group or max delay datapath only constraint between clocks",
+          "count": 6
+        },
+        {
+          "rule": "LUTAR-1",
+          "severity": "Warning",
+          "description": "LUT drives async reset alert",
+          "count": 21
+        },
+        {
+          "rule": "TIMING-9",
+          "severity": "Warning",
+          "description": "Unknown CDC Logic",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-10",
+          "severity": "Warning",
+          "description": "Missing property on synchronizer",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-18",
+          "severity": "Warning",
+          "description": "Missing input or output delay",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-24",
+          "severity": "Warning",
+          "description": "Overridden Max delay datapath only",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-47",
+          "severity": "Warning",
+          "description": "False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks",
+          "count": 7
+        },
+        {
+          "rule": "XDCB-5",
+          "severity": "Warning",
+          "description": "Runtime inefficient way to find pin objects",
+          "count": 2
+        },
+        {
+          "rule": "XDCC-1",
+          "severity": "Warning",
+          "description": "Scoped Clock constraint overwritten with the same name",
+          "count": 2
+        },
+        {
+          "rule": "XDCC-7",
+          "severity": "Warning",
+          "description": "Scoped Clock constraint overwritten on the same source",
+          "count": 2
+        },
+        {
+          "rule": "CLKC-3",
+          "severity": "Advisory",
+          "description": "Clock Buffer has LOC and not CLOCK_REGION",
+          "count": 30
+        },
+        {
+          "rule": "CLKC-13",
+          "severity": "Advisory",
+          "description": "PLLE4 divide could be done by BUFG_GT",
+          "count": 1
+        },
+        {
+          "rule": "CLKC-40",
+          "severity": "Advisory",
+          "description": "Substitute PLLE4 for MMCME4 check",
+          "count": 1
+        },
+        {
+          "rule": "CLKC-56",
+          "severity": "Advisory",
+          "description": "MMCME4 with global clock driver has no LOC",
+          "count": 2
+        },
+        {
+          "rule": "RTGT-1",
+          "severity": "Advisory",
+          "description": "RAM retargeting possibility",
+          "count": 17
+        },
+        {
+          "rule": "XDCB-6",
+          "severity": "Advisory",
+          "description": "Timing constraint pointing to hierarchical pins",
+          "count": 2
+        }
+      ],
+      "critical_warnings": [
+        {
+          "id": "TIMING-1#1",
+          "rule": "TIMING-1",
+          "detail": "Invalid clock waveform on Clock Modifying Block  \nInvalid clock waveform for clock clk_kernel_00_unbuffered_net specified at a MMCME4_ADV output level0_i/ulp/ulp_ucs/inst/aclk_kernel_00_hierarchy/clkwiz_aclk_kernel_00/inst/CLK_CORE_DRP_I/clk_inst/mmcme4_adv_inst/CLKOUT0 that does not match the CMB settings. The waveform of the clock is 5 {0 2.5}. The expected waveform is 3.333 {0 1.667}",
+          "normalized": "Invalid clock waveform on Clock Modifying Block Invalid clock waveform for clock clk_kernel_00_unbuffered_net specified at a MMCME4_ADV output level0_i/ulp/ulp_ucs/inst/aclk_kernel_00_hierarchy/clkwiz_aclk_kernel_00/inst/CLK_CORE_DRP_I/clk_inst/mmcme4_adv_inst/CLKOUT0 that does not match the CMB settings. The waveform of the clock is 5 {0 2.5}. The expected waveform is 3.333 {0 1.667}",
+          "also_in_platform_baseline": false,
+          "disposition": "STATIC_CAUSE_IDENTIFIED_ACTUAL_CLOCK_PENDING",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-7#1",
+          "rule": "TIMING-7",
+          "detail": "No common node between related clocks  \nThe clocks io_clk_pcie_00_clk_p and dma_ip_axi_aclk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks io_clk_pcie_00_clk_p] -to [get_clocks dma_ip_axi_aclk_1]",
+          "normalized": "No common node between related clocks The clocks io_clk_pcie_00_clk_p and dma_ip_axi_aclk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks io_clk_pcie_00_clk_p] -to [get_clocks dma_ip_axi_aclk_1]",
+          "also_in_platform_baseline": true,
+          "disposition": "OPEN_PLATFORM_CDC_REVIEW_REQUIRED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-14#1",
+          "rule": "TIMING-14",
+          "detail": "LUT on the clock tree  \nThe LUT level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bsip/inst/USE_SOFTBSCAN.U_BSCAN_TAP/U_BASETAP/update_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks",
+          "normalized": "LUT on the clock tree The LUT level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bsip/inst/USE_SOFTBSCAN.U_BSCAN_TAP/U_BASETAP/update_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#1",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 291 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#2",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and pipe_clk_1 (see constraint position 294 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and pipe_clk_1 (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#3",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 314 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1, level0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK, level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#4",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 313 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1, level0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK, level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#5",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O and io_clk_pcie_00_clk_p (see constraint position 290 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O and io_clk_pcie_00_clk_p (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        },
+        {
+          "id": "TIMING-54#6",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks pipe_clk_1 and io_clk_pcie_00_clk_p (see constraint position 295 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks pipe_clk_1 and io_clk_pcie_00_clk_p (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "also_in_platform_baseline": true,
+          "disposition": "REVIEWED_PLATFORM_RETAINED_NOT_WAIVED",
+          "tool_warning_remains": true
+        }
+      ],
+      "optional_errors": "",
+      "check_timing": "Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023\n| Date              : Mon Nov  9 20:04:20 2026\n| Host              : localhost running 64-bit CentOS Linux release 7.9.2009 (Core)\n| Command           : check_timing -verbose -override_defaults {no_input_delay no_output_delay unconstrained_internal_endpoints} -file /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/implemented/check_timing.rpt\n| Design            : level0_wrapper\n| Device            : xcu280-fsvh2892\n| Speed File        : -2L  PRODUCTION 1.30 05-01-2022\n| Design State      : Physopt postRoute\n| Temperature Grade : E\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\ncheck_timing report\n\nTable of Contents\n-----------------\n1. checking unconstrained_internal_endpoints (0)\n2. checking no_input_delay (7)\n3. checking no_output_delay (3)\n\n1. checking unconstrained_internal_endpoints (0)\n------------------------------------------------\n There are 0 pins that are not constrained for maximum delay.\n\n There are 0 pins that are not constrained for maximum delay due to constant clock.\n\n\n2. checking no_input_delay (7)\n------------------------------\n There are 7 input ports with no input delay specified. (HIGH)\n\nio_data_satellite_ctrl_00[0]\nio_data_satellite_ctrl_00[1]\nio_data_satellite_ctrl_00[2]\nio_data_satellite_ctrl_00[3]\nio_perst_n_00[0]\nio_uart_cmc_00_rxd\nio_uart_satellite_ctrl_00_rxd\n\n There are 0 input ports with no input delay but user has a false path constraint.\n\n\n3. checking no_output_delay (3)\n-------------------------------\n There are 3 ports with no output delay specified. (HIGH)\n\nio_hbm_cattrip_00[0]\nio_uart_cmc_00_txd\nio_uart_satellite_ctrl_00_txd\n\n There are 0 ports with no output delay but user has a false path constraint\n\n There are 0 ports with no output delay but with a timing clock defined on it or propagating through it\n\n\n"
+    },
+    "baseline": {
+      "rules": [
+        {
+          "rule": "TIMING-7",
+          "severity": "Critical Warning",
+          "description": "No common node between related clocks",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-14",
+          "severity": "Critical Warning",
+          "description": "LUT on the clock tree",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-54",
+          "severity": "Critical Warning",
+          "description": "Scoped false path, clock group or max delay datapath only constraint between clocks",
+          "count": 6
+        },
+        {
+          "rule": "LUTAR-1",
+          "severity": "Warning",
+          "description": "LUT drives async reset alert",
+          "count": 21
+        },
+        {
+          "rule": "TIMING-9",
+          "severity": "Warning",
+          "description": "Unknown CDC Logic",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-10",
+          "severity": "Warning",
+          "description": "Missing property on synchronizer",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-18",
+          "severity": "Warning",
+          "description": "Missing input or output delay",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-24",
+          "severity": "Warning",
+          "description": "Overridden Max delay datapath only",
+          "count": 1
+        },
+        {
+          "rule": "TIMING-47",
+          "severity": "Warning",
+          "description": "False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks",
+          "count": 7
+        },
+        {
+          "rule": "CLKC-3",
+          "severity": "Advisory",
+          "description": "Clock Buffer has LOC and not CLOCK_REGION",
+          "count": 30
+        },
+        {
+          "rule": "CLKC-13",
+          "severity": "Advisory",
+          "description": "PLLE4 divide could be done by BUFG_GT",
+          "count": 1
+        },
+        {
+          "rule": "RTGT-1",
+          "severity": "Advisory",
+          "description": "RAM retargeting possibility",
+          "count": 17
+        }
+      ],
+      "critical_warnings": [
+        {
+          "id": "TIMING-7#1",
+          "rule": "TIMING-7",
+          "detail": "No common node between related clocks  \nThe clocks io_clk_pcie_00_clk_p and dma_ip_axi_aclk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks io_clk_pcie_00_clk_p] -to [get_clocks dma_ip_axi_aclk_1]",
+          "normalized": "No common node between related clocks The clocks io_clk_pcie_00_clk_p and dma_ip_axi_aclk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks io_clk_pcie_00_clk_p] -to [get_clocks dma_ip_axi_aclk_1]"
+        },
+        {
+          "id": "TIMING-14#1",
+          "rule": "TIMING-14",
+          "detail": "LUT on the clock tree  \nThe LUT level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bsip/inst/USE_SOFTBSCAN.U_BSCAN_TAP/U_BASETAP/update_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks",
+          "normalized": "LUT on the clock tree The LUT level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bsip/inst/USE_SOFTBSCAN.U_BSCAN_TAP/U_BASETAP/update_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks"
+        },
+        {
+          "id": "TIMING-54#1",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 206 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        },
+        {
+          "id": "TIMING-54#2",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and pipe_clk_1 (see constraint position 209 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and pipe_clk_1 (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        },
+        {
+          "id": "TIMING-54#3",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 229 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1, level0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK, level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        },
+        {
+          "id": "TIMING-54#4",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 228 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1, level0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK, level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        },
+        {
+          "id": "TIMING-54#5",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O and io_clk_pcie_00_clk_p (see constraint position 205 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O and io_clk_pcie_00_clk_p (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        },
+        {
+          "id": "TIMING-54#6",
+          "rule": "TIMING-54",
+          "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks pipe_clk_1 and io_clk_pcie_00_clk_p (see constraint position 210 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+          "normalized": "Scoped false path, clock group or max delay datapath only constraint between clocks A scoped Clock Group timing constraint is set between clocks pipe_clk_1 and io_clk_pcie_00_clk_p (see constraint position <N> in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope."
+        }
+      ],
+      "optional_errors": "",
+      "check_timing": "Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023\n| Date              : Mon Nov  9 20:12:19 2026\n| Host              : localhost running 64-bit CentOS Linux release 7.9.2009 (Core)\n| Command           : check_timing -verbose -override_defaults {no_input_delay no_output_delay unconstrained_internal_endpoints} -file /home/u280user/vortex-u280-readiness/u280-readiness-20261109-v2/baseline/check_timing.rpt\n| Design            : level0_wrapper\n| Device            : xcu280-fsvh2892\n| Speed File        : -2L  PRODUCTION 1.30 05-01-2022\n| Design State      : Physopt postRoute\n| Temperature Grade : E\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\ncheck_timing report\n\nTable of Contents\n-----------------\n1. checking unconstrained_internal_endpoints (0)\n2. checking no_input_delay (7)\n3. checking no_output_delay (3)\n\n1. checking unconstrained_internal_endpoints (0)\n------------------------------------------------\n There are 0 pins that are not constrained for maximum delay.\n\n There are 0 pins that are not constrained for maximum delay due to constant clock.\n\n\n2. checking no_input_delay (7)\n------------------------------\n There are 7 input ports with no input delay specified. (HIGH)\n\nio_data_satellite_ctrl_00[0]\nio_data_satellite_ctrl_00[1]\nio_data_satellite_ctrl_00[2]\nio_data_satellite_ctrl_00[3]\nio_perst_n_00[0]\nio_uart_cmc_00_rxd\nio_uart_satellite_ctrl_00_rxd\n\n There are 0 input ports with no input delay but user has a false path constraint.\n\n\n3. checking no_output_delay (3)\n-------------------------------\n There are 3 ports with no output delay specified. (HIGH)\n\nio_hbm_cattrip_00[0]\nio_uart_cmc_00_txd\nio_uart_satellite_ctrl_00_txd\n\n There are 0 ports with no output delay but user has a false path constraint\n\n There are 0 ports with no output delay but with a timing clock defined on it or propagating through it\n\n\n"
+    }
+  },
+  "detailed_comparison": {
+    "implemented": {
+      "missing_delay_ports": [
+        "io_data_satellite_ctrl_00[0]",
+        "io_data_satellite_ctrl_00[1]",
+        "io_data_satellite_ctrl_00[2]",
+        "io_data_satellite_ctrl_00[3]",
+        "io_perst_n_00[0]",
+        "io_uart_cmc_00_rxd",
+        "io_uart_satellite_ctrl_00_rxd",
+        "io_hbm_cattrip_00[0]",
+        "io_uart_cmc_00_txd",
+        "io_uart_satellite_ctrl_00_txd"
+      ],
+      "timing14_fanout": [
+        "count=20",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[5]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[4]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[3]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[5]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[4]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[3]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/xsdbm/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/iDATA_CMD_reg/D"
+      ],
+      "clock_groups": [
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins -hierarchical -filter {NAME =~ *gen_channel_container[27].*gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK}]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins -hierarchical -filter {NAME =~ *gen_channel_container[27].*gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK}]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_mux/inst",
+          "command": "set_clock_groups -logically_exclusive -group [get_clocks -of_objects [get_ports -scoped_to_current_instance soft_tck]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance prim_tck]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_mux/inst",
+          "command": "set_clock_groups -logically_exclusive -group [get_clocks -of_objects [get_ports -scoped_to_current_instance soft_update]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance prim_tck]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -quiet -of_objects [get_pins *.BUFG_UPDATE/*/O]] -quiet"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -quiet -of_objects [get_pins *.BUFG_DRCK*/*/O]] -quiet"
+        }
+      ],
+      "timing7": {
+        "forward": {
+          "sources": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C"
+          ],
+          "destinations": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[0]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[1]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[2]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[3]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[4]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[5]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[0]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[5]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[6]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[7]/CLR"
+          ],
+          "types": [
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)"
+          ],
+          "slack": [
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)"
+          ],
+          "exceptions": []
+        },
+        "reverse": {
+          "sources": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[4]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[0]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[2]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[3]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[0]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[2]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_rst_sbr_cdc_pulse_inst/src_level_ff_reg/C"
+          ],
+          "destinations": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][4]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][0]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][2]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][3]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][1]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][1]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][0]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][2]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_rst_sbr_cdc_pulse_inst/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+          ],
+          "types": [
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)"
+          ],
+          "slack": [
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf"
+          ],
+          "exceptions": [
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path"
+          ]
+        }
+      },
+      "unsafe_interactions": [
+        [
+          "io_clk_pcie_00_clk_p",
+          "dma_ip_axi_aclk_1",
+          "rise - rise",
+          "0.18",
+          "0.00",
+          "0",
+          "26",
+          "2.00",
+          "No Common Node",
+          "Partial False Path (unsafe)"
+        ]
+      ],
+      "kernel00_interactions": [
+        [
+          "clk_kernel_00_unbuffered_net",
+          "clk_kernel_00_unbuffered_net",
+          "rise - rise",
+          "0.12",
+          "0.00",
+          "0",
+          "289801",
+          "5.00",
+          "Clean",
+          "Partial False Path"
+        ],
+        [
+          "clk_kernel_00_unbuffered_net",
+          "dma_ip_axi_aclk_1",
+          "rise - rise",
+          "2.14",
+          "0.00",
+          "0",
+          "2133",
+          "3.33",
+          "Ignored",
+          "Max Delay Datapath Only"
+        ],
+        [
+          "clk_kernel_00_unbuffered_net",
+          "hbm_aclk",
+          "rise - rise",
+          "1.90",
+          "0.00",
+          "0",
+          "694",
+          "3.33",
+          "Ignored",
+          "Max Delay Datapath Only"
+        ],
+        [
+          "clk_kernel_00_unbuffered_net",
+          "io_clk_freerun_00_clk_p",
+          "0",
+          "64",
+          "Ignored",
+          "False Path"
+        ],
+        [
+          "clk_out2_bd_39ab_clkwiz_level0_periph_0_1",
+          "clk_kernel_00_unbuffered_net",
+          "rise - rise",
+          "18.83",
+          "0.00",
+          "0",
+          "19",
+          "20.00",
+          "Ignored",
+          "Max Delay Datapath Only"
+        ],
+        [
+          "dma_ip_axi_aclk_1",
+          "clk_kernel_00_unbuffered_net",
+          "rise - rise",
+          "2.86",
+          "0.00",
+          "0",
+          "962",
+          "4.00",
+          "Ignored",
+          "Max Delay Datapath Only"
+        ],
+        [
+          "hbm_aclk",
+          "clk_kernel_00_unbuffered_net",
+          "rise - rise",
+          "0.40",
+          "0.00",
+          "0",
+          "543",
+          "2.22",
+          "Ignored",
+          "Max Delay Datapath Only"
+        ],
+        [
+          "io_clk_freerun_00_clk_p",
+          "clk_kernel_00_unbuffered_net",
+          "0",
+          "8",
+          "Ignored",
+          "False Path"
+        ]
+      ]
+    },
+    "baseline": {
+      "missing_delay_ports": [
+        "io_data_satellite_ctrl_00[0]",
+        "io_data_satellite_ctrl_00[1]",
+        "io_data_satellite_ctrl_00[2]",
+        "io_data_satellite_ctrl_00[3]",
+        "io_perst_n_00[0]",
+        "io_uart_cmc_00_rxd",
+        "io_uart_satellite_ctrl_00_rxd",
+        "io_hbm_cattrip_00[0]",
+        "io_uart_cmc_00_txd",
+        "io_uart_satellite_ctrl_00_txd"
+      ],
+      "timing14_fanout": [
+        "count=20",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[5]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[4]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[3]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_switch_1/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[5]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[4]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[3]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[2]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/portno_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[0]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/bs_switch/inst/BSCAN_SWITCH.EXT_BSCAN.bscan_switch/state_temp_reg[1]/D",
+        "level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O",
+        "level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_hub/inst/xsdbm/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/iDATA_CMD_reg/D"
+      ],
+      "clock_groups": [
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins -hierarchical -filter {NAME =~ *gen_channel_container[27].*gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK}]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins -hierarchical -filter {NAME =~ *gen_channel_container[27].*gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK}]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]] -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_hif/inst/pcie/inst",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance sys_clk]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_mux/inst",
+          "command": "set_clock_groups -logically_exclusive -group [get_clocks -of_objects [get_ports -scoped_to_current_instance soft_tck]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance prim_tck]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bs_mux/inst",
+          "command": "set_clock_groups -logically_exclusive -group [get_clocks -of_objects [get_ports -scoped_to_current_instance soft_update]] -group [get_clocks -of_objects [get_ports -scoped_to_current_instance prim_tck]]"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -quiet -of_objects [get_pins *.BUFG_UPDATE/*/O]] -quiet"
+        },
+        {
+          "scope": "current_instance level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0",
+          "command": "set_clock_groups -asynchronous -group [get_clocks -quiet -of_objects [get_pins *.BUFG_DRCK*/*/O]] -quiet"
+        }
+      ],
+      "timing7": {
+        "forward": {
+          "sources": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C"
+          ],
+          "destinations": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[0]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[1]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[2]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[3]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[4]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[5]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[0]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[5]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[6]/CLR",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[7]/CLR"
+          ],
+          "types": [
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)",
+            "Recovery (Max at Slow Process Corner)"
+          ],
+          "slack": [
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.185ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)",
+            "Slack (MET) :             0.235ns  (required time - arrival time)"
+          ],
+          "exceptions": []
+        },
+        "reverse": {
+          "sources": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[4]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[0]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[2]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[3]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/src_ff_reg[1]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[0]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/src_ff_reg[2]/C",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_rst_sbr_cdc_pulse_inst/src_level_ff_reg/C"
+          ],
+          "destinations": [
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][4]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][0]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][2]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][3]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][1]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst/syncstages_ff_reg[0][1]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][0]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst/syncstages_ff_reg[0][2]/D",
+            "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_rst_sbr_cdc_pulse_inst/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+          ],
+          "types": [
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)",
+            "Setup (Max at Slow Process Corner)"
+          ],
+          "slack": [
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf",
+            "Slack:                    inf"
+          ],
+          "exceptions": [
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path",
+            "False Path"
+          ]
+        }
+      },
+      "unsafe_interactions": [
+        [
+          "io_clk_pcie_00_clk_p",
+          "dma_ip_axi_aclk_1",
+          "rise - rise",
+          "0.18",
+          "0.00",
+          "0",
+          "26",
+          "2.00",
+          "No Common Node",
+          "Partial False Path (unsafe)"
+        ]
+      ],
+      "kernel00_interactions": []
+    }
+  },
+  "review_conclusion": {
+    "status": "COMPLETE_WITH_OPEN_ITEMS",
+    "inherited_warning_count": 8,
+    "new_clock_warning_count": 1,
+    "platform_items_scope_reviewed": 7,
+    "tool_warnings_eliminated": 0,
+    "timing_blocker": "TIMING-7: unchanged platform crossing is still classified Partial False Path (unsafe); baseline identity is not a safety waiver",
+    "actual_clock_check": "TIMING-1: verify loaded UUID and measured 200 MHz before any kernel execution",
+    "missing_delay": "same ten platform ports; internal unconstrained endpoints remain zero; this is not external I/O timing acceptance",
+    "hardware_action": "HOST blocked by sudo policy; no board load or native execution"
+  },
+  "timing7_archived_paths": {
+    "source_report_sha256": "c16769502472d936e0b6267f279674e6646e5490ef0dbeec9caf3b7025993e3f",
+    "report_endpoint_count": 21,
+    "sources": [
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_reset_in_async_rst_inst/arststages_ff_reg[1]/C",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/sys_rst_n_sbr_reg/C"
+    ],
+    "destinations": [
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_ltssm_st_reg[0]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_ltssm_st_reg[1]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_ltssm_st_reg[2]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_ltssm_st_reg[3]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/cur_ltssm_st_reg[4]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[0]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[1]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[2]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[3]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[4]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[5]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[6]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[7]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_cnt_reg[8]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[0]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[1]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[2]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[3]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[4]/CLR",
+      "level0_i/blp/blp_i/ss_hif/inst/pcie/inst/debug_wrapper_U/debug_probes_inst/pre_ltssm_st_reg[5]/CLR"
+    ],
+    "types": [
+      "Recovery (Max at Slow Process Corner)",
+      "Removal (Min at Fast Process Corner)"
+    ],
+    "limitation": "Reported path samples may not enumerate every endpoint; positive slack is not a clock relationship proof"
+  },
+  "exit_code": 0
+}

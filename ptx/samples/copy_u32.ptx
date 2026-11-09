@@ -1,0 +1,25 @@
+.version 7.0
+.target sm_70
+.address_size 64
+.visible .entry copy_u32(.param .u64 x, .param .u64 z, .param .u32 n) {
+  .reg .pred %p;
+  .reg .b32 %r<5>;
+  .reg .b64 %a<5>;
+  ld.param.u64 %a0, [x];
+  ld.param.u64 %a1, [z];
+  ld.param.u32 %r0, [n];
+  mov.u32 %r1, %ctaid.x;
+  mov.u32 %r2, %ntid.x;
+  mul.lo.u32 %r1, %r1, %r2;
+  mov.u32 %r2, %tid.x;
+  add.u32 %r1, %r1, %r2;
+  setp.lt.u32 %p, %r1, %r0;
+  mul.wide.u32 %a2, %r1, 4;
+  cvta.to.global.u64 %a0, %a0;
+  cvta.to.global.u64 %a1, %a1;
+  add.u64 %a3, %a0, %a2;
+  add.u64 %a4, %a1, %a2;
+  @%p ld.global.u32 %r3, [%a3];
+  @%p st.global.u32 [%a4], %r3;
+  ret;
+}

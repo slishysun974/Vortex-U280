@@ -1,0 +1,912 @@
+{
+  "schema_version": "ab-d9-evidence-v1",
+  "started_at": "2026-11-09T02:10:59.933762+00:00",
+  "argv": [
+    "scripts/verify_ab_d9_results.py",
+    "--run-id",
+    "ab-d9-closeout-20261109-v1",
+    "--host-run",
+    "u280-preflight-20261109-094621-277",
+    "--xo-run",
+    "u280-preflight-20261109-100406-629",
+    "--checks-run",
+    "ab-d9-script-checks-20261109-v2"
+  ],
+  "scope": "script tests and evidence integrity; FPGA outcomes reported separately",
+  "checks": [
+    {
+      "name": "unchanged configs/target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged configs/target_caps.json",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged configs/candidates/u280-hbm32-v1/target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged configs/candidates/u280-hbm32-v1/fpga.json",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged configs/candidates/block32-v1/target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged results/ab-d8-u280-source-20261109-v1/u280-rtl-input.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "name": "fixed source manifest",
+      "status": "PASS"
+    },
+    {
+      "name": "fixed source files",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 SSH exit",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 nonce/run binding",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 collector binding",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 raw stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 payload",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 bundle",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/configure_help.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/configure_help.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/device_list.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/device_list.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/examine_help.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/examine_help.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_3d_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_3d_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_3e_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_3e_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_40_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_40_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_41_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_41_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b1_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b1_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b2_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b2_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b4_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b4_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b5_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/holders_0000_b5_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/host_mem_help.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/host_mem_help.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/host_mem_permission_query.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/host_mem_permission_query.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/platform_info.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/platform_info.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_3d_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_3d_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_3e_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_3e_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_40_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_40_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_41_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_41_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b1_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b1_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b2_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b2_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b4_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b4_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b5_00_1.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 logs/reports_0000_b5_00_1.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_list.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_3d_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_3e_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_40_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_41_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_b1_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_b2_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_b4_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 device_0000_b5_00_1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-094621-277 platform_metadata.json",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST/platform probe PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "examine_help stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "examine_help stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "configure_help stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "configure_help stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "host_mem_help stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "host_mem_help stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "host_mem_permission_query stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "host_mem_permission_query stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "device_list stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "device_list stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3d_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3d_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3d_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3d_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3e_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_3e_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3e_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_3e_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_40_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_40_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_40_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_40_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_41_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_41_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_41_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_41_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b1_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b1_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b1_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b1_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b2_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b2_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b2_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b2_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b4_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b4_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b4_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b4_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b5_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "holders_0000_b5_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b5_00_1 stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "reports_0000_b5_00_1 stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "platform_info stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "platform_info stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "required remote commands exit 0",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3d:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:3e:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:40:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:41:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b1:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b2:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b4:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 interface UUID",
+      "status": "PASS"
+    },
+    {
+      "name": "0000:b5:00.1 snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "eight devices",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope board_programming",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope board_reset",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope device_configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope full_vortex_synthesis",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope place_route",
+      "status": "PASS"
+    },
+    {
+      "name": "HOST probe scope board_execution",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 SSH exit",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 nonce/run binding",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 collector binding",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 raw stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 payload",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 bundle",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 transport/build.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 transport/build.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/result.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/build_prepared.py",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/bounded_xo.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/platform.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/platform.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/xo.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/xo.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/vivado.log",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/vivado.jou",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/flow_patch.json",
+      "status": "PASS"
+    },
+    {
+      "name": "u280-preflight-20261109-100406-629 build/flow.patch",
+      "status": "PASS"
+    },
+    {
+      "name": "XO result saved",
+      "status": "PASS"
+    },
+    {
+      "name": "XO complete input identity",
+      "status": "PASS"
+    },
+    {
+      "name": "XO stage",
+      "status": "PASS"
+    },
+    {
+      "name": "XO platform identity",
+      "status": "PASS"
+    },
+    {
+      "name": "XO platform stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "XO platform stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "XO xo stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "XO xo stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "XO success/failure truthful",
+      "status": "PASS"
+    },
+    {
+      "name": "environment/u280-fpga/build_prepared.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "scripts/prepare_u280_probe.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "scripts/u280_remote_xo.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "scripts/verify_ab_d9_results.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "previous script checks PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "prior tests stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "prior tests stderr",
+      "status": "PASS"
+    }
+  ],
+  "commands": [],
+  "xo_packaging": "PASS",
+  "full_synthesis": "NOT_RUN",
+  "implementation": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "host_configuration": "NOT_RUN",
+  "fixed_source_identity": {
+    "files": 3329,
+    "mismatches": []
+  },
+  "input_identity": {
+    "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "input_manifest_sha256": "fe16e5837f89f93d39c6708fc66a970714b3debb14868b182e9e006df1cb8d56",
+    "input_files": 288
+  },
+  "platform_files": [
+    {
+      "path": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+      "sha256": "33ffbb50935e524e4feafd0cb3b8c39429a7f911b0c42dff065e2f3097fe2bc6",
+      "bytes": 1181
+    },
+    {
+      "path": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/hw/hw.xsa",
+      "sha256": "11c9e4acdfdb6e98e136df84c4af806d1d01a8d69a8e0c7b20477a6692010c91",
+      "bytes": 127466929
+    }
+  ],
+  "platform_interface_uuids": [
+    "fb2b2c5a19ed63593fea95f51fbc8eb9"
+  ],
+  "devices": [
+    {
+      "bdf": "0000:3d:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t7f39731e-59e6-d65f-8119-cf169c4bc463\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:3e:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t49fb33b7-44a7-b8eb-4130-44720bc86a15\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:40:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t7f39731e-59e6-d65f-8119-cf169c4bc463\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:41:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t7f39731e-59e6-d65f-8119-cf169c4bc463\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:b1:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\tc65e251d-c737-a347-1e22-9269ae04c26b\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:b2:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t7f39731e-59e6-d65f-8119-cf169c4bc463\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:b4:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\t6bb0a608-1624-259d-5cff-76487c984653\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    },
+    {
+      "bdf": "0000:b5:00.1",
+      "ready": "0x1",
+      "host_mem_size": "0",
+      "kds": "xclbin:\t\t\td3fbbb72-4537-16db-9b54-a4a37943a1d4\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:\n",
+      "all_reported_cus_idle": true
+    }
+  ],
+  "host_permission": {
+    "status": "UNCONFIRMED",
+    "exit_code": 1,
+    "stderr": "sudo: a password is required\n"
+  },
+  "xo_transport_run": "u280-preflight-20261109-100406-629",
+  "xo_build_result": {
+    "schema_version": "u280-prepared-build-v2",
+    "argv": [
+      "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/build_prepared.py",
+      "--input",
+      "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/u280-rtl-input",
+      "--run-id",
+      "u280-preflight-20261109-100406-629",
+      "--stage",
+      "xo",
+      "--build-flow",
+      "ip-ooc-v1"
+    ],
+    "started_at": "2026-11-09T02:04:21.578208+00:00",
+    "stage": "xo",
+    "status": "PASS",
+    "commands": [
+      {
+        "label": "platform",
+        "argv": [
+          "bash",
+          "-c",
+          ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec platforminfo -p /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm"
+        ],
+        "cwd": "/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629",
+        "timeout_seconds": 60,
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 1.619,
+        "stdout_sha256": "c4e4d8356f63f1e2e558ec90603c104fb8668f97a57a3b82070677aa2138ea1d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "xo",
+        "argv": [
+          "bash",
+          "-c",
+          ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec vivado -mode batch -notrace -source /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/bounded_xo.tcl -log /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/vivado.log -journal /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/vivado.jou"
+        ],
+        "cwd": "/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/input",
+        "timeout_seconds": 900,
+        "timed_out": false,
+        "exit_code": 0,
+        "elapsed_seconds": 340.708,
+        "stdout_sha256": "b02041358947c2a6d6238bfb3cc86afbdb03bb01db04db7bd07e1e9f02988242",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "board_load": "NOT_RUN",
+    "host_configuration": "NOT_RUN",
+    "limits": {
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "nice_increment": 10,
+      "vivado_max_threads": 2,
+      "wall_seconds": 900,
+      "ram_hard_limit": "NOT_ENFORCED; confirm shared-host resource rules before link"
+    },
+    "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "input_manifest_sha256": "fe16e5837f89f93d39c6708fc66a970714b3debb14868b182e9e006df1cb8d56",
+    "input_files": 288,
+    "build_flow": "ip-ooc-v1",
+    "flow_sha256": "964e4c6c23fcdd97c47376edacd88e6d210a39f3c1ac09d0c611255689ccc630",
+    "artifact": {
+      "path": "out/vortex_afu.xo",
+      "sha256": "58ff5ed950d738f232f5fa70e4c4fcf82ebd2b73bb3d247cfc00133f51e66b0d",
+      "bytes": 312868
+    },
+    "exit_code": 0,
+    "finished_at": "2026-11-09T02:10:04.175396+00:00"
+  },
+  "implementation_hashes": {
+    "environment/u280-fpga/build_prepared.py": "b7870934a69f6d0533dd26796609efe913eabd7d792b6334ef294c65ee5928ca",
+    "scripts/prepare_u280_probe.py": "977015e2fb65effc5f0cfcc7faced904b065aa641282c21c7a0e40271c9475bb",
+    "scripts/u280_remote_xo.py": "e22135c3ee47f95feb113807d5627deecb366f1b06782c3eb1725521ddc755c0",
+    "scripts/Invoke-U280Preflight.ps1": "434abcc0c2e8fe9f5bbd653e55cc8692acb65ad66100f8d12131189818ca028a",
+    "scripts/verify_ab_d9_results.py": "f8a5ed205b4d8324101c480f4e99033196fec8648fbf5cfbc878acecca7b4e22",
+    "tests/test_u280_prepared_build.py": "5b092b7787e6a6a4f5374f860fb112599e3aa3b17b7f5a4353ef1d33323e015f",
+    "tests/test_u280_probe_bundle.py": "057dcd477f9986e1e6c24388238b298ffa4a9c0313b877070aba02ebf9ccebff"
+  },
+  "script_tests": {
+    "argv": [
+      "/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "539ec9c53cd0a31e321b5d8208e08f94c643b520aa1ff4607063b5e720bb8750"
+  },
+  "script_test_source": {
+    "run_id": "ab-d9-script-checks-20261109-v2",
+    "sha256": "c297e2e499e0cf043d674565b62f8eacc66f89218f07d6556334bbaf2d1deb68"
+  },
+  "status": "PASS",
+  "exit_code": 0,
+  "finished_at": "2026-11-09T02:11:02.775947+00:00"
+}

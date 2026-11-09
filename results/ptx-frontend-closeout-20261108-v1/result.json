@@ -1,0 +1,718 @@
+{
+  "schema_version": "ptx-frontend-closeout-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "scripts/verify_ptx_frontend_results.py",
+    "--run-id",
+    "ptx-frontend-host-20261108-v3",
+    "--output",
+    "results/ptx-frontend-closeout-20261108-v1"
+  ],
+  "timestamp": "2026-11-08T15:04:27.494473+00:00",
+  "run_id": "ptx-frontend-host-20261108-v3",
+  "scope": "command/log/implementation/bundle/trace/summary integrity; no re-execution; raw captures compared by validation run",
+  "checks": [
+    {
+      "name": "run_passed",
+      "ok": true
+    },
+    {
+      "name": "implementation_unchanged_at_run_completion",
+      "ok": true
+    },
+    {
+      "name": "simx_not_claimed",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_not_claimed",
+      "ok": true
+    },
+    {
+      "name": "afu_not_claimed",
+      "ok": true
+    },
+    {
+      "name": "u280_not_claimed",
+      "ok": true
+    },
+    {
+      "name": "independent_acceptance_not_claimed",
+      "ok": true
+    },
+    {
+      "name": "all_sixteen_commands_present",
+      "ok": true
+    },
+    {
+      "name": "python_tests_exit",
+      "ok": true
+    },
+    {
+      "name": "python_tests_log",
+      "ok": true
+    },
+    {
+      "name": "host_compiler_exit",
+      "ok": true
+    },
+    {
+      "name": "host_compiler_log",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_frontend_exit",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_frontend_log",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_host_compile_exit",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_host_compile_log",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_host_run_exit",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_host_run_log",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_frontend_exit",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_frontend_log",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_host_compile_exit",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_host_compile_log",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_host_run_exit",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_host_run_log",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_frontend_exit",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_frontend_log",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_host_compile_exit",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_host_compile_log",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_host_run_exit",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_host_run_log",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_frontend_exit",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_frontend_log",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_host_compile_exit",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_host_compile_log",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_host_run_exit",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_host_run_log",
+      "ok": true
+    },
+    {
+      "name": "fault_eager_load_compile_exit",
+      "ok": true
+    },
+    {
+      "name": "fault_eager_load_compile_log",
+      "ok": true
+    },
+    {
+      "name": "fault_eager_load_run_exit",
+      "ok": true
+    },
+    {
+      "name": "fault_eager_load_run_log",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/capture_target.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/capture_target.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/capture_u280_source_contract.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/capture_u280_source_contract.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/native_boundary.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/native_boundary.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/native_dependencies.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/native_dependencies.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/platform_inventory.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/platform_inventory.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/prepare_block32_candidate.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/prepare_block32_candidate.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/prepare_toolchain.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/prepare_toolchain.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/probe_course_account_access.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/probe_course_account_access.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/probe_u280_endpoint.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/probe_u280_endpoint.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/ptx_frontend.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/ptx_frontend.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/run_block32_validation.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/run_block32_validation.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/run_native_smoke.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/run_native_smoke.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/run_ptx_frontend_validation.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/run_ptx_frontend_validation.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/verify_block32_results.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/verify_block32_results.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:scripts/wlan_ssh_proxy.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:scripts/wlan_ssh_proxy.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_backend_routing.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_backend_routing.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_native_boundary.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_native_boundary.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_native_dependencies.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_native_dependencies.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_native_smoke.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_native_smoke.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_ptx_frontend.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_ptx_frontend.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_ptx_host_validation.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_ptx_host_validation.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_target_profiles.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_target_profiles.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:tests/test_toolchain_preparation.py",
+      "ok": true
+    },
+    {
+      "name": "snapshot:tests/test_toolchain_preparation.py",
+      "ok": true
+    },
+    {
+      "name": "current_source:ptx/samples/affine_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "snapshot:ptx/samples/affine_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "current_source:ptx/samples/copy_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "snapshot:ptx/samples/copy_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "current_source:ptx/samples/semantics_probe.ptx",
+      "ok": true
+    },
+    {
+      "name": "snapshot:ptx/samples/semantics_probe.ptx",
+      "ok": true
+    },
+    {
+      "name": "current_source:ptx/samples/vadd_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "snapshot:ptx/samples/vadd_u32.ptx",
+      "ok": true
+    },
+    {
+      "name": "current_source:configs/ptx_frontend/v1/abi.json",
+      "ok": true
+    },
+    {
+      "name": "snapshot:configs/ptx_frontend/v1/abi.json",
+      "ok": true
+    },
+    {
+      "name": "current_source:configs/ptx_frontend/v1/profile.json",
+      "ok": true
+    },
+    {
+      "name": "snapshot:configs/ptx_frontend/v1/profile.json",
+      "ok": true
+    },
+    {
+      "name": "current_source:native/ptx_host_check/main.cpp",
+      "ok": true
+    },
+    {
+      "name": "snapshot:native/ptx_host_check/main.cpp",
+      "ok": true
+    },
+    {
+      "name": "current_source:configs/target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "snapshot:configs/target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "current_source:configs/target_caps.json",
+      "ok": true
+    },
+    {
+      "name": "snapshot:configs/target_caps.json",
+      "ok": true
+    },
+    {
+      "name": "current_source:configs/candidates/block32-v1/target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "snapshot:configs/candidates/block32-v1/target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "expected_modules",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_passed",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:corpus.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:module/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:host_audit",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:comparison.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_not_loadable",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:source.ptx",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:ir.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:kernel_body.hpp",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:source_map.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:profile.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32:bundle:abi.json",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_trace",
+      "ok": true
+    },
+    {
+      "name": "copy_u32_comparison",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_passed",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:corpus.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:module/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:host_audit",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:comparison.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_not_loadable",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:source.ptx",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:ir.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:kernel_body.hpp",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:source_map.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:profile.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32:bundle:abi.json",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_trace",
+      "ok": true
+    },
+    {
+      "name": "vadd_u32_comparison",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_passed",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:corpus.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:module/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:host_audit",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:comparison.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_not_loadable",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:source.ptx",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:ir.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:kernel_body.hpp",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:source_map.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:profile.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32:bundle:abi.json",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_trace",
+      "ok": true
+    },
+    {
+      "name": "affine_u32_comparison",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_passed",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:corpus.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:module/manifest.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:host_audit",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:comparison.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_not_loadable",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:source.ptx",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:ir.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:kernel_body.hpp",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:source_map.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:profile.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe:bundle:abi.json",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_trace",
+      "ok": true
+    },
+    {
+      "name": "semantics_probe_comparison",
+      "ok": true
+    },
+    {
+      "name": "fault_detected",
+      "ok": true
+    },
+    {
+      "name": "fault_copy_hash",
+      "ok": true
+    },
+    {
+      "name": "original_header_preserved",
+      "ok": true
+    },
+    {
+      "name": "pre_frontend_baseline_preserved:configs/target_lock.json",
+      "ok": true
+    },
+    {
+      "name": "pre_frontend_baseline_preserved:configs/target_caps.json",
+      "ok": true
+    },
+    {
+      "name": "pre_frontend_baseline_preserved:configs/native_smoke.json",
+      "ok": true
+    },
+    {
+      "name": "pre_frontend_baseline_preserved:configs/candidates/block32-v1/target_lock.json",
+      "ok": true
+    }
+  ],
+  "passed": 174,
+  "total": 174,
+  "verifier_sha256": "6a57e8c40d277789bc64d4579ba50a66deca75f0b1fa5a025bdae0aedf87790e"
+}

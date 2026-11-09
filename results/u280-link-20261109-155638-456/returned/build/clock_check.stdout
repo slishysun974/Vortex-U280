@@ -1,0 +1,1 @@
+kernel clock gate PASSED: clk_kernel_00_unbuffered_net @ 5.0 ns (200 MHz), setup WNS 0.119, hold WHS 0.009, 289539 endpoints

@@ -1,0 +1,356 @@
+{
+  "schema_version": "u280-timing-review-v1",
+  "argv": [
+    "scripts/review_u280_timing.py",
+    "--run-id",
+    "u280-timing-review-20261109-v2"
+  ],
+  "status": "PASS",
+  "scope": "archived report extraction and metadata consistency only",
+  "inputs": {
+    "methodology": {
+      "path": "results\\u280-archive-20261109-v5\\returned\\reports\\link\\imp\\impl_1_hw_bb_locked_methodology_drc_routed.rpt",
+      "sha256": "f58e68b03c6664c9cb40488dbbbfa32c64d0bde0b8c18ba99c982a461b72976f",
+      "bytes": 130061
+    },
+    "timing": {
+      "path": "results\\u280-archive-20261109-v5\\returned\\reports\\link\\imp\\impl_1_hw_bb_locked_timing_summary_postroute_physopted.rpt",
+      "sha256": "c16769502472d936e0b6267f279674e6646e5490ef0dbeec9caf3b7025993e3f",
+      "bytes": 16875296
+    },
+    "topology": {
+      "path": "results\\u280-archive-20261109-v5\\returned\\inspection\\clock_freq_topology.json",
+      "sha256": "55747a91785221488b2cc0a355c29e8ab530ad0e1f7f0cf48c6f25e21ddc0cad",
+      "bytes": 527
+    },
+    "embedded": {
+      "path": "results\\u280-archive-20261109-v5\\returned\\inspection\\embedded_metadata.xml",
+      "sha256": "d6e6ec8f919c9b7daf897540f2e5ef37d1ba5a00e97ca2a41099f7e7f48be6ab",
+      "bytes": 3516
+    },
+    "drc": {
+      "path": "results\\u280-archive-20261109-v5\\returned\\reports\\link\\imp\\impl_1_hw_bb_locked_drc_routed.rpt",
+      "sha256": "d044fa81591cca45be8d0aa7b482c1d2675cafc3f85175c84243a1446f7ef7ea",
+      "bytes": 165083
+    }
+  },
+  "board_readiness": "BLOCKED",
+  "board_clock_observation": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "critical_warnings": [
+    {
+      "id": "TIMING-1#1",
+      "detail": "Invalid clock waveform on Clock Modifying Block  \nInvalid clock waveform for clock clk_kernel_00_unbuffered_net specified at a MMCME4_ADV output level0_i/ulp/ulp_ucs/inst/aclk_kernel_00_hierarchy/clkwiz_aclk_kernel_00/inst/CLK_CORE_DRP_I/clk_inst/mmcme4_adv_inst/CLKOUT0 that does not match the CMB settings. The waveform of the clock is 5 {0 2.5}. The expected waveform is 3.333 {0 1.667}",
+      "disposition": "OPEN",
+      "inferred_scope": "platform scalable clock",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-7#1",
+      "detail": "No common node between related clocks  \nThe clocks io_clk_pcie_00_clk_p and dma_ip_axi_aclk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks io_clk_pcie_00_clk_p] -to [get_clocks dma_ip_axi_aclk_1]",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-14#1",
+      "detail": "LUT on the clock tree  \nThe LUT level0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/bsip/inst/USE_SOFTBSCAN.U_BSCAN_TAP/U_BASETAP/update_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#1",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 291 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#2",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks io_clk_pcie_00_clk_p and pipe_clk_1 (see constraint position 294 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#3",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 314 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#4",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/Use_External.Use_BSCANID.No_Dbg_Reg_Access.BUFG_UPDATE/Using_FPGA.Native/O and clk_out2_bd_39ab_clkwiz_level0_periph_0_1, dma_ip_axi_aclk_1,\nlevel0_i/blp/blp_i/ss_cmp/inst/jtag_fallback/inst/bs_switch/inst/BSCAN_SWITCH.N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK,\nlevel0_i/blp/blp_i/ss_cmp/inst/mdm_board_control/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O\nlevel0_i/blp/blp_i/ss_cmp/inst/mgmt_debug_bridge/inst/axi_jtag/inst/u_jtag_proc/tck_i_reg/Q (see constraint position 313 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#5",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks level0_i/blp/blp_i/ss_hif/inst/pcie/inst/bd_39ab_pcie_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O and io_clk_pcie_00_clk_p (see constraint position 290 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    },
+    {
+      "id": "TIMING-54#6",
+      "detail": "Scoped false path, clock group or max delay datapath only constraint between clocks  \nA scoped Clock Group timing constraint is set between clocks pipe_clk_1 and io_clk_pcie_00_clk_p (see constraint position 295 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.",
+      "disposition": "OPEN",
+      "inferred_scope": "platform PCIe/debug clock hierarchy",
+      "inference_basis": "named cells/clocks in the archived report; not a vendor waiver"
+    }
+  ],
+  "counts": {
+    "TIMING-1": 1,
+    "TIMING-7": 1,
+    "TIMING-14": 1,
+    "TIMING-54": 6
+  },
+  "timing_coverage": {
+    "no_input_delay": 7,
+    "no_output_delay": 3,
+    "unconstrained_internal_endpoints": 0
+  },
+  "methodology_rules": [
+    {
+      "rule": "TIMING-1",
+      "severity": "Critical Warning",
+      "description": "Invalid clock waveform on Clock Modifying Block",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-7",
+      "severity": "Critical Warning",
+      "description": "No common node between related clocks",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-14",
+      "severity": "Critical Warning",
+      "description": "LUT on the clock tree",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-54",
+      "severity": "Critical Warning",
+      "description": "Scoped false path, clock group or max delay datapath only constraint between clocks",
+      "count": 6
+    },
+    {
+      "rule": "LUTAR-1",
+      "severity": "Warning",
+      "description": "LUT drives async reset alert",
+      "count": 21
+    },
+    {
+      "rule": "TIMING-9",
+      "severity": "Warning",
+      "description": "Unknown CDC Logic",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-10",
+      "severity": "Warning",
+      "description": "Missing property on synchronizer",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-18",
+      "severity": "Warning",
+      "description": "Missing input or output delay",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-24",
+      "severity": "Warning",
+      "description": "Overridden Max delay datapath only",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-47",
+      "severity": "Warning",
+      "description": "False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks",
+      "count": 7
+    },
+    {
+      "rule": "XDCB-5",
+      "severity": "Warning",
+      "description": "Runtime inefficient way to find pin objects",
+      "count": 2
+    },
+    {
+      "rule": "XDCC-1",
+      "severity": "Warning",
+      "description": "Scoped Clock constraint overwritten with the same name",
+      "count": 2
+    },
+    {
+      "rule": "XDCC-7",
+      "severity": "Warning",
+      "description": "Scoped Clock constraint overwritten on the same source",
+      "count": 2
+    },
+    {
+      "rule": "CLKC-3",
+      "severity": "Advisory",
+      "description": "Clock Buffer has LOC and not CLOCK_REGION",
+      "count": 30
+    },
+    {
+      "rule": "CLKC-13",
+      "severity": "Advisory",
+      "description": "PLLE4 divide could be done by BUFG_GT",
+      "count": 1
+    },
+    {
+      "rule": "CLKC-40",
+      "severity": "Advisory",
+      "description": "Substitute PLLE4 for MMCME4 check",
+      "count": 1
+    },
+    {
+      "rule": "CLKC-56",
+      "severity": "Advisory",
+      "description": "MMCME4 with global clock driver has no LOC",
+      "count": 2
+    },
+    {
+      "rule": "RTGT-1",
+      "severity": "Advisory",
+      "description": "RAM retargeting possibility",
+      "count": 17
+    },
+    {
+      "rule": "XDCB-6",
+      "severity": "Advisory",
+      "description": "Timing constraint pointing to hierarchical pins",
+      "count": 2
+    }
+  ],
+  "drc_rules": [
+    {
+      "rule": "DPOP-3",
+      "severity": "Warning",
+      "description": "PREG Output pipelining",
+      "count": 20
+    },
+    {
+      "rule": "DPOP-4",
+      "severity": "Warning",
+      "description": "MREG Output pipelining",
+      "count": 40
+    },
+    {
+      "rule": "FLBO-1",
+      "severity": "Warning",
+      "description": "Pblock overlap",
+      "count": 5
+    },
+    {
+      "rule": "LOCE-1",
+      "severity": "Warning",
+      "description": "Pblock ranges contradict LOC constraints on logic assigned to the Pblock",
+      "count": 3
+    },
+    {
+      "rule": "PDCN-1569",
+      "severity": "Warning",
+      "description": "LUT equation term check",
+      "count": 27
+    },
+    {
+      "rule": "REQP-1774",
+      "severity": "Warning",
+      "description": "RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32",
+      "count": 2
+    },
+    {
+      "rule": "REQP-1776",
+      "severity": "Warning",
+      "description": "RAMB36E2_WRITE_WIDTH_B_18_doesnt_use_WEB72",
+      "count": 2
+    },
+    {
+      "rule": "REQP-1858",
+      "severity": "Warning",
+      "description": "RAMB36E2_writefirst_collision_advisory",
+      "count": 22
+    },
+    {
+      "rule": "RPBF-3",
+      "severity": "Warning",
+      "description": "IO port buffering is incomplete",
+      "count": 216
+    },
+    {
+      "rule": "RTSTAT-10",
+      "severity": "Warning",
+      "description": "No routable loads",
+      "count": 1
+    },
+    {
+      "rule": "HDPRA-51",
+      "severity": "Advisory",
+      "description": "Narrow Edge with Location Constraints",
+      "count": 1
+    },
+    {
+      "rule": "HDPRA-53",
+      "severity": "Advisory",
+      "description": "Edge with Location Constraints",
+      "count": 1
+    },
+    {
+      "rule": "HDPRA-55",
+      "severity": "Advisory",
+      "description": "Narrow Gap with Location Constraints",
+      "count": 1
+    },
+    {
+      "rule": "HDPRA-57",
+      "severity": "Advisory",
+      "description": "Gap with Location Constraints",
+      "count": 2
+    }
+  ],
+  "supersedes": "D11 closeout empty rule arrays/zero methodology_critical_count were a TOC-split parser defect, not zero warnings; original retained.",
+  "clocks": [
+    {
+      "m_freq_Mhz": "450",
+      "m_type": "SYSTEM",
+      "m_name": "hbm_aclk"
+    },
+    {
+      "m_freq_Mhz": "500",
+      "m_type": "KERNEL",
+      "m_name": "KERNEL_CLK"
+    },
+    {
+      "m_freq_Mhz": "200",
+      "m_type": "DATA",
+      "m_name": "DATA_CLK"
+    }
+  ],
+  "data_clock_mapping": [
+    {
+      "port": "DATA_CLK",
+      "frequency": "200.0MHz",
+      "name": "ulp_ucs/aclk_kernel_00"
+    }
+  ],
+  "missing_delay_named_in_methodology": "io_perst_n_00[0]",
+  "next_checks": [
+    "Inspect implemented DCP for all 10 missing-delay port names and shell baseline/constraint provenance.",
+    "Review TIMING-7 clock relationship and six TIMING-54 exceptions against the exact platform baseline.",
+    "Review TIMING-14 platform BSCAN clock LUT; hierarchy alone does not waive the warning.",
+    "After HOST readiness and controlled load, compare loaded UUID and actual clock with DATA_CLK=200 MHz before native execution."
+  ],
+  "official_references": [
+    "https://docs.amd.com/r/2023.1-English/ug1393-vitis-application-acceleration/Identifying-Platform-Clocks",
+    "https://xilinx.github.io/XRT/2022.1/html/debug-faq.html#incorrect-frequency-scaling",
+    "https://xilinx.github.io/XRT/2022.1/html/hm.html"
+  ],
+  "exit_code": 0
+}

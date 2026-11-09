@@ -1,0 +1,1345 @@
+{
+  "schema_version": 4,
+  "run_id": "ab-d3-xrtsim-20261108-v1",
+  "status": "PASS",
+  "started_at": "2026-11-08T02:28:18.481593+00:00",
+  "backend": "xrtsim",
+  "check_only": false,
+  "upstream_smoke": "PASS",
+  "p0_three_kernels": "NOT_RUN",
+  "afu_verification": "PASS",
+  "hardware_verification": "NOT_RUN",
+  "demo_execution": "PASS",
+  "processor_rtl_verification": "NOT_RUN",
+  "afu_scope": "NOXRT/XRTSIM AFU RTL model only; no vendor runtime, hw_emu, shell or board acceptance",
+  "scope": "upstream demo only; RV64 candidate, 1 cluster / 1 core / 4 warps / 4 threads; not P0 block32",
+  "script_sha256": "bd30a9210efbfae8f2ddbdf69342d14e04364bebe8130bea83b98a0e1e30804e",
+  "source": {
+    "path": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+    "expected_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+    "captured_manifest_sha256": "02ca673d3df38418f607e868b016ad6482ed0c2fd791d406bdfcf8028b58375a",
+    "manifest_mismatches": [],
+    "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+    "source_tree": "cbf4557e4c8b472746239bc3c6761b18e6879399",
+    "source_changes": "",
+    "submodule_status": "-b1befdb36df8af7ac9e2c96acaf81957aab5d107 third_party/cocogfx\n-79e453139072df42c9ec8f697132ba485d74e23d third_party/cvfpu\n-aaf5736dffa521603b681fd5853760c671446c85 third_party/hardfloat\n e62c84a6f0e06566ba6e182d308434b4532068a5 third_party/ramulator (e62c84a)\n b51ef8f3201669b2288104c28546fc72532a1ea4 third_party/softfloat (b51ef8f)",
+    "VERSION_sha256": "bdd9a1a6ec595aff3c410983b128f9a295d382dfb7731546a9f624c8678397b3",
+    "file_sha256": {
+      "configure": "5c95414e272f2ee91d03dc6e360091740cdfc987277b468832994c80fd5d2ad7",
+      "config.mk.in": "83f01b834110142a4fee05496b695a6c66b7b67595f91f39d6566fc759264375",
+      "VX_config.toml": "b0bba05aeef9bec1797c85f69978dc1f2a8bf5687e86834fc5bfe600333e1d0c",
+      "VX_types.toml": "363cbf95a0f55425da8fca2574290ea635c84f1304d114d42455242d4756ebe8",
+      "ci/blackbox.sh": "5fbbf65ade11b625f02d624c4c0b57e8f97389be947c149fdb3a34cb855ef71c",
+      "tests/regression/common.mk": "0e714aaf18e5845b6f9c65cef068fd7bcac79a377004ef7243bce74bd73c33c6",
+      "tests/regression/demo/Makefile": "9b236ee1aafa211af3c51c62803e2143610d44d9aa70831cf8a6551200b6b10a",
+      "tests/regression/demo/main.cpp": "5e1f43302d9638383610434d3f39b77f1a5d3891e233abfe526ed2f1e5ee4d3c",
+      "tests/regression/demo/kernel.cpp": "8a9d333e2b8c7eb98a384f6732e4b2beb90dc6083a6522c7f8ca3de732fa58f6"
+    }
+  },
+  "tooldir": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+  "expected_toolchain_revision": "v3.0.1",
+  "ramulator_deps": "/mnt/d/Vortex-U280/results/ab-d2-ramulator-deps-20261108-v1/dependencies",
+  "build_path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+  "expected_toolchain_commit": "8c64cf921d3c6c456e80f00d24482d0aa2153a82",
+  "toolchain_provenance": "provided directory; version outputs and file hashes recorded, release archive identity not attested",
+  "commands": [
+    {
+      "label": "source_commit",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:21.733652+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_source_commit.log",
+      "finished_at": "2026-11-08T02:28:21.847948+00:00",
+      "elapsed_seconds": 0.091,
+      "log_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    {
+      "label": "source_tree",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:21.934947+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_source_tree.log",
+      "finished_at": "2026-11-08T02:28:21.997866+00:00",
+      "elapsed_seconds": 0.022,
+      "log_sha256": "ce19e7aa4e8750c51df2ec0e60baa53f7245fa972b694951e39401de4dd437af"
+    },
+    {
+      "label": "source_changes",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "diff",
+        "--exit-code",
+        "--ignore-submodules=untracked",
+        "HEAD",
+        "--"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.037896+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_source_changes.log",
+      "finished_at": "2026-11-08T02:28:22.179804+00:00",
+      "elapsed_seconds": 0.121,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "submodule_status",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "submodule",
+        "status",
+        "--recursive"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.223783+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_submodule_status.log",
+      "finished_at": "2026-11-08T02:28:22.363138+00:00",
+      "elapsed_seconds": 0.121,
+      "log_sha256": "af67e68fc80d108266bf4cb40be421645391b26d2de0e9532ab3f6e21e6736ff"
+    },
+    {
+      "label": "glibc",
+      "argv": [
+        "getconf",
+        "GNU_LIBC_VERSION"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.402298+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_glibc.log",
+      "finished_at": "2026-11-08T02:28:22.430832+00:00",
+      "elapsed_seconds": 0.011,
+      "log_sha256": "2c6c80f81a99db1604b04e9bb1bef2e7e215b2322cd3e465b70f05ad2a9e8896"
+    },
+    {
+      "label": "host_bash",
+      "argv": [
+        "/usr/bin/bash",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.465090+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_host_bash.log",
+      "finished_at": "2026-11-08T02:28:22.492276+00:00",
+      "elapsed_seconds": 0.012,
+      "log_sha256": "51bd40ffa4710175920033d329a0e9e1667e6b7f56178e302432ff4610d554a7"
+    },
+    {
+      "label": "host_git",
+      "argv": [
+        "/usr/bin/git",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.525730+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_host_git.log",
+      "finished_at": "2026-11-08T02:28:22.547308+00:00",
+      "elapsed_seconds": 0.007,
+      "log_sha256": "30279da57eb04a496cb207bc2f7c7e04d9c94788be5bc68824e6727e283b264b"
+    },
+    {
+      "label": "host_gcc",
+      "argv": [
+        "/usr/bin/gcc",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.580929+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_host_gcc.log",
+      "finished_at": "2026-11-08T02:28:22.625026+00:00",
+      "elapsed_seconds": 0.026,
+      "log_sha256": "9829ba25432aae95cc193accafa14bfab70abb264f797d07c47ba1dcdf4f31a1"
+    },
+    {
+      "label": "host_gpp",
+      "argv": [
+        "/usr/bin/g++",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.671456+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_host_gpp.log",
+      "finished_at": "2026-11-08T02:28:22.725994+00:00",
+      "elapsed_seconds": 0.024,
+      "log_sha256": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d"
+    },
+    {
+      "label": "host_cmake",
+      "argv": [
+        "/usr/bin/cmake",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.766664+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_host_cmake.log",
+      "finished_at": "2026-11-08T02:28:22.908521+00:00",
+      "elapsed_seconds": 0.123,
+      "log_sha256": "6c08f840b67782da73a6fe113b64712615441722b15cd2723062dd4cc00a10d8"
+    },
+    {
+      "label": "host_make",
+      "argv": [
+        "/usr/bin/make",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:22.952914+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_host_make.log",
+      "finished_at": "2026-11-08T02:28:22.990964+00:00",
+      "elapsed_seconds": 0.018,
+      "log_sha256": "8ee498ee2fc27e8dcdf99191b454077df95e3840d841ec94321748b6d7f36819"
+    },
+    {
+      "label": "host_python3",
+      "argv": [
+        "/usr/bin/python3",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.027809+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_host_python3.log",
+      "finished_at": "2026-11-08T02:28:23.066644+00:00",
+      "elapsed_seconds": 0.015,
+      "log_sha256": "f6b75e07f1488db28a89724a522725e3e01af3dc78f6fd365f17eb4059e41056"
+    },
+    {
+      "label": "host_ar",
+      "argv": [
+        "/usr/bin/ar",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.107081+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/13_host_ar.log",
+      "finished_at": "2026-11-08T02:28:23.153867+00:00",
+      "elapsed_seconds": 0.024,
+      "log_sha256": "1dc4e6d95a3f819c63b794fa19bc544b35d6c57c90b56f04cf031df05cd4f99a"
+    },
+    {
+      "label": "host_find",
+      "argv": [
+        "/usr/bin/find",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.196194+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/14_host_find.log",
+      "finished_at": "2026-11-08T02:28:23.227671+00:00",
+      "elapsed_seconds": 0.013,
+      "log_sha256": "58806b4ae3e7dace9977d420a0a325fdd1c31b5326f52366498f57e53e00eae2"
+    },
+    {
+      "label": "host_sed",
+      "argv": [
+        "/usr/bin/sed",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.276617+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/15_host_sed.log",
+      "finished_at": "2026-11-08T02:28:23.304098+00:00",
+      "elapsed_seconds": 0.011,
+      "log_sha256": "44c9b7aa39fbb40393dcb15ce1a2996677213176b59aa52188111671c7199f6e"
+    },
+    {
+      "label": "host_realpath",
+      "argv": [
+        "/usr/bin/realpath",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.362006+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/16_host_realpath.log",
+      "finished_at": "2026-11-08T02:28:23.397107+00:00",
+      "elapsed_seconds": 0.016,
+      "log_sha256": "8e6b1b81cc6b9f38846922d030cde516d76729eb18894a22d64eafdc7b7f8594"
+    },
+    {
+      "label": "host_ccache",
+      "argv": [
+        "/usr/bin/ccache",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.435539+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/17_host_ccache.log",
+      "finished_at": "2026-11-08T02:28:23.485113+00:00",
+      "elapsed_seconds": 0.031,
+      "log_sha256": "9c3008378530cbe9a300ccd0d037e839ac82210a5303bf17d06d315be562c10b"
+    },
+    {
+      "label": "clang_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/clang",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:23.519803+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/18_clang_version.log",
+      "finished_at": "2026-11-08T02:28:24.002412+00:00",
+      "elapsed_seconds": 0.471,
+      "log_sha256": "01c73bca4021cd60b27a2bf0973bbb6616aa18896758b111bbf36b86ac19d10e"
+    },
+    {
+      "label": "clangpp_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/clang++",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.043530+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/19_clangpp_version.log",
+      "finished_at": "2026-11-08T02:28:24.126699+00:00",
+      "elapsed_seconds": 0.07,
+      "log_sha256": "01c73bca4021cd60b27a2bf0973bbb6616aa18896758b111bbf36b86ac19d10e"
+    },
+    {
+      "label": "llvm_objcopy_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/llvm-objcopy",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.167569+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/20_llvm_objcopy_version.log",
+      "finished_at": "2026-11-08T02:28:24.205576+00:00",
+      "elapsed_seconds": 0.023,
+      "log_sha256": "735426035335350ae1afb64cab358324e66f6a319a3d48e86a716278b2ba7b91"
+    },
+    {
+      "label": "llvm_objdump_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/llvm-objdump",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.236746+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/21_llvm_objdump_version.log",
+      "finished_at": "2026-11-08T02:28:24.286708+00:00",
+      "elapsed_seconds": 0.038,
+      "log_sha256": "0d1f90249166be985ccd84cea8a951877cab0b268fde11c86ef96b55cb89fe7c"
+    },
+    {
+      "label": "riscv_gcc_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.329799+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/22_riscv_gcc_version.log",
+      "finished_at": "2026-11-08T02:28:24.360532+00:00",
+      "elapsed_seconds": 0.017,
+      "log_sha256": "1465dfea136403db376c980056ae4cbc568db1682230d28c19568814a0547451"
+    },
+    {
+      "label": "riscv_gcc_ar_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc-ar",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.390703+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/23_riscv_gcc_ar_version.log",
+      "finished_at": "2026-11-08T02:28:24.422497+00:00",
+      "elapsed_seconds": 0.02,
+      "log_sha256": "52d092533f1fcc0b16139119a06249c16adfffd7379a4f76088179d234029255"
+    },
+    {
+      "label": "riscv_objdump_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-objdump",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.473830+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/24_riscv_objdump_version.log",
+      "finished_at": "2026-11-08T02:28:24.497744+00:00",
+      "elapsed_seconds": 0.009,
+      "log_sha256": "2823d4cf83a26759d22ee7494b62ca5cdce8551fb38ae6b383501bdf322264f1"
+    },
+    {
+      "label": "verilator_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/verilator/bin/verilator",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.527346+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/25_verilator_version.log",
+      "finished_at": "2026-11-08T02:28:24.760227+00:00",
+      "elapsed_seconds": 0.219,
+      "log_sha256": "46aedd5b30efdd94426c9eebbcf4a6ae7a9680526cc90ce8fec95977c2d6b12d"
+    },
+    {
+      "label": "verilator_bin_version",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/verilator/bin/verilator_bin",
+        "--version"
+      ],
+      "cwd": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+      "started_at": "2026-11-08T02:28:24.824059+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/26_verilator_bin_version.log",
+      "finished_at": "2026-11-08T02:28:24.860457+00:00",
+      "elapsed_seconds": 0.02,
+      "log_sha256": "46aedd5b30efdd94426c9eebbcf4a6ae7a9680526cc90ce8fec95977c2d6b12d"
+    },
+    {
+      "label": "host_cxx20_compile",
+      "argv": [
+        "/usr/bin/g++",
+        "-std=c++20",
+        "probe.cpp",
+        "-o",
+        "host_probe"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1/probes",
+      "started_at": "2026-11-08T02:28:38.210468+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/27_host_cxx20_compile.log",
+      "finished_at": "2026-11-08T02:28:38.854434+00:00",
+      "elapsed_seconds": 0.629,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "host_cxx20_run",
+      "argv": [
+        "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1/probes/host_probe"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1/probes",
+      "started_at": "2026-11-08T02:28:38.879993+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/28_host_cxx20_run.log",
+      "finished_at": "2026-11-08T02:28:38.904970+00:00",
+      "elapsed_seconds": 0.01,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "riscv_gcc_compile",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc",
+        "-march=rv64imafd",
+        "-mabi=lp64d",
+        "-c",
+        "probe.c",
+        "-o",
+        "gcc_probe.o"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1/probes",
+      "started_at": "2026-11-08T02:28:38.940750+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/29_riscv_gcc_compile.log",
+      "finished_at": "2026-11-08T02:28:39.071497+00:00",
+      "elapsed_seconds": 0.121,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vortex_clang_compile",
+      "argv": [
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/clang",
+        "--target=riscv64-unknown-elf",
+        "-march=rv64imafd",
+        "-mabi=lp64d",
+        "-Xclang",
+        "-target-feature",
+        "-Xclang",
+        "+xvortex",
+        "-mllvm",
+        "-disable-loop-idiom-all",
+        "-c",
+        "probe.c",
+        "-o",
+        "clang_probe.o"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1/probes",
+      "started_at": "2026-11-08T02:28:39.110789+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/30_vortex_clang_compile.log",
+      "finished_at": "2026-11-08T02:28:39.346232+00:00",
+      "elapsed_seconds": 0.222,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "configure",
+      "argv": [
+        "bash",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1/configure",
+        "--xlen=64",
+        "--tooldir=/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:28:39.433392+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/31_configure.log",
+      "finished_at": "2026-11-08T02:28:42.641460+00:00",
+      "elapsed_seconds": 3.192,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "resolve_backend_configuration",
+      "argv": [
+        "python3",
+        "-B",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/ci/gen_config.py",
+        "--config=/opt/vortex-ab/sources/vortex-7fe19369587c-v1/VX_config.toml",
+        "--cflags=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4 -DSIMULATION -DSV_DPI -DVX_CFG_XLEN=64",
+        "--format=cflags"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:28:42.678703+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/32_resolve_backend_configuration.log",
+      "finished_at": "2026-11-08T02:28:42.827333+00:00",
+      "elapsed_seconds": 0.123,
+      "log_sha256": "1eaac517c2bade95f649f36a9c783de96ddd809d2ada1d097851cff997bc2f43"
+    },
+    {
+      "label": "ramulator_configure_offline",
+      "argv": [
+        "cmake",
+        "-S",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party/ramulator",
+        "-B",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party/ramulator/build",
+        "-DFETCHCONTENT_FULLY_DISCONNECTED=ON",
+        "-DFETCHCONTENT_UPDATES_DISCONNECTED=ON"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:29:19.801527+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/33_ramulator_configure_offline.log",
+      "finished_at": "2026-11-08T02:29:26.732522+00:00",
+      "elapsed_seconds": 6.917,
+      "log_sha256": "c4553c6230d2161150ede220a785bce173d201ab8676c4f2d98df5ce7eda460e"
+    },
+    {
+      "label": "third_party",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "softfloat",
+        "ramulator"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:29:26.757473+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/34_third_party.log",
+      "finished_at": "2026-11-08T02:35:39.086801+00:00",
+      "elapsed_seconds": 372.318,
+      "log_sha256": "6701a73ddb0ec9af5748754994b39ae1be48b331f896790eecd4fb62a07e7588"
+    },
+    {
+      "label": "kernel_libraries",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/kernel"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:35:39.124233+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/35_kernel_libraries.log",
+      "finished_at": "2026-11-08T02:35:39.569187+00:00",
+      "elapsed_seconds": 0.426,
+      "log_sha256": "cde01dad0549f0dfd80786fc96cb5b2b978dfa26e1986bde06c5959d586d8c98"
+    },
+    {
+      "label": "runtime_stub",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/stub"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:35:39.606618+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/36_runtime_stub.log",
+      "finished_at": "2026-11-08T02:35:55.156760+00:00",
+      "elapsed_seconds": 15.535,
+      "log_sha256": "92d520fa54e3e6eddb42c7c795f846d80178ddc8602580842bfb02a4a1b5a4ec"
+    },
+    {
+      "label": "demo_build",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:35:55.224023+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/37_demo_build.log",
+      "finished_at": "2026-11-08T02:35:56.932856+00:00",
+      "elapsed_seconds": 1.68,
+      "log_sha256": "7621bd299c991f7151263eac52adc38129c69ee8a1f01ddb70c261069711937d"
+    },
+    {
+      "label": "runtime_build",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo",
+        "runtime-xrt"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:35:57.019144+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/38_runtime_build.log",
+      "finished_at": "2026-11-08T02:37:51.918786+00:00",
+      "elapsed_seconds": 115.279,
+      "log_sha256": "c1d684ce0429e562979cea18c9dc2a3b58d50c0fc4123f9ee195382e59055756"
+    },
+    {
+      "label": "demo_run",
+      "argv": [
+        "make",
+        "-j8",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+        "XLEN=64",
+        "THREADS=8",
+        "THIRD_PARTY_DIR=/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/third_party",
+        "TARGET=xrtsim",
+        "-C",
+        "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo",
+        "run-xrt",
+        "OPTS=-n1"
+      ],
+      "cwd": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1",
+      "started_at": "2026-11-08T02:37:51.999732+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/39_demo_run.log",
+      "finished_at": "2026-11-08T02:37:52.701030+00:00",
+      "elapsed_seconds": 0.676,
+      "log_sha256": "43b8b0927e102d894a207a3cc0829b24132857c8c48ae3319f0d134989e90e88"
+    }
+  ],
+  "preflight": [
+    {
+      "name": "config_native_smoke.json",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/configs/native_smoke.json"
+    },
+    {
+      "name": "config_target_lock.json",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/configs/target_lock.json"
+    },
+    {
+      "name": "config_target_caps.json",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/configs/target_caps.json"
+    },
+    {
+      "name": "fixed_target",
+      "ok": true,
+      "detail": "expected vortex-v3-rv64-1c4w4t-smoke-draft, RV64, 1c/4w/4t, timing simx"
+    },
+    {
+      "name": "locked_source",
+      "ok": true,
+      "detail": "lock must refer to 7fe19369587c087f902c3e2bc2add612aa910a95"
+    },
+    {
+      "name": "config_lock_hash",
+      "ok": true,
+      "detail": "native_smoke.json must match target_lock.json"
+    },
+    {
+      "name": "caps_lock_hash",
+      "ok": true,
+      "detail": "target_caps.json must match target_lock.json"
+    },
+    {
+      "name": "target_native_smoke.json",
+      "ok": true,
+      "detail": "all config artifacts must describe the same RV64 smoke candidate"
+    },
+    {
+      "name": "target_target_lock.json",
+      "ok": true,
+      "detail": "all config artifacts must describe the same RV64 smoke candidate"
+    },
+    {
+      "name": "target_target_caps.json",
+      "ok": true,
+      "detail": "all config artifacts must describe the same RV64 smoke candidate"
+    },
+    {
+      "name": "source_config_hash",
+      "ok": true,
+      "detail": "source VX_config.toml must match captured candidate"
+    },
+    {
+      "name": "source_manifest",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/results/ab-d1-source-20261107-v2/source_manifest.json"
+    },
+    {
+      "name": "source_manifest_hash",
+      "ok": true,
+      "detail": "source manifest must match target lock"
+    },
+    {
+      "name": "captured_source_files",
+      "ok": true,
+      "detail": "all captured source file hashes must match; mismatch count=0"
+    },
+    {
+      "name": "source_directory",
+      "ok": true,
+      "detail": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1"
+    },
+    {
+      "name": "source_commit",
+      "ok": true,
+      "detail": "see logs/01_source_commit.log"
+    },
+    {
+      "name": "source_tree",
+      "ok": true,
+      "detail": "see logs/02_source_tree.log"
+    },
+    {
+      "name": "source_changes",
+      "ok": true,
+      "detail": "see logs/03_source_changes.log"
+    },
+    {
+      "name": "submodule_status",
+      "ok": true,
+      "detail": "see logs/04_submodule_status.log"
+    },
+    {
+      "name": "pinned_commit",
+      "ok": true,
+      "detail": "expected 7fe19369587c087f902c3e2bc2add612aa910a95"
+    },
+    {
+      "name": "toolchain_revision",
+      "ok": true,
+      "detail": "required prebuilt revision v3.0.1"
+    },
+    {
+      "name": "platform",
+      "ok": true,
+      "detail": "Linux x86_64; requires Linux x86_64"
+    },
+    {
+      "name": "source_path",
+      "ok": true,
+      "detail": "/opt/vortex-ab/sources/vortex-7fe19369587c-v1"
+    },
+    {
+      "name": "tooldir_path",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1"
+    },
+    {
+      "name": "run_path",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/results/ab-d3-xrtsim-20261108-v1"
+    },
+    {
+      "name": "build_path",
+      "ok": true,
+      "detail": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1"
+    },
+    {
+      "name": "fresh_build_directory",
+      "ok": true,
+      "detail": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1"
+    },
+    {
+      "name": "glibc",
+      "ok": true,
+      "detail": "glibc 2.35; pinned ubuntu/focal bundle requires glibc >= 2.35"
+    },
+    {
+      "name": "host_bash",
+      "ok": true,
+      "detail": "/usr/bin/bash"
+    },
+    {
+      "name": "executable_bash",
+      "ok": true,
+      "detail": "see logs/06_host_bash.log"
+    },
+    {
+      "name": "host_git",
+      "ok": true,
+      "detail": "/usr/bin/git"
+    },
+    {
+      "name": "executable_git",
+      "ok": true,
+      "detail": "see logs/07_host_git.log"
+    },
+    {
+      "name": "host_gcc",
+      "ok": true,
+      "detail": "/usr/bin/gcc"
+    },
+    {
+      "name": "executable_gcc",
+      "ok": true,
+      "detail": "see logs/08_host_gcc.log"
+    },
+    {
+      "name": "host_g++",
+      "ok": true,
+      "detail": "/usr/bin/g++"
+    },
+    {
+      "name": "executable_g++",
+      "ok": true,
+      "detail": "see logs/09_host_gpp.log"
+    },
+    {
+      "name": "host_cmake",
+      "ok": true,
+      "detail": "/usr/bin/cmake"
+    },
+    {
+      "name": "executable_cmake",
+      "ok": true,
+      "detail": "see logs/10_host_cmake.log"
+    },
+    {
+      "name": "host_make",
+      "ok": true,
+      "detail": "/usr/bin/make"
+    },
+    {
+      "name": "executable_make",
+      "ok": true,
+      "detail": "see logs/11_host_make.log"
+    },
+    {
+      "name": "host_python3",
+      "ok": true,
+      "detail": "/usr/bin/python3"
+    },
+    {
+      "name": "executable_python3",
+      "ok": true,
+      "detail": "see logs/12_host_python3.log"
+    },
+    {
+      "name": "host_ar",
+      "ok": true,
+      "detail": "/usr/bin/ar"
+    },
+    {
+      "name": "executable_ar",
+      "ok": true,
+      "detail": "see logs/13_host_ar.log"
+    },
+    {
+      "name": "host_find",
+      "ok": true,
+      "detail": "/usr/bin/find"
+    },
+    {
+      "name": "executable_find",
+      "ok": true,
+      "detail": "see logs/14_host_find.log"
+    },
+    {
+      "name": "host_sed",
+      "ok": true,
+      "detail": "/usr/bin/sed"
+    },
+    {
+      "name": "executable_sed",
+      "ok": true,
+      "detail": "see logs/15_host_sed.log"
+    },
+    {
+      "name": "host_realpath",
+      "ok": true,
+      "detail": "/usr/bin/realpath"
+    },
+    {
+      "name": "executable_realpath",
+      "ok": true,
+      "detail": "see logs/16_host_realpath.log"
+    },
+    {
+      "name": "host_ccache",
+      "ok": true,
+      "detail": "/usr/bin/ccache"
+    },
+    {
+      "name": "executable_ccache",
+      "ok": true,
+      "detail": "see logs/17_host_ccache.log"
+    },
+    {
+      "name": "clang",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/clang"
+    },
+    {
+      "name": "clang_runnable",
+      "ok": true,
+      "detail": "see logs/18_clang_version.log"
+    },
+    {
+      "name": "clangpp",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/clang++"
+    },
+    {
+      "name": "clangpp_runnable",
+      "ok": true,
+      "detail": "see logs/19_clangpp_version.log"
+    },
+    {
+      "name": "llvm_objcopy",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/llvm-objcopy"
+    },
+    {
+      "name": "llvm_objcopy_runnable",
+      "ok": true,
+      "detail": "see logs/20_llvm_objcopy_version.log"
+    },
+    {
+      "name": "llvm_objdump",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin/llvm-objdump"
+    },
+    {
+      "name": "llvm_objdump_runnable",
+      "ok": true,
+      "detail": "see logs/21_llvm_objdump_version.log"
+    },
+    {
+      "name": "riscv_gcc",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc"
+    },
+    {
+      "name": "riscv_gcc_runnable",
+      "ok": true,
+      "detail": "see logs/22_riscv_gcc_version.log"
+    },
+    {
+      "name": "riscv_gcc_ar",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc-ar"
+    },
+    {
+      "name": "riscv_gcc_ar_runnable",
+      "ok": true,
+      "detail": "see logs/23_riscv_gcc_ar_version.log"
+    },
+    {
+      "name": "riscv_objdump",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/riscv64-gnu-toolchain/bin/riscv64-unknown-elf-objdump"
+    },
+    {
+      "name": "riscv_objdump_runnable",
+      "ok": true,
+      "detail": "see logs/24_riscv_objdump_version.log"
+    },
+    {
+      "name": "verilator",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/verilator/bin/verilator"
+    },
+    {
+      "name": "verilator_runnable",
+      "ok": true,
+      "detail": "see logs/25_verilator_version.log"
+    },
+    {
+      "name": "pinned_verilator_version",
+      "ok": true,
+      "detail": "processor RTL smoke requires pinned Verilator 5.050; see logs/25_verilator_version.log"
+    },
+    {
+      "name": "verilator_bin",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/verilator/bin/verilator_bin"
+    },
+    {
+      "name": "verilator_bin_runnable",
+      "ok": true,
+      "detail": "see logs/26_verilator_bin_version.log"
+    },
+    {
+      "name": "pinned_verilator_bin_version",
+      "ok": true,
+      "detail": "processor RTL smoke requires pinned Verilator 5.050; see logs/26_verilator_bin_version.log"
+    },
+    {
+      "name": "toolchain_file",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/libc64/lib/libc.a"
+    },
+    {
+      "name": "toolchain_file",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/libc64/lib/libm.a"
+    },
+    {
+      "name": "toolchain_file",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/libc64/include/stdio.h"
+    },
+    {
+      "name": "toolchain_file",
+      "ok": true,
+      "detail": "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/libcrt64/lib/baremetal/libclang_rt.builtins-riscv64.a"
+    },
+    {
+      "name": "riscv_sysroot",
+      "ok": true,
+      "detail": "RV64 GNU sysroot is required"
+    },
+    {
+      "name": "submodule_softfloat",
+      "ok": true,
+      "detail": " b51ef8f3201669b2288104c28546fc72532a1ea4 third_party/softfloat (b51ef8f)"
+    },
+    {
+      "name": "submodule_ramulator",
+      "ok": true,
+      "detail": " e62c84a6f0e06566ba6e182d308434b4532068a5 third_party/ramulator (e62c84a)"
+    },
+    {
+      "name": "ramulator_deps_outside_source",
+      "ok": true,
+      "detail": "/mnt/d/Vortex-U280/results/ab-d2-ramulator-deps-20261108-v1/dependencies; dependencies must stay outside the fixed source tree"
+    },
+    {
+      "name": "ramulator_dependencies",
+      "ok": true,
+      "detail": "all pinned dependency file hashes match"
+    },
+    {
+      "name": "host_cxx20_compile",
+      "ok": true,
+      "detail": "see logs/27_host_cxx20_compile.log"
+    },
+    {
+      "name": "host_cxx20_run",
+      "ok": true,
+      "detail": "see logs/28_host_cxx20_run.log"
+    },
+    {
+      "name": "riscv_gcc_compile",
+      "ok": true,
+      "detail": "see logs/29_riscv_gcc_compile.log"
+    },
+    {
+      "name": "vortex_clang_compile",
+      "ok": true,
+      "detail": "see logs/30_vortex_clang_compile.log"
+    }
+  ],
+  "blockers": [],
+  "software_versions": {
+    "runner_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "glibc": "glibc 2.35",
+    "bash": "GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+    "git": "git version 2.34.1",
+    "gcc": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "g++": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "cmake": "cmake version 3.22.1\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+    "make": "GNU Make 4.3\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+    "python3": "Python 3.10.12",
+    "ar": "GNU ar (GNU Binutils for Ubuntu) 2.38\nCopyright (C) 2022 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.",
+    "find": "find (GNU findutils) 4.8.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Eric B. Decker, James Youngman, and Kevin Dalley.\nFeatures enabled: D_TYPE O_NOFOLLOW(enabled) LEAF_OPTIMISATION FTS(FTS_CWDFD) CBO(level=2)",
+    "sed": "/usr/bin/sed (GNU sed) 4.8\nPackaged by Debian\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Jay Fenlason, Tom Lord, Ken Pizzini,\nPaolo Bonzini, Jim Meyering, and Assaf Gordon.\n\nThis sed program was built with SELinux support.\nSELinux is disabled on this system.\n\nGNU sed home page: <https://www.gnu.org/software/sed/>.\nGeneral help using GNU software: <https://www.gnu.org/gethelp/>.\nE-mail bug reports to: <bug-sed@gnu.org>.",
+    "realpath": "realpath (GNU coreutils) 8.32\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Padraig Brady.",
+    "ccache": "ccache version 4.5.1\nFeatures: file-storage http-storage redis-storage\n\nCopyright (C) 2002-2007 Andrew Tridgell\nCopyright (C) 2009-2021 Joel Rosdahl and other contributors\n\nSee <https://ccache.dev/credits.html> for a complete list of contributors.\n\nThis program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 3 of the License, or (at your option) any later\nversion.",
+    "clang": "clang version 20.1.8 (https://github.com/vortexgpgpu/llvm.git 1e6610b8e5eda3865da9935c9b55c33a99a623eb)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin",
+    "clangpp": "clang version 20.1.8 (https://github.com/vortexgpgpu/llvm.git 1e6610b8e5eda3865da9935c9b55c33a99a623eb)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1/llvm-vortex/bin",
+    "llvm_objcopy": "llvm-objcopy, compatible with GNU objcopy\nLLVM (http://llvm.org/):\n  LLVM version 20.1.8\n  Optimized build.",
+    "llvm_objdump": "LLVM (http://llvm.org/):\n  LLVM version 20.1.8\n  Optimized build.\n\n\n  Registered Targets:\n    riscv32 - 32-bit RISC-V\n    riscv64 - 64-bit RISC-V\n    x86     - 32-bit X86: Pentium-Pro and above\n    x86-64  - 64-bit X86: EM64T and AMD64",
+    "riscv_gcc": "riscv64-unknown-elf-gcc (g2ee5e430018-dirty) 12.2.0\nCopyright (C) 2022 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "riscv_gcc_ar": "GNU ar (GNU Binutils) 2.40.0.20230214\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.",
+    "riscv_objdump": "GNU objdump (GNU Binutils) 2.40.0.20230214\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.",
+    "verilator": "Verilator 5.050 2026-07-01 rev v5.050",
+    "verilator_bin": "Verilator 5.050 2026-07-01 rev v5.050"
+  },
+  "toolchain_file_sha256": {
+    "llvm-vortex/bin/clang": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/clang++": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/llvm-objcopy": "31fab24ae51dc48a17e6a899001fc3238e2736831f0f87c6b833411df36e73ac",
+    "llvm-vortex/bin/llvm-objdump": "b7fd1a8c8d365ffb4fa28316e9cdd9d635b0a5ac1934a04f4ea0da80f03de449",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc": "1d45ae00898529ef4781942ffa2ac403abc2fe2dc559b4eb01014d170d52e408",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc-ar": "afc1c8f4f9255aacf3b644d227f1a76b5712f1ad34f785fe33957f22a59f9f54",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-objdump": "9287eaec3b3dc0393f793e62834c897b6d08f2b9a032260397dc0c8f42dccf5e",
+    "verilator/bin/verilator": "fb2cc573b1055cf096c90e1efc9966fe56bdb4b265c83590cf2a49f7a0defcdf",
+    "verilator/bin/verilator_bin": "40a25f2221a514b53ccf4f1ca459f3b9f3060cb0bafd1d8b8f41016664c90586",
+    "libc64/lib/libc.a": "7eb0e3b5bdc7397b6fa4d93637b29379d01107111148e8f0372a5c999e359a94",
+    "libc64/lib/libm.a": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+    "libc64/include/stdio.h": "36dda63d91161ecdd42755393bc7ff827dbfe82e512b630d2f2386c1acb8dbfa",
+    "libcrt64/lib/baremetal/libclang_rt.builtins-riscv64.a": "3879b774af20a252d708fb4486eb8ef7acd567ddc900d54ef866858cad436f16"
+  },
+  "config_file_sha256": {
+    "native_smoke.json": "046ca59d289390bc1d0424fc35df0d552cc7a2f92c6c649d8c318d284c433b87",
+    "target_lock.json": "c7d0b78995d02fc8529b4157b794f991a058ced237c520703bf83094d74b8824",
+    "target_caps.json": "63e30d9c2221335ae3e0de151fc5fd0ec031a71123d5d0f8699076549278ba25"
+  },
+  "configs": "-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4",
+  "ramulator_dependencies": {
+    "bundle_sha256": "d1cdab7d0e6ca39f33e3be63e7c942261364f9955fa50925f8219a509a538685",
+    "dependencies": {
+      "argparse": {
+        "commit": "997da9255618311d1fcb0135ce86022729d1f1cb",
+        "file_count": 62
+      },
+      "spdlog": {
+        "commit": "ad0e89cbfb4d0c1ce4d097e134eb7be67baebb36",
+        "file_count": 164
+      },
+      "yaml-cpp": {
+        "commit": "0579ae3d976091d7d664aa9d2527e0d0cff25763",
+        "file_count": 399
+      }
+    }
+  },
+  "effective_backend_configuration": {
+    "raw_configs": "-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=4 -DSIMULATION -DSV_DPI",
+    "resolved_cflags": "resolved_backend.cflags",
+    "sha256": "1eaac517c2bade95f649f36a9c783de96ddd809d2ada1d097851cff997bc2f43",
+    "source": "pinned sim/xrtsim/Makefile mandatory SIMULATION/SV_DPI flags",
+    "simulation_controls": [
+      "NOXRT",
+      "XRTSIM",
+      "TARGET=xrtsim"
+    ]
+  },
+  "third_party_sources_sha256": "a1429699a0ffcd6ebfa7f457226afcb81b558c2935f65605788785568f06961b",
+  "demo_exit_code": 0,
+  "demo_marker_found": true,
+  "last_step": "demo_run",
+  "build_artifacts": {
+    "config.mk": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/config.mk",
+      "sha256": "94be9e90f206a5c4e75280841fa440476601406c04cac30522381be12a1171a5",
+      "bytes": 2020,
+      "review_copy": "artifacts/config.mk"
+    },
+    "sw/VX_config.h": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/VX_config.h",
+      "sha256": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+      "bytes": 30351,
+      "review_copy": "artifacts/sw/VX_config.h"
+    },
+    "hw/VX_config.vh": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/hw/VX_config.vh",
+      "sha256": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+      "bytes": 30085,
+      "review_copy": "artifacts/hw/VX_config.vh"
+    },
+    "sw/runtime/xrtsim_config.stamp": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/xrtsim_config.stamp",
+      "sha256": "6537a04721b57f5b33bff39794c67809acd5c563cd1e377a8a6d6a5e21974d4a",
+      "bytes": 2487,
+      "review_copy": "artifacts/sw/runtime/xrtsim_config.stamp"
+    },
+    "sw/runtime/xrt_config.stamp": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/xrt_config.stamp",
+      "sha256": "38d83db82d3ed6b13a9268d79405251d9d4ae7c8c1519bada63eb847d48e74b1",
+      "bytes": 6815,
+      "review_copy": "artifacts/sw/runtime/xrt_config.stamp"
+    },
+    "sw/runtime/libvortex.so": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/libvortex.so",
+      "sha256": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+      "bytes": 309880,
+      "review_copy": "artifacts/sw/runtime/libvortex.so"
+    },
+    "sw/runtime/libxrtsim.so": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/libxrtsim.so",
+      "sha256": "123e061d105490a5d8866bb65fefdd602e7d3e2ce55681c50c6e5007bfe3adeb",
+      "bytes": 1887856,
+      "review_copy": "artifacts/sw/runtime/libxrtsim.so"
+    },
+    "sw/runtime/libvortex-xrt.so": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/sw/runtime/libvortex-xrt.so",
+      "sha256": "5c0cf1a313ebcd580d83d729195249b37929b9089ca4b01b7750c98fb9fa567d",
+      "bytes": 34416,
+      "review_copy": "artifacts/sw/runtime/libvortex-xrt.so"
+    },
+    "tests/regression/demo/demo": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo/demo",
+      "sha256": "88bb22373d8cee7e145e6c15eaebf9ec6cb9a8bccadcb329a2597c25689db358",
+      "bytes": 27280,
+      "review_copy": "artifacts/tests/regression/demo/demo"
+    },
+    "tests/regression/demo/kernel.vxbin": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo/kernel.vxbin",
+      "sha256": "fe1e13ecb9b98be36ccf628d5e245283e7223ffdd703a0bdd043723195af6553",
+      "bytes": 4336,
+      "review_copy": "artifacts/tests/regression/demo/kernel.vxbin"
+    },
+    "tests/regression/demo/kernel.dump": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo/kernel.dump",
+      "sha256": "273ca27855c76abc85ae0e68d3f6b51a0d660a5121eebbb401bdfc9e8dfe6022",
+      "bytes": 13825,
+      "review_copy": "artifacts/tests/regression/demo/kernel.dump"
+    },
+    "tests/regression/demo/kernel.elf": {
+      "path": "/opt/vortex-ab/builds/ab-d3-xrtsim-20261108-v1/tests/regression/demo/kernel.elf",
+      "sha256": "b91c80f4b9354c2b12403735322fb5eae15865b281f28a2352794b1f4e23beca",
+      "bytes": 5816,
+      "review_copy": "artifacts/tests/regression/demo/kernel.elf"
+    }
+  },
+  "finished_at": "2026-11-08T02:37:53.802920+00:00"
+}

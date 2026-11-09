@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "Python runner tests on Linux only",
+  "finished_at": "2026-11-09T19:53:04.123945"
+}

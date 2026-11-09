@@ -1,0 +1,96 @@
+{
+  "schema_version": "u280-prepared-build-v2",
+  "argv": [
+    "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/build_prepared.py",
+    "--input",
+    "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/u280-rtl-input",
+    "--run-id",
+    "u280-link-20261109-103830-671",
+    "--stage",
+    "link",
+    "--build-flow",
+    "ip-ooc-v1",
+    "--xo-run",
+    "/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629"
+  ],
+  "started_at": "2026-11-09T02:38:41.409485+00:00",
+  "stage": "link",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "platform",
+      "argv": [
+        "bash",
+        "-c",
+        ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec platforminfo -p /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm"
+      ],
+      "cwd": "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671",
+      "timeout_seconds": 60,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 1.575,
+      "stdout_sha256": "c4e4d8356f63f1e2e558ec90603c104fb8668f97a57a3b82070677aa2138ea1d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "link",
+      "argv": [
+        "bash",
+        "-c",
+        ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec v++ --link --target hw --platform /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm --save-temps --no_ip_cache --vivado.synth.jobs 2 --vivado.impl.jobs 2 --kernel_frequency 200 --xp vivado_prop:run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/flow/xrt/pre_opt_hook.tcl --report_level 2 --config /home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/flow/xrt/vitis.ini --optimize 3 --connectivity.sp 'vortex_afu_1.m_axi_mem_0:HBM[0:31]' --connectivity.sp 'vortex_afu_1.m_axi_host:HOST[0]' -o /home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/vortex_afu.xclbin /home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/vortex_afu.xo"
+      ],
+      "cwd": "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out",
+      "timeout_seconds": 21600,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 18565.056,
+      "stdout_sha256": "2bcb03ecbde537e1b6ece808ff83c1744a57bd54f7bcf0a5d6e6fec296058bd4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "clock_check",
+      "argv": [
+        "python3",
+        "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/input/scripts/xilinx_check_kernel_clock.py",
+        "--freq",
+        "200",
+        "--no-scaling",
+        "--report",
+        "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+        "--new-clk-freq",
+        "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/_x/link/int/_new_clk_freq"
+      ],
+      "cwd": "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671",
+      "timeout_seconds": 60,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 0.118,
+      "stdout_sha256": "e7454e4743b13f5ee5b84e072a6db3674b48049d67bd59ec721cdcc421591202",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "board_load": "NOT_RUN",
+  "host_configuration": "NOT_RUN",
+  "limits": {
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "nice_increment": 10,
+    "vivado_max_threads": 2,
+    "wall_seconds": 21600,
+    "ram_hard_limit": "NOT_ENFORCED; confirm shared-host resource rules before link"
+  },
+  "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "input_manifest_sha256": "fe16e5837f89f93d39c6708fc66a970714b3debb14868b182e9e006df1cb8d56",
+  "input_files": 288,
+  "build_flow": "ip-ooc-v1",
+  "flow_sha256": "964e4c6c23fcdd97c47376edacd88e6d210a39f3c1ac09d0c611255689ccc630",
+  "artifact": {
+    "path": "out/vortex_afu.xclbin",
+    "sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+    "bytes": 53950442
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-09T07:48:08.577877+00:00"
+}

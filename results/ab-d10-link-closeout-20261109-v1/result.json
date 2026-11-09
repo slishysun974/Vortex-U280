@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "argv": [
+    "results/ab-d10-link-closeout-20261109-v1/verify.py"
+  ],
+  "checks_passed": 60,
+  "checks_total": 60,
+  "checks": [
+    {
+      "name": "SSH and unpack exited zero",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only final observation",
+      "status": "PASS"
+    },
+    {
+      "name": "final states PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "builder and worker exited zero",
+      "status": "PASS"
+    },
+    {
+      "name": "embedded and returned records agree",
+      "status": "PASS"
+    },
+    {
+      "name": "nonce and collector identity",
+      "status": "PASS"
+    },
+    {
+      "name": "raw transport hash",
+      "status": "PASS"
+    },
+    {
+      "name": "payload hash",
+      "status": "PASS"
+    },
+    {
+      "name": "bundle hash",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/launch.json",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/request.json",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/worker.json",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/worker.py",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/build.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/build.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/supervisor.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/identity.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/hostname.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/uptime.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/memory.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file job/disk.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/result.json",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/platform.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/platform.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/link.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/link.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/clock_check.stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/clock_check.stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/flow_patch.json",
+      "status": "PASS"
+    },
+    {
+      "name": "captured file build/flow.patch",
+      "status": "PASS"
+    },
+    {
+      "name": "three expected commands",
+      "status": "PASS"
+    },
+    {
+      "name": "platform exited zero without timeout",
+      "status": "PASS"
+    },
+    {
+      "name": "platform stdout command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "platform stderr command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "link exited zero without timeout",
+      "status": "PASS"
+    },
+    {
+      "name": "link stdout command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "link stderr command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "clock_check exited zero without timeout",
+      "status": "PASS"
+    },
+    {
+      "name": "clock_check stdout command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "clock_check stderr command digest",
+      "status": "PASS"
+    },
+    {
+      "name": "input lineage target_lock_sha256",
+      "status": "PASS"
+    },
+    {
+      "name": "input lineage input_manifest_sha256",
+      "status": "PASS"
+    },
+    {
+      "name": "input lineage input_files",
+      "status": "PASS"
+    },
+    {
+      "name": "input lineage build_flow",
+      "status": "PASS"
+    },
+    {
+      "name": "input lineage flow_sha256",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged scripts/u280_remote_link.py",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged scripts/prepare_u280_link.py",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged scripts/Invoke-U280Link.ps1",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged tests/test_u280_link.py",
+      "status": "PASS"
+    },
+    {
+      "name": "tested implementation unchanged environment/u280-fpga/build_prepared.py",
+      "status": "PASS"
+    },
+    {
+      "name": "runner tests previously passed",
+      "status": "PASS"
+    },
+    {
+      "name": "limits preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "board operations NOT_RUN",
+      "status": "PASS"
+    },
+    {
+      "name": "clock gate PASS output parsed",
+      "status": "PASS"
+    },
+    {
+      "name": "200 MHz and nonnegative slack",
+      "status": "PASS"
+    },
+    {
+      "name": "frequency scaling disabled in gate",
+      "status": "PASS"
+    },
+    {
+      "name": "xclbin identity recorded by remote builder",
+      "status": "PASS"
+    },
+    {
+      "name": "xclbinutil confirms output size",
+      "status": "PASS"
+    },
+    {
+      "name": "v++ completion recorded",
+      "status": "PASS"
+    },
+    {
+      "name": "no ERROR lines in captured link logs",
+      "status": "PASS"
+    }
+  ],
+  "scope": "final captured FPGA build and fixed kernel clock gate; no board execution or independent acceptance",
+  "build_run": "u280-link-20261109-103830-671",
+  "capture_run": "u280-link-20261109-155638-456",
+  "build_finished_at": "2026-11-09T07:48:08.577877+00:00",
+  "recorded_at": "2026-11-09T08:00:13.241653+00:00",
+  "artifact": {
+    "path": "out/vortex_afu.xclbin",
+    "sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+    "bytes": 53950442
+  },
+  "artifact_verification_scope": "remote builder digest at completion; xclbin bytes not downloaded or independently rehashed locally",
+  "kernel_clock_gate": {
+    "clock": "clk_kernel_00_unbuffered_net",
+    "period_ns": 5.0,
+    "frequency_mhz": 200,
+    "setup_wns_ns": 0.119,
+    "hold_whs_ns": 0.009,
+    "endpoints": 289539
+  },
+  "full_reports_review": "NOT_RUN",
+  "host_configuration": "NOT_RUN",
+  "board_load": "NOT_RUN",
+  "document_sha256": {
+    "docs/STATUS.md": "1f1674731351a1468cd0d059ad5c379215ad4da3118faaba307dacb98c35a220",
+    "docs/PROJECT_HANDOFF.md": "d303b1b372f6e9aff603aef38a7380e8dcf64b09201253351c816bd9c7d11542",
+    "docs/AB_D10_PROGRESS.md": "b8460a1c691877e27b7eec46b63b144bbb81eb870f5e2b367de33fed138d91e0",
+    "docs/U280_ACCESS_CHECKLIST.md": "6aadef745e98e5c02dfe0faf470398e9e5f0bda5b2720c530f4e41c010fb9927",
+    "environment/u280-fpga/NEXT_LINK.md": "623def5e15623a2c9031d11c11e49fbd9ef4d3604f0da705f3c7b76f6d3ec03d",
+    "environment/u280-fpga/README.md": "db947dadb00ab0fc5aa17d59b578f38ab2af0381ff69822a0bf7e87086ee7e5c"
+  }
+}

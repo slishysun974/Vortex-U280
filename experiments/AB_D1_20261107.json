@@ -1,0 +1,43 @@
+{
+  "schema_version": "ab-task-record-v1",
+  "task_id": "AB-D1-20261107",
+  "parent_id": null,
+  "owner": "user (A/B)",
+  "receiving_person": "pending C/E independent acceptance",
+  "objective": "Start A/B: pin a candidate upstream, resolve hardware config, inspect host/platform prerequisites, prepare and preflight native simulation",
+  "input_versions": {
+    "team": "team-v2.0-draft",
+    "profile": "ptx-vx-p0-v0.1-draft",
+    "vortex_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+    "toolchain_candidate_commit": "8c64cf921d3c6c456e80f00d24482d0aa2153a82"
+  },
+  "allowed_files": ["vortex_project/"],
+  "protected_files": ["u280_gpgpu/", "circuits/", "archive/", "E frozen tests (none provided)"],
+  "interface_dependencies": ["C: native compiler/runtime agreement", "E: independent acceptance/oracle", "B: U280 access later"],
+  "user_confirmation": {
+    "date": "2026-11-07 Asia/Shanghai",
+    "u280_access": "Not available now; user will provide later"
+  },
+  "delegation": [
+    {"agent": "platform_inventory", "role": "B local environment inventory, read-only probes"},
+    {"agent": "upstream_review", "role": "fixed-source/version review, independent config/script review"},
+    {"agent": "native_runner", "role": "Linux simulation runner and failure-reporting checks"},
+    {"agent": "root", "role": "source acquisition, target snapshot, integration and status"}
+  ],
+  "acceptance_commands": [
+    "python -B vortex_project/scripts/capture_target.py --run-id <fresh-source-run-id>",
+    "python3 -B vortex_project/scripts/run_native_smoke.py --backend simx --tooldir <absolute-tool-directory> --run-id <fresh-preflight-run-id> --check-only",
+    "python3 -B vortex_project/scripts/run_native_smoke.py --backend simx --tooldir <absolute-tool-directory> --run-id <fresh-smoke-run-id>"
+  ],
+  "expected_failure_cases": ["Unavailable/incompatible Linux toolchain produces BLOCKED, no kernel PASS", "Reusing a run ID is rejected", "Wrong source commit is rejected"],
+  "stop_conditions": ["No U280 access: no real-board work", "Do not upgrade WSL, install system packages, or replace shared tools implicitly", "No mock/CPU result can satisfy SimX/RTL"],
+  "experimental_group": "unassigned observational development; not a controlled AI comparison",
+  "model_id": "session-inherited; exact backend identifier unavailable",
+  "time_limit": "No user-defined budget; commands use bounded waits where supported",
+  "total_token_or_cost_budget": null,
+  "actual_tokens_all_agents": null,
+  "human_active_seconds": null,
+  "tool_wait_seconds": null,
+  "cost_note": "Not exposed by this session; do not estimate or exclude subagent costs from later accounting",
+  "human_acceptance": "NOT_RUN"
+}

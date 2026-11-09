@@ -1,0 +1,1190 @@
+{
+  "schema_version": "ab-d6-closeout-v1",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "simx: completed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: debug profile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: source unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: parent unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: reused artifacts unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited source_commit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited source_tree",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited source_changes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited submodule_status",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited glibc",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_bash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_git",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_gcc",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_gpp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_cmake",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_make",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_python3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_ar",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_find",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_sed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_realpath",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited clang_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited clangpp_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited llvm_objcopy_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited llvm_objdump_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited riscv_gcc_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited riscv_gcc_ar_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited riscv_objdump_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_cxx20_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited host_cxx20_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited riscv_gcc_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited vortex_clang_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited configure",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited resolve_backend_configuration",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited ramulator_configure_offline",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited third_party",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited kernel_libraries",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited runtime_stub",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited demo_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited runtime_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited demo_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited predicate_trace_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: inherited predicate_trace_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: command predicate_trace_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: command predicate_trace_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact config.mk",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact sw/VX_config.h",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact hw/VX_config.vh",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact sw/runtime/libsimx.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact sw/runtime/libvortex-simx.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact sw/runtime/libvortex.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact tests/regression/boundary/boundary",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact tests/regression/boundary/kernel.vxbin",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact tests/regression/boundary/kernel.elf",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: artifact tests/regression/boundary/kernel.dump",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: corpus hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 000 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 000 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 000 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 001 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 001 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 001 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 002 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 002 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 002 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 003 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 003 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 003 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 004 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 004 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 004 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 005 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 005 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 005 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 006 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 006 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 006 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 007 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 007 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 007 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 008 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 008 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 008 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 009 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 009 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 009 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 010 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 010 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 010 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 011 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 011 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 011 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 012 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 012 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 012 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 013 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 013 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 013 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 014 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 014 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: 014 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: replay native trace",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "simx: reject injected read",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: completed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: debug profile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: source unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command source_commit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command source_tree",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command source_changes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command submodule_status",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command glibc",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_bash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_git",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_gcc",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_gpp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_cmake",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_make",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_python3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_ar",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_find",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_sed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_realpath",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_ccache",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command clang_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command clangpp_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command llvm_objcopy_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command llvm_objdump_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command riscv_gcc_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command riscv_gcc_ar_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command riscv_objdump_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command verilator_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command verilator_bin_version",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_cxx20_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command host_cxx20_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command riscv_gcc_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command vortex_clang_compile",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command configure",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command resolve_backend_configuration",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command ramulator_configure_offline",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command third_party",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command kernel_libraries",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command runtime_stub",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command demo_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command runtime_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command demo_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command predicate_trace_build",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: command predicate_trace_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact config.mk",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/VX_config.h",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact hw/VX_config.vh",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/runtime/rtlsim_config.stamp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/runtime/rtlsim_rt_config.stamp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/runtime/libvortex.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/runtime/librtlsim.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact sw/runtime/libvortex-rtlsim.so",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/demo/demo",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/demo/kernel.vxbin",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/demo/kernel.dump",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/demo/kernel.elf",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/boundary/boundary",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/boundary/kernel.vxbin",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/boundary/kernel.dump",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/boundary/kernel.elf",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: artifact tests/regression/boundary/config.stamp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: corpus hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 000 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 000 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 000 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 001 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 001 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 001 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 002 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 002 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 002 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 003 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 003 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 003 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 004 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 004 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 004 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 005 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 005 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 005 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 006 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 006 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 006 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 007 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 007 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 007 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 008 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 008 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 008 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 009 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 009 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 009 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 010 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 010 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 010 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 011 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 011 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 011 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 012 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 012 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 012 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 013 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 013 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 013 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 014 inputs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 014 expected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: 014 actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: replay native trace",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rtlsim: reject injected read",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "same native kernel",
+      "status": "PASS",
+      "detail": [
+        "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+        "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505"
+      ]
+    },
+    {
+      "name": "inventory collection",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory integrity inventory.json",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory integrity inventory.stdout",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory integrity payload.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory integrity platform_inventory.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory identity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no device operations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "allocation remains unconfirmed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "tool queries completed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "license not inferred",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Python tests command exit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Python tests complete",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "default unchanged configs/target_lock.json",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "default unchanged configs/target_caps.json",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "default unchanged configs/native_smoke.json",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "passed": 228,
+  "total": 228,
+  "evidence": {
+    "simx": {
+      "run_id": "ab-d6-trace-simx-20261108-v2",
+      "launches": 15,
+      "data_lanes": 704,
+      "summary_sha256": "a527646d6171603a779b18a513d7da639ddf1c4077cbb875bf5a9a97196d3b0b"
+    },
+    "rtlsim": {
+      "run_id": "ab-d6-trace-rtlsim-20261108-v1",
+      "launches": 15,
+      "data_lanes": 704,
+      "summary_sha256": "c7b920d7d4b62443cb92db056c981e545b6f88ffda51d0679c41221fc8bf94db"
+    },
+    "inventory": {
+      "run_id": "u280-inventory-20261108-232952-683",
+      "result_sha256": "d0fb7d7a8ff1dd0c5f1af048ac2227c8ff13f7f2ae159d23a9e3c23690024a63",
+      "tool_checks": "PASS"
+    },
+    "tests": {
+      "run_id": "ab-d6-linux-checks-20261108-v2",
+      "log_sha256": "02d78fc7ba721e7cb7eb56f5338f38fa4b1b07fe2ad48dd6a880e426b1d292d6"
+    }
+  },
+  "finished_at": "2026-11-08T15:39:55.205525+00:00",
+  "argv": [
+    "scripts/verify_ab_d6_results.py",
+    "--run-id",
+    "ab-d6-closeout-20261108-v1",
+    "--simx",
+    "ab-d6-trace-simx-20261108-v2",
+    "--rtlsim",
+    "ab-d6-trace-rtlsim-20261108-v1",
+    "--inventory",
+    "u280-inventory-20261108-232952-683",
+    "--tests",
+    "ab-d6-linux-checks-20261108-v2"
+  ],
+  "scope": "Evidence integrity and same-author verifier replay; not independent E acceptance or U280 operation",
+  "exit_code": 0
+}

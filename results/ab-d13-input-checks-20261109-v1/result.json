@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Native input archive round-trip and remote Python 3.6 grammar",
+  "files_checked": 1227,
+  "package_sha256": "aef92fecdb42dc189afd26184ca2c8df7edfb27404d89218299d80779a4df05e",
+  "argv": [
+    "-c"
+  ]
+}

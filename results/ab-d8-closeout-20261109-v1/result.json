@@ -1,0 +1,2576 @@
+{
+  "schema_version": "ab-d8-source-closeout-v1",
+  "argv": [
+    "scripts/verify_ab_d8_results.py",
+    "--run-id",
+    "ab-d8-closeout-20261109-v1",
+    "--source-run",
+    "ab-d8-u280-source-20261109-v1"
+  ],
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "source preparation execution",
+      "status": "PASS"
+    },
+    {
+      "name": "full source identity",
+      "status": "PASS"
+    },
+    {
+      "name": "verilator_version exit",
+      "status": "PASS"
+    },
+    {
+      "name": "verilator_version stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "verilator_version stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_configure exit",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_configure stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_configure stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_sources exit",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_sources stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_sources stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_link_plan exit",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_link_plan stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_link_plan stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_config exit",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_config stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged_config stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_configure exit",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_configure stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_configure stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_sources exit",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_sources stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_sources stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_link_plan exit",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_link_plan stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_link_plan stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_config exit",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_config stdout",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged_config stderr",
+      "status": "PASS"
+    },
+    {
+      "name": "synthesis scope",
+      "status": "PASS"
+    },
+    {
+      "name": "vivado_elaboration scope",
+      "status": "PASS"
+    },
+    {
+      "name": "implementation scope",
+      "status": "PASS"
+    },
+    {
+      "name": "board_execution scope",
+      "status": "PASS"
+    },
+    {
+      "name": "host_memory scope",
+      "status": "PASS"
+    },
+    {
+      "name": "independent_reproduction scope",
+      "status": "PASS"
+    },
+    {
+      "name": "configurations unchanged in run",
+      "status": "PASS"
+    },
+    {
+      "name": "current configuration configs/target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "current configuration configs/target_caps.json",
+      "status": "PASS"
+    },
+    {
+      "name": "current configuration configs/native_smoke.json",
+      "status": "PASS"
+    },
+    {
+      "name": "current configuration configs/candidates/u280-hbm32-v1/fpga.json",
+      "status": "PASS"
+    },
+    {
+      "name": "current configuration configs/candidates/u280-hbm32-v1/target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged observed ports",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged connection result",
+      "status": "PASS"
+    },
+    {
+      "name": "upstream_unmerged HOST",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged observed ports",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged connection result",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_merged HOST",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_XLEN=64",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_NUM_CLUSTERS=1",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_NUM_CORES=1",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_NUM_WARPS=8",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_NUM_THREADS=4",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_PLATFORM_MEMORY_NUM_BANKS=32",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_PLATFORM_MEMORY_ADDR_WIDTH=33",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_PLATFORM_MEMORY_DATA_SIZE=64",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVX_CFG_FPU_TYPE_DSP",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DSYNTHESIS",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved -DVIVADO",
+      "status": "PASS"
+    },
+    {
+      "name": "package fpga.json",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/altera_ip_gen.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/altera_ip_gen.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/bin2coe.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/bin2coe.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/check_axil_blocks.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/check_axil_blocks.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/gen_sources.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/gen_sources.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/ila_insert.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/ila_insert.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/parse_vcs_list.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/parse_vcs_list.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/repl_params.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/repl_params.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/saif_filter.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/saif_filter.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/scope.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/scope.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/sv2v.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/sv2v.sh",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_async_bram_patch.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_async_bram_patch.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_check_kernel_clock.py",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_check_kernel_clock.py",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_elab_check.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_elab_check.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_export_netlist.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_export_netlist.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_interface_check.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_interface_check.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_ip_gen.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_ip_gen.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_power_analysis.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_power_analysis.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package scripts/xilinx_slr_pblocks.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned scripts/xilinx_slr_pblocks.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package sources.txt",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/.DS_Store",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/.DS_Store",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/Makefile",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/Makefile",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_axi_drain.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_axi_drain.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_axi_limit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_axi_limit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_axil_demux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_axil_demux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_ctrl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_ctrl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_req_gate.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_req_gate.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_reset_seq.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_reset_seq.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_afu_wrap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_afu_wrap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_allocator.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_allocator.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_alu_int.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_alu_int.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_alu_muldiv.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_alu_muldiv.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_alu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_alu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_amo_alu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_amo_alu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_amo_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_amo_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_async_ram_patch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_async_ram_patch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_axi_write_ack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_axi_write_ack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_bar_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_bar_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_bits_concat.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_bits_concat.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_bits_insert.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_bits_insert.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_bits_remove.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_bits_remove.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_branch_ctl_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_branch_ctl_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_bypass_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_bypass_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_amo.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_amo.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_bank.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_bank.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_bypass.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_bypass.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_cluster.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_cluster.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_flush.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_flush.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_init.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_init.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_mshr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_mshr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_repl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_repl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_tags.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_tags.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cache_wrap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cache_wrap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_clockgate.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_clockgate.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cluster.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cluster.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_commit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_commit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_commit_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_commit_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_commit_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_commit_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_config.h",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_config.h",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_config.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_config.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_core.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_core.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_axil_regfile.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_axil_regfile.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_axil_s_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_axil_s_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_completion.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_completion.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_core.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_core.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_dcr_proxy.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_dcr_proxy.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_dma.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_dma.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_engine.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_engine.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_engine_bid_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_engine_bid_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_event_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_event_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_fetch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_fetch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_gpu_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_gpu_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_gpu_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_gpu_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_launch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_launch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_profiling.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_profiling.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cp_unpack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cp_unpack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csa_32.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csa_32.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csa_42.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csa_42.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csa_mod4.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csa_mod4.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csa_tree.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csa_tree.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csr_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csr_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_csr_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_csr_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cta_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cta_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_cyclic_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_cyclic_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_data.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_flush.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_flush.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dcr_flush_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dcr_flush_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_decode.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_decode.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_decode_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_decode_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_decode_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_decode_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_decompressor.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_decompressor.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_demux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_demux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dispatch_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dispatch_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dispatcher.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dispatcher.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_divider.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_divider.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_dp_ram.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_dp_ram.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_edge_trigger.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_edge_trigger.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_elastic_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_elastic_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_elastic_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_elastic_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_execute.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_execute.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_execute_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_execute_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fanout_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fanout_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fcvt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fcvt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fdiv_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fdiv_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fdiv_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fdiv_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fdivsqrt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fdivsqrt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fetch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fetch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fetch_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fetch_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fifo_queue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fifo_queue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_find_first.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_find_first.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fma_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fma_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fma_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fma_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fncp_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fncp_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fold_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fold_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fp_classifier.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fp_classifier.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fp_rounding.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fp_rounding.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_define.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_dpi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_dpi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_dsp.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_dsp.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_fpnew.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_fpnew.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_std.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_std.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fpu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fpu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fsqrt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fsqrt_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_fsqrt_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_fsqrt_unit_rtl.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gbar_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gbar_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gbar_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gbar_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gbar_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gbar_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_generic_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_generic_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gfx_uops.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gfx_uops.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gpu_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gpu_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_graphics.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_graphics.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_gto_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_gto_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ibuffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ibuffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ibuffer_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ibuffer_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_index_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_index_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_index_queue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_index_queue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ipdom_stack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ipdom_stack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_issue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_issue.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_issue_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_issue_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_issue_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_issue_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_kmu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_kmu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_kmu_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_kmu_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_kmu_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_kmu_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ks_adder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ks_adder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lane_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lane_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lane_gather.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lane_gather.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lmem_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lmem_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_local_mem.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_local_mem.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_agu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_agu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_mem_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_mem_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_mem_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_mem_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_sched_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lsu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lsu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_lzc.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_lzc.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_matrix_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_matrix_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_axi_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_axi_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_axi_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_axi_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_axi_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_axi_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_axi_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_axi_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_bank_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_bank_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_bus_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_bus_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_bus_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_bus_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_coalescer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_coalescer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_data_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_data_adapter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_from_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_from_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_to_avs.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_to_avs.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_to_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_to_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mem_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mem_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_membus_from_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_membus_from_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_membus_to_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_membus_to_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mm_axi_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mm_axi_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mm_axi_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mm_axi_slice.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mm_axi_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mm_axi_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mmu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mmu.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mmu_dcr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mmu_dcr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mmu_fault_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mmu_fault_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mmu_snoop.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mmu_snoop.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_multiplier.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_multiplier.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_mux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_mux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_nz_iterator.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_nz_iterator.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_onehot_encoder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_onehot_encoder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_onehot_mux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_onehot_mux.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_onehot_shift.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_onehot_shift.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_opc_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_opc_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_operands.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_operands.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_operands_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_operands_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_pe_serializer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_pe_serializer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_pe_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_pe_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_pending_size.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_pending_size.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_pipe_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_pipe_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_pipe_register.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_pipe_register.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_placeholder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_placeholder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_platform.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_platform.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_popcount.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_popcount.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_priority_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_priority_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_priority_encoder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_priority_encoder.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ptw.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ptw.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ptw_cache.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ptw_cache.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ptw_walker.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ptw_walker.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_reduce_tree.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_reduce_tree.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_reset_relay.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_reset_relay.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_result_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_result_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_rr_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_rr_arbiter.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scan.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scan.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_sched_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_sched_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_sched_unlock_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_sched_unlock_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_schedule_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_schedule_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scheduler.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scope.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scope.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scope_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scope_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scope_tap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scope_tap.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scoreboard.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scoreboard.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_scoreboard_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_scoreboard_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_serial_div.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_serial_div.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_serial_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_serial_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_sfu_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_sfu_csr_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_sfu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_sfu_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_shift_register.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_shift_register.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_skid_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_skid_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_socket.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_socket.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_sp_ram.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_sp_ram.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_split_join.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_split_join.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_dispatch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_fork.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_fork.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_join.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_join.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_omega.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_omega.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_pack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_pack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_switch.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_unpack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_unpack.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_xbar.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_stream_xpoint.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_stream_xpoint.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_ticket_lock.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_ticket_lock.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_bus_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_cam.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_cam.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_flush_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_flush_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_l1.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_l1.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_l2.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_l2.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_mshr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_mshr.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_tlb_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_tlb_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_toggle_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_toggle_buffer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_trace_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_trace_pkg.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_transpose.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_transpose.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_txbar_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_txbar_arb.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_txbar_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_txbar_bus_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_types.h",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_types.h",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_types.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_types.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_uop_packld.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_uop_packld.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_uop_sequencer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_uop_sequencer.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_uuid_gen.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_uuid_gen.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_wallace_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_wallace_mul.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_warp_ctl_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_warp_ctl_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_wctl_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_wctl_unit.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/VX_writeback_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/VX_writeback_if.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/Vortex.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/Vortex.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/Vortex_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/Vortex_axi.sv",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/vortex_afu.v",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/vortex_afu.v",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/vortex_afu.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/vortex_afu.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/vortex_opae.h",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/vortex_opae.h",
+      "status": "PASS"
+    },
+    {
+      "name": "package src/vortex_opae.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "generated src/vortex_opae.vh",
+      "status": "PASS"
+    },
+    {
+      "name": "package target_lock.json",
+      "status": "PASS"
+    },
+    {
+      "name": "package target_lock.sha256",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/Makefile",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/Makefile",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/gen_xo.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/gen_xo.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/package_kernel.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/package_kernel.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/platforms.mk",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/platforms.mk",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/pre_opt_hook.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/pre_opt_hook.tcl",
+      "status": "PASS"
+    },
+    {
+      "name": "package xrt/vitis.ini",
+      "status": "PASS"
+    },
+    {
+      "name": "pinned xrt/vitis.ini",
+      "status": "PASS"
+    },
+    {
+      "name": "archive identity",
+      "status": "PASS"
+    },
+    {
+      "name": "archive exact files and bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "u280_remote_probe.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "wlan_ssh_proxy.py Python 3.6 syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "Python runner/frontend/evidence tests",
+      "status": "PASS"
+    }
+  ],
+  "passed": 635,
+  "total": 635,
+  "tests": {
+    "argv": [
+      "/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/mnt/d/Vortex-U280",
+    "exit_code": 0,
+    "log": "tests.log",
+    "sha256": "2b377e544b7fe1835402c5bb57a3d5fc0f43c2294a6535aad764773ec2244c4c"
+  },
+  "source_run": "ab-d8-u280-source-20261109-v1",
+  "source_summary_sha256": "cce8d7215f13d5fa2a690daccb655472e0cee17a45d97d5114e85c75d17a7e62",
+  "finished_at": "2026-11-08T16:46:07.229926+00:00",
+  "scope": "same-author source/package evidence and script tests only; remote HOST, FPGA tools, board and independent acceptance remain separate",
+  "exit_code": 0
+}

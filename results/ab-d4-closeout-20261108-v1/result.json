@@ -1,0 +1,251 @@
+{
+  "schema_version": "ab-d4-closeout-v1",
+  "status": "PASS",
+  "scope": "evidence integrity and same-agent native functional regression, not independent acceptance",
+  "target_lock_sha256": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe",
+  "checks": [
+    {
+      "name": "simx_finished",
+      "ok": true
+    },
+    {
+      "name": "simx_baseline",
+      "ok": true
+    },
+    {
+      "name": "simx_boundary",
+      "ok": true
+    },
+    {
+      "name": "simx_source",
+      "ok": true
+    },
+    {
+      "name": "simx_lock",
+      "ok": true
+    },
+    {
+      "name": "simx_toolchain",
+      "ok": true
+    },
+    {
+      "name": "simx_commands",
+      "ok": true
+    },
+    {
+      "name": "simx_logs",
+      "ok": true
+    },
+    {
+      "name": "simx_artifacts",
+      "ok": true
+    },
+    {
+      "name": "simx_native_sources",
+      "ok": true
+    },
+    {
+      "name": "simx_generator",
+      "ok": true
+    },
+    {
+      "name": "simx_corpus",
+      "ok": true
+    },
+    {
+      "name": "simx_captures",
+      "ok": true
+    },
+    {
+      "name": "simx_actual_completion",
+      "ok": true
+    },
+    {
+      "name": "simx_scope",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_finished",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_baseline",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_boundary",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_source",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_lock",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_toolchain",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_commands",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_logs",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_artifacts",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_native_sources",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_generator",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_corpus",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_captures",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_actual_completion",
+      "ok": true
+    },
+    {
+      "name": "rtlsim_scope",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_finished",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_baseline",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_boundary",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_source",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_lock",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_toolchain",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_commands",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_logs",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_artifacts",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_native_sources",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_generator",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_corpus",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_captures",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_actual_completion",
+      "ok": true
+    },
+    {
+      "name": "afu_model_forced",
+      "ok": true
+    },
+    {
+      "name": "xrtsim_scope",
+      "ok": true
+    },
+    {
+      "name": "identical_kernel",
+      "ok": true
+    },
+    {
+      "name": "identical_corpus",
+      "ok": true
+    },
+    {
+      "name": "identical_captures",
+      "ok": true
+    },
+    {
+      "name": "linux_runner_tests",
+      "ok": true
+    },
+    {
+      "name": "windows_runner_tests",
+      "ok": true
+    }
+  ],
+  "runs": {
+    "simx": {
+      "summary": "results\\ab-d4-simx-20261108-v1\\summary.json",
+      "summary_sha256": "040618c7c7b5a0e3518a9c0b5a4b309eed75be284e252d83623fff7d2964a4e4",
+      "native": "PASS",
+      "launches": 140,
+      "command_exit_code": 0,
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "corpus_sha256": "9c099d8e97b7dee1177c4f5dfc7c59a3be51d6e35ba2870bff2fd3e18ed229e7",
+      "build_path": "/opt/vortex-ab/builds/ab-d4-simx-20261108-v1"
+    },
+    "rtlsim": {
+      "summary": "results\\ab-d4-rtlsim-20261108-v1\\summary.json",
+      "summary_sha256": "ae7d5ab0bca2b055ef969ea1a97e9c5b833e26040f10bf4aca6d5a7f58b0080b",
+      "native": "PASS",
+      "launches": 140,
+      "command_exit_code": 0,
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "corpus_sha256": "9c099d8e97b7dee1177c4f5dfc7c59a3be51d6e35ba2870bff2fd3e18ed229e7",
+      "build_path": "/opt/vortex-ab/builds/ab-d4-rtlsim-20261108-v1"
+    },
+    "xrtsim": {
+      "summary": "results\\ab-d4-xrtsim-20261108-v1\\summary.json",
+      "summary_sha256": "df4f6cb677c1c2c579c8d0375a11282c83c5afe110038b1e56fc5d936cfa3bcf",
+      "native": "PASS",
+      "launches": 140,
+      "command_exit_code": 0,
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "corpus_sha256": "9c099d8e97b7dee1177c4f5dfc7c59a3be51d6e35ba2870bff2fd3e18ed229e7",
+      "build_path": "/opt/vortex-ab/builds/ab-d4-xrtsim-20261108-v1"
+    }
+  },
+  "native_case_specs_per_backend": 70,
+  "sequential_launches_per_backend": 140,
+  "u280": "BLOCKED",
+  "fpga_build": "NOT_RUN",
+  "p0_runtime_frontend": "NOT_RUN",
+  "independent_acceptance": "NOT_RUN",
+  "false_predicate_no_read": "NOT_RUN"
+}

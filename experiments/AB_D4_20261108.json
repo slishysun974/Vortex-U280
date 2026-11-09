@@ -1,0 +1,19 @@
+{
+  "schema_version": "ab-progress-v1",
+  "date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "phase": "D4 native unsigned integer regression",
+  "overall_project": "PARTIAL",
+  "simx_native": "PASS",
+  "processor_rtl_native": "PASS",
+  "noxrt_afu_native": "PASS",
+  "case_specs_per_backend": 70,
+  "launches_per_backend": 140,
+  "reference_owner": "same A/B implementation agent, not independent E acceptance",
+  "target_lock_changed": false,
+  "upstream_changed": false,
+  "u280": "BLOCKED",
+  "p0_frontend_runtime": "NOT_RUN",
+  "evidence": "results/ab-d4-closeout-20261108-v1/result.json",
+  "handoff": "docs/AB_D4_PROGRESS.md"
+}

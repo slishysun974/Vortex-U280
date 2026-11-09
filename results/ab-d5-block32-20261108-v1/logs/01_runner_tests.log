@@ -1,0 +1,31 @@
+test_ambiguous_xrt_backend_is_not_an_accepted_cli_option (test_backend_routing.BackendRoutingTests) ... ok
+test_xrtsim_forces_model_target_on_every_make_command (test_backend_routing.BackendRoutingTests) ... ok
+test_block32_corpus_has_tail_and_mixed_predicates_within_capacity (test_native_boundary.NativeBoundaryTests) ... ok
+test_corpus_captures_and_integrity_fail_closed (test_native_boundary.NativeBoundaryTests) ... ok
+test_pending_or_failed_boundary_does_not_inherit_demo_pass (test_native_boundary.NativeBoundaryTests) ... ok
+test_unsigned_reference_known_overflow_and_predication (test_native_boundary.NativeBoundaryTests) ... ok
+test_changed_added_or_missing_source_is_rejected (test_native_dependencies.NativeDependencyTests) ... ok
+test_staging_preserves_source_and_dependency_cache (test_native_dependencies.NativeDependencyTests) ... ok
+test_staging_rejects_tampering_before_creating_build_sources (test_native_dependencies.NativeDependencyTests) ... ok
+test_wrong_commit_or_dependency_set_is_rejected (test_native_dependencies.NativeDependencyTests) ... ok
+test_build_directory_cannot_pollute_source_or_tools (test_native_smoke.RunnerSafetyTests) ... ok
+test_check_only_wrong_platform_is_blocked_never_pass (test_native_smoke.RunnerSafetyTests) ... skipped 'Windows negative preflight'
+test_command_failure_preserves_raw_output_and_code (test_native_smoke.RunnerSafetyTests) ... ok
+test_existing_run_cannot_be_overwritten (test_native_smoke.RunnerSafetyTests) ... ok
+test_pass_requires_exact_marker_zero_exit_and_no_timeout (test_native_smoke.RunnerSafetyTests) ... ok
+test_run_id_cannot_escape_results (test_native_smoke.RunnerSafetyTests) ... ok
+test_timeout_kills_child_process_group (test_native_smoke.RunnerSafetyTests) ... ok
+test_unsafe_make_paths_rejected (test_native_smoke.RunnerSafetyTests) ... ok
+test_profile_mismatch_is_blocked_even_with_consistent_hashes (test_target_profiles.TargetProfileTests) ... ok
+test_escaping_member_and_symlink_never_extract (test_toolchain_preparation.ToolchainPreparationTests) ... ok
+test_existing_tool_directory_is_preserved (test_toolchain_preparation.ToolchainPreparationTests) ... ok
+test_hash_failure_never_extracts (test_toolchain_preparation.ToolchainPreparationTests) ... ok
+test_valid_archive_extracts_and_records_command (test_toolchain_preparation.ToolchainPreparationTests) ... ok
+test_preserved_d2_simx_cache_is_still_readable (test_toolchain_preparation.ToolchainProfileTests) ... ok
+test_rtlsim_requires_verilator_in_the_fixed_profile (test_toolchain_preparation.ToolchainProfileTests) ... ok
+test_wrong_revision_or_unknown_component_is_rejected (test_toolchain_preparation.ToolchainProfileTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.712s
+
+OK (skipped=1)

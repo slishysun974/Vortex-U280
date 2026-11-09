@@ -1,0 +1,30 @@
+{
+  "schema_version": "u280-native-board-input-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "offline input identity/copy checks only",
+  "run_id": "u280-board-input-20261109-v1",
+  "source_cases": 152,
+  "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+  "input_files": 1227,
+  "package": {
+    "path": "u280-native-board-input.tar.gz",
+    "bytes": 778092,
+    "sha256": "aef92fecdb42dc189afd26184ca2c8df7edfb27404d89218299d80779a4df05e"
+  },
+  "manifest_sha256": "6c567b1fdef278b362baedcb9c377f500868eb90b7f2bedcfa65e7382ba3d402",
+  "runtime_binding_sha256": "f7fe4505f0a389a591395050ab1f65af047294826555a46c7b8b0f9f16e301ef",
+  "host_compile": "NOT_RUN",
+  "board_load": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "ptx_device": "NOT_RUN",
+  "reference": "Preserved D5 same-author native u32 oracle; no regenerated answers; not independent E acceptance",
+  "gates": [
+    "HOST capacity readback",
+    "timing warning dispositions",
+    "fresh privileged idle/holder check",
+    "compile host against bundled CentOS libraries",
+    "loaded UUID and actual 200 MHz readback",
+    "native smoke before complete 152-launch regression"
+  ]
+}

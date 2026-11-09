@@ -1,0 +1,519 @@
+{
+  "schema_version": "ab-d5-closeout-v1",
+  "status": "PASS",
+  "scope": "native block32 self-test and evidence integrity only; not independent acceptance or PTX/U280",
+  "exit_code": 0,
+  "argv": [
+    "scripts/verify_block32_results.py",
+    "--run-id",
+    "ab-d5-block32-20261108-v1",
+    "--output",
+    "results/ab-d5-closeout-20261108-v1"
+  ],
+  "finished_at": "2026-11-08T13:43:00.866570+00:00",
+  "candidate_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "checks": [
+    {
+      "name": "baseline_unchanged/target_lock.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_unchanged/target_caps.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "baseline_unchanged/native_smoke.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "coordinator_pass",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "implementation_unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/capture_target.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/native_boundary.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/native_dependencies.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/platform_inventory.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/prepare_block32_candidate.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/prepare_toolchain.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/probe_u280_endpoint.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/run_block32_validation.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/scripts/run_native_smoke.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_backend_routing.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_native_boundary.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_native_dependencies.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_native_smoke.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_target_profiles.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/tests/test_toolchain_preparation.py",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/native/boundary/common.h",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/native/boundary/kernel.cpp",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/native/boundary/main.cpp",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/native/boundary/Makefile",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "executed_snapshot/native/boundary/README.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "harness_tests",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "harness_tests_log",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/status",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/scope",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/profile",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/lock",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/config_snapshot",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/tools",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/commands",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/logs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/artifacts",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/config_delta",
+      "ok": true,
+      "detail": {
+        "VX_CFG_AMO_RS_SIZE": {
+          "before": "4",
+          "after": "8"
+        },
+        "VX_CFG_LSU_PENDING_SIZE": {
+          "before": "8",
+          "after": "16"
+        },
+        "VX_CFG_NUM_OPCS": {
+          "before": "1",
+          "after": "2"
+        },
+        "VX_CFG_NUM_WARPS": {
+          "before": "4",
+          "after": "8"
+        }
+      }
+    },
+    {
+      "name": "simx/corpus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/boundary_sources",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/generator",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/152_captures",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/matrix",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/physical_caps",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "simx/oversize_rejected",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/status",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/scope",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/profile",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/lock",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/config_snapshot",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/tools",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/commands",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/logs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/artifacts",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/config_delta",
+      "ok": true,
+      "detail": {
+        "VX_CFG_AMO_RS_SIZE": {
+          "before": "4",
+          "after": "8"
+        },
+        "VX_CFG_LSU_PENDING_SIZE": {
+          "before": "8",
+          "after": "16"
+        },
+        "VX_CFG_NUM_OPCS": {
+          "before": "1",
+          "after": "2"
+        },
+        "VX_CFG_NUM_WARPS": {
+          "before": "4",
+          "after": "8"
+        }
+      }
+    },
+    {
+      "name": "rtlsim/corpus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/boundary_sources",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/generator",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/152_captures",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/matrix",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/physical_caps",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rtlsim/oversize_rejected",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/status",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/scope",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/profile",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/source",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/lock",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/config_snapshot",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/tools",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/commands",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/logs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/artifacts",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/config_delta",
+      "ok": true,
+      "detail": {
+        "VX_CFG_AMO_RS_SIZE": {
+          "before": "4",
+          "after": "8"
+        },
+        "VX_CFG_LSU_PENDING_SIZE": {
+          "before": "8",
+          "after": "16"
+        },
+        "VX_CFG_NUM_OPCS": {
+          "before": "1",
+          "after": "2"
+        },
+        "VX_CFG_NUM_WARPS": {
+          "before": "4",
+          "after": "8"
+        }
+      }
+    },
+    {
+      "name": "xrtsim/corpus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/boundary_sources",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/generator",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/152_captures",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/matrix",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/physical_caps",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "xrtsim/oversize_rejected",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "three_backend_same/corpus_sha256",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "three_backend_same/kernel_sha256",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "three_backend_same/captures",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "backend": "simx",
+      "summary": "results\\ab-d5-block32-20261108-v1-simx\\summary.json",
+      "summary_sha256": "b48b9a4a829eabb055e9623a1727b89603b68fb25e9b6eefa0818e4a19e994cc",
+      "corpus_sha256": "a187c81d1fc642df6a6c2f0f4b6e440532039b0923575e3f15be857fce6c577a",
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "launches": 152
+    },
+    {
+      "backend": "rtlsim",
+      "summary": "results\\ab-d5-block32-20261108-v1-rtlsim\\summary.json",
+      "summary_sha256": "72e0182b0c3a5a0ea0b14db3de0231ac24f712949d44e352e96c3d07cf1238a9",
+      "corpus_sha256": "a187c81d1fc642df6a6c2f0f4b6e440532039b0923575e3f15be857fce6c577a",
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "launches": 152
+    },
+    {
+      "backend": "xrtsim",
+      "summary": "results\\ab-d5-block32-20261108-v1-xrtsim\\summary.json",
+      "summary_sha256": "8de06e02436ccde0ef60f60b18dd0b97b75a3f96a826d4469d15d2379f80673e",
+      "corpus_sha256": "a187c81d1fc642df6a6c2f0f4b6e440532039b0923575e3f15be857fce6c577a",
+      "kernel_sha256": "19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505",
+      "launches": 152
+    }
+  ],
+  "u280_access": "BLOCKED",
+  "network_evidence": "results/ab-d5-u280-network-20261108-v2/probe.json",
+  "board": "NOT_RUN",
+  "independent_acceptance": "NOT_RUN",
+  "p0": "NOT_RUN"
+}

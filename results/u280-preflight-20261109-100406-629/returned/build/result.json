@@ -1,0 +1,73 @@
+{
+  "schema_version": "u280-prepared-build-v2",
+  "argv": [
+    "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/build_prepared.py",
+    "--input",
+    "/home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/u280-rtl-input",
+    "--run-id",
+    "u280-preflight-20261109-100406-629",
+    "--stage",
+    "xo",
+    "--build-flow",
+    "ip-ooc-v1"
+  ],
+  "started_at": "2026-11-09T02:04:21.578208+00:00",
+  "stage": "xo",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "platform",
+      "argv": [
+        "bash",
+        "-c",
+        ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec platforminfo -p /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm"
+      ],
+      "cwd": "/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629",
+      "timeout_seconds": 60,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 1.619,
+      "stdout_sha256": "c4e4d8356f63f1e2e558ec90603c104fb8668f97a57a3b82070677aa2138ea1d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "xo",
+      "argv": [
+        "bash",
+        "-c",
+        ". /apps/Xilinx2023/Vitis/2023.1/settings64.sh >/dev/null && . /opt/xilinx/xrt/setup.sh >/dev/null && exec vivado -mode batch -notrace -source /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/bounded_xo.tcl -log /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/vivado.log -journal /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/vivado.jou"
+      ],
+      "cwd": "/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/input",
+      "timeout_seconds": 900,
+      "timed_out": false,
+      "exit_code": 0,
+      "elapsed_seconds": 340.708,
+      "stdout_sha256": "b02041358947c2a6d6238bfb3cc86afbdb03bb01db04db7bd07e1e9f02988242",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "board_load": "NOT_RUN",
+  "host_configuration": "NOT_RUN",
+  "limits": {
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "nice_increment": 10,
+    "vivado_max_threads": 2,
+    "wall_seconds": 900,
+    "ram_hard_limit": "NOT_ENFORCED; confirm shared-host resource rules before link"
+  },
+  "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "input_manifest_sha256": "fe16e5837f89f93d39c6708fc66a970714b3debb14868b182e9e006df1cb8d56",
+  "input_files": 288,
+  "build_flow": "ip-ooc-v1",
+  "flow_sha256": "964e4c6c23fcdd97c47376edacd88e6d210a39f3c1ac09d0c611255689ccc630",
+  "artifact": {
+    "path": "out/vortex_afu.xo",
+    "sha256": "58ff5ed950d738f232f5fa70e4c4fcf82ebd2b73bb3d247cfc00133f51e66b0d",
+    "bytes": 312868
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-09T02:10:04.175396+00:00"
+}
