@@ -1,52 +1,37 @@
 # Vortex-U280
 
-AI 智能体辅助的 Vortex-U280 GPGPU 与 PTX P0 子集兼容编译研究。
+Vortex-U280 是一个 GPU 兼容编译的研究原型。项目让一部分用 PTX 编写的 GPU 程序在开源 Vortex GPU 上运行，并在 Alveo U280 FPGA 加速卡上验证计算结果。
 
-截至 **2026-11-11**，PTX copy、vadd、整数 affine 及三种合法等价源变体已通过 **SimX、处理器 RTL、NOXRT AFU、物理 U280 四路各 48/48 独立接收**。项目 runtime 支持单队列、参数副本、连续启动和缓冲区生命周期管理。
+PTX 是 NVIDIA 定义的 GPU 虚拟指令集，用于描述 GPU 上要执行的计算。Vortex 使用自己的指令体系，因此需要转换程序，同时保持每个线程的计算和内存访问行为。
 
-| 入口 | 内容 |
-|---|---|
-| [阶段成果](docs/PROJECT_PROGRESS_REPORT_20261111.md) | 当前可交付能力、证据与未完成项 |
-| [当前状态](docs/STATUS.md) / [项目交接](docs/PROJECT_HANDOFF.md) | 最新结果、历史记录和后续工作 |
-| [独立 E 接收](docs/E_RUNTIME_UNSEEN_ACCEPTANCE.md) | 先冻结输入与答案，再执行的 192 次新验证 |
-| [C runtime](docs/C_RUNTIME_MERGE.md) / [接口 v2](configs/c_runtime/api_v2.json) | 模块、BufferSlice、event、生命周期和恢复限制 |
-| [恢复实验](docs/RUNTIME_RECOVERY_20261111.md) | 三模型超时排空与设备故障封锁 |
-| [服务器访问与目录](docs/SERVER_GUIDE.md) | 登录方式、工具环境、FPGA 成品和实验位置 |
-| [PTX 范围](docs/PTX_COMPATIBILITY_PROFILE.md) / [合作协议](docs/COLLABORATION_PROTOCOL.md) | 语义、接口及接收约定 |
-| [研究计划](docs/RESEARCH_PLAN.md) | 研究问题、五人分工、性能与 AI 对照实验 |
+## 从向量加法看起
 
-## 已验证与未完成
+向量加法把两个数组中相同位置的数相加。比如 `[1, 2, 3]` 与 `[4, 5, 6]` 相加得到 `[5, 7, 9]`。在示例程序中，每个参与计算的 GPU 线程处理一个位置。[查看 PTX 示例](ptx/samples/vadd_u32.ptx)
 
-- 新独立语料四路共 **192 次执行、576 份全数组、192 组参数**通过；每路一个 context/queue、41 次模块装载和两轮缓冲区分配。
-- 物理板测使用固定 D10/D12、HOST 256 MiB、实际 200 MHz；打开/关闭门禁、执行及 SSH 接收均通过。
-- `sticky-device-fault-v1` 修复错误被底层清除后重试误放行的问题；三模型实际超时排空、旧句柄失效和故障封锁通过。
-- **物理故障恢复仍 NOT_RUN，旧 DMA 停止/隔离依据 BLOCKED；TIMING-7 保持 OPEN。** 根 lock/caps 仍为 draft。
-- 完整 P0、一般分支、浮点、shared/barrier 和完整 CUDA 不在当前接收结论内。性能、配置与 AI 协作对照实验尚未形成结论。
+编译前端检查 PTX 源程序并将它转换成 C++，再用 Vortex 工具链生成设备程序。运行时负责准备设备内存、传入参数和启动程序。程序执行后，验证工具将输出与事先确定的答案逐字节比较。
 
-## 获取与检查
+## 已验证的范围
+
+数组复制、向量加法和逐元素乘加是目前已验证的三类程序，均使用 32 位无符号整数。用例覆盖零长度输入、不同的线程分组和整数溢出。
+
+独立验证使用同一组 48 个用例，分别在指令级模拟、处理器电路仿真、FPGA 加速单元仿真和 U280 实板上运行，四种环境均通过。[独立验证报告](docs/E_RUNTIME_UNSEEN_ACCEPTANCE.md)
+
+当前支持范围限于项目定义的 PTX 整数子集。浮点运算、通用分支和共享内存等能力留待扩展，物理板卡故障恢复尚待验证。项目还计划开展性能评估与 AI 智能体协作的对照实验。[阶段成果](docs/PROJECT_PROGRESS_REPORT_20261111.md) · [研究计划](docs/RESEARCH_PLAN.md)
+
+## 在本机开始
+
+准备好 Git 和 Python 3.12 后，可下载代码并运行自测。
 
 ```bash
-git clone --recurse-submodules https://github.com/slishysun974/Vortex-U280.git
+git clone https://github.com/slishysun974/Vortex-U280.git
 cd Vortex-U280
 python -B -m unittest discover -s tests -v
 ```
 
-本地完整工作区最新运行器自测为 **268 通过、1 跳过**。该命令只验证 Python 运行器、前端及接收器行为，不能代替设备执行。公开副本缺少的历史大文件或运行环境会明确跳过对应检查；本次公开副本为 **237 通过、32 跳过**，四路已有输出各 48/48 离线重核通过，见 [发布验证](results/publication-check-20261111-v1/summary.json)。
+自测检查前端、运行器和验证工具的行为，无需连接 U280。部分检查依赖特定环境或历史归档，缺少相应条件时会跳过。
 
-设备复现使用 [E 接收文档](docs/E_RUNTIME_UNSEEN_ACCEPTANCE.md) 中的新 run_id 命令，需要固定工具链及对应 backend；板测还需获授权的服务器、匹配的 FPGA/runtime 与当次设备门禁。服务器入口是本地环境配置，不随代码授予设备权限。
+## 继续阅读
 
-## 目录
-
-```text
-configs/       目标锁、ABI、候选配置和冻结验收语料
-scripts/       前端、模块、runtime、设备入口和独立接收器
-native/        Vortex wrapper、原生基线与宿主审计程序
-ptx/           P0 示例
-tests/         Python 自测
-docs/          研究、接口、状态和接收说明
-results/       按 run_id 保存的验证证据
-third_party/   固定来源与许可证明确的宿主兼容依赖
-upstream/vortex/  固定提交的上游源码
-```
-
-全部命令从项目根目录运行。新实验使用新 run_id，不改写旧失败记录或冻结答案。公开仓库保留选定证据；完整工具包、FPGA 大文件、服务器访问材料和课程原件继续在本地保管。欢迎 Fork 后提交 Pull Request，并附验证命令、退出码与适用范围。
+- 核对仓库里已有的实验输出，可按说明离线复核。[公开数据与复核方法](docs/PUBLICATION.md)
+- 查看支持的 PTX 指令、数据类型与内存规则。[PTX 兼容性规范](docs/PTX_COMPATIBILITY_PROFILE.md)
+- 准备实板实验时，先确认服务器访问权限、工具版本和板卡条件。[服务器访问与目录导航](docs/SERVER_GUIDE.md)
