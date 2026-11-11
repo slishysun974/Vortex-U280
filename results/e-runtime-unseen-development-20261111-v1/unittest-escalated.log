@@ -1,0 +1,9 @@
+test_argument_bytes_and_snapshot_rejected (test_e_runtime_unseen_acceptance.UnseenReceiverControls.test_argument_bytes_and_snapshot_rejected) ... ok
+test_corrupted_arrays_and_sentinels_rejected (test_e_runtime_unseen_acceptance.UnseenReceiverControls.test_corrupted_arrays_and_sentinels_rejected) ... ok
+test_incorrect_state_geometry_identity_rejected (test_e_runtime_unseen_acceptance.UnseenReceiverControls.test_incorrect_state_geometry_identity_rejected) ... ok
+test_positive_full_and_zero (test_e_runtime_unseen_acceptance.UnseenReceiverControls.test_positive_full_and_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.739s
+
+OK

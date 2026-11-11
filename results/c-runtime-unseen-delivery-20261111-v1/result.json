@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "delivery identity and evidence audit only",
+  "independent_acceptance": "PASS: 48 cases per backend, four backends",
+  "simulation_recovery": "PASS: timeout drain, fault containment, separate-process canaries",
+  "physical_recovery": "NOT_RUN",
+  "physical_isolation": "BLOCKED: fixed-platform stopping/isolation mechanism has not been accepted",
+  "timing7": "OPEN",
+  "argv": [
+    "results/c-runtime-unseen-delivery-20261111-v1/review.py"
+  ],
+  "files": {
+    "results/e-runtime-unseen-build-20261111-v1/build_summary.json": "17ec7fce6b324e444903014f0dbbb22cce715f68b3df683eb18f4ff21abe1cae",
+    "results/e-runtime-unseen-sim-20261111-v1/summary.json": "07e9245c3e49118c0607973c5cda3f397a88e887ddab7dc292588447916b628f",
+    "results/e-u280-unseen-20261111-v1/preparation.json": "3ce9c5b84307f83a53270925ba26fff4c1e0b9e446ce42a1bc31b901c5978c7c",
+    "results/e-u280-unseen-20261111-v1/result.json": "25a002601b5492266b0634d7d7228e9ae4a16b036b1d27a86c203d883155ff2a",
+    "results/e-u280-unseen-20261111-v1/transport.json": "2412025295899583ebed7b69ba107e0ce21c6a5771c87288dfb8e3815ac2ee89",
+    "results/e-runtime-unseen-acceptance-20261111-v1/result.json": "f73f98a156569f0cb06d0585243a40a467aaf3c7fe4c056030514c82b44562ae",
+    "results/c-runtime-recovery-20261111-v1/summary.json": "944c03891485ebfbb22decda2d6b709ec6df66b8069fb6e00bee5199288bd7fe",
+    "results/e-runtime-unseen-development-20261111-v1/recovery-review.json": "6567a66bca4b58c265559f7138bc2d76b41a4018a01891721c0744d3bb7983ce",
+    "results/c-runtime-closeout-20261111-v1/summary.json": "5d724c23428d40855634540a7aba988e54e6bcfb67acc162ef4c4c5c66552004",
+    "results/e-u280-unseen-20261111-v1/probe.stdout": "c46eebf9fb34d52b51cc10c8a0dd482bde663174a7ba54726b1732cff0a45707",
+    "results/e-u280-unseen-20261111-v1/ssh.log": "537252c372f87a8a6c1bf621be0f69a5c53e30920d46245f628d46e82ea63399",
+    "results/e-u280-unseen-20261111-v1/payload.py": "0a214106c5d733fe733e3582230c9d0e61cd880b3056e0148d75e5eaae48a0dd"
+  },
+  "environment_attempts": [
+    {
+      "operation": "WSL targeted tests and recovery controller initial invocation",
+      "status": "BLOCKED",
+      "reason": "Wsl/E_ACCESSDENIED in Windows sandbox; retried with required escalation",
+      "device_execution": "NOT_RUN",
+      "raw_output_location": "conversation tool transcript; no run directory was created"
+    }
+  ],
+  "exit_code": 0,
+  "current_runtime_sha256": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+  "total_unseen_executions": 192,
+  "selftests": {
+    "total": 269,
+    "passed": 268,
+    "skipped": 1
+  },
+  "protected_inputs": 9
+}

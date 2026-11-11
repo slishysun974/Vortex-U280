@@ -1,0 +1,2 @@
+[VXDRV] Error: CP poll timed out after 0s (Q_SEQNUM=26 target=27)
+{"status": "PASS", "backend": "simx", "mode": "cp-fault", "error": null}

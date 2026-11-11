@@ -44,7 +44,7 @@ def main():
                     result.update(error_stage=stage, error_type=type(error).__name__, error=str(error))
             result["elapsed_seconds"] = round(time.monotonic() - before, 3)
             return result
-        specs = [(host, route) for host in ("192.0.2.103", "192.0.2.28") for route in ("default", "WLAN")]
+        specs = [(host, route) for host in ("192.0.2.28", "192.0.2.28") for route in ("default", "WLAN")]
         with ThreadPoolExecutor(max_workers=4) as pool:
             probes = list(pool.map(probe, specs))
         ready = any(p["host"] == "192.0.2.28" and p["ssh_banner"] == "PASS" for p in probes)

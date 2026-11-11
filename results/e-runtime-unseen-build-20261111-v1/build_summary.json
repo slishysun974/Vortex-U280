@@ -1,0 +1,811 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/affine.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370092.3448684,
+      "log": "logs/000.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370091.4970894
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370120.9030168,
+      "log": "logs/001.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370092.3657153
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370122.2793262,
+      "log": "logs/002.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370120.9198132
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/affine_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370123.1790159,
+      "log": "logs/003.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370122.340075
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370147.707276,
+      "log": "logs/004.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370123.203681
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370148.6744328,
+      "log": "logs/005.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370147.7269075
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/copy.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370149.4337597,
+      "log": "logs/006.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370148.745131
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370173.345776,
+      "log": "logs/007.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370149.45009
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370174.681984,
+      "log": "logs/008.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370173.3688917
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/copy_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370175.555068,
+      "log": "logs/009.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370174.7656848
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370200.3450096,
+      "log": "logs/010.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370175.5687048
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370201.5263493,
+      "log": "logs/011.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370200.3610265
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/vadd.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370202.288751,
+      "log": "logs/012.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370201.591619
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370225.5960598,
+      "log": "logs/013.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370202.3134978
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370226.7073104,
+      "log": "logs/014.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370225.6304064
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/vadd_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370227.7206101,
+      "log": "logs/015.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370226.8463008
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/sim/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370252.9263685,
+      "log": "logs/016.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370227.7428415
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/sim/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370253.9608617,
+      "log": "logs/017.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370252.9478827
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/affine.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370254.8383753,
+      "log": "logs/018.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370254.042537
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370281.4249105,
+      "log": "logs/019.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370254.85965
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370282.5113049,
+      "log": "logs/020.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370281.4530404
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/affine_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370283.486199,
+      "log": "logs/021.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370282.5863698
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370312.7527797,
+      "log": "logs/022.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370283.5163934
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/affine_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370313.8299208,
+      "log": "logs/023.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370312.77443
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/copy.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370314.6995564,
+      "log": "logs/024.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370313.905932
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370342.6071954,
+      "log": "logs/025.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370314.7301874
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370343.6812017,
+      "log": "logs/026.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370342.626919
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/copy_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370344.6405854,
+      "log": "logs/027.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370343.7724037
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370374.0443153,
+      "log": "logs/028.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370344.6638918
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/copy_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370375.2955685,
+      "log": "logs/029.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370374.0678804
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/vadd.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370376.2449274,
+      "log": "logs/030.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370375.3553116
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370401.3573465,
+      "log": "logs/031.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370376.2647533
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370402.3838377,
+      "log": "logs/032.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370401.375898
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1/sources/vadd_variant.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/hardware.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370402.9725654,
+      "log": "logs/033.log",
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "started": 1794370402.4329402
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd_variant",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/isolated_build/board/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370427.9689028,
+      "log": "logs/034.log",
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "started": 1794370402.9949186
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/board/vadd_variant",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/modules/board/copy/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "exit_code": 0,
+      "finished": 1794370429.724039,
+      "log": "logs/035.log",
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "started": 1794370427.9941022
+    }
+  ],
+  "exit_code": 0,
+  "finished": 1794370429.8789964,
+  "implementation": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "modules": {
+    "board/affine": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "a3bfba96b260324058453f6772d0051a16b43fcf919e86deaa46fc1b965d6af7",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3"
+    },
+    "board/affine_variant": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "44dc6e46527c25cb1f2700776d21acfda39d3d60e5dd4e7b094e61cb9553d2c1",
+      "source_sha256": "9d89709ef0cb51f5ea4fb67454a2dc2a84a51b4d5d7f524214c16f1773220259"
+    },
+    "board/copy": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "291b2f18a349cef78eb96516d16b8ff93953b32f373332a96bc5a182db3ac8fe",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c"
+    },
+    "board/copy_variant": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "5dd2dbb59d8a7947ff639069c9b98c53c29e59a9e9c57ebc671493fbda6da2b3",
+      "source_sha256": "880d536c7f2e97ad617c85d7a7f76289b0d785db722aad9b9fc849cb217bd835"
+    },
+    "board/vadd": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "027fed9e643884586507ae20da44a5a8e526787813ebc0e062ffde9e5ba95931",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
+    },
+    "board/vadd_variant": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "f82f2d68a681eaefc893100e3cd837932d25ff8f36ae228d93f76cdb4a901c91",
+      "source_sha256": "1b98617935114759a0b2ab7dfdbc1136c757b7e7cc4070e02136068a07203e99"
+    },
+    "sim/affine": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "ccd003f0206d38bbbe1d426a5bd549e54463b93e8fb33a0a912b182c54a22b23",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3"
+    },
+    "sim/affine_variant": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "4890b37b210913ff708ee8bfb1e6d06221f753272f0238067db6ce55763313b7",
+      "source_sha256": "9d89709ef0cb51f5ea4fb67454a2dc2a84a51b4d5d7f524214c16f1773220259"
+    },
+    "sim/copy": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "fb37b5bb87975312f2c4cbb3fba23151294d25dbb6a802e9ee9306f3b74f3e20",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c"
+    },
+    "sim/copy_variant": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "caf06219161477c0e9b49b1f009d3681fb0625807a9eaa0ae8e541f4e4dcfbfb",
+      "source_sha256": "880d536c7f2e97ad617c85d7a7f76289b0d785db722aad9b9fc849cb217bd835"
+    },
+    "sim/vadd": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "63913213f89156cd4f396c6550eaf1e7a4219d08dac4d0a9475dc05799ab0613",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
+    },
+    "sim/vadd_variant": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "02fcf7ee238a47e8f87e9e218a767f3fced93144f94fd4c5cedd45aa1540b747",
+      "source_sha256": "1b98617935114759a0b2ab7dfdbc1136c757b7e7cc4070e02136068a07203e99"
+    }
+  },
+  "scope": "12 fresh modules, six PTX programs times sim/board",
+  "started": 1794370091.4602528,
+  "status": "PASS"
+}

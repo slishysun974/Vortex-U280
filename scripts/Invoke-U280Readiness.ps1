@@ -2,6 +2,7 @@
 param(
     [switch]$PrepareOnly,
     [switch]$TimingOnly,
+    [switch]$Timing7,
     [ValidatePattern('^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$')]
     [string]$RunId = ('u280-readiness-' + (Get-Date -Format 'yyyyMMdd-HHmmss-fff'))
 )
@@ -10,6 +11,7 @@ $projectRoot = Split-Path -Parent $PSScriptRoot
 $python = 'C:/Users/example/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
 $prepareArgs = @('-B', (Join-Path $PSScriptRoot 'prepare_u280_readiness.py'), $RunId)
 if ($TimingOnly) { $prepareArgs += '--timing-only' }
+if ($Timing7) { $prepareArgs += '--timing7'; $TimingOnly = $true }
 & $python @prepareArgs
 if ($LASTEXITCODE -ne 0) { throw 'Readiness request preparation failed.' }
 $run = Join-Path (Join-Path $projectRoot 'results') $RunId
@@ -21,6 +23,7 @@ $result = [ordered]@{
     authentication_session_recorded=$false
 }
 if ($TimingOnly) { $result.scope = 'Read-only existing DCP audit using two CPUs; no sudo, HOST change, xclbin load, or kernel execution' }
+if ($Timing7) { $result.scope = 'TIMING-7 evidence collection on both hash-pinned DCPs using two CPUs' }
 try {
     if ($PrepareOnly) {
         $result.exit_code = 0

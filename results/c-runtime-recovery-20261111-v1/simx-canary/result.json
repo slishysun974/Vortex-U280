@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "backend": "simx",
+  "mode": "canary",
+  "board_execution": "NOT_RUN",
+  "checks": [],
+  "cycles": [
+    {
+      "label": "fresh-process",
+      "status": "PASS",
+      "generation": 0
+    }
+  ],
+  "runtime_sha256": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+  "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+  "binding_sha256": "080a74484515b9a4416ec2e0cf16c0ad4ee4c7d7f96c06148df74c867cd52ca4",
+  "scope": "real native simulation only",
+  "diagnostic": {
+    "threads": 4,
+    "warps": 8,
+    "cores": 1,
+    "isa_flags": 221200257320,
+    "clusters": 1,
+    "backend": "simx",
+    "device_state": "CLOSED",
+    "generation": 1,
+    "safe_abort": false,
+    "recovery_mode": "timeout-drain-only",
+    "max_modules": 1,
+    "device_fault": null,
+    "first_error": null
+  },
+  "native_calls": [
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 9.008300000346026e-05
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 3.6329999915096778e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 4.6850000074982745e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 1.2200000014672696e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 2.1230000015748374e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 7.170000060341408e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.8295999993256373e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.00016570399999693564
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.7803999995180675e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 7.086600000150156e-05
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 1.0613000000603279e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 0,
+      "seconds": 0.008296792999999525
+    },
+    {
+      "name": "vx_event_release",
+      "status": 0,
+      "seconds": 8.582000006640556e-06
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 3.402300001198455e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.00011611899999763864
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 2.709999999694901e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 8.671700000206783e-05
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 3.0227999999965505e-05
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 2.234000007206305e-06
+    },
+    {
+      "name": "vx_kernel_release",
+      "status": 0,
+      "seconds": 5.631999997035564e-06
+    },
+    {
+      "name": "vx_module_release",
+      "status": 0,
+      "seconds": 3.358000000730499e-06
+    },
+    {
+      "name": "vx_queue_release",
+      "status": 0,
+      "seconds": 0.00022235500000533648
+    },
+    {
+      "name": "vx_device_release",
+      "status": 0,
+      "seconds": 0.010585594000005472
+    }
+  ],
+  "exit_code": 0
+}

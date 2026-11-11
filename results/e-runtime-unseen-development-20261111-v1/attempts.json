@@ -1,0 +1,24 @@
+{
+  "schema": "e-development-attempts-v1",
+  "attempts": [
+    {
+      "command": "wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/e_acceptance/runtime_unseen_build.py --run-id e-runtime-unseen-build-20261111-v1",
+      "exit_code": 1,
+      "status": "BLOCKED",
+      "scope": "sandbox launch only; no module build started",
+      "output": "Wsl/E_ACCESSDENIED",
+      "tool_chunk_id": "40851a",
+      "follow_up": "same command rerun with require_escalated; build records separate"
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -p test_e_runtime_unseen_acceptance.py -v",
+      "exit_code": 1,
+      "status": "BLOCKED",
+      "scope": "Windows sandbox temporary-directory permissions; not device execution",
+      "output_summary": "Ran 4 tests; FAILED errors=30. PermissionError WinError 5 creating fixture child dirs and cleaning tempfile directories under sandbox AC/Temp.",
+      "tool_chunk_id": "229bea",
+      "raw_log": "not saved to disk at first invocation; tool transcript retained",
+      "follow_up": "rerun with require_escalated and save raw log"
+    }
+  ]
+}

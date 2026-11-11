@@ -16,16 +16,16 @@
 
 | 层次 | 当前结果 | 证据 |
 |---|---|---|
-| Linux 运行器自测 | PASS，23 通过 / 1 跳过 | 最终日志与退出码（本地记录 `results/ab-d4-final-linux-tests-20261108-v1/summary.json`）；增加边界阶段状态隔离检查，只验证脚本行为 |
-| Windows 运行器自测 | PASS，18 通过 / 5 跳过 | 日志与退出码（本地记录 `results/ab-d4-windows-tests-20261108-v1/summary.json`）；先前沙箱临时目录权限错误单列 |
-| SimX 原生 u32 | PASS，140/140 | 本轮 summary（本地记录 `results/ab-d4-simx-20261108-v1/summary.json`）、逐项比较（本地记录 `results/ab-d4-simx-20261108-v1/boundary/comparison.json`）；执行退出 0 |
-| 处理器 RTL 原生 u32 | PASS，140/140 | 本轮 summary（本地记录 `results/ab-d4-rtlsim-20261108-v1/summary.json`）、逐项比较（本地记录 `results/ab-d4-rtlsim-20261108-v1/boundary/comparison.json`）；执行退出 0 |
-| NOXRT AFU 模型原生 u32 | PASS，140/140 | 本轮 summary（本地记录 `results/ab-d4-xrtsim-20261108-v1/summary.json`）、逐项比较（本地记录 `results/ab-d4-xrtsim-20261108-v1/boundary/comparison.json`）；执行退出 0 |
+| Linux 运行器自测 | PASS，23 通过 / 1 跳过 | [最终日志与退出码（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-94a1563593a7)；增加边界阶段状态隔离检查，只验证脚本行为 |
+| Windows 运行器自测 | PASS，18 通过 / 5 跳过 | [日志与退出码（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-bb4144417c52)；先前沙箱临时目录权限错误单列 |
+| SimX 原生 u32 | PASS，140/140 | [本轮 summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-56036f4b7399)、[逐项比较（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-c54fa03e3465)；执行退出 0 |
+| 处理器 RTL 原生 u32 | PASS，140/140 | [本轮 summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-3c358dba008d)、[逐项比较（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-39e632b26138)；执行退出 0 |
+| NOXRT AFU 模型原生 u32 | PASS，140/140 | [本轮 summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-4f796978ecd0)、[逐项比较（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6c9a848362fe)；执行退出 0 |
 | 物理 U280 | BLOCKED | 无分配账号/设备访问；FPGA 构建和板上运行 NOT_RUN |
 
 每轮先在全新 build/run 目录跑同配置上游 demo，再编译和执行新测试。运行器 schema 升为 5，`upstream_smoke`/`demo_execution` 与 `native_boundary` 分开；前者通过不能替代后者。`--native-boundary` 是本地测试入口，不是项目 runtime API 扩展。
 
-本轮还修正了可选边界阶段的中间状态：demo 完成后，在边界阶段结束前保持整体 RUNNING。此修改不影响构建参数或测试执行；三路已启动运行的脚本副本及交付版本哈希保存在 修订记录（本地记录 `results/ab-d4-closeout-20261108-v1/runner-revision.json`），新状态行为已在最终 Linux 自测中检查。
+本轮还修正了可选边界阶段的中间状态：demo 完成后，在边界阶段结束前保持整体 RUNNING。此修改不影响构建参数或测试执行；三路已启动运行的脚本副本及交付版本哈希保存在 [修订记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-5f040cb41fd4)，新状态行为已在最终 Linux 自测中检查。
 
 每轮 `boundary/inputs`、`expected`、`corpus.json` 在执行前生成并保存哈希；host/device 不读取 expected。`actual` 保存四个 buffer 的完整实际读回，`comparison.json` 逐 byte 比较并验证输入/答案没有改动。`source/` 和生成器副本保存本轮测试身份，`artifacts/` 保存编译产物和反汇编。
 

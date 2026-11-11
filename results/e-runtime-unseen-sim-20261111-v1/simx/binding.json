@@ -1,0 +1,25 @@
+{
+  "schema_version": "ptx-vx-runtime-binding-v3",
+  "backend": "simx",
+  "driver": "simx",
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "target_lock_hash": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "hardware_defines": {
+    "VX_CFG_NUM_CLUSTERS": 1,
+    "VX_CFG_NUM_CORES": 1,
+    "VX_CFG_NUM_THREADS": 4,
+    "VX_CFG_NUM_WARPS": 8
+  },
+  "library_dir": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/sw/runtime",
+  "libraries": {
+    "libvortex.so": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+    "libvortex-simx.so": "45c4c6e2f0ca037c7e6df157aba682211fc8a606f128e05fbf7be683a0658d71",
+    "libsimx.so": "d19a7ac45b6976f7f63a024f62c32d27c9fd48651d498b314d706e966db31838"
+  },
+  "dependencies": {
+    "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/sw/runtime/libsimx.so": "d19a7ac45b6976f7f63a024f62c32d27c9fd48651d498b314d706e966db31838",
+    "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/third_party/ramulator/libramulator.so": "10bcf59a01fecb757c6e54f1f490ee9d12f97ff127685907b3d11a8902bf9286"
+  },
+  "native_summary_sha256": "b48b9a4a829eabb055e9623a1727b89603b68fb25e9b6eefa0818e4a19e994cc",
+  "scope": "native build identity; PTX validation is separate"
+}

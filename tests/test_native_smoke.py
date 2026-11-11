@@ -74,6 +74,31 @@ class RunnerSafetyTests(unittest.TestCase):
             self.assertEqual(record["log_sha256"], smoke.sha256(directory / record["log"]))
             self.assertEqual(json.loads((directory / "summary.json").read_text())["commands"][0]["returncode"], 7)
 
+    def test_spooled_failure_preserves_exact_bytes_and_exit_code(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            scratch = directory / 'scratch'
+            scratch.mkdir()
+            recorder = smoke.Recorder(directory, {"commands": []}, dict(os.environ), scratch_logs=scratch)
+            record, _ = recorder.command('spooled_failure', [sys.executable, '-c',
+                "import os; os.write(1,b'raw\\x00\\xff\\r\\n'); os.write(2,b'error\\n'); raise SystemExit(7)"], directory)
+            self.assertEqual(record['returncode'], 7)
+            self.assertEqual((directory / record['log']).read_bytes(), b'raw\x00\xff\r\nerror\n')
+            self.assertEqual(record['log_sha256'], smoke.sha256(Path(record['scratch_log'])))
+
+    def test_spooled_timeout_keeps_partial_output(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            scratch = directory / 'scratch'
+            scratch.mkdir()
+            recorder = smoke.Recorder(directory, {"commands": []}, dict(os.environ), scratch_logs=scratch)
+            record, output = recorder.command('spooled_timeout', [sys.executable, '-c',
+                "import time; print('partial evidence',flush=True); time.sleep(60)"], directory, timeout=1)
+            self.assertTrue(record['timed_out'])
+            self.assertNotEqual(record['returncode'], 0)
+            self.assertIn('partial evidence', output)
+            self.assertEqual(record['log_sha256'], smoke.sha256(directory / record['log']))
+
     @unittest.skipUnless(os.name == "posix", "Linux process-group test")
     def test_timeout_kills_child_process_group(self):
         with tempfile.TemporaryDirectory() as temp:

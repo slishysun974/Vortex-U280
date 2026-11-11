@@ -2,6 +2,8 @@
 
 日期：2026-11-07。依据 [research-v2.0 总计划](RESEARCH_PLAN.md)、[合作协议](COLLABORATION_PROTOCOL.md)、[启动清单](STARTUP.md) 和 [PTX 规范](PTX_COMPATIBILITY_PROFILE.md)。负责人：你，兼任 A 和 B；C/D/E 的职责沿用团队计划。
 
+2026-11-11 的当前交付入口见 [A/B 收尾清单](AB_CLOSEOUT.md) 和 [完成/恢复限制](AB_RECOVERY_LIMITS.md)。下文保留原始执行计划；已完成范围、实际证据和剩余责任以收尾清单及 STATUS 为准。
+
 你的任务是把 Vortex 核心变成一套可复现、可验证的 U280 计算平台，让队友生成的程序能够在上面正确运行。先建立原生程序基线，再接 PTX 编译产物，最后在进度允许时研究一个配置变量。
 
 按实际重新启动日计 D1，首期 30 天；下表是执行安排，平台可用性和阶段验收决定能否进入下一步。截至制定时，[状态记录](STATUS.md) 中 Vortex 版本冻结、SimX、RTL、U280 均为 NOT_RUN。历史 AEC 的局部 ALU 结果只作方法参考。

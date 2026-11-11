@@ -1,0 +1,89 @@
+Frontend:
+  impl: GEM5
+
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 44
+  total_num_read_requests: 92
+  memory_system_cycles: 2622
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+
+
+  Controller:
+    impl: Generic
+    id: Channel 0
+    avg_read_latency_0: 20.934782
+    read_queue_len_avg_0: 0.321510285
+    write_queue_len_0: 195
+    queue_len_0: 1038
+    num_other_reqs_0: 0
+    num_write_reqs_0: 22
+    read_latency_0: 963
+    priority_queue_len_avg_0: 0
+    row_hits_0: 43
+    priority_queue_len_0: 0
+    row_misses_0: 9
+    row_conflicts_0: 16
+    read_row_misses_0: 9
+    queue_len_avg_0: 0.395880997
+    read_row_conflicts_core_0: 8
+    read_row_hits_0: 29
+    write_queue_len_avg_0: 0.074370712
+    read_row_conflicts_0: 8
+    write_row_misses_0: 0
+    write_row_conflicts_0: 8
+    read_queue_len_0: 843
+    write_row_hits_0: 14
+    read_row_hits_core_0: 29
+    read_row_misses_core_0: 9
+    num_read_reqs_0: 46
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+    RowPolicy:
+      impl: OpenRowPolicy
+
+
+
+  Controller:
+    impl: Generic
+    id: Channel 1
+    read_queue_len_avg_1: 0.319984734
+    priority_queue_len_1: 0
+    write_queue_len_1: 214
+    num_write_reqs_1: 22
+    row_hits_1: 41
+    row_misses_1: 10
+    avg_read_latency_1: 21.173914
+    queue_len_avg_1: 0.401601821
+    read_queue_len_1: 839
+    read_row_misses_1: 10
+    priority_queue_len_avg_1: 0
+    read_row_hits_1: 28
+    queue_len_1: 1053
+    read_row_conflicts_1: 8
+    num_read_reqs_1: 46
+    num_other_reqs_1: 0
+    row_conflicts_1: 17
+    write_row_hits_1: 13
+    write_queue_len_avg_1: 0.0816170871
+    write_row_misses_1: 0
+    write_row_conflicts_1: 9
+    read_row_hits_core_0: 28
+    read_row_misses_core_0: 10
+    read_latency_1: 974
+    read_row_conflicts_core_0: 8
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+    RowPolicy:
+      impl: OpenRowPolicy
+
+
+

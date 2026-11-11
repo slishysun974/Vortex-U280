@@ -1,0 +1,254 @@
+{
+  "build_run": "e-runtime-unseen-build-20261111-v1",
+  "build_summary_sha256": "17ec7fce6b324e444903014f0dbbb22cce715f68b3df683eb18f4ff21abe1cae",
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_run.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--modules",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/target_lock.json",
+        "--backend",
+        "simx",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/sw/runtime",
+        "VORTEX_DRIVER": "simx"
+      },
+      "exit_code": 0,
+      "finished": 1794370511.3953538,
+      "log": "logs/00-simx.log",
+      "log_sha256": "b06857fc8aa5947492f35ada5cc4c4640b7568406a02671ff5f2b1c9ad20211b",
+      "started": 1794370443.930991
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/simx",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/simx.acceptance.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/sw/runtime",
+        "VORTEX_DRIVER": "simx"
+      },
+      "exit_code": 0,
+      "finished": 1794370521.3561764,
+      "log": "logs/01-simx.log",
+      "log_sha256": "58719a655007b6a3101d1e5fb8caf7537065d55f70517345e0725eb7828a4bd5",
+      "started": 1794370511.4224696
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_run.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--modules",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/target_lock.json",
+        "--backend",
+        "rtlsim",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim/sw/runtime",
+        "VORTEX_DRIVER": "rtlsim"
+      },
+      "exit_code": 0,
+      "finished": 1794370591.7382808,
+      "log": "logs/02-rtlsim.log",
+      "log_sha256": "4e2da39627b5f1f9e5b9313bb634e4eb0b0295b4ba235972fd7e3a107e312c4a",
+      "started": 1794370521.4168394
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/rtlsim",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/rtlsim.acceptance.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim/sw/runtime",
+        "VORTEX_DRIVER": "rtlsim"
+      },
+      "exit_code": 0,
+      "finished": 1794370601.4355977,
+      "log": "logs/03-rtlsim.log",
+      "log_sha256": "58719a655007b6a3101d1e5fb8caf7537065d55f70517345e0725eb7828a4bd5",
+      "started": 1794370591.7521024
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_run.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--modules",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/target_lock.json",
+        "--backend",
+        "xrtsim",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_DRIVER": "xrt"
+      },
+      "exit_code": 0,
+      "finished": 1794370668.2411199,
+      "log": "logs/04-xrtsim.log",
+      "log_sha256": "5187375a4a48ba31c6949839a438436e9375c1b1303a4ef48ffbae37fa8c3f63",
+      "started": 1794370601.485523
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/xrtsim",
+        "--out",
+        "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/xrtsim.acceptance.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "environment": {
+        "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_DRIVER": "xrt"
+      },
+      "exit_code": 0,
+      "finished": 1794370676.863541,
+      "log": "logs/05-xrtsim.log",
+      "log_sha256": "58719a655007b6a3101d1e5fb8caf7537065d55f70517345e0725eb7828a4bd5",
+      "started": 1794370668.2673776
+    }
+  ],
+  "exit_code": 0,
+  "finished": 1794370676.9461615,
+  "implementation": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "results": {
+    "rtlsim": {
+      "allocation_generations": 2,
+      "backend": "rtlsim",
+      "capture_sha256": "aa84c9e6f49f2089ca5f0e98be3209f21ae642d777b9a3b73f0adf256a928493",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "implementation": {
+        "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+        "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+        "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+        "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+        "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+        "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+      },
+      "limitations": [
+        "No claim of arbitrary P0, high-address stress, false-predicate trace invisibility, hardware faults/recovery, performance or human E signature.",
+        "Unseen means independently constructed without consulting development vectors; cannot prove no coincidental individual integer matches prior data."
+      ],
+      "logical_parameter_sets": 48,
+      "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+      "module_loads": 41,
+      "payload_captures": 144,
+      "scope": "independent E frozen unseen C API functional acceptance",
+      "status": "PASS"
+    },
+    "simx": {
+      "allocation_generations": 2,
+      "backend": "simx",
+      "capture_sha256": "f56d23035e1764a2408c0cc01908c7d08a76590c19a3d88c20e8814c70e9ece3",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "implementation": {
+        "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+        "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+        "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+        "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+        "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+        "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+      },
+      "limitations": [
+        "No claim of arbitrary P0, high-address stress, false-predicate trace invisibility, hardware faults/recovery, performance or human E signature.",
+        "Unseen means independently constructed without consulting development vectors; cannot prove no coincidental individual integer matches prior data."
+      ],
+      "logical_parameter_sets": 48,
+      "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+      "module_loads": 41,
+      "payload_captures": 144,
+      "scope": "independent E frozen unseen C API functional acceptance",
+      "status": "PASS"
+    },
+    "xrtsim": {
+      "allocation_generations": 2,
+      "backend": "xrtsim",
+      "capture_sha256": "689ac34c7b9b2020c2011aa8645bf724a99c8c8c88dfb430d691f5affd9c5833",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "implementation": {
+        "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+        "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+        "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+        "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+        "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+        "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+      },
+      "limitations": [
+        "No claim of arbitrary P0, high-address stress, false-predicate trace invisibility, hardware faults/recovery, performance or human E signature.",
+        "Unseen means independently constructed without consulting development vectors; cannot prove no coincidental individual integer matches prior data."
+      ],
+      "logical_parameter_sets": 48,
+      "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+      "module_loads": 41,
+      "payload_captures": 144,
+      "scope": "independent E frozen unseen C API functional acceptance",
+      "status": "PASS"
+    }
+  },
+  "started": 1794370443.8483057,
+  "status": "PASS"
+}

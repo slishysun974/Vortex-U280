@@ -1,0 +1,48 @@
+{
+  "schema_version": "c-runtime-api-v1-draft",
+  "frozen": false,
+  "source_repository": "https://github.com/LiuZeheng123/GPGPU-runtime",
+  "source_commit": "7f3575db67888c03d1c2c4dc3743051c735519dd",
+  "import_record": "results/c-runtime-import-20261111-v1/result.json",
+  "frontend": {
+    "legacy_entry": "scripts/ptx_frontend.py",
+    "legacy_compiler_id": "ptx-vx-frontend-v1",
+    "runtime_entry": "scripts/ptx_frontend_v12.py",
+    "runtime_compiler_id": "ptx-vx-frontend-v1.2",
+    "host_compatibility_patch": "python36-integer-v1",
+    "profile": "ptx-vx-p0-v0.2-draft",
+    "argument_abi": "ptx-vx-args-v1"
+  },
+  "module_formats": {
+    "simulation": "ptx-vx-module-v1-draft",
+    "physical_u280": "ptx-vx-module-u280-v2-draft",
+    "physical_target_adapter": "u280-hbm32-target-v1",
+    "native_entry": "main",
+    "image_format": "vortex-v3-vxbin-symtab"
+  },
+  "bindings": {
+    "simx": "ptx-vx-runtime-binding-v3",
+    "rtlsim": "ptx-vx-runtime-binding-v3",
+    "xrtsim": "ptx-vx-runtime-binding-v3",
+    "u280-xrt": "ptx-vx-u280-binding-v1"
+  },
+  "resource_model": {
+    "queues_per_context": 1,
+    "resident_modules_per_context": 1,
+    "kernels_in_flight": 1,
+    "pointer_argument": "BufferSlice(handle, offset_bytes, declared_access_bytes, access)",
+    "launch_copies_payload": true,
+    "busy_resource_action": "E_BUSY",
+    "close_requires_state": "READY"
+  },
+  "recovery": {
+    "simulation": "bounded queue drain; only on successful drain invalidate all handles and increment generation",
+    "u280-xrt": "E_UNAVAILABLE; keep NEEDS_RECOVERY and owned resources",
+    "safe_abort": false,
+    "hardware_dma_isolation": "NOT_ACCEPTED"
+  },
+  "physical_open_policy": "fixed D10/D12 hashes; explicit BDF/index; fresh shell/HOST/KDS/visible-holder and C++ XRT BDF checks; loaded UUID and actual 200 MHz before queue creation",
+  "timing7": "OPEN",
+  "cpu_fallback": false,
+  "acceptance_policy": "Implementation contract only. Execution, Python tests, E acceptance and physical board receipts are reported separately in docs/STATUS.md."
+}

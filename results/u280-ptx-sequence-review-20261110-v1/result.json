@@ -1,0 +1,1383 @@
+{
+  "status": "PASS",
+  "scope": "same-device PTX sequence; reused E array answers plus author padding checks",
+  "board_run": "u280-board-ptx-sequence-20261110-v1",
+  "source_run": "ptx-sequence-20261110-v3",
+  "checks": {
+    "u280": {
+      "status": "PASS",
+      "launches": 30,
+      "rejected_launches": 12,
+      "buffer_generations": 2,
+      "device_opens": 1,
+      "module_loads": 29,
+      "checked_files": 138,
+      "observations": [
+        {
+          "id": "0000",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        },
+        {
+          "id": "0001",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0002",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0003",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0004",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0005",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0006",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0007",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0008",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0009",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0010",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0011",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0012",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0013",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0014",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0015",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0016",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0017",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0018",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0019",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0020",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0021",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0022",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0023",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0024",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0025",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0026",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0027",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0028",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0029",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        }
+      ],
+      "scope": "fixed sequence; synchronous invalid launch rejection, not timeout recovery"
+    },
+    "simx": {
+      "status": "PASS",
+      "launches": 30,
+      "rejected_launches": 12,
+      "buffer_generations": 2,
+      "device_opens": 1,
+      "module_loads": 29,
+      "checked_files": 138,
+      "observations": [
+        {
+          "id": "0000",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        },
+        {
+          "id": "0001",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0002",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0003",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0004",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0005",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0006",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0007",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0008",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0009",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0010",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0011",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0012",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0013",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0014",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0015",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0016",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0017",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0018",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0019",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0020",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0021",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0022",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0023",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0024",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0025",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0026",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0027",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0028",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0029",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        }
+      ],
+      "scope": "fixed sequence; synchronous invalid launch rejection, not timeout recovery"
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "launches": 30,
+      "rejected_launches": 12,
+      "buffer_generations": 2,
+      "device_opens": 1,
+      "module_loads": 29,
+      "checked_files": 138,
+      "observations": [
+        {
+          "id": "0000",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        },
+        {
+          "id": "0001",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0002",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0003",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0004",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0005",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0006",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0007",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0008",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0009",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0010",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0011",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0012",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0013",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0014",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0015",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0016",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0017",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0018",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0019",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0020",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0021",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0022",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0023",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0024",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0025",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0026",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0027",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0028",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0029",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        }
+      ],
+      "scope": "fixed sequence; synchronous invalid launch rejection, not timeout recovery"
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "launches": 30,
+      "rejected_launches": 12,
+      "buffer_generations": 2,
+      "device_opens": 1,
+      "module_loads": 29,
+      "checked_files": 138,
+      "observations": [
+        {
+          "id": "0000",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        },
+        {
+          "id": "0001",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0002",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0003",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0004",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0005",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0006",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0007",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0008",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0009",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0010",
+          "entry": "vadd_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0011",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0012",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0013",
+          "entry": "affine_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0014",
+          "entry": "copy_u32",
+          "generation": 1,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0015",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "6d0f95257816be2f9784714e3412039c0b9749d17e716b4a366cbf3d9686b148"
+        },
+        {
+          "id": "0016",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a9f659906eba48127513e062d38c5127774674e822f190c2f38752ddf959c4d4"
+        },
+        {
+          "id": "0017",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "20e0c53884733859b662696d171ed819978fdf03cd6c613bfb9adaf151ba267d"
+        },
+        {
+          "id": "0018",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "f308bd7d35bb11d18367e10322cb9b0d7d746593b4072aa41a85bc6b96f36b53"
+        },
+        {
+          "id": "0019",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "c5064cf022892c1c888197f3b1053128ef9336a7c7f754073409b2f4f7df124e"
+        },
+        {
+          "id": "0020",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "cbaca3cfe88dd6bcc353ae9f542f24ddff9e2102cf3f93982c7cc0c5142f494b"
+        },
+        {
+          "id": "0021",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0022",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "5c332fc2fc7ac93a0c43a7417405f588e4319bdbbf23fbb9dc525fdb6ef9effb"
+        },
+        {
+          "id": "0023",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "ced4cb76475299b725ccfb70ddb69d591b5328e3037804d9472edaebaa7bf026"
+        },
+        {
+          "id": "0024",
+          "entry": "vadd_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "65b4545a72c7d1baff2f22379c204886582b19da943c5915db043de0004f9d7a"
+        },
+        {
+          "id": "0025",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "1c009bd73dc42b2172a4294baf5e86a6e45b5c3bdf756d54b8c5be66f17c77e0"
+        },
+        {
+          "id": "0026",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "47ccad97c1ca690c9d0304278bb15045107d01420e68ea3684fcfc89985176fe"
+        },
+        {
+          "id": "0027",
+          "entry": "affine_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "fe9da67f696fb8d7fde502eafdc18526fa9f25760ef410c77aed739619510276"
+        },
+        {
+          "id": "0028",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "b118b5147226a292c0f91e2e06984b81e1c76ae8d5d2b3fa308d9435a7411efe"
+        },
+        {
+          "id": "0029",
+          "entry": "copy_u32",
+          "generation": 2,
+          "addresses": {
+            "x": 65568,
+            "y": 65952,
+            "z": 66336
+          },
+          "params_sha256": "a23be4b4cf4412fff667e77d65f3984e783e9046d008eefe9017c3d6df15c30f"
+        }
+      ],
+      "scope": "fixed sequence; synchronous invalid launch rejection, not timeout recovery"
+    }
+  },
+  "four_way_array_files": 108,
+  "parameter_files_per_backend": 30,
+  "contract_sha256": "82d602cc2c8fc3e5d722bed0e5d880992ca8255aaadcade1c727d358fd4bdfd2",
+  "board_result_sha256": "d3136d085a366c150269c872360be24c2cded7e861d6c7f1513e9ef9fa5f3172",
+  "timeout_recovery": "NOT_RUN",
+  "independent_sequence_acceptance": "NOT_RUN",
+  "exit_code": 0
+}

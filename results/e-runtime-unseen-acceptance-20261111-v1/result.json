@@ -1,0 +1,133 @@
+{
+  "backends": {
+    "rtlsim": {
+      "allocation_generations": 2,
+      "capture_sha256": "aa84c9e6f49f2089ca5f0e98be3209f21ae642d777b9a3b73f0adf256a928493",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "logical_parameter_sets": 48,
+      "module_loads": 41,
+      "payload_captures": 144,
+      "status": "PASS"
+    },
+    "simx": {
+      "allocation_generations": 2,
+      "capture_sha256": "f56d23035e1764a2408c0cc01908c7d08a76590c19a3d88c20e8814c70e9ece3",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "logical_parameter_sets": 48,
+      "module_loads": 41,
+      "payload_captures": 144,
+      "status": "PASS"
+    },
+    "u280-xrt": {
+      "allocation_generations": 2,
+      "capture_sha256": "380ecc8d91abd31823a4014e06390463962583059ef2026d89c9fb557843e171",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "logical_parameter_sets": 48,
+      "module_loads": 41,
+      "payload_captures": 144,
+      "status": "PASS"
+    },
+    "xrtsim": {
+      "allocation_generations": 2,
+      "capture_sha256": "689ac34c7b9b2020c2011aa8645bf724a99c8c8c88dfb430d691f5affd9c5833",
+      "cases": 48,
+      "context_creations": 1,
+      "full_arrays": 144,
+      "logical_parameter_sets": 48,
+      "module_loads": 41,
+      "payload_captures": 144,
+      "status": "PASS"
+    }
+  },
+  "board": {
+    "actual_data_clock_mhz": 200,
+    "bdf": "0000:b1:00.1",
+    "close_gate": "PASS",
+    "holder_check": "three fuser calls returned 1 with empty output: no ordinary-account visible holders; no exclusive reservation",
+    "host_bytes": 268435456,
+    "open_gate": "PASS",
+    "python_version": [
+      3,
+      6,
+      8
+    ],
+    "raw_export_files": 305,
+    "xclbin_uuid": "b60ca9fb-1506-3033-c156-e03ff687f492",
+    "xrt_index": 3
+  },
+  "commands": {
+    "final_receiver_exit_code": 0,
+    "module_prepare_build_validate": 36,
+    "nested_compilation": 36,
+    "remote_board": 13,
+    "simulation_capture_and_check": 6,
+    "ssh_exit_code": 0
+  },
+  "evidence": {
+    "results/c-runtime-closeout-20261111-v1/summary.json": "5d724c23428d40855634540a7aba988e54e6bcfb67acc162ef4c4c5c66552004",
+    "results/e-runtime-unseen-build-20261111-v1/build_summary.json": "17ec7fce6b324e444903014f0dbbb22cce715f68b3df683eb18f4ff21abe1cae",
+    "results/e-runtime-unseen-development-20261111-v1/recovery-review.json": "6567a66bca4b58c265559f7138bc2d76b41a4018a01891721c0744d3bb7983ce",
+    "results/e-runtime-unseen-sim-20261111-v1/summary.json": "07e9245c3e49118c0607973c5cda3f397a88e887ddab7dc292588447916b628f",
+    "results/e-u280-unseen-20261111-v1/e.acceptance.json": "5162742c9e489d6d9546c9169ed09f0a27aa0c038c34125afc605b1e12cd7d4f",
+    "results/e-u280-unseen-20261111-v1/preparation.json": "3ce9c5b84307f83a53270925ba26fff4c1e0b9e446ce42a1bc31b901c5978c7c",
+    "results/e-u280-unseen-20261111-v1/result.json": "25a002601b5492266b0634d7d7228e9ae4a16b036b1d27a86c203d883155ff2a",
+    "results/e-u280-unseen-20261111-v1/returned/binding/sessions/e-unseen/gate.json": "7dc4f3572e39316d4822b17a5dc7869897173ff4d7cdf9d55adb5706261b12a5",
+    "results/e-u280-unseen-20261111-v1/transport.json": "2412025295899583ebed7b69ba107e0ce21c6a5771c87288dfb8e3815ac2ee89"
+  },
+  "exit_code": 0,
+  "host_selftests": {
+    "exit_code": 0,
+    "passed": 268,
+    "scope": "Python host behavior, separate from device results",
+    "skipped": 1,
+    "total": 269
+  },
+  "images": {
+    "affine": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+    "affine_variant": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+    "copy": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+    "copy_variant": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+    "vadd": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+    "vadd_variant": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7"
+  },
+  "independent_recovery_review": "PASS for author's simulator timeout/drain and fault-containment evidence; not E fault reexecution or physical recovery",
+  "issuer": "independent non-implementation E AI agent; not a formal human signature",
+  "limitations": [
+    "No claim of arbitrary P0, high-address stress, false-predicate trace invisibility, hardware faults/recovery, performance or human E signature.",
+    "Unseen means independently constructed without consulting development vectors; cannot prove no coincidental individual integer matches prior data."
+  ],
+  "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+  "physical_recovery": "NOT_RUN",
+  "production": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "schema": "e-runtime-unseen-final-acceptance-v1",
+  "status": "PASS",
+  "timing7": "OPEN",
+  "totals": {
+    "actual_executions": 192,
+    "fresh_modules": 12,
+    "full_arrays": 576,
+    "logical_parameter_sets": 192,
+    "payload_captures": 576
+  },
+  "verification_command": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results\\e-runtime-unseen-acceptance-20261111-v1\\verify.py",
+    "--out",
+    "results\\e-runtime-unseen-acceptance-20261111-v1\\result.json"
+  ],
+  "verifier_sha256": "2836828eac4066994da6cbcaaba5215194ec29be9806512f6a6f6e0e77fd763b"
+}

@@ -13,10 +13,12 @@ import subprocess
 import time
 import zipfile
 
-BUILD = "/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671"
+BUILD = "/home/course/u280user/vortex-u280-builds/u280-link-20261109-103830-671"
 XCLBIN_SHA = "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843"
 XSA = "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/hw/hw.xsa"
 XSA_SHA = "11c9e4acdfdb6e98e136df84c4af806d1d01a8d69a8e0c7b20477a6692010c91"
+TIMING7_FINAL_SHA = "4942bb1979f74e60bbbd8d20ce9779ec1cdee675d2a3217453e505ac4cd26c19"
+TIMING7_BASELINE_SHA = "f5cee615c973ebd572f85ce6d412edbf273115b8f7b061874d286caa3408bcf3"
 INTERFACE_UUID = "fb2b2c5a19ed63593fea95f51fbc8eb9"
 BDFS = ["0000:" + b + ":00.1" for b in ("b1", "b4", "b5", "3d", "3e", "40", "41", "b2")]
 
@@ -175,6 +177,9 @@ def audit(work, result, tcl):
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(raw)
     result["baseline_checkpoint"] = dict(path=str(base / "hw_bb_locked.dcp"), sha256=digest(base / "hw_bb_locked.dcp"))
+    if result.get("timing7") and (result["final_checkpoint"]["sha256"] != TIMING7_FINAL_SHA or
+                                  result["baseline_checkpoint"]["sha256"] != TIMING7_BASELINE_SHA):
+        raise ValueError("TIMING-7 checkpoint differs from the archived D13 identity")
     (work / "audit.tcl").write_bytes(tcl)
     results = []
     for label, dcp in (("implemented", final), ("baseline", base / "hw_bb_locked.dcp")):
@@ -191,6 +196,8 @@ def main(bundle):
     import pwd
     account = pwd.getpwuid(os.getuid())
     run_id = bundle["run_id"]
+    if bundle.get("timing7") and bundle.get("configure_host", True):
+        raise ValueError("TIMING-7 evidence collection requires timing-only mode")
     if account.pw_name != "u280user" or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,95}", run_id):
         raise ValueError("unexpected account/run id")
     parent = Path(account.pw_dir) / "vortex-u280-readiness"
@@ -205,7 +212,8 @@ def main(bundle):
     result = dict(schema_version="u280-readiness-v1", run_id=run_id, nonce=bundle["nonce"],
         remote_probe_sha256=bundle["remote_probe_sha256"], status="RUNNING", commands=[], files={},
         started_at=now(), board_load="NOT_RUN", board_execution="NOT_RUN", warnings_disposition="OPEN",
-        host_configuration="NOT_RUN", timing_collection="NOT_RUN", work_directory=str(work))
+        host_configuration="NOT_RUN", timing_collection="NOT_RUN", timing7=bundle.get("timing7", False),
+        work_directory=str(work))
     def save():
         (work / "result.json").write_text(json.dumps(result, indent=2) + "\n")
     save()

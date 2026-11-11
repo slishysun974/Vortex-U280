@@ -20,14 +20,14 @@ B 线已完成可访问本机的只读盘点，准备了后续可在板卡服务
 | [源码/配置证据 v2](../results/ab-d1-source-20261107-v2/result.json) | 3329 个实际源码文件 SHA-256、Git 命令输出、配置解析 | PASS 仅指身份与解析；SimX/RTL 执行仍 NOT_RUN |
 | [原生运行器](../scripts/run_native_smoke.py) | Linux 预检、隔离构建、逐命令日志/退出码/超时、真实 demo 标记检查 | 未在具备完整依赖的宿主执行成功；不能把脚本自测当成 Vortex PASS |
 | [平台盘点脚本](../scripts/platform_inventory.py) | 只读 Linux 工具、资源、路径、Xilinx PCI 可见性记录 | 默认不执行 XRT 设备查询；不变更设备、不安装软件 |
-| Linux 实测 JSON（本地记录 `results/ab-d1-host-20261107/linux_inventory.json`） | Ubuntu、libc、CPU/内存/磁盘、真实工具版本/缺项 | 盘点采集成功不等于仿真/板卡可用 |
-| 容器启动失败（本地记录 `results/ab-d1-container-20261107/result.json`） | Docker 启动命令、退出码、错误输出 | FAIL，不把仍不可访问的 daemon 当成备用环境 |
+| [Linux 实测 JSON（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-b47a301e0ef5) | Ubuntu、libc、CPU/内存/磁盘、真实工具版本/缺项 | 盘点采集成功不等于仿真/板卡可用 |
+| [容器启动失败（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-97ac3a701c7c) | Docker 启动命令、退出码、错误输出 | FAIL，不把仍不可访问的 daemon 当成备用环境 |
 | [上游审查](UPSTREAM_BASELINE_REVIEW.md)、[平台报告](PLATFORM_INVENTORY.md) | 版本来源、下载规模、配置与平台前置条件 | 来源审查与本地运行结果分开 |
 | [AI 任务记录](../experiments/AB_D1_20261107.json) | 委派职责、输入版本、边界与未提供的计量字段 | 未开展受控 AI 成对实验；人工接收 NOT_RUN |
 
-运行器自测在 Ubuntu WSL 执行：6 项通过、1 项 Windows 专属测试跳过，覆盖原始退出码/日志保存、超时子进程组终止、目录防覆盖、路径限制和 PASS 判定；完整工具返回（本地记录 `results/ab-d1-validation-20261107/runner-tests.log`）。这些是脚本自测，不是 Vortex kernel 测试。首轮实际预检 summary.json（本地记录 `results/ab-d1-simx-preflight-20261107/summary.json`） 为 BLOCKED，且 `upstream_smoke=NOT_RUN`；同时记录了跨 NTFS 的 Git 检查超时，后续将身份检查上限增至 120 秒并保留旧结果。
+运行器自测在 Ubuntu WSL 执行：6 项通过、1 项 Windows 专属测试跳过，覆盖原始退出码/日志保存、超时子进程组终止、目录防覆盖、路径限制和 PASS 判定；[完整工具返回（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-9633b95b8b84)。这些是脚本自测，不是 Vortex kernel 测试。首轮实际预检 [summary.json（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-f66c065bc14a) 为 BLOCKED，且 `upstream_smoke=NOT_RUN`；同时记录了跨 NTFS 的 Git 检查超时，后续将身份检查上限增至 120 秒并保留旧结果。
 
-最终版已在 WSL 完成复测：v2 预检证据（本地记录 `results/ab-d1-simx-preflight-20261107-v2/summary.json`）。3329 项源码哈希全部相符，Git 提交/源码差异/子模块检查退出 0，配置与 lock 哈希一致。最终状态仍为 **BLOCKED**，原因是真实的 glibc、CMake、Vortex 编译工具/库、Ramulator 三项离线依赖，以及宿主 C++20 编译探针失败；没有创建 Vortex build 目录或执行 demo。根目录 WSL 命令返回非零，脚本 JSON 保留每个子命令的实际退出码；两者分别记录。
+最终版已在 WSL 完成复测：[v2 预检证据（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-34cd689ad498)。3329 项源码哈希全部相符，Git 提交/源码差异/子模块检查退出 0，配置与 lock 哈希一致。最终状态仍为 **BLOCKED**，原因是真实的 glibc、CMake、Vortex 编译工具/库、Ramulator 三项离线依赖，以及宿主 C++20 编译探针失败；没有创建 Vortex build 目录或执行 demo。根目录 WSL 命令返回非零，脚本 JSON 保留每个子命令的实际退出码；两者分别记录。
 
 源码快照由另一实施角色独立核对过提交和哈希关系，但这不是 C/E 的实际运行接收。第一版源码快照保留；v2 增加了“公共配置不含 backend 附加宏”的说明，当前 configs 对应 v2。
 

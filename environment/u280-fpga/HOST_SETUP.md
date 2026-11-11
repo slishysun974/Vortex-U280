@@ -1,6 +1,25 @@
 # U280 HOST 内存配置交接
 
-2026-11-09：用户已授权配置 HOST，但服务器账号 `u280user` 无 sudo 权限。实际 `sudo -v` 退出 1；用户看到 `Sorry, user u280user may not run sudo on localhost.`。见 v1 原始采集（本地记录 `results/u280-readiness-20261109-v1/probe.json`）。没有执行 HOST enable、加载 xclbin 或启动 kernel。
+2026-11-10：据用户提供的回复，学长已配置 `b1`、`b2`、`b4`、`3d`、`3e`、`40`、`41`。先用普通账号从 `0000:b1:00.1` 读回，备选 `0000:b4:00.1`、`0000:3d:00.1`、`0000:40:00.1`、`0000:41:00.1`。避开 `b2`、`b5` 和学长常用的 `3e`。选择 ready、shell 匹配、当次空闲且已预留至少 256 MiB 的卡。
+
+在服务器的新个人运行目录执行以下只读检查，保留输出与退出码：
+
+```bash
+bdf=0000:b1:00.1
+device="/sys/bus/pci/devices/$bdf"
+readlink -f "$device/driver"
+ls "$device/drm/"
+cat "$device/ready" "$device/interface_uuids" "$device/kdsstat" "$device/host_mem_size"
+source /opt/xilinx/xrt/setup.sh
+xbutil examine --device "$bdf" --report platform pcie-info dynamic-regions --format JSON --output "host-recheck-$bdf.json"
+echo "examine_exit=$?"
+```
+
+用 `shared_host_mem_size_bytes` 核实预留容量，用 `kdsstat` 查看在途任务和上下文。可对该 BDF 对应的 render 节点执行 `fuser -v` 补查普通账号可见的持有者。加载前再按共享规则确认占用，并核对当前 BDF 和 XRT index 的映射。
+
+## 2026-11-09 管理员配置申请
+
+2026-11-09：用户已授权配置 HOST，但服务器账号 `u280user` 无 sudo 权限。实际 `sudo -v` 退出 1；用户看到 `Sorry, user u280user may not run sudo on localhost.`。见 [v1 原始采集（本地归档）](../../docs/LOCAL_ARCHIVE_INDEX.md#archive-7f14460d1290)。没有执行 HOST enable、加载 xclbin 或启动 kernel。
 
 需要管理员在 `192.0.2.28` 为一张当次空闲的 U280 启用 256 MiB HOST。以下以 `0000:b1:00.1` / `/dev/dri/renderD132` 为候选；它在 v1 时 ready、无 KDS 任务、HOST 为 0，但该观察不构成预留。管理员执行前必须重新核对 BDF 与 render 节点、ready、shell、KDS 和所有用户的文件占用。
 

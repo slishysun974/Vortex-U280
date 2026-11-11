@@ -17,14 +17,13 @@ from u280_remote_xo import unpack_archive
 
 class PreparedBuildTests(unittest.TestCase):
     def setUp(self):
-        fixture = ROOT / "results/ab-d8-u280-source-20261109-v1/package"
-        if not fixture.is_dir():
-            self.skipTest("D8 RTL input package is required")
+        if not (ROOT / "results/ab-d8-u280-source-20261109-v1/package").is_dir():
+            self.skipTest("Archived D8 RTL input package is required")
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.package = self.root / "package"
-        shutil.copytree(fixture, self.package)
+        shutil.copytree(ROOT / "results/ab-d8-u280-source-20261109-v1/package", self.package)
 
     def change_manifest(self, change):
         path = self.package / "manifest.json"

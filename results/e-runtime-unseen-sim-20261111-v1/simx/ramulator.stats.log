@@ -1,0 +1,89 @@
+Frontend:
+  impl: GEM5
+
+MemorySystem:
+  impl: GenericDRAM
+  total_num_other_requests: 0
+  total_num_write_requests: 351
+  total_num_read_requests: 6576
+  memory_system_cycles: 287992
+  DRAM:
+    impl: HBM2
+  AddrMapper:
+    impl: RoBaRaCoCh
+
+
+  Controller:
+    impl: Generic
+    id: Channel 0
+    avg_read_latency_0: 16.2901459
+    read_queue_len_avg_0: 0.177310482
+    write_queue_len_0: 908
+    queue_len_0: 51972
+    num_other_reqs_0: 0
+    num_write_reqs_0: 168
+    read_latency_0: 53562
+    priority_queue_len_avg_0: 0
+    row_hits_0: 3109
+    priority_queue_len_0: 0
+    row_misses_0: 11
+    row_conflicts_0: 332
+    read_row_misses_0: 11
+    queue_len_avg_0: 0.180463344
+    read_row_conflicts_core_0: 332
+    read_row_hits_0: 2945
+    write_queue_len_avg_0: 0.00315286545
+    read_row_conflicts_0: 332
+    write_row_misses_0: 0
+    write_row_conflicts_0: 0
+    read_queue_len_0: 51064
+    write_row_hits_0: 164
+    read_row_hits_core_0: 2945
+    read_row_misses_core_0: 11
+    num_read_reqs_0: 3288
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+    RowPolicy:
+      impl: OpenRowPolicy
+
+
+
+  Controller:
+    impl: Generic
+    id: Channel 1
+    read_queue_len_avg_1: 0.178119525
+    priority_queue_len_1: 0
+    write_queue_len_1: 1068
+    num_write_reqs_1: 183
+    row_hits_1: 3096
+    row_misses_1: 13
+    avg_read_latency_1: 16.5152073
+    queue_len_avg_1: 0.181827962
+    read_queue_len_1: 51297
+    read_row_misses_1: 13
+    priority_queue_len_avg_1: 0
+    read_row_hits_1: 2919
+    queue_len_1: 52365
+    read_row_conflicts_1: 356
+    num_read_reqs_1: 3288
+    num_other_reqs_1: 0
+    row_conflicts_1: 356
+    write_row_hits_1: 177
+    write_queue_len_avg_1: 0.00370843639
+    write_row_misses_1: 0
+    write_row_conflicts_1: 0
+    read_row_hits_core_0: 2919
+    read_row_misses_core_0: 13
+    read_latency_1: 54302
+    read_row_conflicts_core_0: 356
+    Scheduler:
+      impl: FRFCFS
+    RefreshManager:
+      impl: AllBank
+    RowPolicy:
+      impl: OpenRowPolicy
+
+
+

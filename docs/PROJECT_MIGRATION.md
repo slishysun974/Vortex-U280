@@ -18,7 +18,7 @@
 
 ## 验证记录
 
-本次检查仅覆盖目录迁移、文件完整性、Git 身份、配置哈希、文档链接、脚本语法和已有 Python 单元测试。记录位于 迁移结果目录（本地记录 `results/project-migration-20261108`）：
+本次检查仅覆盖目录迁移、文件完整性、Git 身份、配置哈希、文档链接、脚本语法和已有 Python 单元测试。记录位于 [迁移结果目录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6aae14a73d60)：
 
 - `file_manifest.json`：每个来源文件的哈希、去向和复制/更新/缓存排除分类。
 - `integrity.json`：整理副本的完整性与离线检查结果。

@@ -1,0 +1,135 @@
+{
+  "limitations": [
+    "No physical fault/timeout injection, reset, DMA isolation or U280 recovery acceptance.",
+    "Successful separate process canary demonstrates only simulator process disposal; no claim that original faulted context recovered.",
+    "The author supplied recovery inputs/results; this evidence review is separate from E pre-frozen unseen-input execution."
+  ],
+  "raw_canary_arrays_checked": 18,
+  "runtime_sha256": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+  "scope": "independent audit of source/commands/logs/native statuses and 9 raw canaries; not independent fault reexecution",
+  "source_review": "TraceNative calls real functions and preserves statuses. Sticky non-timeout fault gate precedes native recovery; timeout-only drain checks original event before resource release. Physical branch rejects before any drain.",
+  "status": "PASS",
+  "summary_sha256": "944c03891485ebfbb22decda2d6b709ec6df66b8069fb6e00bee5199288bd7fe",
+  "workers": [
+    {
+      "backend": "simx",
+      "canaries": [
+        {
+          "actual_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "actual_z": "f8d9e4a2f055ad2484771e7afc8ea704bdf76ef851fc0839f94deb58370e09d5",
+          "input_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "input_z": "1a4c6d77c3e443addada9b9a27ed21436ae2826069d7faa424aa68567e5dbcc3"
+        },
+        {
+          "actual_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "actual_z": "36c902e633888dddadfba356fdaa003d16c1a5ddcbde349851b93de74aa7964a",
+          "input_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "input_z": "c3be5d10f5e1e8b8a1214036f797206ef5484890fd63c04baaa89b6c85ff75bd"
+        }
+      ],
+      "mode": "timeout",
+      "native_calls": 84,
+      "source_result_sha256": "4a9bac61b13275ae061ec44d4c6a8e854f6c5c43cfd7c4d55a5d5750538c62a2"
+    },
+    {
+      "backend": "simx",
+      "mode": "cp-fault",
+      "native_calls": 12,
+      "source_result_sha256": "ca7fdc9e907eeb0b36d6690bbf9ce693e3c2da34d988bff22037b89f717e84d8"
+    },
+    {
+      "backend": "simx",
+      "canaries": [
+        {
+          "actual_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "actual_z": "f9e3fd8eca1d87374013c556a35bed5ebc792c347dfdea30a026999b5a63c2ff",
+          "input_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "input_z": "6b9ea3aa96fd57e8e9539919edc298f3e228a433c9cd4819b28be942b4e99283"
+        }
+      ],
+      "mode": "canary",
+      "native_calls": 23,
+      "source_result_sha256": "601a957937bb2f5e745fc05c8c30300b992bc1588664c3ad41829a01425160c4"
+    },
+    {
+      "backend": "rtlsim",
+      "canaries": [
+        {
+          "actual_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "actual_z": "f8d9e4a2f055ad2484771e7afc8ea704bdf76ef851fc0839f94deb58370e09d5",
+          "input_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "input_z": "1a4c6d77c3e443addada9b9a27ed21436ae2826069d7faa424aa68567e5dbcc3"
+        },
+        {
+          "actual_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "actual_z": "36c902e633888dddadfba356fdaa003d16c1a5ddcbde349851b93de74aa7964a",
+          "input_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "input_z": "c3be5d10f5e1e8b8a1214036f797206ef5484890fd63c04baaa89b6c85ff75bd"
+        }
+      ],
+      "mode": "timeout",
+      "native_calls": 84,
+      "source_result_sha256": "76ea24af64c1b5523b32b59c4811f37129f4b953e08e4e875f6107da359785d1"
+    },
+    {
+      "backend": "rtlsim",
+      "mode": "cp-fault",
+      "native_calls": 12,
+      "source_result_sha256": "62a15b413e6d695c61b0055ffb21f740c28a899dc825cfeff92ce0bee407f91e"
+    },
+    {
+      "backend": "rtlsim",
+      "canaries": [
+        {
+          "actual_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "actual_z": "f9e3fd8eca1d87374013c556a35bed5ebc792c347dfdea30a026999b5a63c2ff",
+          "input_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "input_z": "6b9ea3aa96fd57e8e9539919edc298f3e228a433c9cd4819b28be942b4e99283"
+        }
+      ],
+      "mode": "canary",
+      "native_calls": 23,
+      "source_result_sha256": "864f7cfd63937ec1b4169460aa45954087f427f78237b9d13f24eee0381a8459"
+    },
+    {
+      "backend": "xrtsim",
+      "canaries": [
+        {
+          "actual_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "actual_z": "f8d9e4a2f055ad2484771e7afc8ea704bdf76ef851fc0839f94deb58370e09d5",
+          "input_x": "508ca89b49022ec0eb7f54f781a8cd56a47a2a2b7b2403f02da193eb72833649",
+          "input_z": "1a4c6d77c3e443addada9b9a27ed21436ae2826069d7faa424aa68567e5dbcc3"
+        },
+        {
+          "actual_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "actual_z": "36c902e633888dddadfba356fdaa003d16c1a5ddcbde349851b93de74aa7964a",
+          "input_x": "244212e27e628a2289427dbc71df68ac8a7a05f85bfe74b7afbb996f897db7f4",
+          "input_z": "c3be5d10f5e1e8b8a1214036f797206ef5484890fd63c04baaa89b6c85ff75bd"
+        }
+      ],
+      "mode": "timeout",
+      "native_calls": 84,
+      "source_result_sha256": "a50d0663e6a9798d4ce2f5d541189528e08249a16993250c32be27e8e8a883e7"
+    },
+    {
+      "backend": "xrtsim",
+      "mode": "cp-fault",
+      "native_calls": 12,
+      "source_result_sha256": "3554d7d6e009b8d122e240eadced23e48f2e5167858585d6708b80081466c8c8"
+    },
+    {
+      "backend": "xrtsim",
+      "canaries": [
+        {
+          "actual_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "actual_z": "f9e3fd8eca1d87374013c556a35bed5ebc792c347dfdea30a026999b5a63c2ff",
+          "input_x": "87c91fde88038a20fd7f6b81f315bb8258c539d00d8248fb5f479db43e3e4dbd",
+          "input_z": "6b9ea3aa96fd57e8e9539919edc298f3e228a433c9cd4819b28be942b4e99283"
+        }
+      ],
+      "mode": "canary",
+      "native_calls": 23,
+      "source_result_sha256": "566a5b4db4fb706e33107b3710ebf824c065f72fb17aa37f91145b08e6cfd5e2"
+    }
+  ]
+}

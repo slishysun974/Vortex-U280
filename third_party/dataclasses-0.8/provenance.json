@@ -1,0 +1,13 @@
+{
+  "name": "dataclasses",
+  "version": "0.8",
+  "source": "https://pypi.org/project/dataclasses/0.8/",
+  "wheel_sha256": "0201d89fa866f68c8ebd9d08ee6ff50c0b255f8ec63a71c16fda7af82bb887bf",
+  "python": "CPython 3.6 only; >=3.7 uses standard library",
+  "scope": "unmodified project-local source; no installation",
+  "files": {
+    "dataclasses.py": "4c1b7676ee2a931c57759e68956173c07a629b6721e23ee42898b6552feaa19c",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "METADATA": "ea41b2d4dc87869fc47fdb5aa672dbdeb4087dfa312c8e5a0a54f87d6954bc81"
+  }
+}

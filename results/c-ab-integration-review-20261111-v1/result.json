@@ -1,0 +1,80 @@
+{
+  "schema_version": "c-ab-integration-review-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "python",
+    "-B",
+    "results/c-ab-integration-review-20261111-v1/finalize.py"
+  ],
+  "finished_at": "2026-11-11T10:06:32.479532+08:00",
+  "scope": "isolated C module/runtime on A/B simulation libraries; not a source merge or board acceptance",
+  "c_commit": "7f3575db67888c03d1c2c4dc3743051c735519dd",
+  "checks": {
+    "c_archive_copy": {
+      "log": "results/c-ab-integration-20261111-v2/logs/03_c_archive_copy.log",
+      "log_sha256": "15a31a09d094f06ad9e2760b80a19a95e6b85510c45260863466905013ba9c0a",
+      "exit_code": 0,
+      "identical_cases_per_backend": 168
+    },
+    "c_archive_vadd": {
+      "log": "results/c-ab-integration-20261111-v2/logs/04_c_archive_vadd.log",
+      "log_sha256": "ea5a0d78a78d5d05b589d7d60f483c21c397095122692890c33d4959bd6acbc5",
+      "exit_code": 0,
+      "identical_cases_per_backend": 168
+    },
+    "c_archive_affine": {
+      "log": "results/c-ab-integration-20261111-v2/logs/05_c_archive_affine.log",
+      "log_sha256": "35d787f6e790216fb6021a6cfae07d74fd544e5e381ad119762c285f20daee4e",
+      "exit_code": 0,
+      "identical_cases_per_backend": 504
+    },
+    "c_python_tests": {
+      "log": "results/c-ab-integration-20261111-v2/logs/06_c_python_tests.log",
+      "log_sha256": "de04bc24c041276510b6a4a90a024aef46fae42bf8fa01f1eb8f0f60c2cf2766",
+      "exit_code": 0,
+      "total": 157,
+      "passed": 143,
+      "skipped": 14
+    },
+    "ab_python_tests": {
+      "log": "results/c-ab-integration-20261111-v2/logs/07_ab_python_tests.log",
+      "log_sha256": "9c20bc0d31e9e1804127f38a11ac1c800610d24696a952ed6b14e9fe88765971",
+      "exit_code": 0,
+      "total": 163,
+      "passed": 162,
+      "skipped": 1
+    }
+  },
+  "execution": {
+    "run": "results/c-ab-integration-20261111-v3",
+    "summary_sha256": "d02b4e33549f105bf3df63dc277041ad7749b506c1663a9df3a5727fb26d3fb8",
+    "new_executions": 123,
+    "per_backend": {
+      "simx": 41,
+      "rtlsim": 41,
+      "xrtsim": 41
+    },
+    "rejected_calls": 36,
+    "cross_backend_arrays": "PASS"
+  },
+  "original_c_archive_executions_rechecked": 2520,
+  "c_source_unmodified": true,
+  "contract_files_identical": 12,
+  "source_merge": "NOT_RUN",
+  "c_runtime_u280": "NOT_RUN",
+  "independent_E": "NOT_RUN",
+  "timing7": "OPEN",
+  "device_rebuild": "NOT_RUN",
+  "fault_recovery": "NOT_RUN",
+  "performance": "NOT_MEASURED",
+  "retained_failures": {
+    "c-ab-integration-20261111-v1": "affine archive checker exceeded 240 seconds; no device run",
+    "c-ab-integration-20261111-v2": "82 new SimX/RTL executions passed; AFU binding failed before execution due to inherited library search path"
+  },
+  "documents": {
+    "docs/C_AB_INTEGRATION_20261111.md": "d98d6cb2cd20b81c19c25b8e8db96bb48ebec7038dae766d608b91c1c6c3c899",
+    "docs/STATUS.md": "f67f696d26f085e4419b304cb6f9dc06ee0b6f8c2f8b8b0d462d26abdcb03c46",
+    "docs/PROJECT_HANDOFF.md": "f8f7f32102dc77c825c993a54a0c525cd0a7eedf420c5fae4de98d8d43d3398c"
+  }
+}

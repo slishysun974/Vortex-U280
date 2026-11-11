@@ -4,7 +4,7 @@
 
 2026-11-09 D10 最新状态：**完整 link/xclbin 与固定 200 MHz 时钟检查 PASS**，作业于 15:48:08 完成，v++/clock_check 均退出 0。[最终记录](../results/u280-link-20261109-155638-456/returned/build/result.json)、[D10](AB_D10_PROGRESS.md)。此前资源方案已获用户授权并执行完毕，不必重新启动。后续是产物/报告/元数据审阅、HOST 权限与通路、服务器 runtime 兼容性及实际频率绑定，然后原生程序上板。HOST 配置、板卡加载与板上功能仍未执行。
 
-2026-11-09 D9 新事实：09:46 只读采集（本地记录 `results/u280-preflight-20261109-094621-277/probe.json`） PASS，8 卡采集时 ready/无 KDS 在途任务，HOST 内存仍全部为 0。已安装 XSA interface UUID 与 8 卡 sysfs UUID 一致；sudo 查询返回需要密码，配置权限仍未确认。首次 XO 的缺 stub 失败保留，独立 `ip-ooc-v1` 修正后已实际通过五个 IP OOC、U280 elaboration、原 error gate 及 XO 打包（Vivado 0，340.708 秒）；见 [D9](AB_D9_PROGRESS.md)。下一步先确认[完整构建资源方案](../environment/u280-fpga/NEXT_LINK.md)，再执行 link；板上功能接收仍待完成。
+2026-11-09 D9 新事实：[09:46 只读采集（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-f7b7a5a59ea5) PASS，8 卡采集时 ready/无 KDS 在途任务，HOST 内存仍全部为 0。已安装 XSA interface UUID 与 8 卡 sysfs UUID 一致；sudo 查询返回需要密码，配置权限仍未确认。首次 XO 的缺 stub 失败保留，独立 `ip-ooc-v1` 修正后已实际通过五个 IP OOC、U280 elaboration、原 error gate 及 XO 打包（Vivado 0，340.708 秒）；见 [D9](AB_D9_PROGRESS.md)。下一步先确认[完整构建资源方案](../environment/u280-fpga/NEXT_LINK.md)，再执行 link；板上功能接收仍待完成。
 
 2026-11-09 D8 更新：[独立 U280 候选和源输入包](AB_D8_PROGRESS.md)已完成实际预处理与接口检查；新增 [分阶段构建方案](../environment/u280-fpga/README.md)。HOST 的 sudo 配置语法与恢复步骤已有版本对应的官方依据，但本轮远端检查在 SSH 密码认证阶段退出 255，未取得新设备或权限数据。下一次使用 `Invoke-U280Preflight.ps1 -ProbeKind host-platform`，新 run_id、本机输入密码；完整综合/实现仍先确认资源规则。
 
@@ -16,7 +16,7 @@
 |---|---|---|
 | SSH 与账号 | WLAN 绑定 `192.0.2.28:22`，`u280user` 登录与盘点 PASS | 密码在本机 SSH 提示处输入，不存入项目 |
 | 共享设备 | 8/8 卡 ready；本次 KDS 无上下文/未完成任务，所有报告 CU 为 IDLE | 使用前重新检查空闲，记录 BDF/UUID 和当次 XRT index；无固定分卡等待项 |
-| 个人工作目录 | 已在 `/home/u280user/vortex-u280-probes/<run_id>` 实际写入输入、日志和综合产物 | 延续隔离目录与新 run_id；大型构建前核实可用资源和作业规则 |
+| 个人工作目录 | 已在 `/home/course/u280user/vortex-u280-probes/<run_id>` 实际写入输入、日志和综合产物 | 延续隔离目录与新 run_id；大型构建前核实可用资源和作业规则 |
 | 综合工具与许可 | Vivado 2023.1、U280 Synthesis 许可实际签出/释放；小型组件综合退出 0 | 完整 Vortex/IP/实现流程的兼容性及许可随下一阶段核实 |
 | platform 与 shell | platform 文件列出 HBM[0..31]/HOST[0]；8 张卡均为 `xilinx_u280_gen3x16_xdma_base_1`，logic/interface UUID 已记录 | 核对完整构建所用 platform/XSA 与实际 shell 接口，不能仅凭相近名称宣称兼容 |
 | HOST[0] | 实测 8/8 `host_mem_size=0`；尚未启用 | 查明 XRT 2.13 `xbutil configure --host-mem` 的参数与管理权限，准备所选卡的配置、验证和恢复步骤 |
@@ -27,7 +27,7 @@
 
 ## 运行入口与证据边界
 
-在项目根目录运行 `scripts/Invoke-U280Preflight.ps1`，密码在 SSH 提示处输入。该入口读取 sysfs 与 XRT 报告，并以最多两线程、两个 CPU、nice +10、300 秒超时执行固定 `VX_afu_axi_limit` 的 U280 组件综合。它不配置/复位/加载卡，不启动完整 Vortex 综合或布局布线。成功证据为 u280-preflight-20261109-001732-931（本地记录 `results/u280-preflight-20261109-001732-931/probe.json`），两个旧参数失败运行仍完整保留。仅重做基础环境盘点时使用 `scripts/Collect-U280Inventory.ps1 -ToolChecks`。
+在项目根目录运行 `scripts/Invoke-U280Preflight.ps1`，密码在 SSH 提示处输入。该入口读取 sysfs 与 XRT 报告，并以最多两线程、两个 CPU、nice +10、300 秒超时执行固定 `VX_afu_axi_limit` 的 U280 组件综合。它不配置/复位/加载卡，不启动完整 Vortex 综合或布局布线。成功证据为 [u280-preflight-20261109-001732-931（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-56088e037cfb)，两个旧参数失败运行仍完整保留。仅重做基础环境盘点时使用 `scripts/Collect-U280Inventory.ps1 -ToolChecks`。
 
 固定 XRT runtime 用 `XRT_DEVICE_INDEX` 的整数索引选择设备，运行前须从当次枚举确认与所选 BDF 的对应关系；不能假设 sysfs 排序就是 XRT index。`vx_device` 初始化会加载 `XCLBIN_PATH` 并操作 AFU，不能用它进行只读检查。HOST 控制缓冲采用 host-only BO，本地 NOXRT 模型采用进程内存，因此模型通过不证明物理主机内存桥可用。
 
@@ -37,4 +37,4 @@
 
 ## 历史记录
 
-账号和网络曾经受阻，现已解除，详见 登录记录（本地记录 `docs/U280_LOGIN_PROGRESS.md`）。D6 曾按“未明确分配卡”列出待办，后由用户共享卡规则替代；[D6 原始事实](AB_D6_PROGRESS.md)及其所有结果保持不变。D5 的 固定平台源码核验（本地记录 `results/ab-d5-u280-source-20261108-v1/summary.json`）保留为来源证据。
+账号和网络曾经受阻，现已解除，详见 [登录记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-998b875bd224)。D6 曾按“未明确分配卡”列出待办，后由用户共享卡规则替代；[D6 原始事实](AB_D6_PROGRESS.md)及其所有结果保持不变。D5 的 [固定平台源码核验（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-1e885f111dc6)保留为来源证据。

@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "run_id": "e-unseen",
+  "commands": [
+    {
+      "label": "before_holders",
+      "argv": [
+        "/usr/sbin/fuser",
+        "-v",
+        "/dev/dri/renderD132"
+      ],
+      "exit_code": 1,
+      "timeout_seconds": 20,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "device_list",
+      "argv": [
+        "xbutil",
+        "examine",
+        "--format",
+        "JSON",
+        "--output",
+        "/home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/device_list.json"
+      ],
+      "exit_code": 0,
+      "timeout_seconds": 20,
+      "stdout": "System Configuration\n  OS Name              : Linux\n  Release              : 3.10.0-1160.108.1.el7.x86_64\n  Version              : #1 SMP Thu Jan 25 16:17:31 UTC 2024\n  Machine              : x86_64\n  CPU Cores            : 64\n  Memory               : 772477 MB\n  Distribution         : CentOS Linux 7 (Core)\n  GLIBC                : 2.17\n  Model                : NF5468M5\n\nXRT\n  Version              : 2.13.479\n  Branch               : 2022.1\n  Hash                 : 5e92a513c6950e79638b1a879ddb882da34fc683\n  Hash Date            : 2022-06-25 09:05:04\n  XOCL                 : 2.13.479, 5e92a513c6950e79638b1a879ddb882da34fc683\n  XCLMGMT              : 2.13.479, 5e92a513c6950e79638b1a879ddb882da34fc683\n\nDevices present\nBDF             :  Shell                            Platform UUID                         Device ID       Device Ready*  \n[0000:b5:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=135)  Yes            \n[0000:b4:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=134)  Yes            \n[0000:b2:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=133)  Yes            \n[0000:b1:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=132)  Yes            \n[0000:41:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=131)  Yes            \n[0000:40:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=130)  Yes            \n[0000:3e:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=129)  Yes            \n[0000:3d:00.1]  :  xilinx_u280_gen3x16_xdma_base_1  283BAB8F-654D-8674-968F-4DA57F7FA5D7  user(inst=128)  Yes            \n\n* Devices that are not ready will have reduced functionality when using XRT tools\nSuccessfully wrote the JSON file: /home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/device_list.json\n",
+      "stderr": ""
+    },
+    {
+      "label": "preflight",
+      "argv": [
+        "xbutil",
+        "examine",
+        "--format",
+        "JSON",
+        "--output",
+        "/home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/preflight.json",
+        "--device",
+        "0000:b1:00.1",
+        "--report",
+        "platform",
+        "pcie-info",
+        "dynamic-regions"
+      ],
+      "exit_code": 0,
+      "timeout_seconds": 20,
+      "stdout": "\n-----------------------------------------------------\n1/1 [0000:b1:00.1] : xilinx_u280_gen3x16_xdma_base_1\n-----------------------------------------------------\nPlatform\n  XSA Name               : xilinx_u280_gen3x16_xdma_base_1 \n  Platform UUID          : 283BAB8F-654D-8674-968F-4DA57F7FA5D7 \n  FPGA Name              :  \n  JTAG ID Code           : 0x14b7d093 \n  DDR Size               : 0 Bytes\n  DDR Count              : 0 \n  Mig Calibrated         : true \n  P2P Status             : disabled \n  P2P IO space required  : 64 GB\n\nClocks\n  DATA_CLK (Data)        : 200 MHz\n  KERNEL_CLK (Kernel)    : 500 MHz\n  hbm_aclk (System)      : 450 MHz\n\nMac Addresses            : 00:0A:35:06:89:38\n                         : 00:0A:35:06:89:39\n\nPcie Info\n  Vendor                 : 0x10ee\n  Device                 : 0x500d\n  Sub Device             : 0x000e\n  Sub Vendor             : 0x10ee\n  PCIe                   : Gen3x16\n  DMA Thread Count       : 2\n  CPU Affinity           : 16-31,48-63\n  Shared Host Memory     : 256 MB\n  Max Shared Host Memory : 16 GB\n  Enabled Host Memory    : 256 MB\n\nXclbin UUID\n  B60CA9FB-1506-3033-C156-E03FF687F492\n\nCompute Units\n  PL Compute Units\n    Index   Name                                              Base_Address    Usage   Status  \n    0       vortex_afu:vortex_afu_1                           0x1000000       0       (IDLE)  \n\n  PS Compute Units\n    Index   Name                                              Base_Address    Usage   Status  \n\nSuccessfully wrote the JSON file: /home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/preflight.json\n",
+      "stderr": ""
+    },
+    {
+      "label": "xrt_bdf",
+      "argv": [
+        "/home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/xrt_bdf",
+        "3"
+      ],
+      "exit_code": 0,
+      "timeout_seconds": 20,
+      "stdout": "0000:b1:00.1\n",
+      "stderr": ""
+    },
+    {
+      "label": "immediately_before_open_holders",
+      "argv": [
+        "/usr/sbin/fuser",
+        "-v",
+        "/dev/dri/renderD132"
+      ],
+      "exit_code": 1,
+      "timeout_seconds": 20,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "loaded",
+      "argv": [
+        "xbutil",
+        "examine",
+        "--format",
+        "JSON",
+        "--output",
+        "/home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/loaded.json",
+        "--device",
+        "0000:b1:00.1",
+        "--report",
+        "platform",
+        "pcie-info",
+        "dynamic-regions"
+      ],
+      "exit_code": 0,
+      "timeout_seconds": 20,
+      "stdout": "\n-----------------------------------------------------\n1/1 [0000:b1:00.1] : xilinx_u280_gen3x16_xdma_base_1\n-----------------------------------------------------\nPlatform\n  XSA Name               : xilinx_u280_gen3x16_xdma_base_1 \n  Platform UUID          : 283BAB8F-654D-8674-968F-4DA57F7FA5D7 \n  FPGA Name              :  \n  JTAG ID Code           : 0x14b7d093 \n  DDR Size               : 0 Bytes\n  DDR Count              : 0 \n  Mig Calibrated         : true \n  P2P Status             : disabled \n  P2P IO space required  : 64 GB\n\nClocks\n  DATA_CLK (Data)        : 200 MHz\n  KERNEL_CLK (Kernel)    : 500 MHz\n  hbm_aclk (System)      : 450 MHz\n\nMac Addresses            : 00:0A:35:06:89:38\n                         : 00:0A:35:06:89:39\n\nPcie Info\n  Vendor                 : 0x10ee\n  Device                 : 0x500d\n  Sub Device             : 0x000e\n  Sub Vendor             : 0x10ee\n  PCIe                   : Gen3x16\n  DMA Thread Count       : 2\n  CPU Affinity           : 16-31,48-63\n  Shared Host Memory     : 256 MB\n  Max Shared Host Memory : 16 GB\n  Enabled Host Memory    : 256 MB\n\nXclbin UUID\n  B60CA9FB-1506-3033-C156-E03FF687F492\n\nCompute Units\n  PL Compute Units\n    Index   Name                                              Base_Address    Usage   Status  \n    0       vortex_afu:vortex_afu_1                           0x1000000       0       (IDLE)  \n\n  PS Compute Units\n    Index   Name                                              Base_Address    Usage   Status  \n\nSuccessfully wrote the JSON file: /home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/binding/sessions/e-unseen/loaded.json\n",
+      "stderr": ""
+    },
+    {
+      "label": "after_close_holders",
+      "argv": [
+        "/usr/sbin/fuser",
+        "-v",
+        "/dev/dri/renderD132"
+      ],
+      "exit_code": 1,
+      "timeout_seconds": 20,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "reports": {
+    "device_list": {
+      "file": "device_list.json",
+      "sha256": "62d4789433f8d928271d1a0a1f655daea3d0458553671a64b66c81368e392ec2"
+    },
+    "preflight": {
+      "file": "preflight.json",
+      "sha256": "d3d98d6d6ad3f30a09a808695369fbdecd0e8360f229713ef5ac970e5ca3dacf"
+    },
+    "loaded": {
+      "file": "loaded.json",
+      "sha256": "35273da619adf7f045f724ea2543be4203a9cb505977301dfd0470048c67de15"
+    }
+  },
+  "sysfs": {
+    "before": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "immediately_before_open": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "loaded": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t1\nclient pid:\n\t\t\t65778",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "after_close": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    }
+  },
+  "binding_sha256": "0a3eb2712531ff7bb10f62de57285c21f4af28e339392a54e4c8bb2bfcfc2d78",
+  "board_execution": "NOT_RUN",
+  "holder_scope": "ordinary-account visible holders; no exclusive reservation",
+  "artifact_hashes": {
+    "libraries": {
+      "libvortex.so": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e",
+      "libvortex-xrt.so": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1"
+    },
+    "xclbin": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+    "query": "124cd233ee78e08689951e32e0cdb407f67621e2815772327659c1f627e0eb36",
+    "lock": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+  },
+  "open_gate": "PASS",
+  "clock_readback": {
+    "id": "DATA_CLK",
+    "description": "Data",
+    "freq_mhz": "200"
+  },
+  "clock_sysfs": {
+    "/sys/bus/pci/devices/0000:b1:00.1/icap.u.22020100/clock_freqs": "200\n500\n450\n0"
+  },
+  "close_gate": "PASS",
+  "scope": "physical open/close gates; kernel correctness is in caller evidence"
+}

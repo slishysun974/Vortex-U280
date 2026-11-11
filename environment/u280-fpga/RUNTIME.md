@@ -7,11 +7,11 @@
 当前库在服务器：
 
 ```text
-/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex.so
-/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex-xrt.so
+/home/course/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex.so
+/home/course/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex-xrt.so
 ```
 
-本地副本在 返回目录（本地记录 `results/u280-runtime-20261109-v4/returned/runtime/lib`）。SHA-256 分别为 `d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e` 和 `250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1`。后续运行须加载 `/opt/xilinx/xrt/setup.sh` 并使用这一对库；当前只接收编译/依赖解析，尚未调用 `vx_device_open` 或加载 xclbin。
+本地副本在 [返回目录（本地归档）](../../docs/LOCAL_ARCHIVE_INDEX.md#archive-f3cd0563374b)。SHA-256 分别为 `d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e` 和 `250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1`。后续运行须加载 `/opt/xilinx/xrt/setup.sh` 并使用这一对库；当前只接收编译/依赖解析，尚未调用 `vx_device_open` 或加载 xclbin。
 
 在可见 PowerShell 终端复现新构建，脚本自动产生新 run_id；用户仅在实际 SSH `password:` 提示下输入密码：
 
@@ -19,7 +19,7 @@
 & 'D:\Vortex-U280\scripts\Invoke-U280Runtime.ps1' -RuntimeProfile gcc9-v1
 ```
 
-此入口绑定 新输入包（本地记录 `results/u280-runtime-gcc9-prepare-20261109-v2/u280-runtime200-input.tar.gz`），SHA-256 `6911b8dcbcc0c2a4ea6aa5ea6d636de470c442159e2f062e0861227f3d05ee16`。先校验输入，再在新个人目录编译、ldd 和只读检查 HOST/platform，返回所有日志和两库；不配置 HOST、不加载板卡。两个 CPU、nice +10，每条构建命令 300 秒超时。`-PrepareOnly` 只生成输入，不连服务器。`-RuntimeProfile pinned` 保留原 D11 包，用于复现 v2 已知编译失败，不是当前通过的路线。
+此入口绑定 [新输入包（本地归档）](../../docs/LOCAL_ARCHIVE_INDEX.md#archive-747d847723d3)，SHA-256 `6911b8dcbcc0c2a4ea6aa5ea6d636de470c442159e2f062e0861227f3d05ee16`。先校验输入，再在新个人目录编译、ldd 和只读检查 HOST/platform，返回所有日志和两库；不配置 HOST、不加载板卡。两个 CPU、nice +10，每条构建命令 300 秒超时。`-PrepareOnly` 只生成输入，不连服务器。`-RuntimeProfile pinned` 保留原 D11 包，用于复现 v2 已知编译失败，不是当前通过的路线。
 
 ## 保留的 D11 输入与失败背景
 

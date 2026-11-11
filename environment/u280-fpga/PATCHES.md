@@ -2,9 +2,9 @@
 
 ## D12 宿主 runtime：`gcc9-vm-allocation-v1`
 
-这是独立的宿主源码/生成脚手架补丁，与 FPGA 的 `ip-ooc-v1` 分开。触发证据为 服务器 v2（本地记录 `results/u280-runtime-20261109-v2/returned/runtime/stub.stderr`）：GCC 9.3.1 / `-O2 -Werror` 编译公共库时发现 `VMManager::map_p2v` 的 `vpn` 可能未初始化；旧代码忽略了两处分配失败，随后移位并安装页映射。未关闭警告，也未仅给变量填零。
+这是独立的宿主源码/生成脚手架补丁，与 FPGA 的 `ip-ooc-v1` 分开。触发证据为 [服务器 v2（本地归档）](../../docs/LOCAL_ARCHIVE_INDEX.md#archive-611a9be1dca7)：GCC 9.3.1 / `-O2 -Werror` 编译公共库时发现 `VMManager::map_p2v` 的 `vpn` 可能未初始化；旧代码忽略了两处分配失败，随后移位并安装页映射。未关闭警告，也未仅给变量填零。
 
-完整 diff（本地记录 `results/u280-runtime-gcc9-prepare-20261109-v2/runtime.patch`） 修改新输入包中的三项文件：
+[完整 diff（本地归档）](../../docs/LOCAL_ARCHIVE_INDEX.md#archive-9dcc5f248de6) 修改新输入包中的三项文件：
 
 - `source/sw/runtime/common/vm.cpp`：两处分配失败都立即返回 `UINT64_MAX`，不消费未初始化变量、不进入映射更新。
 - `source/sw/runtime/common/vm.h`：记录该内部方法的失败页号。当前固定 runtime 没有此方法调用点；公开 C API 与参数 ABI 未改。

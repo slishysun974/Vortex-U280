@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "backend": "xrtsim",
+  "mode": "cp-fault",
+  "board_execution": "NOT_RUN",
+  "checks": [
+    {
+      "label": "native-cp-poll-device-lost",
+      "error": {
+        "code": "E_DEVICE",
+        "phase": "wait",
+        "message": "native Vortex2 operation failed",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": 6,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 0.0011088290000031975
+    },
+    {
+      "label": "recover-retry-0",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "recover",
+        "message": "native device fault requires external isolation; retain resources",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 3.9010999984157024e-05
+    },
+    {
+      "label": "recover-retry-1",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "recover",
+        "message": "native device fault requires external isolation; retain resources",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.388199997786614e-05
+    },
+    {
+      "label": "recover-retry-2",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "recover",
+        "message": "native device fault requires external isolation; retain resources",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 7.713099998341022e-05
+    },
+    {
+      "label": "fault-alloc",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "alloc",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 9.907500000849723e-05
+    },
+    {
+      "label": "fault-read",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "read",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.0676000003923036e-05
+    },
+    {
+      "label": "fault-close",
+      "error": {
+        "code": "E_BUSY",
+        "phase": "close",
+        "message": "wait or successfully drain recovery before close",
+        "run_id": "xrtsim-cp-fault",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 8.09919999937847e-05
+    }
+  ],
+  "cycles": [],
+  "runtime_sha256": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+  "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+  "binding_sha256": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+  "scope": "real native simulation only",
+  "diagnostic": {
+    "threads": 4,
+    "warps": 8,
+    "cores": 1,
+    "isa_flags": 221200257320,
+    "clusters": 1,
+    "backend": "xrtsim",
+    "device_state": "NEEDS_RECOVERY",
+    "generation": 0,
+    "safe_abort": false,
+    "recovery_mode": "timeout-drain-only",
+    "max_modules": 1,
+    "device_fault": {
+      "native_status": 6,
+      "phase": "wait"
+    },
+    "first_error": {
+      "native_status": 6,
+      "phase": "wait"
+    }
+  },
+  "native_calls": [
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 0.007582941000009669
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 7.645000010825242e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 7.691999996950472e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 1.3610000166863756e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 1.999000005525886e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 6.820000066909415e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.378100000692939e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.0313157980000085
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 2.6246999993873033e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.034338041000012254
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 3.1363000005057984e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 6,
+      "seconds": 0.001052452000010362
+    }
+  ],
+  "process_disposal": "os._exit; simulator address space only; no physical device",
+  "in_context_recovery": "UNAVAILABLE (expected)",
+  "exit_code": 0
+}

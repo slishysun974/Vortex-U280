@@ -1,0 +1,829 @@
+{
+  "status": "PASS",
+  "backend": "xrtsim",
+  "mode": "timeout",
+  "board_execution": "NOT_RUN",
+  "checks": [
+    {
+      "label": "real-event-timeout-0",
+      "error": {
+        "code": "E_TIMEOUT",
+        "phase": "wait",
+        "message": "native Vortex2 operation failed",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": 7,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 0.00015518199998609816
+    },
+    {
+      "label": "read",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "read",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.02409999999054e-05
+    },
+    {
+      "label": "free",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "free",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.82240000173806e-05
+    },
+    {
+      "label": "unload",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "unload",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.0485000005883194e-05
+    },
+    {
+      "label": "launch",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "launch",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 9.039100001473344e-05
+    },
+    {
+      "label": "close",
+      "error": {
+        "code": "E_BUSY",
+        "phase": "close",
+        "message": "wait or successfully drain recovery before close",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 5.7007999998859304e-05
+    },
+    {
+      "label": "real-drain-timeout-0",
+      "error": {
+        "code": "E_TIMEOUT",
+        "phase": "recover",
+        "message": "native Vortex2 operation failed",
+        "run_id": "xrtsim-timeout",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": 7,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 0.00021730999998226253
+    },
+    {
+      "label": "stale-event",
+      "error": {
+        "code": "E_EVENT",
+        "phase": "wait",
+        "message": "foreign or stale event",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 4.56110000186527e-05
+    },
+    {
+      "label": "stale-buffer",
+      "error": {
+        "code": "E_INVALID_BUFFER",
+        "phase": "free",
+        "message": "foreign, retired or stale buffer",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 5.2826000001005013e-05
+    },
+    {
+      "label": "stale-module",
+      "error": {
+        "code": "E_MODULE_CORRUPT",
+        "phase": "unload",
+        "message": "foreign or unloaded module",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 6.514400001833565e-05
+    },
+    {
+      "label": "real-event-timeout-1",
+      "error": {
+        "code": "E_TIMEOUT",
+        "phase": "wait",
+        "message": "native Vortex2 operation failed",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": 7,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 0.0001531169999964277
+    },
+    {
+      "label": "read",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "read",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 6.575499998007217e-05
+    },
+    {
+      "label": "free",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "free",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 7.1036000008462e-05
+    },
+    {
+      "label": "unload",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "unload",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 8.877599998413643e-05
+    },
+    {
+      "label": "launch",
+      "error": {
+        "code": "E_UNAVAILABLE",
+        "phase": "launch",
+        "message": "context is NEEDS_RECOVERY",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 7.542499997725827e-05
+    },
+    {
+      "label": "close",
+      "error": {
+        "code": "E_BUSY",
+        "phase": "close",
+        "message": "wait or successfully drain recovery before close",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 5.591599997956109e-05
+    },
+    {
+      "label": "real-drain-timeout-1",
+      "error": {
+        "code": "E_TIMEOUT",
+        "phase": "recover",
+        "message": "native Vortex2 operation failed",
+        "run_id": "xrtsim-timeout",
+        "event_id": 3,
+        "generation": 1,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": 7,
+        "evidence_path": null,
+        "device_state": "NEEDS_RECOVERY"
+      },
+      "seconds": 0.0002461699999969369
+    },
+    {
+      "label": "stale-event",
+      "error": {
+        "code": "E_EVENT",
+        "phase": "wait",
+        "message": "foreign or stale event",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 2,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 4.0436000006138784e-05
+    },
+    {
+      "label": "stale-buffer",
+      "error": {
+        "code": "E_INVALID_BUFFER",
+        "phase": "free",
+        "message": "foreign, retired or stale buffer",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 2,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 6.120099999407103e-05
+    },
+    {
+      "label": "stale-module",
+      "error": {
+        "code": "E_MODULE_CORRUPT",
+        "phase": "unload",
+        "message": "foreign or unloaded module",
+        "run_id": "xrtsim-timeout",
+        "event_id": null,
+        "generation": 2,
+        "backend": "xrtsim",
+        "source_location": null,
+        "native_status": null,
+        "evidence_path": null,
+        "device_state": "READY"
+      },
+      "seconds": 6.705999999212509e-05
+    }
+  ],
+  "cycles": [
+    {
+      "label": "drain-0",
+      "result": {
+        "status": "RECOVERED",
+        "isolated": true,
+        "generation": 1,
+        "device_state": "READY",
+        "mechanism": "successful-queue-and-event-drain",
+        "safe_abort": false
+      },
+      "seconds": 2.3031486670000163
+    },
+    {
+      "label": "after-drain-0",
+      "status": "PASS",
+      "generation": 1
+    },
+    {
+      "label": "drain-1",
+      "result": {
+        "status": "RECOVERED",
+        "isolated": true,
+        "generation": 2,
+        "device_state": "READY",
+        "mechanism": "successful-queue-and-event-drain",
+        "safe_abort": false
+      },
+      "seconds": 2.2560230459999957
+    },
+    {
+      "label": "after-drain-1",
+      "status": "PASS",
+      "generation": 2
+    }
+  ],
+  "runtime_sha256": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+  "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+  "binding_sha256": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+  "scope": "real native simulation only",
+  "diagnostic": {
+    "threads": 4,
+    "warps": 8,
+    "cores": 1,
+    "isa_flags": 221200257320,
+    "clusters": 1,
+    "backend": "xrtsim",
+    "device_state": "CLOSED",
+    "generation": 3,
+    "safe_abort": false,
+    "recovery_mode": "timeout-drain-only",
+    "max_modules": 1,
+    "device_fault": null,
+    "first_error": {
+      "native_status": 7,
+      "phase": "wait"
+    }
+  },
+  "native_calls": [
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 0.01040611500002342
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 1.2634000000844026e-05
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 9.544999983290836e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 2.172000023392684e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 1.883999999563457e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 7.379999829026929e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.4440000001059161e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.024229249999990543
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 2.552099999775237e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.03303441400001361
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 3.348600000663282e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 7,
+      "seconds": 9.555900001601003e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 7,
+      "seconds": 0.0001243110000075376
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 2.3029604410000104
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 0,
+      "seconds": 1.546699999721568e-05
+    },
+    {
+      "name": "vx_event_release",
+      "status": 0,
+      "seconds": 1.4310000153727742e-06
+    },
+    {
+      "name": "vx_kernel_release",
+      "status": 0,
+      "seconds": 2.7110000075936114e-06
+    },
+    {
+      "name": "vx_module_release",
+      "status": 0,
+      "seconds": 3.993999996509956e-06
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 1.6850000008616917e-06
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 1.2429999856067298e-06
+    },
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 0.01243416899998806
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 1.4102999983833797e-05
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 9.558000016340884e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 2.7110000075936114e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 2.0100000028833165e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 7.689999961257854e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.411100001291743e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.0011774909999928695
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 3.631300000961346e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.0008344529999817496
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 4.2973000006441e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 0,
+      "seconds": 0.056764477000001534
+    },
+    {
+      "name": "vx_event_release",
+      "status": 0,
+      "seconds": 9.935000008454153e-06
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 3.4053000007361334e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.002798349000016742
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 3.205900000580186e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.001595170999991069
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 2.334199999154407e-05
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 2.152999996951621e-06
+    },
+    {
+      "name": "vx_kernel_release",
+      "status": 0,
+      "seconds": 4.493999995247577e-06
+    },
+    {
+      "name": "vx_module_release",
+      "status": 0,
+      "seconds": 3.0710000089584355e-06
+    },
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 0.01621195699999589
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 3.13680000090244e-05
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 1.2432999994871352e-05
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 2.3300000009385258e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 3.133000006982911e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 9.90999978967011e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 5.3086999997731255e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.042378669000015634
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 2.852800000141542e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.03583861499998875
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 3.683900001760776e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 7,
+      "seconds": 9.861999998861393e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 7,
+      "seconds": 0.00014782499999910215
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 2.2558112069999936
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 0,
+      "seconds": 1.5687000001207707e-05
+    },
+    {
+      "name": "vx_event_release",
+      "status": 0,
+      "seconds": 1.4620000001741573e-06
+    },
+    {
+      "name": "vx_kernel_release",
+      "status": 0,
+      "seconds": 3.609999993159363e-06
+    },
+    {
+      "name": "vx_module_release",
+      "status": 0,
+      "seconds": 6.249000023217377e-06
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 2.918999996381899e-06
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 1.4929999849755404e-06
+    },
+    {
+      "name": "vx_module_load_bytes",
+      "status": 0,
+      "seconds": 0.007900184000021682
+    },
+    {
+      "name": "vx_module_get_kernel",
+      "status": 0,
+      "seconds": 1.4546000016935068e-05
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 9.341999998468964e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 2.0549999817376374e-06
+    },
+    {
+      "name": "vx_buffer_create",
+      "status": 0,
+      "seconds": 1.7399999876488437e-06
+    },
+    {
+      "name": "vx_buffer_address",
+      "status": 0,
+      "seconds": 5.939999994097889e-07
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.7390000010664153e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.001101439999985132
+    },
+    {
+      "name": "vx_enqueue_write",
+      "status": 0,
+      "seconds": 1.4249000003019319e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.0008280979999994997
+    },
+    {
+      "name": "vx_enqueue_launch",
+      "status": 0,
+      "seconds": 3.804400000717578e-05
+    },
+    {
+      "name": "vx_event_wait_value",
+      "status": 0,
+      "seconds": 0.06790006800000015
+    },
+    {
+      "name": "vx_event_release",
+      "status": 0,
+      "seconds": 1.6109000000597007e-05
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 3.135999997994077e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.0035423649999870577
+    },
+    {
+      "name": "vx_enqueue_read",
+      "status": 0,
+      "seconds": 3.221199997938129e-05
+    },
+    {
+      "name": "vx_queue_finish",
+      "status": 0,
+      "seconds": 0.002545698000005814
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 2.5375000006988557e-05
+    },
+    {
+      "name": "vx_buffer_release",
+      "status": 0,
+      "seconds": 1.594999986309631e-06
+    },
+    {
+      "name": "vx_kernel_release",
+      "status": 0,
+      "seconds": 5.301000015833779e-06
+    },
+    {
+      "name": "vx_module_release",
+      "status": 0,
+      "seconds": 4.0350000176658796e-06
+    },
+    {
+      "name": "vx_queue_release",
+      "status": 0,
+      "seconds": 0.0003311979999978121
+    },
+    {
+      "name": "vx_device_release",
+      "status": 0,
+      "seconds": 0.006980955999978278
+    }
+  ],
+  "exit_code": 0
+}

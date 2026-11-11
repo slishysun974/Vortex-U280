@@ -1,0 +1,148 @@
+{
+  "acceptance_type": "Non-author AI agent E independent acceptance; not a human E signature",
+  "backends": {
+    "noxrt_afu": {
+      "cases": 15,
+      "status": "PASS"
+    },
+    "processor_rtl": {
+      "cases": 15,
+      "status": "PASS"
+    },
+    "simx": {
+      "cases": 15,
+      "status": "PASS"
+    },
+    "u280": {
+      "cases": 15,
+      "status": "PASS"
+    }
+  },
+  "block": 32,
+  "command": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "D:\\Vortex-U280\\scripts\\e_acceptance\\receive.py",
+    "--local-run",
+    "results/e-ptx-reproduce-20261110-v1",
+    "--board-run",
+    "results/u280-board-ptx-regression-e-20261110-v2",
+    "--board-artifacts",
+    "results/u280-ptx-e-artifacts-20261110-v2",
+    "--output",
+    "results/e-ptx-acceptance-20261110-v2"
+  ],
+  "complete_arrays_compared": 156,
+  "contracts": {
+    "configs\\candidates\\block32-v1\\target_lock.json": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+    "configs\\candidates\\u280-hbm32-v1\\target_lock.json": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "configs\\target_lock.json": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe"
+  },
+  "excluded": {
+    "AI_controlled_study": "NOT_RUN",
+    "full_P0": "NOT_RUN",
+    "generic_project_runtime": "NOT_RUN",
+    "human_E_signature": "NOT_RUN",
+    "performance_and_configuration_study": "NOT_RUN",
+    "same_context_repeated_launch_and_recovery": "NOT_RUN",
+    "unseen_legal_corpus": "NOT_RUN"
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-11-10T14:22:24.971641+00:00",
+  "frozen_manifest_sha256": "f205a527c8bb6801ed7e2d416ea4a56236109e67c4b2323f851c4690d327e7d7",
+  "human_signoff": "No additional human signoff is needed to report this AI E receipt. Formal human E acceptance, if required by the team, remains unsigned and is not implied.",
+  "image_reconstruction": {
+    "count": 3,
+    "identical_to_delivery": true,
+    "status": "PASS"
+  },
+  "limitations": [
+    "Device runtimes and FPGA bitstream were reused after identity checks, not rebuilt.",
+    "Per-lane no-array-access proof is from SimX and processor RTL; AFU/U280 scope is execution, raw outputs, ABI and observed gates.",
+    "Remote host binary hashes were measured post-run; returned source/image/log bytes match the execution package and returned logs.",
+    "Negative cases challenge the receiver. They do not establish DUT generic invalid-argument APIs or recovery support.",
+    "Board holder checks cover KDS and processes visible to an ordinary account, without exclusive reservation."
+  ],
+  "oracle_sha256": "da2df04b2f38e3adda0a9839aefec6ebdf549ddc3a2fe4f378fc369bcc016507",
+  "payloads_checked": 60,
+  "provenance": {
+    "board_result_sha256": "9f5af30bb141c902a71cafd542fb98c56fd5bf91f5d9e7ea8da600ed172a085a",
+    "board_run": "results\\u280-board-ptx-regression-e-20261110-v2",
+    "local_execution_sha256": "b0e011d814356bb8bedce51aa27efe3dc5c4b0c8dc36eeb7159f3016c53bbd38",
+    "local_run": "results\\e-ptx-reproduce-20261110-v1",
+    "post_artifact_result_sha256": "a54debb09ca17765503449972ac0d8aa55fcfacd72ee713410fd72fe06aeb249",
+    "post_run_artifacts": "results\\u280-ptx-e-artifacts-20261110-v2"
+  },
+  "receiver_fault_injection": {
+    "negative_cases": 23,
+    "positive_controls": 2,
+    "status": "PASS"
+  },
+  "receiver_sha256": {
+    "accept.py": "e7dbfb33423f887db90c3bc07d8abfa9431d91682a85edc47d41de21e9fefc96",
+    "board.py": "5b5161e50031a3991ec1e58daef8c26c7bc042c9d7b23789574f7f81dfc3a961",
+    "fault_injection.py": "e46c7e944deb26349dd17ab9b3a57c4255e94c2b790c0ef90bdeed06f2ff09fa",
+    "oracle_v1.py": "da2df04b2f38e3adda0a9839aefec6ebdf549ddc3a2fe4f378fc369bcc016507",
+    "receive.py": "7716d2865bedb5000aa70210273adde046022c8bda424f607a91ed89f608b2f2",
+    "reproduce.py": "1707c412800bcbcb55dce62a0999b78312cb2ffc4f872fefa63acf5720301816"
+  },
+  "runner_unittest": {
+    "exit_code": 0,
+    "log": "D:\\Vortex-U280\\results\\e-ptx-root-unittest-20261110-v1\\unittest.log",
+    "log_sha256": "76c92e842482380664e04ed239a3a925991f2b8b3281e5e656d786b656535b30",
+    "passed": 139,
+    "scope": "Python runner/receiver self-tests; not hardware proof",
+    "skipped": 1,
+    "status": "PASS"
+  },
+  "schema": "e-independent-ptx15-acceptance-v1",
+  "scope": {
+    "affine_u32": [
+      "0034",
+      "0176",
+      "0210",
+      "0250",
+      "0322"
+    ],
+    "copy_u32": [
+      "0010",
+      "0058",
+      "0070",
+      "0082",
+      "0094",
+      "0106"
+    ],
+    "vadd_u32": [
+      "0010",
+      "0058",
+      "0070",
+      "0106"
+    ]
+  },
+  "started_utc": "2026-11-10T14:22:19.104934+00:00",
+  "status": "PASS",
+  "timing_7": {
+    "technical_state": "OPEN",
+    "this_round": "SKIPPED_BY_USER"
+  },
+  "total_new_executions": 60,
+  "trace": {
+    "processor_rtl": {
+      "array_reads": 903,
+      "array_writes": 580,
+      "cases": 15,
+      "false_predicate_array_requests": 0,
+      "n_zero_cases": 3,
+      "status": "PASS"
+    },
+    "simx": {
+      "array_reads": 903,
+      "array_writes": 580,
+      "cases": 15,
+      "false_predicate_array_requests": 0,
+      "n_zero_cases": 3,
+      "status": "PASS"
+    }
+  },
+  "verdict": "ACCEPTED_WITH_FIXED_SCOPE"
+}

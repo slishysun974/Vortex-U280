@@ -1,0 +1,25 @@
+{
+  "schema_version": "ptx-vx-runtime-binding-v3",
+  "backend": "rtlsim",
+  "driver": "rtlsim",
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "target_lock_hash": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "hardware_defines": {
+    "VX_CFG_NUM_CLUSTERS": 1,
+    "VX_CFG_NUM_CORES": 1,
+    "VX_CFG_NUM_THREADS": 4,
+    "VX_CFG_NUM_WARPS": 8
+  },
+  "library_dir": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim/sw/runtime",
+  "libraries": {
+    "libvortex.so": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+    "libvortex-rtlsim.so": "8233976ea67f208dbe60a0a07be208ec1806151c2a5ccc2bad1586a2f3cab69f",
+    "librtlsim.so": "9f0cf0b9150b43bea333f41df7fa4f051a04bd3635783ca9534c3bcaf259901a"
+  },
+  "dependencies": {
+    "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim/sw/runtime/librtlsim.so": "9f0cf0b9150b43bea333f41df7fa4f051a04bd3635783ca9534c3bcaf259901a",
+    "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-rtlsim/third_party/ramulator/libramulator.so": "10bcf59a01fecb757c6e54f1f490ee9d12f97ff127685907b3d11a8902bf9286"
+  },
+  "native_summary_sha256": "72e0182b0c3a5a0ea0b14db3de0231ac24f712949d44e352e96c3d07cf1238a9",
+  "scope": "native build identity; PTX validation is separate"
+}

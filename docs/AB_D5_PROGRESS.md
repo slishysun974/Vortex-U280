@@ -6,22 +6,22 @@
 
 ## U280 入口与本机实测
 
-22:19 后续更新：用户在终端改用另一个密码，`u280user` 登录 PASS，WLAN 绑定连接 U280 后实际执行 `id -un && hostname`，返回 `u280user` / `localhost`、SSH 退出 0。网络与账号阻塞已解除；平台与分配卡待核实，见 登录接续（本地记录 `docs/U280_LOGIN_PROGRESS.md`）。本节 21:21 的默认路径失败记录保持原样。
+22:19 后续更新：用户在终端改用另一个密码，`u280user` 登录 PASS，WLAN 绑定连接 U280 后实际执行 `id -un && hostname`，返回 `u280user` / `localhost`、SSH 退出 0。网络与账号阻塞已解除；平台与分配卡待核实，见 [登录接续（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-998b875bd224)。本节 21:21 的默认路径失败记录保持原样。
 
-老师 ZIP 中的 1_README.md（本地记录 `references/teacher_u280_20261107/md/1_README.md`） 明确给出 `192.0.2.28:22`，示例 `ssh yourname@192.0.2.28` 中的 `yourname` 必须替换为另行分配的个人用户名。资料没有提供本人的账号、密码或获配卡。
+老师 ZIP 中的 [1_README.md（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-154f2845d39b) 明确给出 `192.0.2.28:22`，示例 `ssh yourname@192.0.2.28` 中的 `yourname` 必须替换为另行分配的个人用户名。资料没有提供本人的账号、密码或获配卡。
 
 2026-11-08 21:21（Asia/Shanghai）使用本机执行一次 TCP connect，不发送 SSH 认证、不枚举板卡：
 
 | 尝试 | 结果 | 原始证据 |
 |---|---|---|
-| 沙箱内首次检查 | FAIL，WinError 10013，退出 1；本地权限拒绝，不能推断远端状态 | v1（本地记录 `results/ab-d5-u280-network-20261108-v1/probe.json`） |
-| 授权后沙箱外检查 | FAIL，5.026 秒连接超时，退出 1；当前本机路径未连通 | v2（本地记录 `results/ab-d5-u280-network-20261108-v2/probe.json`） |
+| 沙箱内首次检查 | FAIL，WinError 10013，退出 1；本地权限拒绝，不能推断远端状态 | [v1（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-7ef6aea79056) |
+| 授权后沙箱外检查 | FAIL，5.026 秒连接超时，退出 1；当前本机路径未连通 | [v2（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-9cc56af7c46d) |
 
 不能由此认定服务器宕机或账号无权限。需要资源方确认校内网络/VPN或路由条件，提供个人用户名、认证方式与获配卡；登录和板卡查询仍 NOT_RUN，U280 仍 BLOCKED。历史资料接收记录不改写。
 
 检查入口：`python -B scripts/probe_u280_endpoint.py --output results/u280-network-NEW/probe.json`；输出独占创建，连接上限 5 秒，目标固定为资料中的单个 SSH 端口。
 
-另将真实 XRT runtime、平台连接、FPGA Makefile 与上板指南四份源码和固定清单比对并保存副本，命令退出 0、4/4 哈希匹配：源码核验（本地记录 `results/ab-d5-u280-source-20261108-v1/summary.json`）。由源码确认：真实 XRT 的设备初始化会加载 xclbin；设备选择需要把获配 BDF/UUID 映射到当次整数 index；HOST[0] 的 host-only BO 与 NOXRT 模型内存分配不同。已写入接收单。这些是源码要求，不是服务器环境或设备结果。
+另将真实 XRT runtime、平台连接、FPGA Makefile 与上板指南四份源码和固定清单比对并保存副本，命令退出 0、4/4 哈希匹配：[源码核验（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-1e885f111dc6)。由源码确认：真实 XRT 的设备初始化会加载 xclbin；设备选择需要把获配 BDF/UUID 映射到当次整数 index；HOST[0] 的 host-only BO 与 NOXRT 模型内存分配不同。已写入接收单。这些是源码要求，不是服务器环境或设备结果。
 
 ## B=32 候选的变更与接收
 
@@ -46,9 +46,9 @@
 | 层次 | 实际结果 | 证据 |
 |---|---|---|
 | 运行器自测 | PASS，25 通过/1 跳过，退出 0 | [测试原始日志](../results/ab-d5-block32-20261108-v1/logs/01_runner_tests.log) |
-| SimX | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | summary（本地记录 `results/ab-d5-block32-20261108-v1-simx/summary.json`） |
-| 处理器 RTL | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | summary（本地记录 `results/ab-d5-block32-20261108-v1-rtlsim/summary.json`） |
-| NOXRT AFU 模型 | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | summary（本地记录 `results/ab-d5-block32-20261108-v1-xrtsim/summary.json`） |
+| SimX | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | [summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-e997d1a931ef) |
+| 处理器 RTL | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | [summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-84cb9e585971) |
+| NOXRT AFU 模型 | PASS，demo + 152/152，B=33/64 拒绝，退出 0 | [summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-09221f3031bd) |
 | 证据收尾 | PASS，84/84，退出 0 | [核验结果](../results/ab-d5-closeout-20261108-v1/result.json) |
 | U280 物理平台 | BLOCKED；登录、FPGA 构建与板上执行 NOT_RUN | 当前本机 TCP 超时、个人账号与分配卡待落实 |
 

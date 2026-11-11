@@ -1,0 +1,27 @@
+{
+  "schema_version": "ptx-vx-u280-binding-v1",
+  "backend": "u280-xrt",
+  "driver": "xrt",
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "target_lock_hash": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "hardware_sha256": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+  "library_dir": "/home/course/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib",
+  "libraries": {
+    "libvortex.so": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e",
+    "libvortex-xrt.so": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1"
+  },
+  "xclbin": "/home/course/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/vortex_afu.xclbin",
+  "xclbin_sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+  "xclbin_uuid": "b60ca9fb-1506-3033-c156-e03ff687f492",
+  "shell_uuid": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+  "clock_mhz": 200,
+  "minimum_host_bytes": 268435456,
+  "bdf": "0000:b1:00.1",
+  "index": 3,
+  "query": "/home/course/u280user/vortex-e-runtime/e-u280-unseen-20261111-v1/xrt_bdf",
+  "query_sha256": "124cd233ee78e08689951e32e0cdb407f67621e2815772327659c1f627e0eb36",
+  "query_source_sha256": "1c10e421394fe3fdd67232ef84dc836fae0337f8ae210102ef7534545af62d65",
+  "recovery": "unavailable",
+  "timing7": "OPEN",
+  "scope": "fixed physical artifacts; fresh device gates still required; not execution acceptance"
+}

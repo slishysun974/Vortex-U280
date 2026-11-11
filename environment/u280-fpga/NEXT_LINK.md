@@ -29,16 +29,16 @@ id -un
 hostname
 uptime
 free -h
-df -h /home/u280user
+df -h /home/course/u280user
 ```
 
 后台执行的已绑定输入/XO/补丁命令如下（实际 run_id 由提交入口生成，不能清空旧目录）：
 
 ```bash
-python3 -B /home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/build_prepared.py \
-  --input /home/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/u280-rtl-input \
+python3 -B /home/course/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/build_prepared.py \
+  --input /home/course/u280user/vortex-u280-probes/u280-preflight-20261109-100406-629/u280-rtl-input \
   --run-id u280-link-20261109-v1 --stage link --build-flow ip-ooc-v1 \
-  --xo-run /home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629
+  --xo-run /home/course/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629
 ```
 
 这一步按独立候选连接 `m_axi_mem_0:HBM[0:31]`、`m_axi_host:HOST[0]`，目标 200 MHz、禁用频率缩放检查，保留 v++ 中间产物。它不要求先配置板卡，也不加载 xclbin。只有 link、固定时钟检查及产物存在性全部通过，才能记录构建阶段 PASS；之后仍须审阅完整资源/时序、xclbin 元数据和 shell UUID。

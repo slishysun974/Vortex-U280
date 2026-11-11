@@ -8,12 +8,12 @@
 
 | 项目 | 当前结果 | 证据与范围 |
 |---|---|---|
-| SimX 新目录复跑 | PASS（仅上游整数 demo） | [运行](../results/ab-d3-simx-20261108-v1/summary.json)、根命令退出 0（本地记录 `results/ab-d3-simx-20261108-v1/root-tool-completion.json`）；同一 agent 复跑，不计作 C/E 独立接收 |
-| Verilator 工具包准备 | PASS（准备范围） | 18 个分卷/单包（本地记录 `results/ab-d3-toolchain-download-20261108-v1/summary.json`）、独立提取（本地记录 `results/ab-d3-toolchain-install-20261108-v1/summary.json`）；复用已校验的 15 项，新增固定 Verilator 三卷。第二卷超时重试保留，所有 Git blob 与 SHA-256 相符 |
-| 运行器自测 | PASS（脚本范围） | 共 21 项，最终 Linux 20 通过/1 跳过（本地记录 `results/ab-d3-final-linux-tests-20261108-v1/summary.json`）、Windows 16 通过/5 跳过（本地记录 `results/ab-d3-windows-tests-20261108-v1/summary.json`）；新增 profile 缺项/错版本/未知组件拒绝、AFU 模型路由防误选硬件 |
-| 处理器 RTL demo | PASS（仅上游整数 demo） | [v2 隔离运行](../results/ab-d3-rtlsim-20261108-v2/summary.json)、输出（本地记录 `results/ab-d3-rtlsim-20261108-v2/logs/39_demo_run.log`）、根命令退出 0（本地记录 `results/ab-d3-rtlsim-20261108-v2/root-tool-completion.json`）；16 个整数、`PASSED!`。首轮因缺少 ccache 构建失败、demo NOT_RUN，失败保留 |
-| XRT AFU RTL 模型 | PASS（仅 NOXRT 模型整数 demo） | [运行](../results/ab-d3-xrtsim-20261108-v1/summary.json)、输出（本地记录 `results/ab-d3-xrtsim-20261108-v1/logs/39_demo_run.log`）、根命令退出 0（本地记录 `results/ab-d3-xrtsim-20261108-v1/root-tool-completion.json`）；16 个整数、`PASSED!`，每条 make 强制 `TARGET=xrtsim` |
-| B 线平台源码审查 | PASS（仅来源核对） | 文件哈希与来源检查（本地记录 `results/ab-d3-platform-source-20261108-v1/result.json`）；实际账号、分配 BDF、XRT/驱动、shell/platform 与 HOST[0] 均未实测 |
+| SimX 新目录复跑 | PASS（仅上游整数 demo） | [运行](../results/ab-d3-simx-20261108-v1/summary.json)、[根命令退出 0（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-f99971e94cc8)；同一 agent 复跑，不计作 C/E 独立接收 |
+| Verilator 工具包准备 | PASS（准备范围） | [18 个分卷/单包（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-a44bd2f1ece6)、[独立提取（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6b5180598350)；复用已校验的 15 项，新增固定 Verilator 三卷。第二卷超时重试保留，所有 Git blob 与 SHA-256 相符 |
+| 运行器自测 | PASS（脚本范围） | 共 21 项，[最终 Linux 20 通过/1 跳过（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-e6f883fd88bd)、[Windows 16 通过/5 跳过（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-9913d03e7f96)；新增 profile 缺项/错版本/未知组件拒绝、AFU 模型路由防误选硬件 |
+| 处理器 RTL demo | PASS（仅上游整数 demo） | [v2 隔离运行](../results/ab-d3-rtlsim-20261108-v2/summary.json)、[输出（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-9e98b2e21532)、[根命令退出 0（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-ca7dc58a5c8b)；16 个整数、`PASSED!`。首轮因缺少 ccache 构建失败、demo NOT_RUN，失败保留 |
+| XRT AFU RTL 模型 | PASS（仅 NOXRT 模型整数 demo） | [运行](../results/ab-d3-xrtsim-20261108-v1/summary.json)、[输出（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-42d930c737b0)、[根命令退出 0（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-e2e8fbe734fa)；16 个整数、`PASSED!`，每条 make 强制 `TARGET=xrtsim` |
+| B 线平台源码审查 | PASS（仅来源核对） | [文件哈希与来源检查（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-8964acb5d2fe)；实际账号、分配 BDF、XRT/驱动、shell/platform 与 HOST[0] 均未实测 |
 
 ## 入口与范围
 
@@ -25,17 +25,17 @@
 
 处理器 RTL 和 AFU 模型都会启用源 Makefile 规定的 `SIMULATION/SV_DPI`，浮点单元使用 DPI 模型。基础硬件配置相同，不表示全部 backend 宏逐字相同；每轮 `resolved_backend.cflags` 与构建参数单独保存。本轮整数 demo 不证明浮点电路正确、P0 u32 溢出、尾线程或假谓词无访存。
 
-首轮 `runtime_build` 退出 2，底层日志为 `ccache: No such file or directory`，此前第三方库、kernel 和 demo 编译已成功，实际 demo 尚未运行。专用 WSL 补装 `ccache 4.5.1` 与依赖 `libhiredis0.14` 后，新建 v2 构建和结果目录；安装命令/退出码（本地记录 `results/ab-d3-host-dependency-20261108-v1/summary.json`）。运行器新增 ccache 预检，宿主脚本和未构建的容器配方同步补充依赖；未修改固定 Vortex 源码。
+首轮 `runtime_build` 退出 2，底层日志为 `ccache: No such file or directory`，此前第三方库、kernel 和 demo 编译已成功，实际 demo 尚未运行。专用 WSL 补装 `ccache 4.5.1` 与依赖 `libhiredis0.14` 后，新建 v2 构建和结果目录；[安装命令/退出码（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6458288c5a59)。运行器新增 ccache 预检，宿主脚本和未构建的容器配方同步补充依赖；未修改固定 Vortex 源码。
 
-首轮 失败 summary（本地记录 `results/ab-d3-rtlsim-20261108-v1/summary.json`） 和 原始构建日志（本地记录 `results/ab-d3-rtlsim-20261108-v1/logs/37_runtime_build.log`） 保留。成功轮次不会覆盖首轮结果，也没有修改上游源码或冻结答案。
+首轮 [失败 summary（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-22378228c486) 和 [原始构建日志（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-fcfcc9e1b139) 保留。成功轮次不会覆盖首轮结果，也没有修改上游源码或冻结答案。
 
 ## 元数据接收与收尾
 
-总索引（本地记录 `results/ab-d3-closeout-20261108-v1/result.json`） 记录三路 PASS、准备/自测、保留的失败和未验收范围。三路 `kernel.vxbin` 的 SHA-256 均为 `fe1e13ecb9b98be36ccf628d5e245283e7223ffdd703a0bdd043723195af6553`；比较记录（本地记录 `results/ab-d3-closeout-20261108-v1/comparison.json`） 只证明程序相同及各 backend 的内部结果比较通过，不证明时序等价或独立 P0 u32 语义。
+[总索引（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-b8cb6158705c) 记录三路 PASS、准备/自测、保留的失败和未验收范围。三路 `kernel.vxbin` 的 SHA-256 均为 `fe1e13ecb9b98be36ccf628d5e245283e7223ffdd703a0bdd043723195af6553`；[比较记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-035784e037da) 只证明程序相同及各 backend 的内部结果比较通过，不证明时序等价或独立 P0 u32 语义。
 
 `target_lock` / `target_caps` 升至 **draft-v3，frozen=false**，加入固定 Verilator 归档/二进制身份和实际 RTL/AFU 观察。执行使用的 draft-v2 lock 哈希为 `c7d0b78995d02fc8529b4157b794f991a058ced237c520703bf83094d74b8824`，当前 draft-v3 为 `924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe`；旧快照保留在各运行目录和收尾目录的 `before_*` 文件。硬件配置、源码、XLEN、P0 ABI 与白名单没有变化。
 
-新版元数据的 只读预检（本地记录 `results/ab-d3-metadata-preflight-20261108-v1/summary.json`） 与 最终完整性核验目录（本地记录 `results/ab-d3-final-integrity-20261108-v1`） 分开保存；预检不执行 demo，完整性核验不替代功能验收。
+新版元数据的 [只读预检（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-8cc99393934e) 与 [最终完整性核验目录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-81806af8af1a) 分开保存；预检不执行 demo，完整性核验不替代功能验收。
 
 ## 后续复跑入口
 

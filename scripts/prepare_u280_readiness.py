@@ -12,13 +12,15 @@ import zlib
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def prepare(run_id, timing_only=False):
+def prepare(run_id, timing_only=False, timing7=False):
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,95}", run_id):
         raise ValueError("unsafe run id")
     source = (ROOT / "scripts/u280_remote_readiness.py").read_bytes()
-    tcl = (ROOT / "scripts/u280_readiness_audit.tcl").read_bytes()
+    tcl_name = "u280_timing7_audit.tcl" if timing7 else "u280_readiness_audit.tcl"
+    tcl = (ROOT / "scripts" / tcl_name).read_bytes()
     digest = hashlib.sha256(source).hexdigest()
-    bundle = dict(run_id=run_id, nonce=uuid.uuid4().hex, remote_probe_sha256=digest, configure_host=not timing_only,
+    bundle = dict(run_id=run_id, nonce=uuid.uuid4().hex, remote_probe_sha256=digest,
+                  configure_host=not (timing_only or timing7), timing7=timing7,
                   tcl_sha256=hashlib.sha256(tcl).hexdigest(), tcl_base64=base64.b64encode(tcl).decode("ascii"))
     payload = ("import base64, hashlib, json\n"
                "raw = base64.b64decode(%r)\n"
@@ -45,10 +47,10 @@ def prepare(run_id, timing_only=False):
     (run / "collector.py").write_text(collector, encoding="ascii")
     (run / "bundle.json").write_text(json.dumps(bundle, indent=2))
     (run / "preparation.json").write_text(json.dumps(dict(run_id=run_id, nonce=bundle["nonce"],
-        remote_probe_sha256=digest, tcl_sha256=bundle["tcl_sha256"],
+        remote_probe_sha256=digest, tcl_sha256=bundle["tcl_sha256"], tcl_name=tcl_name, timing7=timing7,
         payload_sha256=hashlib.sha256(payload.encode("ascii")).hexdigest(),
         interactive_command_chars=len(command)), indent=2))
-    for name in ("u280_remote_readiness.py", "u280_readiness_audit.tcl", "prepare_u280_readiness.py",
+    for name in ("u280_remote_readiness.py", tcl_name, "prepare_u280_readiness.py",
                  "Invoke-U280Readiness.ps1", "prepare_u280_probe.py", "wlan_ssh_proxy.py"):
         shutil.copy2(ROOT / "scripts" / name, run / name)
     print(str(run))
@@ -58,5 +60,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_id")
     parser.add_argument("--timing-only", action="store_true")
+    parser.add_argument("--timing7", action="store_true")
     args = parser.parse_args()
-    prepare(args.run_id, args.timing_only)
+    prepare(args.run_id, args.timing_only, args.timing7)

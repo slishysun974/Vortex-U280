@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "integrated C functional smoke and artifact/capture checks; author review",
+  "independent_E": "NOT_RUN",
+  "fault_recovery": "NOT_RUN",
+  "timing7": "OPEN",
+  "evidence": {
+    "results/c-runtime-merge-20261111-v3/summary.json": "ccdba4140f07e20962e713fc447e1cc1f6f34e2e931aec9f6d126541d16b57e5",
+    "results/c-runtime-compat-20261111-v1/result.json": "2712f9f979c4051fbfab6a4b376208c5cc93d7b95d709123fca6f71d25ac647e",
+    "results/c-u280-runtime-20261111-v3/result.json": "2d26ca4d2beda6a19962d3e2304128f8c444cea0c79c0b435dea93ad99379d77",
+    "results/c-u280-runtime-20261111-v3/transport.json": "ec3628e65128bf62a324b16eeaad226a4bcf46b64fd44535a038a58f5a639061",
+    "results/c-u280-runtime-20261111-v3/preparation.json": "ee4062330fa0a831b8a94561e4acc1e757cf4ea2a555b163715919e9c778ea90",
+    "results/c-u280-runtime-20261111-v3/probe.stdout": "cba8d8b45144c9ecf79473162afac87ce1ba3b3a5fc9fa1ea4945009f5025228",
+    "results/c-u280-runtime-20261111-v3/remote-result.json": "a5a3502fc47ec77617208c6978ff36972bcac5b5d3913e1ff63b1f80e51cad34",
+    "results/c-runtime-import-20261111-v1/result.json": "0de35f78c59cb76e0d4dd0112154fc5e46c430025fd67e32fcbadc653866d5c7",
+    "docs/C_RUNTIME_MERGE.md": "4c59fc9db564b41c2e97965f2037220bb327285fc75a6dd02a3e583787e7de95",
+    "docs/STATUS.md": "fcaa4a88285a09a9e2d62558db46c71c3c4215e403ce95939d0ede749e6a1131",
+    "docs/PROJECT_HANDOFF.md": "69cf8b71ac1c2533f0bd1e37a23ab20bb1f45b3556f35e503d187e53080f1574",
+    "configs/c_runtime/api_v1.json": "f20611d8a2bccb727cd81bfa878b823d4c694e39bf8d2761b78b50c978dbcef8",
+    "results/c-runtime-delivery-20261111-v1/source-review.diff": "440c8604de53f64c1cba63ed04ad77c52b4be0eb7aa8f9d44fab896283712984"
+  },
+  "counts": {
+    "executions": 164,
+    "rejections": 48,
+    "array_files_per_backend": 261,
+    "payloads": 164
+  },
+  "board_run": "c-u280-runtime-20261111-v3",
+  "bdf": "0000:b1:00.1",
+  "xrt_index": 3,
+  "python_version": [
+    3,
+    6,
+    8
+  ],
+  "host_compatibility": {
+    "status": "PASS",
+    "python": "3.6.8 (default, Nov 14 2023, 16:29:52) \n[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]",
+    "dataclasses": "/home/course/u280user/vortex-c-runtime/c-u280-runtime-20261111-v3/vendor/dataclasses-0.8/dataclasses.py",
+    "modules": [
+      "copy",
+      "vadd",
+      "affine"
+    ],
+    "scope": "module validation, dataclass identity/frozen/defaults and payload/resource checks; no device access"
+  },
+  "models": 123,
+  "u280": 41,
+  "python_tests_log": "results/c-runtime-merge-20261111-v3/logs/01_merged_python_tests.log",
+  "remaining": [
+    "independent E acceptance for integrated C API",
+    "hardware fault isolation and bounded recovery",
+    "TIMING-7 closure"
+  ],
+  "imported_sources": [
+    {
+      "source": "scripts/ptx_module.py",
+      "destination": "scripts/ptx_module.py",
+      "source_sha256": "9ae064c99cae2c194dd7fa636ea34d392b21bc822f9dd413963cf98cc3a76b87",
+      "current_sha256": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7"
+    },
+    {
+      "source": "scripts/ptx_launch.py",
+      "destination": "scripts/ptx_launch.py",
+      "source_sha256": "51fbc4017a01762858c5c574d56c64b51550400dcbd0b0790d530dd59c27058c",
+      "current_sha256": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb"
+    },
+    {
+      "source": "scripts/ptx_runtime.py",
+      "destination": "scripts/ptx_runtime.py",
+      "source_sha256": "4fc10f2c0a107e7477034ed9fba30b983019a78470329cd346cf63233084bafb",
+      "current_sha256": "499c20b8455fdd4912103452dd91049914d5883b272f4ef4bffd69f6c904e4e5"
+    },
+    {
+      "source": "scripts/bind_simx_runtime.py",
+      "destination": "scripts/bind_simx_runtime.py",
+      "source_sha256": "3888be8e74c265d5f3cc939d850503a72f454a171288ced65abaf3b625a22fdb",
+      "current_sha256": "7871bf20702f77b5e019bdc7a9cb370b1f7b265dfc2291254ed929b4c72c2828"
+    },
+    {
+      "source": "scripts/runtime_backends.py",
+      "destination": "scripts/runtime_backends.py",
+      "source_sha256": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3",
+      "current_sha256": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+    },
+    {
+      "source": "scripts/run_ptx_simx.py",
+      "destination": "scripts/run_ptx_simx.py",
+      "source_sha256": "67e57ef0a720094fd83a6bd8ee7d19c4cb4ea1419d5cf9b86171f1fd882b0fe4",
+      "current_sha256": "67e57ef0a720094fd83a6bd8ee7d19c4cb4ea1419d5cf9b86171f1fd882b0fe4"
+    },
+    {
+      "source": "scripts/run_ptx_suite.py",
+      "destination": "scripts/run_ptx_suite.py",
+      "source_sha256": "f28b5f410e79e93078db3be8332ccebf022a048aec7446d5fa35ecf5e8708f10",
+      "current_sha256": "f28b5f410e79e93078db3be8332ccebf022a048aec7446d5fa35ecf5e8708f10"
+    },
+    {
+      "source": "scripts/verify_ptx_suite_results.py",
+      "destination": "scripts/verify_ptx_suite_results.py",
+      "source_sha256": "e2b05cee90cb15c7847bc37be2e01cb4f61892d71f8b7ae18c6f3068a35fd559",
+      "current_sha256": "e2b05cee90cb15c7847bc37be2e01cb4f61892d71f8b7ae18c6f3068a35fd559"
+    },
+    {
+      "source": "scripts/compare_ptx_backends.py",
+      "destination": "scripts/compare_ptx_backends.py",
+      "source_sha256": "26197b476dfc1be0ea2aaa560cc0c28ccb7d47dbf6d87f15ee2ae1efb39c601e",
+      "current_sha256": "26197b476dfc1be0ea2aaa560cc0c28ccb7d47dbf6d87f15ee2ae1efb39c601e"
+    },
+    {
+      "source": "tests/test_ptx_module.py",
+      "destination": "tests/test_ptx_module.py",
+      "source_sha256": "d5054b23ff57d22f85f1c62635630de9b49d1aa0bfb6bc4f75a1868803bd7017",
+      "current_sha256": "d5054b23ff57d22f85f1c62635630de9b49d1aa0bfb6bc4f75a1868803bd7017"
+    },
+    {
+      "source": "tests/test_ptx_runtime.py",
+      "destination": "tests/test_ptx_runtime.py",
+      "source_sha256": "7d7e52418b95c300122cef17a98b0a07945209ef6227050d215c82a70601307e",
+      "current_sha256": "7d7e52418b95c300122cef17a98b0a07945209ef6227050d215c82a70601307e"
+    },
+    {
+      "source": "tests/test_ptx_suite.py",
+      "destination": "tests/test_ptx_suite.py",
+      "source_sha256": "032ba9fbfb565cece26015202364a0b0d98a0b421e2cfe08cbf42a53ede752ae",
+      "current_sha256": "032ba9fbfb565cece26015202364a0b0d98a0b421e2cfe08cbf42a53ede752ae"
+    },
+    {
+      "source": "tests/test_runtime_backends.py",
+      "destination": "tests/test_runtime_backends.py",
+      "source_sha256": "9385b8a938e3b5ac349d8f2fe6e971210bdeed83c1856cfbd3617f81b49cca9c",
+      "current_sha256": "9385b8a938e3b5ac349d8f2fe6e971210bdeed83c1856cfbd3617f81b49cca9c"
+    },
+    {
+      "source": "scripts/ptx_frontend.py",
+      "destination": "scripts/ptx_frontend_v12.py",
+      "source_sha256": "30fa692c0c2117858e720ab015c457325bfa095b6a25add2ef3c397bbbef5045",
+      "current_sha256": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5"
+    },
+    {
+      "source": "tests/test_ptx_frontend.py",
+      "destination": "tests/test_ptx_frontend_v12.py",
+      "source_sha256": "7f3e9376f9375d57b6058936a3a8706c6219777ca36c74835c591c71e5fe8140",
+      "current_sha256": "b63cf3074fc08a936ddc394585d539248b6ab25531a8b7577c3c2e864ba3a9fb"
+    }
+  ]
+}

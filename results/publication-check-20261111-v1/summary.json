@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "scope": "public snapshot Python self-tests and offline recheck of existing captures; no new device execution",
+  "commands": [
+    {
+      "label": "unittest",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 94.08090400695801,
+      "log": "unittest.log"
+    },
+    {
+      "label": "simx",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "results/e-runtime-unseen-sim-20261111-v1/simx",
+        "--out",
+        "D:\\Vortex-U280\\results\\github-public-20261111-v1\\checks-v1\\simx.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.6871206760406494,
+      "log": "simx.log"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "results/e-runtime-unseen-sim-20261111-v1/rtlsim",
+        "--out",
+        "D:\\Vortex-U280\\results\\github-public-20261111-v1\\checks-v1\\rtlsim.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3662490844726562,
+      "log": "rtlsim.log"
+    },
+    {
+      "label": "xrtsim",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "results/e-runtime-unseen-sim-20261111-v1/xrtsim",
+        "--out",
+        "D:\\Vortex-U280\\results\\github-public-20261111-v1\\checks-v1\\xrtsim.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.487708568572998,
+      "log": "xrtsim.log"
+    },
+    {
+      "label": "u280",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/e_acceptance/runtime_unseen_check.py",
+        "--corpus",
+        "configs/acceptance/e-runtime-unseen-20261111-v1",
+        "--run",
+        "results/e-u280-unseen-20261111-v1/returned/execution/e-unseen",
+        "--out",
+        "D:\\Vortex-U280\\results\\github-public-20261111-v1\\checks-v1\\u280.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4158275127410889,
+      "log": "u280.log"
+    }
+  ],
+  "protected_files": 248,
+  "protected_differences": []
+}

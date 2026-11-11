@@ -1,0 +1,416 @@
+{
+  "schema": "ab-platform-delivery-v2",
+  "status": "PASS",
+  "exit_code": 0,
+  "frozen": false,
+  "scope": "final evidence identity index; individual execution/acceptance statuses remain separate",
+  "finished_at": "2026-11-11T09:38:11.003455+08:00",
+  "command": [
+    "results/ab-delivery-20261111-v1/finalize.py"
+  ],
+  "boundary_simulations": {
+    "simx": {
+      "status": "PASS",
+      "launches": 67
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "launches": 67
+    },
+    "noxrt_afu": {
+      "status": "PASS",
+      "launches": 67
+    }
+  },
+  "boundary_board": {
+    "status": "PASS",
+    "transport": "PASS",
+    "run": "u280-board-ptx-boundaries-20261111-v3",
+    "launches": 67
+  },
+  "retry_inputs": {
+    "status": "PASS",
+    "cases": 67,
+    "packaged_files": 515,
+    "unchanged_except": [
+      "run_id",
+      "nonce"
+    ]
+  },
+  "runner_tests": {
+    "status": "PASS",
+    "total": 163,
+    "passed": 162,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "source_identity": {
+    "status": "PASS",
+    "files_per_checkout": 3329,
+    "checkouts": 2
+  },
+  "remaining": {
+    "timing_7": "OPEN",
+    "independent_boundary_and_sequence_acceptance": "NOT_RUN",
+    "generic_project_runtime": "NOT_RUN",
+    "timeout_recovery": "NOT_RUN",
+    "performance": "NOT_MEASURED"
+  },
+  "files": [
+    {
+      "path": "configs/candidates/block32-v1/target_lock.json",
+      "bytes": 5075,
+      "sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    {
+      "path": "configs/candidates/u280-hbm32-v1/target_lock.json",
+      "bytes": 5525,
+      "sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    {
+      "path": "configs/ptx_frontend/v1/abi.json",
+      "bytes": 979,
+      "sha256": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404"
+    },
+    {
+      "path": "configs/ptx_frontend/v1/profile.json",
+      "bytes": 1662,
+      "sha256": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041"
+    },
+    {
+      "path": "configs/target_caps.json",
+      "bytes": 2402,
+      "sha256": "b48d0e940a27ff53bf0708320067c31b7560c7fc489b9ad52319b1a0adf126ec"
+    },
+    {
+      "path": "configs/target_lock.json",
+      "bytes": 6141,
+      "sha256": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe"
+    },
+    {
+      "path": "docs/AB_CLOSEOUT.md",
+      "bytes": 12744,
+      "sha256": "05b9ad38907906cf591ffb834a935175a47d662bfadfaa7ab0bfd84969716121"
+    },
+    {
+      "path": "docs/AB_EXECUTION_PLAN.md",
+      "bytes": 14149,
+      "sha256": "faa97bd1815b5931fcd839938ba3dc3aa780ac367bb2ad27a22c6c505520a029"
+    },
+    {
+      "path": "docs/AB_RECOVERY_LIMITS.md",
+      "bytes": 4943,
+      "sha256": "04891f3d332e035497dac01c4b0a6b5000d22493aa28ee70eed1b1fda10500ef"
+    },
+    {
+      "path": "docs/PROJECT_HANDOFF.md",
+      "bytes": 43825,
+      "sha256": "da3bfa03c37d2365b9b89a50b0fd71a4236735a4ba4eff0ad173867983299eb0"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 36257,
+      "sha256": "8ad1051017af132f54a9578edc12877ffbed74dd59a2ac88a72bb1a1188ec10f"
+    },
+    {
+      "path": "results/ab-boundary-replay-20261111-v1/summary.json",
+      "bytes": 69114,
+      "sha256": "e2cfb2c83e594bd3d4022b6cea50fa9317be4a4c6298338197f1cb1c9bbad22b"
+    },
+    {
+      "path": "results/ab-closeout-20261111-v1/delivery.json",
+      "bytes": 6320,
+      "sha256": "4f8ad0bccbc4a1dd802fb330dfadc9ade24beefdd4556715b68ddead5ea519c3"
+    },
+    {
+      "path": "results/ab-closeout-20261111-v1/summary.json",
+      "bytes": 2464,
+      "sha256": "83405f3d297f5e75d71313cfc483297ea509f98db70dc1e8b82ff68b68d1dd18"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/audited-documents/AB_CLOSEOUT.md",
+      "bytes": 10567,
+      "sha256": "c586024b2aaa7387b1f7f2d2aa407fd491bcdab27657e7baa0f12cd4d67529d4"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/audited-documents/AB_RECOVERY_LIMITS.md",
+      "bytes": 4864,
+      "sha256": "620c99d232f853e6f50f9e2acfc5f255cd894757a4f1af4d48a3b4f7b20400b1"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/documents/AB_CLOSEOUT.md",
+      "bytes": 12744,
+      "sha256": "05b9ad38907906cf591ffb834a935175a47d662bfadfaa7ab0bfd84969716121"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/documents/AB_EXECUTION_PLAN.md",
+      "bytes": 14149,
+      "sha256": "faa97bd1815b5931fcd839938ba3dc3aa780ac367bb2ad27a22c6c505520a029"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/documents/AB_RECOVERY_LIMITS.md",
+      "bytes": 4943,
+      "sha256": "04891f3d332e035497dac01c4b0a6b5000d22493aa28ee70eed1b1fda10500ef"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/documents/PROJECT_HANDOFF.md",
+      "bytes": 43825,
+      "sha256": "da3bfa03c37d2365b9b89a50b0fd71a4236735a4ba4eff0ad173867983299eb0"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/documents/STATUS.md",
+      "bytes": 36257,
+      "sha256": "8ad1051017af132f54a9578edc12877ffbed74dd59a2ac88a72bb1a1188ec10f"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/finalize.py",
+      "bytes": 7417,
+      "sha256": "35dae595d14ccf1c9babcc4bb2aa318660cd4bfd27d45d92dde9b4020def3c30"
+    },
+    {
+      "path": "results/ab-delivery-20261111-v1/prepare_retry.py",
+      "bytes": 4901,
+      "sha256": "106042c031b8a4603f8354eba6a7216c582097d6fc7c73f8462424cf4b00114e"
+    },
+    {
+      "path": "results/ab-runner-check-20261111-v1/summary.json",
+      "bytes": 10021,
+      "sha256": "4f57768acd093fcb47c142c56c43dea9c5ae277cc10cc42327e61ea207ef5744"
+    },
+    {
+      "path": "results/e-ptx-acceptance-20261110-v2/result.json",
+      "bytes": 5397,
+      "sha256": "b07c286e266c2d705c0cf986b655353c30088042ac0be013c6bc58dcb3e47ee0"
+    },
+    {
+      "path": "results/ptx-boundaries-20261111-v6/affine_u32/kernel.vxbin",
+      "bytes": 4662,
+      "sha256": "dd21f514e801a54101cd7b4b4a8cc48e07a7b7432e2fb32aa1e4bd7fa65f2a6d"
+    },
+    {
+      "path": "results/ptx-boundaries-20261111-v6/copy_u32/kernel.vxbin",
+      "bytes": 4532,
+      "sha256": "78fdf5306a53d78e81420a85b26d913adc52333b9f5e580441b9c9abd0fb25c0"
+    },
+    {
+      "path": "results/ptx-boundaries-20261111-v6/summary.json",
+      "bytes": 379233,
+      "sha256": "e1d5ef50124a646aaaaf8e088d7dfb511926bf353c72dfa5e28fce82c55f0a8e"
+    },
+    {
+      "path": "results/ptx-boundaries-20261111-v6/vadd_u32/kernel.vxbin",
+      "bytes": 4660,
+      "sha256": "dd78f819747282db19645f9abd99f154b06346bd50193617d7ba143da2c12751"
+    },
+    {
+      "path": "results/u280-archive-20261109-v5/returned/artifacts/vortex_afu.xclbin",
+      "bytes": 53950442,
+      "sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843"
+    },
+    {
+      "path": "results/u280-archive-20261109-v5/returned/reports/link/imp/impl_1_full_util_routed.rpt",
+      "bytes": 29556,
+      "sha256": "7d5e24d4e6e3ec55c5ff31e0c3d32eb66c8f2e67abdc18f010a4fb038bb8f755"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v1/preparation.json",
+      "bytes": 143041,
+      "sha256": "0a837d1b75bbd1dd68e9d1db9645bba0226eedebfaf5c84a0bc71b7d00454dc1"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v1/ssh.log",
+      "bytes": 3624,
+      "sha256": "aa046ef1f56bd6881f5f8697208f40dc99877d7b41765d6cfa3a8fcaff083ad3"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v1/transport.json",
+      "bytes": 1297,
+      "sha256": "e953b9e4de54f79011677bd0b98a5242bd2dbba7f372ffa91992a51366025ef7"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/payload.py",
+      "bytes": 1678800,
+      "sha256": "15d3d77d18ba9aac5addc305a486136cfaa99272e89fb02afcdb8b713864c604"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/preflight_failure.json",
+      "bytes": 354,
+      "sha256": "99368bccfb6730e28ecdb1833d20d943d69bc43e440aff228fcb9973d92a38da"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/preflight_failure.log",
+      "bytes": 294,
+      "sha256": "aa34974d6712a8655e4b14c73e4b1b773b0bd988b5c12f4b61018c1601e0672c"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/preparation.json",
+      "bytes": 143308,
+      "sha256": "16256f2f264b0479c3e4fe1f3e09de76fb4c1b717f9795c80e0b2ddc7e5b3584"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/prepare_retry.py",
+      "bytes": 4731,
+      "sha256": "8adc62e150c083d62c71c98160587c99135dba153a96971dcc6849af0fe0155a"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/retry.json",
+      "bytes": 525,
+      "sha256": "e1c2a795335b90927b49666d7c2d25d5751c83b7d6c83c034a0318515da9f503"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v2/run_prepared.ps1",
+      "bytes": 5107,
+      "sha256": "a6a82918663e08d53673ddfb9889b60d29f7b75d2da6200fba15da29f8d40911"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/payload.py",
+      "bytes": 1678788,
+      "sha256": "da3a27c09b3e3f5986199df1f4f151c8fb3d7a548fbb7db3a51c5908277abafc"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/preparation.json",
+      "bytes": 143308,
+      "sha256": "33d48e15f461adf8102b72c5019901fb0e5616fa7d9c7af9d7a4339506a774f7"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/prepare_retry.py",
+      "bytes": 4901,
+      "sha256": "106042c031b8a4603f8354eba6a7216c582097d6fc7c73f8462424cf4b00114e"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/probe.stdout",
+      "bytes": 2616179,
+      "sha256": "22c5c0f6b60d1ff4fbd42da2c5a99aaea2b76eb30c9e0b2930b805c996486393"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/result.json",
+      "bytes": 2613485,
+      "sha256": "bbc2ec5bff7a68e8e41e2ef4865d897d45f567741bc9c2f23ec4596d6bbf4160"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/retry.json",
+      "bytes": 525,
+      "sha256": "bc65388da94499d6c061961bfc91d01d64b39e66a1be4e6bea4044786fde6d9e"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/run_prepared.ps1",
+      "bytes": 5038,
+      "sha256": "97682359a0c257eb79397df8c0dae979c8eb471b40aef8164df9e092cbcc6cfa"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/ssh.log",
+      "bytes": 4280,
+      "sha256": "0caf6d46b4e104891b2b84bfbdaeae4aad2f74b03a81a6f8f9026938b9d081f1"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/transport.json",
+      "bytes": 1261,
+      "sha256": "c828b44175ef52d568109d319834b387430162f33664401dcc610a9647fb3551"
+    },
+    {
+      "path": "results/u280-board-ptx-boundaries-20261111-v3/u280_board_smoke.py",
+      "bytes": 41000,
+      "sha256": "ed639e6874c8947ceb9a2c2b929d25dfa3256a00b9f11639bfdb3844ea970d34"
+    },
+    {
+      "path": "results/u280-board-ptx-sequence-20261110-v1/result.json",
+      "bytes": 119780,
+      "sha256": "d3136d085a366c150269c872360be24c2cded7e861d6c7f1513e9ef9fa5f3172"
+    },
+    {
+      "path": "results/u280-board-regression-20261110-v1/comparison.json",
+      "bytes": 216463,
+      "sha256": "f4d47e65d23685be5b0d306284727e9c2510ccb1b207fa860e3a9599293307c7"
+    },
+    {
+      "path": "results/u280-boundary-review-20261111-v1/result.json",
+      "bytes": 71530,
+      "sha256": "71283e520755f085a233ed7fc36def28006da78ddc638adea5963cc299711f81"
+    },
+    {
+      "path": "results/u280-boundary-review-20261111-v1/review_u280_ptx_results.py",
+      "bytes": 9279,
+      "sha256": "6fcbcddffcb1b5c41cafdd017fd4f851f302e91788c60e68c4350834758d590d"
+    },
+    {
+      "path": "results/u280-runtime-20261109-v4/returned/runtime/lib/libvortex-xrt.so",
+      "bytes": 45168,
+      "sha256": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1"
+    },
+    {
+      "path": "results/u280-runtime-20261109-v4/returned/runtime/lib/libvortex.so",
+      "bytes": 307488,
+      "sha256": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e"
+    },
+    {
+      "path": "results/u280-runtime-20261109-v4/returned/runtime/result.json",
+      "bytes": 36342,
+      "sha256": "967d5688382006dabed9b9b4167421d9a02071f77600ceb7a52746e509b97a4e"
+    },
+    {
+      "path": "results/u280-runtime-gcc9-prepare-20261109-v2/binding.json",
+      "bytes": 19165,
+      "sha256": "f7fe4505f0a389a591395050ab1f65af047294826555a46c7b8b0f9f16e301ef"
+    },
+    {
+      "path": "results/u280-timing7-review-20261110-v1/result.json",
+      "bytes": 38850,
+      "sha256": "1875c4f2608687e791f7b14658c21b1848127ae7632ff32c890a2df1cffcf207"
+    },
+    {
+      "path": "scripts/Invoke-U280BoardSmoke.ps1",
+      "bytes": 6347,
+      "sha256": "4f556d8338c608085b3f173bf978c44a7775aedc7b57976dd527623c692a93a4"
+    },
+    {
+      "path": "scripts/ptx_boundary_trace.py",
+      "bytes": 4686,
+      "sha256": "89ca0819141d4e114e53fe8221e3b113ed3753fbd8c504cfd982432a7c35eb28"
+    },
+    {
+      "path": "scripts/replay_ptx_boundary_bundle.py",
+      "bytes": 6986,
+      "sha256": "647332d0b83c66f7820955d12be8adf90d25201d215c0569d58a4a89c192a276"
+    },
+    {
+      "path": "scripts/review_u280_ptx_results.py",
+      "bytes": 9279,
+      "sha256": "6fcbcddffcb1b5c41cafdd017fd4f851f302e91788c60e68c4350834758d590d"
+    },
+    {
+      "path": "scripts/run_native_smoke.py",
+      "bytes": 31840,
+      "sha256": "98afa0aff0181a2a583638bff6baca194517dd7f8d7263ad703583f208fd4f72"
+    },
+    {
+      "path": "scripts/run_ptx_boundaries.py",
+      "bytes": 10104,
+      "sha256": "4b48367f5faa13ed8665778dad47d425bfe36f6a26ae04a434f05c59c06ac0e1"
+    },
+    {
+      "path": "scripts/u280_board_smoke.py",
+      "bytes": 41000,
+      "sha256": "ed639e6874c8947ceb9a2c2b929d25dfa3256a00b9f11639bfdb3844ea970d34"
+    },
+    {
+      "path": "scripts/verify_ab_closeout.py",
+      "bytes": 14819,
+      "sha256": "530fddf7bda13780383f72e71e03e864462ea67c69341bc808b64e35e75c6d2c"
+    },
+    {
+      "path": "tests/test_native_smoke.py",
+      "bytes": 7275,
+      "sha256": "4504b29eca9dbfeffa4cb906d907a404d010e55edc5e224b8e88e3141242fd05"
+    },
+    {
+      "path": "tests/test_ptx_boundaries.py",
+      "bytes": 5350,
+      "sha256": "5247f6e490aa8bc370535b1e417cb6acaf6884e460f73c2488adcf70526f680b"
+    },
+    {
+      "path": "tests/test_u280_ptx_device.py",
+      "bytes": 8104,
+      "sha256": "42cb071b3966985fae4e34cb7300532614cabf0df0faec3f40576ccc0e9ad6c4"
+    }
+  ]
+}

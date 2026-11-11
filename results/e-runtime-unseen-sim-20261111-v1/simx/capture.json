@@ -1,0 +1,4465 @@
+{
+  "allocations": [
+    {
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "bytes": 2400,
+      "generation": 0
+    },
+    {
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "bytes": 2400,
+      "generation": 1
+    }
+  ],
+  "argv": [
+    "/mnt/d/Vortex-U280/scripts/e_acceptance/runtime_unseen_run.py",
+    "--corpus",
+    "/mnt/d/Vortex-U280/configs/acceptance/e-runtime-unseen-20261111-v1",
+    "--modules",
+    "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim",
+    "--binding",
+    "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/binding.json",
+    "--target-lock",
+    "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/target_lock.json",
+    "--backend",
+    "simx",
+    "--out",
+    "/mnt/d/Vortex-U280/results/e-runtime-unseen-sim-20261111-v1/simx"
+  ],
+  "backend": "simx",
+  "binding_sha256": "080a74484515b9a4416ec2e0cf16c0ad4ee4c7d7f96c06148df74c867cd52ca4",
+  "caps_before_close": {
+    "backend": "simx",
+    "clusters": 1,
+    "cores": 1,
+    "device_fault": null,
+    "device_state": "READY",
+    "first_error": null,
+    "generation": 0,
+    "isa_flags": 221200257320,
+    "max_modules": 1,
+    "recovery_mode": "timeout-drain-only",
+    "safe_abort": false,
+    "threads": 4,
+    "warps": 8
+  },
+  "caps_initial": {
+    "backend": "simx",
+    "clusters": 1,
+    "cores": 1,
+    "device_fault": null,
+    "device_state": "READY",
+    "first_error": null,
+    "generation": 0,
+    "isa_flags": 221200257320,
+    "max_modules": 1,
+    "recovery_mode": "timeout-drain-only",
+    "safe_abort": false,
+    "threads": 4,
+    "warps": 8
+  },
+  "cases": [
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 1,
+      "files": {
+        "params.after_mutation.bin": "5fab7832ba717390645f71ea187e154ed06ae4999629c30a9e62dfafc73a264b",
+        "params.before_mutation.bin": "5fab7832ba717390645f71ea187e154ed06ae4999629c30a9e62dfafc73a264b",
+        "params.plan.bin": "5fab7832ba717390645f71ea187e154ed06ae4999629c30a9e62dfafc73a264b",
+        "x.actual.bin": "2b53d3682f5ddafe766d3c8e8f3d890aec8267ab5ba25b410da3587fb3ccbf41",
+        "y.actual.bin": "0f2976541eb7706a6240370120e438aa3a8e1effccf1ee012401cb7398bea801",
+        "z.actual.bin": "c92699d287f202dc109013acb047b6fa834e52c30577939ba2df4158bece5814"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e000",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 1,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 2,
+      "files": {
+        "params.after_mutation.bin": "c347cf86a28a841a40ba7bfd14e6501999dac144497c3a440ddb52e79c781bf0",
+        "params.before_mutation.bin": "c347cf86a28a841a40ba7bfd14e6501999dac144497c3a440ddb52e79c781bf0",
+        "params.plan.bin": "c347cf86a28a841a40ba7bfd14e6501999dac144497c3a440ddb52e79c781bf0",
+        "x.actual.bin": "c66aaab91c11d74384dae43eb6ecec5b98a27bbce54c3a11e148b1554f4b215c",
+        "y.actual.bin": "b4a25d509509f3abc3551ba259145d4a8d025b1286df84d3c917d886e23ccb5e",
+        "z.actual.bin": "8dae703e8a69394728cb2a27d00607f0eee780494d09ba59a20cd973cb3bbb46"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e001",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 2,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 3,
+      "files": {
+        "params.after_mutation.bin": "72b7d7b82bf0839c0ab1714abb517d85595238607163d0e465c30d90670de43a",
+        "params.before_mutation.bin": "72b7d7b82bf0839c0ab1714abb517d85595238607163d0e465c30d90670de43a",
+        "params.plan.bin": "72b7d7b82bf0839c0ab1714abb517d85595238607163d0e465c30d90670de43a",
+        "x.actual.bin": "225d2811c21bab251908e82505eba670903be71038fd15ce6d15e7b9f0b27aab",
+        "y.actual.bin": "f1f30cdb6027232d0f090a825082df1e82b57e987cb8c5534a74acfc4ab98e76",
+        "z.actual.bin": "135aad07afb0209421c3c5a2390550cd33d783437608dde7774f1c9275d25e9c"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e002",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 3,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 4,
+      "files": {
+        "params.after_mutation.bin": "ac359a8620ce10e2b039812325a0fca248021b5eae12f90d3b9b2cad0f2f09f9",
+        "params.before_mutation.bin": "ac359a8620ce10e2b039812325a0fca248021b5eae12f90d3b9b2cad0f2f09f9",
+        "params.plan.bin": "ac359a8620ce10e2b039812325a0fca248021b5eae12f90d3b9b2cad0f2f09f9",
+        "x.actual.bin": "ba81b150c06a34795b4072489d0d6356c63d0adc69775560a2a3f64b2e9a1385",
+        "y.actual.bin": "2a751f1547f3b203876fdb7fc26409fba299c0f5acb2ddffa47edba985fa0686",
+        "z.actual.bin": "554e5a0470b413d1f3fdf3143a7be6e418e99250c3c3be6aec1d432b44f5a322"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e003",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 4,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 5,
+      "files": {
+        "params.after_mutation.bin": "accec8ffdf7d439973947e07f74240bc3a6f84d60f91758ec87f5dab0950eaf5",
+        "params.before_mutation.bin": "accec8ffdf7d439973947e07f74240bc3a6f84d60f91758ec87f5dab0950eaf5",
+        "params.plan.bin": "accec8ffdf7d439973947e07f74240bc3a6f84d60f91758ec87f5dab0950eaf5",
+        "x.actual.bin": "19cbccc9f95187a2cf5281428f102b75de5f4aa0358a2527f12f300aa3546df8",
+        "y.actual.bin": "3f87c1a614a53ad2325520972b12fec46772df52f8a2131f7623ef44a1d95826",
+        "z.actual.bin": "af362fd75da1917cfa5860f12f65fb3d4cc6a1ab527dca3123e018a9d7fa08c3"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e004",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 5,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        3,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 6,
+      "files": {
+        "params.after_mutation.bin": "98a5651b5971c70a2daa9ec696549ef577b6c876641c8e0bea06c98ccb58a6c7",
+        "params.before_mutation.bin": "98a5651b5971c70a2daa9ec696549ef577b6c876641c8e0bea06c98ccb58a6c7",
+        "params.plan.bin": "98a5651b5971c70a2daa9ec696549ef577b6c876641c8e0bea06c98ccb58a6c7",
+        "x.actual.bin": "b3bee09b84fb97f675a0feeb487446e80b176c25126d4202802a5354c781e724",
+        "y.actual.bin": "3b427e57f169e83abfd3f342afbf4732f4a059148bcd18a777ddd8ae8eb40029",
+        "z.actual.bin": "5950c48820c91c17b3204654cb39619004355bc07b3d5d40a9c12822e57a1d2e"
+      },
+      "grid": [
+        1,
+        1,
+        1
+      ],
+      "id": "e005",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 6,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 7,
+      "files": {
+        "params.after_mutation.bin": "9f370dc9cf44d8431195d104c02fa5a77062378fe4037371fb359b15007b410b",
+        "params.before_mutation.bin": "9f370dc9cf44d8431195d104c02fa5a77062378fe4037371fb359b15007b410b",
+        "params.plan.bin": "9f370dc9cf44d8431195d104c02fa5a77062378fe4037371fb359b15007b410b",
+        "x.actual.bin": "089d918d9bfdb6bee08de357c30033d6d19b9a126c1933a8e58abb25fabfd236",
+        "y.actual.bin": "1521337420cb342f4171c60edd38536f6f49972a7cbbb05d4c57586f46df20e0",
+        "z.actual.bin": "1513071a3e7028a5b85b6eabd3cf52b692dcd5a79339d1077854993afd8fc851"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e006",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 7,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 8,
+      "files": {
+        "params.after_mutation.bin": "bd09b5b33472f6ad954b117c5bc8e878e3af68db7752995105f375a8f440ed47",
+        "params.before_mutation.bin": "bd09b5b33472f6ad954b117c5bc8e878e3af68db7752995105f375a8f440ed47",
+        "params.plan.bin": "bd09b5b33472f6ad954b117c5bc8e878e3af68db7752995105f375a8f440ed47",
+        "x.actual.bin": "2b1c1d52377b93a3a9d74fcc92467ff9193414aa4539de2afe322581a4e4ae6c",
+        "y.actual.bin": "ec77b8c2dc9a8172b32fa49bec273c9cfb34427f83ef06e38867430dd71ef0d3",
+        "z.actual.bin": "dcfecdcea975f6eeed3b3a6254194ed9eb74503cf5f984f0dddae9a121ac18f6"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e007",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 8,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 9,
+      "files": {
+        "params.after_mutation.bin": "3c5c71d64fa72ed4dd3034820ef5c784ead506133f161dd52bdeeaad6d930ad3",
+        "params.before_mutation.bin": "3c5c71d64fa72ed4dd3034820ef5c784ead506133f161dd52bdeeaad6d930ad3",
+        "params.plan.bin": "3c5c71d64fa72ed4dd3034820ef5c784ead506133f161dd52bdeeaad6d930ad3",
+        "x.actual.bin": "c4dc27a85330e8cdf258b74df727d6de3bf6f0c6e93e2f9076372ef56fe9f2a1",
+        "y.actual.bin": "934b6e6b4e66be98504dba4d08bd9403cf42a5793ae19aa10a4f5b89222ce99a",
+        "z.actual.bin": "4170e2d4314288f9efb38d0fb0047265641d9da6487ab8f171facea3aa7641f9"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e008",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 9,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 10,
+      "files": {
+        "params.after_mutation.bin": "f315d9764094eeb9f9f32584c5684b5c9dcc76f06b72a328326b20c896a06a86",
+        "params.before_mutation.bin": "f315d9764094eeb9f9f32584c5684b5c9dcc76f06b72a328326b20c896a06a86",
+        "params.plan.bin": "f315d9764094eeb9f9f32584c5684b5c9dcc76f06b72a328326b20c896a06a86",
+        "x.actual.bin": "f8d651458b6a6dde13cb99ff131b584833e502cceff0082f06ebd21e8bda1dd5",
+        "y.actual.bin": "cace0c5ab1b68b42f09e71e1da72fff83c19643324f8571f7bbc78bf61e8f25a",
+        "z.actual.bin": "69aa1df3097ae12964407c53c716e12125076509fdcf943ea06b555dc230da3f"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e009",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 10,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 11,
+      "files": {
+        "params.after_mutation.bin": "a8333123901c6a659cb0667448802be3400c8dbfff7bb1ccbbbe23d65127a983",
+        "params.before_mutation.bin": "a8333123901c6a659cb0667448802be3400c8dbfff7bb1ccbbbe23d65127a983",
+        "params.plan.bin": "a8333123901c6a659cb0667448802be3400c8dbfff7bb1ccbbbe23d65127a983",
+        "x.actual.bin": "7e4452c8b425416fd8b3963650c7e6158f2f286c05fb2b310d0607d5c1d93e28",
+        "y.actual.bin": "277a01d051b4889ab1ebf998392c100303b44707de7be6603d56da88f678284d",
+        "z.actual.bin": "a02bb75b912687cdfae3253bb7e757edab3f1e6f7793442da08e262cc354fb41"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e010",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 11,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        5,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 12,
+      "files": {
+        "params.after_mutation.bin": "af06691d9aacd42300a6bf1063a896fbc591d012aa43514f8fa5ab5dce602361",
+        "params.before_mutation.bin": "af06691d9aacd42300a6bf1063a896fbc591d012aa43514f8fa5ab5dce602361",
+        "params.plan.bin": "af06691d9aacd42300a6bf1063a896fbc591d012aa43514f8fa5ab5dce602361",
+        "x.actual.bin": "e76c503a4c45cb733ce1eda0aa56b32897dc6e9aa641117031847b48fb16aff0",
+        "y.actual.bin": "bc1327ffc9ff6224f3caf668e2c635417848e2886c6a284e7529cfd417c3f93b",
+        "z.actual.bin": "9b86dbd3e3b11342b65890d12800fd3cf16e2cb50c3221e6c5356beb552d5d67"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e011",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 12,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 13,
+      "files": {
+        "params.after_mutation.bin": "809abb4a4f621825589f48c7fb34a2538c0732778981497a7d7e35bfcb885d3e",
+        "params.before_mutation.bin": "809abb4a4f621825589f48c7fb34a2538c0732778981497a7d7e35bfcb885d3e",
+        "params.plan.bin": "809abb4a4f621825589f48c7fb34a2538c0732778981497a7d7e35bfcb885d3e",
+        "x.actual.bin": "1979b2045d0e1e82019d2bb8380c8c814b0e1411cf9fd1f44a330780c4815d4f",
+        "y.actual.bin": "a6ddf1d25d8a41619d330b80bc2b54afc5e5303adc7b52dbb125ad37c4f01a4e",
+        "z.actual.bin": "96375511e19ed2042a26cf7debbc5685481f549ea96d999790009f66f7e6c309"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e012",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 13,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 14,
+      "files": {
+        "params.after_mutation.bin": "2fdc0faae80aefc6bebf6d9af97e1a5147c392cbad72d5242cd3161fd7d0dede",
+        "params.before_mutation.bin": "2fdc0faae80aefc6bebf6d9af97e1a5147c392cbad72d5242cd3161fd7d0dede",
+        "params.plan.bin": "2fdc0faae80aefc6bebf6d9af97e1a5147c392cbad72d5242cd3161fd7d0dede",
+        "x.actual.bin": "a576ce66c6a8cd53103ae4cbd072e885888bbf3e72b4228bab2bf030212694db",
+        "y.actual.bin": "6f1db3b0ca9f0f2879bc0d31ecda2ea21b11fec7e95b62f889e832baf0d9ae6f",
+        "z.actual.bin": "b82e3b39b0ff051c5277aa83d03877297dde4d59f379e04e7287279d2fc6efc2"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e013",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 14,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 15,
+      "files": {
+        "params.after_mutation.bin": "2b9dfff275fbe95138e315466ba41991e368b4abc6aacbea5c3db18c539b096f",
+        "params.before_mutation.bin": "2b9dfff275fbe95138e315466ba41991e368b4abc6aacbea5c3db18c539b096f",
+        "params.plan.bin": "2b9dfff275fbe95138e315466ba41991e368b4abc6aacbea5c3db18c539b096f",
+        "x.actual.bin": "7bf96dbede1228a717ecbac94f2a8ea194bf37b0d05ae542a97515290ece7152",
+        "y.actual.bin": "74004b4fbcde5548b26488bc60158cb8d6b972755682c4e3ff133edefe46278c",
+        "z.actual.bin": "256b10a20c2ac95121f69a3da49280e27102d9fff7851cdfb2d25b9032a0d60f"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e014",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 15,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 16,
+      "files": {
+        "params.after_mutation.bin": "8e30cab10e64933c73f70f6c841165ad6b76042e041793a2b15bb90b59012641",
+        "params.before_mutation.bin": "8e30cab10e64933c73f70f6c841165ad6b76042e041793a2b15bb90b59012641",
+        "params.plan.bin": "8e30cab10e64933c73f70f6c841165ad6b76042e041793a2b15bb90b59012641",
+        "x.actual.bin": "ab688e79e04581a19ef5a227f652c42d6edafcda6c60e1eb6a1f6995b79bb8de",
+        "y.actual.bin": "2d0bc58d0b5b84e12827d03de240b9b02a70669312fb7a64dba6611575cc8712",
+        "z.actual.bin": "d9d7c8eb8c4174c4b2c657f3450079a44ad3c1554af39aa6167bf9805c27dc78"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e015",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 16,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 17,
+      "files": {
+        "params.after_mutation.bin": "f1bfd2d59e4d321f35797064b4061c5bc931dd5d7d058c4922fb74d6b83f9958",
+        "params.before_mutation.bin": "f1bfd2d59e4d321f35797064b4061c5bc931dd5d7d058c4922fb74d6b83f9958",
+        "params.plan.bin": "f1bfd2d59e4d321f35797064b4061c5bc931dd5d7d058c4922fb74d6b83f9958",
+        "x.actual.bin": "a782a2c3ece49a6663bbdd0ce5dc97743a593ac05ec9b573ea2538aec8102dd9",
+        "y.actual.bin": "0d9c471e171f7d4bc79f713ad22a3d4829f0d8dc2132769d7154ad547b9a65d3",
+        "z.actual.bin": "c7dd8c140f8496f749e4684542bda0d1a80ce9489c39d7c6c55bb3f6a7d434db"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e016",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 17,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        6,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 18,
+      "files": {
+        "params.after_mutation.bin": "3f55ad2a3b902fd66d6363909de6f2a7b82ebba76c67a8dc9afdd987c4b23751",
+        "params.before_mutation.bin": "3f55ad2a3b902fd66d6363909de6f2a7b82ebba76c67a8dc9afdd987c4b23751",
+        "params.plan.bin": "3f55ad2a3b902fd66d6363909de6f2a7b82ebba76c67a8dc9afdd987c4b23751",
+        "x.actual.bin": "05cc16e47e8257c828094cf308dc11f83f5473524bf52003fc7a9c53c76d4f28",
+        "y.actual.bin": "ceaed05bade40859de79da9d337dfa27141b1eee5158fb95d39d32a16b5cda74",
+        "z.actual.bin": "97113f08ade5d9f40a63b880be62f318a850dd1de2b148e954072c7404614bac"
+      },
+      "grid": [
+        3,
+        1,
+        1
+      ],
+      "id": "e017",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 18,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 19,
+      "files": {
+        "params.after_mutation.bin": "b43a9d8afa30bb465736baddead160e7e01dedc15dcc4e89b5b159714bf8bcff",
+        "params.before_mutation.bin": "b43a9d8afa30bb465736baddead160e7e01dedc15dcc4e89b5b159714bf8bcff",
+        "params.plan.bin": "b43a9d8afa30bb465736baddead160e7e01dedc15dcc4e89b5b159714bf8bcff",
+        "x.actual.bin": "34a7eb22e9446fb9ee515249ab5cf4d39067f0140c61eb2fda819b8190e40fc4",
+        "y.actual.bin": "47f213edaa86bb07fffc473ca6b983896cc03d96f85ed125b97f8338ea8d0a55",
+        "z.actual.bin": "cb2a9da9b6d3840e2850c320bb62a248485b5c055426e5f531a8975a3996955c"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e018",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 19,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 20,
+      "files": {
+        "params.after_mutation.bin": "b626a199308e5e0f7c9d461100fdcd3c8e0dfaea45603bf76e5c74cbee970436",
+        "params.before_mutation.bin": "b626a199308e5e0f7c9d461100fdcd3c8e0dfaea45603bf76e5c74cbee970436",
+        "params.plan.bin": "b626a199308e5e0f7c9d461100fdcd3c8e0dfaea45603bf76e5c74cbee970436",
+        "x.actual.bin": "0ad9523fcd84492269b00478d4dd250869d2f9ff473608158a5236e3b7dc3057",
+        "y.actual.bin": "0e6fc159a09f6de0a8a514551339400908552efa38df72c15175e2c916328b64",
+        "z.actual.bin": "a293cdc4fe122c602f130940112af74f1fbc7d3913fa54c71b9c68d7254fb230"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e019",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 20,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 21,
+      "files": {
+        "params.after_mutation.bin": "6b0e5b622d47130a84e0b887eb2747562ba91e5b5338c8f627dd4f6a3111c4a6",
+        "params.before_mutation.bin": "6b0e5b622d47130a84e0b887eb2747562ba91e5b5338c8f627dd4f6a3111c4a6",
+        "params.plan.bin": "6b0e5b622d47130a84e0b887eb2747562ba91e5b5338c8f627dd4f6a3111c4a6",
+        "x.actual.bin": "7456190415416ee5bf6ccc231c1c0b9028e7cfb188b56b88db4d9f22de596b67",
+        "y.actual.bin": "285f4d0a33f83c0ff00283d22600d52ca7760fb692c676b314567b5cc6699c9a",
+        "z.actual.bin": "21feb0ab4420a882a5ab4b5e514cbe33c3125b95ddfe31fe9c916dd94e0b3072"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e020",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 21,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 22,
+      "files": {
+        "params.after_mutation.bin": "6f7adc49388caa18b9e12f0e33ec35cac7cdc372f3bc64715b1fa7218c643cb4",
+        "params.before_mutation.bin": "6f7adc49388caa18b9e12f0e33ec35cac7cdc372f3bc64715b1fa7218c643cb4",
+        "params.plan.bin": "6f7adc49388caa18b9e12f0e33ec35cac7cdc372f3bc64715b1fa7218c643cb4",
+        "x.actual.bin": "f764dee1f8358528f99229a977721c66f0c6ad31216583bbc678e81e3eec022d",
+        "y.actual.bin": "103f7765997bf1355a5e0b494db3c6b9941a44a4b749579e50fb001c09360991",
+        "z.actual.bin": "47790a22e4b0e1bc863928ea17e27f5e858092414970a1d1fa8c94cf16b65cad"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e021",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 22,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 23,
+      "files": {
+        "params.after_mutation.bin": "ca82fcd12251d1a5b050166efb9c4bf714310ea276a7e1bb05ea2a30671dc73c",
+        "params.before_mutation.bin": "ca82fcd12251d1a5b050166efb9c4bf714310ea276a7e1bb05ea2a30671dc73c",
+        "params.plan.bin": "ca82fcd12251d1a5b050166efb9c4bf714310ea276a7e1bb05ea2a30671dc73c",
+        "x.actual.bin": "67f2fd41e2b1ecdf38a15a8da349274dfac96cf0d74ad24b0c62261f101932c8",
+        "y.actual.bin": "489ecc9032141c175dd9ac3037e72dd1bfa10264c44f5aaa92fcb9f8dd417281",
+        "z.actual.bin": "9bdff1a7121241cec538ea00ae3f3458e80a2e4dcdee7de79c2196d1d3bc7dfc"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e022",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 23,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 0,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        9,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 24,
+      "files": {
+        "params.after_mutation.bin": "5786f7822ba15f90d88ff0c49f4989b8b5316db70b07aea204184f2bf7bba57e",
+        "params.before_mutation.bin": "5786f7822ba15f90d88ff0c49f4989b8b5316db70b07aea204184f2bf7bba57e",
+        "params.plan.bin": "5786f7822ba15f90d88ff0c49f4989b8b5316db70b07aea204184f2bf7bba57e",
+        "x.actual.bin": "022ea5d2bff472866f72a734ce17baf9c21def6f7388b58a9ea1156e95fa9c71",
+        "y.actual.bin": "9dd479aa4eef585b7c662b8eb7f4aae6e88761526a27b7f0cf576297a989d408",
+        "z.actual.bin": "4a51106f06eb34abe8227a6c24b20e4bb905ed828309a9267d667ca5aee6a8a5"
+      },
+      "grid": [
+        2,
+        1,
+        1
+      ],
+      "id": "e023",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 24,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 25,
+      "files": {
+        "params.after_mutation.bin": "7f7f0e7aee507ae5bd52782a54a1b2866c034add081ffa80d8012f573ecc5bb0",
+        "params.before_mutation.bin": "7f7f0e7aee507ae5bd52782a54a1b2866c034add081ffa80d8012f573ecc5bb0",
+        "params.plan.bin": "7f7f0e7aee507ae5bd52782a54a1b2866c034add081ffa80d8012f573ecc5bb0",
+        "x.actual.bin": "7f89f0ad030dedeccf1972f1a2f79bdb4f53ef0f6a00ae73ca3990f697e4702b",
+        "y.actual.bin": "4f0682174f4dbe5e7bb08d9467470a0b542c35c80bfb9b1905da3267997945f4",
+        "z.actual.bin": "6056d1cc92d8044a46578e0ff63a9c1aca3dd23fe21a023e427b1abb85a62a0e"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e024",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 25,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 26,
+      "files": {
+        "params.after_mutation.bin": "fa0f484a35f1134cb47f43ba93c1ef99b413aaf30d5e94b650abc2e7309dd3df",
+        "params.before_mutation.bin": "fa0f484a35f1134cb47f43ba93c1ef99b413aaf30d5e94b650abc2e7309dd3df",
+        "params.plan.bin": "fa0f484a35f1134cb47f43ba93c1ef99b413aaf30d5e94b650abc2e7309dd3df",
+        "x.actual.bin": "59fdcdd8b5753aa4fd0404991a7d8eab91ec4f6fae6ddc8b588b7f0d8372d139",
+        "y.actual.bin": "d6497942bc4ddaad509a0f1d1c874ee8e6813ace67c8be202a91f9c92b4be7df",
+        "z.actual.bin": "b5885905c6c570cbfa49002819b9e1952c383f2edb7d3eb4e69e16224d207a57"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e025",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 26,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 27,
+      "files": {
+        "params.after_mutation.bin": "0693c19e3c2e0b26d0de9032b1e3818e371f10de7e07e60ea3a362500f5041dc",
+        "params.before_mutation.bin": "0693c19e3c2e0b26d0de9032b1e3818e371f10de7e07e60ea3a362500f5041dc",
+        "params.plan.bin": "0693c19e3c2e0b26d0de9032b1e3818e371f10de7e07e60ea3a362500f5041dc",
+        "x.actual.bin": "c4f06ee7022e47af8a59e258088ec4d18fd297fa29f5a16d0673145d5706b815",
+        "y.actual.bin": "1e9741415ff99b80255640cccd97f43f720abf1896401dc0329f1677f3e49417",
+        "z.actual.bin": "f4e2bb9d51ba6a615b89b3f0662a24dc227b649efb74bfa247a3a2acdff200df"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e026",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 27,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 28,
+      "files": {
+        "params.after_mutation.bin": "b5e10190681d8858d6624078f6ad634454460ef61da25e271513a5be540ae8e5",
+        "params.before_mutation.bin": "b5e10190681d8858d6624078f6ad634454460ef61da25e271513a5be540ae8e5",
+        "params.plan.bin": "b5e10190681d8858d6624078f6ad634454460ef61da25e271513a5be540ae8e5",
+        "x.actual.bin": "fa93e5cf3c7d2dbe707a7a287a78a038edeffb8bfd53ccefeb650c3e133052be",
+        "y.actual.bin": "858198eab64474cea7b87bcec55f2496968bb462c475b5954ab110a3e8c17192",
+        "z.actual.bin": "f9ff09afcf9d145a2193a873b1f1a80fcc1b3f4247e89413f9eea14aa4e7a889"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e027",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 28,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 29,
+      "files": {
+        "params.after_mutation.bin": "2d021f4b436992042a1e531ed2deb77b1b5a27e04030fb8b0fe42603eca5ee45",
+        "params.before_mutation.bin": "2d021f4b436992042a1e531ed2deb77b1b5a27e04030fb8b0fe42603eca5ee45",
+        "params.plan.bin": "2d021f4b436992042a1e531ed2deb77b1b5a27e04030fb8b0fe42603eca5ee45",
+        "x.actual.bin": "61c4d04c4a29a9749e656a68488654d9b7a84ae1cc5e3b80c7f7a101f7fbc385",
+        "y.actual.bin": "d86fdbef8211f04d1509e3d39eee94fe2a43ae906716822ffdd63b8f8f8cab4c",
+        "z.actual.bin": "7d9998050da7f20157e7663e72fb7d6a91d601004c4bdf01167948a9eca8f64f"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e028",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 29,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        13,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 30,
+      "files": {
+        "params.after_mutation.bin": "b8036d99234de84365a12d0eff97d9d570dfee7301a02e20b1ca2171702ec73c",
+        "params.before_mutation.bin": "b8036d99234de84365a12d0eff97d9d570dfee7301a02e20b1ca2171702ec73c",
+        "params.plan.bin": "b8036d99234de84365a12d0eff97d9d570dfee7301a02e20b1ca2171702ec73c",
+        "x.actual.bin": "e6cd310d55af210d128f1caf52f504931d44e0b1bad3f8eb9593bda9c8b74fa6",
+        "y.actual.bin": "ee6c376bd556b3ec48d0dc5f027a13af67343f7eb44526fb12014ce2e78fdc7c",
+        "z.actual.bin": "54c840959534a1243eb8c570f4db78bc0a2eadb0b8cadb183d3f056c7c3ac7f7"
+      },
+      "grid": [
+        5,
+        1,
+        1
+      ],
+      "id": "e029",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 30,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 31,
+      "files": {
+        "params.after_mutation.bin": "1932f771e4465a2656fae274ceef0eedd40e0909cea017808e5de81ec16388ad",
+        "params.before_mutation.bin": "1932f771e4465a2656fae274ceef0eedd40e0909cea017808e5de81ec16388ad",
+        "params.plan.bin": "1932f771e4465a2656fae274ceef0eedd40e0909cea017808e5de81ec16388ad",
+        "x.actual.bin": "060054a113a1c8dc0a9eb2013b7286d621eed07eb92322d79d927bfa57f9017e",
+        "y.actual.bin": "8038061237f4fc2d62110296534d0e73c96b7a7fb4e3064270fd2e22d6be3074",
+        "z.actual.bin": "c9e93f6a46d69c13d8021ea505aaae4494ebdc4822ccc7b9ed8e54f8c038f59b"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e030",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 31,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 32,
+      "files": {
+        "params.after_mutation.bin": "2e2e476d5ef02a2db733875e87b327c850b6f2236c396432f89090693a8962b0",
+        "params.before_mutation.bin": "2e2e476d5ef02a2db733875e87b327c850b6f2236c396432f89090693a8962b0",
+        "params.plan.bin": "2e2e476d5ef02a2db733875e87b327c850b6f2236c396432f89090693a8962b0",
+        "x.actual.bin": "4cfec2d076d516a8eae1ffedec8530e3f3f728aa1c39f73f8d6ef34f8104a401",
+        "y.actual.bin": "3e0da6865f0c786c69486812a2910066f7f59a890a6f2e9b6693b41afed29da7",
+        "z.actual.bin": "b3d2737c9d3da23111f06275b0d39318595c051b991cb3ab72cc44e59ba3ea62"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e031",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 32,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 33,
+      "files": {
+        "params.after_mutation.bin": "3a47efc24bc74f623a4e70215af4efc9dc7014a57f5c58c3ec0dfb206ac44287",
+        "params.before_mutation.bin": "3a47efc24bc74f623a4e70215af4efc9dc7014a57f5c58c3ec0dfb206ac44287",
+        "params.plan.bin": "3a47efc24bc74f623a4e70215af4efc9dc7014a57f5c58c3ec0dfb206ac44287",
+        "x.actual.bin": "e81473ff15c70a0dd0fea86b1f8e84000c511617fcf088f3f6fa965a2c071bd7",
+        "y.actual.bin": "79c42f953a3c12191091f41f154a3196b3a30b585d5fe12a0c74d588e24ddfee",
+        "z.actual.bin": "1a4a5447c6cb9aa17d11d3e4cd9050c64effe1f7b387af6cd56eee72a94700eb"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e032",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 33,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 34,
+      "files": {
+        "params.after_mutation.bin": "b32fe5280bf030c9a3b762bd40d1fda3c4c09e2310af5213d074418d49de720f",
+        "params.before_mutation.bin": "b32fe5280bf030c9a3b762bd40d1fda3c4c09e2310af5213d074418d49de720f",
+        "params.plan.bin": "b32fe5280bf030c9a3b762bd40d1fda3c4c09e2310af5213d074418d49de720f",
+        "x.actual.bin": "03b518b806fb6684419c41cfb399beb302e3b6a7e8c945e5007d6b8ee31618ae",
+        "y.actual.bin": "9fc886e3b264a60ced13a24f1b88dbb46c20d56e0682e0762dd9edb62c9b203b",
+        "z.actual.bin": "c1aa9f272cdd0f451f64288dd36ae73f6514326ec0ce326e50156aeb13a8d694"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e033",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 34,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 35,
+      "files": {
+        "params.after_mutation.bin": "1afe37bc21a892295ed3d75d951e2c3301ad2af2246cda6eb74510b7d0a15423",
+        "params.before_mutation.bin": "1afe37bc21a892295ed3d75d951e2c3301ad2af2246cda6eb74510b7d0a15423",
+        "params.plan.bin": "1afe37bc21a892295ed3d75d951e2c3301ad2af2246cda6eb74510b7d0a15423",
+        "x.actual.bin": "dfbe21bc30707b5522dc620ad88d74c56e73b32654f5190dd1fc161a2d7e6894",
+        "y.actual.bin": "326b4e25e12714ddcb9d0fbb9bb106917f6bfdddb86a9678715017fa3330da19",
+        "z.actual.bin": "7992228816edd40ba55dd653eb4a1cb1670c79a284d4741d0e77f1ed982111b7"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e034",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 35,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        19,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 36,
+      "files": {
+        "params.after_mutation.bin": "4d5c986d996bb6f80065e4735752e834070c3ff46cd25d7a9c229975d8c78c45",
+        "params.before_mutation.bin": "4d5c986d996bb6f80065e4735752e834070c3ff46cd25d7a9c229975d8c78c45",
+        "params.plan.bin": "4d5c986d996bb6f80065e4735752e834070c3ff46cd25d7a9c229975d8c78c45",
+        "x.actual.bin": "fe2ee144d1431f9dc768b91ffeab59375ebbf80965b41e7853eb65b58fe9f915",
+        "y.actual.bin": "74b3d9cc619e4612cc9bbc13101450b7dbb2e031cd9f8f8e05479566f88afed7",
+        "z.actual.bin": "f97eb10ed07bfdaae82eff69572b3011a1ddc21b29239557315ebdfed0b1ee22"
+      },
+      "grid": [
+        7,
+        1,
+        1
+      ],
+      "id": "e035",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 36,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 37,
+      "files": {
+        "params.after_mutation.bin": "b1ec8dffbcc888114f5b6d1894638fc966932c35e1f4622e5ab9a3a052e680a2",
+        "params.before_mutation.bin": "b1ec8dffbcc888114f5b6d1894638fc966932c35e1f4622e5ab9a3a052e680a2",
+        "params.plan.bin": "b1ec8dffbcc888114f5b6d1894638fc966932c35e1f4622e5ab9a3a052e680a2",
+        "x.actual.bin": "583033f76b8448ebfca5f320619039273c682481caa79e4b1b57a8a19bcef12f",
+        "y.actual.bin": "558efad2a483d934968b49ed45921fd6fe1c83aab191c39fd1bffb682ff8279d",
+        "z.actual.bin": "14d4c4f2a5d87acd9f9c4390fd91a085a129ebd0f3de8465feb4fb07375dfc77"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e036",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 37,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 38,
+      "files": {
+        "params.after_mutation.bin": "b8b05f56ec33bebf9817cdd21923ecac65a3f545fe30d2ac3943c459cb341aae",
+        "params.before_mutation.bin": "b8b05f56ec33bebf9817cdd21923ecac65a3f545fe30d2ac3943c459cb341aae",
+        "params.plan.bin": "b8b05f56ec33bebf9817cdd21923ecac65a3f545fe30d2ac3943c459cb341aae",
+        "x.actual.bin": "9d11f5b0da77dd4334b6301bcd9557a8f80f0f19571135369af80577d44d652c",
+        "y.actual.bin": "05e198f4e4d1a6db80ad50de87e743cf50ed8154032cf33d4bb13e94d8801fb6",
+        "z.actual.bin": "6ba27273246f2f673976d86f42d8509ff6052c99ca8e5d7203fdb007066d864e"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e037",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 38,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 39,
+      "files": {
+        "params.after_mutation.bin": "b31784838ad40f363fef86536a5f04000276777ec547bbc32a9c098612a93cdc",
+        "params.before_mutation.bin": "b31784838ad40f363fef86536a5f04000276777ec547bbc32a9c098612a93cdc",
+        "params.plan.bin": "b31784838ad40f363fef86536a5f04000276777ec547bbc32a9c098612a93cdc",
+        "x.actual.bin": "387a0b51459d551d4f09716c4bd58f98d618e7d77eb8b18f7f173f013948c7aa",
+        "y.actual.bin": "5d587c315247dc36f409c32608ca47f805f7cd69ef84e8975e8ddc28caba999c",
+        "z.actual.bin": "3a6aad9e5b6fefe440cf8ae890657cb162188798154a16cabaa1e1b1d1cd851e"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e038",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 39,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 40,
+      "files": {
+        "params.after_mutation.bin": "a27bc38fba309d38c9c0411880f48a42380dd0ddc0bb126c8b45fa42b2f90601",
+        "params.before_mutation.bin": "a27bc38fba309d38c9c0411880f48a42380dd0ddc0bb126c8b45fa42b2f90601",
+        "params.plan.bin": "a27bc38fba309d38c9c0411880f48a42380dd0ddc0bb126c8b45fa42b2f90601",
+        "x.actual.bin": "d8edd64d26703a9ac8fafa5df1ac67e04b95e559a5cc96e3f89928a00d9b7d05",
+        "y.actual.bin": "81d20532f8b615ff6550e0b273e90b312ddeac94c36944e0fa599ef29d5500fe",
+        "z.actual.bin": "4ae2e45b63fbaf13eb78897b9bce0f723ceb0669cdf15e7e8098fd37c02006a4"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e039",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 40,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 41,
+      "files": {
+        "params.after_mutation.bin": "d92450af9e8498ef4a923d539f6d99ee6145e27150aba86b176b002053fceec5",
+        "params.before_mutation.bin": "d92450af9e8498ef4a923d539f6d99ee6145e27150aba86b176b002053fceec5",
+        "params.plan.bin": "d92450af9e8498ef4a923d539f6d99ee6145e27150aba86b176b002053fceec5",
+        "x.actual.bin": "e28cbca1c90aa8424f586bedfe2534b20e44b7d6704fa8781128a167d9bdc99e",
+        "y.actual.bin": "455bf51882501587abdcde87aaf2ad78859971572d4d340d27ca453ea02f3460",
+        "z.actual.bin": "7be23a6c1f0e01f03ab8966af1e999b2ec2b6969cbbe10d499c7093d6ca5612d"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e040",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 41,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        23,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 42,
+      "files": {
+        "params.after_mutation.bin": "1bd5df1d12c7b38538894e0757d5afcebcd628bc889a0c54efd6e4311bdb0935",
+        "params.before_mutation.bin": "1bd5df1d12c7b38538894e0757d5afcebcd628bc889a0c54efd6e4311bdb0935",
+        "params.plan.bin": "1bd5df1d12c7b38538894e0757d5afcebcd628bc889a0c54efd6e4311bdb0935",
+        "x.actual.bin": "ea0ca1d8ae1a4c3dca48af6ce147ad25ec8036f139b66ffdbfb48781c8ef8ef8",
+        "y.actual.bin": "18bba4042dad10251ef983fea91b99ba2a2e7c886d20640ec4833381d4273735",
+        "z.actual.bin": "b5ecc6eabc820114fa4d02e31dae112e09477ca1bee09ec263bca49985b4723b"
+      },
+      "grid": [
+        9,
+        1,
+        1
+      ],
+      "id": "e041",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 42,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 43,
+      "files": {
+        "params.after_mutation.bin": "674cbe8a1f9376a7a322c67fac042c8bed8d5ba4a4160808cbebfd54f3be9963",
+        "params.before_mutation.bin": "674cbe8a1f9376a7a322c67fac042c8bed8d5ba4a4160808cbebfd54f3be9963",
+        "params.plan.bin": "674cbe8a1f9376a7a322c67fac042c8bed8d5ba4a4160808cbebfd54f3be9963",
+        "x.actual.bin": "918a67fc81c2cafd3e6715e3c3ce9c4b6858853573441e14b51003346d48c7ef",
+        "y.actual.bin": "5a6dcab096615be1ab2c1efc8f20390252122e3bb9ce572252730c57a0ce4440",
+        "z.actual.bin": "e9fb4564851e6c41f2df6e66cc4b2ea63573506c0a5c23e270ec3b6060742248"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e042",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 43,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 44,
+      "files": {
+        "params.after_mutation.bin": "b4d42d44d42fa6bb3cb9faf3f506d7823205a96598b105f9c96671268a03c96c",
+        "params.before_mutation.bin": "b4d42d44d42fa6bb3cb9faf3f506d7823205a96598b105f9c96671268a03c96c",
+        "params.plan.bin": "b4d42d44d42fa6bb3cb9faf3f506d7823205a96598b105f9c96671268a03c96c",
+        "x.actual.bin": "c8a19fc627bbe5933f5417b3b2017e42764311bf308bb27aaa14d76c99237aa8",
+        "y.actual.bin": "665096ed8feef44378d548842fc59c37c85f5d1f9fe7a7d859543d44ecc81731",
+        "z.actual.bin": "2374315c75bc2111ed29bd05525c892bebd9ad14f149f5681b49f3c2900c2e61"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e043",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "affine",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 44,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 45,
+      "files": {
+        "params.after_mutation.bin": "561f29b25b133204e10a3beea4a6c85e4962a52e12df54686ccdf5611bf866ce",
+        "params.before_mutation.bin": "561f29b25b133204e10a3beea4a6c85e4962a52e12df54686ccdf5611bf866ce",
+        "params.plan.bin": "561f29b25b133204e10a3beea4a6c85e4962a52e12df54686ccdf5611bf866ce",
+        "x.actual.bin": "962564bb87a835e7520f3bfd71d699022beef2009cd5c58115b098025de4441c",
+        "y.actual.bin": "3e39d735edf27927cb64c710c347be1f7aa3b2e0f7c684a40a936b469d274af6",
+        "z.actual.bin": "fc7f4a83299ee8a193271182279e01ee54cc54c2d648fe51c4a0bc78ba04f78a"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e044",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 45,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 46,
+      "files": {
+        "params.after_mutation.bin": "cbdc0e5a2df13f1abf38a506c7c15872795c268c63152c1fe312fc07095df02b",
+        "params.before_mutation.bin": "cbdc0e5a2df13f1abf38a506c7c15872795c268c63152c1fe312fc07095df02b",
+        "params.plan.bin": "cbdc0e5a2df13f1abf38a506c7c15872795c268c63152c1fe312fc07095df02b",
+        "x.actual.bin": "62b8dacfeec8756ae2c901f23c4c56b404e01f0ad08b8e0fa32ffacc9421833d",
+        "y.actual.bin": "57b9803a70121ce6754b773ec64ace05e1a5f58fa5711cbd4f310ed9f60c43a6",
+        "z.actual.bin": "bfff62fe79a8f24cbb696bd97b6b1144f2fb64ad501abf8735c6c99f44512444"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e045",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "vadd",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 46,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 47,
+      "files": {
+        "params.after_mutation.bin": "a9e9c3eb230d4f934dda681fc56c81ea3f800fc3c57c3d120bcc15cf9d008889",
+        "params.before_mutation.bin": "a9e9c3eb230d4f934dda681fc56c81ea3f800fc3c57c3d120bcc15cf9d008889",
+        "params.plan.bin": "a9e9c3eb230d4f934dda681fc56c81ea3f800fc3c57c3d120bcc15cf9d008889",
+        "x.actual.bin": "33c847881372881ef96b8ea5555a3db6fcd8ecad668058ebe915097cb12073ff",
+        "y.actual.bin": "1e2b3156e6cef3b42ed5e7a5696137b25b53871b997fdf968b427d8999b0ec5a",
+        "z.actual.bin": "73484df3b725e7cf8baa969acdda19c03f71f653d31ac2e7a8a53724f28dc140"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e046",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy_variant",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 47,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "after": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "allocation_generation": 1,
+      "bases": {
+        "x": 65536,
+        "y": 69632,
+        "z": 73728
+      },
+      "before": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "READY",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "block": [
+        29,
+        1,
+        1
+      ],
+      "event_completed": true,
+      "event_id": 48,
+      "files": {
+        "params.after_mutation.bin": "2718e71cd86ebf11b2f5474be34e2da3f0582d43a7e7dfba8d3f51999ad39db6",
+        "params.before_mutation.bin": "2718e71cd86ebf11b2f5474be34e2da3f0582d43a7e7dfba8d3f51999ad39db6",
+        "params.plan.bin": "2718e71cd86ebf11b2f5474be34e2da3f0582d43a7e7dfba8d3f51999ad39db6",
+        "x.actual.bin": "dd185b14581f1eb10e6fcc2e134822be5af3705289d96af726c46c79f3ef92df",
+        "y.actual.bin": "92145df881ed27f5d2dbab6082705eeac8f01c23aead7b8fa7e5623793adb2e3",
+        "z.actual.bin": "86be12386a832bc21fc238d89ce8bf99bd378ec4a04d0d204745fb15f108edbd"
+      },
+      "grid": [
+        19,
+        1,
+        1
+      ],
+      "id": "e047",
+      "launched": {
+        "backend": "simx",
+        "clusters": 1,
+        "cores": 1,
+        "device_fault": null,
+        "device_state": "RUNNING",
+        "first_error": null,
+        "generation": 0,
+        "isa_flags": 221200257320,
+        "max_modules": 1,
+        "recovery_mode": "timeout-drain-only",
+        "safe_abort": false,
+        "threads": 4,
+        "warps": 8
+      },
+      "module": "copy",
+      "phases": {
+        "D2H": "PASS",
+        "H2D": "PASS",
+        "launch": "PASS",
+        "load": "PASS",
+        "wait": "PASS"
+      },
+      "queue_native": 100802773429776,
+      "status": "CAPTURED",
+      "wait": {
+        "backend": "simx",
+        "event_id": 48,
+        "generation": 0,
+        "status": "COMPLETE"
+      }
+    }
+  ],
+  "context_creations": 1,
+  "cwd": "/mnt/d/Vortex-U280",
+  "environment": {
+    "LD_LIBRARY_PATH": "/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-simx/sw/runtime",
+    "PYTHONPATH": null,
+    "VORTEX_DRIVER": "simx"
+  },
+  "exit_code": 0,
+  "final_state": "CLOSED",
+  "finished": 1794370511.3336582,
+  "implementation": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "implementation_after": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+  "module_loads": 41,
+  "module_unloads": 41,
+  "modules": {
+    "affine": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "ccd003f0206d38bbbe1d426a5bd549e54463b93e8fb33a0a912b182c54a22b23",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3"
+    },
+    "affine_variant": {
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "manifest_sha256": "4890b37b210913ff708ee8bfb1e6d06221f753272f0238067db6ce55763313b7",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/affine_variant",
+      "source_sha256": "9d89709ef0cb51f5ea4fb67454a2dc2a84a51b4d5d7f524214c16f1773220259"
+    },
+    "copy": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "fb37b5bb87975312f2c4cbb3fba23151294d25dbb6a802e9ee9306f3b74f3e20",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c"
+    },
+    "copy_variant": {
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "manifest_sha256": "caf06219161477c0e9b49b1f009d3681fb0625807a9eaa0ae8e541f4e4dcfbfb",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/copy_variant",
+      "source_sha256": "880d536c7f2e97ad617c85d7a7f76289b0d785db722aad9b9fc849cb217bd835"
+    },
+    "vadd": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "63913213f89156cd4f396c6550eaf1e7a4219d08dac4d0a9475dc05799ab0613",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
+    },
+    "vadd_variant": {
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "manifest_sha256": "02fcf7ee238a47e8f87e9e218a767f3fced93144f94fd4c5cedd45aa1540b747",
+      "path": "/mnt/d/Vortex-U280/results/e-runtime-unseen-build-20261111-v1/modules/sim/vadd_variant",
+      "source_sha256": "1b98617935114759a0b2ab7dfdbc1136c757b7e7cc4070e02136068a07203e99"
+    }
+  },
+  "python": "3.10.12",
+  "queue_native": 100802773429776,
+  "runner_sha256": "06d7f3da8183e48d22d1d2a23d63d85741bed07c7f98383369a437e1c8a7bd8d",
+  "schema": "e-runtime-unseen-capture-v1",
+  "started": 1794370444.4291155,
+  "status": "COMPLETE",
+  "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+}

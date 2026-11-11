@@ -8,9 +8,9 @@
 
 | 证据 | 已执行范围 | 结果 |
 |---|---|---|
-| 基础盘点（本地记录 `results/u280-inventory-20261108-231839-155/result.json`） | OS、编译器、资源可见量、软件包、目录与 PCI sysfs | PASS（采集范围） |
-| 安装与元数据（本地记录 `results/u280-inventory-20261108-232350-747/result.json`） | 文档指定工具路径、环境脚本哈希、XRT version.json、U280 xpfm | PASS（采集范围） |
-| 实际工具与 platform 解析（本地记录 `results/u280-inventory-20261108-232952-683/inventory.json`） | Vivado/Vitis/XRT 版本、platforminfo；各命令输出和退出码在 JSON | 四项均 PASS、退出 0 |
+| [基础盘点（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-5812f2f84884) | OS、编译器、资源可见量、软件包、目录与 PCI sysfs | PASS（采集范围） |
+| [安装与元数据（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-f43ddf9ecc58) | 文档指定工具路径、环境脚本哈希、XRT version.json、U280 xpfm | PASS（采集范围） |
+| [实际工具与 platform 解析（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-7e1523062750) | Vivado/Vitis/XRT 版本、platforminfo；各命令输出和退出码在 JSON | 四项均 PASS、退出 0 |
 
 实际工具检查在 SSH 子进程中加载 `/apps/Xilinx2023/Vitis/2023.1/settings64.sh` 与 `/opt/xilinx/xrt/setup.sh`，随后逐条执行：
 
@@ -53,12 +53,12 @@ platforminfo -p /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx
 
 | 执行证据 | 输出比较 | LSU 数组请求 | 命令退出 |
 |---|---|---|---|
-| SimX v2（本地记录 `results/ab-d6-trace-simx-20261108-v2/summary.json`） | 15/15 PASS | 15/15 PASS，704 个有效数组 lane 访问 | 0 |
-| 处理器 RTL v1（本地记录 `results/ab-d6-trace-rtlsim-20261108-v1/summary.json`） | 15/15 PASS | 15/15 PASS，704 个有效数组 lane 访问 | 0 |
+| [SimX v2（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-49179ae6f79c) | 15/15 PASS | 15/15 PASS，704 个有效数组 lane 访问 | 0 |
+| [处理器 RTL v1（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-565b5852a793) | 15/15 PASS | 15/15 PASS，704 个有效数组 lane 访问 | 0 |
 
 每路全假/N=0 的 6 个用例均无 x/y/z 请求；其余 9 个全真/混合/尾线程用例的地址和计数完全匹配。两路 kernel.vxbin SHA-256 相同：`19b5aeddbaf2a0d664295a7b0811b1fba9999aa73c0ee157994766db799f8505`。额外读请求均被验证器拒绝。
 
-SimX 首轮（本地记录 `results/ab-d6-trace-simx-20261108-v1/summary.json`）为 **FAIL（日志解析器）**：构建、demo 和 15 次原生执行命令都退出 0，但解析器误把 SimX mask 当成高 bit 在前，因 masked-lane 检查报错停止。依据固定 `sw/common/bitvector.h` 和实际日志修正后，先复核原始 trace，再执行新 run_id v2。v2 使用同一已隔离的 SimX debug 构建，无完整重建；其父记录/命令日志哈希经过核对，配置、native 程序、runtime 的运行前后哈希全部一致，新语料/输出/日志独立保存。首轮结果、解析器快照和输出未改写。
+[SimX 首轮（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-91fee1fd9ed3)为 **FAIL（日志解析器）**：构建、demo 和 15 次原生执行命令都退出 0，但解析器误把 SimX mask 当成高 bit 在前，因 masked-lane 检查报错停止。依据固定 `sw/common/bitvector.h` 和实际日志修正后，先复核原始 trace，再执行新 run_id v2。v2 使用同一已隔离的 SimX debug 构建，无完整重建；其父记录/命令日志哈希经过核对，配置、native 程序、runtime 的运行前后哈希全部一致，新语料/输出/日志独立保存。首轮结果、解析器快照和输出未改写。
 
 新机器完整重跑仍用 `scripts/run_native_smoke.py --backend simx` 或 `--backend rtlsim`，追加 `--target-profile block32-v1 --native-trace`，并传入已有固定 source/tooldir/ramulator-deps、全新 run-id 和隔离 build-dir；精确路径与所有 argv 在两路 summary/父 summary。仅重新运行已核对的同配置 debug 产物可使用 `scripts/rerun_native_trace.py --parent PARENT_RUN --run-id NEW_RUN`，不可用于不同 backend、XLEN 或硬件配置。
 
@@ -68,8 +68,8 @@ SimX 首轮（本地记录 `results/ab-d6-trace-simx-20261108-v1/summary.json`�
 
 ## 脚本检查与剩余阻塞
 
-- 修正后的 Linux 全套自测（本地记录 `results/ab-d6-linux-checks-20261108-v2/result.json`）：退出 0，73 项中 72 通过、1 跳过；修正前 v1 保留。
-- Windows 重跑（本地记录 `results/ab-d6-local-checks-20261108-v2/result.json`）：退出 0，73 项中 68 通过、5 跳过；这是 mask 修正前的记录。修正后的整套检查采用上述 Linux v2，Windows 另跑了 3 项 trace 解析器测试。Windows 首轮（本地记录 `results/ab-d6-local-checks-20261108-v1/result.json`）因沙箱临时目录权限报错，原始日志保留。均只是运行器/验证器测试。
+- [修正后的 Linux 全套自测（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-4ef24de1266a)：退出 0，73 项中 72 通过、1 跳过；修正前 v1 保留。
+- [Windows 重跑（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-525538f323f2)：退出 0，73 项中 68 通过、5 跳过；这是 mask 修正前的记录。修正后的整套检查采用上述 Linux v2，Windows 另跑了 3 项 trace 解析器测试。Windows [首轮（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-7c9484c9f0be)因沙箱临时目录权限报错，原始日志保留。均只是运行器/验证器测试。
 - B 还需资源方明确获配 BDF/UUID、时段、个人构建 CPU/内存/磁盘配额、工作目录和许可；之后核对该卡 shell 与 HOST[0] 启用情况，才能接收设备路径。
 - FPGA 综合/实现、xclbin、时序/资源、板上传输与原生程序仍 NOT_RUN；不将版本/platforminfo PASS 写成 FPGA 或板上 PASS。
 - A 后续接收 C/D 可加载 PTX 程序并交 E 独立复核；默认 4w×4t 仍未被候选取代。

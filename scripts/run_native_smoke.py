@@ -66,10 +66,11 @@ def demo_passed(returncode, timed_out, output):
 
 
 class Recorder:
-    def __init__(self, directory, summary, env):
+    def __init__(self, directory, summary, env, scratch_logs=None):
         self.directory = directory
         self.summary = summary
         self.env = env
+        self.scratch_logs = Path(scratch_logs) if scratch_logs else None
         (directory / "logs").mkdir()
 
     def save(self):
@@ -89,7 +90,11 @@ class Recorder:
         self.save()
         before = time.monotonic()
         log_path = self.directory / record["log"]
-        with log_path.open("wb") as log:
+        capture_path = self.scratch_logs / log_path.name if self.scratch_logs else log_path
+        if self.scratch_logs:
+            record["scratch_log"] = str(capture_path)
+            self.save()
+        with capture_path.open("wb") as log:
             process = None
             try:
                 process = subprocess.Popen(record["argv"], cwd=cwd, env=self.env,
@@ -113,6 +118,9 @@ class Recorder:
             finally:
                 record["finished_at"] = utc_now()
                 record["elapsed_seconds"] = round(time.monotonic() - before, 3)
+                if self.scratch_logs:
+                    log.flush()
+                    shutil.copyfile(capture_path, log_path)
         record["log_sha256"] = sha256(log_path)
         self.save()
         return record, log_path.read_text(encoding="utf-8", errors="replace")

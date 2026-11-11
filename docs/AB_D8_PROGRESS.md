@@ -11,7 +11,7 @@
 | 独立合并接口候选 | gen-sources 退出 0；实际生成 1 个 HBM 主接口和 HOST 主接口，与固定连接命令匹配，检查 PASS |
 | FPGA 源输入包 | 288 项文件、相对路径 filelist、逐文件 SHA-256；仅源输入，不是 XO/xclbin |
 | 脚本与证据 | [635/635 核验](../results/ab-d8-closeout-20261109-v1/result.json) PASS、退出 0；Python 测试 79 项中 78 通过、1 跳过 |
-| 远端 HOST/platform 本轮采集 | SSH 尝试（本地记录 `results/u280-host-platform-20261109-v1/transport.json`） FAIL、SSH 255；主机密钥校验通过，在密码认证阶段结束，远端探测 NOT_RUN |
+| 远端 HOST/platform 本轮采集 | [SSH 尝试（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-0fe9894fe41e) FAIL、SSH 255；主机密钥校验通过，在密码认证阶段结束，远端探测 NOT_RUN |
 | FPGA/板上 | Vivado elaboration、XO、完整综合/实现、时序、HOST 配置、原生板上 demo 均 NOT_RUN |
 
 原始分支的发现是“RTL 端口与显式连接不一致”，尚未实际运行 v++，不能写成已复现的链接器失败，也不排除工具自动连接行为。补充静态审阅发现固定 `package_kernel.tcl` 仍查旧名 `PLATFORM_MEMORY_NUM_BANKS`，而 filelist 为 `VX_CFG_PLATFORM_MEMORY_NUM_BANKS`；本候选显式合并后把打包 bank 数固定为 1，但通用多端口打包问题未修改。没有改动 `upstream/vortex/`。
@@ -25,7 +25,7 @@ wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/run_
 wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/verify_ab_d8_results.py --run-id NEW-CHECK --source-run NEW
 ```
 
-本次为 ab-d8-u280-source-20261109-v1（本地记录 `results/ab-d8-u280-source-20261109-v1/summary.json`），两个隔离构建目录在 `/opt/vortex-ab/builds/ab-d8-u280-source-20261109-v1-{upstream_unmerged,candidate_merged}`。原始/候选各自 configure、实际预处理、链接 dry-run、配置解析的命令、stdout/stderr、退出码完整保存。
+本次为 [ab-d8-u280-source-20261109-v1（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-4d422751316e)，两个隔离构建目录在 `/opt/vortex-ab/builds/ab-d8-u280-source-20261109-v1-{upstream_unmerged,candidate_merged}`。原始/候选各自 configure、实际预处理、链接 dry-run、配置解析的命令、stdout/stderr、退出码完整保存。
 
 WSL 未安装 platforminfo；固定 Makefile 立即求值的两次探测因此在 stderr 留有 `platforminfo: not found`。本次显式传入 `DEV_ARCH=virtexuplus`、`CPU_TYPE=x86` 作为离线分支选择，配置的 platform 路径来自 D6 已有盘点。这不是本地 platforminfo 成功，不验证平台文件、XSA 或 Vivado/Vitis 兼容性。服务器上的真实复核是单独步骤。
 

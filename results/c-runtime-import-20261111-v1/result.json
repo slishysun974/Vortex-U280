@@ -1,0 +1,128 @@
+{
+  "schema_version": "c-runtime-import-v1",
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "python",
+    "-B",
+    "results/c-runtime-import-20261111-v1/import_source.py"
+  ],
+  "repository": "https://github.com/LiuZeheng123/GPGPU-runtime",
+  "commit": "7f3575db67888c03d1c2c4dc3743051c735519dd",
+  "files": [
+    {
+      "source": "scripts/ptx_module.py",
+      "destination": "scripts/ptx_module.py",
+      "source_sha256": "9ae064c99cae2c194dd7fa636ea34d392b21bc822f9dd413963cf98cc3a76b87",
+      "imported_sha256": "85ad1d051eba8a74aca422cdfe767fc2bf14771b87b019ad2e34265c92c22a6b",
+      "change": "versioned frontend import"
+    },
+    {
+      "source": "scripts/ptx_launch.py",
+      "destination": "scripts/ptx_launch.py",
+      "source_sha256": "51fbc4017a01762858c5c574d56c64b51550400dcbd0b0790d530dd59c27058c",
+      "imported_sha256": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+      "change": "versioned frontend import"
+    },
+    {
+      "source": "scripts/ptx_runtime.py",
+      "destination": "scripts/ptx_runtime.py",
+      "source_sha256": "4fc10f2c0a107e7477034ed9fba30b983019a78470329cd346cf63233084bafb",
+      "imported_sha256": "4fc10f2c0a107e7477034ed9fba30b983019a78470329cd346cf63233084bafb",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/bind_simx_runtime.py",
+      "destination": "scripts/bind_simx_runtime.py",
+      "source_sha256": "3888be8e74c265d5f3cc939d850503a72f454a171288ced65abaf3b625a22fdb",
+      "imported_sha256": "3888be8e74c265d5f3cc939d850503a72f454a171288ced65abaf3b625a22fdb",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/runtime_backends.py",
+      "destination": "scripts/runtime_backends.py",
+      "source_sha256": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3",
+      "imported_sha256": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/run_ptx_simx.py",
+      "destination": "scripts/run_ptx_simx.py",
+      "source_sha256": "67e57ef0a720094fd83a6bd8ee7d19c4cb4ea1419d5cf9b86171f1fd882b0fe4",
+      "imported_sha256": "67e57ef0a720094fd83a6bd8ee7d19c4cb4ea1419d5cf9b86171f1fd882b0fe4",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/run_ptx_suite.py",
+      "destination": "scripts/run_ptx_suite.py",
+      "source_sha256": "f28b5f410e79e93078db3be8332ccebf022a048aec7446d5fa35ecf5e8708f10",
+      "imported_sha256": "f28b5f410e79e93078db3be8332ccebf022a048aec7446d5fa35ecf5e8708f10",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/verify_ptx_suite_results.py",
+      "destination": "scripts/verify_ptx_suite_results.py",
+      "source_sha256": "e2b05cee90cb15c7847bc37be2e01cb4f61892d71f8b7ae18c6f3068a35fd559",
+      "imported_sha256": "e2b05cee90cb15c7847bc37be2e01cb4f61892d71f8b7ae18c6f3068a35fd559",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/compare_ptx_backends.py",
+      "destination": "scripts/compare_ptx_backends.py",
+      "source_sha256": "26197b476dfc1be0ea2aaa560cc0c28ccb7d47dbf6d87f15ee2ae1efb39c601e",
+      "imported_sha256": "26197b476dfc1be0ea2aaa560cc0c28ccb7d47dbf6d87f15ee2ae1efb39c601e",
+      "change": "verbatim"
+    },
+    {
+      "source": "tests/test_ptx_module.py",
+      "destination": "tests/test_ptx_module.py",
+      "source_sha256": "d5054b23ff57d22f85f1c62635630de9b49d1aa0bfb6bc4f75a1868803bd7017",
+      "imported_sha256": "d5054b23ff57d22f85f1c62635630de9b49d1aa0bfb6bc4f75a1868803bd7017",
+      "change": "verbatim"
+    },
+    {
+      "source": "tests/test_ptx_runtime.py",
+      "destination": "tests/test_ptx_runtime.py",
+      "source_sha256": "7d7e52418b95c300122cef17a98b0a07945209ef6227050d215c82a70601307e",
+      "imported_sha256": "7d7e52418b95c300122cef17a98b0a07945209ef6227050d215c82a70601307e",
+      "change": "verbatim"
+    },
+    {
+      "source": "tests/test_ptx_suite.py",
+      "destination": "tests/test_ptx_suite.py",
+      "source_sha256": "032ba9fbfb565cece26015202364a0b0d98a0b421e2cfe08cbf42a53ede752ae",
+      "imported_sha256": "032ba9fbfb565cece26015202364a0b0d98a0b421e2cfe08cbf42a53ede752ae",
+      "change": "verbatim"
+    },
+    {
+      "source": "tests/test_runtime_backends.py",
+      "destination": "tests/test_runtime_backends.py",
+      "source_sha256": "9385b8a938e3b5ac349d8f2fe6e971210bdeed83c1856cfbd3617f81b49cca9c",
+      "imported_sha256": "9385b8a938e3b5ac349d8f2fe6e971210bdeed83c1856cfbd3617f81b49cca9c",
+      "change": "verbatim"
+    },
+    {
+      "source": "scripts/ptx_frontend.py",
+      "destination": "scripts/ptx_frontend_v12.py",
+      "source_sha256": "30fa692c0c2117858e720ab015c457325bfa095b6a25add2ef3c397bbbef5045",
+      "imported_sha256": "30fa692c0c2117858e720ab015c457325bfa095b6a25add2ef3c397bbbef5045",
+      "change": "verbatim"
+    },
+    {
+      "source": "tests/test_ptx_frontend.py",
+      "destination": "tests/test_ptx_frontend_v12.py",
+      "source_sha256": "7f3e9376f9375d57b6058936a3a8706c6219777ca36c74835c591c71e5fe8140",
+      "imported_sha256": "b63cf3074fc08a936ddc394585d539248b6ab25531a8b7577c3c2e864ba3a9fb",
+      "change": "versioned frontend import"
+    }
+  ],
+  "protected": {
+    "scripts/ptx_frontend.py": "5c5e9adfa88009a6ab696ee584494a40e11cfc54b7ed857b6cbf5fb7a94c788a",
+    "scripts/run_native_smoke.py": "98afa0aff0181a2a583638bff6baca194517dd7f8d7263ad703583f208fd4f72",
+    "configs/target_lock.json": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe",
+    "configs/target_caps.json": "b48d0e940a27ff53bf0708320067c31b7560c7fc489b9ad52319b1a0adf126ec",
+    "configs/ptx_frontend/v1/abi.json": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404",
+    "configs/ptx_frontend/v1/profile.json": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041"
+  },
+  "scope": "local source integration; no execution acceptance or public merge"
+}

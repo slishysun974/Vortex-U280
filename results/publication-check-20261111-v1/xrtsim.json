@@ -1,0 +1,26 @@
+{
+  "allocation_generations": 2,
+  "backend": "xrtsim",
+  "capture_sha256": "689ac34c7b9b2020c2011aa8645bf724a99c8c8c88dfb430d691f5affd9c5833",
+  "cases": 48,
+  "context_creations": 1,
+  "full_arrays": 144,
+  "implementation": {
+    "ptx_frontend_v12.py": "a0516d76c9ac30a6687e12b4988d72129808986ba6769298c3f974a48f2cb0e5",
+    "ptx_launch.py": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7",
+    "ptx_runtime.py": "17ec7272b8fd369841cd681d06cb4ddd30f03c19ceb6c70abcf7db3a53110431",
+    "ptx_u280.py": "2f80bedae25d3ebfc2894f9b13029cc3996c75f8d0662cf381b62fcecb33c8e8",
+    "runtime_backends.py": "1dae576fad6680f5c325e2072ab8bd0a27ad70083a17099c1d8ca0bb31c572f3"
+  },
+  "limitations": [
+    "No claim of arbitrary P0, high-address stress, false-predicate trace invisibility, hardware faults/recovery, performance or human E signature.",
+    "Unseen means independently constructed without consulting development vectors; cannot prove no coincidental individual integer matches prior data."
+  ],
+  "logical_parameter_sets": 48,
+  "manifest_sha256": "ee47fa9d641a1c94f35666610d4910924c233fb83f13b1e859c26ce3de95a654",
+  "module_loads": 41,
+  "payload_captures": 144,
+  "scope": "independent E frozen unseen C API functional acceptance",
+  "status": "PASS"
+}
