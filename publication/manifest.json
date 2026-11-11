@@ -4,7 +4,7 @@
   "base_commit": "46dd01406a98ee6eab451a435c8a761b4b6a9eea",
   "scope": "source, frozen inputs, selected original/redacted evidence; no new device execution",
   "total_files": 1933,
-  "total_bytes": 6915843,
+  "total_bytes": 6915964,
   "files": {
     ".gitattributes": {
       "public_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
@@ -2333,11 +2333,11 @@
       "public_bytes": 676
     },
     "README.md": {
-      "source_sha256": "44e910dfc905329954ede7b7cbb56e5aceb897ffced4cf962a81a9312de16bf9",
-      "source_bytes": 2485,
+      "source_sha256": "539b319c4cfdb5056895be23a51821d2d5b34ca17c79066b7a7c7484b4131def",
+      "source_bytes": 2606,
       "publication": "verbatim",
-      "public_sha256": "44e910dfc905329954ede7b7cbb56e5aceb897ffced4cf962a81a9312de16bf9",
-      "public_bytes": 2485
+      "public_sha256": "539b319c4cfdb5056895be23a51821d2d5b34ca17c79066b7a7c7484b4131def",
+      "public_bytes": 2606
     },
     "results/ab-d1-source-20261107-v2/commands.json": {
       "public_sha256": "f095ad27c8bd1b1fbb0a799a76566927fe4f6abca32172e5e55c63be9949496d",
