@@ -1,0 +1,372 @@
+{
+  "status": "PASS",
+  "commands": [],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-production/check.py",
+    "review",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--host",
+    "results/local-ptx-same-predicate-production-host-20261121-v2",
+    "--simx",
+    "results/local-ptx-same-predicate-production-simx-20261121-v1",
+    "--rtlsim",
+    "results/local-ptx-same-predicate-production-rtlsim-20261121-v1",
+    "--trace-simx",
+    "results/local-ptx-same-predicate-production-trace-simx-20261121-v1",
+    "--trace-rtlsim",
+    "results/local-ptx-same-predicate-production-trace-rtlsim-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-production-review-20261121-v1"
+  ],
+  "started_at": "2026-11-21T14:15:55.711709+00:00",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "build_summary_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "runner_unittest": {
+    "total": 297,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "host_summary_sha256": "03c24df7be28c851094c75f1d4bc1803e17dca1f37ab4a8dab1251dcd23c3a29",
+  "models": {
+    "simx": {
+      "regressions": {
+        "p0_suites": {
+          "copy": {
+            "passed": 168,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "945fd788486693771ad6f679f5c9d33dc0e666c0b53142deadccf338bf252207"
+          },
+          "vadd": {
+            "passed": 168,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "c8502adcb269082679bb166c187279151a9998b2c77ca778c39523f54b8a2c72"
+          },
+          "affine": {
+            "passed": 504,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "7a14806243ef98f10ac817bc41f11a4fcb5fa18ed4980b9ee99f8ebfab5ee504"
+          }
+        },
+        "form_cases": 2,
+        "form_rejections": 17,
+        "v03_cases": 13,
+        "v03_high": 5,
+        "v03_alias": "PASS"
+      },
+      "performance": {
+        "metrics": {
+          "vadd/1024": {
+            "aligned": {
+              "cycles": 15819.0,
+              "instret": 9536.0
+            },
+            "merged": {
+              "cycles": 13064.0,
+              "instret": 8000.0
+            },
+            "reduction_pct": {
+              "cycles": 17.4157658511916,
+              "instret": 16.10738255033557
+            },
+            "paired_cycle_savings": [
+              2604,
+              2788,
+              2736,
+              2788
+            ]
+          },
+          "vadd/16381": {
+            "aligned": {
+              "cycles": 245473.0,
+              "instret": 151624.0
+            },
+            "merged": {
+              "cycles": 205412.5,
+              "instret": 127042.0
+            },
+            "reduction_pct": {
+              "cycles": 16.319717443466285,
+              "instret": 16.21247295942595
+            },
+            "paired_cycle_savings": [
+              39872,
+              40137,
+              40223,
+              40137
+            ]
+          },
+          "copy/1024": {
+            "aligned": {
+              "cycles": 12774.0,
+              "instret": 7744.0
+            },
+            "merged": {
+              "cycles": 11807.0,
+              "instret": 6976.0
+            },
+            "reduction_pct": {
+              "cycles": 7.570064192891812,
+              "instret": 9.917355371900827
+            },
+            "paired_cycle_savings": [
+              1027,
+              967,
+              967,
+              967
+            ]
+          },
+          "copy/16381": {
+            "aligned": {
+              "cycles": 198431.0,
+              "instret": 122949.0
+            },
+            "merged": {
+              "cycles": 182321.0,
+              "instret": 110658.0
+            },
+            "reduction_pct": {
+              "cycles": 8.118691131929989,
+              "instret": 9.9968279530537
+            },
+            "paired_cycle_savings": [
+              15953,
+              16110,
+              16110,
+              16110
+            ]
+          },
+          "affine/1024": {
+            "aligned": {
+              "cycles": 16418.0,
+              "instret": 10048.0
+            },
+            "merged": {
+              "cycles": 13695.5,
+              "instret": 8512.0
+            },
+            "reduction_pct": {
+              "cycles": 16.58240955049336,
+              "instret": 15.286624203821653
+            },
+            "paired_cycle_savings": [
+              2776,
+              2719,
+              2719,
+              2726
+            ]
+          },
+          "affine/16381": {
+            "aligned": {
+              "cycles": 255690.0,
+              "instret": 159816.0
+            },
+            "merged": {
+              "cycles": 218574.0,
+              "instret": 135234.0
+            },
+            "reduction_pct": {
+              "cycles": 14.516015487504397,
+              "instret": 15.381438654452618
+            },
+            "paired_cycle_savings": [
+              36780,
+              37452,
+              36780,
+              37452
+            ]
+          }
+        },
+        "samples_sha256": "a86d733287271341605fb961d4df45a5c08a09dfa17fa03ed175431aa321949a",
+        "launches": 48
+      },
+      "lsu": {
+        "launches": 12,
+        "mixed_tail_launches": 6,
+        "checked_array_requests": 278480,
+        "false_predicate_array_requests": 0,
+        "negative_control": {
+          "status": "PASS",
+          "operation": "LD",
+          "reason": "false-predicate lane issued array request: index 16381, PC 0x180000074"
+        },
+        "summary_sha256": "165b13790d805351451d31ed1c814f6c8efaf43720b04cea417cf6baa17b6c5b"
+      }
+    },
+    "rtlsim": {
+      "regressions": {
+        "p0_suites": {
+          "copy": {
+            "passed": 168,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "1552e87f508a08853a051fbd870e2b69c4b294dc0251f181798f2a9af8176e4c"
+          },
+          "vadd": {
+            "passed": 168,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "48439a536ee1f61e80a14f472017ef48fee872968f15b57de69c8f4e70e4a508"
+          },
+          "affine": {
+            "passed": 504,
+            "rejections": 19,
+            "recovery": "PASS",
+            "sha256": "e6911fa8cd4ce8cd6af9a3d35b26bbfc67e5e6a4f071457f46c05ba79eaefdc8"
+          }
+        },
+        "form_cases": 2,
+        "form_rejections": 17,
+        "v03_cases": 13,
+        "v03_high": 5,
+        "v03_alias": "PASS"
+      },
+      "performance": {
+        "metrics": {
+          "vadd/1024": {
+            "aligned": {
+              "cycles": 16099.0,
+              "instret": 9536.0
+            },
+            "merged": {
+              "cycles": 13055.0,
+              "instret": 8000.0
+            },
+            "reduction_pct": {
+              "cycles": 18.90800670849121,
+              "instret": 16.10738255033557
+            },
+            "paired_cycle_savings": [
+              3124,
+              2966,
+              3227,
+              2966
+            ]
+          },
+          "vadd/16381": {
+            "aligned": {
+              "cycles": 254594.0,
+              "instret": 151624.0
+            },
+            "merged": {
+              "cycles": 208216.0,
+              "instret": 127042.0
+            },
+            "reduction_pct": {
+              "cycles": 18.216454433333073,
+              "instret": 16.21247295942595
+            },
+            "paired_cycle_savings": [
+              46467,
+              44304,
+              46373,
+              47063
+            ]
+          },
+          "copy/1024": {
+            "aligned": {
+              "cycles": 13116.0,
+              "instret": 7744.0
+            },
+            "merged": {
+              "cycles": 11882.0,
+              "instret": 6976.0
+            },
+            "reduction_pct": {
+              "cycles": 9.408356206160418,
+              "instret": 9.917355371900827
+            },
+            "paired_cycle_savings": [
+              1238,
+              1234,
+              1234,
+              1234
+            ]
+          },
+          "copy/16381": {
+            "aligned": {
+              "cycles": 205245.5,
+              "instret": 122949.0
+            },
+            "merged": {
+              "cycles": 184967.0,
+              "instret": 110658.0
+            },
+            "reduction_pct": {
+              "cycles": 9.880119174354618,
+              "instret": 9.9968279530537
+            },
+            "paired_cycle_savings": [
+              19826,
+              20278,
+              20281,
+              20283
+            ]
+          },
+          "affine/1024": {
+            "aligned": {
+              "cycles": 16865.5,
+              "instret": 10048.0
+            },
+            "merged": {
+              "cycles": 13759.0,
+              "instret": 8512.0
+            },
+            "reduction_pct": {
+              "cycles": 18.419258249088376,
+              "instret": 15.286624203821653
+            },
+            "paired_cycle_savings": [
+              3207,
+              3191,
+              3019,
+              3051
+            ]
+          },
+          "affine/16381": {
+            "aligned": {
+              "cycles": 264907.0,
+              "instret": 159816.0
+            },
+            "merged": {
+              "cycles": 219673.0,
+              "instret": 135234.0
+            },
+            "reduction_pct": {
+              "cycles": 17.075426470421696,
+              "instret": 15.381438654452618
+            },
+            "paired_cycle_savings": [
+              46990,
+              45234,
+              45234,
+              45234
+            ]
+          }
+        },
+        "samples_sha256": "e79686e7ad63aa4deda455b26b4626c9df54a0dfee08e8f82f473630a796db55",
+        "launches": 48
+      },
+      "lsu": {
+        "launches": 12,
+        "mixed_tail_launches": 6,
+        "checked_array_requests": 278480,
+        "false_predicate_array_requests": 0,
+        "negative_control": {
+          "status": "PASS",
+          "operation": "ST",
+          "reason": "false-predicate lane issued array request: index 16381, PC 0x18000007c"
+        },
+        "summary_sha256": "ea6fb645954c4c0b968ac7373ff9143825fdee9b310a795bebbbfabf1220388b"
+      }
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:16:49.873221+00:00"
+}

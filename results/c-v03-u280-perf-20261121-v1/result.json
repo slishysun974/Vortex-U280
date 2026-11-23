@@ -1,0 +1,362 @@
+{
+  "run_id": "c-v03-u280-perf-20261121-v1",
+  "nonce": "dc136d8e798742b9b688f5ed02112aef",
+  "status": "PASS",
+  "exit_code": 0,
+  "board_execution": "PASS",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-perf-20261121-v1/bundle/scripts/u280_perf_pair.py",
+    "run",
+    "--bundle",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-perf-20261121-v1/bundle",
+    "--output",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-perf-20261121-v1/c-v03-u280-perf-20261121-v1",
+    "--bdf",
+    "0000:b1:00.1"
+  ],
+  "archive_sha256": "14f4d43cf36f09954c81e23bf54e38d43f409943f4c12a4ddda2b9248db40f4b",
+  "python": [
+    3,
+    6,
+    8
+  ],
+  "worker_exit_code": 0,
+  "stdout": "PASS /home/u280user/vortex-c-v03-board/c-v03-u280-perf-20261121-v1/c-v03-u280-perf-20261121-v1 \n",
+  "stderr": "",
+  "receipt": {
+    "status": "PASS",
+    "launches": 140,
+    "measured": 120,
+    "cases": {
+      "1024": {
+        "grid": 32,
+        "block": 32,
+        "h2d_bytes": 12672,
+        "d2h_bytes": 4224,
+        "stats": {
+          "native": {
+            "load_ns": {
+              "median": 111248.5,
+              "min": 108709,
+              "max": 123990
+            },
+            "h2d_ns": {
+              "median": 229461.5,
+              "min": 220633,
+              "max": 255867
+            },
+            "execute_wait_ns": {
+              "median": 403112.0,
+              "min": 392888,
+              "max": 422625
+            },
+            "execute_profile_ns": {
+              "median": 236042.5,
+              "min": 230427,
+              "max": 246244
+            },
+            "d2h_ns": {
+              "median": 96950.5,
+              "min": 91220,
+              "max": 106454
+            },
+            "total_ns": {
+              "median": 732594.0,
+              "min": 713691,
+              "max": 753303
+            },
+            "total_with_load_ns": {
+              "median": 848168.5,
+              "min": 825721,
+              "max": 864685
+            },
+            "h2d_profile_ns": {
+              "median": 180705.0,
+              "min": 173624,
+              "max": 196453
+            },
+            "d2h_profile_ns": {
+              "median": 58414.5,
+              "min": 54314,
+              "max": 65956
+            }
+          },
+          "ptx": {
+            "load_ns": {
+              "median": 111171.0,
+              "min": 109012,
+              "max": 132480
+            },
+            "h2d_ns": {
+              "median": 230401.0,
+              "min": 220957,
+              "max": 247848
+            },
+            "execute_wait_ns": {
+              "median": 567213.0,
+              "min": 556033,
+              "max": 586046
+            },
+            "execute_profile_ns": {
+              "median": 397558.5,
+              "min": 388206,
+              "max": 411375
+            },
+            "d2h_ns": {
+              "median": 96215.0,
+              "min": 91593,
+              "max": 105209
+            },
+            "total_ns": {
+              "median": 895946.5,
+              "min": 877494,
+              "max": 910554
+            },
+            "total_with_load_ns": {
+              "median": 1008001.0,
+              "min": 988067,
+              "max": 1036864
+            },
+            "h2d_profile_ns": {
+              "median": 180263.5,
+              "min": 173709,
+              "max": 199228
+            },
+            "d2h_profile_ns": {
+              "median": 58561.0,
+              "min": 54640,
+              "max": 62323
+            }
+          }
+        },
+        "paired_ptx_minus_native": {
+          "load_ns": {
+            "median": 365.5,
+            "min": -11376,
+            "max": 20480
+          },
+          "h2d_ns": {
+            "median": 840.0,
+            "min": -11503,
+            "max": 15757
+          },
+          "execute_wait_ns": {
+            "median": 162424.0,
+            "min": 135432,
+            "max": 178264
+          },
+          "execute_profile_ns": {
+            "median": 160892.5,
+            "min": 153807,
+            "max": 174079
+          },
+          "d2h_ns": {
+            "median": 67.5,
+            "min": -10947,
+            "max": 9432
+          },
+          "total_ns": {
+            "median": 159888.0,
+            "min": 144286,
+            "max": 186709
+          },
+          "total_with_load_ns": {
+            "median": 159555.5,
+            "min": 144904,
+            "max": 207189
+          },
+          "h2d_profile_ns": {
+            "median": -1070.5,
+            "min": -8493,
+            "max": 11214
+          },
+          "d2h_profile_ns": {
+            "median": -215.5,
+            "min": -9976,
+            "max": 4991
+          }
+        }
+      },
+      "16381": {
+        "grid": 512,
+        "block": 32,
+        "h2d_bytes": 196992,
+        "d2h_bytes": 65664,
+        "stats": {
+          "native": {
+            "load_ns": {
+              "median": 114861.5,
+              "min": 112807,
+              "max": 121730
+            },
+            "h2d_ns": {
+              "median": 326875.5,
+              "min": 318319,
+              "max": 333828
+            },
+            "execute_wait_ns": {
+              "median": 2192731.5,
+              "min": 2185712,
+              "max": 2204984
+            },
+            "execute_profile_ns": {
+              "median": 2065860.5,
+              "min": 2061786,
+              "max": 2078410
+            },
+            "d2h_ns": {
+              "median": 130836.0,
+              "min": 127177,
+              "max": 140594
+            },
+            "total_ns": {
+              "median": 2652516.5,
+              "min": 2634754,
+              "max": 2664584
+            },
+            "total_with_load_ns": {
+              "median": 2768845.5,
+              "min": 2749558,
+              "max": 2779664
+            },
+            "h2d_profile_ns": {
+              "median": 287548.0,
+              "min": 281268,
+              "max": 295797
+            },
+            "d2h_profile_ns": {
+              "median": 99140.0,
+              "min": 96432,
+              "max": 103593
+            }
+          },
+          "ptx": {
+            "load_ns": {
+              "median": 115564.0,
+              "min": 111659,
+              "max": 136346
+            },
+            "h2d_ns": {
+              "median": 327411.0,
+              "min": 320886,
+              "max": 332942
+            },
+            "execute_wait_ns": {
+              "median": 4723651.0,
+              "min": 4679930,
+              "max": 4769676
+            },
+            "execute_profile_ns": {
+              "median": 4597521.0,
+              "min": 4548275,
+              "max": 4640336
+            },
+            "d2h_ns": {
+              "median": 130496.0,
+              "min": 127970,
+              "max": 133679
+            },
+            "total_ns": {
+              "median": 5180807.0,
+              "min": 5132776,
+              "max": 5232797
+            },
+            "total_with_load_ns": {
+              "median": 5295664.0,
+              "min": 5249070,
+              "max": 5369143
+            },
+            "h2d_profile_ns": {
+              "median": 289058.0,
+              "min": 283083,
+              "max": 293105
+            },
+            "d2h_profile_ns": {
+              "median": 98534.5,
+              "min": 96432,
+              "max": 100629
+            }
+          }
+        },
+        "paired_ptx_minus_native": {
+          "load_ns": {
+            "median": 785.0,
+            "min": -6602,
+            "max": 23539
+          },
+          "h2d_ns": {
+            "median": 1998.5,
+            "min": -10800,
+            "max": 7687
+          },
+          "execute_wait_ns": {
+            "median": 2530249.5,
+            "min": 2487677,
+            "max": 2579226
+          },
+          "execute_profile_ns": {
+            "median": 2529124.5,
+            "min": 2485099,
+            "max": 2575468
+          },
+          "d2h_ns": {
+            "median": -38.0,
+            "min": -10629,
+            "max": 3981
+          },
+          "total_ns": {
+            "median": 2531763.0,
+            "min": 2477045,
+            "max": 2586124
+          },
+          "total_with_load_ns": {
+            "median": 2532780.5,
+            "min": 2478420,
+            "max": 2609663
+          },
+          "h2d_profile_ns": {
+            "median": 1667.5,
+            "min": -10558,
+            "max": 6607
+          },
+          "d2h_profile_ns": {
+            "median": -547.5,
+            "min": -3948,
+            "max": 3306
+          }
+        }
+      }
+    },
+    "raw_sha256": "5f3fb497d6d746ff695034b87f511d145984586ed63e8b0d583132736a775251",
+    "capture_sha256": "067d17648e1af9e7dbf8aa3024013c7f960712254aec760ab545175b35c8d353",
+    "gate_sha256": "013a092865c2abfaab233d15ebe169d7a3911cc2d8d452c87ba343f565247de8"
+  },
+  "returned_files": {
+    "devices.json": "4a1ca7ef17d7d872e715769096f2c4e3d3e347f02acddc6dd2ee270cef1672f2",
+    "summary.json": "c0668086dc94c213d5ad776fcc725e6f0aed2a3814cb4c6613ae7f17107307a7",
+    "binding/binding.json": "71b0ced5b5904011cab2f539f4b067c8d90f206ee77a1e47a30cd3cedd5b18fb",
+    "binding/hardware.json": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+    "binding/target_lock.json": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "logs/01_ldd_libvortex.so.log": "06c08e8b5364cc7c5c70b94a0e0a0339f113d86772fbcf3469b9092c6139cefe",
+    "logs/02_ldd_libvortex-xrt.so.log": "5a2daf0e72b136aaa9c461fc7b82cf2b309cc03e626b4904e22e4ac4391c320c",
+    "logs/03_compile_bdf_query.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/04_enumerate.log": "37fb477a92bd5425c50b63a2e9927c1385cf377699dcdb582364f354227e272e",
+    "logs/05_capture.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "u280-xrt/capture.json": "067d17648e1af9e7dbf8aa3024013c7f960712254aec760ab545175b35c8d353",
+    "u280-xrt/samples.jsonl": "5f3fb497d6d746ff695034b87f511d145984586ed63e8b0d583132736a775251",
+    "u280-xrt/1024/bases.json": "a15dd81a2e10eb3d3264be3c471a841ca5506432614e81a36bb944421abf0a93",
+    "u280-xrt/1024/native.out.bin": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83",
+    "u280-xrt/1024/params.bin": "e615b902e9f68d8b91e4d329c35d639b27e9ce0468d212ad412390f908031927",
+    "u280-xrt/1024/ptx.out.bin": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83",
+    "u280-xrt/16381/bases.json": "eb1a133fd58a14723a118d8d8279889cb6d1b022d4caf987f0aa2450067865f6",
+    "u280-xrt/16381/native.out.bin": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781",
+    "u280-xrt/16381/params.bin": "0eabefaa37ed299fe3629e632777e5a183904b342e3223dbda221de08b0b8180",
+    "u280-xrt/16381/ptx.out.bin": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781",
+    "binding/sessions/c-v03-u280-perf-20261121-v1/device_list.json": "a38e4cd5b95981cf86c46d327a5491145494adaa05d39c3a8eaf65dca48bf0f3",
+    "binding/sessions/c-v03-u280-perf-20261121-v1/gate.json": "013a092865c2abfaab233d15ebe169d7a3911cc2d8d452c87ba343f565247de8",
+    "binding/sessions/c-v03-u280-perf-20261121-v1/loaded.json": "02218b4419cfdaea78ac98519f631ff5ccd5c05b49584250a75a1c09cc67f6a0",
+    "binding/sessions/c-v03-u280-perf-20261121-v1/preflight.json": "be414ab4e0870eeab4c37bc77188c908263065e4f010ba827617e6bd215c8df0"
+  }
+}

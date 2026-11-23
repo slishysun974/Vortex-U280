@@ -1,0 +1,151 @@
+{
+  "schema": "u280-aligned-predicate-pair-run-v1",
+  "status": "PASS",
+  "board_execution": "PASS",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/scripts/u280_aligned_pair.py",
+    "run",
+    "--bundle",
+    "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/frozen",
+    "--output",
+    "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+    "--bdf",
+    "0000:b1:00.1",
+    "--compiled",
+    "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/compiled"
+  ],
+  "run_id": "u280-aligned-board-20261122-v1",
+  "started_at": "2026-11-22T03:07:49.176704+00:00",
+  "commands": [
+    {
+      "label": "build_cp_observer",
+      "argv": [
+        "/opt/rh/devtoolset-9/root/usr/bin/g++",
+        "-std=c++11",
+        "-O2",
+        "-fPIC",
+        "-shared",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/native/u280_cp_caps_observer.cpp",
+        "-o",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1/cp_caps_observer.so",
+        "-ldl"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:49.176903+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_build_cp_observer.log",
+      "finished_at": "2026-11-22T03:07:49.393077+00:00",
+      "elapsed_seconds": 0.216,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "ldd_libvortex.so",
+      "argv": [
+        "ldd",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex.so"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:49.535275+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_ldd_libvortex.so.log",
+      "finished_at": "2026-11-22T03:07:49.554197+00:00",
+      "elapsed_seconds": 0.019,
+      "log_sha256": "2fb83c6cab990ff2b6d562e7fb88c306baf452eaaadf1a0ceec0f249b3f215e7"
+    },
+    {
+      "label": "ldd_libvortex-xrt.so",
+      "argv": [
+        "ldd",
+        "/home/u280user/vortex-u280-runtime/u280-runtime-20261109-v4/build/lib/libvortex-xrt.so"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:49.554958+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_ldd_libvortex-xrt.so.log",
+      "finished_at": "2026-11-22T03:07:49.572906+00:00",
+      "elapsed_seconds": 0.018,
+      "log_sha256": "2a446773a03ef8cb3cc7ceacf7cf18bce71f63721bf682804bb2aa9d9e15675d"
+    },
+    {
+      "label": "compile_bdf_query",
+      "argv": [
+        "/opt/rh/devtoolset-9/root/usr/bin/g++",
+        "-std=c++17",
+        "-O2",
+        "-I/opt/xilinx/xrt/include",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/frozen/query.cpp",
+        "-L/opt/xilinx/xrt/lib",
+        "-lxrt_coreutil",
+        "-o",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1/xrt_bdf"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:49.574209+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_compile_bdf_query.log",
+      "finished_at": "2026-11-22T03:07:50.091590+00:00",
+      "elapsed_seconds": 0.517,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "enumerate",
+      "argv": [
+        "xbutil",
+        "examine",
+        "--format",
+        "JSON",
+        "--output",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1/devices.json"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:50.093385+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_enumerate.log",
+      "finished_at": "2026-11-22T03:07:55.369075+00:00",
+      "elapsed_seconds": 5.275,
+      "log_sha256": "26393de1e19021b85cd70ffc0fd8e550746bbc28292af4bb70fed37dace44485"
+    },
+    {
+      "label": "capture",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/scripts/u280_aligned_pair.py",
+        "capture",
+        "--bundle",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/frozen",
+        "--compiled",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/bundle/compiled",
+        "--output",
+        "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1"
+      ],
+      "cwd": "/home/u280user/vortex-c-v03-board/u280-aligned-board-20261122-v1/u280-aligned-board-20261122-v1",
+      "started_at": "2026-11-22T03:07:55.536779+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_capture.log",
+      "finished_at": "2026-11-22T03:08:14.483225+00:00",
+      "elapsed_seconds": 18.946,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "bdf": "0000:b1:00.1",
+  "xrt_index": 3,
+  "observer_sha256": "3bfca24eb8664678a43adf3593956c68b7a6ec06098cd970fbad7f3bead08dbc",
+  "exit_code": 0,
+  "capture_sha256": "67704e9685ca97b0be039eb15876f96412de053697aacf5108cdbe9269ba8b5c",
+  "finished_at": "2026-11-22T03:08:14.485571+00:00"
+}

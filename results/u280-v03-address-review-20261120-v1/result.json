@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "offline archive topology and model reservation mapping",
+  "xclbin_sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+  "d12_libraries": {
+    "libvortex-xrt.so": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1",
+    "libvortex.so": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e"
+  },
+  "model_corpus_sha256": "0da11d96e0d0abd20dbd112a1b745d1b6a0dc4667e9074ef2c1a245621533997",
+  "xclbin_port_range": "0xFFFFFFFF",
+  "hbm_banks": 32,
+  "listed_hbm_bytes": 8589934592,
+  "layouts": {
+    "cross_read": {
+      "x": {
+        "base": "0xffffffc0",
+        "end_exclusive": "0x1000000c0",
+        "banks": [
+          "HBM[15]",
+          "HBM[16]"
+        ]
+      },
+      "z": {
+        "base": "0x101600000",
+        "end_exclusive": "0x101600100",
+        "banks": [
+          "HBM[16]"
+        ]
+      },
+      "audit": {
+        "base": "0x1600000",
+        "end_exclusive": "0x1600100",
+        "banks": [
+          "HBM[0]"
+        ]
+      }
+    },
+    "cross_write": {
+      "x": {
+        "base": "0x101600000",
+        "end_exclusive": "0x101600100",
+        "banks": [
+          "HBM[16]"
+        ]
+      },
+      "z": {
+        "base": "0xffffffc0",
+        "end_exclusive": "0x1000000c0",
+        "banks": [
+          "HBM[15]",
+          "HBM[16]"
+        ]
+      },
+      "audit": {
+        "base": "0x1600000",
+        "end_exclusive": "0x1600100",
+        "banks": [
+          "HBM[0]"
+        ]
+      }
+    },
+    "cross_audit": {
+      "x": {
+        "base": "0x1600000",
+        "end_exclusive": "0x1600100",
+        "banks": [
+          "HBM[0]"
+        ]
+      },
+      "z": {
+        "base": "0x101600000",
+        "end_exclusive": "0x101600100",
+        "banks": [
+          "HBM[16]"
+        ]
+      },
+      "audit": {
+        "base": "0xffffffc0",
+        "end_exclusive": "0x1000000c0",
+        "banks": [
+          "HBM[15]",
+          "HBM[16]"
+        ]
+      }
+    },
+    "high_to_low": {
+      "x": {
+        "base": "0x101600000",
+        "end_exclusive": "0x101600100",
+        "banks": [
+          "HBM[16]"
+        ]
+      },
+      "z": {
+        "base": "0x1600000",
+        "end_exclusive": "0x1600100",
+        "banks": [
+          "HBM[0]"
+        ]
+      },
+      "audit": {
+        "base": "0x102400000",
+        "end_exclusive": "0x102400100",
+        "banks": [
+          "HBM[16]"
+        ]
+      }
+    },
+    "low_to_high": {
+      "x": {
+        "base": "0x1600000",
+        "end_exclusive": "0x1600100",
+        "banks": [
+          "HBM[0]"
+        ]
+      },
+      "z": {
+        "base": "0x101600000",
+        "end_exclusive": "0x101600100",
+        "banks": [
+          "HBM[16]"
+        ]
+      },
+      "audit": {
+        "base": "0x102400000",
+        "end_exclusive": "0x102400100",
+        "banks": [
+          "HBM[16]"
+        ]
+      }
+    }
+  },
+  "physical_reservation": "NOT_RUN",
+  "physical_execution": "NOT_RUN",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/u280-v03-address-review-20261120-v1/verify.py"
+  ]
+}

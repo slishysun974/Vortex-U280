@@ -19,6 +19,42 @@ def program(body, params=".param .u64 ptr, .param .u32 n", declarations=None):
 
 
 class FrontendTests(unittest.TestCase):
+    def test_address_displacement_bounds(self):
+        for op in ("ld.global.u32 %r0, [%a0{}];", "st.global.u32 [%a0{}], 1;"):
+            for displacement in ("-2147483648", "+2147483644", "+0", "-4"):
+                ptx.parse(program("ld.param.u64 %a0, [ptr];\n" + op.format(displacement)))
+            for displacement in ("-2147483652", "+2147483648", "+1"):
+                with self.subTest(op=op, displacement=displacement):
+                    self.reject(program("ld.param.u64 %a0, [ptr];\n" + op.format(displacement)), "E_TYPE")
+
+    def test_pointer_add_requires_proven_integer_on_active_path(self):
+        setup = ("ld.param.u64 %a0, [ptr]; setp.eq.u32 %p, 0, 1;\n"
+                 "mov.u64 %a1, 4; @%p mov.u64 %a1, %a0;\n")
+        for args in ("%a0, %a1", "%a1, %a0"):
+            add = "add.u64 %a2, " + args + "; "
+            for guard in ("", "@%p "):
+                self.reject(program(setup + guard + add + guard + "ld.global.u32 %r0, [%a2];"), "E_TYPE")
+            ptx.parse(program(setup + "@!%p " + add + "@!%p ld.global.u32 %r0, [%a2];"))
+        self.reject(program(setup + "setp.lt.u32 %p, 0, 1; @!%p add.u64 %a2, %a1, %a0; "
+                            "@!%p cvta.to.global.u64 %a2, %a2;"), "E_TYPE")
+        self.reject(program(setup + "add.u64 %a1, %a0, %a0; mov.u64 %a2, %a1; "
+                            "add.u64 %a2, %a0, %a2; cvta.to.global.u64 %a2, %a2;"), "E_TYPE")
+        ptx.parse(program("ld.param.u64 %a0, [ptr]; mul.wide.u32 %a1, 0xffffffff, 4; "
+                          "add.u64 %a1, 0x100000000, %a1; add.u64 %a0, %a1, %a0; "
+                          "cvta.to.global.u64 %a0, %a0;"))
+
+    def test_identifiers_respect_ptx_reserved_names(self):
+        for name in ("_", "add", "WARP_SZ", "%laneid", "%pm0_64", "%envreg31"):
+            for source in (program("").replace("arbitrary", name), program("", params=".param .u32 " + name),
+                           program("", declarations=".reg .b32 " + name + ";")):
+                with self.subTest(name=name, source=source):
+                    self.reject(source, "E_TYPE")
+        self.reject(program("", declarations=".reg .b32 %pm<2>;"), "E_TYPE")
+        ptx.parse(program("", declarations=".reg .b32 _r, %pm8, add0, $x;"))
+
+    def test_oversize_diagnostic_location(self):
+        self.reject(" " * (1024 * 1024 + 1), "E_UNSUPPORTED")
+
     def reject(self, source, code=None):
         with self.assertRaises(ptx.PtxError) as caught:
             ptx.parse(source, "bad.ptx")

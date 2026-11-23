@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "A/E corpus machine acceptance of the pinned two PTX modules",
+  "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+  "freeze_receipt_sha256": "9959021ad6726a981e4b694e3d52fc5be236baa4044e28c9d3cb018dd50e031f",
+  "checked_returned_files": 137,
+  "routes": {
+    "simx": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "de97731f0bb8f5565fd0212fed4991221c522a520e77cfc7ca3e1a9decdf749f",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "0fbfd1aaa064363f7b9654380192009cba86a570dfd67f32bcf8a856a5d3b5b2",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "56d3137472b5d2d4a1b642ea645be216ebc8796e80c241847e9140b0d0951b81",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "u280-xrt": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "43209aefd075fd9afefe386fd46fc1cca4977a8776405c5eea3897961eb42fd4",
+      "modules": {
+        "p0_form_witness": "69f27ef5a78ba50d6b7e42392bd00013087a8005cd6f648969394a067aacf83c",
+        "guarded_wide_offset": "445fa8421a5acef4d7aaa84d7b1f7931ff4a3d2caf4a9fdbcfa39de11d336899"
+      },
+      "gate_sha256": "98e747963cfa56d1b7f1c49d253cec56a03256353ace67a25fdb2a17f29b191a"
+    }
+  },
+  "equal_four_route_case_artifacts": 83,
+  "debug3": {
+    "simx": {
+      "cases": 13,
+      "requests": 1383,
+      "high_address_requests": 148
+    },
+    "rtlsim": {
+      "cases": 13,
+      "requests": 1383,
+      "high_address_requests": 148
+    }
+  },
+  "crossing": {
+    "new_cross_read": {
+      "op": "LD",
+      "buffer": "x",
+      "cta": 4,
+      "lanes": [
+        1,
+        2
+      ]
+    },
+    "new_cross_write": {
+      "op": "ST",
+      "buffer": "z",
+      "cta": 4,
+      "lanes": [
+        2,
+        3
+      ]
+    },
+    "new_cross_audit": {
+      "op": "ST",
+      "buffer": "audit",
+      "cta": 6,
+      "lanes": [
+        0,
+        1
+      ]
+    }
+  },
+  "human_signoff": "NOT_RUN",
+  "physical_recovery": "NOT_RUN",
+  "timing7": "OPEN",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/ae-v03-acceptance-20261121-v1/verify.py"
+  ],
+  "finished_at": "2026-11-21T11:22:09.479515+00:00"
+}

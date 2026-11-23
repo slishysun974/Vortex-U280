@@ -1,0 +1,386 @@
+{
+  "status": "PASS",
+  "started_at": "2026-11-22T08:15:31.378916+00:00",
+  "commands": [
+    {
+      "label": "upstream_head",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:15:32.556425+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_upstream_head.log",
+      "finished_at": "2026-11-22T08:15:32.618734+00:00",
+      "elapsed_seconds": 0.043,
+      "log_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    {
+      "label": "upstream_diff",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "diff",
+        "--exit-code",
+        "HEAD",
+        "--"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:15:32.672013+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_upstream_diff.log",
+      "finished_at": "2026-11-22T08:15:33.013725+00:00",
+      "elapsed_seconds": 0.325,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "prepare",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/e-v14-frozen-20261122-v1/sources/predicate_turn.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1/predicate_turn",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--device-parameter-access",
+        "vortex2-queue-args-align-v1",
+        "--predicate-lowering",
+        "same-predicate-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:15:33.060330+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_prepare.log",
+      "finished_at": "2026-11-22T08:15:33.857418+00:00",
+      "elapsed_seconds": 0.777,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1/predicate_turn",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/e-v14-local-20261122-v1/predicate_turn",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:15:33.926127+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_build.log",
+      "finished_at": "2026-11-22T08:16:01.562688+00:00",
+      "elapsed_seconds": 27.615,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1/predicate_turn",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:16:01.646148+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_validate.log",
+      "finished_at": "2026-11-22T08:16:02.382411+00:00",
+      "elapsed_seconds": 0.692,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/accept.py",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:16:02.485132+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_simx.log",
+      "finished_at": "2026-11-22T08:16:37.430421+00:00",
+      "elapsed_seconds": 34.925,
+      "log_sha256": "4c46e458d597a8713f643112bf087b5684dbad7b4a41d4fae21b56aa8c2e916d"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/accept.py",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:16:37.502717+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_rtlsim.log",
+      "finished_at": "2026-11-22T08:17:15.169394+00:00",
+      "elapsed_seconds": 37.652,
+      "log_sha256": "a52c9c772b80347a3418a0c71fe6d3e503c1d160416341d6a8274f8c162a9ca6"
+    },
+    {
+      "label": "xrtsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/accept.py",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+      "started_at": "2026-11-22T08:17:15.246313+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_xrtsim.log",
+      "finished_at": "2026-11-22T08:17:48.762389+00:00",
+      "elapsed_seconds": 33.493,
+      "log_sha256": "411defbfd16d42412314ace36580b297670ac5951f87d2270d7a50c58aaea3a0"
+    },
+    {
+      "label": "runner_self_test",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-22T08:17:48.807421+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_runner_self_test.log",
+      "finished_at": "2026-11-22T08:20:06.559966+00:00",
+      "elapsed_seconds": 137.737,
+      "log_sha256": "2925fdad3a42e28e7eac5a2610c6024c236d82170bb72d6aed103e136b63f04d"
+    }
+  ],
+  "argv": [
+    "experiments/e-v14-local/accept.py",
+    "results/e-v14-local-20261122-v1",
+    "results/local-ptx-same-predicate-production-build-e-20261122-v1"
+  ],
+  "physical_u280": "NOT_RUN",
+  "human_signoff": "NOT_RUN",
+  "new_lane_traces": "NOT_RUN",
+  "freeze": "b116876ecc4f7dbd7941df93e31aae1dad7e19c9b1aae4699afb31f8f8d8e523",
+  "fresh_build": "e8e5e4de6c8e246ba6dc7548a55a07b4762ec0789219c544ba8dc9a244c91fbb",
+  "models": {
+    "simx": {
+      "status": "PASS",
+      "binding": "080a74484515b9a4416ec2e0cf16c0ad4ee4c7d7f96c06148df74c867cd52ca4",
+      "images": {
+        "copy": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+        "vadd": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+        "affine": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+        "predicate_turn": "9fbbfdc73241efb7518ef3a64965b60c5f18c8969138dbd803f0dda079521dbb"
+      },
+      "new_cases": 24,
+      "full_buffers_each_direction": 66,
+      "v03": {
+        "launch_attempts": 13,
+        "completed": [
+          "forms_four",
+          "wide_second_warp",
+          "forms_three",
+          "wide_partial_third",
+          "forms_two",
+          "wide_several_warps",
+          "wide_near_resident_limit",
+          "wide_all_masked",
+          "new_low_to_high",
+          "new_high_to_low",
+          "new_cross_read",
+          "new_cross_write",
+          "new_cross_audit"
+        ],
+        "status": "PASS",
+        "alias": "PASS",
+        "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+        "high": 5
+      },
+      "board": "NOT_RUN"
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "binding": "4c25f428090b4f7698aa46d11d6556599d205ef17cec320e204b4b2328180321",
+      "images": {
+        "copy": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+        "vadd": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+        "affine": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+        "predicate_turn": "9fbbfdc73241efb7518ef3a64965b60c5f18c8969138dbd803f0dda079521dbb"
+      },
+      "new_cases": 24,
+      "full_buffers_each_direction": 66,
+      "v03": {
+        "launch_attempts": 13,
+        "completed": [
+          "forms_four",
+          "wide_second_warp",
+          "forms_three",
+          "wide_partial_third",
+          "forms_two",
+          "wide_several_warps",
+          "wide_near_resident_limit",
+          "wide_all_masked",
+          "new_low_to_high",
+          "new_high_to_low",
+          "new_cross_read",
+          "new_cross_write",
+          "new_cross_audit"
+        ],
+        "status": "PASS",
+        "alias": "PASS",
+        "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+        "high": 5
+      },
+      "board": "NOT_RUN"
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "binding": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+      "images": {
+        "copy": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+        "vadd": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+        "affine": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+        "predicate_turn": "9fbbfdc73241efb7518ef3a64965b60c5f18c8969138dbd803f0dda079521dbb"
+      },
+      "new_cases": 24,
+      "full_buffers_each_direction": 66,
+      "v03": {
+        "launch_attempts": 13,
+        "completed": [
+          "forms_four",
+          "wide_second_warp",
+          "forms_three",
+          "wide_partial_third",
+          "forms_two",
+          "wide_several_warps",
+          "wide_near_resident_limit",
+          "wide_all_masked",
+          "new_low_to_high",
+          "new_high_to_low",
+          "new_cross_read",
+          "new_cross_write",
+          "new_cross_audit"
+        ],
+        "status": "PASS",
+        "alias": "PASS",
+        "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+        "high": 5
+      },
+      "board": "NOT_RUN"
+    }
+  },
+  "frontend": "3c7aa9b172473f2a0567093dfcf17e8f16b0befa968a701427d8b225b328a29f",
+  "rebuilt_images": {
+    "copy": {
+      "aligned_image": "54279b4dfda7522f4931a1685e8dec1cda26cc422dbad8a970acdd4b00ea5243",
+      "merged_image": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c",
+      "manifest_sha256": "83646185ea5e0afc3ece3b5e6348c3d2bf888dd2a1846eb80643949001a06cb7",
+      "source_map_sha256": "73b79c38c70bd87aaa6bbec0e3da76f041e400bf5ed188e446d6d44403d3ede2",
+      "frontend": "ptx-vx-frontend-v1.4"
+    },
+    "vadd": {
+      "aligned_image": "94733e4bd8ee44d228bcd4e0db0de506368545ced429a4e2396011e8bce90c7a",
+      "merged_image": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1",
+      "manifest_sha256": "ee315592ee8dd595b177049d6d9c2ab387bef3fae32708878133e040e7b04f83",
+      "source_map_sha256": "02a22d7e51f0118de5fac4c87e6459cc031403f935c913459b45245a54f97416",
+      "frontend": "ptx-vx-frontend-v1.4"
+    },
+    "affine": {
+      "aligned_image": "cc482ad7b537dbbbbce697d9c6da0d1258c5d1f01e5158b5524a6dc094325f10",
+      "merged_image": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3",
+      "manifest_sha256": "844ac3274cba2e597a2bfdc8ae647de0a6012732220e41b067e8290246983795",
+      "source_map_sha256": "244073343eb2917ce62e4339e83d83073cf835bf1eebb9b027fef9de4bf0c566",
+      "frontend": "ptx-vx-frontend-v1.4"
+    },
+    "p0_form_witness": {
+      "aligned_image": "542953af975e87c99a8964904d197e510b578471dcc65bdd603edd426ea103a5",
+      "merged_image": "542953af975e87c99a8964904d197e510b578471dcc65bdd603edd426ea103a5",
+      "source_sha256": "bdc1bf700c20d6bdce193582bdda29315bb4166d7399407ee5272184df7f925f",
+      "manifest_sha256": "f1218e8d5cb41e52a3939f62cad058b60adec465689e2924e4c699c66727fb4f",
+      "source_map_sha256": "2e2fa3dc5a12333738087614deafad97789052136b6c689deb2c02e4b113f3dc",
+      "frontend": "ptx-vx-frontend-v1.4"
+    },
+    "guarded_wide_offset": {
+      "aligned_image": "d38dfa5fda3ec1afff9c97a82d287c32f3e5fd7b8c07d474b5234f23199d9f34",
+      "merged_image": "d38dfa5fda3ec1afff9c97a82d287c32f3e5fd7b8c07d474b5234f23199d9f34",
+      "source_sha256": "be4e0f1fd10137d50b02133a273b87c9890bff6543f5ab79f5d8e1f974281c92",
+      "manifest_sha256": "0e83301fb61f147b2f0635113f853bfb8dec9d67cfb178c20f76375c83f274f7",
+      "source_map_sha256": "b70ee5fd7a19cf905ea1782c951699895641466fc8fbf844a2b691df54fed52e",
+      "frontend": "ptx-vx-frontend-v1.4"
+    }
+  },
+  "target_lock": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "root_lock": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe",
+  "probe_groups": [
+    {
+      "source_line": 25,
+      "generated_guard": "if (v11) {"
+    },
+    {
+      "source_line": 28,
+      "generated_guard": "if (!v11) {"
+    },
+    {
+      "source_line": 32,
+      "generated_guard": "if (v11) {"
+    }
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-11-22T08:20:06.598643+00:00"
+}

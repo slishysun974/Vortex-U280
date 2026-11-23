@@ -1,0 +1,211 @@
+{
+  "scope": "D author offline replay and fixed-source inventory",
+  "run": "results/d-guarded-wide-20261120-v1",
+  "argv": [
+    "scripts/verify_d_guarded_wide.py",
+    "--run",
+    "results/d-guarded-wide-20261120-v1",
+    "--run-id",
+    "d-guarded-wide-review-20261120-v1"
+  ],
+  "source_checkouts": {
+    "/mnt/d/Vortex-U280/upstream/vortex": 3329,
+    "/opt/vortex-ab/sources/vortex-7fe19369587c-v1": 3329
+  },
+  "form_locations": {
+    "ld.param.u64": [
+      {
+        "ptx_line": 11,
+        "cpp_line": 34
+      },
+      {
+        "ptx_line": 12,
+        "cpp_line": 35
+      },
+      {
+        "ptx_line": 13,
+        "cpp_line": 36
+      }
+    ],
+    "ld.param.u32": [
+      {
+        "ptx_line": 14,
+        "cpp_line": 37
+      },
+      {
+        "ptx_line": 15,
+        "cpp_line": 38
+      },
+      {
+        "ptx_line": 16,
+        "cpp_line": 39
+      }
+    ],
+    "mov.u32": [
+      {
+        "ptx_line": 17,
+        "cpp_line": 40
+      },
+      {
+        "ptx_line": 18,
+        "cpp_line": 41
+      },
+      {
+        "ptx_line": 19,
+        "cpp_line": 42
+      },
+      {
+        "ptx_line": 20,
+        "cpp_line": 43
+      },
+      {
+        "ptx_line": 35,
+        "cpp_line": 57
+      },
+      {
+        "ptx_line": 38,
+        "cpp_line": 60
+      }
+    ],
+    "mul.lo.u32": [
+      {
+        "ptx_line": 21,
+        "cpp_line": 44
+      }
+    ],
+    "add.u32": [
+      {
+        "ptx_line": 22,
+        "cpp_line": 45
+      },
+      {
+        "ptx_line": 26,
+        "cpp_line": 49
+      },
+      {
+        "ptx_line": 44,
+        "cpp_line": 66
+      }
+    ],
+    "setp.eq.u32": [
+      {
+        "ptx_line": 23,
+        "cpp_line": 46
+      }
+    ],
+    "selp.u32": [
+      {
+        "ptx_line": 24,
+        "cpp_line": 47
+      },
+      {
+        "ptx_line": 27,
+        "cpp_line": 50
+      }
+    ],
+    "setp.ge.u32": [
+      {
+        "ptx_line": 25,
+        "cpp_line": 48
+      }
+    ],
+    "mul.wide.u32": [
+      {
+        "ptx_line": 28,
+        "cpp_line": 51
+      },
+      {
+        "ptx_line": 42,
+        "cpp_line": 64
+      }
+    ],
+    "add.u64": [
+      {
+        "ptx_line": 30,
+        "cpp_line": 52
+      },
+      {
+        "ptx_line": 33,
+        "cpp_line": 55
+      },
+      {
+        "ptx_line": 34,
+        "cpp_line": 56
+      },
+      {
+        "ptx_line": 40,
+        "cpp_line": 62
+      },
+      {
+        "ptx_line": 43,
+        "cpp_line": 65
+      }
+    ],
+    "cvta.to.global.u64": [
+      {
+        "ptx_line": 31,
+        "cpp_line": 53
+      }
+    ],
+    "mov.u64": [
+      {
+        "ptx_line": 32,
+        "cpp_line": 54
+      }
+    ],
+    "ld.global.u32": [
+      {
+        "ptx_line": 36,
+        "cpp_line": 58
+      }
+    ],
+    "setp.lt.u32": [
+      {
+        "ptx_line": 37,
+        "cpp_line": 59
+      }
+    ],
+    "sub.u32": [
+      {
+        "ptx_line": 39,
+        "cpp_line": 61
+      }
+    ],
+    "st.global.u32": [
+      {
+        "ptx_line": 41,
+        "cpp_line": 63
+      },
+      {
+        "ptx_line": 45,
+        "cpp_line": 67
+      }
+    ],
+    "ret": [
+      {
+        "ptx_line": 46,
+        "cpp_line": 68
+      }
+    ]
+  },
+  "captures": {
+    "simx": 6,
+    "rtlsim": 6,
+    "xrtsim": 6
+  },
+  "lsu_totals": {
+    "simx": {
+      "guarded_load": 20,
+      "guarded_store": 20,
+      "audit_store": 36
+    },
+    "rtlsim": {
+      "guarded_load": 20,
+      "guarded_store": 20,
+      "audit_store": 36
+    }
+  },
+  "command_logs_verified": 27,
+  "status": "PASS",
+  "exit_code": 0
+}

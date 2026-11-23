@@ -1,0 +1,553 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "runner_unittest",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T13:47:25.094554+00:00",
+      "timeout_seconds": 300,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_runner_unittest.log",
+      "finished_at": "2026-11-21T13:48:33.710069+00:00",
+      "elapsed_seconds": 68.598,
+      "log_sha256": "a5de5a98a1c389fb0e3cc56a8e0085088af6b62c7ad2f2582359659f6b2e791a"
+    }
+  ],
+  "started_at": "2026-11-21T13:47:24.994059+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate/review.py",
+    "--build",
+    "results/local-ptx-same-predicate-build-20261121-v1",
+    "--measure-simx",
+    "results/local-ptx-same-predicate-measure-simx-20261121-v1",
+    "--measure-rtlsim",
+    "results/local-ptx-same-predicate-measure-rtlsim-20261121-v1",
+    "--trace-simx",
+    "results/local-ptx-same-predicate-trace-simx-20261121-v1",
+    "--trace-rtlsim",
+    "results/local-ptx-same-predicate-trace-rtlsim-20261121-v3",
+    "--output",
+    "results/local-ptx-same-predicate-review-20261121-v1"
+  ],
+  "script_sha256": "7ea546afbc172bd4078cccaaccf83ff611c139eba5a4c147573c821083935957",
+  "lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "build_summary_sha256": "2f85c5730fa77fa5c552a828ed9957d594c0de3a243f6bd073d8d8bf948b6961",
+  "runner_unittest": {
+    "total": 295,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "static": {
+    "copy": {
+      "aligned": {
+        "sites": {
+          "6442451060": [
+            "LD",
+            "x"
+          ],
+          "6442451080": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 2,
+          "ld": 2,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 2,
+          "beqz": 2,
+          "add": 2,
+          "vx_join": 2,
+          "sw": 1,
+          "ret": 1
+        },
+        "instructions": 25
+      },
+      "merged": {
+        "sites": {
+          "6442451060": [
+            "LD",
+            "x"
+          ],
+          "6442451068": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 2,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "vx_split_n": 1,
+          "beqz": 1,
+          "ld": 2,
+          "slli": 1,
+          "srli": 1,
+          "add": 2,
+          "sw": 1,
+          "vx_join": 1,
+          "ret": 1
+        },
+        "instructions": 22
+      }
+    },
+    "vadd": {
+      "aligned": {
+        "sites": {
+          "6442451064": [
+            "LD",
+            "x"
+          ],
+          "6442451088": [
+            "LD",
+            "y"
+          ],
+          "6442451108": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 3,
+          "ld": 3,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        },
+        "instructions": 32
+      },
+      "merged": {
+        "sites": {
+          "6442451068": [
+            "LD",
+            "x"
+          ],
+          "6442451072": [
+            "LD",
+            "y"
+          ],
+          "6442451084": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 3,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "vx_split_n": 1,
+          "beqz": 1,
+          "ld": 3,
+          "slli": 1,
+          "srli": 1,
+          "add": 4,
+          "sw": 1,
+          "vx_join": 1,
+          "ret": 1
+        },
+        "instructions": 26
+      }
+    },
+    "affine": {
+      "aligned": {
+        "sites": {
+          "6442451068": [
+            "LD",
+            "x"
+          ],
+          "6442451092": [
+            "LD",
+            "y"
+          ],
+          "6442451116": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "ld": 3,
+          "lw": 4,
+          "mul": 2,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        },
+        "instructions": 34
+      },
+      "merged": {
+        "sites": {
+          "6442451072": [
+            "LD",
+            "x"
+          ],
+          "6442451076": [
+            "LD",
+            "y"
+          ],
+          "6442451092": [
+            "ST",
+            "z"
+          ]
+        },
+        "counts": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 4,
+          "mul": 2,
+          "addw": 1,
+          "sltu": 1,
+          "vx_split_n": 1,
+          "beqz": 1,
+          "ld": 3,
+          "slli": 1,
+          "srli": 1,
+          "add": 4,
+          "sw": 1,
+          "vx_join": 1,
+          "ret": 1
+        },
+        "instructions": 28
+      }
+    }
+  },
+  "models": {
+    "simx": {
+      "measure": {
+        "metrics": {
+          "vadd/1024": {
+            "aligned": {
+              "cycles": 15819.0,
+              "instret": 9536.0
+            },
+            "merged": {
+              "cycles": 13064.0,
+              "instret": 8000.0
+            },
+            "reduction_pct": {
+              "cycles": 17.4157658511916,
+              "instret": 16.10738255033557
+            },
+            "paired_cycle_savings": [
+              2604,
+              2788,
+              2736,
+              2788
+            ]
+          },
+          "vadd/16381": {
+            "aligned": {
+              "cycles": 245473.0,
+              "instret": 151624.0
+            },
+            "merged": {
+              "cycles": 205412.5,
+              "instret": 127042.0
+            },
+            "reduction_pct": {
+              "cycles": 16.319717443466285,
+              "instret": 16.21247295942595
+            },
+            "paired_cycle_savings": [
+              39872,
+              40137,
+              40223,
+              40137
+            ]
+          },
+          "copy/1024": {
+            "aligned": {
+              "cycles": 12774.0,
+              "instret": 7744.0
+            },
+            "merged": {
+              "cycles": 11807.0,
+              "instret": 6976.0
+            },
+            "reduction_pct": {
+              "cycles": 7.570064192891812,
+              "instret": 9.917355371900827
+            },
+            "paired_cycle_savings": [
+              1027,
+              967,
+              967,
+              967
+            ]
+          },
+          "copy/16381": {
+            "aligned": {
+              "cycles": 198431.0,
+              "instret": 122949.0
+            },
+            "merged": {
+              "cycles": 182321.0,
+              "instret": 110658.0
+            },
+            "reduction_pct": {
+              "cycles": 8.118691131929989,
+              "instret": 9.9968279530537
+            },
+            "paired_cycle_savings": [
+              15953,
+              16110,
+              16110,
+              16110
+            ]
+          },
+          "affine/1024": {
+            "aligned": {
+              "cycles": 16418.0,
+              "instret": 10048.0
+            },
+            "merged": {
+              "cycles": 13695.5,
+              "instret": 8512.0
+            },
+            "reduction_pct": {
+              "cycles": 16.58240955049336,
+              "instret": 15.286624203821653
+            },
+            "paired_cycle_savings": [
+              2776,
+              2719,
+              2719,
+              2726
+            ]
+          },
+          "affine/16381": {
+            "aligned": {
+              "cycles": 255690.0,
+              "instret": 159816.0
+            },
+            "merged": {
+              "cycles": 218574.0,
+              "instret": 135234.0
+            },
+            "reduction_pct": {
+              "cycles": 14.516015487504397,
+              "instret": 15.381438654452618
+            },
+            "paired_cycle_savings": [
+              36780,
+              37452,
+              36780,
+              37452
+            ]
+          }
+        },
+        "launch_count": 48,
+        "samples_sha256": "e59dcb72bc3ee73451923d6c593dd5ae27ae8fd4ba220b1b56f69453ecc3690f",
+        "formal_samples_sha256": "e907c3f51fed4e4e9aecdf167f2a8d50e307b80090c7081ce0fd8b08f7d44447",
+        "summary_sha256": "5ecd3d27553265a09e79b5ab5a9e022dac3b0f3dd8600d88925c0758abc297a2"
+      },
+      "trace": {
+        "launch_count": 12,
+        "mixed_tail_launches": 6,
+        "active_array_requests": 278480,
+        "false_predicate_array_requests": 0,
+        "negative_control": {
+          "status": "PASS",
+          "injection": "extra LD",
+          "error": "false-predicate lane issued array request: index 16381, PC 0x180000074"
+        },
+        "summary_sha256": "b8d3509be559276f70f8d17706678997542058a47e794abdf349017c37de12d6"
+      }
+    },
+    "rtlsim": {
+      "measure": {
+        "metrics": {
+          "vadd/1024": {
+            "aligned": {
+              "cycles": 16099.0,
+              "instret": 9536.0
+            },
+            "merged": {
+              "cycles": 13055.0,
+              "instret": 8000.0
+            },
+            "reduction_pct": {
+              "cycles": 18.90800670849121,
+              "instret": 16.10738255033557
+            },
+            "paired_cycle_savings": [
+              3124,
+              2966,
+              3227,
+              2966
+            ]
+          },
+          "vadd/16381": {
+            "aligned": {
+              "cycles": 254594.0,
+              "instret": 151624.0
+            },
+            "merged": {
+              "cycles": 208216.0,
+              "instret": 127042.0
+            },
+            "reduction_pct": {
+              "cycles": 18.216454433333073,
+              "instret": 16.21247295942595
+            },
+            "paired_cycle_savings": [
+              46467,
+              44304,
+              46373,
+              47063
+            ]
+          },
+          "copy/1024": {
+            "aligned": {
+              "cycles": 13116.0,
+              "instret": 7744.0
+            },
+            "merged": {
+              "cycles": 11882.0,
+              "instret": 6976.0
+            },
+            "reduction_pct": {
+              "cycles": 9.408356206160418,
+              "instret": 9.917355371900827
+            },
+            "paired_cycle_savings": [
+              1238,
+              1234,
+              1234,
+              1234
+            ]
+          },
+          "copy/16381": {
+            "aligned": {
+              "cycles": 205245.5,
+              "instret": 122949.0
+            },
+            "merged": {
+              "cycles": 184967.0,
+              "instret": 110658.0
+            },
+            "reduction_pct": {
+              "cycles": 9.880119174354618,
+              "instret": 9.9968279530537
+            },
+            "paired_cycle_savings": [
+              19826,
+              20278,
+              20281,
+              20283
+            ]
+          },
+          "affine/1024": {
+            "aligned": {
+              "cycles": 16865.5,
+              "instret": 10048.0
+            },
+            "merged": {
+              "cycles": 13759.0,
+              "instret": 8512.0
+            },
+            "reduction_pct": {
+              "cycles": 18.419258249088376,
+              "instret": 15.286624203821653
+            },
+            "paired_cycle_savings": [
+              3207,
+              3191,
+              3019,
+              3051
+            ]
+          },
+          "affine/16381": {
+            "aligned": {
+              "cycles": 264907.0,
+              "instret": 159816.0
+            },
+            "merged": {
+              "cycles": 219673.0,
+              "instret": 135234.0
+            },
+            "reduction_pct": {
+              "cycles": 17.075426470421696,
+              "instret": 15.381438654452618
+            },
+            "paired_cycle_savings": [
+              46990,
+              45234,
+              45234,
+              45234
+            ]
+          }
+        },
+        "launch_count": 48,
+        "samples_sha256": "340be5875a6c2164622d8106f89af233757ade6b34f412d3826c53e6890abfba",
+        "formal_samples_sha256": "aea99ce3a7f931ff6736877c48dfd1164baab7843e2f84297ddcb19d3d86bb1f",
+        "summary_sha256": "404d54be64a73f9586a777cd2553b47bfb2153d6fb913dde4a8e62fd58d79d99"
+      },
+      "trace": {
+        "launch_count": 12,
+        "mixed_tail_launches": 6,
+        "active_array_requests": 278480,
+        "false_predicate_array_requests": 0,
+        "negative_control": {
+          "status": "PASS",
+          "injection": "extra ST",
+          "error": "false-predicate lane issued array request: index 16381, PC 0x18000007c"
+        },
+        "summary_sha256": "e396a442ac7ff1a71274671b32ad0b71bd7c718bbfe6db21fd90ca75657e740b"
+      }
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T13:49:21.043609+00:00"
+}

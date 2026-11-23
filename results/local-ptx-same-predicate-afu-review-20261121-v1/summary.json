@@ -1,0 +1,533 @@
+{
+  "status": "PASS",
+  "commands": [],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-afu/review_afu.py",
+    "review",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--host",
+    "results/local-ptx-same-predicate-afu-host-20261121-v1",
+    "--alignment",
+    "results/local-ptx-same-predicate-afu-align-fixed-20261121-v2",
+    "--regress",
+    "results/local-ptx-same-predicate-afu-regress-20261121-v1",
+    "--trace",
+    "results/local-ptx-same-predicate-afu-trace-20261121-v1",
+    "--trace-build",
+    "results/local-ptx-same-predicate-afu-trace-build-20261121-v1",
+    "--trace-alignment",
+    "results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-afu-review-20261121-v1"
+  ],
+  "started_at": "2026-11-21T14:55:40.733486+00:00",
+  "board_execution": "NOT_RUN",
+  "binding_acceptance_revision": 2,
+  "binding_sha256": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+  "runtime_sha256": "b27de8c752680090c3e9b54e7584314632623ac3e7854ba863e8fd77e471c280",
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "fixed_alignment": {
+    "status": "PASS",
+    "launches": 10,
+    "vm_support": 0,
+    "observed_bases": [
+      "0x11000",
+      "0x16000"
+    ],
+    "capture_sha256": "a1cfafd76cf76757fdef37efb7dbcad89c50bfadb315a1606d5a709be98bd9b1"
+  },
+  "regressions": {
+    "p0_suites": {
+      "copy": {
+        "passed": 168,
+        "rejections": 19,
+        "recovery": "PASS",
+        "sha256": "ed6fd2c45d8988bedf6959ef1bc614960b2b2fc893da06e5cb40e06e208ef4f8"
+      },
+      "vadd": {
+        "passed": 168,
+        "rejections": 19,
+        "recovery": "PASS",
+        "sha256": "f08a560aa643fdfc3be9e74da732415b812e5810eb7a8d84d1d9b35d0fb77a0c"
+      },
+      "affine": {
+        "passed": 504,
+        "rejections": 19,
+        "recovery": "PASS",
+        "sha256": "37e040ebd52414d5508f35f10f03b65b2b943b39908a16be6f037494978da7b3"
+      }
+    },
+    "form_cases": 2,
+    "form_rejections": 17,
+    "v03_cases": 13,
+    "v03_high": 5,
+    "v03_alias": "PASS"
+  },
+  "original_inputs": {
+    "vadd/1024": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 16,
+      "readback_sha256": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "y": "220485b06e4d2fbe2ffb971fe8f4f2a9a8452ae24ba3fe50b52f63d2021a29b9",
+        "z": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83"
+      }
+    },
+    "vadd/16381": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 19,
+      "readback_sha256": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "y": "d91371970acde869dd8240b41bb57414636a5f0bb26bdfb9f2c45bebba8c4ba0",
+        "z": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781"
+      }
+    },
+    "copy/1024": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 16,
+      "readback_sha256": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "z": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25"
+      }
+    },
+    "copy/16381": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 19,
+      "readback_sha256": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "z": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23"
+      }
+    },
+    "affine/1024": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 16,
+      "readback_sha256": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "y": "220485b06e4d2fbe2ffb971fe8f4f2a9a8452ae24ba3fe50b52f63d2021a29b9",
+        "z": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918"
+      }
+    },
+    "affine/16381": {
+      "status": "PASS",
+      "prefix_guard_words": 16,
+      "suffix_and_tail_words": 19,
+      "readback_sha256": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "y": "d91371970acde869dd8240b41bb57414636a5f0bb26bdfb9f2c45bebba8c4ba0",
+        "z": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0"
+      }
+    }
+  },
+  "regression_sha256": "e54eab1ff7e1b1b8ae68ac5ce03255fcf9c99761d5777fc5ca0a3059b810552f",
+  "altered_binding": {
+    "status": "PASS",
+    "binding_sha256": "9de92b19b4d88b0c7b95ccc560d841929a4b6f171453224ff8b3e584f61c9b67",
+    "error": {
+      "code": "E_TARGET_MISMATCH",
+      "phase": "load",
+      "message": "this runtime binding requires the bytewise PTX module",
+      "run_id": "altered-binding",
+      "event_id": null,
+      "generation": 0,
+      "backend": "xrtsim",
+      "source_location": null,
+      "native_status": null,
+      "evidence_path": null,
+      "device_state": "READY"
+    }
+  },
+  "runner_unittest": {
+    "total": 297,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "host_sha256": "626d97bb34f46e7d49dfa35d25c0cb6d61dec29655d5114612f43c062ff184d8",
+  "trace": {
+    "status": "PASS",
+    "launches": 6,
+    "active_array_requests": 139240,
+    "false_predicate_array_requests": 0,
+    "alignment_probe_launches": 10,
+    "cases": {
+      "vadd/1024": {
+        "requests": 3072,
+        "false_threads": 0,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "1020": [
+            {
+              "pc": "0x18000007c",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11030",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13030",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000008c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15030",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1021": [
+            {
+              "pc": "0x18000007c",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11034",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13034",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000008c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15034",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1022": [
+            {
+              "pc": "0x18000007c",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11038",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13038",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000008c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15038",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1023": [
+            {
+              "pc": "0x18000007c",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x1103c",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x1303c",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000008c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x1503c",
+              "lane0_first_mask": "1111"
+            }
+          ]
+        }
+      },
+      "vadd/16381": {
+        "requests": 49143,
+        "false_threads": 3,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "16380": [
+            {
+              "pc": "0x18000007c",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x20030",
+              "lane0_first_mask": "1000"
+            },
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x31030",
+              "lane0_first_mask": "1000"
+            },
+            {
+              "pc": "0x18000008c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x42030",
+              "lane0_first_mask": "1000"
+            }
+          ],
+          "16381": [],
+          "16382": [],
+          "16383": []
+        }
+      },
+      "copy/1024": {
+        "requests": 2048,
+        "false_threads": 0,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "1020": [
+            {
+              "pc": "0x180000074",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11030",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000007c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x13030",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1021": [
+            {
+              "pc": "0x180000074",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11034",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000007c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x13034",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1022": [
+            {
+              "pc": "0x180000074",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11038",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000007c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x13038",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1023": [
+            {
+              "pc": "0x180000074",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x1103c",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x18000007c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x1303c",
+              "lane0_first_mask": "1111"
+            }
+          ]
+        }
+      },
+      "copy/16381": {
+        "requests": 32762,
+        "false_threads": 3,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "16380": [
+            {
+              "pc": "0x180000074",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x20030",
+              "lane0_first_mask": "1000"
+            },
+            {
+              "pc": "0x18000007c",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x31030",
+              "lane0_first_mask": "1000"
+            }
+          ],
+          "16381": [],
+          "16382": [],
+          "16383": []
+        }
+      },
+      "affine/1024": {
+        "requests": 3072,
+        "false_threads": 0,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "1020": [
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11030",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000084",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13030",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000094",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15030",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1021": [
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11034",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000084",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13034",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000094",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15034",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1022": [
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x11038",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000084",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x13038",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000094",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x15038",
+              "lane0_first_mask": "1111"
+            }
+          ],
+          "1023": [
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x1103c",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000084",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x1303c",
+              "lane0_first_mask": "1111"
+            },
+            {
+              "pc": "0x180000094",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x1503c",
+              "lane0_first_mask": "1111"
+            }
+          ]
+        }
+      },
+      "affine/16381": {
+        "requests": 49143,
+        "false_threads": 3,
+        "false_predicate_array_requests": 0,
+        "last_warp": {
+          "16380": [
+            {
+              "pc": "0x180000080",
+              "operation": "LD",
+              "buffer": "x",
+              "address": "0x20030",
+              "lane0_first_mask": "1000"
+            },
+            {
+              "pc": "0x180000084",
+              "operation": "LD",
+              "buffer": "y",
+              "address": "0x31030",
+              "lane0_first_mask": "1000"
+            },
+            {
+              "pc": "0x180000094",
+              "operation": "ST",
+              "buffer": "z",
+              "address": "0x42030",
+              "lane0_first_mask": "1000"
+            }
+          ],
+          "16381": [],
+          "16382": [],
+          "16383": []
+        }
+      }
+    },
+    "build_summary_sha256": "54e61e8735916fc64f7ee5740c617a48ac43c8ae67708b6f35bbca350d6649d3",
+    "trace_summary_sha256": "fc16be9ffe1f0a8addc8faadfbb74b065d80f4225065ff29a5fa8f8daf14ff5b",
+    "binding_sha256": "6597e09679fa638b960e1a2895fb7b85360a7bb1a130bf900cf31a2bbc5a5c47",
+    "negative_control": {
+      "status": "PASS",
+      "operation": "ST",
+      "reason": "false-predicate lane issued array request: index 16381, PC 0x18000007c"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:55:54.002913+00:00"
+}

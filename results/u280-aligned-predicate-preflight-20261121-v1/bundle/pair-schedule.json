@@ -1,0 +1,2102 @@
+[
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 1024,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "copy",
+    "n": 16381,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 1024,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "vadd",
+    "n": 16381,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 1024,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 0,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 1,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 2,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 3,
+    "warmup": true,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 4,
+    "warmup": true,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 5,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 6,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 7,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 8,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 9,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 10,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 11,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 12,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 13,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 14,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 15,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 16,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 17,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 18,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 19,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 20,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 21,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 22,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 23,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 24,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 25,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 26,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 27,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 28,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 29,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 30,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 31,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 32,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 33,
+    "warmup": false,
+    "order": [
+      "merged",
+      "aligned"
+    ]
+  },
+  {
+    "operator": "affine",
+    "n": 16381,
+    "pair": 34,
+    "warmup": false,
+    "order": [
+      "aligned",
+      "merged"
+    ]
+  }
+]

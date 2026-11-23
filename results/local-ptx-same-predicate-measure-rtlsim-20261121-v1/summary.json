@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/run.py",
+        "worker",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--backend",
+        "rtlsim",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-measure-rtlsim-20261121-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-measure-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T13:22:54.962193+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_rtlsim.log",
+      "finished_at": "2026-11-21T13:24:30.637467+00:00",
+      "elapsed_seconds": 95.662,
+      "log_sha256": "df9d972a2c127449ec5cbeba44de652ee6db9a478d6c9754352ca06b0d24639c"
+    }
+  ],
+  "started_at": "2026-11-21T13:22:54.931072+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate/run.py",
+    "measure",
+    "--build",
+    "results/local-ptx-same-predicate-build-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-measure-rtlsim-20261121-v1",
+    "--backend",
+    "rtlsim"
+  ],
+  "script_sha256": "6ffd8ef25a031b76bddf7b27fe050c564b4af0644f77e1336932b5cbdec6ff5a",
+  "backend": "rtlsim",
+  "binding_sha256": "4c25f428090b4f7698aa46d11d6556599d205ef17cec320e204b4b2328180321",
+  "trials": 4,
+  "build_sha256": "2f85c5730fa77fa5c552a828ed9957d594c0de3a243f6bd073d8d8bf948b6961",
+  "exit_code": 0,
+  "finished_at": "2026-11-21T13:24:30.707555+00:00"
+}

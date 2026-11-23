@@ -1,0 +1,299 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "commands": [],
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "experiments/ptx-aligned-production/validate.py",
+    "review",
+    "--build",
+    "results/local-ptx-aligned-production-build-20261121-v1",
+    "--simx",
+    "results/local-ptx-aligned-production-simx-20261121-v1",
+    "--rtlsim",
+    "results/local-ptx-aligned-production-rtlsim-20261121-v1",
+    "--output",
+    "results/local-ptx-aligned-production-review-20261121-v1"
+  ],
+  "script_sha256": "9d91bf27ae8e7a849ab960b2052dc792d03a5fbde563f050a4b259c315450504",
+  "started_at": "2026-11-21T13:09:19.450115+00:00",
+  "models": {
+    "simx": {
+      "metrics": {
+        "vadd/1024": {
+          "bytewise": {
+            "cycles": 42183.0,
+            "instret": 27968.0
+          },
+          "aligned": {
+            "cycles": 15833.5,
+            "instret": 9536.0
+          },
+          "pair_cycle_savings": [
+            26269,
+            26349,
+            26702,
+            26349
+          ]
+        },
+        "vadd/16381": {
+          "bytewise": {
+            "cycles": 661400.0,
+            "instret": 446536.0
+          },
+          "aligned": {
+            "cycles": 245628.0,
+            "instret": 151624.0
+          },
+          "pair_cycle_savings": [
+            416739,
+            415772,
+            415772,
+            415772
+          ]
+        },
+        "copy/1024": {
+          "bytewise": {
+            "cycles": 31654.0,
+            "instret": 20800.0
+          },
+          "aligned": {
+            "cycles": 12774.0,
+            "instret": 7744.0
+          },
+          "pair_cycle_savings": [
+            19256,
+            18880,
+            18880,
+            18880
+          ]
+        },
+        "copy/16381": {
+          "bytewise": {
+            "cycles": 493162.0,
+            "instret": 331845.0
+          },
+          "aligned": {
+            "cycles": 198175.0,
+            "instret": 122949.0
+          },
+          "pair_cycle_savings": [
+            294803,
+            294987,
+            295268,
+            294987
+          ]
+        },
+        "affine/1024": {
+          "bytewise": {
+            "cycles": 46861.0,
+            "instret": 30784.0
+          },
+          "aligned": {
+            "cycles": 16418.0,
+            "instret": 10048.0
+          },
+          "pair_cycle_savings": [
+            30233,
+            30465,
+            30421,
+            30465
+          ]
+        },
+        "affine/16381": {
+          "bytewise": {
+            "cycles": 731451.5,
+            "instret": 491593.0
+          },
+          "aligned": {
+            "cycles": 255543.5,
+            "instret": 159816.0
+          },
+          "pair_cycle_savings": [
+            475822,
+            475608,
+            476143,
+            476158
+          ]
+        }
+      },
+      "samples_sha256": "e907c3f51fed4e4e9aecdf167f2a8d50e307b80090c7081ce0fd8b08f7d44447",
+      "suite": {
+        "copy": {
+          "passed": 168,
+          "artifact_sha256": "619352d19012b6d0d32ef2d3f7c4f9beec16b4ffa2fee9fd97d15d4e15973b4d"
+        },
+        "vadd": {
+          "passed": 168,
+          "artifact_sha256": "14b06554cf552ee21946c56cfa9931a51e48bb62074d976a5bc5a78b323e9664"
+        },
+        "affine": {
+          "passed": 504,
+          "artifact_sha256": "0e9de45a9b9d66565cbb6c511f62e9fdfbb229380dca7324679d5e987c262767"
+        }
+      },
+      "witness": {
+        "launch_attempts": 13,
+        "completed": [
+          "forms_four",
+          "wide_second_warp",
+          "forms_three",
+          "wide_partial_third",
+          "forms_two",
+          "wide_several_warps",
+          "wide_near_resident_limit",
+          "wide_all_masked",
+          "new_low_to_high",
+          "new_high_to_low",
+          "new_cross_read",
+          "new_cross_write",
+          "new_cross_audit"
+        ],
+        "status": "PASS",
+        "alias": "PASS",
+        "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+        "high": 5
+      }
+    },
+    "rtlsim": {
+      "metrics": {
+        "vadd/1024": {
+          "bytewise": {
+            "cycles": 46205.0,
+            "instret": 27968.0
+          },
+          "aligned": {
+            "cycles": 16123.5,
+            "instret": 9536.0
+          },
+          "pair_cycle_savings": [
+            29627,
+            30057,
+            31265,
+            30247
+          ]
+        },
+        "vadd/16381": {
+          "bytewise": {
+            "cycles": 741939.0,
+            "instret": 446536.0
+          },
+          "aligned": {
+            "cycles": 254934.0,
+            "instret": 151624.0
+          },
+          "pair_cycle_savings": [
+            471956,
+            471880,
+            502130,
+            544949
+          ]
+        },
+        "copy/1024": {
+          "bytewise": {
+            "cycles": 35311.0,
+            "instret": 20800.0
+          },
+          "aligned": {
+            "cycles": 13120.0,
+            "instret": 7744.0
+          },
+          "pair_cycle_savings": [
+            21809,
+            22191,
+            22191,
+            22191
+          ]
+        },
+        "copy/16381": {
+          "bytewise": {
+            "cycles": 553859.0,
+            "instret": 331845.0
+          },
+          "aligned": {
+            "cycles": 207229.0,
+            "instret": 122949.0
+          },
+          "pair_cycle_savings": [
+            347763,
+            346630,
+            346630,
+            346630
+          ]
+        },
+        "affine/1024": {
+          "bytewise": {
+            "cycles": 50167.5,
+            "instret": 30784.0
+          },
+          "aligned": {
+            "cycles": 16868.0,
+            "instret": 10048.0
+          },
+          "pair_cycle_savings": [
+            34511,
+            32674,
+            33675,
+            32924
+          ]
+        },
+        "affine/16381": {
+          "bytewise": {
+            "cycles": 856301.0,
+            "instret": 491593.0
+          },
+          "aligned": {
+            "cycles": 265226.0,
+            "instret": 159816.0
+          },
+          "pair_cycle_savings": [
+            590755,
+            597246,
+            591392,
+            590758
+          ]
+        }
+      },
+      "samples_sha256": "aea99ce3a7f931ff6736877c48dfd1164baab7843e2f84297ddcb19d3d86bb1f",
+      "suite": {
+        "copy": {
+          "passed": 168,
+          "artifact_sha256": "4831791f4c6fb078d0f607fd1879e0ddadbc61688b6a39ea9daa053d59642022"
+        },
+        "vadd": {
+          "passed": 168,
+          "artifact_sha256": "b3b2fe8deb84e0257ca22c236d13d3d1e597a42c2c20df96dafcb0df7ba58784"
+        },
+        "affine": {
+          "passed": 504,
+          "artifact_sha256": "d34adca0210ca3a2a18a2a1ef3f6426f600c4a166059b897c790882fd9338b03"
+        }
+      },
+      "witness": {
+        "launch_attempts": 13,
+        "completed": [
+          "forms_four",
+          "wide_second_warp",
+          "forms_three",
+          "wide_partial_third",
+          "forms_two",
+          "wide_several_warps",
+          "wide_near_resident_limit",
+          "wide_all_masked",
+          "new_low_to_high",
+          "new_high_to_low",
+          "new_cross_read",
+          "new_cross_write",
+          "new_cross_audit"
+        ],
+        "status": "PASS",
+        "alias": "PASS",
+        "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+        "high": 5
+      }
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T13:09:20.214307+00:00"
+}

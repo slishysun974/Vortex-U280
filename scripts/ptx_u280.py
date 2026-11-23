@@ -199,7 +199,7 @@ class BoardGate:
             raise
 
 
-def open_context(ctx, binding_path):
+def open_context(ctx, binding_path, *, observe_caps=False):
     from ptx_runtime import api, P, Q, QueueInfo
     gate = None
     try:
@@ -207,7 +207,15 @@ def open_context(ctx, binding_path):
         ctx.board_gate = gate
         gate.before_open()
         ctx.lib = api(C.CDLL(str(gate.library_dir/'libvortex.so')))
-        ctx.check(ctx.lib.vx_device_open(0,C.byref(ctx.device)),'open')
+        if observe_caps:
+            from ptx_u280_aligned import observe_open, verify_cp_read
+            status, observation = observe_open(ctx)
+            gate.record['cp_dev_caps'] = observation
+            gate.save()
+            ctx.check(status, 'open')
+            verify_cp_read(observation)
+        else:
+            ctx.check(ctx.lib.vx_device_open(0,C.byref(ctx.device)),'open')
         gate.opened()
         ctx.caps = {}
         for name,key in (('threads',1),('warps',2),('cores',3),('isa_flags',7),('clusters',10)):
@@ -219,6 +227,15 @@ def open_context(ctx, binding_path):
         maps = Path('/proc/self/maps').read_text()
         require(all(str(gate.library_dir/n) in maps for n in RUNTIME_SHAS)
                 and 'libxrtsim.so' not in maps, 'wrong physical libraries actually loaded')
+        if observe_caps:
+            from ptx_runtime import VX_CAPS_VM_SUPPORT
+            from ptx_u280_aligned import verify_vm_query
+            vm = Q(2**64 - 1)
+            status = ctx.lib.vx_device_query(ctx.device, VX_CAPS_VM_SUPPORT, C.byref(vm))
+            gate.record['vm_query'] = dict(exit_code=status, value=vm.value)
+            gate.save()
+            ctx.check(status, 'query_vm')
+            verify_vm_query(gate.record['vm_query'])
         info = QueueInfo(C.sizeof(QueueInfo),None,1,0)
         ctx.check(ctx.lib.vx_queue_create(ctx.device,C.byref(info),C.byref(ctx.queue)),'open')
     except Exception as error:

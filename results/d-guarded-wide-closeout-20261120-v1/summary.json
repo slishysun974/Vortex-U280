@@ -1,0 +1,962 @@
+{
+  "run_id": "d-guarded-wide-closeout-20261120-v1",
+  "status": "PASS",
+  "started_at": "2026-11-20T12:36:59.323624+00:00",
+  "commands": [
+    {
+      "label": "prepare",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/probes/guarded_wide_offset.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/module",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1",
+      "started_at": "2026-11-20T12:37:00.207348+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_prepare.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/01_prepare.log",
+      "finished_at": "2026-11-20T12:37:01.081280+00:00",
+      "elapsed_seconds": 0.843,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/module",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/d-guarded-wide-closeout-20261120-v1",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1",
+      "started_at": "2026-11-20T12:37:01.142373+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_build.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/02_build.log",
+      "finished_at": "2026-11-20T12:37:29.876597+00:00",
+      "elapsed_seconds": 28.716,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/module",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1",
+      "started_at": "2026-11-20T12:37:29.965582+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_validate.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/03_validate.log",
+      "finished_at": "2026-11-20T12:37:30.957643+00:00",
+      "elapsed_seconds": 0.953,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "host_zero",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero",
+      "started_at": "2026-11-20T12:37:33.381601+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_host_zero.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/04_host_zero.log",
+      "finished_at": "2026-11-20T12:37:35.917965+00:00",
+      "elapsed_seconds": 2.502,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_zero",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/simx",
+      "started_at": "2026-11-20T12:37:36.062724+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_simx_zero.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/05_simx_zero.log",
+      "finished_at": "2026-11-20T12:37:36.407382+00:00",
+      "elapsed_seconds": 0.317,
+      "log_sha256": "4d7ac14734c3fa874f8ae828924ec3eca7a06efa4b1ad046c2c6cbdfe868ed87"
+    },
+    {
+      "label": "rtlsim_zero",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/rtlsim",
+      "started_at": "2026-11-20T12:37:36.895710+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_rtlsim_zero.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/06_rtlsim_zero.log",
+      "finished_at": "2026-11-20T12:37:37.590740+00:00",
+      "elapsed_seconds": 0.662,
+      "log_sha256": "5e67f72d59964ec04f461c351aa42322dea05dce539717d454d67e74bd4ce156"
+    },
+    {
+      "label": "xrtsim_zero",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/zero/xrtsim",
+      "started_at": "2026-11-20T12:37:37.963696+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_xrtsim_zero.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/07_xrtsim_zero.log",
+      "finished_at": "2026-11-20T12:37:38.214064+00:00",
+      "elapsed_seconds": 0.237,
+      "log_sha256": "5bb7bb49f0674ad8885bb8b1ec67676f2d520473c486c0ac38f06d70519ccbef"
+    },
+    {
+      "label": "host_full",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full",
+      "started_at": "2026-11-20T12:37:38.522670+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_host_full.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/08_host_full.log",
+      "finished_at": "2026-11-20T12:37:40.645763+00:00",
+      "elapsed_seconds": 2.097,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_full",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/simx",
+      "started_at": "2026-11-20T12:37:40.767291+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_simx_full.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/09_simx_full.log",
+      "finished_at": "2026-11-20T12:37:40.978425+00:00",
+      "elapsed_seconds": 0.19,
+      "log_sha256": "bb0ad7082fa4650f4d5f86b64b95a2792e7bc571dcaea451422162b909a399bd"
+    },
+    {
+      "label": "rtlsim_full",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/rtlsim",
+      "started_at": "2026-11-20T12:37:41.374345+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_rtlsim_full.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/10_rtlsim_full.log",
+      "finished_at": "2026-11-20T12:37:42.237340+00:00",
+      "elapsed_seconds": 0.849,
+      "log_sha256": "5bde9a48eb9d39e124b9675e20c91f719c725d4b5bfa081c829d618629da905c"
+    },
+    {
+      "label": "xrtsim_full",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/full/xrtsim",
+      "started_at": "2026-11-20T12:37:42.884689+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_xrtsim_full.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/11_xrtsim_full.log",
+      "finished_at": "2026-11-20T12:37:43.156129+00:00",
+      "elapsed_seconds": 0.252,
+      "log_sha256": "1727d73f4ac3ce0280aba9ea485e3044cbfc6204b29fa230dbd22e1f362c1ae1"
+    },
+    {
+      "label": "host_interior_hole",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole",
+      "started_at": "2026-11-20T12:37:43.595491+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_host_interior_hole.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/12_host_interior_hole.log",
+      "finished_at": "2026-11-20T12:37:45.250363+00:00",
+      "elapsed_seconds": 1.621,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_interior_hole",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/simx",
+      "started_at": "2026-11-20T12:37:45.387850+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/13_simx_interior_hole.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/13_simx_interior_hole.log",
+      "finished_at": "2026-11-20T12:37:45.637385+00:00",
+      "elapsed_seconds": 0.233,
+      "log_sha256": "77bcc0924de847f4961087559a9de6dce46021f292d0d917c9af10f2eabd393f"
+    },
+    {
+      "label": "rtlsim_interior_hole",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/rtlsim",
+      "started_at": "2026-11-20T12:37:46.236000+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/14_rtlsim_interior_hole.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/14_rtlsim_interior_hole.log",
+      "finished_at": "2026-11-20T12:37:47.118108+00:00",
+      "elapsed_seconds": 0.856,
+      "log_sha256": "a8a96e6f5abcf1ad8c3f6205a20fd84c104b0a59415489c5d55fc4a445c2eae5"
+    },
+    {
+      "label": "xrtsim_interior_hole",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/interior_hole/xrtsim",
+      "started_at": "2026-11-20T12:37:47.792492+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/15_xrtsim_interior_hole.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/15_xrtsim_interior_hole.log",
+      "finished_at": "2026-11-20T12:37:48.040016+00:00",
+      "elapsed_seconds": 0.232,
+      "log_sha256": "8fdb394befd37af30672f48f7c69b6b1e7f70285f712b1bc0f91174e3b6e58bb"
+    },
+    {
+      "label": "host_partial_warp",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp",
+      "started_at": "2026-11-20T12:37:48.291446+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/16_host_partial_warp.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/16_host_partial_warp.log",
+      "finished_at": "2026-11-20T12:37:49.955365+00:00",
+      "elapsed_seconds": 1.645,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_partial_warp",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/simx",
+      "started_at": "2026-11-20T12:37:50.125266+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/17_simx_partial_warp.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/17_simx_partial_warp.log",
+      "finished_at": "2026-11-20T12:37:50.401075+00:00",
+      "elapsed_seconds": 0.252,
+      "log_sha256": "2c6781fe660252542c5afdd7ba8f46272e0651322e093a7e49a818d6c5aba6f6"
+    },
+    {
+      "label": "rtlsim_partial_warp",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/rtlsim",
+      "started_at": "2026-11-20T12:37:51.130636+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/18_rtlsim_partial_warp.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/18_rtlsim_partial_warp.log",
+      "finished_at": "2026-11-20T12:37:52.127416+00:00",
+      "elapsed_seconds": 0.976,
+      "log_sha256": "9e19ee660a7765b34322626a7b2736e4c4509f6e9cfeecb32ecc4b402e2301dd"
+    },
+    {
+      "label": "xrtsim_partial_warp",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/partial_warp/xrtsim",
+      "started_at": "2026-11-20T12:37:52.900273+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/19_xrtsim_partial_warp.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/19_xrtsim_partial_warp.log",
+      "finished_at": "2026-11-20T12:37:53.169817+00:00",
+      "elapsed_seconds": 0.245,
+      "log_sha256": "1111e8bfcb44ce8f01e1beb84319aca00c869cc917aff190f2219f1a2af79097"
+    },
+    {
+      "label": "host_single",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single",
+      "started_at": "2026-11-20T12:37:53.709066+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/20_host_single.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/20_host_single.log",
+      "finished_at": "2026-11-20T12:37:55.243468+00:00",
+      "elapsed_seconds": 1.498,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_single",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/simx",
+      "started_at": "2026-11-20T12:37:55.374329+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/21_simx_single.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/21_simx_single.log",
+      "finished_at": "2026-11-20T12:37:55.585686+00:00",
+      "elapsed_seconds": 0.19,
+      "log_sha256": "f5808cbc23a2ed51caca708da862144a809e086e5c64b77b4c0582efe105be18"
+    },
+    {
+      "label": "rtlsim_single",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/rtlsim",
+      "started_at": "2026-11-20T12:37:55.856649+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/22_rtlsim_single.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/22_rtlsim_single.log",
+      "finished_at": "2026-11-20T12:37:56.652407+00:00",
+      "elapsed_seconds": 0.785,
+      "log_sha256": "fbed918032127c2ae672f4b27ca0d03113b92104a0d14743e0b0b1b40101f6a1"
+    },
+    {
+      "label": "xrtsim_single",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/single/xrtsim",
+      "started_at": "2026-11-20T12:37:57.177407+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/23_xrtsim_single.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/23_xrtsim_single.log",
+      "finished_at": "2026-11-20T12:37:57.464556+00:00",
+      "elapsed_seconds": 0.256,
+      "log_sha256": "761bcba730a5057f0ee6554cf0f082a8075f38ebd58b1f3620b08a5da5fd75e0"
+    },
+    {
+      "label": "host_all_excluded",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded",
+      "started_at": "2026-11-20T12:37:57.716746+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/24_host_all_excluded.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/24_host_all_excluded.log",
+      "finished_at": "2026-11-20T12:37:59.345114+00:00",
+      "elapsed_seconds": 1.606,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_all_excluded",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/simx",
+      "started_at": "2026-11-20T12:37:59.537979+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/25_simx_all_excluded.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/25_simx_all_excluded.log",
+      "finished_at": "2026-11-20T12:37:59.810997+00:00",
+      "elapsed_seconds": 0.251,
+      "log_sha256": "7a4c310c5025390c8a76e377528df4e933182cda20f162e05ee9d5f79d7a17eb"
+    },
+    {
+      "label": "rtlsim_all_excluded",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/rtlsim",
+      "started_at": "2026-11-20T12:38:00.302822+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/26_rtlsim_all_excluded.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/26_rtlsim_all_excluded.log",
+      "finished_at": "2026-11-20T12:38:01.103739+00:00",
+      "elapsed_seconds": 0.753,
+      "log_sha256": "8f35ece964b84e069290cddebf1ef0296c63e4423bc195eef32e564d310449b9"
+    },
+    {
+      "label": "xrtsim_all_excluded",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/capture",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/inputs",
+        "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-guarded-wide-closeout-20261120-v1/all_excluded/xrtsim",
+      "started_at": "2026-11-20T12:38:01.741104+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/27_xrtsim_all_excluded.log",
+      "scratch_log": "/tmp/d-guarded-wide-9ctiqaos/27_xrtsim_all_excluded.log",
+      "finished_at": "2026-11-20T12:38:02.001790+00:00",
+      "elapsed_seconds": 0.241,
+      "log_sha256": "1d4e7e1caffa5923e613c89b851cc894a48d50a267c9d00e136d4c3aaa9d4ff6"
+    }
+  ],
+  "scope": "D author probe on RV64 1c/8w/4t models",
+  "independent_acceptance": "NOT_RUN",
+  "u280": "NOT_RUN",
+  "backends": {
+    "simx": {
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "zero",
+          "status": "PASS",
+          "host_sha256": "a4c05465ea834be4804b3c21f9d302b6f9f8ec1e020cd8352ab5d82621d0a658",
+          "counts": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "full",
+          "status": "PASS",
+          "host_sha256": "44d831ad870c505fac3a614879b378ad94332f0aab6e9efb36bdb5c1df071d56",
+          "counts": {
+            "guarded_load": 8,
+            "guarded_store": 8,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "interior_hole",
+          "status": "PASS",
+          "host_sha256": "5ec3ebdfa486da9e6953f6a405e00f573240e499db1e614754783d412eca2a76",
+          "counts": {
+            "guarded_load": 6,
+            "guarded_store": 6,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "partial_warp",
+          "status": "PASS",
+          "host_sha256": "71032a75a294b758fe88d5b25099e97a491854130192fc39b5248f368df229e6",
+          "counts": {
+            "guarded_load": 5,
+            "guarded_store": 5,
+            "audit_store": 9
+          }
+        },
+        {
+          "id": "single",
+          "status": "PASS",
+          "host_sha256": "1be0a816fe19ef18ef3dd539435e1eed20d02d02d72ecbadac4ed5e86d4d2642",
+          "counts": {
+            "guarded_load": 1,
+            "guarded_store": 1,
+            "audit_store": 1
+          }
+        },
+        {
+          "id": "all_excluded",
+          "status": "PASS",
+          "host_sha256": "46b698d711cdf64f6610284e3b8bc1fded4975ed0e5f9dc8827522fc820887d6",
+          "counts": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 2
+          }
+        }
+      ]
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "zero",
+          "status": "PASS",
+          "host_sha256": "a4c05465ea834be4804b3c21f9d302b6f9f8ec1e020cd8352ab5d82621d0a658",
+          "counts": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "full",
+          "status": "PASS",
+          "host_sha256": "44d831ad870c505fac3a614879b378ad94332f0aab6e9efb36bdb5c1df071d56",
+          "counts": {
+            "guarded_load": 8,
+            "guarded_store": 8,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "interior_hole",
+          "status": "PASS",
+          "host_sha256": "5ec3ebdfa486da9e6953f6a405e00f573240e499db1e614754783d412eca2a76",
+          "counts": {
+            "guarded_load": 6,
+            "guarded_store": 6,
+            "audit_store": 8
+          }
+        },
+        {
+          "id": "partial_warp",
+          "status": "PASS",
+          "host_sha256": "71032a75a294b758fe88d5b25099e97a491854130192fc39b5248f368df229e6",
+          "counts": {
+            "guarded_load": 5,
+            "guarded_store": 5,
+            "audit_store": 9
+          }
+        },
+        {
+          "id": "single",
+          "status": "PASS",
+          "host_sha256": "1be0a816fe19ef18ef3dd539435e1eed20d02d02d72ecbadac4ed5e86d4d2642",
+          "counts": {
+            "guarded_load": 1,
+            "guarded_store": 1,
+            "audit_store": 1
+          }
+        },
+        {
+          "id": "all_excluded",
+          "status": "PASS",
+          "host_sha256": "46b698d711cdf64f6610284e3b8bc1fded4975ed0e5f9dc8827522fc820887d6",
+          "counts": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 2
+          }
+        }
+      ]
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "cases": [
+        {
+          "id": "zero",
+          "status": "PASS",
+          "host_sha256": "a4c05465ea834be4804b3c21f9d302b6f9f8ec1e020cd8352ab5d82621d0a658"
+        },
+        {
+          "id": "full",
+          "status": "PASS",
+          "host_sha256": "44d831ad870c505fac3a614879b378ad94332f0aab6e9efb36bdb5c1df071d56"
+        },
+        {
+          "id": "interior_hole",
+          "status": "PASS",
+          "host_sha256": "5ec3ebdfa486da9e6953f6a405e00f573240e499db1e614754783d412eca2a76"
+        },
+        {
+          "id": "partial_warp",
+          "status": "PASS",
+          "host_sha256": "71032a75a294b758fe88d5b25099e97a491854130192fc39b5248f368df229e6"
+        },
+        {
+          "id": "single",
+          "status": "PASS",
+          "host_sha256": "1be0a816fe19ef18ef3dd539435e1eed20d02d02d72ecbadac4ed5e86d4d2642"
+        },
+        {
+          "id": "all_excluded",
+          "status": "PASS",
+          "host_sha256": "46b698d711cdf64f6610284e3b8bc1fded4975ed0e5f9dc8827522fc820887d6"
+        }
+      ]
+    }
+  },
+  "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+  "source_sha256": "be4e0f1fd10137d50b02133a273b87c9890bff6543f5ab79f5d8e1f974281c92",
+  "source_forms": [
+    "add.u32",
+    "add.u64",
+    "cvta.to.global.u64",
+    "ld.global.u32",
+    "ld.param.u32",
+    "ld.param.u64",
+    "mov.u32",
+    "mov.u64",
+    "mul.lo.u32",
+    "mul.wide.u32",
+    "ret",
+    "selp.u32",
+    "setp.eq.u32",
+    "setp.ge.u32",
+    "setp.lt.u32",
+    "st.global.u32",
+    "sub.u32"
+  ],
+  "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "data_pc": {
+    "x": "0x1800001d8",
+    "z": "0x1800001f8",
+    "audit": "0x180000248"
+  },
+  "corpus_sha256": "51ac2975bdc3f82f363a73f90da0ce09265b9b271cbd05af2a49af65fbf90eb8",
+  "libraries": {
+    "simx": {
+      "config.mk": "bf233b6c34620ae2925a75e82cd5547173bb50fdc07e1883ed54ea2dd610262d",
+      "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+      "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+      "sw/runtime/libvortex.so": "901ac55b95f0f1ea430e314c707d10fb3bb4a613bad23ec2174a11a8b25ab419",
+      "sw/runtime/libvortex-simx.so": "9edc05c3e1342ef12b6782c04b8a7aa3a8f862b411bb7028e8bbe753170b3b87",
+      "sw/runtime/libsimx.so": "119d16f68d700dd98834f3c33acf7c32ecf04d16287f80874ebc15bddc47bc9a"
+    },
+    "rtlsim": {
+      "config.mk": "5380619c426677ea46222179ce76adf5f354098841f210dc43db91d1afd2b449",
+      "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+      "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+      "sw/runtime/libvortex.so": "0aff3868e7d255a8088de95a82b59e86ff4594e7b4578bebcbd78db3d937c70d",
+      "sw/runtime/libvortex-rtlsim.so": "70a9d27b90bd52281819c5a6fb8fa2041102e25673fb617e87e2ac637c2e21be",
+      "sw/runtime/librtlsim.so": "be0e00f0bcf91f264df8574ca2f5517fb12b8f23978c35e2ac938c0c441568b8"
+    },
+    "xrtsim": {
+      "libvortex.so": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+      "libvortex-xrt.so": "5c0cf1a313ebcd580d83d729195249b37929b9089ca4b01b7750c98fb9fa567d",
+      "libxrtsim.so": "24319d0b21d05db860d842a1cdcb8192ae33c02fe8ad52be379dbae0445739a7",
+      "xrt_config.stamp": "3f5fa41744b67a5d968be98670cac8f1b0a94f4994bb43802deaae4a6799062b",
+      "xrtsim_config.stamp": "5bb757d2b012ee2b2765c7a4ead57afa3aa472afa3571f3c2dba31da671e66f1"
+    }
+  },
+  "finished_at": "2026-11-20T12:38:03.160425+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,72 @@
+{
+  "status": "FAIL",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "vadd_1024_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "stdbuf -oL -eL \"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v1/vadd/1024/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v1/vadd/1024/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "vadd",
+        "--n",
+        "1024",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v1/vadd/1024/aligned",
+      "started_at": "2026-11-21T13:22:57.011422+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_vadd_1024_aligned.log",
+      "finished_at": "2026-11-21T13:23:16.006787+00:00",
+      "elapsed_seconds": 18.98,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "started_at": "2026-11-21T13:22:54.974304+00:00",
+  "backend": "rtlsim",
+  "build_sha256": "2f85c5730fa77fa5c552a828ed9957d594c0de3a243f6bd073d8d8bf948b6961",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate/trace.py",
+    "trace",
+    "--build",
+    "results/local-ptx-same-predicate-build-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-trace-rtlsim-20261121-v1",
+    "--backend",
+    "rtlsim"
+  ],
+  "script_sha256": "0d73dee0cdfa8d914ce4ea2a6f2f5fde8f35688d7522cb5c47c3a681adb26e26",
+  "binding_sha256": "9f770fe994c180fad9b30e781510d82e6da7e64a3ee8516e48aba73bad53520f",
+  "debug_libraries": {
+    "config.mk": "5380619c426677ea46222179ce76adf5f354098841f210dc43db91d1afd2b449",
+    "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+    "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+    "sw/runtime/libvortex.so": "0aff3868e7d255a8088de95a82b59e86ff4594e7b4578bebcbd78db3d937c70d",
+    "sw/runtime/libvortex-rtlsim.so": "70a9d27b90bd52281819c5a6fb8fa2041102e25673fb617e87e2ac637c2e21be",
+    "sw/runtime/librtlsim.so": "be0e00f0bcf91f264df8574ca2f5517fb12b8f23978c35e2ac938c0c441568b8"
+  },
+  "cases": [],
+  "exit_code": 1,
+  "error": "wrong array address, site, or per-thread order: index 20, PC 0x180000078",
+  "finished_at": "2026-11-21T13:23:16.086805+00:00"
+}

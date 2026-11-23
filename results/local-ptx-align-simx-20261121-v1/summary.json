@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "backend": "simx",
+  "repeats": 4,
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-aligned-parameters/run.py",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-simx-20261121-v1",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1",
+        "--backend",
+        "simx",
+        "--repeats",
+        "4",
+        "--worker"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-align-simx-20261121-v1",
+      "started_at": "2026-11-21T12:47:41.407316+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T12:48:47.978164+00:00",
+      "elapsed_seconds": 66.553,
+      "log_sha256": "fdfeb3df6b16673434eb62c8800642dc10e7c9434956e94d5670bec7eeacc2b5"
+    }
+  ],
+  "started_at": "2026-11-21T12:47:41.400584+00:00",
+  "script_sha256": "bcb07b9071aa055cf25b03a4f9619cbf322dc37c86b5b78304f05447b4d0cbfb",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-aligned-parameters/run.py",
+    "--build",
+    "results/local-ptx-align-build-20261121-v1",
+    "--backend",
+    "simx",
+    "--output",
+    "results/local-ptx-align-simx-20261121-v1"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-11-21T12:48:47.994382+00:00"
+}

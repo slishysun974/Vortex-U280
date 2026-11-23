@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "scope": "host review startup before unittest or module checks",
+  "argv": ["/usr/bin/python3", "-B", "experiments/ptx-same-predicate-production/check.py", "host", "--output", "results/local-ptx-same-predicate-production-host-20261121-v1"],
+  "cwd": "/mnt/d/Vortex-U280",
+  "exit_code": 1,
+  "log": "startup.stderr",
+  "runner_unittest": "NOT_RUN",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN"
+}

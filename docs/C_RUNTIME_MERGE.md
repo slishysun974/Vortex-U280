@@ -1,5 +1,7 @@
 # C Runtime 本地合入与 U280 接续
 
+2026-11-20，C 的生产 `Context` 已接收采用 `p0-static-v2` 的两份 D 探针。固定模型目标下从源码重建的两份镜像与 D 交付一致，三个后端各通过 8 次启动。交付文件、输入、回读及复现命令见 [V03 技术接收](D_P0_CLOSEOUT.md#c-runtime-的技术接收)。
+
 2026-11-11 后续版本：`sticky-device-fault-v1` 修复原生队列错误清除后的错误恢复放行，新增 [api_v2.json](../configs/c_runtime/api_v2.json)。三模型实际超时排空与故障封锁通过；物理 recover 继续禁用。[恢复证据](RUNTIME_RECOVERY_20261111.md)。下文 v3 为补丁前的历史交付，新板测必须匹配当前运行器与新的 E 执行记录，不能复用 v3 作为新源码执行证据。
 
 版本：`c-runtime-integration-v1`，2026-11-11，Asia/Shanghai。来源为刘泽衡的 [GPGPU-runtime 固定提交](https://github.com/LiuZeheng123/GPGPU-runtime/tree/7f3575db67888c03d1c2c4dc3743051c735519dd)。本地目录不是 Git 工作树，本次“合入”指项目文件与调用入口已经集成，不表示已推送或合并公共仓库。

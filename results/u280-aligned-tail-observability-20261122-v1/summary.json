@@ -1,0 +1,22 @@
+{
+  "schema": "u280-fixed-tail-lane-observability-v1",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "experiments/u280-tail-observability/audit.py",
+    "--output",
+    "results/u280-aligned-tail-observability-20261122-v1",
+    "--nm",
+    "D:/Program Files/w64devkit/bin/nm.exe"
+  ],
+  "started_at": "2026-11-22T03:33:25.345116+00:00",
+  "commands": [],
+  "board_execution": "NOT_RUN",
+  "tail_zero_requests": "NOT_RUN",
+  "status": "FAIL",
+  "audit_status": "FAIL",
+  "exit_code": 1,
+  "reason": "section table differs from archived XRT inspection",
+  "files": {},
+  "finished_at": "2026-11-22T03:33:25.391051+00:00"
+}

@@ -1,0 +1,1103 @@
+{
+  "run_id": "d-p0-forms-queue-aligned-20261121-v1",
+  "argv": [
+    "scripts/run_d_p0_closeout.py",
+    "--run-id",
+    "d-p0-forms-queue-aligned-20261121-v1"
+  ],
+  "started_at": "2026-11-21T12:58:55.150700+00:00",
+  "scope": "D author P0 model witnesses",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "prepare",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/probes/p0_form_witness.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/module",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1",
+      "started_at": "2026-11-21T12:58:55.369729+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_prepare.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/01_prepare.log",
+      "finished_at": "2026-11-21T12:58:55.926802+00:00",
+      "elapsed_seconds": 0.538,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/module",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/d-p0-forms-queue-aligned-20261121-v1",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1",
+      "started_at": "2026-11-21T12:58:55.963546+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_build.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/02_build.log",
+      "finished_at": "2026-11-21T12:59:17.166151+00:00",
+      "elapsed_seconds": 21.189,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/module",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1",
+      "started_at": "2026-11-21T12:59:17.216393+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_validate.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/03_validate.log",
+      "finished_at": "2026-11-21T12:59:17.753374+00:00",
+      "elapsed_seconds": 0.493,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "host_unsigned_edges",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges",
+      "started_at": "2026-11-21T12:59:31.465698+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_host_unsigned_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/04_host_unsigned_edges.log",
+      "finished_at": "2026-11-21T12:59:32.982933+00:00",
+      "elapsed_seconds": 1.492,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_unsigned_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/simx",
+      "started_at": "2026-11-21T12:59:33.097940+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_simx_unsigned_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/05_simx_unsigned_edges.log",
+      "finished_at": "2026-11-21T12:59:33.305927+00:00",
+      "elapsed_seconds": 0.198,
+      "log_sha256": "66a9a01cc5560d298078897344f3f8fa59fea768a43f0b93c23ffb2100b3c65e"
+    },
+    {
+      "label": "rtlsim_unsigned_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/rtlsim",
+      "started_at": "2026-11-21T12:59:33.639276+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_rtlsim_unsigned_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/06_rtlsim_unsigned_edges.log",
+      "finished_at": "2026-11-21T12:59:34.238559+00:00",
+      "elapsed_seconds": 0.583,
+      "log_sha256": "dacd73a9a31a51fcc755c9a26bc5ea6b2b30aeb3b2152a6c41373c0f8b8b3cd1"
+    },
+    {
+      "label": "xrtsim_unsigned_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/unsigned_edges/xrtsim",
+      "started_at": "2026-11-21T12:59:34.959638+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_xrtsim_unsigned_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/07_xrtsim_unsigned_edges.log",
+      "finished_at": "2026-11-21T12:59:35.228558+00:00",
+      "elapsed_seconds": 0.227,
+      "log_sha256": "8198c3960e863c27dbfb3c7f341410db086a466c54df7246aa30c4504fd19b4f"
+    },
+    {
+      "label": "host_rotated_edges",
+      "argv": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges",
+        "-I/opt/vortex-ab/sources/vortex-7fe19369587c-v1/sw/runtime/include",
+        "/mnt/d/Vortex-U280/native/ptx_copy/main.cpp",
+        "-L/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "-lvortex",
+        "-o",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/capture"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges",
+      "started_at": "2026-11-21T12:59:35.781548+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_host_rotated_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/08_host_rotated_edges.log",
+      "finished_at": "2026-11-21T12:59:36.816312+00:00",
+      "elapsed_seconds": 0.993,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "simx_rotated_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/simx/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/simx",
+      "started_at": "2026-11-21T12:59:37.003296+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_simx_rotated_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/09_simx_rotated_edges.log",
+      "finished_at": "2026-11-21T12:59:37.343435+00:00",
+      "elapsed_seconds": 0.314,
+      "log_sha256": "a0bf7531b1b67796e5a392a5313acdfb9fb8bbd6acad1fd844a2c17c3f32c5ef"
+    },
+    {
+      "label": "rtlsim_rotated_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/rtlsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/rtlsim",
+      "started_at": "2026-11-21T12:59:37.560361+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_rtlsim_rotated_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/10_rtlsim_rotated_edges.log",
+      "finished_at": "2026-11-21T12:59:38.244222+00:00",
+      "elapsed_seconds": 0.644,
+      "log_sha256": "a510043764fae696f76b8762078419966937667fcfdb9495bdc194abbd47d6a6"
+    },
+    {
+      "label": "xrtsim_rotated_edges",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "VORTEX_PROFILING=0",
+        "XRT_DEVICE_INDEX=0",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/capture",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/inputs",
+        "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/xrtsim/actual"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-p0-forms-queue-aligned-20261121-v1/rotated_edges/xrtsim",
+      "started_at": "2026-11-21T12:59:38.503206+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_xrtsim_rotated_edges.log",
+      "scratch_log": "/tmp/d-p0-forms-ltb7h3e4/11_xrtsim_rotated_edges.log",
+      "finished_at": "2026-11-21T12:59:38.717250+00:00",
+      "elapsed_seconds": 0.2,
+      "log_sha256": "c1bd58e3d32061a0707c652da891790152777c00d5e447f894c2228e8e220478"
+    }
+  ],
+  "backends": {
+    "simx": {
+      "unsigned_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      },
+      "rotated_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      }
+    },
+    "rtlsim": {
+      "unsigned_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      },
+      "rotated_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      }
+    },
+    "xrtsim": {
+      "unsigned_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      },
+      "rotated_edges": {
+        "status": "PASS",
+        "columns": 42,
+        "lanes": 4
+      }
+    }
+  },
+  "independent_acceptance": "NOT_RUN",
+  "u280": "NOT_RUN",
+  "forms": {
+    "ld.param.u64": {
+      "plain": [
+        {
+          "line": 10,
+          "generated": 29
+        },
+        {
+          "line": 11,
+          "generated": 30
+        }
+      ]
+    },
+    "ld.param.u32": {
+      "plain": [
+        {
+          "line": 12,
+          "generated": 31
+        }
+      ]
+    },
+    "mov.u32": {
+      "plain": [
+        {
+          "line": 26,
+          "generated": 43
+        }
+      ],
+      "positive": [
+        {
+          "line": 31,
+          "generated": 46
+        }
+      ],
+      "negative": [
+        {
+          "line": 36,
+          "generated": 49
+        }
+      ]
+    },
+    "mov.u64": {
+      "plain": [
+        {
+          "line": 41,
+          "generated": 52
+        }
+      ],
+      "positive": [
+        {
+          "line": 47,
+          "generated": 56
+        }
+      ],
+      "negative": [
+        {
+          "line": 53,
+          "generated": 60
+        }
+      ]
+    },
+    "add.u32": {
+      "plain": [
+        {
+          "line": 59,
+          "generated": 64
+        }
+      ],
+      "positive": [
+        {
+          "line": 64,
+          "generated": 67
+        }
+      ],
+      "negative": [
+        {
+          "line": 69,
+          "generated": 70
+        }
+      ]
+    },
+    "sub.u32": {
+      "plain": [
+        {
+          "line": 74,
+          "generated": 73
+        }
+      ],
+      "positive": [
+        {
+          "line": 79,
+          "generated": 76
+        }
+      ],
+      "negative": [
+        {
+          "line": 84,
+          "generated": 79
+        }
+      ]
+    },
+    "mul.lo.u32": {
+      "plain": [
+        {
+          "line": 89,
+          "generated": 82
+        }
+      ],
+      "positive": [
+        {
+          "line": 94,
+          "generated": 85
+        }
+      ],
+      "negative": [
+        {
+          "line": 99,
+          "generated": 88
+        }
+      ]
+    },
+    "mul.wide.u32": {
+      "plain": [
+        {
+          "line": 104,
+          "generated": 91
+        }
+      ],
+      "positive": [
+        {
+          "line": 112,
+          "generated": 97
+        }
+      ],
+      "negative": [
+        {
+          "line": 120,
+          "generated": 103
+        }
+      ]
+    },
+    "add.u64": {
+      "plain": [
+        {
+          "line": 128,
+          "generated": 109
+        }
+      ],
+      "positive": [
+        {
+          "line": 134,
+          "generated": 113
+        }
+      ],
+      "negative": [
+        {
+          "line": 140,
+          "generated": 117
+        }
+      ]
+    },
+    "cvta.to.global.u64": {
+      "plain": [
+        {
+          "line": 146,
+          "generated": 121
+        }
+      ],
+      "positive": [
+        {
+          "line": 152,
+          "generated": 125
+        }
+      ],
+      "negative": [
+        {
+          "line": 158,
+          "generated": 129
+        }
+      ]
+    },
+    "setp.lt.u32": {
+      "plain": [
+        {
+          "line": 164,
+          "generated": 133
+        }
+      ],
+      "positive": [
+        {
+          "line": 170,
+          "generated": 137
+        }
+      ],
+      "negative": [
+        {
+          "line": 176,
+          "generated": 141
+        }
+      ]
+    },
+    "setp.ge.u32": {
+      "plain": [
+        {
+          "line": 182,
+          "generated": 145
+        }
+      ],
+      "positive": [
+        {
+          "line": 188,
+          "generated": 149
+        }
+      ],
+      "negative": [
+        {
+          "line": 194,
+          "generated": 153
+        }
+      ]
+    },
+    "setp.eq.u32": {
+      "plain": [
+        {
+          "line": 201,
+          "generated": 158
+        }
+      ],
+      "positive": [
+        {
+          "line": 208,
+          "generated": 163
+        }
+      ],
+      "negative": [
+        {
+          "line": 215,
+          "generated": 168
+        }
+      ]
+    },
+    "selp.u32": {
+      "plain": [
+        {
+          "line": 221,
+          "generated": 172
+        }
+      ],
+      "positive": [
+        {
+          "line": 226,
+          "generated": 175
+        }
+      ],
+      "negative": [
+        {
+          "line": 231,
+          "generated": 178
+        }
+      ]
+    },
+    "ld.global.u32": {
+      "plain": [
+        {
+          "line": 236,
+          "generated": 181
+        }
+      ],
+      "positive": [
+        {
+          "line": 241,
+          "generated": 184
+        }
+      ],
+      "negative": [
+        {
+          "line": 246,
+          "generated": 187
+        }
+      ]
+    },
+    "st.global.u32": {
+      "plain": [
+        {
+          "line": 250,
+          "generated": 189
+        }
+      ],
+      "positive": [
+        {
+          "line": 253,
+          "generated": 190
+        }
+      ],
+      "negative": [
+        {
+          "line": 256,
+          "generated": 191
+        }
+      ]
+    },
+    "ret": {
+      "plain": [
+        {
+          "line": 257,
+          "generated": 192
+        }
+      ]
+    }
+  },
+  "rejections": {
+    "mov.u32": {
+      "status": "PASS",
+      "replacement": "mov.u32 flag, a; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 26,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "mov.u64": {
+      "status": "PASS",
+      "replacement": "mov.u64 flag, src; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b64 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 41,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "add.u32": {
+      "status": "PASS",
+      "replacement": "add.u32 flag, a, 1; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 59,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "sub.u32": {
+      "status": "PASS",
+      "replacement": "sub.u32 flag, a, 1; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 74,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "mul.lo.u32": {
+      "status": "PASS",
+      "replacement": "mul.lo.u32 flag, a, 3; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 89,
+          "column": 16
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "mul.wide.u32": {
+      "status": "PASS",
+      "replacement": "mul.wide.u32 flag, high_index, 4; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b64 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 104,
+          "column": 18
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "add.u64": {
+      "status": "PASS",
+      "replacement": "add.u64 flag, alt, -16; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b64 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 128,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "cvta.to.global.u64": {
+      "status": "PASS",
+      "replacement": "cvta.to.global.u64 flag, src; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b64 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 146,
+          "column": 24
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "setp.lt.u32": {
+      "status": "PASS",
+      "replacement": "setp.lt.u32 tid, a, 0x80000000; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .pred register, got tid",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 164,
+          "column": 17
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "setp.ge.u32": {
+      "status": "PASS",
+      "replacement": "setp.ge.u32 tid, a, 0x80000000; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .pred register, got tid",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 182,
+          "column": 17
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "setp.eq.u32": {
+      "status": "PASS",
+      "replacement": "setp.eq.u32 tid, a, 0xffffffff; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .pred register, got tid",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 201,
+          "column": 17
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "selp.u32": {
+      "status": "PASS",
+      "replacement": "selp.u32 flag, 0x52, 0x61, low; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 221,
+          "column": 14
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "ld.global.u32": {
+      "status": "PASS",
+      "replacement": "ld.global.u32 flag, [src]; // witness",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "expected declared .b32 register, got flag",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 236,
+          "column": 19
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "st.global.u32": {
+      "status": "PASS",
+      "replacement": "st.global.u32 [dst+2], a;",
+      "diagnostic": {
+        "code": "E_TYPE",
+        "phase": "frontend",
+        "message": "global u32 offset is not aligned to 4 bytes",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 250,
+          "column": 23
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "ld.param.u32": {
+      "status": "PASS",
+      "replacement": "ld.param.u32 high_index, [z+4];",
+      "diagnostic": {
+        "code": "E_PARAM_LAYOUT",
+        "phase": "frontend",
+        "message": "parameter load must match whole declared scalar at offset zero",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 12,
+          "column": 31
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "ld.param.u64": {
+      "status": "PASS",
+      "replacement": "ld.param.u64 xbase, [z+4];",
+      "diagnostic": {
+        "code": "E_PARAM_LAYOUT",
+        "phase": "frontend",
+        "message": "parameter load must match whole declared scalar at offset zero",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 10,
+          "column": 26
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    },
+    "ret": {
+      "status": "PASS",
+      "replacement": "@active ret;",
+      "diagnostic": {
+        "code": "E_UNSUPPORTED",
+        "phase": "frontend",
+        "message": "predicated ret/ld.param is outside this profile",
+        "source_location": {
+          "file": "negative.ptx",
+          "line": 257,
+          "column": 13
+        },
+        "run_id": null,
+        "event_id": null,
+        "generation": null,
+        "backend": null,
+        "native_status": null,
+        "evidence_path": null
+      }
+    }
+  },
+  "source_sha256": "bdc1bf700c20d6bdce193582bdda29315bb4166d7399407ee5272184df7f925f",
+  "image_sha256": "4582515cda7d105d236fd74b06116d911fb9478411cf2fa59bc9346a69cda48a",
+  "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "archived_modules": {
+    "sim/copy": {
+      "status": "PASS",
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "sim/vadd": {
+      "status": "PASS",
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "sim/affine": {
+      "status": "PASS",
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "sim/copy_variant": {
+      "status": "PASS",
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "source_sha256": "880d536c7f2e97ad617c85d7a7f76289b0d785db722aad9b9fc849cb217bd835",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "sim/vadd_variant": {
+      "status": "PASS",
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "source_sha256": "1b98617935114759a0b2ab7dfdbc1136c757b7e7cc4070e02136068a07203e99",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "sim/affine_variant": {
+      "status": "PASS",
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "source_sha256": "9d89709ef0cb51f5ea4fb67454a2dc2a84a51b4d5d7f524214c16f1773220259",
+      "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "board/copy": {
+      "status": "PASS",
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "board/vadd": {
+      "status": "PASS",
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "board/affine": {
+      "status": "PASS",
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "source_sha256": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "board/copy_variant": {
+      "status": "PASS",
+      "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+      "source_sha256": "880d536c7f2e97ad617c85d7a7f76289b0d785db722aad9b9fc849cb217bd835",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "board/vadd_variant": {
+      "status": "PASS",
+      "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+      "source_sha256": "1b98617935114759a0b2ab7dfdbc1136c757b7e7cc4070e02136068a07203e99",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "board/affine_variant": {
+      "status": "PASS",
+      "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+      "source_sha256": "9d89709ef0cb51f5ea4fb67454a2dc2a84a51b4d5d7f524214c16f1773220259",
+      "target_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    }
+  },
+  "libraries": {
+    "simx": {
+      "config.mk": "bf233b6c34620ae2925a75e82cd5547173bb50fdc07e1883ed54ea2dd610262d",
+      "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+      "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+      "sw/runtime/libvortex.so": "901ac55b95f0f1ea430e314c707d10fb3bb4a613bad23ec2174a11a8b25ab419",
+      "sw/runtime/libvortex-simx.so": "9edc05c3e1342ef12b6782c04b8a7aa3a8f862b411bb7028e8bbe753170b3b87",
+      "sw/runtime/libsimx.so": "119d16f68d700dd98834f3c33acf7c32ecf04d16287f80874ebc15bddc47bc9a"
+    },
+    "rtlsim": {
+      "config.mk": "5380619c426677ea46222179ce76adf5f354098841f210dc43db91d1afd2b449",
+      "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+      "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+      "sw/runtime/libvortex.so": "0aff3868e7d255a8088de95a82b59e86ff4594e7b4578bebcbd78db3d937c70d",
+      "sw/runtime/libvortex-rtlsim.so": "70a9d27b90bd52281819c5a6fb8fa2041102e25673fb617e87e2ac637c2e21be",
+      "sw/runtime/librtlsim.so": "be0e00f0bcf91f264df8574ca2f5517fb12b8f23978c35e2ac938c0c441568b8"
+    },
+    "xrtsim": {
+      "libvortex.so": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+      "libvortex-xrt.so": "5c0cf1a313ebcd580d83d729195249b37929b9089ca4b01b7750c98fb9fa567d",
+      "libxrtsim.so": "24319d0b21d05db860d842a1cdcb8192ae33c02fe8ad52be379dbae0445739a7",
+      "xrt_config.stamp": "3f5fa41744b67a5d968be98670cac8f1b0a94f4994bb43802deaae4a6799062b",
+      "xrtsim_config.stamp": "5bb757d2b012ee2b2765c7a4ead57afa3aa472afa3571f3c2dba31da671e66f1"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T12:59:38.984234+00:00"
+}

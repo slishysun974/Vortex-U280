@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "archived build, physical runtime bytes, and source audit",
+  "board_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "xclbin_sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+  "xclbin_uuid": "b60ca9fb-1506-3033-c156-e03ff687f492",
+  "runtime_sha256": {
+    "libvortex.so": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e",
+    "libvortex-xrt.so": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1"
+  },
+  "d10_artifacts": {
+    "artifacts/vortex_afu.xclbin": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+    "build/result.json": "1a14f3035ca73fc10b33acf57ae4b14266ecd18332a89f12a262c3f406164e68",
+    "build/input_manifest.json": "fe16e5837f89f93d39c6708fc66a970714b3debb14868b182e9e006df1cb8d56",
+    "inspection/ip_layout.json": "6ee578d78776be929a96d1c856553f85424cc2870c62a57ce2339484e0fd940a",
+    "inspection/mem_topology.json": "82eb3189af3288ef7c731c73693bc2306b18de634b946499bc54fc16fae9fe1a",
+    "inspection/connectivity.json": "58580092970e2cc55463b0e5229248f9b0f409be63b4e33d8193b8916f8bd75c"
+  },
+  "d10_input_rtl": {
+    "VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+    "VX_cp_axil_regfile.sv": "b748eddcd2a33fcbf8299870ba9efdc5118d89149334a7edf9f3ebf7b0ebdac9",
+    "VX_afu_wrap.sv": "8102830fba0449569edff25cd30996fa2614e5a40e332b718bf1a6555100ff0f",
+    "VX_kmu.sv": "b6b5c44c5c7090d3ee602580e094bbfe7b6dcdf1725f8cced4d7632b3a5b3be8",
+    "VX_scheduler.sv": "37319d545ef9ea304439ceb1bdfe5e9ac0938c1056af1236117fff943df2be2c",
+    "vortex_afu.v": "08a84eef8a5c3a2011f8d3fc63b51de756a5f2e255bb6e39deada795827c1793"
+  },
+  "d12_build_sha256": "967d5688382006dabed9b9b4167421d9a02071f77600ceb7a52746e509b97a4e",
+  "d12_input_binding_sha256": "f7fe4505f0a389a591395050ab1f65af047294826555a46c7b8b0f9f16e301ef",
+  "d12_source": {
+    "sw/common/mem_alloc.h": "3efb41d6ae9359640304f73f5f8d5e422f2c5aa3096339761192bd9bd15eabbe",
+    "sw/runtime/common/common.h": "3504e28ddde5e0ab5f34de9dbe5f9b51ffc637cdb303c31f0d2ddd4f81b03c83",
+    "sw/runtime/common/device.cpp": "dbb0124855861148275928c946c5c9971994e01d73099fd2dc123e6ce643b8cc",
+    "sw/runtime/common/queue.cpp": "fb53e69273dcb01d286daa23ac7c84a677d3f78e98da030a831219399142df30",
+    "sw/runtime/common/vortex2_internal.h": "c1746f2bb62429d54df1318a5999e4f3b545fd3a502dc11ee9a109bccf20819e",
+    "sw/runtime/include/vortex2.h": "6b7bfcf4c040fcc5085f1a7682e0fa9ac74f6c81d491e421b240d1416dbdc753",
+    "sw/runtime/xrt/vortex.cpp": "0f5e4079b6888a3fd0502da40f3d7f76b5a9e6bb178de9516fed7874f64bff45",
+    "sw/runtime/common/vm.cpp": "bc82d4c52b4efe3719c10bc52e94463608903848fd68b0c26b94642c9450479c",
+    "sw/runtime/common/vm.h": "8b4cc226319685a7a8c150be7b4f1d90a831f14e5f402d6715c46d6b6e2af319"
+  },
+  "d12_patch_inventory": [
+    "build/sw/runtime/common.mk",
+    "source/sw/runtime/common/vm.cpp",
+    "source/sw/runtime/common/vm.h"
+  ],
+  "vm_build_enabled": 0,
+  "cp_dev_caps_offset": 4104,
+  "cp_caps_all_ones_fallback": true,
+  "args_slot_bytes": 4096,
+  "allocator_base": 65536,
+  "allocator_alignment_bytes": 64,
+  "live_vm": "NOT_RUN",
+  "live_staging_addresses": "NOT_RUN",
+  "formal_aligned_load": "BLOCKED"
+}

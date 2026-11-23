@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "checked_returned_files": 47,
+  "backends": {
+    "simx": {
+      "launches": 8,
+      "full_arrays": 24,
+      "payloads": 8
+    },
+    "rtlsim": {
+      "launches": 8,
+      "full_arrays": 24,
+      "payloads": 8
+    },
+    "xrtsim": {
+      "launches": 8,
+      "full_arrays": 24,
+      "payloads": 8
+    },
+    "u280-xrt": {
+      "launches": 8,
+      "full_arrays": 24,
+      "payloads": 8
+    }
+  },
+  "board_result_sha256": "41ea3f619ab8956b3da85cf595eacc51850472e934e58e8938b6bba9df97013b",
+  "board_transport_sha256": "f461189e81af6027fada437a41e9105b5457b196f4d69eb3eca25fa5dd6a1da9",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/c-v03-u280-closeout-20261120-v1/verify.py"
+  ],
+  "finished_at": "2026-11-20T14:39:20.818843+00:00",
+  "scope": "offline review of existing model captures and physical U280 returned files"
+}

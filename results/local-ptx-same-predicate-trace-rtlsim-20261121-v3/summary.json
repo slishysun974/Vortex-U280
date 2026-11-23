@@ -1,0 +1,1714 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "vadd_1024_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "vadd",
+        "--n",
+        "1024",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/aligned",
+      "started_at": "2026-11-21T13:33:16.739308+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_vadd_1024_aligned.log",
+      "finished_at": "2026-11-21T13:33:23.689667+00:00",
+      "elapsed_seconds": 6.941,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vadd_1024_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "vadd",
+        "--n",
+        "1024",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/1024/merged",
+      "started_at": "2026-11-21T13:33:25.779346+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_vadd_1024_merged.log",
+      "finished_at": "2026-11-21T13:33:32.788658+00:00",
+      "elapsed_seconds": 6.983,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy_1024_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "copy",
+        "--n",
+        "1024",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/aligned",
+      "started_at": "2026-11-21T13:33:34.315371+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_copy_1024_aligned.log",
+      "finished_at": "2026-11-21T13:33:43.474445+00:00",
+      "elapsed_seconds": 9.148,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy_1024_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "copy",
+        "--n",
+        "1024",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/1024/merged",
+      "started_at": "2026-11-21T13:33:44.560541+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_copy_1024_merged.log",
+      "finished_at": "2026-11-21T13:33:52.477346+00:00",
+      "elapsed_seconds": 7.89,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "affine_1024_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "affine",
+        "--n",
+        "1024",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/aligned",
+      "started_at": "2026-11-21T13:33:53.653789+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_affine_1024_aligned.log",
+      "finished_at": "2026-11-21T13:34:05.468722+00:00",
+      "elapsed_seconds": 11.808,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "affine_1024_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "affine",
+        "--n",
+        "1024",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/1024/merged",
+      "started_at": "2026-11-21T13:34:06.904194+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_affine_1024_merged.log",
+      "finished_at": "2026-11-21T13:34:18.297767+00:00",
+      "elapsed_seconds": 11.38,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vadd_16381_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "vadd",
+        "--n",
+        "16381",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/aligned",
+      "started_at": "2026-11-21T13:34:19.969770+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_vadd_16381_aligned.log",
+      "finished_at": "2026-11-21T13:36:04.952371+00:00",
+      "elapsed_seconds": 104.973,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "vadd_16381_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "vadd",
+        "--n",
+        "16381",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/vadd/16381/merged",
+      "started_at": "2026-11-21T13:36:25.373574+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_vadd_16381_merged.log",
+      "finished_at": "2026-11-21T13:37:41.161641+00:00",
+      "elapsed_seconds": 75.779,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy_16381_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "copy",
+        "--n",
+        "16381",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/aligned",
+      "started_at": "2026-11-21T13:37:56.503263+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_copy_16381_aligned.log",
+      "finished_at": "2026-11-21T13:39:15.434373+00:00",
+      "elapsed_seconds": 78.923,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "copy_16381_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "copy",
+        "--n",
+        "16381",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/copy/16381/merged",
+      "started_at": "2026-11-21T13:39:30.585152+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_copy_16381_merged.log",
+      "finished_at": "2026-11-21T13:40:50.524057+00:00",
+      "elapsed_seconds": 79.929,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "affine_16381_aligned",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/aligned/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/aligned",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "affine",
+        "--n",
+        "16381",
+        "--route",
+        "aligned"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/aligned",
+      "started_at": "2026-11-21T13:41:10.452136+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_affine_16381_aligned.log",
+      "finished_at": "2026-11-21T13:43:11.131972+00:00",
+      "elapsed_seconds": 120.657,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "affine_16381_merged",
+      "argv": [
+        "bash",
+        "-o",
+        "pipefail",
+        "-c",
+        "\"$@\" 2>&1 | gzip -1 > \"$0\"",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/merged/lsu.log.gz",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/trace.py",
+        "worker",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/merged",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--operator",
+        "affine",
+        "--n",
+        "16381",
+        "--route",
+        "merged"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-trace-rtlsim-20261121-v3/affine/16381/merged",
+      "started_at": "2026-11-21T13:43:33.752604+00:00",
+      "timeout_seconds": 420,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_affine_16381_merged.log",
+      "finished_at": "2026-11-21T13:45:10.696344+00:00",
+      "elapsed_seconds": 96.933,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "started_at": "2026-11-21T13:33:11.677728+00:00",
+  "backend": "rtlsim",
+  "build_sha256": "2f85c5730fa77fa5c552a828ed9957d594c0de3a243f6bd073d8d8bf948b6961",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate/trace.py",
+    "trace",
+    "--build",
+    "results/local-ptx-same-predicate-build-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-trace-rtlsim-20261121-v3",
+    "--backend",
+    "rtlsim"
+  ],
+  "script_sha256": "bdb58dd54f99bdce089d47ea2a41ea48cf85641064dba9b84c91f6524face77b",
+  "binding_sha256": "9f770fe994c180fad9b30e781510d82e6da7e64a3ee8516e48aba73bad53520f",
+  "debug_libraries": {
+    "config.mk": "5380619c426677ea46222179ce76adf5f354098841f210dc43db91d1afd2b449",
+    "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+    "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+    "sw/runtime/libvortex.so": "0aff3868e7d255a8088de95a82b59e86ff4594e7b4578bebcbd78db3d937c70d",
+    "sw/runtime/libvortex-rtlsim.so": "70a9d27b90bd52281819c5a6fb8fa2041102e25673fb617e87e2ac637c2e21be",
+    "sw/runtime/librtlsim.so": "be0e00f0bcf91f264df8574ca2f5517fb12b8f23978c35e2ac938c0c441568b8"
+  },
+  "cases": [
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 3072,
+      "lsu_packets": 2048,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x180000078",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000090",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000a4",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x180000078",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000090",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000a4",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x180000078",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000090",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000a4",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x180000078",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000090",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000a4",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1503c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 2048,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "vadd",
+      "n": 1024,
+      "route": "aligned",
+      "image_sha256": "94733e4bd8ee44d228bcd4e0db0de506368545ced429a4e2396011e8bce90c7a",
+      "raw_trace_sha256": "bbbf9d978860d3ef7d376b0711dd531ec318e9f3de5d006cedbdca05cfd5731f",
+      "sites": {
+        "6442451064": [
+          "LD",
+          "x"
+        ],
+        "6442451088": [
+          "LD",
+          "y"
+        ],
+        "6442451108": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 3,
+        "ld": 3,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 3,
+        "beqz": 3,
+        "add": 4,
+        "vx_join": 3,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "e615b902e9f68d8b91e4d329c35d639b27e9ce0468d212ad412390f908031927",
+      "output_sha256": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 3072,
+      "lsu_packets": 2048,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000008c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000008c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000008c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000008c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1503c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 2048,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "vadd",
+      "n": 1024,
+      "route": "merged",
+      "image_sha256": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+      "raw_trace_sha256": "afe6db05f948d533fbf7ca6d99feca2200040a731d3452ea782b995600ef6f2d",
+      "sites": {
+        "6442451068": [
+          "LD",
+          "x"
+        ],
+        "6442451072": [
+          "LD",
+          "y"
+        ],
+        "6442451084": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 3,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 3,
+        "slli": 1,
+        "srli": 1,
+        "add": 4,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "e615b902e9f68d8b91e4d329c35d639b27e9ce0468d212ad412390f908031927",
+      "output_sha256": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 2048,
+      "lsu_packets": 1536,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000088",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000088",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000088",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000088",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 1024,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "copy",
+      "n": 1024,
+      "route": "aligned",
+      "image_sha256": "54279b4dfda7522f4931a1685e8dec1cda26cc422dbad8a970acdd4b00ea5243",
+      "raw_trace_sha256": "2a0868f16c76173c45efd1f893411810ebf2536ca6b7173f718f33d75ae06b9e",
+      "sites": {
+        "6442451060": [
+          "LD",
+          "x"
+        ],
+        "6442451080": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 2,
+        "ld": 2,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 2,
+        "beqz": 2,
+        "add": 2,
+        "vx_join": 2,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "13174291c236125d52f798e9aa9f5b3c2b30ae09e9801f5cf7073cbfca5fcd45",
+      "output_sha256": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 2048,
+      "lsu_packets": 1536,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000007c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000007c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000007c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x18000007c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 1024,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "copy",
+      "n": 1024,
+      "route": "merged",
+      "image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+      "raw_trace_sha256": "321058e4a4f9b9e6de8b91e0dd223a11e76d76cae464a758bcf8e9ceeccb1690",
+      "sites": {
+        "6442451060": [
+          "LD",
+          "x"
+        ],
+        "6442451068": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 2,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 2,
+        "slli": 1,
+        "srli": 1,
+        "add": 2,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "13174291c236125d52f798e9aa9f5b3c2b30ae09e9801f5cf7073cbfca5fcd45",
+      "output_sha256": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 3072,
+      "lsu_packets": 2304,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000ac",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000ac",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000ac",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x1800000ac",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1503c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 2048,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "affine",
+      "n": 1024,
+      "route": "aligned",
+      "image_sha256": "cc482ad7b537dbbbbce697d9c6da0d1258c5d1f01e5158b5524a6dc094325f10",
+      "raw_trace_sha256": "571934b2527a0ae27c4cd2d5ff9a26a74efef0531265f0651fcef315904580ac",
+      "sites": {
+        "6442451068": [
+          "LD",
+          "x"
+        ],
+        "6442451092": [
+          "LD",
+          "y"
+        ],
+        "6442451116": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "ld": 3,
+        "lw": 4,
+        "mul": 2,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 3,
+        "beqz": 3,
+        "add": 4,
+        "vx_join": 3,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "597c92771e6f2643599486a11c07677918755cdfdcec0e3fb953389134aaee6e",
+      "output_sha256": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 1024,
+      "false_threads": 0,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 3072,
+      "lsu_packets": 2304,
+      "last_warp": {
+        "1020": [
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000084",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13030",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15030",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1021": [
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000084",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13034",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15034",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1022": [
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x11038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000084",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x13038",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x15038",
+            "lane0_first_mask": "1111"
+          }
+        ],
+        "1023": [
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x1103c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000084",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x1303c",
+            "lane0_first_mask": "1111"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x1503c",
+            "lane0_first_mask": "1111"
+          }
+        ]
+      },
+      "active_loads": 2048,
+      "active_stores": 1024,
+      "dispatched_warps": 256,
+      "operator": "affine",
+      "n": 1024,
+      "route": "merged",
+      "image_sha256": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+      "raw_trace_sha256": "1333243a8261ccaa78126d066d91673eaa5bacef72f5696cbc38fabae14a9d69",
+      "sites": {
+        "6442451072": [
+          "LD",
+          "x"
+        ],
+        "6442451076": [
+          "LD",
+          "y"
+        ],
+        "6442451092": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 4,
+        "mul": 2,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 3,
+        "slli": 1,
+        "srli": 1,
+        "add": 4,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "597c92771e6f2643599486a11c07677918755cdfdcec0e3fb953389134aaee6e",
+      "output_sha256": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 49143,
+      "lsu_packets": 32768,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x180000078",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000090",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x1800000a4",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x42030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 32762,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "vadd",
+      "n": 16381,
+      "route": "aligned",
+      "image_sha256": "94733e4bd8ee44d228bcd4e0db0de506368545ced429a4e2396011e8bce90c7a",
+      "raw_trace_sha256": "489bec12dfc612e7ecfbfe8b77f5ec1cb5f9c3e10f2a5fd70df28f5d23f0854b",
+      "sites": {
+        "6442451064": [
+          "LD",
+          "x"
+        ],
+        "6442451088": [
+          "LD",
+          "y"
+        ],
+        "6442451108": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 3,
+        "ld": 3,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 3,
+        "beqz": 3,
+        "add": 4,
+        "vx_join": 3,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "e3b31eaac3b32d6ec0ecc72db898db2db6a22430b953985744a40e18b69e24bd",
+      "output_sha256": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 49143,
+      "lsu_packets": 32768,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x18000008c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x42030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 32762,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "vadd",
+      "n": 16381,
+      "route": "merged",
+      "image_sha256": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+      "raw_trace_sha256": "a4ed1444a4a5df0d416f9abdbcbde969aa89da5b7a98125383083455063ce1c8",
+      "sites": {
+        "6442451068": [
+          "LD",
+          "x"
+        ],
+        "6442451072": [
+          "LD",
+          "y"
+        ],
+        "6442451084": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 3,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 3,
+        "slli": 1,
+        "srli": 1,
+        "add": 4,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "e3b31eaac3b32d6ec0ecc72db898db2db6a22430b953985744a40e18b69e24bd",
+      "output_sha256": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 32762,
+      "lsu_packets": 24576,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000088",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 16381,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "copy",
+      "n": 16381,
+      "route": "aligned",
+      "image_sha256": "54279b4dfda7522f4931a1685e8dec1cda26cc422dbad8a970acdd4b00ea5243",
+      "raw_trace_sha256": "8ed7e132856c984c9631a4fd08afc31505f70bb043c4001f0149a20dd2478cd8",
+      "sites": {
+        "6442451060": [
+          "LD",
+          "x"
+        ],
+        "6442451080": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 2,
+        "ld": 2,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 2,
+        "beqz": 2,
+        "add": 2,
+        "vx_join": 2,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "8a278790167ce5d0eab16e73b270d4b498696acf5872f67080a6e85a6b213e24",
+      "output_sha256": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 32762,
+      "lsu_packets": 24576,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x180000074",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x18000007c",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 16381,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "copy",
+      "n": 16381,
+      "route": "merged",
+      "image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+      "raw_trace_sha256": "82e10bf0ee3d86379937f59f6b7d54ee2edd06b5ad83bfc27121a47b5d8eacab",
+      "sites": {
+        "6442451060": [
+          "LD",
+          "x"
+        ],
+        "6442451068": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 2,
+        "mul": 1,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 2,
+        "slli": 1,
+        "srli": 1,
+        "add": 2,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "8a278790167ce5d0eab16e73b270d4b498696acf5872f67080a6e85a6b213e24",
+      "output_sha256": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 49143,
+      "lsu_packets": 36864,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x18000007c",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x1800000ac",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x42030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 32762,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "affine",
+      "n": 16381,
+      "route": "aligned",
+      "image_sha256": "cc482ad7b537dbbbbce697d9c6da0d1258c5d1f01e5158b5524a6dc094325f10",
+      "raw_trace_sha256": "de18a998944fbb8b99fe24ea95fcf770982c073cfc969c4d46481986b16d91b7",
+      "sites": {
+        "6442451068": [
+          "LD",
+          "x"
+        ],
+        "6442451092": [
+          "LD",
+          "y"
+        ],
+        "6442451116": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "ld": 3,
+        "lw": 4,
+        "mul": 2,
+        "addw": 1,
+        "sltu": 1,
+        "slli": 1,
+        "srli": 1,
+        "vx_split_n": 3,
+        "beqz": 3,
+        "add": 4,
+        "vx_join": 3,
+        "sw": 1,
+        "ret": 1
+      },
+      "params_sha256": "7bde42df3f2002cd852bea8a93b116b8997aaeb1003e00e50116c78b5e03c708",
+      "output_sha256": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0"
+    },
+    {
+      "status": "PASS",
+      "active_threads": 16381,
+      "false_threads": 3,
+      "false_predicate_array_requests": 0,
+      "active_array_requests": 49143,
+      "lsu_packets": 36864,
+      "last_warp": {
+        "16380": [
+          {
+            "pc": "0x180000080",
+            "operation": "LD",
+            "buffer": "x",
+            "address": "0x20030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000084",
+            "operation": "LD",
+            "buffer": "y",
+            "address": "0x31030",
+            "lane0_first_mask": "1000"
+          },
+          {
+            "pc": "0x180000094",
+            "operation": "ST",
+            "buffer": "z",
+            "address": "0x42030",
+            "lane0_first_mask": "1000"
+          }
+        ],
+        "16381": [],
+        "16382": [],
+        "16383": []
+      },
+      "active_loads": 32762,
+      "active_stores": 16381,
+      "dispatched_warps": 4096,
+      "operator": "affine",
+      "n": 16381,
+      "route": "merged",
+      "image_sha256": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+      "raw_trace_sha256": "6dc978ed97569a198d96557007f199d2a0560d1adfee5877a6c2ed02be757ea4",
+      "sites": {
+        "6442451072": [
+          "LD",
+          "x"
+        ],
+        "6442451076": [
+          "LD",
+          "y"
+        ],
+        "6442451092": [
+          "ST",
+          "z"
+        ]
+      },
+      "static_opcodes": {
+        "addi": 2,
+        "sd": 1,
+        "csrr": 3,
+        "lw": 4,
+        "mul": 2,
+        "addw": 1,
+        "sltu": 1,
+        "vx_split_n": 1,
+        "beqz": 1,
+        "ld": 3,
+        "slli": 1,
+        "srli": 1,
+        "add": 4,
+        "sw": 1,
+        "vx_join": 1,
+        "ret": 1
+      },
+      "params_sha256": "7bde42df3f2002cd852bea8a93b116b8997aaeb1003e00e50116c78b5e03c708",
+      "output_sha256": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0"
+    }
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-11-21T13:45:29.899606+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "date": "2026-11-23",
+  "scope": "Public checkout runner self-tests and offline fixture integrity",
+  "new_device_execution": "NOT_RUN",
+  "runners": {
+    "wsl": {
+      "argv": [
+        "wsl",
+        "-d",
+        "Vortex-AB-Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/Vortex-U280/build/github-public-20261123-v4",
+        "--",
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "total": 316,
+      "passed": 293,
+      "skipped": 23,
+      "elapsed_seconds": 41.909,
+      "output": "Ran 316 tests in 41.909s\n\nOK (skipped=23)",
+      "local_log": "wsl-complete.log"
+    },
+    "windows": {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "total": 316,
+      "passed": 283,
+      "skipped": 33,
+      "elapsed_seconds": 65.047,
+      "output": "Ran 316 tests in 65.047s\n\nOK (skipped=33)",
+      "local_log": "windows-complete.log"
+    }
+  },
+  "bundle_check": {
+    "argv": [
+      "python",
+      "-B",
+      "results/u280-aligned-predicate-preflight-20261121-v1/bundle/verify_bundle.py",
+      "results/u280-aligned-predicate-preflight-20261121-v1/bundle"
+    ],
+    "exit_code": 0,
+    "output": {
+      "status": "PASS",
+      "members": 94,
+      "workloads": 6,
+      "candidate_images": 6,
+      "planned_pairs": 210,
+      "planned_launches": 420,
+      "board_execution": "NOT_RUN",
+      "formal_aligned_load": "BLOCKED",
+      "plan_sha256": "2ec4b4e20b49f34c1ee5b5b566850934d46679cb7c0b63a9bdef9012ba1c31ae"
+    },
+    "local_log": "bundle.log"
+  },
+  "frozen_corpus_check": {
+    "method": "Recalculate SHA-256 for each file in both frozen manifests",
+    "exit_code": 0,
+    "output": {
+      "manifest_entries": {
+        "ae-v03-frozen-20261121-v1": 98,
+        "e-v14-frozen-20261122-v1": 95
+      },
+      "mismatches": []
+    },
+    "local_log": "frozen-corpus.log"
+  },
+  "initial_public_checkout": {
+    "status": "FAIL",
+    "cause": "Fixed paired-test fixture omitted",
+    "logs": [
+      "windows.log",
+      "wsl.log"
+    ],
+    "exit_codes": [
+      1,
+      1
+    ]
+  }
+}

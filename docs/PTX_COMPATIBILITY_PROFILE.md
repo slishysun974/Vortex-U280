@@ -1,5 +1,7 @@
 # PTX → Vortex 兼容性规范
 
+2026-11-20，当前实现采用 `ptx-vx-p0-v0.2-draft`，静态检查修订为 `p0-static-v2`。17 条指令各自的正例、边界、拒绝样例和运行层级见 [当前实现接收表](D_P0_CLOSEOUT.md)。以下 v0.1 文本保留最初的设计约定。
+
 版本：`ptx-vx-p0-v0.1-draft`；日期：2026-11-07。状态：设计目标，尚未实现或验收。首次执行时由 A/C/D 核对并冻结，E 接收测试；支持范围变化必须升版。
 
 2026-11-08 实施补充：本文保留 v0.1 设计契约；新的前端采用独立 `ptx-vx-p0-v0.2-draft`，明确首版语法与保守静态检查范围，见 [版本和接收说明](PTX_FRONTEND_PROGRESS.md) 及 [机器可读 profile](../configs/ptx_frontend/v1/profile.json)。生成物是不可装载的 C++ 语义包，未接入 Vortex 后端；根 target caps 的旧 profile 不因此自动更新。
@@ -106,6 +108,8 @@ vadd 的项目参数 ABI `ptx-vx-args-v1` 示例（独立于旧 AEC ABI）：
 | 28 | padding，必须清零 | 4 | — |
 
 此例 payload 为 32 byte、小端；参数布局算法为按声明顺序自然对齐，最终按最大字段对齐补齐。D 生成布局，C 的设备 wrapper 从这个 payload 读取参数；如果上游启动结构另带 grid/entry 等字段，单独封装，不能把上表直接冒充上游原生参数结构。其他 kernel 必须有自己的 manifest，不能复用 vadd 的固定偏移。
+
+RISC-V 设备参数的读取模式由独立版本的 [设备参数读取契约](PTX_DEVICE_PARAMETER_ACCESS.md) 决定。当前对齐读取需要固定 runtime 的设备基址保证和该字段的自然对齐。默认模块使用逐字节读取。
 
 默认测试 B=32、G=max(1,ceil(N/32))，也测能力允许的其他 B，验证线程编号不是写死。N=0 仍使用有效非零分配并正常启动一个 block：所有线程执行索引和比较，所有访存谓词均为假；不能通过禁用所有硬件 lane 或跳过 launch 代替此测试。所有数组互不重叠，长度至少 `max(N,1)+guard` 元素，guard 内容固定。
 

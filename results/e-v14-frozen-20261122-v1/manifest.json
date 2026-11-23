@@ -1,0 +1,545 @@
+{
+  "cases": [
+    {
+      "id": "copy-0",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 2,
+        "z": 7
+      },
+      "block": 1,
+      "grid": 3,
+      "n": 0,
+      "alpha": 0,
+      "selected": 0
+    },
+    {
+      "id": "copy-1",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 5,
+        "z": 10
+      },
+      "block": 3,
+      "grid": 5,
+      "n": 1,
+      "alpha": 4294967295,
+      "selected": 2
+    },
+    {
+      "id": "copy-2",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 8,
+        "z": 2
+      },
+      "block": 7,
+      "grid": 3,
+      "n": 18,
+      "alpha": 2147483649,
+      "selected": 3
+    },
+    {
+      "id": "copy-3",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 11,
+        "z": 5
+      },
+      "block": 16,
+      "grid": 2,
+      "n": 32,
+      "alpha": 1,
+      "selected": 15
+    },
+    {
+      "id": "copy-4",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 3,
+        "z": 8
+      },
+      "block": 31,
+      "grid": 3,
+      "n": 65,
+      "alpha": 7,
+      "selected": 29
+    },
+    {
+      "id": "copy-5",
+      "op": "copy",
+      "roles": [
+        "x",
+        "z"
+      ],
+      "offsets": {
+        "x": 6,
+        "z": 11
+      },
+      "block": 32,
+      "grid": 4,
+      "n": 127,
+      "alpha": 4294967294,
+      "selected": 32
+    },
+    {
+      "id": "vadd-0",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 2,
+        "y": 7,
+        "z": 12
+      },
+      "block": 1,
+      "grid": 3,
+      "n": 0,
+      "alpha": 0,
+      "selected": 0
+    },
+    {
+      "id": "vadd-1",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 5,
+        "y": 10,
+        "z": 4
+      },
+      "block": 3,
+      "grid": 5,
+      "n": 1,
+      "alpha": 4294967295,
+      "selected": 2
+    },
+    {
+      "id": "vadd-2",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 8,
+        "y": 2,
+        "z": 7
+      },
+      "block": 7,
+      "grid": 3,
+      "n": 18,
+      "alpha": 2147483649,
+      "selected": 3
+    },
+    {
+      "id": "vadd-3",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 11,
+        "y": 5,
+        "z": 10
+      },
+      "block": 16,
+      "grid": 2,
+      "n": 32,
+      "alpha": 1,
+      "selected": 15
+    },
+    {
+      "id": "vadd-4",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 3,
+        "y": 8,
+        "z": 2
+      },
+      "block": 31,
+      "grid": 3,
+      "n": 65,
+      "alpha": 7,
+      "selected": 29
+    },
+    {
+      "id": "vadd-5",
+      "op": "vadd",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 6,
+        "y": 11,
+        "z": 5
+      },
+      "block": 32,
+      "grid": 4,
+      "n": 127,
+      "alpha": 4294967294,
+      "selected": 32
+    },
+    {
+      "id": "affine-0",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 2,
+        "y": 7,
+        "z": 12
+      },
+      "block": 1,
+      "grid": 3,
+      "n": 0,
+      "alpha": 0,
+      "selected": 0
+    },
+    {
+      "id": "affine-1",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 5,
+        "y": 10,
+        "z": 4
+      },
+      "block": 3,
+      "grid": 5,
+      "n": 1,
+      "alpha": 4294967295,
+      "selected": 2
+    },
+    {
+      "id": "affine-2",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 8,
+        "y": 2,
+        "z": 7
+      },
+      "block": 7,
+      "grid": 3,
+      "n": 18,
+      "alpha": 2147483649,
+      "selected": 3
+    },
+    {
+      "id": "affine-3",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 11,
+        "y": 5,
+        "z": 10
+      },
+      "block": 16,
+      "grid": 2,
+      "n": 32,
+      "alpha": 1,
+      "selected": 15
+    },
+    {
+      "id": "affine-4",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 3,
+        "y": 8,
+        "z": 2
+      },
+      "block": 31,
+      "grid": 3,
+      "n": 65,
+      "alpha": 7,
+      "selected": 29
+    },
+    {
+      "id": "affine-5",
+      "op": "affine",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 6,
+        "y": 11,
+        "z": 5
+      },
+      "block": 32,
+      "grid": 4,
+      "n": 127,
+      "alpha": 4294967294,
+      "selected": 32
+    },
+    {
+      "id": "predicate_turn-0",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 2,
+        "y": 7,
+        "z": 12
+      },
+      "block": 1,
+      "grid": 3,
+      "n": 0,
+      "alpha": 0,
+      "selected": 0
+    },
+    {
+      "id": "predicate_turn-1",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 5,
+        "y": 10,
+        "z": 4
+      },
+      "block": 3,
+      "grid": 5,
+      "n": 1,
+      "alpha": 4294967295,
+      "selected": 2
+    },
+    {
+      "id": "predicate_turn-2",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 8,
+        "y": 2,
+        "z": 7
+      },
+      "block": 7,
+      "grid": 3,
+      "n": 18,
+      "alpha": 2147483649,
+      "selected": 3
+    },
+    {
+      "id": "predicate_turn-3",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 11,
+        "y": 5,
+        "z": 10
+      },
+      "block": 16,
+      "grid": 2,
+      "n": 32,
+      "alpha": 1,
+      "selected": 15
+    },
+    {
+      "id": "predicate_turn-4",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 3,
+        "y": 8,
+        "z": 2
+      },
+      "block": 31,
+      "grid": 3,
+      "n": 65,
+      "alpha": 7,
+      "selected": 29
+    },
+    {
+      "id": "predicate_turn-5",
+      "op": "predicate_turn",
+      "roles": [
+        "x",
+        "y",
+        "z"
+      ],
+      "offsets": {
+        "x": 6,
+        "y": 11,
+        "z": 5
+      },
+      "block": 32,
+      "grid": 4,
+      "n": 127,
+      "alpha": 4294967294,
+      "selected": 32
+    }
+  ],
+  "files": {
+    "affine-0/expected-z.bin": "3d139fef6ca4c96551c1228952947d585cd215bf3b094cdf2751172fbb1bfe7c",
+    "affine-0/x.bin": "345b3f06b29712ff5c4718255afcdf2df7fb963a5c0e0642fb91a0351bc35248",
+    "affine-0/y.bin": "8da8ae6e29d6263297a2a1af8e67c969808a37be34bf1cb20abc88e4a6ac34f3",
+    "affine-0/z.bin": "3d139fef6ca4c96551c1228952947d585cd215bf3b094cdf2751172fbb1bfe7c",
+    "affine-1/expected-z.bin": "733320d74d2eaee3ceaa97aab9800133f40fc3dce5aa47d199baefc8f25ffe02",
+    "affine-1/x.bin": "0859f6c1d99447f0566a39e94f1811c3ef24c2c1f1a9338e152b1b565ecc49d1",
+    "affine-1/y.bin": "a94be72cb3bbc1963498883959e6757a7183c062c41935cece94be6c6bea3865",
+    "affine-1/z.bin": "0d77477cf1b48dda6b4ebc7329f4d3e6b42e1b590b4841b116fc4ba14ab79625",
+    "affine-2/expected-z.bin": "1cf134664e9b31740e6a51f04bcd9d08034aa938e5a58d6497357271f49c1140",
+    "affine-2/x.bin": "72841eed88b20629468b152f626749938897d704f80a8895f0a18625adf96e47",
+    "affine-2/y.bin": "4851d43102da79faade5e026b3352a7bedbaa920cf44ea718ebd6a0752e83f96",
+    "affine-2/z.bin": "a65393d70601ce0d8b87648811521b75981e3323a3def8cd13aa4914c182b17e",
+    "affine-3/expected-z.bin": "efad6624da00b0e1dae35f2d5ed52c81cecd29358c5e510bf675478eef57fa36",
+    "affine-3/x.bin": "65dc6d16b1d4b8a4999dd0125eeafa8563d11b82edddc10a1dc8c18114bfe4b7",
+    "affine-3/y.bin": "0f2fc4007bfa7f2a4e0eaa77027b0d3e9653a47b0390d8156706d27aae23c3bd",
+    "affine-3/z.bin": "bd75c212f49b95b9b1de239caf63c51a6a794a64f6a673ecd371b859d1c634ed",
+    "affine-4/expected-z.bin": "d5d48b1dc90b24dd386f40a878d59ec44b9172fd789e4df055ba9c35de7b59f5",
+    "affine-4/x.bin": "20e575ea3475fe19bf96efeedcb3510635d50142324c3ca42f0b0a72528286e5",
+    "affine-4/y.bin": "576cc20673a80903cb946e5ca13c8a7bf1ea57314228a8158f961cca0f4168e0",
+    "affine-4/z.bin": "bc4ab675dc986c0573cb8de4676265bd6a527e062a3fcd17d950b525ec52a104",
+    "affine-5/expected-z.bin": "73d53053d5b872169046d1ea1954f037761ca69fe4bafddb44172acd03170162",
+    "affine-5/x.bin": "8c2c0d66362a998d198163e4c9ad012eddc4dc30c17a7340fcfe968cb9eaa827",
+    "affine-5/y.bin": "2fd70ccb94546d0bfede88e6a5453cf12bdd9d64f05a00987cca957c830580fa",
+    "affine-5/z.bin": "2f1f0074e92ee9841dad1045aab9aa04acd3a43e8e6d67df333f500af38e59b1",
+    "copy-0/expected-z.bin": "bba480390ec11cc94065f3f954c49707e1b7b219e1d3d1ebed8dfce76f0f273f",
+    "copy-0/x.bin": "9503a7b9d17f1f7a5371e608295939ef4aec8e3de7a9ed953e3dc127fb6a44da",
+    "copy-0/z.bin": "bba480390ec11cc94065f3f954c49707e1b7b219e1d3d1ebed8dfce76f0f273f",
+    "copy-1/expected-z.bin": "e3bf838b0668149d60f75274dfe53e9a98a4379901cfda8c1f10000f9a6cf099",
+    "copy-1/x.bin": "8936d57c3dce64f95b86cc7ff884bd59f695577becb2f0d617b1610346cf1ee1",
+    "copy-1/z.bin": "a4d3cc7a5fce20879a148e6bcf78c79cadfe18a59088ac56ea5ba1233054f8ef",
+    "copy-2/expected-z.bin": "68820a385be969a80496e74c9c818bfdac898e8e12e5afa8335879b8d186b78c",
+    "copy-2/x.bin": "2d4504dd9f69a5621d442351ca54f5990608c83faf0802acece98e188aa2fa49",
+    "copy-2/z.bin": "6953d8ce589500697147d0076ffcc16e1633d67d9f1428ca71c9d6517b7f2dc8",
+    "copy-3/expected-z.bin": "41bb000e05edcefa55fcd2f54f97dc765722b1edb403ea3900378a14b4162740",
+    "copy-3/x.bin": "a1ac63d4d0343442478ee8b0116168a806e60b7fd45c12f5a2a8c76e007975ef",
+    "copy-3/z.bin": "ec40beaf33a6aeed2e6ff200d25015b6d560945c45c85e3fcdb3da835d2cf320",
+    "copy-4/expected-z.bin": "1646ab1cad2e41ed63b06a5eba23083c527dd43ad49aee2fab09e35ea18c6383",
+    "copy-4/x.bin": "3afa2df53199c2de791309476d3ac25122e74a2b83362aa0f0b9020e77a11098",
+    "copy-4/z.bin": "30bbbd61ee7cfd9e3f740e360a2c9cec3eb3d853f292970796ceda40c815bf7e",
+    "copy-5/expected-z.bin": "5acfa2311e96789558f3ff65852c9c381095fcae8c7fbef8434958f453a60845",
+    "copy-5/x.bin": "d69a1e60f85992497bb9aa12e474e20fe300bb2e91168479ab0aacc97877cd95",
+    "copy-5/z.bin": "bdd00c35e66d0aa20085055f75c81892c010d5fc275703fcdbdcc17341c33501",
+    "oracle.py": "7bd942ffefb44df07943a3bbdc33d4e6460f31a0f11bec103d67fa6e6d2da0fc",
+    "predicate_turn-0/expected-z.bin": "bf49cc8d0973ab892d8f7b671e99f31aec88830e8ce6d4100cdc301ff48d3bad",
+    "predicate_turn-0/x.bin": "bb086478a2d74c2dbb51d2f4ea85bda7432b63e4c361db614a5da8f2e808fb94",
+    "predicate_turn-0/y.bin": "7fa5e88ca8ed4552963d64b331d8414413a09e33fef1fb9c48a404fbfe8e8c58",
+    "predicate_turn-0/z.bin": "492122969d9470f55c2f9e5367ee0048457d0199882725c4e9837c68bb5405df",
+    "predicate_turn-1/expected-z.bin": "3b8ff34389a0dfbeda920d90a2abb8553c4e9613ed26e006e6c16d72e2e5cebc",
+    "predicate_turn-1/x.bin": "11ab1bfb6a2bc54c8f0bc025926bfd023cd018fd2fd8ad88a6e620bbcd8bdfe1",
+    "predicate_turn-1/y.bin": "2711779495f406134d1168bb966c5d2f6273aa08ea6ba4009fb6c761c630edcb",
+    "predicate_turn-1/z.bin": "b8df9c2034895a8033f12f87f15925cdf08f1c4ad93f2dfaa736ee23017c57d3",
+    "predicate_turn-2/expected-z.bin": "8ff4649e68dde4f7bd0cfd0ef71e805bfb9148edc80008bb4707a484f7ede9b9",
+    "predicate_turn-2/x.bin": "d0638225b006cf44b9f5defba1457173636857dd5438528b0c21d75b2eafb6ba",
+    "predicate_turn-2/y.bin": "472450e342abc7e81ebc3e1ddad0655f3cb5da073cfe905a8d21d10ab20cd1cf",
+    "predicate_turn-2/z.bin": "dabdea2037137534b411a8e4971017d7fa212b5bd1e64ab3a514bac0e121e436",
+    "predicate_turn-3/expected-z.bin": "b8ea1e87e6a724fcc4b8964331a50e5ec65af3c0516628b54789fc1f6d320cf2",
+    "predicate_turn-3/x.bin": "bc078e55efb07f22a7e98c5aa278f4b8277f8ddf53018521c78a55242a389d5a",
+    "predicate_turn-3/y.bin": "a92454dbc76922bea92cb42c95545fb44e78f6bafd95ac7fde54f901e7c884d7",
+    "predicate_turn-3/z.bin": "007a3559bbd6682e38e322b58d26501936071f6db52197cbed4df7784662b7e5",
+    "predicate_turn-4/expected-z.bin": "fe74f1683891b26556f2a252bdeb35fae794441e5a43a5e6f3ba3fa2becb7f92",
+    "predicate_turn-4/x.bin": "dcd27c15a18b4c8db69fcd7abc8aa39b0a5e9adbb1db8fda4fee219670599fd3",
+    "predicate_turn-4/y.bin": "cd7bda6c4bf4290309a2e44c69c4a23eda09f5a0e83f558f1d72778beec57647",
+    "predicate_turn-4/z.bin": "d9c2d3537ee1299534e7ea324e3f289a787c33481c994b6bab4f1050bb96e18f",
+    "predicate_turn-5/expected-z.bin": "0821f937ae20b603bc1262a684deea11db394afbdb71990ee97790b9f817fcab",
+    "predicate_turn-5/x.bin": "501142f261f585df13778bbebe75f6037c3ab62d238b9e1946e42901cbe36049",
+    "predicate_turn-5/y.bin": "6b8af25fb46bb982f5ffb05e9f719bd971f90ea1b8a6e14414f614beb0dbbf66",
+    "predicate_turn-5/z.bin": "500fdd6fea9aacdb65389b91a1b0738059bc26e8883baa00ea7ba25a68d7a344",
+    "sources/affine.ptx": "51065e89d9aba0bd58c01e250186835acf1f9f99e0ff23e85b3201d58c25b0c3",
+    "sources/copy.ptx": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c",
+    "sources/predicate_turn.ptx": "d643dbc1d0db0dd4d4f089a858b2a160bd41e26f2c46e3fa9c6e7bbe6de4b665",
+    "sources/vadd.ptx": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1",
+    "vadd-0/expected-z.bin": "0a3456e5be9a286d7948d1909b43ed2879a2a062bbf0890a0be2c4f4ea11278a",
+    "vadd-0/x.bin": "e410fb7f1bb2bce9d8f78ffaceb43675a54bec51a8e0c9095b994fa0c64eb787",
+    "vadd-0/y.bin": "b0ccbdfa079b228d1d0067c7f7c27182fd9cb03eb1b4723a12ebc277d74fb68d",
+    "vadd-0/z.bin": "0a3456e5be9a286d7948d1909b43ed2879a2a062bbf0890a0be2c4f4ea11278a",
+    "vadd-1/expected-z.bin": "d7262b25f02b06a71a2e6bd936ec15dc438b1c9d3168b7885c1587c0a2951987",
+    "vadd-1/x.bin": "5300f6a88b2369fa2f100ebfded2c08cf0927493aebc42b7e6f95a811b426171",
+    "vadd-1/y.bin": "1df288f3b549ef2ee958957d090f7a8fd08a34c60d9bb934942959b68ed6f344",
+    "vadd-1/z.bin": "b7f44e7ca0ee7716c8bf19a3972525e8f71f367f6945a24494cdd47d58ab0e33",
+    "vadd-2/expected-z.bin": "2e000fc6567044b324e6d3f2ec49475e91198318560fa559bf59deffb6216f76",
+    "vadd-2/x.bin": "ed1c2598f56339e0d5ef51d5f8f54e52848ec69245f56bf179b416a6bee0e992",
+    "vadd-2/y.bin": "603f5349853d9fb0fd9b934df3d48ced70a80c34f2ee48fdb9bf238d00399960",
+    "vadd-2/z.bin": "09c7a2e643a0898e5d7b4b2a04749b238966465fc8833feccf08d9338c0b5eb7",
+    "vadd-3/expected-z.bin": "d3d44f54d62698301ecdffb4af698c536c88914408d76e58b789ec5231a09059",
+    "vadd-3/x.bin": "620b7568f7a5579316635d3dd6ecd0dcee90c1b2ca5025c1929f2dbf9b4001a3",
+    "vadd-3/y.bin": "3d5b5b43b8a88612c02fe280145f0a1fdc577da24cb6390a851439d3ffb2f6c5",
+    "vadd-3/z.bin": "e58aaddf54a1ee06bac9bdd3b7c9248edf13345fc99e069f929c4c556556d448",
+    "vadd-4/expected-z.bin": "05824586adbb2808f59a9310e52c8ab7935e12f3aad6cf3383eb9cc44689e4b3",
+    "vadd-4/x.bin": "ba364bb21a23aa760e8652f6fd7c6f7e1fc1d106095bbc47e1aa35f7377d120d",
+    "vadd-4/y.bin": "37cd8cab7251d036201f8340650fc36ce3975733e6ac610bb6a0f8148a392ea0",
+    "vadd-4/z.bin": "3fcd434697835e482e8a57c51a909765d78fd6ec42e5e5d15c768672fda97ee2",
+    "vadd-5/expected-z.bin": "5f802059c3cc00e8d9b9ccbd12e5ceec5b8b2d49f45d809af6ba8decfcfe291e",
+    "vadd-5/x.bin": "ecce15fcb17ed63175fd2b61db2bfd2a2647b522d89bc44a0dae298df3fd976f",
+    "vadd-5/y.bin": "0a58c1e5955a04d7b553f21ccf78349ec48514ddd26d4430f99e2e0430dccae0",
+    "vadd-5/z.bin": "4e1badf88e445056d3e50ea4988b4e1e4ad1e3128c9292423f06e5715de77c2c"
+  }
+}

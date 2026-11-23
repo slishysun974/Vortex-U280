@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "exit_code": 1,
+  "error": "missing device compiler command: 06_board_native_device_build.log",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/u280-perf-closeout-20261121-v1/verify.py"
+  ],
+  "finished_at": "2026-11-21T11:43:35.814473+00:00"
+}

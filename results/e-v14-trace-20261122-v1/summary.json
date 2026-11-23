@@ -1,0 +1,1012 @@
+{
+  "status": "PASS",
+  "argv": [
+    "experiments/e-v14-local/trace_local.py",
+    "results/e-v14-trace-20261122-v1",
+    "results/e-v14-local-20261122-v1",
+    "results/local-ptx-same-predicate-production-build-e-20261122-v1"
+  ],
+  "commands": [
+    {
+      "label": "simx-copy-0",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/copy-0",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx",
+        "--case",
+        "copy-0"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/copy-0",
+      "started_at": "2026-11-22T08:23:48.534914+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx-copy-0.log",
+      "finished_at": "2026-11-22T08:23:53.544341+00:00",
+      "elapsed_seconds": 4.996,
+      "log_sha256": "d16e43257f19419c4b55a21883044704000f9618cc686b5b8d4ad0986a0e99d0"
+    },
+    {
+      "label": "simx-copy-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/copy-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx",
+        "--case",
+        "copy-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/copy-1",
+      "started_at": "2026-11-22T08:23:53.659970+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_simx-copy-1.log",
+      "finished_at": "2026-11-22T08:23:58.117560+00:00",
+      "elapsed_seconds": 4.442,
+      "log_sha256": "6709233a706d6cb4ca63e8cff223b9dd32edb74e32264c0e664fe512b2cbefe2"
+    },
+    {
+      "label": "simx-vadd-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/vadd-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx",
+        "--case",
+        "vadd-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/vadd-1",
+      "started_at": "2026-11-22T08:23:58.321472+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_simx-vadd-1.log",
+      "finished_at": "2026-11-22T08:24:02.528733+00:00",
+      "elapsed_seconds": 4.189,
+      "log_sha256": "24061cb5f19bf99af15c8737b46cf7ea524d38d83fb991ed7363363714d7ab24"
+    },
+    {
+      "label": "simx-affine-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/affine-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx",
+        "--case",
+        "affine-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/affine-1",
+      "started_at": "2026-11-22T08:24:02.727935+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_simx-affine-1.log",
+      "finished_at": "2026-11-22T08:24:07.347078+00:00",
+      "elapsed_seconds": 4.593,
+      "log_sha256": "6ce69f3728e86b2e1adf1d10f57956685f18471de544bfe53685241cd97b9441"
+    },
+    {
+      "label": "simx-predicate_turn-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/predicate_turn-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "simx",
+        "--case",
+        "predicate_turn-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/simx/predicate_turn-1",
+      "started_at": "2026-11-22T08:24:07.483840+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_simx-predicate_turn-1.log",
+      "finished_at": "2026-11-22T08:24:13.218354+00:00",
+      "elapsed_seconds": 5.716,
+      "log_sha256": "59e4e3b90a52b3723759768634f0fc56dc9944a7e85dc85c239eb789c75d1483"
+    },
+    {
+      "label": "rtlsim-copy-0",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/copy-0",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim",
+        "--case",
+        "copy-0"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/copy-0",
+      "started_at": "2026-11-22T08:24:13.485662+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_rtlsim-copy-0.log",
+      "finished_at": "2026-11-22T08:24:17.952121+00:00",
+      "elapsed_seconds": 4.439,
+      "log_sha256": "fb4c1cf23c999a92f15f54e2575d2c2f2a65bbbe4b99898d70660126cfa87429"
+    },
+    {
+      "label": "rtlsim-copy-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/copy-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim",
+        "--case",
+        "copy-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/copy-1",
+      "started_at": "2026-11-22T08:24:18.071312+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_rtlsim-copy-1.log",
+      "finished_at": "2026-11-22T08:24:21.972205+00:00",
+      "elapsed_seconds": 3.887,
+      "log_sha256": "95c2dfa17b5e9e17030ecfe929358910def961603118a67311dffeabdf68b61c"
+    },
+    {
+      "label": "rtlsim-vadd-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/vadd-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim",
+        "--case",
+        "vadd-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/vadd-1",
+      "started_at": "2026-11-22T08:24:22.092711+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_rtlsim-vadd-1.log",
+      "finished_at": "2026-11-22T08:24:26.496745+00:00",
+      "elapsed_seconds": 4.39,
+      "log_sha256": "335fbccb61d87fe4eb15387ff149fd69b3eff3fabd05b6d4f47dbf6c7dbe0ef3"
+    },
+    {
+      "label": "rtlsim-affine-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/affine-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim",
+        "--case",
+        "affine-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/affine-1",
+      "started_at": "2026-11-22T08:24:26.702634+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_rtlsim-affine-1.log",
+      "finished_at": "2026-11-22T08:24:31.458189+00:00",
+      "elapsed_seconds": 4.738,
+      "log_sha256": "d1b6d4083cd5ad5fdf88310d7250c3cb056deccee5f4efdd3a6703f713595e98"
+    },
+    {
+      "label": "rtlsim-predicate_turn-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/predicate_turn-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "rtlsim",
+        "--case",
+        "predicate_turn-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/rtlsim/predicate_turn-1",
+      "started_at": "2026-11-22T08:24:31.653313+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_rtlsim-predicate_turn-1.log",
+      "finished_at": "2026-11-22T08:24:36.011552+00:00",
+      "elapsed_seconds": 4.343,
+      "log_sha256": "656e7a7b74c6c3e6def70f7003b3d7b6d30fa292e9ac089aa45bf1fe913e3eaf"
+    },
+    {
+      "label": "xrtsim-copy-0",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/copy-0",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim",
+        "--case",
+        "copy-0"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/copy-0",
+      "started_at": "2026-11-22T08:24:36.271680+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_xrtsim-copy-0.log",
+      "finished_at": "2026-11-22T08:24:42.175764+00:00",
+      "elapsed_seconds": 5.887,
+      "log_sha256": "ca98af079ef4250ad2cd1b12741637f3d26948cdaf0781b1313d55ebe9bf91b7"
+    },
+    {
+      "label": "xrtsim-copy-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/copy-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim",
+        "--case",
+        "copy-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/copy-1",
+      "started_at": "2026-11-22T08:24:42.329752+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_xrtsim-copy-1.log",
+      "finished_at": "2026-11-22T08:24:48.714480+00:00",
+      "elapsed_seconds": 6.367,
+      "log_sha256": "7a475b34c4d4eed0eafb354f1e4cce4b978a83abccb7f82c4fd8dce339597840"
+    },
+    {
+      "label": "xrtsim-vadd-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/vadd-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim",
+        "--case",
+        "vadd-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/vadd-1",
+      "started_at": "2026-11-22T08:24:48.852285+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/13_xrtsim-vadd-1.log",
+      "finished_at": "2026-11-22T08:24:54.628638+00:00",
+      "elapsed_seconds": 5.756,
+      "log_sha256": "f59041e6750bc2a0efc577ba1391c8cbb532552736f60dd5b57654f6f6b56812"
+    },
+    {
+      "label": "xrtsim-affine-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/affine-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim",
+        "--case",
+        "affine-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/affine-1",
+      "started_at": "2026-11-22T08:24:54.827744+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/14_xrtsim-affine-1.log",
+      "finished_at": "2026-11-22T08:25:00.645917+00:00",
+      "elapsed_seconds": 5.799,
+      "log_sha256": "fbeaf909ea5e5497a935cdbf8f12c3e1509543af6afe8896fb60b7eb86da31db"
+    },
+    {
+      "label": "xrtsim-predicate_turn-1",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/e-v14-local/trace_local.py",
+        "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/predicate_turn-1",
+        "/mnt/d/Vortex-U280/results/e-v14-local-20261122-v1",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-e-20261122-v1",
+        "--worker",
+        "xrtsim",
+        "--case",
+        "predicate_turn-1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/e-v14-trace-20261122-v1/xrtsim/predicate_turn-1",
+      "started_at": "2026-11-22T08:25:00.856019+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/15_xrtsim-predicate_turn-1.log",
+      "finished_at": "2026-11-22T08:25:07.467828+00:00",
+      "elapsed_seconds": 6.585,
+      "log_sha256": "847c6cfc1909e23700acc717813fa65e6749534f853b7e4c4d1b3d7f272e97ad"
+    }
+  ],
+  "models": {
+    "simx": {
+      "binding_sha256": "422887f3317f77a7a875dfe35cbd75503a2824f8b0993a3c77d9ef3bde487b5f",
+      "cases": {
+        "copy-0": {
+          "requests": 0,
+          "cta_bindings": [
+            {
+              "wid": 0,
+              "core_slot": 0,
+              "block": 0,
+              "rank": 0
+            },
+            {
+              "wid": 1,
+              "core_slot": 1,
+              "block": 1,
+              "rank": 0
+            },
+            {
+              "wid": 2,
+              "core_slot": 2,
+              "block": 2,
+              "rank": 0
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 3
+        },
+        "copy-1": {
+          "requests": 2,
+          "cta_bindings": [
+            {
+              "wid": 0,
+              "core_slot": 0,
+              "block": 0,
+              "rank": 0
+            },
+            {
+              "wid": 1,
+              "core_slot": 1,
+              "block": 1,
+              "rank": 0
+            },
+            {
+              "wid": 2,
+              "core_slot": 2,
+              "block": 2,
+              "rank": 0
+            },
+            {
+              "wid": 3,
+              "core_slot": 3,
+              "block": 3,
+              "rank": 0
+            },
+            {
+              "wid": 4,
+              "core_slot": 4,
+              "block": 4,
+              "rank": 0
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "vadd-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "wid": 0,
+              "core_slot": 0,
+              "block": 0,
+              "rank": 0
+            },
+            {
+              "wid": 1,
+              "core_slot": 1,
+              "block": 1,
+              "rank": 0
+            },
+            {
+              "wid": 2,
+              "core_slot": 2,
+              "block": 2,
+              "rank": 0
+            },
+            {
+              "wid": 3,
+              "core_slot": 3,
+              "block": 3,
+              "rank": 0
+            },
+            {
+              "wid": 4,
+              "core_slot": 4,
+              "block": 4,
+              "rank": 0
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "affine-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "wid": 0,
+              "core_slot": 0,
+              "block": 0,
+              "rank": 0
+            },
+            {
+              "wid": 1,
+              "core_slot": 1,
+              "block": 1,
+              "rank": 0
+            },
+            {
+              "wid": 2,
+              "core_slot": 2,
+              "block": 2,
+              "rank": 0
+            },
+            {
+              "wid": 3,
+              "core_slot": 3,
+              "block": 3,
+              "rank": 0
+            },
+            {
+              "wid": 4,
+              "core_slot": 4,
+              "block": 4,
+              "rank": 0
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "predicate_turn-1": {
+          "requests": 40,
+          "cta_bindings": [
+            {
+              "wid": 0,
+              "core_slot": 0,
+              "block": 0,
+              "rank": 0
+            },
+            {
+              "wid": 1,
+              "core_slot": 1,
+              "block": 1,
+              "rank": 0
+            },
+            {
+              "wid": 2,
+              "core_slot": 2,
+              "block": 2,
+              "rank": 0
+            },
+            {
+              "wid": 3,
+              "core_slot": 3,
+              "block": 3,
+              "rank": 0
+            },
+            {
+              "wid": 4,
+              "core_slot": 4,
+              "block": 4,
+              "rank": 0
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 0
+        }
+      }
+    },
+    "rtlsim": {
+      "binding_sha256": "9f770fe994c180fad9b30e781510d82e6da7e64a3ee8516e48aba73bad53520f",
+      "cases": {
+        "copy-0": {
+          "requests": 0,
+          "cta_bindings": [
+            {
+              "cycle": 115,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 959
+            },
+            {
+              "cycle": 121,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 961
+            },
+            {
+              "cycle": 127,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 963
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 3
+        },
+        "copy-1": {
+          "requests": 2,
+          "cta_bindings": [
+            {
+              "cycle": 115,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 1217
+            },
+            {
+              "cycle": 121,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 969
+            },
+            {
+              "cycle": 127,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 971
+            },
+            {
+              "cycle": 133,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 985
+            },
+            {
+              "cycle": 139,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 987
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "vadd-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "cycle": 115,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 1283
+            },
+            {
+              "cycle": 121,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 969
+            },
+            {
+              "cycle": 127,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 971
+            },
+            {
+              "cycle": 133,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 987
+            },
+            {
+              "cycle": 139,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 989
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "affine-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "cycle": 115,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 1317
+            },
+            {
+              "cycle": 121,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 969
+            },
+            {
+              "cycle": 127,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 971
+            },
+            {
+              "cycle": 133,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 975
+            },
+            {
+              "cycle": 139,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 987
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "predicate_turn-1": {
+          "requests": 40,
+          "cta_bindings": [
+            {
+              "cycle": 115,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 1521
+            },
+            {
+              "cycle": 121,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 1523
+            },
+            {
+              "cycle": 127,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 1503
+            },
+            {
+              "cycle": 133,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 1505
+            },
+            {
+              "cycle": 139,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 1507
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 0
+        }
+      }
+    },
+    "xrtsim": {
+      "binding_sha256": "6597e09679fa638b960e1a2895fb7b85360a7bb1a130bf900cf31a2bbc5a5c47",
+      "cases": {
+        "copy-0": {
+          "requests": 0,
+          "cta_bindings": [
+            {
+              "cycle": 3575,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 4373
+            },
+            {
+              "cycle": 3581,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 4375
+            },
+            {
+              "cycle": 3587,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 4377
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 3
+        },
+        "copy-1": {
+          "requests": 2,
+          "cta_bindings": [
+            {
+              "cycle": 3381,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 4437
+            },
+            {
+              "cycle": 3387,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 4189
+            },
+            {
+              "cycle": 3393,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 4191
+            },
+            {
+              "cycle": 3399,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 4205
+            },
+            {
+              "cycle": 3405,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 4207
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "vadd-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "cycle": 3791,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 4927
+            },
+            {
+              "cycle": 3797,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 4599
+            },
+            {
+              "cycle": 3803,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 4601
+            },
+            {
+              "cycle": 3809,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 4617
+            },
+            {
+              "cycle": 3815,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 4619
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "affine-1": {
+          "requests": 3,
+          "cta_bindings": [
+            {
+              "cycle": 3719,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 4879
+            },
+            {
+              "cycle": 3725,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 4527
+            },
+            {
+              "cycle": 3731,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 4529
+            },
+            {
+              "cycle": 3737,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 4533
+            },
+            {
+              "cycle": 3743,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 4545
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 14
+        },
+        "predicate_turn-1": {
+          "requests": 40,
+          "cta_bindings": [
+            {
+              "cycle": 4033,
+              "kmu_cta": 0,
+              "block": 0,
+              "core_slot": 0,
+              "done_cycle": 5403
+            },
+            {
+              "cycle": 4039,
+              "kmu_cta": 1,
+              "block": 1,
+              "core_slot": 1,
+              "done_cycle": 5405
+            },
+            {
+              "cycle": 4045,
+              "kmu_cta": 2,
+              "block": 2,
+              "core_slot": 2,
+              "done_cycle": 5385
+            },
+            {
+              "cycle": 4051,
+              "kmu_cta": 3,
+              "block": 3,
+              "core_slot": 3,
+              "done_cycle": 5387
+            },
+            {
+              "cycle": 4057,
+              "kmu_cta": 4,
+              "block": 4,
+              "core_slot": 4,
+              "done_cycle": 5389
+            }
+          ],
+          "full_array_scope": [
+            "x",
+            "y",
+            "z"
+          ],
+          "silent_threads": 0
+        }
+      }
+    }
+  },
+  "started_at": "2026-11-22T08:23:48.510718+00:00",
+  "scope": "pre-cache LSU requests into complete frozen array allocations",
+  "u280": "NOT_RUN",
+  "exit_code": 0,
+  "finished_at": "2026-11-22T08:25:07.595431+00:00"
+}

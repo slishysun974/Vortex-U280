@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "backend": "simx",
+  "commands": [],
+  "started_at": "2026-11-21T14:04:34.831882+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-production/lsu.py",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--backend",
+    "simx",
+    "--jobs",
+    "3",
+    "--output",
+    "results/local-ptx-same-predicate-production-trace-simx-20261121-v1"
+  ],
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "binding_sha256": "422887f3317f77a7a875dfe35cbd75503a2824f8b0993a3c77d9ef3bde487b5f",
+  "debug_libraries": {
+    "config.mk": "bf233b6c34620ae2925a75e82cd5547173bb50fdc07e1883ed54ea2dd610262d",
+    "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+    "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+    "sw/runtime/libvortex.so": "901ac55b95f0f1ea430e314c707d10fb3bb4a613bad23ec2174a11a8b25ab419",
+    "sw/runtime/libvortex-simx.so": "9edc05c3e1342ef12b6782c04b8a7aa3a8f862b411bb7028e8bbe753170b3b87",
+    "sw/runtime/libsimx.so": "119d16f68d700dd98834f3c33acf7c32ecf04d16287f80874ebc15bddc47bc9a"
+  },
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "cases": {
+    "vadd/1024/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "740e4b9bfc7febf43a1a662e71406a6ac3eb7e74d07027445eacf5b777762bb7"
+    },
+    "vadd/1024/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "5cd7aa725680b61055037a364d7f05f75e718c367d780066bc11fce5a7ced04e"
+    },
+    "copy/1024/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "2f6b7201dd3b83c7e4a313de802c242c4e9c851ca220cf0ccc7e18480656bf95"
+    },
+    "copy/1024/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "c785eca6b3c8f972030dcc448d4887aaca8503ecd9bbe9ebe3fd8e51f8d6f029"
+    },
+    "affine/1024/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "356e255cde77de87175e0e1746cc0be404885bb4eedbca6f58657b578767ba1c"
+    },
+    "affine/1024/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "07d7ea5702969384ec06dea873198f5ef5f3d2224046f75e0e94940ee4c308bd"
+    },
+    "vadd/16381/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "a8efa016af9f631a2c9600f6032addc7393a3d947f77fe4c3129664425ff6e53"
+    },
+    "copy/16381/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "abcaf955fe34e088309c19eac6018532495bea46fdf63d73789a310ef5485c73"
+    },
+    "vadd/16381/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "22c9ed57ada8d1a871feb994c8a4fc00d5b184db55b4376e08b3386805446316"
+    },
+    "copy/16381/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "9cf42419987555e5c26ae13a819120e17a4508be9ee8cf30d6d76272fd1fd875"
+    },
+    "affine/16381/merged/summary.json": {
+      "status": "PASS",
+      "sha256": "a24f6fb89ecb6a69030451e22473bd885ed78074d1e51786141621ac1793c631"
+    },
+    "affine/16381/aligned/summary.json": {
+      "status": "PASS",
+      "sha256": "15582ddda2938ebb2f46ca780a4c15e3a9de031619ec6d9847610873d7c9d5f9"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:11:28.325388+00:00"
+}

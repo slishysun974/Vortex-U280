@@ -1,4 +1,16 @@
-# 当前公开验证入口：2026-11-11
+# 公开验证入口
+
+## 2026-11-23
+
+| 内容 | 入口 |
+|---|---|
+| V03 四路独立验收 | [冻结语料](ae-v03-frozen-20261121-v1/manifest.json) · [核对回执](ae-v03-acceptance-20261121-v1/result.json) · [限定签收](ae-v03-signoff-20261121-v1/record.json) |
+| v1.4 三路本地独立验收 | [冻结语料](e-v14-frozen-20261122-v1/manifest.json) · [核对回执](e-v14-review-20261122-v1/result.json) |
+| 固定 U280 三算子性能 | [原生与 PTX](u280-perf-three-operators-20261121-v2/result.json) · [v1.3/v1.4 配对](u280-aligned-board-20261122-v1/result.json) · [设备计数](u280-aligned-mpm-20261122-v1/result.json) · [尾部观测边界](u280-aligned-tail-observability-20261122-v2/summary.json) |
+| V08 本地三轮 | [第一轮](ai-paired-local-receipt-20261122-v1/result.json) · [第二轮](ai-paired-round2-receipt-20261122-v1/result.json) · [第三轮](ai-paired-round3-receipt-20261122-v1/result.json) · [第三轮连接计量](ai-paired-round3-timing-20261122-v1/result.json) |
+| 公开快照验证 | [自测与离线核对](publication-check-20261123-v1/summary.json) |
+
+## 2026-11-11
 
 | 内容 | 入口 |
 |---|---|

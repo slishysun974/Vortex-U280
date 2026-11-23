@@ -14,6 +14,7 @@ import sys
 PROJECT = Path(__file__).resolve().parents[1]
 PROFILE = "ptx-vx-p0-v0.2-draft"
 COMPILER = "ptx-vx-frontend-v1.2"
+VALIDATION_REVISION = "p0-static-v2"
 HOST_COMPATIBILITY = "python36-integer-v1"
 ABI = "ptx-vx-args-v1"
 SPECIALS = {"%tid.x": "thread_id", "%ntid.x": "block_size",
@@ -35,7 +36,23 @@ TOKEN = re.compile(r"\s+|//[^\n]*|/\*[\s\S]*?\*/|"
                    r"\d+\.\d+|0[xX][0-9a-fA-F]+U?|0[bB][01]+U?|[0-9]+U?|"
                    r"\.?[A-Za-z_$%][A-Za-z0-9_$]*(?:\.[A-Za-z0-9_$]+)*|"
                    r"[{}()\[\],;<>@!+\-]")
-IDENTIFIER = re.compile(r"(?:[A-Za-z_][A-Za-z0-9_$]*|[$%][A-Za-z0-9_$]+)\Z")
+IDENTIFIER = re.compile(r"(?:[A-Za-z][A-Za-z0-9_$]*|[_$%][A-Za-z0-9_$]+)\Z")
+# PTX 7.0 instruction keywords and predefined identifiers share the source namespace.
+RESERVED = frozenset("""
+    abs activemask add addc and atom bar barrier bfe bfi bfind bra brev
+    brkpt brx call clz cnot copysign cos cp cvt cvta div dp2a dp4a ex2 exit
+    fence fma fns isspacep istypep ld ldmatrix ldu lg2 lop3 mad mad24 madc match max
+    mbarrier membar min mma mov mul mul24 nanosleep neg not or pmevent popc prefetch
+    prefetchu prmt rcp red redux rem ret rsqrt sad selp set setp shf shfl shl shr sin
+    slct sqrt st sub subc suld suq sured sust tanh testp
+    tex tld4 trap txq vabsdiff vabsdiff2 vabsdiff4 vadd vadd2 vadd4 vavrg2 vavrg4
+    vmad vmax vmax2 vmax4 vmin vmin2 vmin4 vote vset vset2 vset4 vshl vshr vsub vsub2
+    vsub4 wmma xor WARP_SZ
+    %clock %clock_hi %clock64 %ctaid %dynamic_smem_size %globaltimer %globaltimer_lo
+    %globaltimer_hi %gridid %laneid %lanemask_eq %lanemask_lt %lanemask_le %lanemask_gt
+    %lanemask_ge %nctaid %nsmid %ntid %nwarpid %smid %tid %total_smem_size %warpid
+""".split()) | {"%envreg" + str(i) for i in range(32)} | {
+    "%%pm%d%s" % (i, suffix) for i in range(8) for suffix in ("", "_64")}
 
 
 class PtxError(ValueError):
@@ -58,7 +75,8 @@ class Token:
 
 def lex(source, filename):
     if len(source.encode("utf-8")) > 1024 * 1024:
-        raise PtxError("E_UNSUPPORTED", "source exceeds frontend 1 MiB limit")
+        raise PtxError("E_UNSUPPORTED", "source exceeds frontend 1 MiB limit",
+                       dict(file=filename, line=1, column=1))
     result, pos, line, column = [], 0, 1, 1
     while pos < len(source):
         match = TOKEN.match(source, pos)
@@ -114,7 +132,7 @@ class Parser:
 
     def name(self):
         token = self.take()
-        if not IDENTIFIER.fullmatch(token.text):
+        if not IDENTIFIER.fullmatch(token.text) or token.text in RESERVED:
             self.fail("invalid identifier: " + token.text, "E_TYPE", token)
         return token
 
@@ -216,13 +234,15 @@ class Parser:
                 self.take(">")
                 names = [name.text + str(i) for i in range(count)]
             for item in names:
+                if item in RESERVED:
+                    self.fail("reserved identifier: " + item, "E_TYPE", name)
                 if item in self.registers or any(p["name"] == item for p in self.params):
                     self.fail("duplicate symbol: " + item, "E_TYPE", name)
                 if len(self.registers) >= 4096:
                     self.fail("total register count exceeds 4096", "E_TYPE", name)
                 self.registers[item] = dict(type=kind, bit_width={"b32": 32, "b64": 64, "pred": 1}[kind],
                                             c_name="v" + str(len(self.registers)), source_location=self.location(name))
-                self.facts[item] = {"defined": set(), "global": set()}
+                self.facts[item] = {"defined": set(), "global": set(), "integer": set()}
                 self.versions[item] = 0
             if not self.accept(","):
                 break
@@ -257,18 +277,23 @@ class Parser:
             return dict(kind="parameter", name=name.text, offset=parameter["offset"], type=parameter["type"])
         if kind == "address":
             self.take("[")
+            base_token = self.token
             operand = self.register("b64", guard)
             if not self.known(operand["name"], "global", guard):
-                self.fail("address lacks global parameter provenance", "E_TYPE")
+                self.fail("address lacks global parameter provenance", "E_TYPE", base_token)
+            offset_token = self.token
             offset = self.integer() if self.token.text in ("+", "-") else 0
+            if not -(1 << 31) <= offset < (1 << 31):
+                self.fail("global address displacement exceeds signed 32 bits", "E_TYPE", offset_token)
             if offset % 4:
-                self.fail("global u32 offset is not aligned to 4 bytes", "E_TYPE")
+                self.fail("global u32 offset is not aligned to 4 bytes", "E_TYPE", offset_token)
             self.take("]")
             return dict(kind="address", name=operand["name"], offset=offset, space="global", type="u64")
         if kind == "pointer":
+            base_token = self.token
             operand = self.register("b64", guard)
             if not self.known(operand["name"], "global", guard):
-                self.fail("cvta requires a proven global parameter-derived pointer", "E_TYPE")
+                self.fail("cvta requires a proven global parameter-derived pointer", "E_TYPE", base_token)
             return operand
         if self.token.text in SPECIALS:
             if opcode != "mov.u32":
@@ -290,6 +315,27 @@ class Parser:
         else:
             complement = (guard[0], guard[1], not guard[2])
             self.facts[name][fact] = {complement} if None in values or complement in values else set()
+
+    def wide_result(self, opcode, sources, guard):
+        if opcode in ("ld.param.u64", "cvta.to.global.u64"):
+            return "global"
+        if opcode == "mul.wide.u32":
+            return "integer"
+        kinds = []
+        for source in sources:
+            if source["kind"] == "immediate":
+                kinds.append("integer")
+            else:
+                kinds.append(next((fact for fact in ("global", "integer")
+                                   if self.known(source["name"], fact, guard)), None))
+        if opcode == "mov.u64":
+            return kinds[0]
+        if opcode == "add.u64":
+            if kinds == ["integer", "integer"]:
+                return "integer"
+            if "global" in kinds and "integer" in kinds:
+                return "global"
+        return None
 
     def instruction(self):
         start, guard, predicate = self.token, None, None
@@ -316,13 +362,11 @@ class Parser:
         self.take(";")
         if operands and opcode != "st.global.u32":
             dest = operands[0]["name"]
-            source_ptrs = [o["kind"] == "register" and self.known(o["name"], "global", guard)
-                           for o in operands[1:]]
-            pointer = (opcode == "ld.param.u64" or opcode == "cvta.to.global.u64" or
-                       (opcode == "mov.u64" and source_ptrs[0]) or
-                       (opcode == "add.u64" and sum(source_ptrs) == 1))
+            if self.registers[dest]["type"] == "b64":
+                result_kind = self.wide_result(opcode, operands[1:], guard)
+                for fact in ("global", "integer"):
+                    self.write_fact(dest, fact, guard, result_kind == fact)
             self.write_fact(dest, "defined", guard, True)
-            self.write_fact(dest, "global", guard, pointer)
             if self.registers[dest]["type"] == "pred":
                 self.versions[dest] += 1
         self.instructions.append(dict(opcode=opcode, operands=operands, predicate=predicate,
@@ -433,7 +477,7 @@ def compile_source(source, output, filename="source.ptx", target_lock=None):
     for name, content in artifacts.items():
         (output / name).write_text(content, encoding="utf-8", newline="\n")
     manifest = dict(schema_version="ptx-vx-frontend-artifacts-v1", compiler_id=COMPILER,
-                    profile=PROFILE, abi_version=ABI, entry=ir["entry"],
+                    profile=PROFILE, validation_revision=VALIDATION_REVISION, abi_version=ABI, entry=ir["entry"],
                     compiler_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                     params=ir["params"], params_size=ir["params_size"], params_align=ir["params_align"],
                     status="FRONTEND_ONLY", loadable=False, image_file=None,

@@ -1,5 +1,62 @@
 # C/D：P0 前端首版与宿主语义验证
 
+2026-11-20，当前 D 作者侧结论与逐条白名单结果见 [D 收尾与 V03 交付](D_P0_CLOSEOUT.md)。下文按实验日期保留各阶段的实现及接收状态。
+
+## 2026-11-20 D 的 4 GiB 设备地址验证
+
+**SimX、处理器 RTL、NOXRT AFU 各 5/5 PASS。** 本轮沿用前轮已审阅的 `guarded_wide_offset` RV64 镜像，校验并复制到新运行目录。每次启动通过 Vortex2 `vx_buffer_reserve` 预留三个 256 字节缓冲区，查询实际设备基址，把基址加 32 字节写入 PTX 参数。三模型均报告 8 GiB 全局地址空间、VM 关闭。下表记录模型中的设备数据地址。物理 U280 高地址执行与独立 E 接收均为 `NOT_RUN`。[最终三模型运行](../results/d-high-address-20261120-v2/summary.json) · [实际分配与能力读回（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-60933d8c5494)
+
+| 用例 | B × G，N | 直接观测 |
+|---|---|---|
+| cross_read | 3 × 5，14 | block 2 的 lane 1、2 分别从 `0xfffffffc` 和 `0x100000000` 读取 x |
+| cross_write | 4 × 4，15 | 每个 block 屏蔽 tid 0。block 1 的 lane 1、2 分别向上述两处写 z |
+| cross_audit | 3 × 4，0 | x 零读、z 零写；block 2 的 lane 1、2 向上述两处写 audit，记录假谓词保留的值 |
+| high_to_low | 4 × 3，11 | x 指针为 `0x101600020`，z 为 `0x01600020`，同低 32 位、不同内容 |
+| low_to_high | 4 × 3，9 | x、z 地址互换，逐字节核对高地址输出及低地址输入 |
+
+两路 DEBUG3 各逐 lane 核对 41 次 x 读、41 次 z 写、67 次 audit 写。其中地址至少为 4 GiB 的访问分别为 26、28、28 次。三模型各自对每个用例先写入再读回全部缓冲区，确认高低地址的数据可以区分；启动后再次核对三个完整缓冲区和 40 字节参数。最终运行共 15 次启动、启动前后各 45 份完整缓冲区、15 份参数。NOXRT AFU 提供分配、传输和功能结果，逐 lane 观测来自 SimX 和处理器 RTL。[SimX 跨界读（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-030f11237780) · [处理器 RTL 跨界写（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-0cc9e9bbfd76) · [AFU 高地址输出捕获（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-737ddd4ee1b3)
+
+五组用例的输入和作者期望先于执行封存。首轮 v1 与最终 v2 各有 15 次模型执行，表中统计采用 v2。v2 将模型能力与执行源码绑定到复核入口。全套 WSL 宿主自测 282 通过、1 项 Windows 专用测试跳过，退出 0。新增的 4 项宿主对照覆盖相同低 32 位、参数丢失高位、启动前缓冲区别名以及末字节哨兵被改写。[用例清单（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-5aefc8d29bde) · [首轮原件](../results/d-high-address-20261120-v1/summary.json) · [宿主自测（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-32f44bdf2727)
+
+D 作者在磁盘上重新核对了 15 组捕获和其中 10 份逐 lane trace。在原始日志的内存副本中，把三个跨界用例各一条活跃访问的地址从 `0x100000000` 改为零，保留原 mask 和总数；两路 DEBUG3 的 6/6 个对照均检出对应 block 的 lane 2。项目与 WSL 两份固定检出各 3,329 项文件哈希一致，复核入口退出 0。[回放、反向对照与源码核验](../results/d-high-address-review-20261120-v1/summary.json)
+
+从项目根目录复现时，每次换一个新的 `NEW`。第一条命令默认读取前轮已构建的模块，可用 `--module` 指定同一镜像的干净复本。第二条复核此次运行的原始日志和固定源码。
+
+```powershell
+wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/run_d_high_addresses.py run --run-id d-high-address-NEW
+wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/run_d_high_addresses.py review --run results/d-high-address-NEW --run-id d-high-address-review-NEW
+```
+
+## 2026-11-20 D 的宽地址与谓词访存探针
+
+**SimX、处理器 RTL、NOXRT AFU 各 6/6 PASS。** D 使用生产前端 v1.2、V04 模块入口和固定 VOLT 工具链重新构建同一份 RV64 镜像，并通过 Vortex2 原生宿主完成 18 次启动。三路分别核对了 18 份完整数组和 6 份 40 字节小端参数。外层 27 条准备、构建、模块校验、宿主编译和执行命令均退出 0。输入、作者期望值和用例清单在首次启动前写入。[实际命令及结果](../results/d-guarded-wide-20261120-v1/summary.json) · [用例清单与哈希（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-0a37aa1e513a) · [模块、镜像及构建身份（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-62dc9dc01b0e)
+
+探针以 `i = block_id × B + tid` 编址。仅当 `i < n` 且 `tid != skip_lane` 时，线程读取 x 并写 z。活跃路径用 `mul.wide.u32` 得到至少 4 GiB 的乘积，随后用 64 位加法抵消基准偏移，访问分配内的元素；PTX load 与 store 分别使用 `-4` 和 `+4` 字节位移。被屏蔽路径在 PTX 中得到 4 GiB 的无效相对偏移。每个逻辑线程另向 audit 写一次，记录 load 目的值加 grid 大小，因此可以检查假谓词是否保留原值。这里验证了地址**算术**，物理高地址分配仍待验证。[探针源码](../ptx/probes/guarded_wide_offset.ptx) · [源行到 C++ 映射（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-1ff8401a63df) · [PTX 7.0 宽乘法定义](https://docs.nvidia.com/cuda/archive/11.0/parallel-thread-execution/index.html#integer-arithmetic-instructions-mul)
+
+| 用例 | B × G | N | 屏蔽条件 | x 读 | z 写 | audit 写 |
+|---|---:|---:|---|---:|---:|---:|
+| zero | 4 × 2 | 0 | 全部超出 N | 0 | 0 | 8 |
+| full | 4 × 2 | 8 | 全部活跃，z 写至分配末字 | 8 | 8 | 8 |
+| interior_hole | 4 × 2 | 8 | 每个 block 跳过 tid 1，x/z 各再偏移一字 | 6 | 6 | 8 |
+| partial_warp | 3 × 3 | 7 | 每个 block 跳过 tid 2，同时有尾线程 | 5 | 5 | 9 |
+| single | 1 × 1 | 1 | 单线程，x/z 各再偏移一字 | 1 | 1 | 1 |
+| all_excluded | 1 × 2 | 2 | N 非零，每个 block 均跳过 tid 0 | 0 | 0 | 2 |
+
+表中计数分别在 SimX 和处理器 RTL 的 DEBUG3 原始日志中观察到。每个 block 最多一个物理 warp，检查器可将物理 lane 直接对应到 `tid.x`。它比较每个 block、lane 的访存顺序、指令 PC、读写方向和完整地址。两路各核对 36 个逻辑线程、20 次 x 读、20 次 z 写、36 次 audit 写。NOXRT AFU 核对三个完整缓冲区及参数。编译器可以消去恒等变换或假路径计算，17 项覆盖指当前草案白名单中的完整操作码均出现在本探针的 typed IR；单项的所有操作数、谓词组合和边界仍待逐项接收。[SimX 混合谓词逐 lane 记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-2d0cc5611c9c) · [处理器 RTL 对应记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-2b33b0fc895c) · [NOXRT AFU 完整字节核验（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-a98ad539a7a0) · [反汇编（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-00d9282e687d)
+
+新增 6 项前端拒绝测试，覆盖错误宽乘目的类型、非 global 指针来源、假谓词后未定义读取、非对齐负位移、非零参数位移和未列出的 load 修饰符。另有 4 项 trace 检查器测试，包括交换活跃 lane 地址、向假 lane 注入越界读以及缺失 audit 写。WSL 全套 Python 自测 278 通过、1 项 Windows 专用测试跳过，退出 0。[测试代码](../tests/test_d_guarded_wide.py) · [全套原始日志（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-e558a80cbb43)
+
+磁盘复核退出 0。项目和 WSL 的两份检出各有 3,329 项与根 lock 引用的源码清单一致。逐条回读 27 份命令日志，重新核对 18 组捕获与两路逐 lane 序列；机器记录还列出 17 种操作码对应的 35 条 PTX 源位置与生成 C++ 行号。[源码、源位置与原始日志复核](../results/d-guarded-wide-review-20261120-v1/result.json)
+
+从项目根目录运行以下命令。两处使用相同的 `NEW` 标识，每次复现换新标识。第一条生成模块并运行三模型。第二条按根 lock 清单核对项目和 WSL 的固定源码，再从原始日志重算同一次运行的结果。
+
+```powershell
+wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/run_d_guarded_wide.py --run-id d-guarded-wide-NEW
+wsl -d Vortex-AB-Ubuntu-22.04 --cd /mnt/d/Vortex-U280 -- python3 -B scripts/verify_d_guarded_wide.py --run results/d-guarded-wide-NEW --run-id d-guarded-wide-review-NEW
+```
+
+本轮是 D 作者验证。A/E 接续时可在干净目录先冻结另一组掩码与高位输入，再按 lane 序列核对；B/C 可据此安排当前探针的 U280 接收。新探针的物理 U280 与独立 E 接收均为 `NOT_RUN`。根 lock/caps 仍为 draft，前端 profile 和参数 ABI 沿用现有版本。
+
 ## 2026-11-10 22:22 E 独立接收固定 15 条
 
 **限定范围接收 PASS，`ACCEPTED_WITH_FIXED_SCOPE`。** 非作者 E 代理使用独立上下文，先按 PTX 源和原始 inputs 冻结标准库数学 oracle、完整预期字节及 ABI，再读取实际输出；未调用生产 oracle、packer、trace analyzer 或比较器作为判据。三份镜像在新目录重新生成/编译，与交付 vxbin 完全相同。SimX、处理器 RTL、NOXRT AFU、U280 各执行 15 次并通过独立接收，156 份数组和 60 份参数准确匹配。接收范围仍为下节固定的 6 copy/4 vadd/5 affine、B=32 用例。[E 签发报告](../results/e-ptx-acceptance-20261110-v2/acceptance.md)、[总结果](../results/e-ptx-acceptance-20261110-v2/result.json)、[冻结身份与任务卡](E_PTX15_ACCEPTANCE.md)

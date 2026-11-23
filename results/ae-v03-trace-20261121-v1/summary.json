@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/trace_ae_v03.py",
+    "--bundle",
+    "results/ae-v03-kit-20261121-v1/bundle",
+    "--build",
+    "results/ae-v03-build-20261121-v1",
+    "--run-id",
+    "ae-v03-trace-20261121-v1"
+  ],
+  "started_at": "2026-11-21T11:12:25.402559+00:00",
+  "status": "FAIL",
+  "commands": [],
+  "backends": {},
+  "exit_code": 1,
+  "error": "requires successful native execution for this backend and target",
+  "finished_at": "2026-11-21T11:12:30.326180+00:00"
+}

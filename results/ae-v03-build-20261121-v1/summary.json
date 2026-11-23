@@ -1,0 +1,351 @@
+{
+  "schema": "ae-v03-execution-v1",
+  "status": "PASS",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/build_ae_v03.py",
+    "--frozen",
+    "results/ae-v03-frozen-20261121-v1",
+    "--run-id",
+    "ae-v03-build-20261121-v1"
+  ],
+  "started_at": "2026-11-21T11:04:22.574898+00:00",
+  "commands": [
+    {
+      "label": "python_version",
+      "argv": [
+        "/usr/bin/python3",
+        "--version"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:23.175836+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_python_version.log",
+      "finished_at": "2026-11-21T11:04:23.206304+00:00",
+      "elapsed_seconds": 0.015,
+      "log_sha256": "f6b75e07f1488db28a89724a522725e3e01af3dc78f6fd365f17eb4059e41056"
+    },
+    {
+      "label": "prepare_sim_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/ae-v03-frozen-20261121-v1/sources/p0_form_witness.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/p0_form_witness",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:23.284892+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_prepare_sim_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:04:23.883314+00:00",
+      "elapsed_seconds": 0.573,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_sim_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/p0_form_witness",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/ae-v03-build-20261121-v1/sim/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:23.925240+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_build_sim_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:04:44.538553+00:00",
+      "elapsed_seconds": 20.601,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_sim_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:44.570409+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_validate_sim_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:04:45.357674+00:00",
+      "elapsed_seconds": 0.773,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "prepare_sim_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/ae-v03-frozen-20261121-v1/sources/guarded_wide_offset.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/guarded_wide_offset",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:46.732021+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_prepare_sim_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:04:47.315154+00:00",
+      "elapsed_seconds": 0.573,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_sim_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/guarded_wide_offset",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/ae-v03-build-20261121-v1/sim/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:04:47.345294+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_build_sim_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:05:08.710380+00:00",
+      "elapsed_seconds": 21.353,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_sim_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/sim/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:08.750889+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_validate_sim_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:05:09.455940+00:00",
+      "elapsed_seconds": 0.693,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "prepare_board_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/ae-v03-frozen-20261121-v1/sources/p0_form_witness.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/p0_form_witness",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:10.966434+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_prepare_board_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:05:11.582601+00:00",
+      "elapsed_seconds": 0.581,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_board_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/p0_form_witness",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/ae-v03-build-20261121-v1/board/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:11.659671+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_build_board_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:05:29.809927+00:00",
+      "elapsed_seconds": 18.138,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_board_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:29.866688+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_validate_board_p0_form_witness.log",
+      "finished_at": "2026-11-21T11:05:30.477537+00:00",
+      "elapsed_seconds": 0.583,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "prepare_board_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/ae-v03-frozen-20261121-v1/sources/guarded_wide_offset.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/guarded_wide_offset",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:31.273749+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_prepare_board_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:05:31.962041+00:00",
+      "elapsed_seconds": 0.681,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_board_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/guarded_wide_offset",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/ae-v03-build-20261121-v1/board/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:31.986189+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_build_board_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:05:56.925016+00:00",
+      "elapsed_seconds": 24.932,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_board_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1/modules/board/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+      "started_at": "2026-11-21T11:05:56.956389+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/13_validate_board_guarded_wide_offset.log",
+      "finished_at": "2026-11-21T11:05:57.640172+00:00",
+      "elapsed_seconds": 0.671,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    }
+  ],
+  "modules": {
+    "sim": {
+      "p0_form_witness": {
+        "image_sha256": "4582515cda7d105d236fd74b06116d911fb9478411cf2fa59bc9346a69cda48a",
+        "manifest_sha256": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6"
+      },
+      "guarded_wide_offset": {
+        "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+        "manifest_sha256": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "board": {
+      "p0_form_witness": {
+        "image_sha256": "4582515cda7d105d236fd74b06116d911fb9478411cf2fa59bc9346a69cda48a",
+        "manifest_sha256": "69f27ef5a78ba50d6b7e42392bd00013087a8005cd6f648969394a067aacf83c"
+      },
+      "guarded_wide_offset": {
+        "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+        "manifest_sha256": "445fa8421a5acef4d7aaa84d7b1f7931ff4a3d2caf4a9fdbcfa39de11d336899"
+      }
+    }
+  },
+  "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+  "device_execution": "NOT_RUN",
+  "freeze_receipt_sha256": "9959021ad6726a981e4b694e3d52fc5be236baa4044e28c9d3cb018dd50e031f",
+  "exit_code": 0,
+  "finished_at": "2026-11-21T11:05:58.451153+00:00"
+}

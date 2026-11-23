@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "started_at": "2026-11-20T14:33:27.325981+00:00",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/c-v03-board-kit-check-20261120-v1/verify.py"
+  ],
+  "commands": [
+    {
+      "label": "detached_preflight",
+      "argv": [
+        "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\detached\\bundle\\scripts\\c_v03_board.py",
+        "preflight",
+        "--bundle",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\detached\\bundle"
+      ],
+      "cwd": "D:\\Vortex-U280",
+      "started_at": "2026-11-20T14:33:27.791757+00:00",
+      "timeout_seconds": 30,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_detached_preflight.log",
+      "finished_at": "2026-11-20T14:33:29.269481+00:00",
+      "elapsed_seconds": 1.475,
+      "log_sha256": "83ec980f2d4e0c161a26c51e2969d586b37836f526d9b989ddec82f5bd1a2ae1"
+    },
+    {
+      "label": "reject_model_binding",
+      "argv": [
+        "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\detached\\bundle\\scripts\\c_v03_board.py",
+        "capture",
+        "--bundle",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\detached\\bundle",
+        "--output",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\c-v03-u280-wrong-binding"
+      ],
+      "cwd": "D:\\Vortex-U280",
+      "started_at": "2026-11-20T14:33:29.386733+00:00",
+      "timeout_seconds": 30,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/02_reject_model_binding.log",
+      "finished_at": "2026-11-20T14:33:30.234774+00:00",
+      "elapsed_seconds": 0.846,
+      "log_sha256": "206944016c8561008b02b413e73e042565b1eb8a42894a7f8d261efbcd3efd0c",
+      "expected_returncode": 1
+    },
+    {
+      "label": "reject_modified_image",
+      "argv": [
+        "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\detached\\bundle\\scripts\\c_v03_board.py",
+        "run",
+        "--bundle",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\tampered",
+        "--output",
+        "D:\\Vortex-U280\\results\\c-v03-board-kit-check-20261120-v1\\c-v03-u280-bad-image",
+        "--bdf",
+        "0000:b1:00.1"
+      ],
+      "cwd": "D:\\Vortex-U280",
+      "started_at": "2026-11-20T14:33:30.583171+00:00",
+      "timeout_seconds": 30,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/03_reject_modified_image.log",
+      "finished_at": "2026-11-20T14:33:31.832276+00:00",
+      "elapsed_seconds": 1.244,
+      "log_sha256": "b8b98b25048d39dbe1f8b9a41dcdddc16b55cca14d001d11ca084981351c35cf",
+      "expected_returncode": 1
+    }
+  ],
+  "scope": "detached input archive and negative host preflight",
+  "physical_u280": "NOT_RUN",
+  "python36_syntax_files": 13,
+  "package_members": 107,
+  "exit_code": 0,
+  "plan_sha256": "c4987aa720b50746dfa14635ca28371be5aacfbbee9c6b1dda93729c0493b9cd",
+  "archive_sha256": "3203073104d79c6b119935481e8e3e4db60cb025fd173b1bc2d2a5fa07de978b",
+  "finished_at": "2026-11-20T14:33:31.877424+00:00"
+}

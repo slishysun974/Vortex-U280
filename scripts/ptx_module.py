@@ -18,8 +18,14 @@ import ptx_frontend_v12 as frontend
 
 COMMIT = "7fe19369587c087f902c3e2bc2add612aa910a95"
 SCHEMA = "ptx-vx-module-v1-draft"
+ALIGNED_SCHEMA = "ptx-vx-module-queue-aligned-v1-draft"
+ALIGNED_PARAMETER_ACCESS = "vortex2-queue-args-align-v1"
+SAME_PREDICATE_LOWERING = "same-predicate-v1"
+ALIGNED_LOCK_SHA = "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
 BOARD_SCHEMA = "ptx-vx-module-u280-v2-draft"
 BOARD_TARGET_ADAPTER = "u280-hbm32-target-v1"
+BOARD_ALIGNED_SCHEMA = "ptx-vx-module-u280-queue-aligned-v1-draft"
+BOARD_ALIGNED_ADAPTER = "u280-d10-d12-staging-v1"
 BOARD_LOCK_SHA = "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
 ADAPTER = "ptx-vx-vortex2-wrapper-v1"
 FORMAT = "vortex-v3-vxbin-symtab"
@@ -124,11 +130,36 @@ __kernel void kernel_main(const uint8_t* __UNIFORM__ payload) {
 '''
 
 
-def prepare(source, output, lock_path, hardware_path):
+def device_parameter_codegen(mode, lock_bytes, predicate_lowering=None, *, u280_aligned=False):
+    expected = BOARD_LOCK_SHA if u280_aligned else ALIGNED_LOCK_SHA
+    if mode != ALIGNED_PARAMETER_ACCESS or digest(lock_bytes) != expected:
+        raise ModuleError("E_TARGET_MISMATCH", "aligned queue parameters require the selected fixed target")
+    if predicate_lowering is None:
+        import ptx_frontend_v13
+        return ptx_frontend_v13
+    if predicate_lowering == SAME_PREDICATE_LOWERING:
+        import ptx_frontend_v14
+        return ptx_frontend_v14
+    raise ModuleError("E_MODULE_CORRUPT", "unknown predicate lowering")
+
+
+def aligned_build_id(source_bytes, lock_bytes, mode, predicate_lowering):
+    lowering = b"\0" + predicate_lowering.encode() if predicate_lowering is not None else b""
+    return digest(source_bytes + lock_bytes + mode.encode() + lowering)[:20]
+
+
+def prepare(source, output, lock_path, hardware_path, *, device_parameter_access=None,
+            predicate_lowering=None, u280_aligned=False):
     lock_bytes, hardware_bytes = Path(lock_path).read_bytes(), Path(hardware_path).read_bytes()
     lock, _, limits = target(lock_bytes, hardware_bytes)
+    codegen = None
+    if device_parameter_access is not None or predicate_lowering is not None or u280_aligned:
+        codegen = device_parameter_codegen(device_parameter_access, lock_bytes, predicate_lowering,
+                                           u280_aligned=u280_aligned)
     output = Path(output)
     ir = frontend.compile_source(source, output, "source.ptx", lock_path)
+    if codegen is not None:
+        codegen.write_codegen(output, ir)
     (output / "manifest.json").rename(output / "frontend_manifest.json")
     (output / "hardware.json").write_bytes(hardware_bytes)
     (output / "kernel.cpp").write_text(wrapper(), encoding="utf-8", newline="\n")
@@ -149,7 +180,14 @@ def prepare(source, output, lock_path, hardware_path):
                     known_limits=["not a memory sandbox", "single entry", "no shared memory or barriers"],
                     backend_execution="NOT_RUN", independent_acceptance="NOT_RUN")
     manifest["files"] = {p.name: digest(p.read_bytes()) for p in output.iterdir() if p.is_file()}
-    if read_json(hardware_bytes).get("target") == "hw":
+    if codegen is not None:
+        manifest.update(schema_version=ALIGNED_SCHEMA, device_parameter_access=device_parameter_access,
+                        build_id=aligned_build_id(source.encode(), lock_bytes, device_parameter_access, predicate_lowering))
+        if predicate_lowering is not None:
+            manifest["predicate_lowering"] = predicate_lowering
+        if u280_aligned:
+            manifest.update(schema_version=BOARD_ALIGNED_SCHEMA, target_adapter_version=BOARD_ALIGNED_ADAPTER)
+    elif read_json(hardware_bytes).get("target") == "hw":
         manifest.update(schema_version=BOARD_SCHEMA, target_adapter_version=BOARD_TARGET_ADAPTER)
     write_json(output / "manifest.json", manifest)
     return manifest
@@ -186,7 +224,8 @@ def verify_sources(directory, expected_lock):
     directory = Path(directory).resolve()
     try:
         manifest = read_json((directory / "manifest.json").read_bytes())
-        if manifest.get("schema_version") not in (SCHEMA, BOARD_SCHEMA) or manifest.get("compiler_id") != ADAPTER:
+        schema = manifest.get("schema_version")
+        if schema not in (SCHEMA, BOARD_SCHEMA, ALIGNED_SCHEMA, BOARD_ALIGNED_SCHEMA) or manifest.get("compiler_id") != ADAPTER:
             raise ModuleError("E_MODULE_CORRUPT", "unknown module schema/compiler")
         files = manifest["files"]
         required = {"source.ptx", "ir.json", "kernel_body.hpp", "kernel.cpp", "source_map.json",
@@ -208,11 +247,29 @@ def verify_sources(directory, expected_lock):
             raise ModuleError("E_TARGET_MISMATCH", "module target differs from requested target")
         lock, _, limits = target(expected_lock, blobs["hardware.json"])
         board = read_json(blobs["hardware.json"]).get("target") == "hw"
-        if (manifest["schema_version"] != (BOARD_SCHEMA if board else SCHEMA)
-                or (board and manifest.get("target_adapter_version") != BOARD_TARGET_ADAPTER)):
+        codegen = frontend
+        if schema in (ALIGNED_SCHEMA, BOARD_ALIGNED_SCHEMA):
+            physical = schema == BOARD_ALIGNED_SCHEMA
+            if physical != board or (physical and manifest.get("target_adapter_version") != BOARD_ALIGNED_ADAPTER):
+                raise ModuleError("E_TARGET_MISMATCH", "aligned module target adapter/version differs")
+            mode = manifest.get("device_parameter_access")
+            lowering = manifest.get("predicate_lowering")
+            if "predicate_lowering" in manifest and lowering != SAME_PREDICATE_LOWERING:
+                raise ModuleError("E_MODULE_CORRUPT", "unknown predicate lowering")
+            codegen = device_parameter_codegen(mode, expected_lock, lowering, u280_aligned=physical)
+            front = read_json(blobs["frontend_manifest.json"])
+            if (front.get("device_parameter_access") != mode or front.get("compiler_id") != codegen.COMPILER
+                    or front.get("predicate_lowering") != lowering
+                    or ("predicate_lowering" in front) != (lowering is not None)
+                    or front.get("target_lock_hash") != digest(expected_lock)
+                    or manifest.get("build_id") != aligned_build_id(blobs["source.ptx"], expected_lock, mode, lowering)):
+                raise ModuleError("E_MODULE_CORRUPT", "aligned codegen manifest differs")
+        elif (schema != (BOARD_SCHEMA if board else SCHEMA)
+              or (board and manifest.get("target_adapter_version") != BOARD_TARGET_ADAPTER)
+              or "device_parameter_access" in manifest or "predicate_lowering" in manifest):
             raise ModuleError("E_TARGET_MISMATCH", "module target adapter/version differs")
         ir = frontend.parse(blobs["source.ptx"].decode("utf-8"), "source.ptx")
-        cpp, source_map = frontend.emit_cpp(ir)
+        cpp, source_map = codegen.emit_cpp(ir)
         if (read_json(blobs["ir.json"]) != ir or blobs["kernel_body.hpp"] != cpp.encode()
                 or read_json(blobs["source_map.json"]) != source_map
                 or blobs["kernel.cpp"] != wrapper().encode()
@@ -247,7 +304,12 @@ def validate(directory, expected_lock):
         evidence = read_json(blobs["build.json"])
         if (evidence.get("status") != "PASS" or evidence.get("exit_code") != 0
                 or evidence.get("source_commit") != COMMIT
-                or evidence.get("target_lock_hash") != digest(expected_lock)):
+                or evidence.get("target_lock_hash") != digest(expected_lock)
+                or evidence.get("device_parameter_access") != manifest.get("device_parameter_access")
+                or (manifest["schema_version"] == BOARD_ALIGNED_SCHEMA
+                    and evidence.get("target_adapter_version") != BOARD_ALIGNED_ADAPTER)
+                or evidence.get("predicate_lowering") != manifest.get("predicate_lowering")
+                or ("predicate_lowering" in evidence) != ("predicate_lowering" in manifest)):
             raise ValueError("missing successful build bound to this source/target")
         elf = blobs["kernel.elf"]
         if (len(elf) < 64 or elf[:7] != b"\x7fELF\x02\x01\x01"
@@ -306,6 +368,12 @@ def build(directory, source, build_root, tooldir, expected_lock, timeout=300):
     record = dict(commands=[], source_commit=rev, target_lock_hash=digest(expected_lock),
                   toolchain_files=tool_hashes,
                   exit_code=None, status="RUNNING", scope="device compilation; no execution")
+    if manifest["schema_version"] in (ALIGNED_SCHEMA, BOARD_ALIGNED_SCHEMA):
+        record["device_parameter_access"] = manifest["device_parameter_access"]
+    if manifest["schema_version"] == BOARD_ALIGNED_SCHEMA:
+        record["target_adapter_version"] = BOARD_ALIGNED_ADAPTER
+    if "predicate_lowering" in manifest:
+        record["predicate_lowering"] = manifest["predicate_lowering"]
     build_root.mkdir(parents=True, exist_ok=False)
     # common.mk includes host dependencies; this device-only module has no host
     # translation units. An existing empty dependency file avoids g++ -MM with
@@ -353,6 +421,12 @@ def main(argv=None):
     prep.add_argument("source", type=Path)
     prep.add_argument("--output", type=Path, required=True)
     prep.add_argument("--hardware", type=Path, required=True)
+    prep.add_argument("--device-parameter-access", choices=(ALIGNED_PARAMETER_ACCESS,),
+                      help="opt in to the fixed Vortex2 queue parameter contract")
+    prep.add_argument("--predicate-lowering", choices=(SAME_PREDICATE_LOWERING,),
+                      help="merge ordered same-predicate global-memory regions in aligned modules")
+    prep.add_argument("--u280-aligned", action="store_true",
+                      help="build a fixed D10/D12 aligned module requiring live admission")
     compile_cmd = sub.add_parser("build")
     compile_cmd.add_argument("module", type=Path)
     compile_cmd.add_argument("--vortex-source", type=Path, required=True)
@@ -365,7 +439,9 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         if args.action == "prepare":
-            result = prepare(args.source.read_bytes().decode("utf-8"), args.output, args.target_lock, args.hardware)
+            result = prepare(args.source.read_bytes().decode("utf-8"), args.output, args.target_lock, args.hardware,
+                             device_parameter_access=args.device_parameter_access, predicate_lowering=args.predicate_lowering,
+                             u280_aligned=args.u280_aligned)
         elif args.action == "build":
             result = build(args.module, args.vortex_source, args.build_root, args.tooldir, args.target_lock.read_bytes())
         else:

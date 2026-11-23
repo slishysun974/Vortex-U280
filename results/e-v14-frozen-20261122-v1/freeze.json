@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "argv": [
+    "experiments/e-v14-local/freeze.py",
+    "results/e-v14-frozen-20261122-v1"
+  ],
+  "frozen_at_unix_ns": 1795334933977852400,
+  "cases": 24,
+  "manifest_sha256": "b116876ecc4f7dbd7941df93e31aae1dad7e19c9b1aae4699afb31f8f8d8e523",
+  "scope": "source answers only"
+}

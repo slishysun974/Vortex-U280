@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "backend": "xrtsim",
+  "commands": [],
+  "started_at": "2026-11-21T14:49:23.147901+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-afu/trace_lsu.py",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--fixed-alignment",
+    "results/local-ptx-same-predicate-afu-align-fixed-20261121-v2",
+    "--trace-build",
+    "results/local-ptx-same-predicate-afu-trace-build-20261121-v1",
+    "--trace-alignment",
+    "results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-afu-trace-20261121-v1",
+    "--jobs",
+    "2"
+  ],
+  "board_execution": "NOT_RUN",
+  "scope": "instrumented NOXRT AFU RTL LSU",
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "binding_sha256": "6597e09679fa638b960e1a2895fb7b85360a7bb1a130bf900cf31a2bbc5a5c47",
+  "trace_build_sha256": "54e61e8735916fc64f7ee5740c617a48ac43c8ae67708b6f35bbca350d6649d3",
+  "trace_alignment_sha256": "cbe8b70ccc36b978a05614455fe6979cc04798357b3be82938684b77e3167c71",
+  "cases": {
+    "vadd/1024/summary.json": {
+      "status": "PASS",
+      "sha256": "76c98b8aedf5c376c865f19567c4f88509e9aa1b8d8daac7e63a4766016d7fef"
+    },
+    "copy/1024/summary.json": {
+      "status": "PASS",
+      "sha256": "8fb70e054a03ee726d849ea65438d85634b57b70d40a0ca018fd37c7807076a2"
+    },
+    "affine/1024/summary.json": {
+      "status": "PASS",
+      "sha256": "4b7d5763c8fd26d6b7da4dcaad6babda7070729546061222c4e721d56237f0b8"
+    },
+    "vadd/16381/summary.json": {
+      "status": "PASS",
+      "sha256": "130a74a6bfc8025d1d567c3f05828aab58958c89e69fca7140d20d605fedc397"
+    },
+    "copy/16381/summary.json": {
+      "status": "PASS",
+      "sha256": "f747ccf259b31cb1065daffef6e8f8275cf45211a47da06f06d7a1f71f433b77"
+    },
+    "affine/16381/summary.json": {
+      "status": "PASS",
+      "sha256": "5b476f1f267e9a074a6b79809ed7464a2b31ff47a6ba117a5cf2ee581ade6788"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:55:05.098274+00:00"
+}

@@ -1,0 +1,165 @@
+{
+  "schema": "ae-v03-execution-v1",
+  "run_id": "ae-v03-models-20261121-v1",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/ae_v03_execute.py",
+    "simulate",
+    "--bundle",
+    "results/ae-v03-kit-20261121-v1/bundle",
+    "--build",
+    "results/ae-v03-build-20261121-v1",
+    "--output",
+    "results/ae-v03-models-20261121-v1"
+  ],
+  "started_at": "2026-11-21T11:07:48.380757+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle/scripts/ae_v03_execute.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+        "--backend",
+        "simx",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/binding.json",
+        "--build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+        "--lock",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1/sim-lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+      "started_at": "2026-11-21T11:07:55.791627+00:00",
+      "timeout_seconds": 450,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T11:08:08.440910+00:00",
+      "elapsed_seconds": 12.617,
+      "log_sha256": "fc60915cab5d10916c73b69898c22b94e72e3f7f0e37764e73693345aad4722c"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle/scripts/ae_v03_execute.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+        "--backend",
+        "rtlsim",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+        "--lock",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1/sim-lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+      "started_at": "2026-11-21T11:08:16.636029+00:00",
+      "timeout_seconds": 450,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_rtlsim.log",
+      "finished_at": "2026-11-21T11:08:28.923625+00:00",
+      "elapsed_seconds": 12.274,
+      "log_sha256": "ef12f4a4cf8ec2e066272ca37acacf18536cd47a7ea1598aa57f304e87ed521f"
+    },
+    {
+      "label": "xrtsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle/scripts/ae_v03_execute.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+        "--backend",
+        "xrtsim",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+        "--lock",
+        "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1/sim-lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-models-20261121-v1",
+      "started_at": "2026-11-21T11:08:36.357156+00:00",
+      "timeout_seconds": 450,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_xrtsim.log",
+      "finished_at": "2026-11-21T11:08:49.149007+00:00",
+      "elapsed_seconds": 12.764,
+      "log_sha256": "ef12f4a4cf8ec2e066272ca37acacf18536cd47a7ea1598aa57f304e87ed521f"
+    }
+  ],
+  "board_execution": "NOT_RUN",
+  "corpus_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+  "human_signoff": "NOT_RUN",
+  "physical_recovery": "NOT_RUN",
+  "timing7": "OPEN",
+  "plan_sha256": "6dfecc9796337b92a7adfd7b9346f59f4c8ff2791359df0e8e1e25bc915a5276",
+  "models": {
+    "simx": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "de97731f0bb8f5565fd0212fed4991221c522a520e77cfc7ca3e1a9decdf749f",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "0fbfd1aaa064363f7b9654380192009cba86a570dfd67f32bcf8a856a5d3b5b2",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "launches": 13,
+      "ordinary": 8,
+      "high": 5,
+      "alias_readbacks": 4,
+      "full_buffers_before": 39,
+      "full_buffers_after": 39,
+      "payloads": 13,
+      "capture_sha256": "56d3137472b5d2d4a1b642ea645be216ebc8796e80c241847e9140b0d0951b81",
+      "modules": {
+        "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+        "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+      }
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T11:08:55.576778+00:00"
+}

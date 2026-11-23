@@ -1,0 +1,57 @@
+{
+  "status": "FAIL",
+  "exit_code": 1,
+  "commands": [
+    {
+      "label": "verify_frozen",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle/verify_bundle.py",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-aligned-load-build-20261122-v1",
+      "started_at": "2026-11-21T16:43:38.134023+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_verify_frozen.log",
+      "finished_at": "2026-11-21T16:43:44.014848+00:00",
+      "elapsed_seconds": 5.858,
+      "log_sha256": "3fa9ad005b0c35511ed6bd4614a2ebeb62d7430f8f805e95118a1552634b64fe"
+    },
+    {
+      "label": "prepare_copy_aligned",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle/candidates/copy/aligned/source.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/u280-aligned-load-build-20261122-v1/modules/copy/aligned",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle/target_lock.json",
+        "--hardware",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle/hardware.json",
+        "--u280-aligned",
+        "--device-parameter-access",
+        "vortex2-queue-args-align-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-aligned-load-build-20261122-v1",
+      "started_at": "2026-11-21T16:43:44.102311+00:00",
+      "timeout_seconds": 60,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/02_prepare_copy_aligned.log",
+      "finished_at": "2026-11-21T16:43:45.001929+00:00",
+      "elapsed_seconds": 0.883,
+      "log_sha256": "5f3e17f79efcd07fd65c9996524d8be74903c4fa7debe9233955d5a042254ab8"
+    }
+  ],
+  "started_at": "2026-11-21T16:43:38.112526+00:00",
+  "board_execution": "NOT_RUN",
+  "modules": {},
+  "error": "prepare_copy_aligned failed",
+  "finished_at": "2026-11-21T16:43:45.051589+00:00"
+}

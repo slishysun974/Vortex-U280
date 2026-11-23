@@ -1,8 +1,18 @@
-# 2026-11-11 公开快照说明
+# 公开快照说明
+
+## 2026-11-23
+
+本轮收录 PTX v1.4 前端与运行时、V03 的四路接收、U280 同卡配对与计数结果、三轮 V08 本地试验，以及 Iris 三分类实施计划。[项目总览](PROJECT_OVERVIEW.md) · [公开证据索引](../results/README.md)
+
+V03 与 v1.4 的已完成 PTX 验收语料按原哈希保留。固定 U280 配对夹具可在普通主机上做离线重核。V08 收录协议、报告和选定统计回执，未开题的原双人试验仍按冻结协议在验收端管理。访问资料、原始会话日志与大型构建产物保存在本地归档。[本轮核对](../results/publication-check-20261123-v1/summary.json) · [逐文件发布清单](../publication/manifest.json)
+
+Iris 专项四路执行仍为 `NOT_RUN`。物理故障恢复为 `NOT_RUN`，旧 DMA 隔离依据为 `BLOCKED`，`TIMING-7` 为 `OPEN`。[当前状态](STATUS.md)
+
+## 2026-11-11
 
 公开仓库为 [slishysun974/Vortex-U280](https://github.com/slishysun974/Vortex-U280)。本次整理更新源码、接口与状态说明，收录两套冻结验收语料、新独立接收的四路输入输出及模型恢复实验，并增加 [服务器访问与目录导航](SERVER_GUIDE.md)。原本地证据和历史失败记录保持不变。
 
-## 内容与身份
+### 内容与身份
 
 - `configs/acceptance/` 的冻结输入、答案和 manifest 原样保留；当前 runtime 的六个生产文件原样保留。
 - 四路新语料的数组 `.bin` 原件保留，可以离线执行独立检查器。命令见下文；这只重核已有输出，不是新一次 RTL、AFU 或板上运行。
@@ -10,7 +20,7 @@
 - 公开副本中的 `publication/manifest.json` 列出原件哈希（有来源记录时）、公开文件哈希和变换类型；自身不递归计入清单。继承自旧公开提交的文件以公开哈希标识。
 - 完整工具链、native 动态库、FPGA xclbin/DCP/XO、WSL 镜像、课程原件及服务器访问资料不随仓库发布。文档中缺少的归档链接会指向公开副本的 `docs/LOCAL_ARCHIVE_INDEX.md`，明确需要本地原件。
 
-## 公开副本检查
+### 公开副本检查
 
 在仓库根目录执行：
 
@@ -26,7 +36,7 @@ python -B scripts/e_acceptance/runtime_unseen_check.py --corpus configs/acceptan
 
 部分历史自测依赖未发布的大型构建包、实际 D10/D12 二进制、Vivado 报告、完整上游检出或特定平台。对应检查在缺少材料时明确 SKIP，不改变已有断言，不把 SKIP 算作 PASS。本地完整工作区的 268 通过/1 跳过与本次公开副本结果分别报告。
 
-## 使用范围
+### 使用范围
 
 公开脚本中的 `192.0.2.28`、`u280user` 和 `C:/Users/example/` 是示例。实际连接前需配置本人获授权的服务器与工具路径；访问资料在本机独立保存。上传代码不授予共享设备权限。
 

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "runner_unittest",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T14:51:15.697764+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_runner_unittest.log",
+      "finished_at": "2026-11-21T14:52:40.162109+00:00",
+      "elapsed_seconds": 84.453,
+      "log_sha256": "dc2efada7fc0e9e5405c6546c6b4030c26541e9450337ffd682f314895acbe7d"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-afu/review_afu.py",
+    "host",
+    "--output",
+    "results/local-ptx-same-predicate-afu-host-20261121-v1"
+  ],
+  "started_at": "2026-11-21T14:51:15.694279+00:00",
+  "board_execution": "NOT_RUN",
+  "runner_unittest": {
+    "total": 297,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:52:40.207506+00:00"
+}

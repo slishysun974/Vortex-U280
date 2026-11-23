@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "independent local v1.4 acceptance on fixed D5 models",
+  "sources": {
+    "ptx_frontend": "5c5e9adfa88009a6ab696ee584494a40e11cfc54b7ed857b6cbf5fb7a94c788a",
+    "ptx_frontend_v12": "86f82ece05707eb1eb0791b65023503b828b3ba6adfd9008b9a6bfab54d0fadd",
+    "ptx_frontend_v13": "8629c4b5d9012960ab569667828d26db2557a749d74a9cfcdf8ae1cb4098a939",
+    "ptx_frontend_v14": "3c7aa9b172473f2a0567093dfcf17e8f16b0befa968a701427d8b225b328a29f",
+    "ptx_module": "7b463659d2dc5fc291de857dce8e5430988945ec0c8f4623084cb01f37ba22e6",
+    "ptx_runtime": "142d24bcd36fb11e7ec7b5a7af1642bc5d7b3b7da7d22e44b601c3d05fe6e0d2",
+    "ptx_launch": "dfbcee279e8ba1c889fa895f75368a7abbf4aa8939fab9a14c5f8deed5dfbeeb"
+  },
+  "receipts": {
+    "local-ptx-same-predicate-production-build-e-20261122-v1": "e8e5e4de6c8e246ba6dc7548a55a07b4762ec0789219c544ba8dc9a244c91fbb",
+    "e-v14-local-20261122-v1": "bb261a37ed8ada69248eed21f4bdefab9d0e238f16858dab33c9c84a403d6187",
+    "e-v14-trace-20261122-v1": "470623ac5f43e38f29ea930ccd0ecc3fba3acd7d775ea0e234ae65e1ff54907f"
+  },
+  "backends": {
+    "simx": {
+      "full_buffer_readbacks": 210,
+      "alias_readbacks": 4,
+      "payloads": 37,
+      "events": 37,
+      "trace_launches": 5,
+      "array_requests": 48
+    },
+    "rtlsim": {
+      "full_buffer_readbacks": 210,
+      "alias_readbacks": 4,
+      "payloads": 37,
+      "events": 37,
+      "trace_launches": 5,
+      "array_requests": 48
+    },
+    "xrtsim": {
+      "full_buffer_readbacks": 210,
+      "alias_readbacks": 4,
+      "payloads": 37,
+      "events": 37,
+      "trace_launches": 5,
+      "array_requests": 48
+    }
+  },
+  "physical_u280": "NOT_RUN",
+  "human_signoff": "NOT_RUN",
+  "argv": [
+    "experiments/e-v14-local/review.py",
+    "results/e-v14-review-20261122-v1",
+    "results/local-ptx-same-predicate-production-build-e-20261122-v1",
+    "results/e-v14-local-20261122-v1",
+    "results/e-v14-trace-20261122-v1"
+  ]
+}

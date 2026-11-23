@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "backend": "simx",
+  "workloads": [
+    {
+      "operator": "copy",
+      "n": 1024,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "z",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "n",
+              "address": 81936,
+              "value": 1024
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "z",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "n",
+              "address": 81936,
+              "value": 1024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "copy",
+      "n": 16381,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "z",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "n",
+              "address": 81936,
+              "value": 16381
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "z",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "n",
+              "address": 81936,
+              "value": 16381
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "vadd",
+      "n": 1024,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 86080
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 1024
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 86080
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 1024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "vadd",
+      "n": 16381,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 225344
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 16381
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 225344
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 16381
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "affine",
+      "n": 1024,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 86080
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 1024
+            },
+            {
+              "name": "alpha",
+              "address": 81948,
+              "value": 2654435769
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 65600
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 73792
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 86080
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 1024
+            },
+            {
+              "name": "alpha",
+              "address": 81948,
+              "value": 2654435769
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "affine",
+      "n": 16381,
+      "attempts": [
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 225344
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 16381
+            },
+            {
+              "name": "alpha",
+              "address": 81948,
+              "value": 2654435769
+            }
+          ]
+        },
+        {
+          "a0": 81920,
+          "mscratch": 81920,
+          "fields": [
+            {
+              "name": "x",
+              "address": 81920,
+              "value": 86080
+            },
+            {
+              "name": "y",
+              "address": 81928,
+              "value": 155712
+            },
+            {
+              "name": "z",
+              "address": 81936,
+              "value": 225344
+            },
+            {
+              "name": "n",
+              "address": 81944,
+              "value": 16381
+            },
+            {
+              "name": "alpha",
+              "address": 81948,
+              "value": 2654435769
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "launches": 12
+}

@@ -1,0 +1,4250 @@
+{
+  "metrics": {
+    "simx": {
+      "vadd/1024": {
+        "native": {
+          "cycles": 12757.5,
+          "instret": 7744.0,
+          "scoreboard_stalls": 8212.5,
+          "branches": 768.0,
+          "divergence": 0.0,
+          "alu": 3640.0,
+          "lsu": 1792.0,
+          "sfu": 2312.0,
+          "ifetch": 7744.0,
+          "loads": 6144.0,
+          "load_latency": 92750.0,
+          "stores": 1024.0,
+          "cycles_range": [
+            12756,
+            12759
+          ],
+          "cpi": 1.6474044421487604
+        },
+        "ptx": {
+          "cycles": 42180.5,
+          "instret": 27968.0,
+          "scoreboard_stalls": 18886.5,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 16440.0,
+          "lsu": 8192.0,
+          "sfu": 3336.0,
+          "ifetch": 27968.0,
+          "loads": 30720.0,
+          "load_latency": 359681.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            42178,
+            42183
+          ],
+          "cpi": 1.5081700514874141
+        },
+        "cycles_ratio": 3.306329610033314,
+        "instret_ratio": 3.6115702479338845,
+        "cpi_ratio": 0.9154825693684918,
+        "cycles_delta": 29423.0,
+        "instret_delta": 20224.0
+      },
+      "vadd/16381": {
+        "native": {
+          "cycles": 199990.0,
+          "instret": 122946.0,
+          "scoreboard_stalls": 123235.0,
+          "branches": 12289.0,
+          "divergence": 1.0,
+          "alu": 57401.0,
+          "lsu": 28672.0,
+          "sfu": 36873.0,
+          "ifetch": 122946.0,
+          "loads": 98289.0,
+          "load_latency": 1621183.0,
+          "stores": 16381.0,
+          "cycles_range": [
+            199983,
+            199997
+          ],
+          "cpi": 1.626649097977974
+        },
+        "ptx": {
+          "cycles": 661400.0,
+          "instret": 446536.0,
+          "scoreboard_stalls": 297336.0,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 262205.0,
+          "lsu": 131072.0,
+          "sfu": 53259.0,
+          "ifetch": 446536.0,
+          "loads": 491490.0,
+          "load_latency": 5770390.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            661400,
+            661400
+          ],
+          "cpi": 1.4811795689485283
+        },
+        "cycles_ratio": 3.3071653582679135,
+        "instret_ratio": 3.631968506498788,
+        "cpi_ratio": 0.9105710449719775,
+        "cycles_delta": 461410.0,
+        "instret_delta": 323590.0
+      },
+      "copy/1024": {
+        "native": {
+          "cycles": 11444.5,
+          "instret": 6720.0,
+          "scoreboard_stalls": 6928.5,
+          "branches": 768.0,
+          "divergence": 0.0,
+          "alu": 3128.0,
+          "lsu": 1280.0,
+          "sfu": 2312.0,
+          "ifetch": 6720.0,
+          "loads": 4096.0,
+          "load_latency": 58471.0,
+          "stores": 1024.0,
+          "cycles_range": [
+            11440,
+            11449
+          ],
+          "cpi": 1.7030505952380952
+        },
+        "ptx": {
+          "cycles": 31641.5,
+          "instret": 20800.0,
+          "scoreboard_stalls": 13639.5,
+          "branches": 1024.0,
+          "divergence": 0.0,
+          "alu": 12088.0,
+          "lsu": 5888.0,
+          "sfu": 2824.0,
+          "ifetch": 20800.0,
+          "loads": 21504.0,
+          "load_latency": 249649.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            31629,
+            31654
+          ],
+          "cpi": 1.5212259615384616
+        },
+        "cycles_ratio": 2.7647778408842676,
+        "instret_ratio": 3.0952380952380953,
+        "cpi_ratio": 0.893235917824148,
+        "cycles_delta": 20197.0,
+        "instret_delta": 14080.0
+      },
+      "copy/16381": {
+        "native": {
+          "cycles": 174044.0,
+          "instret": 106562.0,
+          "scoreboard_stalls": 99911.5,
+          "branches": 12289.0,
+          "divergence": 1.0,
+          "alu": 49209.0,
+          "lsu": 20480.0,
+          "sfu": 36873.0,
+          "ifetch": 106562.0,
+          "loads": 65527.0,
+          "load_latency": 906070.0,
+          "stores": 16381.0,
+          "cycles_range": [
+            174026,
+            174062
+          ],
+          "cpi": 1.6332651414200183
+        },
+        "ptx": {
+          "cycles": 493445.0,
+          "instret": 331845.0,
+          "scoreboard_stalls": 215575.0,
+          "branches": 16386.0,
+          "divergence": 2.0,
+          "alu": 192571.0,
+          "lsu": 94208.0,
+          "sfu": 45066.0,
+          "ifetch": 331845.0,
+          "loads": 344037.0,
+          "load_latency": 3935951.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            493444,
+            493446
+          ],
+          "cpi": 1.48697434043002
+        },
+        "cycles_ratio": 2.8351738640803474,
+        "instret_ratio": 3.1141025881646365,
+        "cpi_ratio": 0.9104304639338546,
+        "cycles_delta": 319401.0,
+        "instret_delta": 225283.0
+      },
+      "affine/1024": {
+        "native": {
+          "cycles": 13302.0,
+          "instret": 8256.0,
+          "scoreboard_stalls": 8907.5,
+          "branches": 768.0,
+          "divergence": 0.0,
+          "alu": 3896.0,
+          "lsu": 2048.0,
+          "sfu": 2312.0,
+          "ifetch": 8256.0,
+          "loads": 7168.0,
+          "load_latency": 105101.0,
+          "stores": 1024.0,
+          "cycles_range": [
+            13267,
+            13337
+          ],
+          "cpi": 1.6111918604651163
+        },
+        "ptx": {
+          "cycles": 46853.0,
+          "instret": 30784.0,
+          "scoreboard_stalls": 23018.5,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 18232.0,
+          "lsu": 9216.0,
+          "sfu": 3336.0,
+          "ifetch": 30784.0,
+          "loads": 34816.0,
+          "load_latency": 408382.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            46802,
+            46904
+          ],
+          "cpi": 1.5219919438669438
+        },
+        "cycles_ratio": 3.5222522928882873,
+        "instret_ratio": 3.7286821705426356,
+        "cpi_ratio": 0.944637309319312,
+        "cycles_delta": 33551.0,
+        "instret_delta": 22528.0
+      },
+      "affine/16381": {
+        "native": {
+          "cycles": 211770.0,
+          "instret": 131138.0,
+          "scoreboard_stalls": 149449.5,
+          "branches": 12289.0,
+          "divergence": 1.0,
+          "alu": 61497.0,
+          "lsu": 32768.0,
+          "sfu": 36873.0,
+          "ifetch": 131138.0,
+          "loads": 114670.0,
+          "load_latency": 1771437.0,
+          "stores": 16381.0,
+          "cycles_range": [
+            209963,
+            213577
+          ],
+          "cpi": 1.6148637313364547
+        },
+        "ptx": {
+          "cycles": 732329.5,
+          "instret": 491593.0,
+          "scoreboard_stalls": 368908.0,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 290878.0,
+          "lsu": 147456.0,
+          "sfu": 53259.0,
+          "ifetch": 491593.0,
+          "loads": 557026.0,
+          "load_latency": 6518390.5,
+          "stores": 32765.0,
+          "cycles_range": [
+            731694,
+            732965
+          ],
+          "cpi": 1.489706932360713
+        },
+        "cycles_ratio": 3.4581361854842516,
+        "instret_ratio": 3.7486693406945357,
+        "cpi_ratio": 0.9224969905837427,
+        "cycles_delta": 520559.5,
+        "instret_delta": 360455.0
+      }
+    },
+    "rtlsim": {
+      "vadd/1024": {
+        "native": {
+          "cycles": 12710.0,
+          "instret": 7744.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            12707,
+            12713
+          ],
+          "cpi": 1.6412706611570247
+        },
+        "ptx": {
+          "cycles": 47099.0,
+          "instret": 27968.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            46072,
+            48126
+          ],
+          "cpi": 1.6840317505720823
+        },
+        "cycles_ratio": 3.7056648308418567,
+        "instret_ratio": 3.6115702479338845,
+        "cpi_ratio": 1.0260536488143357,
+        "cycles_delta": 34389.0,
+        "instret_delta": 20224.0
+      },
+      "vadd/16381": {
+        "native": {
+          "cycles": 206011.0,
+          "instret": 122946.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            205846,
+            206176
+          ],
+          "cpi": 1.6756218177085875
+        },
+        "ptx": {
+          "cycles": 735229.0,
+          "instret": 446536.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            726852,
+            743606
+          ],
+          "cpi": 1.6465167422111544
+        },
+        "cycles_ratio": 3.5688822441520114,
+        "instret_ratio": 3.631968506498788,
+        "cpi_ratio": 0.9826302837610253,
+        "cycles_delta": 529218.0,
+        "instret_delta": 323590.0
+      },
+      "copy/1024": {
+        "native": {
+          "cycles": 11459.0,
+          "instret": 6720.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            11453,
+            11465
+          ],
+          "cpi": 1.7052083333333334
+        },
+        "ptx": {
+          "cycles": 35110.0,
+          "instret": 20800.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            34909,
+            35311
+          ],
+          "cpi": 1.6879807692307693
+        },
+        "cycles_ratio": 3.0639671873636445,
+        "instret_ratio": 3.0952380952380953,
+        "cpi_ratio": 0.9898970913021005,
+        "cycles_delta": 23651.0,
+        "instret_delta": 14080.0
+      },
+      "copy/16381": {
+        "native": {
+          "cycles": 177763.0,
+          "instret": 106562.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            177750,
+            177776
+          ],
+          "cpi": 1.6681650119179445
+        },
+        "ptx": {
+          "cycles": 553860.5,
+          "instret": 331845.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            553859,
+            553862
+          ],
+          "cpi": 1.6690337356295861
+        },
+        "cycles_ratio": 3.1157243070830263,
+        "instret_ratio": 3.1141025881646365,
+        "cpi_ratio": 1.000520766054578,
+        "cycles_delta": 376097.5,
+        "instret_delta": 225283.0
+      },
+      "affine/1024": {
+        "native": {
+          "cycles": 13272.5,
+          "instret": 8256.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            13261,
+            13284
+          ],
+          "cpi": 1.6076187015503876
+        },
+        "ptx": {
+          "cycles": 49650.0,
+          "instret": 30784.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            49648,
+            49652
+          ],
+          "cpi": 1.6128508316008316
+        },
+        "cycles_ratio": 3.7408174797513656,
+        "instret_ratio": 3.7286821705426356,
+        "cpi_ratio": 1.0032545839665825,
+        "cycles_delta": 36377.5,
+        "instret_delta": 22528.0
+      },
+      "affine/16381": {
+        "native": {
+          "cycles": 216548.0,
+          "instret": 131138.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            213853,
+            219243
+          ],
+          "cpi": 1.651298631975476
+        },
+        "ptx": {
+          "cycles": 862258.0,
+          "instret": 491593.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            862256,
+            862260
+          ],
+          "cpi": 1.754007888639586
+        },
+        "cycles_ratio": 3.9818331270665164,
+        "instret_ratio": 3.7486693406945357,
+        "cpi_ratio": 1.0621990805752908,
+        "cycles_delta": 645710.0,
+        "instret_delta": 360455.0
+      }
+    }
+  },
+  "attribution": {
+    "vadd/1024": {
+      "full_warp_projection": 20224,
+      "observed_instret_delta": 20224.0,
+      "residual": 0.0,
+      "full_warp_category_projection": {
+        "stack_store": 256,
+        "parameter_load": 6144,
+        "parameter_unpack": 12288,
+        "predicate_control": 1536
+      }
+    },
+    "vadd/16381": {
+      "full_warp_projection": 323584,
+      "observed_instret_delta": 323590.0,
+      "residual": 6.0,
+      "full_warp_category_projection": {
+        "stack_store": 4096,
+        "parameter_load": 98304,
+        "parameter_unpack": 196608,
+        "predicate_control": 24576
+      }
+    },
+    "copy/1024": {
+      "full_warp_projection": 14080,
+      "observed_instret_delta": 14080.0,
+      "residual": 0.0,
+      "full_warp_category_projection": {
+        "stack_store": 256,
+        "parameter_load": 4352,
+        "parameter_unpack": 8704,
+        "predicate_control": 768
+      }
+    },
+    "copy/16381": {
+      "full_warp_projection": 225280,
+      "observed_instret_delta": 225283.0,
+      "residual": 3.0,
+      "full_warp_category_projection": {
+        "stack_store": 4096,
+        "parameter_load": 69632,
+        "parameter_unpack": 139264,
+        "predicate_control": 12288
+      }
+    },
+    "affine/1024": {
+      "full_warp_projection": 22528,
+      "observed_instret_delta": 22528.0,
+      "residual": 0.0,
+      "full_warp_category_projection": {
+        "stack_store": 256,
+        "parameter_load": 6912,
+        "parameter_unpack": 13824,
+        "predicate_control": 1536
+      }
+    },
+    "affine/16381": {
+      "full_warp_projection": 360448,
+      "observed_instret_delta": 360455.0,
+      "residual": 7.0,
+      "full_warp_category_projection": {
+        "stack_store": 4096,
+        "parameter_load": 110592,
+        "parameter_unpack": 221184,
+        "predicate_control": 24576
+      }
+    }
+  },
+  "capture_receipts": {
+    "simx": {
+      "samples": 24,
+      "report_sha256": "b807a6dc45324f2e81a392808fea31b2a286793a0ec822d4f113208a79b2cde4",
+      "raw_samples_sha256": "ff48a26485e6141c285c3644b0fe217f7601f623308881d0101a9b30e2e4e9e4"
+    },
+    "rtlsim": {
+      "samples": 24,
+      "report_sha256": "e8ad6440c0a3c4fd0ad0082e667abbe9fdab95aea63efd036b678abbd4630668",
+      "raw_samples_sha256": "d1b7d926a86e162cc76f84ad0401abe666e03b079f27dca8fe67e3a0a0a61191"
+    }
+  },
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "archived native/PTX pairs on local SimX and processor RTL",
+  "board_execution": "NOT_RUN",
+  "static": {
+    "vadd": {
+      "native": {
+        "total": 25,
+        "category_counts": {
+          "other": 18,
+          "parameter_load": 4,
+          "predicate_control": 3
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a2",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a3",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "lw",
+            "operands": [
+              "a4",
+              "0x18(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "mul",
+            "operands": [
+              "a2",
+              "a2",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "addw",
+            "operands": [
+              "a2",
+              "a2",
+              "a3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "sltu",
+            "operands": [
+              "a3",
+              "a2",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a1",
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "beqz",
+            "operands": [
+              "a3",
+              "0x18000008c <kernel_main+0x58>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "ld",
+            "operands": [
+              "a3",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "ld",
+            "operands": [
+              "a4",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "ld",
+            "operands": [
+              "a0",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "slli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "srli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "add",
+            "operands": [
+              "a3",
+              "a3",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "add",
+            "operands": [
+              "a4",
+              "a4",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "lw",
+            "operands": [
+              "a3",
+              "0x0(a3)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "lw",
+            "operands": [
+              "a4",
+              "0x0(a4)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "add",
+            "operands": [
+              "a3",
+              "a4",
+              "a3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000088",
+            "opcode": "sw",
+            "operands": [
+              "a3",
+              "0x0(a0)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000008c",
+            "opcode": "vx_join",
+            "operands": [
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000090",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000094",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "2687ab3eb9ee13ddb44464331a5d5e685e1ac04f846331963310b8a19f463c46",
+        "dumps": {
+          "results\\u280-perf-build-20261121-v1\\sim\\native\\kernel.dump": "c195d3cbb1c34612920748aa010d43c2dc232772faa70f64f99bde234b4f7a1a",
+          "results\\u280-perf-build-20261121-v1\\board\\native\\kernel.dump": "c195d3cbb1c34612920748aa010d43c2dc232772faa70f64f99bde234b4f7a1a"
+        }
+      },
+      "ptx": {
+        "total": 104,
+        "category_counts": {
+          "other": 18,
+          "stack_store": 1,
+          "parameter_load": 28,
+          "parameter_unpack": 48,
+          "predicate_control": 9
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "sd",
+            "operands": [
+              "a0",
+              "0x8(sp)"
+            ],
+            "category": "stack_store"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a4",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "csrr",
+            "operands": [
+              "a5",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x9(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0xa(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0xb(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0xc(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0xd(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "lbu",
+            "operands": [
+              "a2",
+              "0xe(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "lbu",
+            "operands": [
+              "a3",
+              "0xf(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "lbu",
+            "operands": [
+              "t4",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "lbu",
+            "operands": [
+              "t5",
+              "0x11(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "lbu",
+            "operands": [
+              "t6",
+              "0x12(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "lbu",
+            "operands": [
+              "s0",
+              "0x13(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "mul",
+            "operands": [
+              "a4",
+              "a5",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000088",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "t0",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000008c",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "t1",
+              "t2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000090",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x14(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000094",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x15(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000098",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0x16(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000009c",
+            "opcode": "lbu",
+            "operands": [
+              "s1",
+              "0x17(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000a0",
+            "opcode": "slli",
+            "operands": [
+              "t3",
+              "t3",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a4",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a8",
+            "opcode": "slli",
+            "operands": [
+              "t5",
+              "t5",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000ac",
+            "opcode": "slli",
+            "operands": [
+              "t6",
+              "t6",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b0",
+            "opcode": "slli",
+            "operands": [
+              "s0",
+              "s0",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b4",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b8",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000bc",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "a7",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c0",
+            "opcode": "or",
+            "operands": [
+              "t3",
+              "t5",
+              "t4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c4",
+            "opcode": "or",
+            "operands": [
+              "t4",
+              "t6",
+              "s0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c8",
+            "opcode": "lbu",
+            "operands": [
+              "t5",
+              "0x18(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000cc",
+            "opcode": "lbu",
+            "operands": [
+              "t6",
+              "0x19(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000d0",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000d4",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x1a(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000d8",
+            "opcode": "lbu",
+            "operands": [
+              "s0",
+              "0x1b(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000dc",
+            "opcode": "slli",
+            "operands": [
+              "t6",
+              "t6",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e0",
+            "opcode": "or",
+            "operands": [
+              "t5",
+              "t6",
+              "t5"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e4",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e8",
+            "opcode": "slliw",
+            "operands": [
+              "t6",
+              "s0",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000ec",
+            "opcode": "or",
+            "operands": [
+              "t1",
+              "t1",
+              "t6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000f0",
+            "opcode": "addw",
+            "operands": [
+              "a1",
+              "a4",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800000f4",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a5",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000f8",
+            "opcode": "slli",
+            "operands": [
+              "a3",
+              "a3",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000fc",
+            "opcode": "slli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000100",
+            "opcode": "slli",
+            "operands": [
+              "s1",
+              "s1",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000104",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000108",
+            "opcode": "or",
+            "operands": [
+              "a2",
+              "a7",
+              "a2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000010c",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "t3",
+              "t4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000110",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "t0",
+              "t2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000114",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "t5",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000118",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "a1",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000011c",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a4",
+              "a2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000120",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a5",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000124",
+            "opcode": "sltu",
+            "operands": [
+              "a1",
+              "a1",
+              "a7"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000128",
+            "opcode": "srli",
+            "operands": [
+              "a2",
+              "t0",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000012c",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a4",
+              "a3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000130",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a5",
+              "s1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000134",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000138",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x18000019c <kernel_main+0x168>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000013c",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0x1(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000140",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0x2(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000144",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x3(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000148",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000014c",
+            "opcode": "slli",
+            "operands": [
+              "a6",
+              "a6",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000150",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000154",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000158",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a6",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000015c",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "a7",
+              "t0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000160",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x4(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000164",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x5(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000168",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0x6(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000016c",
+            "opcode": "lbu",
+            "operands": [
+              "a0",
+              "0x7(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000170",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000174",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000178",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000017c",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000180",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000184",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "t0",
+              "t2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000188",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000018c",
+            "opcode": "slli",
+            "operands": [
+              "a0",
+              "a0",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000190",
+            "opcode": "or",
+            "operands": [
+              "a0",
+              "a6",
+              "a0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000194",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000198",
+            "opcode": "lw",
+            "operands": [
+              "a6",
+              "0x0(a0)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000019c",
+            "opcode": "add",
+            "operands": [
+              "a4",
+              "a4",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001a0",
+            "opcode": "add",
+            "operands": [
+              "a2",
+              "a5",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001a4",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001a8",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001ac",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x1800001b4 <kernel_main+0x180>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001b0",
+            "opcode": "lw",
+            "operands": [
+              "a0",
+              "0x0(a4)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001b4",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001b8",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001bc",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x1800001c8 <kernel_main+0x194>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001c0",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001c4",
+            "opcode": "sw",
+            "operands": [
+              "a0",
+              "0x0(a2)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001c8",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001cc",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001d0",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+        "dumps": {
+          "results\\u280-perf-build-20261121-v1\\sim\\ptx\\program.disasm": "addb4de930f944232b16b2da3d9b2eea3418201dd6234fd5d64877aaf732d930",
+          "results\\u280-perf-build-20261121-v1\\board\\ptx\\program.disasm": "addb4de930f944232b16b2da3d9b2eea3418201dd6234fd5d64877aaf732d930"
+        }
+      }
+    },
+    "copy": {
+      "native": {
+        "total": 21,
+        "category_counts": {
+          "other": 15,
+          "parameter_load": 3,
+          "predicate_control": 3
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a2",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a3",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "lw",
+            "operands": [
+              "a4",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "mul",
+            "operands": [
+              "a2",
+              "a2",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "addw",
+            "operands": [
+              "a2",
+              "a2",
+              "a3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "sltu",
+            "operands": [
+              "a3",
+              "a2",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a1",
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "beqz",
+            "operands": [
+              "a3",
+              "0x18000007c <kernel_main+0x48>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "ld",
+            "operands": [
+              "a3",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "ld",
+            "operands": [
+              "a0",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "slli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "srli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "add",
+            "operands": [
+              "a3",
+              "a3",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "lw",
+            "operands": [
+              "a3",
+              "0x0(a3)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "sw",
+            "operands": [
+              "a3",
+              "0x0(a0)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "vx_join",
+            "operands": [
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "a42b4e48c6d24126a3a955854830498ee7a94408a0577b5f551d6e95b1888939",
+        "dumps": {
+          "results\\u280-perf-build-copy-affine-20261121-v1\\sim\\copy\\native\\kernel.dump": "db7ef94638f763c7365d749fd47407338b226b8f18c6e30feb3b8cb831d3816e",
+          "results\\u280-perf-build-copy-affine-20261121-v1\\board\\copy\\native\\kernel.dump": "db7ef94638f763c7365d749fd47407338b226b8f18c6e30feb3b8cb831d3816e"
+        }
+      },
+      "ptx": {
+        "total": 76,
+        "category_counts": {
+          "other": 15,
+          "stack_store": 1,
+          "parameter_load": 20,
+          "parameter_unpack": 34,
+          "predicate_control": 6
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "sd",
+            "operands": [
+              "a0",
+              "0x8(sp)"
+            ],
+            "category": "stack_store"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a2",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "csrr",
+            "operands": [
+              "a3",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "lbu",
+            "operands": [
+              "a4",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "lbu",
+            "operands": [
+              "a5",
+              "0x9(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0xa(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0xb(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0xc(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0xd(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0xe(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0xf(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "slli",
+            "operands": [
+              "a5",
+              "a5",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "slli",
+            "operands": [
+              "a6",
+              "a6",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "mul",
+            "operands": [
+              "a2",
+              "a3",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a5",
+              "a4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "or",
+            "operands": [
+              "a3",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000088",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000008c",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000090",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0x11(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000094",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x12(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000098",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x13(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000009c",
+            "opcode": "slli",
+            "operands": [
+              "t3",
+              "t3",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a0",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a4",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a8",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000ac",
+            "opcode": "slliw",
+            "operands": [
+              "t1",
+              "t1",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b0",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a7",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b4",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b8",
+            "opcode": "addw",
+            "operands": [
+              "a1",
+              "a2",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800000bc",
+            "opcode": "or",
+            "operands": [
+              "a3",
+              "a4",
+              "a3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c0",
+            "opcode": "or",
+            "operands": [
+              "a2",
+              "a5",
+              "t2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c4",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c8",
+            "opcode": "slli",
+            "operands": [
+              "a5",
+              "a1",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800000cc",
+            "opcode": "or",
+            "operands": [
+              "a3",
+              "a3",
+              "a2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000d0",
+            "opcode": "sltu",
+            "operands": [
+              "a1",
+              "a1",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800000d4",
+            "opcode": "srli",
+            "operands": [
+              "a2",
+              "a5",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800000d8",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a3",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000dc",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800000e0",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x180000144 <kernel_main+0x110>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800000e4",
+            "opcode": "lbu",
+            "operands": [
+              "a5",
+              "0x1(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000e8",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0x2(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000ec",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0x3(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000f0",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000f4",
+            "opcode": "slli",
+            "operands": [
+              "a5",
+              "a5",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000f8",
+            "opcode": "slli",
+            "operands": [
+              "a6",
+              "a6",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000fc",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000100",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a5",
+              "t0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000104",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000108",
+            "opcode": "lbu",
+            "operands": [
+              "a7",
+              "0x4(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000010c",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x5(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000110",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x6(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000114",
+            "opcode": "lbu",
+            "operands": [
+              "a0",
+              "0x7(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000118",
+            "opcode": "slli",
+            "operands": [
+              "a7",
+              "a7",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000011c",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000120",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "a7",
+              "t0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000124",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a5",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000128",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000012c",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a7",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000130",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a5",
+              "a6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000134",
+            "opcode": "slli",
+            "operands": [
+              "a0",
+              "a0",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000138",
+            "opcode": "or",
+            "operands": [
+              "a0",
+              "a5",
+              "a0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000013c",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000140",
+            "opcode": "lw",
+            "operands": [
+              "a5",
+              "0x0(a0)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000144",
+            "opcode": "add",
+            "operands": [
+              "a2",
+              "a4",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000148",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000014c",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a0",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000150",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x180000158 <kernel_main+0x124>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000154",
+            "opcode": "sw",
+            "operands": [
+              "a5",
+              "0x0(a2)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000158",
+            "opcode": "vx_join",
+            "operands": [
+              "a0"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000015c",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000160",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+        "dumps": {
+          "results\\u280-perf-build-copy-affine-20261121-v1\\sim\\copy\\ptx\\program.disasm": "a07e440fe8e1fb4359342f0ed65d60a864bec1e25db1e7ef82289bbd31f2c776",
+          "results\\u280-perf-build-copy-affine-20261121-v1\\board\\copy\\ptx\\program.disasm": "a07e440fe8e1fb4359342f0ed65d60a864bec1e25db1e7ef82289bbd31f2c776"
+        }
+      }
+    },
+    "affine": {
+      "native": {
+        "total": 27,
+        "category_counts": {
+          "other": 19,
+          "parameter_load": 5,
+          "predicate_control": 3
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a2",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a3",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "lw",
+            "operands": [
+              "a4",
+              "0x18(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "mul",
+            "operands": [
+              "a2",
+              "a2",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "addw",
+            "operands": [
+              "a2",
+              "a2",
+              "a3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "sltu",
+            "operands": [
+              "a3",
+              "a2",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a1",
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "beqz",
+            "operands": [
+              "a3",
+              "0x180000094 <kernel_main+0x60>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "ld",
+            "operands": [
+              "a3",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "ld",
+            "operands": [
+              "a4",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "ld",
+            "operands": [
+              "a5",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "lw",
+            "operands": [
+              "a0",
+              "0x1c(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "slli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "srli",
+            "operands": [
+              "a2",
+              "a2",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "add",
+            "operands": [
+              "a3",
+              "a3",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "add",
+            "operands": [
+              "a4",
+              "a4",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "lw",
+            "operands": [
+              "a3",
+              "0x0(a3)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "lw",
+            "operands": [
+              "a4",
+              "0x0(a4)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "mul",
+            "operands": [
+              "a0",
+              "a3",
+              "a0"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000088",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000008c",
+            "opcode": "add",
+            "operands": [
+              "a2",
+              "a5",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000090",
+            "opcode": "sw",
+            "operands": [
+              "a0",
+              "0x0(a2)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000094",
+            "opcode": "vx_join",
+            "operands": [
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000098",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x10"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000009c",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "51987911202ee9f7c56446ef7f11c9be3982b33c0d7e1a0aecf7ac4236c6dd54",
+        "dumps": {
+          "results\\u280-perf-build-copy-affine-20261121-v1\\sim\\affine\\native\\kernel.dump": "e8f0ee3f573a7c9d814a3d4f3e161645253c76cec9121bfb862a994fd69f7251",
+          "results\\u280-perf-build-copy-affine-20261121-v1\\board\\affine\\native\\kernel.dump": "e8f0ee3f573a7c9d814a3d4f3e161645253c76cec9121bfb862a994fd69f7251"
+        }
+      },
+      "ptx": {
+        "total": 115,
+        "category_counts": {
+          "other": 19,
+          "stack_store": 1,
+          "parameter_load": 32,
+          "parameter_unpack": 54,
+          "predicate_control": 9
+        },
+        "instructions": [
+          {
+            "pc": "180000034",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "-0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000038",
+            "opcode": "sd",
+            "operands": [
+              "a0",
+              "0x8(sp)"
+            ],
+            "category": "stack_store"
+          },
+          {
+            "pc": "18000003c",
+            "opcode": "csrr",
+            "operands": [
+              "a1",
+              "0xcd3"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000040",
+            "opcode": "csrr",
+            "operands": [
+              "a7",
+              "0xcd9"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000044",
+            "opcode": "csrr",
+            "operands": [
+              "t2",
+              "0xcd6"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000048",
+            "opcode": "lbu",
+            "operands": [
+              "a4",
+              "0x8(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000004c",
+            "opcode": "lbu",
+            "operands": [
+              "a5",
+              "0x9(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000050",
+            "opcode": "lbu",
+            "operands": [
+              "a6",
+              "0xa(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000054",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0xb(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000058",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0xc(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000005c",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0xd(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000060",
+            "opcode": "lbu",
+            "operands": [
+              "a3",
+              "0xe(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000064",
+            "opcode": "lbu",
+            "operands": [
+              "a2",
+              "0xf(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000068",
+            "opcode": "lbu",
+            "operands": [
+              "t5",
+              "0x10(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000006c",
+            "opcode": "lbu",
+            "operands": [
+              "t6",
+              "0x11(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000070",
+            "opcode": "lbu",
+            "operands": [
+              "t4",
+              "0x12(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000074",
+            "opcode": "lbu",
+            "operands": [
+              "s0",
+              "0x13(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000078",
+            "opcode": "mul",
+            "operands": [
+              "a7",
+              "t2",
+              "a7"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000007c",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0x14(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000080",
+            "opcode": "lbu",
+            "operands": [
+              "s1",
+              "0x15(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000084",
+            "opcode": "lbu",
+            "operands": [
+              "s2",
+              "0x16(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000088",
+            "opcode": "lbu",
+            "operands": [
+              "s3",
+              "0x17(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000008c",
+            "opcode": "slli",
+            "operands": [
+              "a5",
+              "a5",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000090",
+            "opcode": "slli",
+            "operands": [
+              "a6",
+              "a6",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000094",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000098",
+            "opcode": "slli",
+            "operands": [
+              "t3",
+              "t3",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000009c",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a0",
+            "opcode": "slli",
+            "operands": [
+              "t6",
+              "t6",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a4",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a5",
+              "a4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000a8",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a6",
+              "t0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000ac",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "t1",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b0",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t6",
+              "t5"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000b4",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x18(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000b8",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0x19(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000bc",
+            "opcode": "lbu",
+            "operands": [
+              "t5",
+              "0x1a(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000c0",
+            "opcode": "lbu",
+            "operands": [
+              "t6",
+              "0x1b(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000c4",
+            "opcode": "slli",
+            "operands": [
+              "t4",
+              "t4",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000c8",
+            "opcode": "slli",
+            "operands": [
+              "s0",
+              "s0",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000cc",
+            "opcode": "slli",
+            "operands": [
+              "s1",
+              "s1",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000d0",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000d4",
+            "opcode": "slli",
+            "operands": [
+              "t3",
+              "t3",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000d8",
+            "opcode": "slli",
+            "operands": [
+              "t5",
+              "t5",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000dc",
+            "opcode": "slliw",
+            "operands": [
+              "t6",
+              "t6",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e0",
+            "opcode": "or",
+            "operands": [
+              "t4",
+              "t4",
+              "s0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e4",
+            "opcode": "or",
+            "operands": [
+              "t2",
+              "t2",
+              "s1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000e8",
+            "opcode": "or",
+            "operands": [
+              "t1",
+              "t3",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000ec",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0x1c(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000f0",
+            "opcode": "lbu",
+            "operands": [
+              "s0",
+              "0x1d(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000f4",
+            "opcode": "or",
+            "operands": [
+              "t5",
+              "t5",
+              "t6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800000f8",
+            "opcode": "lbu",
+            "operands": [
+              "t6",
+              "0x1e(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "1800000fc",
+            "opcode": "lbu",
+            "operands": [
+              "s1",
+              "0x1f(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000100",
+            "opcode": "slli",
+            "operands": [
+              "s0",
+              "s0",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000104",
+            "opcode": "or",
+            "operands": [
+              "t3",
+              "s0",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000108",
+            "opcode": "addw",
+            "operands": [
+              "a1",
+              "a7",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000010c",
+            "opcode": "or",
+            "operands": [
+              "a4",
+              "a4",
+              "a5"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000110",
+            "opcode": "slli",
+            "operands": [
+              "a3",
+              "a3",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000114",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a6",
+              "a3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000118",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "t0",
+              "t4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000011c",
+            "opcode": "slli",
+            "operands": [
+              "s2",
+              "s2",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000120",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "t2",
+              "s2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000124",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "a2",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000128",
+            "opcode": "slli",
+            "operands": [
+              "s3",
+              "s3",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000012c",
+            "opcode": "slli",
+            "operands": [
+              "t6",
+              "t6",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000130",
+            "opcode": "slli",
+            "operands": [
+              "a2",
+              "s1",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000134",
+            "opcode": "or",
+            "operands": [
+              "t1",
+              "t1",
+              "t5"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000138",
+            "opcode": "or",
+            "operands": [
+              "a3",
+              "t3",
+              "t6"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000013c",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "a1",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000140",
+            "opcode": "or",
+            "operands": [
+              "a5",
+              "a4",
+              "a5"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000144",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "a6",
+              "a7"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000148",
+            "opcode": "sltu",
+            "operands": [
+              "a1",
+              "a1",
+              "t1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "18000014c",
+            "opcode": "srli",
+            "operands": [
+              "a4",
+              "t2",
+              "0x1e"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "180000150",
+            "opcode": "or",
+            "operands": [
+              "a6",
+              "a5",
+              "t0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000154",
+            "opcode": "or",
+            "operands": [
+              "a7",
+              "a7",
+              "s3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000158",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a5",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "18000015c",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x1800001c0 <kernel_main+0x18c>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "180000160",
+            "opcode": "lbu",
+            "operands": [
+              "t0",
+              "0x1(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000164",
+            "opcode": "lbu",
+            "operands": [
+              "t1",
+              "0x2(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000168",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0x3(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000016c",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0x0(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000170",
+            "opcode": "slli",
+            "operands": [
+              "t0",
+              "t0",
+              "0x8"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000174",
+            "opcode": "slli",
+            "operands": [
+              "t1",
+              "t1",
+              "0x10"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000178",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x18"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000017c",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t0",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000180",
+            "opcode": "or",
+            "operands": [
+              "t1",
+              "t1",
+              "t2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000184",
+            "opcode": "lbu",
+            "operands": [
+              "t2",
+              "0x4(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000188",
+            "opcode": "lbu",
+            "operands": [
+              "t3",
+              "0x5(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "18000018c",
+            "opcode": "lbu",
+            "operands": [
+              "t4",
+              "0x6(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000190",
+            "opcode": "lbu",
+            "operands": [
+              "a0",
+              "0x7(a0)"
+            ],
+            "category": "parameter_load"
+          },
+          {
+            "pc": "180000194",
+            "opcode": "slli",
+            "operands": [
+              "t2",
+              "t2",
+              "0x20"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "180000198",
+            "opcode": "slli",
+            "operands": [
+              "t3",
+              "t3",
+              "0x28"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "18000019c",
+            "opcode": "or",
+            "operands": [
+              "t2",
+              "t2",
+              "t3"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001a0",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001a4",
+            "opcode": "slli",
+            "operands": [
+              "t4",
+              "t4",
+              "0x30"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001a8",
+            "opcode": "or",
+            "operands": [
+              "t1",
+              "t2",
+              "t4"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001ac",
+            "opcode": "or",
+            "operands": [
+              "t0",
+              "t0",
+              "t1"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001b0",
+            "opcode": "slli",
+            "operands": [
+              "a0",
+              "a0",
+              "0x38"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001b4",
+            "opcode": "or",
+            "operands": [
+              "a0",
+              "t0",
+              "a0"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001b8",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001bc",
+            "opcode": "lw",
+            "operands": [
+              "t0",
+              "0x0(a0)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001c0",
+            "opcode": "or",
+            "operands": [
+              "a2",
+              "a3",
+              "a2"
+            ],
+            "category": "parameter_unpack"
+          },
+          {
+            "pc": "1800001c4",
+            "opcode": "add",
+            "operands": [
+              "a6",
+              "a6",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001c8",
+            "opcode": "add",
+            "operands": [
+              "a4",
+              "a7",
+              "a4"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001cc",
+            "opcode": "vx_join",
+            "operands": [
+              "a5"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001d0",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001d4",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x1800001dc <kernel_main+0x1a8>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001d8",
+            "opcode": "lw",
+            "operands": [
+              "a0",
+              "0x0(a6)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001dc",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001e0",
+            "opcode": "vx_split_n",
+            "operands": [
+              "a3",
+              "a1"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001e4",
+            "opcode": "beqz",
+            "operands": [
+              "a1",
+              "0x1800001f4 <kernel_main+0x1c0>"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001e8",
+            "opcode": "mul",
+            "operands": [
+              "a1",
+              "t0",
+              "a2"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001ec",
+            "opcode": "add",
+            "operands": [
+              "a0",
+              "a0",
+              "a1"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001f0",
+            "opcode": "sw",
+            "operands": [
+              "a0",
+              "0x0(a4)"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001f4",
+            "opcode": "vx_join",
+            "operands": [
+              "a3"
+            ],
+            "category": "predicate_control"
+          },
+          {
+            "pc": "1800001f8",
+            "opcode": "addi",
+            "operands": [
+              "sp",
+              "sp",
+              "0x20"
+            ],
+            "category": "other"
+          },
+          {
+            "pc": "1800001fc",
+            "opcode": "ret",
+            "operands": [
+              ""
+            ],
+            "category": "other"
+          }
+        ],
+        "image_sha256": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+        "dumps": {
+          "results\\u280-perf-build-copy-affine-20261121-v1\\sim\\affine\\ptx\\program.disasm": "8b040c0cd5002cf91c2394bd65efbb374115378d018f86073242de9b6b0332c1",
+          "results\\u280-perf-build-copy-affine-20261121-v1\\board\\affine\\ptx\\program.disasm": "8b040c0cd5002cf91c2394bd65efbb374115378d018f86073242de9b6b0332c1"
+        }
+      }
+    }
+  },
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "experiments/ptx-performance-attribution/analyze.py",
+    "--simx",
+    "results/local-ptx-perf-simx-20261121-v1",
+    "--rtlsim",
+    "results/local-ptx-perf-rtlsim-20261121-v1",
+    "--output",
+    "results/local-ptx-perf-attribution-20261121-v2/result.json"
+  ],
+  "capture_paths": {
+    "simx": "results\\local-ptx-perf-simx-20261121-v1",
+    "rtlsim": "results\\local-ptx-perf-rtlsim-20261121-v1"
+  },
+  "script_sha256": {
+    "measure.py": "208f5789e384b93327fc154ffb7eff1b29fae439faf41192f96d0dbd6c3d1b93",
+    "analyze.py": "ce5e5e48838b116f6e6e0b218aeba7bd13ac6bcf92ef16ec176a327f0ece06b0"
+  }
+}

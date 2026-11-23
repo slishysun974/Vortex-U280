@@ -1,0 +1,47 @@
+// D author probe. Each lane always writes its observed value to audit[i].
+.version 7.0
+.target sm_70
+.address_size 64
+.visible .entry guarded_wide_offset(
+    .param .u64 x, .param .u64 z, .param .u64 audit,
+    .param .u32 n, .param .u32 skip_lane, .param .u32 bias) {
+    .reg .b32 tid, width, bid, grid, i, count, skip, limit, index, bias32, value, result;
+    .reg .b64 input_ptr, output_ptr, audit_ptr, global_ptr, offset, addr;
+    .reg .pred skipped, masked, high;
+    ld.param.u64 input_ptr, [x];
+    ld.param.u64 output_ptr, [z];
+    ld.param.u64 audit_ptr, [audit];
+    ld.param.u32 count, [n];
+    ld.param.u32 skip, [skip_lane];
+    ld.param.u32 bias32, [bias];
+    mov.u32 tid, %tid.x;
+    mov.u32 width, %ntid.x;
+    mov.u32 bid, %ctaid.x;
+    mov.u32 grid, %nctaid.x;
+    mul.lo.u32 i, bid, width;
+    add.u32 i, i, tid;
+    setp.eq.u32 skipped, tid, skip;
+    selp.u32 limit, 0, count, skipped;
+    setp.ge.u32 masked, i, limit;
+    add.u32 index, i, bias32;
+    selp.u32 index, 0x80000000, index, masked;
+    mul.wide.u32 offset, index, 4;
+    // Subtract 4 GiB from the full product. The masked offset is still 4 GiB.
+    add.u64 offset, offset, 0xffffffff00000000;
+    cvta.to.global.u64 global_ptr, input_ptr;
+    mov.u64 addr, global_ptr;
+    add.u64 addr, addr, offset;
+    add.u64 addr, addr, 4;
+    mov.u32 value, 0xa5a55a5a;
+    @!masked ld.global.u32 value, [addr-4];
+    setp.lt.u32 high, 0x7fffffff, value;
+    mov.u32 result, value;
+    @high sub.u32 result, value, 0xffffffff;
+    add.u64 addr, output_ptr, offset;
+    @!masked st.global.u32 [addr+4], result;
+    mul.wide.u32 offset, i, 4;
+    add.u64 addr, audit_ptr, offset;
+    add.u32 value, value, grid;
+    st.global.u32 [addr], value;
+    ret;
+}

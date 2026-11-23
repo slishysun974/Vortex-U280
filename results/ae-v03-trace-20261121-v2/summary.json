@@ -1,0 +1,129 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/trace_ae_v03.py",
+    "--bundle",
+    "results/ae-v03-kit-20261121-v1/bundle",
+    "--build",
+    "results/ae-v03-build-20261121-v1",
+    "--run-id",
+    "ae-v03-trace-20261121-v2"
+  ],
+  "started_at": "2026-11-21T11:15:18.011330+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "stdbuf",
+        "-oL",
+        "-eL",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle/scripts/ae_v03_execute.py",
+        "capture",
+        "--backend",
+        "simx",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle",
+        "--build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+        "--lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2/bindings/simx/binding.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2",
+      "started_at": "2026-11-21T11:15:28.055564+00:00",
+      "timeout_seconds": 450,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T11:18:33.175896+00:00",
+      "elapsed_seconds": 185.096,
+      "log_sha256": "c355fe84e661ff3f45fd79d9538a005a980f9b77ce481c04257273add3b3915b"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "stdbuf",
+        "-oL",
+        "-eL",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle/scripts/ae_v03_execute.py",
+        "capture",
+        "--backend",
+        "rtlsim",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/ae-v03-kit-20261121-v1/bundle",
+        "--build",
+        "/mnt/d/Vortex-U280/results/ae-v03-build-20261121-v1",
+        "--lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2/bindings/rtlsim/binding.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/ae-v03-trace-20261121-v2",
+      "started_at": "2026-11-21T11:18:43.786821+00:00",
+      "timeout_seconds": 450,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_rtlsim.log",
+      "finished_at": "2026-11-21T11:21:43.954207+00:00",
+      "elapsed_seconds": 180.125,
+      "log_sha256": "22d862f6c76fed44527536b7679ceba6e5e46fb401746b81a9f250d1c5d9df3f"
+    }
+  ],
+  "backends": {
+    "simx": {
+      "status": "PASS",
+      "receipt": {
+        "status": "PASS",
+        "launches": 13,
+        "ordinary": 8,
+        "high": 5,
+        "alias_readbacks": 4,
+        "full_buffers_before": 39,
+        "full_buffers_after": 39,
+        "payloads": 13,
+        "capture_sha256": "42f71758ba74f8dae9470f05321d5fc903e746db7a23a299089dfb3142ee00fc",
+        "modules": {
+          "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+          "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+        }
+      },
+      "binding_sha256": "422887f3317f77a7a875dfe35cbd75503a2824f8b0993a3c77d9ef3bde487b5f",
+      "request_count": 1383,
+      "cases": 13
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "receipt": {
+        "status": "PASS",
+        "launches": 13,
+        "ordinary": 8,
+        "high": 5,
+        "alias_readbacks": 4,
+        "full_buffers_before": 39,
+        "full_buffers_after": 39,
+        "payloads": 13,
+        "capture_sha256": "2416fe112c9b3e93348d615f6888c678b33351a7bbb4ca08f487a8c9a8c6bc27",
+        "modules": {
+          "p0_form_witness": "5de6bc22f5fa48604151871ab13a83fe9133b8a7b119c1798e82f0bad0fa39c6",
+          "guarded_wide_offset": "13a96e5f1356ef7ae359fee71b43cec4f615c3196036a4fafb2b8e5baf691791"
+        }
+      },
+      "binding_sha256": "9f770fe994c180fad9b30e781510d82e6da7e64a3ee8516e48aba73bad53520f",
+      "request_count": 1383,
+      "cases": 13
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T11:21:50.881571+00:00"
+}

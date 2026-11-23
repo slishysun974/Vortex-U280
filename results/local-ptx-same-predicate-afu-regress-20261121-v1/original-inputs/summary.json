@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "cases": [
+    {
+      "status": "PASS",
+      "operator": "vadd",
+      "n": 1024,
+      "block": 32,
+      "grid": 32,
+      "words": 1056,
+      "image_sha256": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+      "params_sha256": "e615b902e9f68d8b91e4d329c35d639b27e9ce0468d212ad412390f908031927",
+      "arrays": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "y": "220485b06e4d2fbe2ffb971fe8f4f2a9a8452ae24ba3fe50b52f63d2021a29b9",
+        "z": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 1,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    },
+    {
+      "status": "PASS",
+      "operator": "vadd",
+      "n": 16381,
+      "block": 32,
+      "grid": 512,
+      "words": 16416,
+      "image_sha256": "f99f49a9555b0ba630273c6762dc3b1e7bec5012b2a7f58f565eb0bacc98e30b",
+      "params_sha256": "0eabefaa37ed299fe3629e632777e5a183904b342e3223dbda221de08b0b8180",
+      "arrays": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "y": "d91371970acde869dd8240b41bb57414636a5f0bb26bdfb9f2c45bebba8c4ba0",
+        "z": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 2,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    },
+    {
+      "status": "PASS",
+      "operator": "copy",
+      "n": 1024,
+      "block": 32,
+      "grid": 32,
+      "words": 1056,
+      "image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+      "params_sha256": "13174291c236125d52f798e9aa9f5b3c2b30ae09e9801f5cf7073cbfca5fcd45",
+      "arrays": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "z": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 3,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    },
+    {
+      "status": "PASS",
+      "operator": "copy",
+      "n": 16381,
+      "block": 32,
+      "grid": 512,
+      "words": 16416,
+      "image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+      "params_sha256": "af8d48850dee4e8457ebdd2ab65b65609eb6e5fde03d75330d8ca25bf01acf75",
+      "arrays": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "z": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 4,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    },
+    {
+      "status": "PASS",
+      "operator": "affine",
+      "n": 1024,
+      "block": 32,
+      "grid": 32,
+      "words": 1056,
+      "image_sha256": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+      "params_sha256": "597c92771e6f2643599486a11c07677918755cdfdcec0e3fb953389134aaee6e",
+      "arrays": {
+        "x": "c0a97c911e5a7a26b17eacb48a332d904edf1112d62a08c80089f6a2b26a30ad",
+        "y": "220485b06e4d2fbe2ffb971fe8f4f2a9a8452ae24ba3fe50b52f63d2021a29b9",
+        "z": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 5,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    },
+    {
+      "status": "PASS",
+      "operator": "affine",
+      "n": 16381,
+      "block": 32,
+      "grid": 512,
+      "words": 16416,
+      "image_sha256": "6cbec62a3f61a1e0ded99df496a8bc0e063520aeae96d9974e4045c956f11e67",
+      "params_sha256": "f858491316dc4f5af38ad7210c3134aab573a3d2dc3f3fa851438acc4bb6f775",
+      "arrays": {
+        "x": "0157330e339ba22c94891628c568ce0c6a915621f803b8adc3e5417ac43ae820",
+        "y": "d91371970acde869dd8240b41bb57414636a5f0bb26bdfb9f2c45bebba8c4ba0",
+        "z": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0"
+      },
+      "completion": {
+        "status": "COMPLETE",
+        "event_id": 6,
+        "generation": 0,
+        "backend": "xrtsim"
+      }
+    }
+  ]
+}

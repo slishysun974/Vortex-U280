@@ -1,0 +1,500 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "source_head",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:23.655909+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_source_head.log",
+      "finished_at": "2026-11-21T12:46:23.735373+00:00",
+      "elapsed_seconds": 0.042,
+      "log_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    {
+      "label": "source_diff",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "diff",
+        "HEAD",
+        "--",
+        "sw",
+        "hw",
+        "sim",
+        "ci",
+        "VX_types.toml",
+        "tests/regression/common.mk"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:23.761738+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_source_diff.log",
+      "finished_at": "2026-11-21T12:46:23.844437+00:00",
+      "elapsed_seconds": 0.071,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "configure",
+      "argv": [
+        "bash",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1/configure",
+        "--xlen=64",
+        "--tooldir=/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:23.919463+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_configure.log",
+      "finished_at": "2026-11-21T12:46:40.951361+00:00",
+      "elapsed_seconds": 17.02,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "kernel_library",
+      "argv": [
+        "make",
+        "-j2",
+        "-C",
+        "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1/sw/kernel",
+        "XLEN=64",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:40.987043+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_kernel_library.log",
+      "finished_at": "2026-11-21T12:46:42.319032+00:00",
+      "elapsed_seconds": 1.324,
+      "log_sha256": "4df4273b4c7dd3e2c89c234c35791aac50e990414680fa46b2fdf00e0048ea6f"
+    },
+    {
+      "label": "vadd_bytewise",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/vadd/bytewise",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:44.317929+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_vadd_bytewise.log",
+      "finished_at": "2026-11-21T12:46:46.846405+00:00",
+      "elapsed_seconds": 2.495,
+      "log_sha256": "4b81225a3eb90e6feb00ba0517f2678bc8fbd2084152d032afd44129fd7f2b12"
+    },
+    {
+      "label": "vadd_aligned",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/vadd/aligned",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:47.025962+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_vadd_aligned.log",
+      "finished_at": "2026-11-21T12:46:48.484793+00:00",
+      "elapsed_seconds": 1.426,
+      "log_sha256": "c94c2d22c9f85a1991fc91b9cd10a3db58bb9b7212fd6cae376a7823e3de64d0"
+    },
+    {
+      "label": "copy_bytewise",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/copy/bytewise",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:52.394805+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_copy_bytewise.log",
+      "finished_at": "2026-11-21T12:46:53.981007+00:00",
+      "elapsed_seconds": 1.574,
+      "log_sha256": "44208ed70425d3d952beea1f5a9aa8a65856a1df4258af8bdc161e0448e8d285"
+    },
+    {
+      "label": "copy_aligned",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/copy/aligned",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:54.583642+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_copy_aligned.log",
+      "finished_at": "2026-11-21T12:46:55.574339+00:00",
+      "elapsed_seconds": 0.972,
+      "log_sha256": "dee296b902f586c01e653db220c84419400d53bfde55fac3d838e3d5487878ba"
+    },
+    {
+      "label": "affine_bytewise",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/affine/bytewise",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:55.690170+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_affine_bytewise.log",
+      "finished_at": "2026-11-21T12:46:57.031478+00:00",
+      "elapsed_seconds": 1.325,
+      "log_sha256": "8e8a2c15a0bdf97521463f95cfaf6c7edc17411aebf337f09463b3f347c2f1e1"
+    },
+    {
+      "label": "affine_aligned",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/affine/aligned",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:57.178263+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_affine_aligned.log",
+      "finished_at": "2026-11-21T12:46:58.530657+00:00",
+      "elapsed_seconds": 1.328,
+      "log_sha256": "c25c39418c0793a9a75d3534d24c2548e0ccf2f03e9af4fb8a55c4f9821e7d14"
+    },
+    {
+      "label": "payload_address_probe",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1/probe",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/build/local-ptx-align-build-20261121-v1",
+      "started_at": "2026-11-21T12:46:58.667661+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_payload_address_probe.log",
+      "finished_at": "2026-11-21T12:46:59.660669+00:00",
+      "elapsed_seconds": 0.981,
+      "log_sha256": "9214e5e9106c11a4bd240baaf5e24de046fde3e31afc1956623c53df6c4441a7"
+    }
+  ],
+  "started_at": "2026-11-21T12:46:23.625066+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-aligned-parameters/build.py",
+    "--output",
+    "results/local-ptx-align-build-20261121-v1"
+  ],
+  "script_sha256": "a57c97e052e1042b3a0f1c9f16e8f58e599b8da7edc53c917581dddcea7cbfeb",
+  "lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "source_sha256": {
+    "VX_types.toml": "363cbf95a0f55425da8fca2574290ea635c84f1304d114d42455242d4756ebe8",
+    "sw/common/mem_alloc.h": "3efb41d6ae9359640304f73f5f8d5e422f2c5aa3096339761192bd9bd15eabbe",
+    "sw/runtime/common/common.h": "3504e28ddde5e0ab5f34de9dbe5f9b51ffc637cdb303c31f0d2ddd4f81b03c83",
+    "sw/runtime/common/device.cpp": "dbb0124855861148275928c946c5c9971994e01d73099fd2dc123e6ce643b8cc",
+    "sw/runtime/common/vortex2_internal.h": "c1746f2bb62429d54df1318a5999e4f3b545fd3a502dc11ee9a109bccf20819e",
+    "sw/runtime/common/queue.cpp": "fb53e69273dcb01d286daa23ac7c84a677d3f78e98da030a831219399142df30",
+    "sw/kernel/src/vx_start.S": "092ebb83b3e90641fe85a42970ab54196d68de3616b50a9ac22218e5072dec72",
+    "hw/rtl/VX_kmu.sv": "f2230e6189e75568207adf4dd12e1328f2cd65b7bb6ee38871cdcf764df5ad6b",
+    "hw/rtl/core/VX_cta_dispatch.sv": "8eb51a20dd6b2632a02967e2b74756884d7424585f9aeabc8028f0544ee4c02f",
+    "hw/rtl/core/VX_scheduler.sv": "688ddbedc2d6b952e395a9c01391e9571ef031219932641851683c32afd4c105",
+    "sim/simx/kmu/kmu.cpp": "326b03016aa2ac4a32495d46dcc3b6feb733f66ab0781e7b7f2de943255ac3c1",
+    "sim/simx/cta_dispatcher.cpp": "490deabdd06e9d0f62679f7adf94849199440393e6053cb885f69b1167c9da3e",
+    "sim/simx/scheduler.cpp": "ced5f4c6c2d7334ed5f9aa3fb643442cd7242c52bf27bfe32056414c51fe4fc5",
+    "sim/simx/csr_unit.cpp": "5e2dbda425cbeaf9d495fb319b4d0fcdfb00d636a80fbfca5e1d97c5080c01b9",
+    "tests/regression/common.mk": "0e714aaf18e5845b6f9c65cef068fd7bcac79a377004ef7243bce74bd73c33c6"
+  },
+  "tool_sha256": {
+    "libc64/include/stdio.h": "36dda63d91161ecdd42755393bc7ff827dbfe82e512b630d2f2386c1acb8dbfa",
+    "libc64/lib/libc.a": "7eb0e3b5bdc7397b6fa4d93637b29379d01107111148e8f0372a5c999e359a94",
+    "libc64/lib/libm.a": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+    "libcrt64/lib/baremetal/libclang_rt.builtins-riscv64.a": "3879b774af20a252d708fb4486eb8ef7acd567ddc900d54ef866858cad436f16",
+    "llvm-vortex/bin/clang": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/clang++": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/llvm-objcopy": "31fab24ae51dc48a17e6a899001fc3238e2736831f0f87c6b833411df36e73ac",
+    "llvm-vortex/bin/llvm-objdump": "b7fd1a8c8d365ffb4fa28316e9cdd9d635b0a5ac1934a04f4ea0da80f03de449",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc": "1d45ae00898529ef4781942ffa2ac403abc2fe2dc559b4eb01014d170d52e408",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc-ar": "afc1c8f4f9255aacf3b644d227f1a76b5712f1ad34f785fe33957f22a59f9f54",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-objdump": "9287eaec3b3dc0393f793e62834c897b6d08f2b9a032260397dc0c8f42dccf5e"
+  },
+  "operators": {
+    "vadd": {
+      "layout": {
+        "bytes": 32,
+        "alignment": 8,
+        "fields": [
+          {
+            "name": "x",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 0
+          },
+          {
+            "name": "y",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 8
+          },
+          {
+            "name": "z",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 16
+          },
+          {
+            "name": "n",
+            "type": "u32",
+            "kind": "scalar",
+            "space": null,
+            "size": 4,
+            "align": 4,
+            "offset": 24
+          }
+        ]
+      },
+      "archive": "results/u280-perf-build-20261121-v1/sim/ptx",
+      "variants": {
+        "bytewise": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "ed9907db690be18247a75c33a08faba0b9c5db41d624c0ea963d0bbb80bf5ff0",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+          "kernel.elf": "45ca46a7513f0a0b3e17c2c2666f2869afbf6e7c659616d7502436b96eab3615",
+          "kernel.dump": "addb4de930f944232b16b2da3d9b2eea3418201dd6234fd5d64877aaf732d930"
+        },
+        "aligned": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "c031192e0552238d7f5dc97003dea18e9bf140a80e4b05317cbf6f0c681450b0",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "94733e4bd8ee44d228bcd4e0db0de506368545ced429a4e2396011e8bce90c7a",
+          "kernel.elf": "253d239851297e11b2c583c86ecec84ae27a9e48323171f225e18a0386429de5",
+          "kernel.dump": "da14ad687b38e0598628ee78b1029c0449871c715a43f0a9a35a2514bb478400"
+        }
+      },
+      "aligned_static_instructions": 32
+    },
+    "copy": {
+      "layout": {
+        "bytes": 24,
+        "alignment": 8,
+        "fields": [
+          {
+            "name": "x",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 0
+          },
+          {
+            "name": "z",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 8
+          },
+          {
+            "name": "n",
+            "type": "u32",
+            "kind": "scalar",
+            "space": null,
+            "size": 4,
+            "align": 4,
+            "offset": 16
+          }
+        ]
+      },
+      "archive": "results/u280-perf-build-copy-affine-20261121-v1/sim/copy/ptx",
+      "variants": {
+        "bytewise": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "ea5f5eee6d801e0d6bf9a717569675feb85a23f03ac7d598a7fae0a537d45224",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "04b44af7a488005465f6842031b5f0614daa80adbcd140f1ae93f67f53eba2c8",
+          "kernel.elf": "6986c2e5caaaa63252573e06930e443a1dc902f01fa34bab8b7cc37d3da589fd",
+          "kernel.dump": "a07e440fe8e1fb4359342f0ed65d60a864bec1e25db1e7ef82289bbd31f2c776"
+        },
+        "aligned": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "71a9781eec5f73e19e0d177e674ad10394996592e4c1fbe281cfcf401fcf62f4",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "54279b4dfda7522f4931a1685e8dec1cda26cc422dbad8a970acdd4b00ea5243",
+          "kernel.elf": "abff4d39e9a67da634b7f562bb6735735b8f4988ff89c67067a135dfc1c1d2fe",
+          "kernel.dump": "18bbc4ab8d46884642573b174b7a089f905027cdbd75fdd5c3e60c978a80795e"
+        }
+      },
+      "aligned_static_instructions": 25
+    },
+    "affine": {
+      "layout": {
+        "bytes": 32,
+        "alignment": 8,
+        "fields": [
+          {
+            "name": "x",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 0
+          },
+          {
+            "name": "y",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 8
+          },
+          {
+            "name": "z",
+            "type": "u64",
+            "kind": "pointer",
+            "space": "global",
+            "size": 8,
+            "align": 8,
+            "offset": 16
+          },
+          {
+            "name": "n",
+            "type": "u32",
+            "kind": "scalar",
+            "space": null,
+            "size": 4,
+            "align": 4,
+            "offset": 24
+          },
+          {
+            "name": "alpha",
+            "type": "u32",
+            "kind": "scalar",
+            "space": null,
+            "size": 4,
+            "align": 4,
+            "offset": 28
+          }
+        ]
+      },
+      "archive": "results/u280-perf-build-copy-affine-20261121-v1/sim/affine/ptx",
+      "variants": {
+        "bytewise": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "a056efb0cd3861baae2df35fc190e9f1df787e97591d0336b47cf650c2489800",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "c5786453c9ecff60d3c393845cc5d7f1991adfdd039c8e2f071834d9b242b7a9",
+          "kernel.elf": "caa3dff8e16a65778d0294e415cc2fc21f13e04d2b7616acb5e17bcdee385837",
+          "kernel.dump": "8b040c0cd5002cf91c2394bd65efbb374115378d018f86073242de9b6b0332c1"
+        },
+        "aligned": {
+          "kernel.cpp": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+          "kernel_body.hpp": "4747535cad881fa7828514b14c151ac464fdcd874ffcf0ca47a2dc4fb6bb5925",
+          "Makefile": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+          "kernel.vxbin": "cc482ad7b537dbbbbce697d9c6da0d1258c5d1f01e5158b5524a6dc094325f10",
+          "kernel.elf": "c9a29a6e59bf83c624d61f24effdd54aa1f48d6683bec4680914aba74de28512",
+          "kernel.dump": "c424e2ba06e2d84318f87fae5a95249fa8ac25c89b99777620d2446234020fbb"
+        }
+      },
+      "aligned_static_instructions": 34
+    }
+  },
+  "probe": {
+    "kernel.cpp": "8b60b721879e61487aca4700e10a9964532f5f19358ec716978d723a9385d4d2",
+    "Makefile": "11826bf871f75351114c40b79af68b621e34a4536f9c48513855f15626c64de4",
+    "kernel.vxbin": "bdf3d474def1fc045d70cd5230fb8e3bf683e7b5641c1ad74737ad5832704933",
+    "kernel.elf": "aadb85ea511ba4ac86b14ec2d87a0387e97009928eab82f2bd4b684a07d4d0a4",
+    "kernel.dump": "4170f1cd0732d96f49f05783cd3090bd462858cc4a04ee3f2753f7ce3803bfcc"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T12:46:59.750620+00:00"
+}

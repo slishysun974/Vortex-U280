@@ -1,0 +1,526 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "argv": [
+    "experiments/ai-paired-local-round2/trial.py",
+    "receive",
+    "results/ai-paired-round2-receipt-20261122-v1",
+    "--frozen",
+    "results/ai-paired-round2-freeze-20261122-v1",
+    "--anchor",
+    "4883044e474fb99297c9ff95b138382ad708e145f8fa45411ff310b09d7d6608",
+    "--trial",
+    "results/ai-paired-round2-20261122-v1"
+  ],
+  "version": "V08-local-r2",
+  "freeze_receipt_sha256": "4883044e474fb99297c9ff95b138382ad708e145f8fa45411ff310b09d7d6608",
+  "manifest_sha256": "72824a58ab1c3a174d88418289804b92c58ef4dc5e3ef608ed821d1d05a91f2b",
+  "meter_sha256": "9a7b3c5e28efe6312d6ad210fcb6ea75822bf0d2100853ed674c6da9ab18067a",
+  "claims": "descriptive paired comparison",
+  "deployment_revision": null,
+  "billed_amount": null,
+  "live_sessions": 18,
+  "arms": {
+    "single": {
+      "assigned": 6,
+      "issued": 6,
+      "sealed": 6,
+      "status": {
+        "PASS": 6
+      },
+      "sum_known_tokens": 246554,
+      "token_observations": 6,
+      "wall_observations": 6,
+      "median_tokens": 41283.0,
+      "median_wall_seconds": 58.99532794998959
+    },
+    "multi": {
+      "assigned": 6,
+      "issued": 6,
+      "sealed": 6,
+      "status": {
+        "PASS": 6
+      },
+      "sum_known_tokens": 247632,
+      "token_observations": 6,
+      "wall_observations": 6,
+      "median_tokens": 40560.0,
+      "median_wall_seconds": 57.17102484998759
+    }
+  },
+  "seats": [
+    {
+      "card": "T5A",
+      "arm": "single",
+      "tokens": 41203,
+      "wall_seconds": 174.15683739999076,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "946bb6dd5e989d1ef1ecba01277d72b1aee24bb328e11a6d4fcbf6f3c8c39583",
+      "solution_sha256": "803f46663629b55eed3307fc7f077733d03aa6bd084307d857760cb34e27ba4a",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T5B",
+      "arm": "multi",
+      "tokens": 40491,
+      "wall_seconds": 63.8585872000549,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "99229147573f903cc0cf2d7236ada855a0867dbb9f9f48833ca1dd9be470ad4b",
+      "solution_sha256": "9569183a7842da7d362d6bbded5228dd1d1db7093296969da2d61c0422de6d2e",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T1B",
+      "arm": "single",
+      "tokens": 41443,
+      "wall_seconds": 867.0730157999787,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "d19d099be541954690e42d0dd7861769a5961d960025ba9c99606ea9f11a2df4",
+      "solution_sha256": "ea44621d84c70fb5ac183206c8dc8877869b8948bd4d2b49bcd8cc38460d249e",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T1A",
+      "arm": "multi",
+      "tokens": 46198,
+      "wall_seconds": 915.1687832000316,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "2bc8aed55e57fd916642295a29797c74499aa63bfd83bd530bcb11699671dac9",
+      "solution_sha256": "81006d3357155f3bad49ddc4d636c0fe54c026d5a3a3c00aa5d044beb1362ec1",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T4A",
+      "arm": "multi",
+      "tokens": 40049,
+      "wall_seconds": 50.95986020000419,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "235ded4ce9e35c29c9f2008ea23ab1a9e6ea29f4e457ec064263277730254f6f",
+      "solution_sha256": "da55e2375d306de17b8e4265bba790cb7846fabc28f495fb8134934a02a0494e",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T4B",
+      "arm": "single",
+      "tokens": 40680,
+      "wall_seconds": 50.82015380001394,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "f4bbf3f1b8939708e39c2813fc324155a8a776ece9da42ba9c399791ffb41a68",
+      "solution_sha256": "b95ab7e89032959545b063c5b729155a09adc40d710eb46f35c6fd3318c3aec3",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T3B",
+      "arm": "single",
+      "tokens": 40201,
+      "wall_seconds": 50.206458000000566,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "a123434236f8062f0a358f3dcd50f320b699a799c1b9848ef69f3575aabda099",
+      "solution_sha256": "6febe0d92a8f6b0fc1af22c1af7de332508618db6d8805570a0fe6ba6d1f6602",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T3A",
+      "arm": "multi",
+      "tokens": 39430,
+      "wall_seconds": 48.49480190000031,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "2000d33771c96b329dd9dc3b1c394c525372285949b142a28641c9fd0b8bb184",
+      "solution_sha256": "1a2c8f9f282a4834c82b8c9b358f5add4f9a604756f49cab8637ee3b4d60c38f",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T6B",
+      "arm": "multi",
+      "tokens": 40629,
+      "wall_seconds": 57.169121099985205,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "ea59b30908eb44463e75223de8676415b930491d39d738005f897f46ee7452a3",
+      "solution_sha256": "19a0d58c9c2705db139506e6f4b49b2050bb10a72a404ab2c7602526141827b1",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T6A",
+      "arm": "single",
+      "tokens": 41664,
+      "wall_seconds": 59.74007800000254,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "3a98e0e130f949f1fd5149b62108c2f8da76b92b8c380ca59b383c600acb3194",
+      "solution_sha256": "567a597a61fd30a82dd99c8c5e4b3ad0f289390e331ef176d3c66b6453594b4e",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T2B",
+      "arm": "multi",
+      "tokens": 40835,
+      "wall_seconds": 57.17292859998997,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "9e59ecbe5a7e14c64f4b86780a8575ca89fc4bf30a02bbb968d15d7d9a998bb4",
+      "solution_sha256": "1921d91a2eaaed22d77380db035ab9b08ffec30bbbc9316d776f81cdfcc492d9",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    },
+    {
+      "card": "T2A",
+      "arm": "single",
+      "tokens": 41363,
+      "wall_seconds": 58.25057789997663,
+      "status": "PASS",
+      "sealed": true,
+      "private_replay": "PASS",
+      "participant_receipt_sha256": "f804e288c774ede91867d60ad8b21936b809cc3bd1f2d95526620785e872f1e0",
+      "solution_sha256": "290553e5dadb2bbb68acb479f1509c3958fca8c90cf8809c7863be1ccb54b3ab",
+      "public_pass": true,
+      "replay_exit_codes": [
+        0,
+        0
+      ],
+      "grade_exit_code": 0,
+      "private_cases": 12
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "T5",
+      "single": {
+        "card": "T5A",
+        "arm": "single",
+        "tokens": 41203,
+        "wall_seconds": 174.15683739999076,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "946bb6dd5e989d1ef1ecba01277d72b1aee24bb328e11a6d4fcbf6f3c8c39583",
+        "solution_sha256": "803f46663629b55eed3307fc7f077733d03aa6bd084307d857760cb34e27ba4a",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T5B",
+        "arm": "multi",
+        "tokens": 40491,
+        "wall_seconds": 63.8585872000549,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "99229147573f903cc0cf2d7236ada855a0867dbb9f9f48833ca1dd9be470ad4b",
+        "solution_sha256": "9569183a7842da7d362d6bbded5228dd1d1db7093296969da2d61c0422de6d2e",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": -712,
+      "multi_minus_single_wall_seconds": -110.29825019993586
+    },
+    {
+      "pair": "T1",
+      "single": {
+        "card": "T1B",
+        "arm": "single",
+        "tokens": 41443,
+        "wall_seconds": 867.0730157999787,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "d19d099be541954690e42d0dd7861769a5961d960025ba9c99606ea9f11a2df4",
+        "solution_sha256": "ea44621d84c70fb5ac183206c8dc8877869b8948bd4d2b49bcd8cc38460d249e",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T1A",
+        "arm": "multi",
+        "tokens": 46198,
+        "wall_seconds": 915.1687832000316,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "2bc8aed55e57fd916642295a29797c74499aa63bfd83bd530bcb11699671dac9",
+        "solution_sha256": "81006d3357155f3bad49ddc4d636c0fe54c026d5a3a3c00aa5d044beb1362ec1",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": 4755,
+      "multi_minus_single_wall_seconds": 48.095767400052864
+    },
+    {
+      "pair": "T4",
+      "single": {
+        "card": "T4B",
+        "arm": "single",
+        "tokens": 40680,
+        "wall_seconds": 50.82015380001394,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "f4bbf3f1b8939708e39c2813fc324155a8a776ece9da42ba9c399791ffb41a68",
+        "solution_sha256": "b95ab7e89032959545b063c5b729155a09adc40d710eb46f35c6fd3318c3aec3",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T4A",
+        "arm": "multi",
+        "tokens": 40049,
+        "wall_seconds": 50.95986020000419,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "235ded4ce9e35c29c9f2008ea23ab1a9e6ea29f4e457ec064263277730254f6f",
+        "solution_sha256": "da55e2375d306de17b8e4265bba790cb7846fabc28f495fb8134934a02a0494e",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": -631,
+      "multi_minus_single_wall_seconds": 0.1397063999902457
+    },
+    {
+      "pair": "T3",
+      "single": {
+        "card": "T3B",
+        "arm": "single",
+        "tokens": 40201,
+        "wall_seconds": 50.206458000000566,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "a123434236f8062f0a358f3dcd50f320b699a799c1b9848ef69f3575aabda099",
+        "solution_sha256": "6febe0d92a8f6b0fc1af22c1af7de332508618db6d8805570a0fe6ba6d1f6602",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T3A",
+        "arm": "multi",
+        "tokens": 39430,
+        "wall_seconds": 48.49480190000031,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "2000d33771c96b329dd9dc3b1c394c525372285949b142a28641c9fd0b8bb184",
+        "solution_sha256": "1a2c8f9f282a4834c82b8c9b358f5add4f9a604756f49cab8637ee3b4d60c38f",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": -771,
+      "multi_minus_single_wall_seconds": -1.7116561000002548
+    },
+    {
+      "pair": "T6",
+      "single": {
+        "card": "T6A",
+        "arm": "single",
+        "tokens": 41664,
+        "wall_seconds": 59.74007800000254,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "3a98e0e130f949f1fd5149b62108c2f8da76b92b8c380ca59b383c600acb3194",
+        "solution_sha256": "567a597a61fd30a82dd99c8c5e4b3ad0f289390e331ef176d3c66b6453594b4e",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T6B",
+        "arm": "multi",
+        "tokens": 40629,
+        "wall_seconds": 57.169121099985205,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "ea59b30908eb44463e75223de8676415b930491d39d738005f897f46ee7452a3",
+        "solution_sha256": "19a0d58c9c2705db139506e6f4b49b2050bb10a72a404ab2c7602526141827b1",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": -1035,
+      "multi_minus_single_wall_seconds": -2.570956900017336
+    },
+    {
+      "pair": "T2",
+      "single": {
+        "card": "T2A",
+        "arm": "single",
+        "tokens": 41363,
+        "wall_seconds": 58.25057789997663,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "f804e288c774ede91867d60ad8b21936b809cc3bd1f2d95526620785e872f1e0",
+        "solution_sha256": "290553e5dadb2bbb68acb479f1509c3958fca8c90cf8809c7863be1ccb54b3ab",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "multi": {
+        "card": "T2B",
+        "arm": "multi",
+        "tokens": 40835,
+        "wall_seconds": 57.17292859998997,
+        "status": "PASS",
+        "sealed": true,
+        "private_replay": "PASS",
+        "participant_receipt_sha256": "9e59ecbe5a7e14c64f4b86780a8575ca89fc4bf30a02bbb968d15d7d9a998bb4",
+        "solution_sha256": "1921d91a2eaaed22d77380db035ab9b08ffec30bbbc9316d776f81cdfcc492d9",
+        "public_pass": true,
+        "replay_exit_codes": [
+          0,
+          0
+        ],
+        "grade_exit_code": 0,
+        "private_cases": 12
+      },
+      "both_sealed": true,
+      "multi_minus_single_tokens": -528,
+      "multi_minus_single_wall_seconds": -1.0776492999866605
+    }
+  ],
+  "both_sealed": 6,
+  "paired_median_delta_tokens": -671.5,
+  "paired_median_delta_seconds": -1.3946526999934576
+}

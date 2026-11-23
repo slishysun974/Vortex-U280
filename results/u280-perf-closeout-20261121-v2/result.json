@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "device": {
+    "bdf": "0000:b1:00.1",
+    "index": 3,
+    "data_clock_mhz": 200,
+    "host_bytes": 268435456,
+    "xclbin_sha256": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843"
+  },
+  "checked_returned_files": 24,
+  "receipt": {
+    "status": "PASS",
+    "launches": 140,
+    "measured": 120,
+    "cases": {
+      "1024": {
+        "grid": 32,
+        "block": 32,
+        "h2d_bytes": 12672,
+        "d2h_bytes": 4224,
+        "stats": {
+          "native": {
+            "load_ns": {
+              "median": 111248.5,
+              "min": 108709,
+              "max": 123990
+            },
+            "h2d_ns": {
+              "median": 229461.5,
+              "min": 220633,
+              "max": 255867
+            },
+            "execute_wait_ns": {
+              "median": 403112.0,
+              "min": 392888,
+              "max": 422625
+            },
+            "execute_profile_ns": {
+              "median": 236042.5,
+              "min": 230427,
+              "max": 246244
+            },
+            "d2h_ns": {
+              "median": 96950.5,
+              "min": 91220,
+              "max": 106454
+            },
+            "total_ns": {
+              "median": 732594.0,
+              "min": 713691,
+              "max": 753303
+            },
+            "total_with_load_ns": {
+              "median": 848168.5,
+              "min": 825721,
+              "max": 864685
+            },
+            "h2d_profile_ns": {
+              "median": 180705.0,
+              "min": 173624,
+              "max": 196453
+            },
+            "d2h_profile_ns": {
+              "median": 58414.5,
+              "min": 54314,
+              "max": 65956
+            }
+          },
+          "ptx": {
+            "load_ns": {
+              "median": 111171.0,
+              "min": 109012,
+              "max": 132480
+            },
+            "h2d_ns": {
+              "median": 230401.0,
+              "min": 220957,
+              "max": 247848
+            },
+            "execute_wait_ns": {
+              "median": 567213.0,
+              "min": 556033,
+              "max": 586046
+            },
+            "execute_profile_ns": {
+              "median": 397558.5,
+              "min": 388206,
+              "max": 411375
+            },
+            "d2h_ns": {
+              "median": 96215.0,
+              "min": 91593,
+              "max": 105209
+            },
+            "total_ns": {
+              "median": 895946.5,
+              "min": 877494,
+              "max": 910554
+            },
+            "total_with_load_ns": {
+              "median": 1008001.0,
+              "min": 988067,
+              "max": 1036864
+            },
+            "h2d_profile_ns": {
+              "median": 180263.5,
+              "min": 173709,
+              "max": 199228
+            },
+            "d2h_profile_ns": {
+              "median": 58561.0,
+              "min": 54640,
+              "max": 62323
+            }
+          }
+        },
+        "paired_ptx_minus_native": {
+          "load_ns": {
+            "median": 365.5,
+            "min": -11376,
+            "max": 20480
+          },
+          "h2d_ns": {
+            "median": 840.0,
+            "min": -11503,
+            "max": 15757
+          },
+          "execute_wait_ns": {
+            "median": 162424.0,
+            "min": 135432,
+            "max": 178264
+          },
+          "execute_profile_ns": {
+            "median": 160892.5,
+            "min": 153807,
+            "max": 174079
+          },
+          "d2h_ns": {
+            "median": 67.5,
+            "min": -10947,
+            "max": 9432
+          },
+          "total_ns": {
+            "median": 159888.0,
+            "min": 144286,
+            "max": 186709
+          },
+          "total_with_load_ns": {
+            "median": 159555.5,
+            "min": 144904,
+            "max": 207189
+          },
+          "h2d_profile_ns": {
+            "median": -1070.5,
+            "min": -8493,
+            "max": 11214
+          },
+          "d2h_profile_ns": {
+            "median": -215.5,
+            "min": -9976,
+            "max": 4991
+          }
+        }
+      },
+      "16381": {
+        "grid": 512,
+        "block": 32,
+        "h2d_bytes": 196992,
+        "d2h_bytes": 65664,
+        "stats": {
+          "native": {
+            "load_ns": {
+              "median": 114861.5,
+              "min": 112807,
+              "max": 121730
+            },
+            "h2d_ns": {
+              "median": 326875.5,
+              "min": 318319,
+              "max": 333828
+            },
+            "execute_wait_ns": {
+              "median": 2192731.5,
+              "min": 2185712,
+              "max": 2204984
+            },
+            "execute_profile_ns": {
+              "median": 2065860.5,
+              "min": 2061786,
+              "max": 2078410
+            },
+            "d2h_ns": {
+              "median": 130836.0,
+              "min": 127177,
+              "max": 140594
+            },
+            "total_ns": {
+              "median": 2652516.5,
+              "min": 2634754,
+              "max": 2664584
+            },
+            "total_with_load_ns": {
+              "median": 2768845.5,
+              "min": 2749558,
+              "max": 2779664
+            },
+            "h2d_profile_ns": {
+              "median": 287548.0,
+              "min": 281268,
+              "max": 295797
+            },
+            "d2h_profile_ns": {
+              "median": 99140.0,
+              "min": 96432,
+              "max": 103593
+            }
+          },
+          "ptx": {
+            "load_ns": {
+              "median": 115564.0,
+              "min": 111659,
+              "max": 136346
+            },
+            "h2d_ns": {
+              "median": 327411.0,
+              "min": 320886,
+              "max": 332942
+            },
+            "execute_wait_ns": {
+              "median": 4723651.0,
+              "min": 4679930,
+              "max": 4769676
+            },
+            "execute_profile_ns": {
+              "median": 4597521.0,
+              "min": 4548275,
+              "max": 4640336
+            },
+            "d2h_ns": {
+              "median": 130496.0,
+              "min": 127970,
+              "max": 133679
+            },
+            "total_ns": {
+              "median": 5180807.0,
+              "min": 5132776,
+              "max": 5232797
+            },
+            "total_with_load_ns": {
+              "median": 5295664.0,
+              "min": 5249070,
+              "max": 5369143
+            },
+            "h2d_profile_ns": {
+              "median": 289058.0,
+              "min": 283083,
+              "max": 293105
+            },
+            "d2h_profile_ns": {
+              "median": 98534.5,
+              "min": 96432,
+              "max": 100629
+            }
+          }
+        },
+        "paired_ptx_minus_native": {
+          "load_ns": {
+            "median": 785.0,
+            "min": -6602,
+            "max": 23539
+          },
+          "h2d_ns": {
+            "median": 1998.5,
+            "min": -10800,
+            "max": 7687
+          },
+          "execute_wait_ns": {
+            "median": 2530249.5,
+            "min": 2487677,
+            "max": 2579226
+          },
+          "execute_profile_ns": {
+            "median": 2529124.5,
+            "min": 2485099,
+            "max": 2575468
+          },
+          "d2h_ns": {
+            "median": -38.0,
+            "min": -10629,
+            "max": 3981
+          },
+          "total_ns": {
+            "median": 2531763.0,
+            "min": 2477045,
+            "max": 2586124
+          },
+          "total_with_load_ns": {
+            "median": 2532780.5,
+            "min": 2478420,
+            "max": 2609663
+          },
+          "h2d_profile_ns": {
+            "median": 1667.5,
+            "min": -10558,
+            "max": 6607
+          },
+          "d2h_profile_ns": {
+            "median": -547.5,
+            "min": -3948,
+            "max": 3306
+          }
+        }
+      }
+    },
+    "raw_sha256": "5f3fb497d6d746ff695034b87f511d145984586ed63e8b0d583132736a775251",
+    "capture_sha256": "067d17648e1af9e7dbf8aa3024013c7f960712254aec760ab545175b35c8d353",
+    "gate_sha256": "013a092865c2abfaab233d15ebe169d7a3911cc2d8d452c87ba343f565247de8"
+  },
+  "compiler_command_sha256": "2ab70a90113c803ed5579db443cf6658633ca670a487da2da59d147ecdc237cc",
+  "static_kernel_instructions": {
+    "native": 25,
+    "ptx": 104
+  },
+  "static_kernel_lbu": {
+    "native": 0,
+    "ptx": 28
+  },
+  "timing_source": "host monotonic wall time; execution profile is CP launch submission through retirement",
+  "board_result_sha256": "83dfa5fec640731b47459623233d6d15590d3394032ac937ec6031574b4a4742",
+  "physical_recovery": "NOT_RUN",
+  "timing7": "OPEN",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/u280-perf-closeout-20261121-v2/verify.py"
+  ],
+  "finished_at": "2026-11-21T11:44:03.577397+00:00"
+}

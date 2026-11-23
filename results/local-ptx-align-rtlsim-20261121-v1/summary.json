@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "backend": "rtlsim",
+  "repeats": 4,
+  "commands": [
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-aligned-parameters/run.py",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-rtlsim-20261121-v1",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-align-build-20261121-v1",
+        "--backend",
+        "rtlsim",
+        "--repeats",
+        "4",
+        "--worker"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-align-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T12:47:41.406793+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_rtlsim.log",
+      "finished_at": "2026-11-21T12:49:53.061870+00:00",
+      "elapsed_seconds": 131.635,
+      "log_sha256": "d4b5a74a1e38f68c921c4e897a02c4e6803ce39ca3258ef33919730981fd08fb"
+    }
+  ],
+  "started_at": "2026-11-21T12:47:41.399256+00:00",
+  "script_sha256": "bcb07b9071aa055cf25b03a4f9619cbf322dc37c86b5b78304f05447b4d0cbfb",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-aligned-parameters/run.py",
+    "--build",
+    "results/local-ptx-align-build-20261121-v1",
+    "--backend",
+    "rtlsim",
+    "--output",
+    "results/local-ptx-align-rtlsim-20261121-v1"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-11-21T12:49:53.093045+00:00"
+}

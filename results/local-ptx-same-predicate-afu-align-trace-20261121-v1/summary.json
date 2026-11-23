@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "source_commit",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+      "started_at": "2026-11-21T14:47:16.818020+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_source_commit.log",
+      "finished_at": "2026-11-21T14:47:16.852873+00:00",
+      "elapsed_seconds": 0.019,
+      "log_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    {
+      "label": "source_diff",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "diff",
+        "--ignore-submodules=untracked",
+        "HEAD",
+        "--"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+      "started_at": "2026-11-21T14:47:16.879137+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_source_diff.log",
+      "finished_at": "2026-11-21T14:47:17.001450+00:00",
+      "elapsed_seconds": 0.116,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "no_vendor_runtime",
+      "argv": [
+        "readelf",
+        "-d",
+        "/mnt/d/Vortex-U280/build/local-ptx-same-predicate-afu-trace-build-20261121-v1/sw/runtime/libvortex-xrt.so"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+      "started_at": "2026-11-21T14:47:17.022639+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_no_vendor_runtime.log",
+      "finished_at": "2026-11-21T14:47:17.097457+00:00",
+      "elapsed_seconds": 0.067,
+      "log_sha256": "3892866503be8e63289ee312ab5da4c88949f741c0f6ef4198a28c20be2bbc0f"
+    },
+    {
+      "label": "bytewise_device_probe",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate-afu/alignment.py",
+        "--worker",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+        "--trace-build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-trace-build-20261121-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-trace-20261121-v1",
+      "started_at": "2026-11-21T14:47:17.116045+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_bytewise_device_probe.log",
+      "finished_at": "2026-11-21T14:48:47.500403+00:00",
+      "elapsed_seconds": 90.379,
+      "log_sha256": "62137e6445a99cd75010ae8c7c808089e620450eb67d6079f83cb08cfd54c9ba"
+    }
+  ],
+  "started_at": "2026-11-21T14:47:16.765078+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-afu/alignment.py",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--trace-build",
+    "results/local-ptx-same-predicate-afu-trace-build-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-afu-align-trace-20261121-v1"
+  ],
+  "board_execution": "NOT_RUN",
+  "backend": "xrtsim",
+  "scope": "bytewise native argument-address probe",
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "source_sha256": {
+    "VX_types.toml": "363cbf95a0f55425da8fca2574290ea635c84f1304d114d42455242d4756ebe8",
+    "sw/common/mem_alloc.h": "3efb41d6ae9359640304f73f5f8d5e422f2c5aa3096339761192bd9bd15eabbe",
+    "sw/runtime/common/common.h": "3504e28ddde5e0ab5f34de9dbe5f9b51ffc637cdb303c31f0d2ddd4f81b03c83",
+    "sw/runtime/common/vortex2_internal.h": "c1746f2bb62429d54df1318a5999e4f3b545fd3a502dc11ee9a109bccf20819e",
+    "sw/runtime/common/device.cpp": "dbb0124855861148275928c946c5c9971994e01d73099fd2dc123e6ce643b8cc",
+    "sw/runtime/common/queue.cpp": "fb53e69273dcb01d286daa23ac7c84a677d3f78e98da030a831219399142df30",
+    "sw/runtime/xrt/vortex.cpp": "0f5e4079b6888a3fd0502da40f3d7f76b5a9e6bb178de9516fed7874f64bff45",
+    "sw/runtime/xrt/Makefile": "89dded3790a87aa3aeeea5b1dfdfb638380efeb4dd5821610b48972a348f5b5b",
+    "sim/xrtsim/Makefile": "b329fb882af76f760e8bfdbe042546fb4e97f5f04a88adec489d498a1073e707",
+    "sim/xrtsim/xrt_sim.cpp": "1d096235346b6250a186aaf09df2d26664f596553eaca6e09ffd004ae194fa0a",
+    "hw/rtl/afu/xrt/vortex_afu.v": "01d94701d84d753f4c7d08a96cbc6db5f01f57cc8ec12038ec199ef7d8dad936",
+    "hw/rtl/Vortex.sv": "2def93c0b5d19a6544827a216a52c60db790c37b95cc87bc2d8e56861b94b47c",
+    "hw/rtl/VX_kmu.sv": "f2230e6189e75568207adf4dd12e1328f2cd65b7bb6ee38871cdcf764df5ad6b",
+    "hw/rtl/core/VX_scheduler.sv": "688ddbedc2d6b952e395a9c01391e9571ef031219932641851683c32afd4c105",
+    "hw/rtl/core/VX_cta_dispatch.sv": "8eb51a20dd6b2632a02967e2b74756884d7424585f9aeabc8028f0544ee4c02f",
+    "hw/rtl/core/VX_lsu_slice.sv": "c3a8113dcb5f585c2a1a177e7b21801f408910a39d0dddbd846dc057cd5a4185",
+    "sw/kernel/src/vx_start.S": "092ebb83b3e90641fe85a42970ab54196d68de3616b50a9ac22218e5072dec72"
+  },
+  "exit_code": 0,
+  "binding_sha256": "6597e09679fa638b960e1a2895fb7b85360a7bb1a130bf900cf31a2bbc5a5c47",
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "probe_count": 10,
+  "capture_sha256": "bc97a94b10b963a7eed305ae5ba7a691943fb6bfd9be6611c59b2554782a790c",
+  "finished_at": "2026-11-21T14:48:47.563850+00:00"
+}

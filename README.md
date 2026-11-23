@@ -2,6 +2,8 @@
 
 Vortex-U280 是一个 GPU 兼容编译的研究原型。项目让一部分用 PTX 编写的 GPU 程序在开源 Vortex GPU 上运行，并在 Alveo U280 FPGA 加速卡上验证计算结果。
 
+查看当前文件布局、各后端已经验证的用例，以及 Iris 三分类的下一步分工，可从[项目总览](docs/PROJECT_OVERVIEW.md)开始。
+
 PTX 是 NVIDIA 定义的 GPU 虚拟指令集，用于描述 GPU 上要执行的计算。Vortex 使用自己的指令体系，因此需要转换程序，同时保持每个线程的计算和内存访问行为。
 
 ## 从向量加法看起
@@ -23,7 +25,7 @@ graph TD
 
 独立验证使用同一组 48 个用例，分别在指令级模拟、处理器电路仿真、FPGA 加速单元仿真和 U280 实板上运行，四种环境均通过。[独立验证报告](docs/E_RUNTIME_UNSEEN_ACCEPTANCE.md)
 
-当前支持范围限于项目定义的 PTX 整数子集。浮点运算、通用分支和共享内存等能力留待扩展，物理板卡故障恢复尚待验证。项目还计划开展性能评估与 AI 智能体协作的对照实验。[阶段成果](docs/PROJECT_PROGRESS_REPORT_20261111.md) · [研究计划](docs/RESEARCH_PLAN.md)
+当前支持范围限于项目定义的 PTX 整数子集。浮点运算、通用分支和共享内存等能力留待扩展，物理板卡故障恢复尚待验证。三算子的同卡性能评估和三轮本地 AI 协作对照实验已有结果。[实卡性能](docs/PTX_U280_ALIGNED_MPM_20261122.md) · [第三轮 AI 实验](docs/V08_LOCAL_ROUND3_20261122.md) · [研究计划](docs/RESEARCH_PLAN.md)
 
 ## 在本机开始
 

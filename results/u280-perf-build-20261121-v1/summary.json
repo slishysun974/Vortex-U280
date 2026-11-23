@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "sim_ptx_frontend",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/samples/vadd_u32.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/sim/ptx",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:37:31.385272+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_sim_ptx_frontend.log",
+      "finished_at": "2026-11-21T11:37:32.174763+00:00",
+      "elapsed_seconds": 0.776,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "sim_ptx_device_build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/sim/ptx",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/u280-perf-build-20261121-v1/sim",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:37:32.252147+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_sim_ptx_device_build.log",
+      "finished_at": "2026-11-21T11:38:02.751240+00:00",
+      "elapsed_seconds": 30.474,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "sim_native_device_build",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/sim/native",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/u280-perf-build-20261121-v1/sim",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:38:03.951744+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_sim_native_device_build.log",
+      "finished_at": "2026-11-21T11:38:06.104850+00:00",
+      "elapsed_seconds": 2.131,
+      "log_sha256": "9232d4d718de37db3520b7e27c485e6bfcc197d4409cc0ca9f597b6677f6ee74"
+    },
+    {
+      "label": "board_ptx_frontend",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/samples/vadd_u32.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/board/ptx",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:38:06.292897+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_board_ptx_frontend.log",
+      "finished_at": "2026-11-21T11:38:07.050157+00:00",
+      "elapsed_seconds": 0.728,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "board_ptx_device_build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/board/ptx",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/u280-perf-build-20261121-v1/board",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:38:07.110869+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_board_ptx_device_build.log",
+      "finished_at": "2026-11-21T11:38:33.084282+00:00",
+      "elapsed_seconds": 25.954,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "board_native_device_build",
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1/board/native",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/u280-perf-build-20261121-v1/board",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DPLATFORM_MERGED_MEMORY_INTERFACE=1 -DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-perf-build-20261121-v1",
+      "started_at": "2026-11-21T11:38:34.277164+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_board_native_device_build.log",
+      "finished_at": "2026-11-21T11:38:36.224539+00:00",
+      "elapsed_seconds": 1.93,
+      "log_sha256": "d479224de2cdbafa87605c537066c2de6b040ec199857a42ed8ebf4189c83341"
+    }
+  ],
+  "targets": {
+    "sim": {
+      "lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+      "hardware_sha256": "34153c69d4962875a005db708e0ba6625321720f2b2e729c0f4fa387028b6952",
+      "modules": {
+        "ptx": {
+          "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+          "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
+        },
+        "native": {
+          "image_sha256": "2687ab3eb9ee13ddb44464331a5d5e685e1ac04f846331963310b8a19f463c46",
+          "source_sha256": "5f04ddbeacb5145ac0fae40f4a1da4c88496ae240f03877989f881f16f7cfde5"
+        }
+      }
+    },
+    "board": {
+      "lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+      "hardware_sha256": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+      "modules": {
+        "ptx": {
+          "image_sha256": "7ee8195d2a47c30ccf6e823c835a05bcb3a6b17e856956919bfb4d09f21bfce7",
+          "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
+        },
+        "native": {
+          "image_sha256": "2687ab3eb9ee13ddb44464331a5d5e685e1ac04f846331963310b8a19f463c46",
+          "source_sha256": "5f04ddbeacb5145ac0fae40f4a1da4c88496ae240f03877989f881f16f7cfde5"
+        }
+      }
+    }
+  },
+  "scope": "paired device compilation",
+  "board_execution": "NOT_RUN",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/build_u280_perf_pair.py",
+    "--run-id",
+    "u280-perf-build-20261121-v1"
+  ],
+  "started_at": "2026-11-21T11:37:31.381412+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-11-21T11:38:36.335648+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "scope": "pre-fix frontend regression diagnostics",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_ptx_frontend_v12.py",
+    "-v"
+  ],
+  "exit_code": 1
+}

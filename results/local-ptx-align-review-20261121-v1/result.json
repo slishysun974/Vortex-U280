@@ -1,0 +1,783 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "board_execution": "NOT_RUN",
+  "static": {
+    "vadd": {
+      "bytewise": {
+        "count": 104,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lbu": 28,
+          "slli": 24,
+          "mul": 1,
+          "or": 24,
+          "slliw": 1,
+          "addw": 1,
+          "sltu": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "lw": 2,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        }
+      },
+      "aligned": {
+        "count": 32,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 3,
+          "ld": 3,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        }
+      }
+    },
+    "copy": {
+      "bytewise": {
+        "count": 76,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lbu": 20,
+          "slli": 17,
+          "mul": 1,
+          "or": 17,
+          "slliw": 1,
+          "addw": 1,
+          "sltu": 1,
+          "srli": 1,
+          "vx_split_n": 2,
+          "beqz": 2,
+          "add": 2,
+          "lw": 1,
+          "vx_join": 2,
+          "sw": 1,
+          "ret": 1
+        }
+      },
+      "aligned": {
+        "count": 25,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lw": 2,
+          "ld": 2,
+          "mul": 1,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 2,
+          "beqz": 2,
+          "add": 2,
+          "vx_join": 2,
+          "sw": 1,
+          "ret": 1
+        }
+      }
+    },
+    "affine": {
+      "bytewise": {
+        "count": 115,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "lbu": 32,
+          "mul": 2,
+          "slli": 27,
+          "or": 27,
+          "slliw": 1,
+          "addw": 1,
+          "sltu": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "lw": 2,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        }
+      },
+      "aligned": {
+        "count": 34,
+        "mnemonics": {
+          "addi": 2,
+          "sd": 1,
+          "csrr": 3,
+          "ld": 3,
+          "lw": 4,
+          "mul": 2,
+          "addw": 1,
+          "sltu": 1,
+          "slli": 1,
+          "srli": 1,
+          "vx_split_n": 3,
+          "beqz": 3,
+          "add": 4,
+          "vx_join": 3,
+          "sw": 1,
+          "ret": 1
+        }
+      }
+    }
+  },
+  "metrics": {
+    "simx": {
+      "vadd/1024": {
+        "bytewise": {
+          "cycles": 42352.0,
+          "instret": 27968.0,
+          "scoreboard_stalls": 18355.0,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 16440.0,
+          "lsu": 8192.0,
+          "sfu": 3336.0,
+          "ifetch": 27968.0,
+          "loads": 30720.0,
+          "load_latency": 359234.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            42183,
+            42535
+          ]
+        },
+        "aligned": {
+          "cycles": 15833.5,
+          "instret": 9536.0,
+          "scoreboard_stalls": 8760.0,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 4152.0,
+          "lsu": 2048.0,
+          "sfu": 3336.0,
+          "ifetch": 9536.0,
+          "loads": 6144.0,
+          "load_latency": 82762.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            15833,
+            15834
+          ]
+        },
+        "probe_address": 90112,
+        "output_sha256": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83",
+        "pair_cycle_savings": [
+          26688,
+          26349,
+          26702,
+          26349
+        ],
+        "cycles_saved": 26518.5,
+        "cycles_saved_percent": 62.61451643369853,
+        "instret_saved": 18432.0,
+        "instret_saved_percent": 65.90389016018307
+      },
+      "vadd/16381": {
+        "bytewise": {
+          "cycles": 661400.0,
+          "instret": 446536.0,
+          "scoreboard_stalls": 297336.0,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 262205.0,
+          "lsu": 131072.0,
+          "sfu": 53259.0,
+          "ifetch": 446536.0,
+          "loads": 491490.0,
+          "load_latency": 5770392.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            661400,
+            661489
+          ]
+        },
+        "aligned": {
+          "cycles": 245628.0,
+          "instret": 151624.0,
+          "scoreboard_stalls": 135949.0,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 65597.0,
+          "lsu": 32768.0,
+          "sfu": 53259.0,
+          "ifetch": 151624.0,
+          "loads": 98295.0,
+          "load_latency": 1353151.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            245628,
+            245712
+          ]
+        },
+        "probe_address": 90112,
+        "output_sha256": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781",
+        "pair_cycle_savings": [
+          415777,
+          415772,
+          415772,
+          415772
+        ],
+        "cycles_saved": 415772.0,
+        "cycles_saved_percent": 62.86241306319928,
+        "instret_saved": 294912.0,
+        "instret_saved_percent": 66.04439507676872
+      },
+      "copy/1024": {
+        "bytewise": {
+          "cycles": 31654.0,
+          "instret": 20800.0,
+          "scoreboard_stalls": 13999.0,
+          "branches": 1024.0,
+          "divergence": 0.0,
+          "alu": 12088.0,
+          "lsu": 5888.0,
+          "sfu": 2824.0,
+          "ifetch": 20800.0,
+          "loads": 21504.0,
+          "load_latency": 249828.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            31654,
+            31753
+          ]
+        },
+        "aligned": {
+          "cycles": 12774.0,
+          "instret": 7744.0,
+          "scoreboard_stalls": 7733.0,
+          "branches": 1024.0,
+          "divergence": 0.0,
+          "alu": 3384.0,
+          "lsu": 1536.0,
+          "sfu": 2824.0,
+          "ifetch": 7744.0,
+          "loads": 4096.0,
+          "load_latency": 52872.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            12774,
+            12774
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25",
+        "pair_cycle_savings": [
+          18979,
+          18880,
+          18880,
+          18880
+        ],
+        "cycles_saved": 18880.0,
+        "cycles_saved_percent": 59.644910595817265,
+        "instret_saved": 13056.0,
+        "instret_saved_percent": 62.769230769230774
+      },
+      "copy/16381": {
+        "bytewise": {
+          "cycles": 493302.5,
+          "instret": 331845.0,
+          "scoreboard_stalls": 216431.0,
+          "branches": 16386.0,
+          "divergence": 2.0,
+          "alu": 192571.0,
+          "lsu": 94208.0,
+          "sfu": 45066.0,
+          "ifetch": 331845.0,
+          "loads": 344037.0,
+          "load_latency": 3931833.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            493162,
+            495040
+          ]
+        },
+        "aligned": {
+          "cycles": 198175.0,
+          "instret": 122949.0,
+          "scoreboard_stalls": 124016.0,
+          "branches": 16386.0,
+          "divergence": 2.0,
+          "alu": 53307.0,
+          "lsu": 24576.0,
+          "sfu": 45066.0,
+          "ifetch": 122949.0,
+          "loads": 65530.0,
+          "load_latency": 820212.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            198175,
+            198175
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23",
+        "pair_cycle_savings": [
+          296865,
+          294987,
+          295268,
+          294987
+        ],
+        "cycles_saved": 295127.5,
+        "cycles_saved_percent": 59.82688107195888,
+        "instret_saved": 208896.0,
+        "instret_saved_percent": 62.94987117479547
+      },
+      "affine/1024": {
+        "bytewise": {
+          "cycles": 46861.0,
+          "instret": 30784.0,
+          "scoreboard_stalls": 22293.0,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 18232.0,
+          "lsu": 9216.0,
+          "sfu": 3336.0,
+          "ifetch": 30784.0,
+          "loads": 34816.0,
+          "load_latency": 406091.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            46358,
+            46883
+          ]
+        },
+        "aligned": {
+          "cycles": 16418.0,
+          "instret": 10048.0,
+          "scoreboard_stalls": 9962.0,
+          "branches": 1280.0,
+          "divergence": 0.0,
+          "alu": 4408.0,
+          "lsu": 2304.0,
+          "sfu": 3336.0,
+          "ifetch": 10048.0,
+          "loads": 7168.0,
+          "load_latency": 93580.0,
+          "stores": 2048.0,
+          "cycles_range": [
+            16418,
+            16418
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918",
+        "pair_cycle_savings": [
+          29940,
+          30465,
+          30421,
+          30465
+        ],
+        "cycles_saved": 30443.0,
+        "cycles_saved_percent": 64.96446938819061,
+        "instret_saved": 20736.0,
+        "instret_saved_percent": 67.35966735966737
+      },
+      "affine/16381": {
+        "bytewise": {
+          "cycles": 731450.5,
+          "instret": 491593.0,
+          "scoreboard_stalls": 367274.0,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 290878.0,
+          "lsu": 147456.0,
+          "sfu": 53259.0,
+          "ifetch": 491593.0,
+          "loads": 557026.0,
+          "load_latency": 6514305.5,
+          "stores": 32765.0,
+          "cycles_range": [
+            731045,
+            731694
+          ]
+        },
+        "aligned": {
+          "cycles": 255543.5,
+          "instret": 159816.0,
+          "scoreboard_stalls": 158191.5,
+          "branches": 20483.0,
+          "divergence": 3.0,
+          "alu": 69693.0,
+          "lsu": 36864.0,
+          "sfu": 53259.0,
+          "ifetch": 159816.0,
+          "loads": 114679.0,
+          "load_latency": 1527339.0,
+          "stores": 32765.0,
+          "cycles_range": [
+            255387,
+            255599
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0",
+        "pair_cycle_savings": [
+          475658,
+          475608,
+          476143,
+          476158
+        ],
+        "cycles_saved": 475907.0,
+        "cycles_saved_percent": 65.063459523235,
+        "instret_saved": 331777.0,
+        "instret_saved_percent": 67.49017988457932
+      }
+    },
+    "rtlsim": {
+      "vadd/1024": {
+        "bytewise": {
+          "cycles": 46784.5,
+          "instret": 27968.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            45809,
+            47367
+          ]
+        },
+        "aligned": {
+          "cycles": 16099.0,
+          "instret": 9536.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            15958,
+            16148
+          ]
+        },
+        "probe_address": 90112,
+        "output_sha256": "7c35301366f90581aee7814e133958a0d22fa1db37880988c3808f49257eeb83",
+        "pair_cycle_savings": [
+          29710,
+          31406,
+          30106,
+          31219
+        ],
+        "cycles_saved": 30685.5,
+        "cycles_saved_percent": 65.5890305549915,
+        "instret_saved": 18432.0,
+        "instret_saved_percent": 65.90389016018307
+      },
+      "vadd/16381": {
+        "bytewise": {
+          "cycles": 750931.5,
+          "instret": 446536.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            726852,
+            799921
+          ]
+        },
+        "aligned": {
+          "cycles": 254258.5,
+          "instret": 151624.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            254219,
+            254972
+          ]
+        },
+        "probe_address": 90112,
+        "output_sha256": "d7a9e4ac9d623400a7e8ac6424632d1dd6693eb0da6c95bd40f4325ae312d781",
+        "pair_cycle_savings": [
+          520713,
+          472633,
+          544949,
+          472633
+        ],
+        "cycles_saved": 496673.0,
+        "cycles_saved_percent": 66.14091964446824,
+        "instret_saved": 294912.0,
+        "instret_saved_percent": 66.04439507676872
+      },
+      "copy/1024": {
+        "bytewise": {
+          "cycles": 35311.0,
+          "instret": 20800.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            35040,
+            35311
+          ]
+        },
+        "aligned": {
+          "cycles": 13120.0,
+          "instret": 7744.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            13120,
+            13120
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "04afcc58be838b8b86334267612d94eef4f1de2531e6ca4c3cddb4d85b665b25",
+        "pair_cycle_savings": [
+          21920,
+          22191,
+          22191,
+          22191
+        ],
+        "cycles_saved": 22191.0,
+        "cycles_saved_percent": 62.844439409815635,
+        "instret_saved": 13056.0,
+        "instret_saved_percent": 62.769230769230774
+      },
+      "copy/16381": {
+        "bytewise": {
+          "cycles": 553859.0,
+          "instret": 331845.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            553859,
+            554185
+          ]
+        },
+        "aligned": {
+          "cycles": 207229.0,
+          "instret": 122949.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            207229,
+            207229
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "93c0feb05c725b2d3e6eae82aab12c429edc3f836400d31ed8f3dd99a00bbc23",
+        "pair_cycle_savings": [
+          346956,
+          346630,
+          346630,
+          346630
+        ],
+        "cycles_saved": 346630.0,
+        "cycles_saved_percent": 62.58452060903588,
+        "instret_saved": 208896.0,
+        "instret_saved_percent": 62.94987117479547
+      },
+      "affine/1024": {
+        "bytewise": {
+          "cycles": 50167.5,
+          "instret": 30784.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            49644,
+            50453
+          ]
+        },
+        "aligned": {
+          "cycles": 16868.0,
+          "instret": 10048.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            16778,
+            16960
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "a6da1d112e8fa814bad7d336dd49e8067f43f41466d6e2f41b6da7ea97e13918",
+        "pair_cycle_savings": [
+          32866,
+          33493,
+          32924,
+          33675
+        ],
+        "cycles_saved": 33299.5,
+        "cycles_saved_percent": 66.37663826182289,
+        "instret_saved": 20736.0,
+        "instret_saved_percent": 67.35966735966737
+      },
+      "affine/16381": {
+        "bytewise": {
+          "cycles": 856301.0,
+          "instret": 491593.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            856199,
+            862251
+          ]
+        },
+        "aligned": {
+          "cycles": 265011.0,
+          "instret": 159816.0,
+          "scoreboard_stalls": 0.0,
+          "branches": 0.0,
+          "divergence": 0.0,
+          "alu": 0.0,
+          "lsu": 0.0,
+          "sfu": 0.0,
+          "ifetch": 0.0,
+          "loads": 0.0,
+          "load_latency": 0.0,
+          "stores": 0.0,
+          "cycles_range": [
+            265011,
+            265441
+          ]
+        },
+        "probe_address": 81920,
+        "output_sha256": "a14f543210d2a00062085c4845fc50bb4d5abb99c29adbd704bb03ed694459f0",
+        "pair_cycle_savings": [
+          597240,
+          590962,
+          591188,
+          591188
+        ],
+        "cycles_saved": 591290.0,
+        "cycles_saved_percent": 69.05165356574382,
+        "instret_saved": 331777.0,
+        "instret_saved_percent": 67.49017988457932
+      }
+    }
+  },
+  "captures": {
+    "simx": {
+      "summary_sha256": "8db1ad393ef066ddec1954afb33a842b4df96b5980ae7649feaad3ce480c1af4",
+      "samples_sha256": "64d14847856e2b859c7a74ee0d244d176e3de71451916cbe7eacf5174634ebdc",
+      "launches": 48,
+      "probes": 6
+    },
+    "rtlsim": {
+      "summary_sha256": "cfe99b98eb3dcda256bc182d953b9dcfb5497a53603472d2e48c9deea9defaec",
+      "samples_sha256": "e545e01dce562668b45fd7f4dcbceb29e7760e6c2abcb2acf9e3ad4caec7d26a",
+      "launches": 48,
+      "probes": 6
+    }
+  },
+  "build_summary_sha256": "557c6941aada25fc683088e17481ad9a1f0a62b0e34bd4cbfa50306b96476735",
+  "prior_sha256": "fa5a8ac3a2f5ac2052443f049c60b1c9ae0d151ce6217a7dec4c864af47bfee4",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "experiments/ptx-aligned-parameters/review.py",
+    "--build",
+    "results/local-ptx-align-build-20261121-v1",
+    "--simx",
+    "results/local-ptx-align-simx-20261121-v1",
+    "--rtlsim",
+    "results/local-ptx-align-rtlsim-20261121-v1",
+    "--prior",
+    "results/local-ptx-perf-attribution-20261121-v2/result.json",
+    "--output",
+    "results/local-ptx-align-review-20261121-v1/result.json"
+  ],
+  "script_sha256": "08507bb0d93bce0afb348007093df8d3d4e974676d9700a721b71c08036f5e62"
+}

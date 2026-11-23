@@ -1,0 +1,750 @@
+{
+  "run_id": "d-high-address-20261120-v2",
+  "argv": [
+    "scripts/run_d_high_addresses.py",
+    "run",
+    "--run-id",
+    "d-high-address-20261120-v2"
+  ],
+  "started_at": "2026-11-20T12:22:19.748263+00:00",
+  "mode": "run",
+  "commands": [
+    {
+      "label": "simx_cross_read",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+      "started_at": "2026-11-20T12:22:24.820210+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx_cross_read.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/01_simx_cross_read.log",
+      "finished_at": "2026-11-20T12:22:26.799453+00:00",
+      "elapsed_seconds": 1.954,
+      "log_sha256": "9e5b5273f52b8c6ec5b8b2fe90f042078575dc2d70a2c5df2181eb9ee5b2e3e1"
+    },
+    {
+      "label": "simx_cross_write",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+      "started_at": "2026-11-20T12:22:27.432660+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_simx_cross_write.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/02_simx_cross_write.log",
+      "finished_at": "2026-11-20T12:22:29.116342+00:00",
+      "elapsed_seconds": 1.66,
+      "log_sha256": "7bb0ac0ee0b5eab4f5753e1803c9c338a27782690cadefe5de2f865fc23b68fd"
+    },
+    {
+      "label": "simx_cross_audit",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+      "started_at": "2026-11-20T12:22:29.553738+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_simx_cross_audit.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/03_simx_cross_audit.log",
+      "finished_at": "2026-11-20T12:22:31.082339+00:00",
+      "elapsed_seconds": 1.507,
+      "log_sha256": "24e4eb4a08a1e09604dfca5a09365641f6f675d0d3d48afc454ff7a33406909c"
+    },
+    {
+      "label": "simx_high_to_low",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+      "started_at": "2026-11-20T12:22:31.636501+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_simx_high_to_low.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/04_simx_high_to_low.log",
+      "finished_at": "2026-11-20T12:22:33.304208+00:00",
+      "elapsed_seconds": 1.65,
+      "log_sha256": "8373726359a37598d9bbe4cb15988e9cb837888f2b53b130ecef489957157366"
+    },
+    {
+      "label": "simx_low_to_high",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=simx",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-simx-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+      "started_at": "2026-11-20T12:22:33.898410+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_simx_low_to_high.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/05_simx_low_to_high.log",
+      "finished_at": "2026-11-20T12:22:35.922252+00:00",
+      "elapsed_seconds": 2.004,
+      "log_sha256": "d5707d4cde58f8930b4746592c050033028f38a675017b96736684c87ded0eb3"
+    },
+    {
+      "label": "rtlsim_cross_read",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+      "started_at": "2026-11-20T12:22:36.264363+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_rtlsim_cross_read.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/06_rtlsim_cross_read.log",
+      "finished_at": "2026-11-20T12:22:38.851252+00:00",
+      "elapsed_seconds": 2.547,
+      "log_sha256": "5b702d53eb71a37a60cd44c43444e0ff9e5255180661f035b2ab0bf72619de8f"
+    },
+    {
+      "label": "rtlsim_cross_write",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+      "started_at": "2026-11-20T12:22:39.560533+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_rtlsim_cross_write.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/07_rtlsim_cross_write.log",
+      "finished_at": "2026-11-20T12:22:41.773670+00:00",
+      "elapsed_seconds": 2.194,
+      "log_sha256": "4e22abe5d7702ffcdbf08f02f06e736af6924ec4a345e60aed2a2fd0e8c0cd31"
+    },
+    {
+      "label": "rtlsim_cross_audit",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+      "started_at": "2026-11-20T12:22:42.475894+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_rtlsim_cross_audit.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/08_rtlsim_cross_audit.log",
+      "finished_at": "2026-11-20T12:22:44.871017+00:00",
+      "elapsed_seconds": 2.359,
+      "log_sha256": "1716c696ba8acf9c54b469a216167f5b9dc8c82650f49fb475c7f63075b23b6d"
+    },
+    {
+      "label": "rtlsim_high_to_low",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+      "started_at": "2026-11-20T12:22:45.665402+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/09_rtlsim_high_to_low.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/09_rtlsim_high_to_low.log",
+      "finished_at": "2026-11-20T12:22:48.436518+00:00",
+      "elapsed_seconds": 2.721,
+      "log_sha256": "21079ebd6e5e92fe7eb43c0df45fa56f800160f29531c5ca24f587af2e5553ae"
+    },
+    {
+      "label": "rtlsim_low_to_high",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=rtlsim",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d6-trace-rtlsim-20261108-v1/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+      "started_at": "2026-11-20T12:22:49.121198+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/10_rtlsim_low_to_high.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/10_rtlsim_low_to_high.log",
+      "finished_at": "2026-11-20T12:22:51.497292+00:00",
+      "elapsed_seconds": 2.352,
+      "log_sha256": "2116585be65e2b66d797893cc83a96cca26e117e05cb6580cc3afeb78c7a7166"
+    },
+    {
+      "label": "xrtsim_cross_read",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_read",
+      "started_at": "2026-11-20T12:22:52.180309+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/11_xrtsim_cross_read.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/11_xrtsim_cross_read.log",
+      "finished_at": "2026-11-20T12:22:54.200344+00:00",
+      "elapsed_seconds": 1.997,
+      "log_sha256": "e7893de03ad44559ec3dd7915148e849e66373efddf56160dfe4f334dd491534"
+    },
+    {
+      "label": "xrtsim_cross_write",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_write",
+      "started_at": "2026-11-20T12:22:54.540201+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/12_xrtsim_cross_write.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/12_xrtsim_cross_write.log",
+      "finished_at": "2026-11-20T12:22:56.516988+00:00",
+      "elapsed_seconds": 1.954,
+      "log_sha256": "7b8e3b97b2c65dc8f756ec3b70d5e7aec1df153f22c1e6798133f076df09d5f3"
+    },
+    {
+      "label": "xrtsim_cross_audit",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/cross_audit",
+      "started_at": "2026-11-20T12:22:56.733915+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/13_xrtsim_cross_audit.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/13_xrtsim_cross_audit.log",
+      "finished_at": "2026-11-20T12:22:58.402467+00:00",
+      "elapsed_seconds": 1.652,
+      "log_sha256": "e397f282f6bf8b9131253f842a01c1cb94704c9261a75cd8b9c4eff026acdca8"
+    },
+    {
+      "label": "xrtsim_high_to_low",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/high_to_low",
+      "started_at": "2026-11-20T12:22:58.834822+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/14_xrtsim_high_to_low.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/14_xrtsim_high_to_low.log",
+      "finished_at": "2026-11-20T12:23:00.296246+00:00",
+      "elapsed_seconds": 1.445,
+      "log_sha256": "00b229c7d2ed1f52bd604fec5049db1f4cd87b4fc9ea8d4f3bf00bd79dde9a5f"
+    },
+    {
+      "label": "xrtsim_low_to_high",
+      "argv": [
+        "env",
+        "-u",
+        "XCLBIN_PATH",
+        "-u",
+        "XCL_EMULATION_MODE",
+        "VORTEX_PROFILING=0",
+        "VORTEX_DRIVER=xrt",
+        "LD_LIBRARY_PATH=/opt/vortex-ab/builds/ab-d5-block32-20261108-v1-xrtsim/sw/runtime",
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_d_high_addresses.py",
+        "capture",
+        "--module",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/module",
+        "--case-dir",
+        "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/d-high-address-20261120-v2/low_to_high",
+      "started_at": "2026-11-20T12:23:00.586310+00:00",
+      "timeout_seconds": 150,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/15_xrtsim_low_to_high.log",
+      "scratch_log": "/tmp/d-high-address-9mlux3_p/15_xrtsim_low_to_high.log",
+      "finished_at": "2026-11-20T12:23:02.458200+00:00",
+      "elapsed_seconds": 1.854,
+      "log_sha256": "31f17d02692fb9376810fdbc439ecd543d57db9a3e0305b7d4f4cf77e6c7b0a8"
+    }
+  ],
+  "status": "PASS",
+  "u280": "NOT_RUN",
+  "independent_acceptance": "NOT_RUN",
+  "backends": {
+    "simx": {
+      "status": "PASS",
+      "cases": {
+        "cross_read": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 6,
+            "z": 14,
+            "audit": 0
+          },
+          "accesses": {
+            "guarded_load": 14,
+            "guarded_store": 14,
+            "audit_store": 15
+          }
+        },
+        "cross_write": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 11,
+            "z": 7,
+            "audit": 0
+          },
+          "accesses": {
+            "guarded_load": 11,
+            "guarded_store": 11,
+            "audit_store": 16
+          }
+        },
+        "cross_audit": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 0,
+            "z": 0,
+            "audit": 4
+          },
+          "accesses": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 12
+          }
+        },
+        "high_to_low": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 9,
+            "z": 0,
+            "audit": 12
+          },
+          "accesses": {
+            "guarded_load": 9,
+            "guarded_store": 9,
+            "audit_store": 12
+          }
+        },
+        "low_to_high": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 0,
+            "z": 7,
+            "audit": 12
+          },
+          "accesses": {
+            "guarded_load": 7,
+            "guarded_store": 7,
+            "audit_store": 12
+          }
+        }
+      },
+      "libraries": {
+        "config.mk": "bf233b6c34620ae2925a75e82cd5547173bb50fdc07e1883ed54ea2dd610262d",
+        "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+        "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+        "sw/runtime/libvortex.so": "901ac55b95f0f1ea430e314c707d10fb3bb4a613bad23ec2174a11a8b25ab419",
+        "sw/runtime/libvortex-simx.so": "9edc05c3e1342ef12b6782c04b8a7aa3a8f862b411bb7028e8bbe753170b3b87",
+        "sw/runtime/libsimx.so": "119d16f68d700dd98834f3c33acf7c32ecf04d16287f80874ebc15bddc47bc9a"
+      }
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "cases": {
+        "cross_read": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 6,
+            "z": 14,
+            "audit": 0
+          },
+          "accesses": {
+            "guarded_load": 14,
+            "guarded_store": 14,
+            "audit_store": 15
+          }
+        },
+        "cross_write": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 11,
+            "z": 7,
+            "audit": 0
+          },
+          "accesses": {
+            "guarded_load": 11,
+            "guarded_store": 11,
+            "audit_store": 16
+          }
+        },
+        "cross_audit": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 0,
+            "z": 0,
+            "audit": 4
+          },
+          "accesses": {
+            "guarded_load": 0,
+            "guarded_store": 0,
+            "audit_store": 12
+          }
+        },
+        "high_to_low": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 9,
+            "z": 0,
+            "audit": 12
+          },
+          "accesses": {
+            "guarded_load": 9,
+            "guarded_store": 9,
+            "audit_store": 12
+          }
+        },
+        "low_to_high": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40,
+          "high_accesses": {
+            "x": 0,
+            "z": 7,
+            "audit": 12
+          },
+          "accesses": {
+            "guarded_load": 7,
+            "guarded_store": 7,
+            "audit_store": 12
+          }
+        }
+      },
+      "libraries": {
+        "config.mk": "5380619c426677ea46222179ce76adf5f354098841f210dc43db91d1afd2b449",
+        "sw/VX_config.h": "c6590b5d2395454140cd19cd51d23f1603c9f7bb951c992fd608c09be185c2ba",
+        "hw/VX_config.vh": "02b2be2769951f6f2e3d9ff2b24b7a5859817b7924854881b21f1848b4f8993e",
+        "sw/runtime/libvortex.so": "0aff3868e7d255a8088de95a82b59e86ff4594e7b4578bebcbd78db3d937c70d",
+        "sw/runtime/libvortex-rtlsim.so": "70a9d27b90bd52281819c5a6fb8fa2041102e25673fb617e87e2ac637c2e21be",
+        "sw/runtime/librtlsim.so": "be0e00f0bcf91f264df8574ca2f5517fb12b8f23978c35e2ac938c0c441568b8"
+      }
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "cases": {
+        "cross_read": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40
+        },
+        "cross_write": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40
+        },
+        "cross_audit": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40
+        },
+        "high_to_low": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40
+        },
+        "low_to_high": {
+          "status": "PASS",
+          "full_buffers_before": 3,
+          "full_buffers_after": 3,
+          "argument_bytes": 40
+        }
+      },
+      "libraries": {
+        "libvortex.so": "69dc5c8ec732240d25709a5537e32d015e4b228943d961793eb8a4ba171f72e4",
+        "libvortex-xrt.so": "5c0cf1a313ebcd580d83d729195249b37929b9089ca4b01b7750c98fb9fa567d",
+        "libxrtsim.so": "24319d0b21d05db860d842a1cdcb8192ae33c02fe8ad52be379dbae0445739a7",
+        "xrt_config.stamp": "3f5fa41744b67a5d968be98670cac8f1b0a94f4994bb43802deaae4a6799062b",
+        "xrtsim_config.stamp": "5bb757d2b012ee2b2765c7a4ead57afa3aa472afa3571f3c2dba31da671e66f1"
+      }
+    }
+  },
+  "module_origin": "/mnt/d/Vortex-U280/results/d-guarded-wide-20261120-v1/module",
+  "module_manifest_sha256": "b4a0e4718047f00280e96c211554a0210e2522059036e716768711e5b1fff76f",
+  "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+  "native_entry_pc": 6442450996,
+  "target_lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+  "source_sha256": "be4e0f1fd10137d50b02133a273b87c9890bff6543f5ab79f5d8e1f974281c92",
+  "corpus_sha256": "0da11d96e0d0abd20dbd112a1b745d1b6a0dc4667e9074ef2c1a245621533997",
+  "exit_code": 0,
+  "finished_at": "2026-11-20T12:23:03.273818+00:00"
+}

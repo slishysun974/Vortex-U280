@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "binding_sha256": "9de92b19b4d88b0c7b95ccc560d841929a4b6f171453224ff8b3e584f61c9b67",
+  "error": {
+    "code": "E_TARGET_MISMATCH",
+    "phase": "load",
+    "message": "this runtime binding requires the bytewise PTX module",
+    "run_id": "altered-binding",
+    "event_id": null,
+    "generation": 0,
+    "backend": "xrtsim",
+    "source_location": null,
+    "native_status": null,
+    "evidence_path": null,
+    "device_state": "READY"
+  }
+}

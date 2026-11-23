@@ -1,0 +1,71 @@
+{
+  "cwd": "D:\\Vortex-U280",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/ai-paired-freeze-20261122-v1/check_answers.py"
+  ],
+  "stdout": "{\"coverage\": {\"T1A\": {\"private\": 9, \"public\": 1}, \"T1B\": {\"private\": 9, \"public\": 1}, \"T2A\": {\"private\": 8, \"public\": 1}, \"T2B\": {\"private\": 8, \"public\": 1}, \"T3A\": {\"private\": 8, \"public\": 1}, \"T3B\": {\"private\": 8, \"public\": 1}, \"T4A\": {\"private\": 8, \"public\": 1}, \"T4B\": {\"private\": 8, \"public\": 1}, \"T5A\": {\"private\": 8, \"public\": 1}, \"T5B\": {\"private\": 8, \"public\": 1}, \"T6A\": {\"private\": 8, \"public\": 1}, \"T6B\": {\"private\": 8, \"public\": 1}}, \"differences\": [], \"totals\": {\"private\": 98, \"public\": 12}}\n",
+  "stderr": "",
+  "exit_code": 0,
+  "sha256": {
+    "experiments/ai-paired-v1/cards.json": "9513cd8d6a4d2b0844368a43829da0969a6a25f7f53d12298a3c010b9f1787d8",
+    "experiments/ai-paired-v1/private/cases.json": "c9c020f61e77904b09073720fc25ee317434c63974b71769decbbdbd6dff4a3d",
+    "results/ai-paired-freeze-20261122-v1/check_answers.py": "22b68b00eb5305f0aa3464bc9ee7caa9c143c556f92b1e63f466bd9dccbf13c1"
+  },
+  "coverage": {
+    "T1A": {
+      "private": 9,
+      "public": 1
+    },
+    "T1B": {
+      "private": 9,
+      "public": 1
+    },
+    "T2A": {
+      "private": 8,
+      "public": 1
+    },
+    "T2B": {
+      "private": 8,
+      "public": 1
+    },
+    "T3A": {
+      "private": 8,
+      "public": 1
+    },
+    "T3B": {
+      "private": 8,
+      "public": 1
+    },
+    "T4A": {
+      "private": 8,
+      "public": 1
+    },
+    "T4B": {
+      "private": 8,
+      "public": 1
+    },
+    "T5A": {
+      "private": 8,
+      "public": 1
+    },
+    "T5B": {
+      "private": 8,
+      "public": 1
+    },
+    "T6A": {
+      "private": 8,
+      "public": 1
+    },
+    "T6B": {
+      "private": 8,
+      "public": 1
+    }
+  },
+  "differences": [],
+  "totals": {
+    "private": 98,
+    "public": 12
+  }
+}

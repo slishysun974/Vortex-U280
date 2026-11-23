@@ -1,0 +1,258 @@
+// D author P0 witness. Each column has four lanes; column k is z[4*k + tid].
+// x[tid] and x[4 + tid] distinguish the chosen address on both predicate paths.
+.version 7.0
+.target sm_70
+.address_size 64
+.visible .entry p0_form_witness(.param .u64 x, .param .u64 z, .param .u32 bias) {
+    .reg .b64 xbase, zbase, delta, src, alt, dst, ptr, wide;
+    .reg .b32 tid, high_index, a, v;
+    .reg .pred active, low, equal_max, flag;
+    ld.param.u64 xbase, [x];
+    ld.param.u64 zbase, [z];
+    ld.param.u32 high_index, [bias+0];
+    mov.u32 tid, %tid.x;
+    add.u32 high_index, high_index, tid;
+    mul.wide.u32 delta, tid, 4;
+    add.u64 src, xbase, delta;
+    add.u64 alt, src, 16;
+    add.u64 dst, zbase, delta;
+    ld.global.u32 a, [src];
+    setp.lt.u32 active, tid, 2;
+    setp.lt.u32 low, a, 0x80000000;
+    setp.eq.u32 equal_max, a, 0xffffffff;
+
+    // mov.u32 plain, column 0
+    mov.u32 v, 0x5a5a5a5a;
+    mov.u32 v, a; // witness
+    st.global.u32 [dst+0], v;
+
+    // mov.u32 positive, column 1
+    mov.u32 v, 0x5a5a5a5a;
+    @active mov.u32 v, a; // witness
+    st.global.u32 [dst+16], v;
+
+    // mov.u32 negative, column 2
+    mov.u32 v, 0x5a5a5a5a;
+    @!active mov.u32 v, a; // witness
+    st.global.u32 [dst+32], v;
+
+    // mov.u64 plain, column 3
+    mov.u64 ptr, alt;
+    mov.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+48], v;
+
+    // mov.u64 positive, column 4
+    mov.u64 ptr, alt;
+    @active mov.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+64], v;
+
+    // mov.u64 negative, column 5
+    mov.u64 ptr, alt;
+    @!active mov.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+80], v;
+
+    // add.u32 plain, column 6
+    mov.u32 v, 0x5a5a5a5a;
+    add.u32 v, a, 1; // witness
+    st.global.u32 [dst+96], v;
+
+    // add.u32 positive, column 7
+    mov.u32 v, 0x5a5a5a5a;
+    @active add.u32 v, a, 1; // witness
+    st.global.u32 [dst+112], v;
+
+    // add.u32 negative, column 8
+    mov.u32 v, 0x5a5a5a5a;
+    @!active add.u32 v, a, 1; // witness
+    st.global.u32 [dst+128], v;
+
+    // sub.u32 plain, column 9
+    mov.u32 v, 0x5a5a5a5a;
+    sub.u32 v, a, 1; // witness
+    st.global.u32 [dst+144], v;
+
+    // sub.u32 positive, column 10
+    mov.u32 v, 0x5a5a5a5a;
+    @active sub.u32 v, a, 1; // witness
+    st.global.u32 [dst+160], v;
+
+    // sub.u32 negative, column 11
+    mov.u32 v, 0x5a5a5a5a;
+    @!active sub.u32 v, a, 1; // witness
+    st.global.u32 [dst+176], v;
+
+    // mul.lo.u32 plain, column 12
+    mov.u32 v, 0x5a5a5a5a;
+    mul.lo.u32 v, a, 3; // witness
+    st.global.u32 [dst+192], v;
+
+    // mul.lo.u32 positive, column 13
+    mov.u32 v, 0x5a5a5a5a;
+    @active mul.lo.u32 v, a, 3; // witness
+    st.global.u32 [dst+208], v;
+
+    // mul.lo.u32 negative, column 14
+    mov.u32 v, 0x5a5a5a5a;
+    @!active mul.lo.u32 v, a, 3; // witness
+    st.global.u32 [dst+224], v;
+
+    // mul.wide.u32 plain, column 15
+    add.u64 wide, delta, 0x100000010;
+    mul.wide.u32 wide, high_index, 4; // witness
+    add.u64 wide, wide, 0xffffffff00000000;
+    add.u64 ptr, xbase, wide;
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+240], v;
+
+    // mul.wide.u32 positive, column 16
+    add.u64 wide, delta, 0x100000010;
+    @active mul.wide.u32 wide, high_index, 4; // witness
+    add.u64 wide, wide, 0xffffffff00000000;
+    add.u64 ptr, xbase, wide;
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+256], v;
+
+    // mul.wide.u32 negative, column 17
+    add.u64 wide, delta, 0x100000010;
+    @!active mul.wide.u32 wide, high_index, 4; // witness
+    add.u64 wide, wide, 0xffffffff00000000;
+    add.u64 ptr, xbase, wide;
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+272], v;
+
+    // add.u64 plain, column 18
+    mov.u64 ptr, alt;
+    add.u64 ptr, alt, -16; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+288], v;
+
+    // add.u64 positive, column 19
+    mov.u64 ptr, alt;
+    @active add.u64 ptr, alt, -16; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+304], v;
+
+    // add.u64 negative, column 20
+    mov.u64 ptr, alt;
+    @!active add.u64 ptr, alt, -16; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+320], v;
+
+    // cvta.to.global.u64 plain, column 21
+    mov.u64 ptr, alt;
+    cvta.to.global.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+336], v;
+
+    // cvta.to.global.u64 positive, column 22
+    mov.u64 ptr, alt;
+    @active cvta.to.global.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+352], v;
+
+    // cvta.to.global.u64 negative, column 23
+    mov.u64 ptr, alt;
+    @!active cvta.to.global.u64 ptr, src; // witness
+    ld.global.u32 v, [ptr];
+    st.global.u32 [dst+368], v;
+
+    // setp.lt.u32 plain, column 24
+    setp.ge.u32 flag, a, 0x80000000;
+    setp.lt.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+384], v;
+
+    // setp.lt.u32 positive, column 25
+    setp.ge.u32 flag, a, 0x80000000;
+    @active setp.lt.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+400], v;
+
+    // setp.lt.u32 negative, column 26
+    setp.ge.u32 flag, a, 0x80000000;
+    @!active setp.lt.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+416], v;
+
+    // setp.ge.u32 plain, column 27
+    setp.lt.u32 flag, a, 0x80000000;
+    setp.ge.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+432], v;
+
+    // setp.ge.u32 positive, column 28
+    setp.lt.u32 flag, a, 0x80000000;
+    @active setp.ge.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+448], v;
+
+    // setp.ge.u32 negative, column 29
+    setp.lt.u32 flag, a, 0x80000000;
+    @!active setp.ge.u32 flag, a, 0x80000000; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+464], v;
+
+    // setp.eq.u32 plain, column 30
+    selp.u32 v, 1, 0, equal_max;
+    setp.eq.u32 flag, v, 0;
+    setp.eq.u32 flag, a, 0xffffffff; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+480], v;
+
+    // setp.eq.u32 positive, column 31
+    selp.u32 v, 1, 0, equal_max;
+    setp.eq.u32 flag, v, 0;
+    @active setp.eq.u32 flag, a, 0xffffffff; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+496], v;
+
+    // setp.eq.u32 negative, column 32
+    selp.u32 v, 1, 0, equal_max;
+    setp.eq.u32 flag, v, 0;
+    @!active setp.eq.u32 flag, a, 0xffffffff; // witness
+    selp.u32 v, 1, 0, flag;
+    st.global.u32 [dst+512], v;
+
+    // selp.u32 plain, column 33
+    mov.u32 v, 0x5a5a5a5a;
+    selp.u32 v, 0x52, 0x61, low; // witness
+    st.global.u32 [dst+528], v;
+
+    // selp.u32 positive, column 34
+    mov.u32 v, 0x5a5a5a5a;
+    @active selp.u32 v, 0x52, 0x61, low; // witness
+    st.global.u32 [dst+544], v;
+
+    // selp.u32 negative, column 35
+    mov.u32 v, 0x5a5a5a5a;
+    @!active selp.u32 v, 0x52, 0x61, low; // witness
+    st.global.u32 [dst+560], v;
+
+    // ld.global.u32 plain, column 36
+    mov.u32 v, 0x5a5a5a5a;
+    ld.global.u32 v, [src]; // witness
+    st.global.u32 [dst+576], v;
+
+    // ld.global.u32 positive, column 37
+    mov.u32 v, 0x5a5a5a5a;
+    @active ld.global.u32 v, [src]; // witness
+    st.global.u32 [dst+592], v;
+
+    // ld.global.u32 negative, column 38
+    mov.u32 v, 0x5a5a5a5a;
+    @!active ld.global.u32 v, [src]; // witness
+    st.global.u32 [dst+608], v;
+
+    // st.global.u32 plain, column 39
+    st.global.u32 [dst+624], a; // witness
+
+    // st.global.u32 positive, column 40
+    @active st.global.u32 [dst+640], a; // witness
+
+    // st.global.u32 negative, column 41
+    @!active st.global.u32 [dst+656], a; // witness
+    ret;
+}

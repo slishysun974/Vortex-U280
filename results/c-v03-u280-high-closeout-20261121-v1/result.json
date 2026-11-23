@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "checked_returned_files": 64,
+  "backends": {
+    "simx": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "cf335805c9235057f26376c46e7bb65ee7e8ba1e476dbbf062ca4853c257c045"
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "dcecfde4fd54aeecb4e6d0583d4f74e49f6c316b04a2e2b0bf80ae647955e9d6"
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "ae3d3d6cc613de66e9717c1daba64b699f7659ac0b7602027710913670d889ca"
+    },
+    "u280-xrt": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "1a0ee9c2ec18280ef818ee3553a97b26606e5752a22f96fd6f132a097746faeb",
+      "gate_sha256": "4c49810775577d0ba16cc689f3ebf3acaf0a4abb7c8ea3c936edae705888d4c8"
+    }
+  },
+  "equal_four_route_case_artifacts": 35,
+  "image": {
+    "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+    "manifest_sha256": "f5f3c95a020d0da4a808f935da3dfc4bc77a716ad262219e6509601c9486741b"
+  },
+  "physical_recovery": "NOT_RUN",
+  "independent_E": "NOT_RUN",
+  "timing7": "OPEN",
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "results/c-v03-u280-high-closeout-20261121-v1/verify.py"
+  ],
+  "finished_at": "2026-11-21T10:52:40.153804+00:00",
+  "scope": "offline recheck of three model and one physical high-address capture"
+}

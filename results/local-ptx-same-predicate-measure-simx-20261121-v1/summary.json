@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate/run.py",
+        "worker",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-build-20261121-v1",
+        "--backend",
+        "simx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-measure-simx-20261121-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-measure-simx-20261121-v1",
+      "started_at": "2026-11-21T13:22:54.961728+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T13:23:44.021976+00:00",
+      "elapsed_seconds": 49.047,
+      "log_sha256": "f3d3c4b32738ce42930b6378ce7259e8e63d364ea9db95e337f915e7e8b22991"
+    }
+  ],
+  "started_at": "2026-11-21T13:22:54.932771+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate/run.py",
+    "measure",
+    "--build",
+    "results/local-ptx-same-predicate-build-20261121-v1",
+    "--output",
+    "results/local-ptx-same-predicate-measure-simx-20261121-v1",
+    "--backend",
+    "simx"
+  ],
+  "script_sha256": "6ffd8ef25a031b76bddf7b27fe050c564b4af0644f77e1336932b5cbdec6ff5a",
+  "backend": "simx",
+  "binding_sha256": "080a74484515b9a4416ec2e0cf16c0ad4ee4c7d7f96c06148df74c867cd52ca4",
+  "trials": 4,
+  "build_sha256": "2f85c5730fa77fa5c552a828ed9957d594c0de3a243f6bd073d8d8bf948b6961",
+  "exit_code": 0,
+  "finished_at": "2026-11-21T13:23:44.067620+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Windows host C receipt controls and platform preflight",
+  "status": "PASS",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_c_v03_receipt",
+    "test_native_smoke.RunnerSafetyTests.test_check_only_wrong_platform_is_blocked_never_pass"
+  ],
+  "exit_code": 0,
+  "cwd": "tests"
+}

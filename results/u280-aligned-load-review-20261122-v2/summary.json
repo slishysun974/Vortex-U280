@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/u280-aligned-load/verify.py",
+    "--bundle",
+    "results/u280-aligned-predicate-preflight-20261121-v1/bundle",
+    "--compiled",
+    "results/u280-aligned-load-build-20261122-v2",
+    "--output",
+    "results/u280-aligned-load-review-20261122-v2"
+  ],
+  "commands": [
+    {
+      "label": "pair_preflight",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/u280_aligned_pair.py",
+        "preflight",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/u280-aligned-predicate-preflight-20261121-v1/bundle",
+        "--compiled",
+        "/mnt/d/Vortex-U280/results/u280-aligned-load-build-20261122-v2"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T16:58:28.134157+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_pair_preflight.log",
+      "finished_at": "2026-11-21T16:58:38.010105+00:00",
+      "elapsed_seconds": 9.86,
+      "log_sha256": "75e4734d9f62d8057a8174b4e345278df5bbadf83fc0d0d58de1d12790590ae2"
+    },
+    {
+      "label": "runner_unittest",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T16:58:38.083890+00:00",
+      "timeout_seconds": 180,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_runner_unittest.log",
+      "finished_at": "2026-11-21T17:00:44.813021+00:00",
+      "elapsed_seconds": 126.705,
+      "log_sha256": "7460d78a28248c398e093adfe1e3101531285d59bba352e30c9c7144dedb7974"
+    },
+    {
+      "label": "simx_field_probe",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "experiments/u280-aligned-load/verify.py",
+        "--bundle",
+        "results/u280-aligned-predicate-preflight-20261121-v1/bundle",
+        "--compiled",
+        "results/u280-aligned-load-build-20261122-v2",
+        "--output",
+        "results/u280-aligned-load-review-20261122-v2",
+        "--model-worker"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T17:00:44.877311+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_simx_field_probe.log",
+      "finished_at": "2026-11-21T17:00:56.045888+00:00",
+      "elapsed_seconds": 11.137,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "started_at": "2026-11-21T16:58:28.129192+00:00",
+  "board_execution": "NOT_RUN",
+  "physical_cp_vm": "NOT_RUN",
+  "physical_staging": "NOT_RUN",
+  "physical_pair": "NOT_RUN",
+  "exit_code": 0,
+  "simx_probe_sha256": "d7f77ab8f345be1e57543711a5c88491dd6eafdb5101168b5409152bcf262be4",
+  "finished_at": "2026-11-21T17:00:56.121602+00:00"
+}

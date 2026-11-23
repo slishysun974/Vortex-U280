@@ -1,0 +1,236 @@
+{
+  "run_id": "c-v03-u280-prepare-20261120-v1",
+  "argv": [
+    "scripts/prepare_c_v03_u280.py",
+    "--run-id",
+    "c-v03-u280-prepare-20261120-v1"
+  ],
+  "started_at": "2026-11-20T14:18:48.077996+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "prepare_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/corpus/sources/p0_form_witness.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/p0_form_witness",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:18:55.814339+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_prepare_p0_form_witness.log",
+      "finished_at": "2026-11-20T14:18:56.614669+00:00",
+      "elapsed_seconds": 0.778,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/p0_form_witness",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/c-v03-u280-prepare-20261120-v1/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:18:56.687012+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_build_p0_form_witness.log",
+      "finished_at": "2026-11-20T14:19:32.128799+00:00",
+      "elapsed_seconds": 35.409,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:19:32.190367+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_validate_p0_form_witness.log",
+      "finished_at": "2026-11-20T14:19:33.285468+00:00",
+      "elapsed_seconds": 1.075,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "reject_model_lock_p0_form_witness",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/p0_form_witness",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:19:34.473955+00:00",
+      "timeout_seconds": 30,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/04_reject_model_lock_p0_form_witness.log",
+      "finished_at": "2026-11-20T14:19:35.502384+00:00",
+      "elapsed_seconds": 0.988,
+      "log_sha256": "6bb26f098606ea5cd5c356333c9121ec9087ba805fa5a92836d72b2a8aa41872",
+      "expected_returncode": 1
+    },
+    {
+      "label": "prepare_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/corpus/sources/guarded_wide_offset.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/guarded_wide_offset",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:19:36.871382+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_prepare_guarded_wide_offset.log",
+      "finished_at": "2026-11-20T14:19:37.628219+00:00",
+      "elapsed_seconds": 0.73,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "build_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/guarded_wide_offset",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/c-v03-u280-prepare-20261120-v1/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:19:37.702264+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_build_guarded_wide_offset.log",
+      "finished_at": "2026-11-20T14:20:07.917462+00:00",
+      "elapsed_seconds": 30.171,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "validate_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:20:07.953695+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_validate_guarded_wide_offset.log",
+      "finished_at": "2026-11-20T14:20:08.900545+00:00",
+      "elapsed_seconds": 0.929,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "reject_model_lock_guarded_wide_offset",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1/modules/guarded_wide_offset",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-prepare-20261120-v1",
+      "started_at": "2026-11-20T14:20:09.839832+00:00",
+      "timeout_seconds": 30,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/08_reject_model_lock_guarded_wide_offset.log",
+      "finished_at": "2026-11-20T14:20:11.277947+00:00",
+      "elapsed_seconds": 1.412,
+      "log_sha256": "6bb26f098606ea5cd5c356333c9121ec9087ba805fa5a92836d72b2a8aa41872",
+      "expected_returncode": 1
+    }
+  ],
+  "scope": "U280-target probe compilation and offline validation",
+  "modules": {
+    "p0_form_witness": {
+      "status": "PASS",
+      "source_sha256": "bdc1bf700c20d6bdce193582bdda29315bb4166d7399407ee5272184df7f925f",
+      "image_sha256": "4582515cda7d105d236fd74b06116d911fb9478411cf2fa59bc9346a69cda48a",
+      "manifest_sha256": "6afb2e525f936fe56856533daba9253d39f41ae7e050077d6bfa5f97235b15e4",
+      "model_manifest_sha256": "38720942427752ede47d89b7fa5637b150a52d0ccaa299294909f4da45e97e9a",
+      "model_image_byte_identical": true,
+      "wrong_lock": "E_TARGET_MISMATCH"
+    },
+    "guarded_wide_offset": {
+      "status": "PASS",
+      "source_sha256": "be4e0f1fd10137d50b02133a273b87c9890bff6543f5ab79f5d8e1f974281c92",
+      "image_sha256": "1227ab66936b091f766f81e4b04b3a657467a9c27adb2bdbfdf0f1ddfa0395d2",
+      "manifest_sha256": "f5f3c95a020d0da4a808f935da3dfc4bc77a716ad262219e6509601c9486741b",
+      "model_manifest_sha256": "9cd3b975adb2f73d3a921a2eefbd37ffaa560b1495dd697523b0186df8ad54c0",
+      "model_image_byte_identical": true,
+      "wrong_lock": "E_TARGET_MISMATCH"
+    }
+  },
+  "physical_u280": "NOT_RUN",
+  "independent_acceptance": "NOT_RUN",
+  "timing7": "OPEN",
+  "implementation": {
+    "prepare_c_v03_u280.py": "176909795884d457942d33d488f5d274ed7c86d1993f7bfd747b8770ca639038",
+    "ptx_frontend_v12.py": "86f82ece05707eb1eb0791b65023503b828b3ba6adfd9008b9a6bfab54d0fadd",
+    "ptx_module.py": "5d4627bca0f366b0fb2a2087e0018534087c6a7519c0cb3b76b80b8c756645a7"
+  },
+  "corpus_sha256": "68b6a6f21e43cc9712c4c71765b5b02930a854f86104f05d5183e96b81687bc4",
+  "board_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "board_hardware_sha256": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+  "exit_code": 0,
+  "finished_at": "2026-11-20T14:20:11.341870+00:00"
+}

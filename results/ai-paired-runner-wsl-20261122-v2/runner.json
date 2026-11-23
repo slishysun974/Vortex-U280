@@ -1,0 +1,22 @@
+{
+  "scope": "Python runner self-test in project WSL",
+  "argv": [
+    "wsl",
+    "-d",
+    "Vortex-AB-Ubuntu-22.04",
+    "--cd",
+    "/mnt/d/Vortex-U280",
+    "--",
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "runner.stdout",
+  "stderr": "runner.stderr"
+}

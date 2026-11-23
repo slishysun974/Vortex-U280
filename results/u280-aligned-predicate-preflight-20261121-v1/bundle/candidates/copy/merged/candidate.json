@@ -1,0 +1,39 @@
+{
+  "compiler": "ptx-vx-frontend-v1.4",
+  "parameter_access": "vortex2-queue-args-align-v1",
+  "predicate_lowering": "same-predicate-v1",
+  "layout": {
+    "bytes": 24,
+    "fields": [
+      {
+        "name": "x",
+        "offset": 0,
+        "size": 8,
+        "align": 8
+      },
+      {
+        "name": "z",
+        "offset": 8,
+        "size": 8,
+        "align": 8
+      },
+      {
+        "name": "n",
+        "offset": 16,
+        "size": 4,
+        "align": 4
+      }
+    ]
+  },
+  "board_lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+  "model_image_sha256": "8855a231375529d723155c16ab432600af6cd9d188ddb1f374a1e2a31b8168bc",
+  "vxbin": {
+    "min_vma": 6442450944,
+    "max_vma": 6442455232,
+    "binary_size": 4288,
+    "entry_pc": 6442450996
+  },
+  "formal_loadable": false,
+  "board_execution": "NOT_RUN"
+}

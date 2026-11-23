@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "scope": "Windows-only runner preflight",
+  "cwd": "tests",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "test_native_smoke.RunnerSafetyTests.test_check_only_wrong_platform_is_blocked_never_pass",
+    "-v"
+  ],
+  "status": "PASS"
+}

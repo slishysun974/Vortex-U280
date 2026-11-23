@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "backend": "xrtsim",
+  "commands": [
+    {
+      "label": "p0_suite_copy",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "copy",
+        "--backend",
+        "xrtsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/copy",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-copy"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:47:17.080075+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_p0_suite_copy.log",
+      "finished_at": "2026-11-21T14:47:57.691464+00:00",
+      "elapsed_seconds": 40.607,
+      "log_sha256": "f890701e914c418f30af938c1e4e545ca2fcea93d605e4aaf27f76b12bdac4d8"
+    },
+    {
+      "label": "review_p0_copy",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/verify_ptx_suite_results.py",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-copy"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:47:57.715677+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_review_p0_copy.log",
+      "finished_at": "2026-11-21T14:48:02.113060+00:00",
+      "elapsed_seconds": 4.387,
+      "log_sha256": "4a04296993b808be19b90f626d415fb68a1c64889affb26ce19b3dcc1ee503c9"
+    },
+    {
+      "label": "p0_suite_vadd",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "vadd",
+        "--backend",
+        "xrtsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/vadd",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-vadd"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:48:02.154828+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_p0_suite_vadd.log",
+      "finished_at": "2026-11-21T14:48:52.276146+00:00",
+      "elapsed_seconds": 50.104,
+      "log_sha256": "bda55d92e3aee093600e3099e0808f5094bbafb3ee0e0886de11509e74ab5a4c"
+    },
+    {
+      "label": "review_p0_vadd",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/verify_ptx_suite_results.py",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-vadd"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:48:52.378554+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_review_p0_vadd.log",
+      "finished_at": "2026-11-21T14:48:57.491158+00:00",
+      "elapsed_seconds": 5.087,
+      "log_sha256": "d50ca11c950060f383e0cee9ae9d6f60189b981a03fc5153d0c9e554168a550e"
+    },
+    {
+      "label": "p0_suite_affine",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "affine",
+        "--backend",
+        "xrtsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/affine",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-affine"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:48:57.538530+00:00",
+      "timeout_seconds": 1800,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_p0_suite_affine.log",
+      "finished_at": "2026-11-21T14:52:21.738843+00:00",
+      "elapsed_seconds": 204.192,
+      "log_sha256": "515708fe2be91616bec6cdedb43d6d6a4e8f0dd6f94e93f1452c0edc9eaf4fc7"
+    },
+    {
+      "label": "review_p0_affine",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/verify_ptx_suite_results.py",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1/suite-affine"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:52:21.787596+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_review_p0_affine.log",
+      "finished_at": "2026-11-21T14:52:45.003664+00:00",
+      "elapsed_seconds": 23.204,
+      "log_sha256": "1bde1e2aabfc1952f66d50f873af2a278146bee10a7e8e1fdaad94b1b4200e27"
+    },
+    {
+      "label": "forms_v03_and_original_inputs",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate-afu/regress.py",
+        "--worker",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1",
+        "--alignment",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-align-fixed-20261121-v2",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-afu-regress-20261121-v1",
+      "started_at": "2026-11-21T14:52:45.044415+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_forms_v03_and_original_inputs.log",
+      "finished_at": "2026-11-21T14:53:18.009749+00:00",
+      "elapsed_seconds": 32.952,
+      "log_sha256": "304ca65cf24899c65a6503bef707ea1651bc701d6023487e6e0bb4c72f00f239"
+    }
+  ],
+  "started_at": "2026-11-21T14:47:16.766846+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-afu/regress.py",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--alignment",
+    "results/local-ptx-same-predicate-afu-align-fixed-20261121-v2",
+    "--output",
+    "results/local-ptx-same-predicate-afu-regress-20261121-v1"
+  ],
+  "board_execution": "NOT_RUN",
+  "binding_sha256": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+  "alignment_sha256": "09e5ad810990b916edfc987d6288e9e0fbc924e795c4da09799a1deab84f777c",
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "suites": {
+    "copy": {
+      "passed": 168,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "ed6fd2c45d8988bedf6959ef1bc614960b2b2fc893da06e5cb40e06e208ef4f8"
+    },
+    "vadd": {
+      "passed": 168,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "f08a560aa643fdfc3be9e74da732415b812e5810eb7a8d84d1d9b35d0fb77a0c"
+    },
+    "affine": {
+      "passed": 504,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "37e040ebd52414d5508f35f10f03b65b2b943b39908a16be6f037494978da7b3"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:53:18.041331+00:00"
+}

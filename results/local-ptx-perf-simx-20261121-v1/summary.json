@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "started_at": "2026-11-21T12:30:27.338384+00:00",
+  "board_execution": "NOT_RUN",
+  "backend": "simx",
+  "repeats": 2,
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-performance-attribution/measure.py",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-perf-simx-20261121-v1",
+        "--backend",
+        "simx",
+        "--repeats",
+        "2",
+        "--worker"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-perf-simx-20261121-v1",
+      "started_at": "2026-11-21T12:30:27.342902+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T12:31:18.868653+00:00",
+      "elapsed_seconds": 51.508,
+      "log_sha256": "89c562cb4136ab7a680fc2f8733b59dcf67a629d536d36b7191f3db85c30d2c2"
+    }
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-11-21T12:31:18.901417+00:00"
+}

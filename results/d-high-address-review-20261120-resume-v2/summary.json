@@ -1,0 +1,137 @@
+{
+  "run_id": "d-high-address-review-20261120-resume-v2",
+  "argv": [
+    "scripts/run_d_high_addresses.py",
+    "review",
+    "--run",
+    "results/d-high-address-closeout-20261120-v1",
+    "--run-id",
+    "d-high-address-review-20261120-resume-v2"
+  ],
+  "started_at": "2026-11-20T14:22:25.306043+00:00",
+  "mode": "review",
+  "commands": [],
+  "status": "PASS",
+  "u280": "NOT_RUN",
+  "independent_acceptance": "NOT_RUN",
+  "source_run": "/mnt/d/Vortex-U280/results/d-high-address-closeout-20261120-v1",
+  "replayed_captures": 15,
+  "traced_captures": 10,
+  "crossings": {
+    "simx_cross_read": {
+      "pc": "0x1800001d8",
+      "block": 2,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 12557,
+        "original": "TRACE       1370: cluster0-socket0-core0-lsu mem-req: op=LD, mask=1110, addr={0xfffffff8, 0xfffffffc, 0x100000000, -}, tag=0x1, cid=0 (#8589934708)",
+        "altered": "TRACE       1370: cluster0-socket0-core0-lsu mem-req: op=LD, mask=1110, addr={0xfffffff8, 0xfffffffc, 0x0, -}, tag=0x1, cid=0 (#8589934708)"
+      }
+    },
+    "simx_cross_write": {
+      "pc": "0x1800001f8",
+      "block": 1,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 11176,
+        "original": "TRACE       1540: cluster0-socket0-core0-lsu mem-req: op=ST, mask=0111, addr={-, 0xfffffffc, 0x100000000, 0x100000004}, tag=0x0, cid=0 (#4294967426)",
+        "altered": "TRACE       1540: cluster0-socket0-core0-lsu mem-req: op=ST, mask=0111, addr={-, 0xfffffffc, 0x0, 0x100000004}, tag=0x0, cid=0 (#4294967426)"
+      }
+    },
+    "simx_cross_audit": {
+      "pc": "0x180000248",
+      "block": 2,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 9804,
+        "original": "TRACE       1405: cluster0-socket0-core0-lsu mem-req: op=ST, mask=1110, addr={0xfffffff8, 0xfffffffc, 0x100000000, -}, tag=0x0, cid=0 (#8589934708)",
+        "altered": "TRACE       1405: cluster0-socket0-core0-lsu mem-req: op=ST, mask=1110, addr={0xfffffff8, 0xfffffffc, 0x0, -}, tag=0x0, cid=0 (#8589934708)"
+      }
+    },
+    "rtlsim_cross_read": {
+      "pc": "0x1800001d8",
+      "block": 2,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 16393,
+        "original": "2737: cluster0-socket0-core0-execute-lsu0 Rd Req: wid=2, cta_id=2, PC=0x1800001d8, tmask=0111, addr={0x0000000000000000, 0x0000000100000000, 0x00000000fffffffc, 0x00000000fffffff8}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf0ff00f, rd=28, pid=0, sop=1, eop=1, tag=0x4000000e893b00000001800001d88e7040400 (#8589934708)",
+        "altered": "2737: cluster0-socket0-core0-execute-lsu0 Rd Req: wid=2, cta_id=2, PC=0x1800001d8, tmask=0111, addr={0x0000000000000000, 0x0, 0x00000000fffffffc, 0x00000000fffffff8}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf0ff00f, rd=28, pid=0, sop=1, eop=1, tag=0x4000000e893b00000001800001d88e7040400 (#8589934708)"
+      }
+    },
+    "rtlsim_cross_write": {
+      "pc": "0x1800001f8",
+      "block": 1,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 14380,
+        "original": "3077: cluster0-socket0-core0-execute-lsu0 Wr Req: wid=1, cta_id=1, PC=0x1800001f8, tmask=1110, addr={0x0000000100000004, 0x0000000100000000, 0x00000000fffffffc, 0x00000000ffffffe4}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf00ff0f0, data={0x56953b7756953b77, 0xffffffff8b341c79, 0xfaf8f2e1faf8f2e1, 0xffffffe0ffffffe0}, sop=0, pid=1, eop=1, tag=0x2000001044f300000001800001f81ff150480 (#4294967426)",
+        "altered": "3077: cluster0-socket0-core0-execute-lsu0 Wr Req: wid=1, cta_id=1, PC=0x1800001f8, tmask=1110, addr={0x0000000100000004, 0x0, 0x00000000fffffffc, 0x00000000ffffffe4}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf00ff0f0, data={0x56953b7756953b77, 0xffffffff8b341c79, 0xfaf8f2e1faf8f2e1, 0xffffffe0ffffffe0}, sop=0, pid=1, eop=1, tag=0x2000001044f300000001800001f81ff150480 (#4294967426)"
+      }
+    },
+    "rtlsim_cross_audit": {
+      "pc": "0x180000248",
+      "block": 2,
+      "lanes": [
+        1,
+        2
+      ],
+      "addresses": [
+        "0xfffffffc",
+        "0x100000000"
+      ],
+      "bit32_loss": "DETECTED",
+      "changed_request": {
+        "line": 12249,
+        "original": "2815: cluster0-socket0-core0-execute-lsu0 Wr Req: wid=2, cta_id=2, PC=0x180000248, tmask=0111, addr={0x0000000000000000, 0x0000000100000000, 0x00000000fffffffc, 0x00000000fffffff8}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf0ff00f, data={0x0, 0xffffffffa5a55a5e, 0xa5a55a5ea5a55a5e, 0xffffffffa5a55a5e}, sop=0, pid=1, eop=1, tag=0x4000000e893b00000001800002481ff140400 (#8589934708)",
+        "altered": "2815: cluster0-socket0-core0-execute-lsu0 Wr Req: wid=2, cta_id=2, PC=0x180000248, tmask=0111, addr={0x0000000000000000, 0x0, 0x00000000fffffffc, 0x00000000fffffff8}, attr={000000000000000, 000000000000000, 000000000000000, 000000000000000}, byteen=0xf0ff00f, data={0x0, 0xffffffffa5a55a5e, 0xa5a55a5ea5a55a5e, 0xffffffffa5a55a5e}, sop=0, pid=1, eop=1, tag=0x4000000e893b00000001800002481ff140400 (#8589934708)"
+      }
+    }
+  },
+  "source_checkouts": {
+    "/mnt/d/Vortex-U280/upstream/vortex": 3329,
+    "/opt/vortex-ab/sources/vortex-7fe19369587c-v1": 3329
+  },
+  "source_run_summary_sha256": "11dfbe9d8b85f5a79db6041d28b457791de0e25a7304d5a7745ac98c27a028d1",
+  "exit_code": 0,
+  "finished_at": "2026-11-20T14:23:37.230125+00:00"
+}

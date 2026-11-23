@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "backend": "rtlsim",
+  "commands": [
+    {
+      "label": "p0_suite_copy",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "copy",
+        "--backend",
+        "rtlsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/copy",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1/suite-copy"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T14:02:21.617914+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_p0_suite_copy.log",
+      "finished_at": "2026-11-21T14:02:44.526966+00:00",
+      "elapsed_seconds": 22.894,
+      "log_sha256": "f890701e914c418f30af938c1e4e545ca2fcea93d605e4aaf27f76b12bdac4d8"
+    },
+    {
+      "label": "p0_suite_vadd",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "vadd",
+        "--backend",
+        "rtlsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/vadd",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1/suite-vadd"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T14:02:44.622859+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_p0_suite_vadd.log",
+      "finished_at": "2026-11-21T14:03:13.907364+00:00",
+      "elapsed_seconds": 29.271,
+      "log_sha256": "bda55d92e3aee093600e3099e0808f5094bbafb3ee0e0886de11509e74ab5a4c"
+    },
+    {
+      "label": "p0_suite_affine",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/run_ptx_suite.py",
+        "--kernel",
+        "affine",
+        "--backend",
+        "rtlsim",
+        "--module",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1/modules/affine",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1/suite-affine"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T14:03:13.972727+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_p0_suite_affine.log",
+      "finished_at": "2026-11-21T14:04:38.443249+00:00",
+      "elapsed_seconds": 84.463,
+      "log_sha256": "515708fe2be91616bec6cdedb43d6d6a4e8f0dd6f94e93f1452c0edc9eaf4fc7"
+    },
+    {
+      "label": "forms_v03_and_performance",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/ptx-same-predicate-production/model.py",
+        "--worker",
+        "--backend",
+        "rtlsim",
+        "--build",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-build-20261121-v1",
+        "--output",
+        "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/local-ptx-same-predicate-production-rtlsim-20261121-v1",
+      "started_at": "2026-11-21T14:04:38.510936+00:00",
+      "timeout_seconds": 1200,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_forms_v03_and_performance.log",
+      "finished_at": "2026-11-21T14:10:36.308204+00:00",
+      "elapsed_seconds": 357.786,
+      "log_sha256": "8cb9b206d05d5af3beb1e4017c45173b24db2452b4dbfd73e3799a9e0cfc0b6b"
+    }
+  ],
+  "started_at": "2026-11-21T14:02:21.592143+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/ptx-same-predicate-production/model.py",
+    "--build",
+    "results/local-ptx-same-predicate-production-build-20261121-v1",
+    "--backend",
+    "rtlsim",
+    "--output",
+    "results/local-ptx-same-predicate-production-rtlsim-20261121-v1"
+  ],
+  "board_execution": "NOT_RUN",
+  "afu_execution": "NOT_RUN",
+  "binding_sha256": "4c25f428090b4f7698aa46d11d6556599d205ef17cec320e204b4b2328180321",
+  "build_sha256": "f7752e5e8bdb7663d03bb7a1eba91efe28fed265406d6f0ab5d081c64d36c858",
+  "suites": {
+    "copy": {
+      "passed": 168,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "1552e87f508a08853a051fbd870e2b69c4b294dc0251f181798f2a9af8176e4c"
+    },
+    "vadd": {
+      "passed": 168,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "48439a536ee1f61e80a14f472017ef48fee872968f15b57de69c8f4e70e4a508"
+    },
+    "affine": {
+      "passed": 504,
+      "rejections": 19,
+      "recovery": "PASS",
+      "sha256": "e6911fa8cd4ce8cd6af9a3d35b26bbfc67e5e6a4f071457f46c05ba79eaefdc8"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T14:10:36.362898+00:00"
+}

@@ -1,5 +1,75 @@
 # Vortex-U280 项目交接
 
+**2026-11-23 GitHub 交接。** 从 `main` 的[项目总览](PROJECT_OVERVIEW.md)接续当前工作。Iris 先执行 M1/M2，平台线等待 DMA 隔离和 `TIMING-7` 确认，研究线按冻结协议组织双人 V08。[公开内容与检查](PUBLICATION.md)
+
+**2026-11-23 接手入口。** [项目总览](PROJECT_OVERVIEW.md)按目录、执行后端和负责人串起代码与原始证据。应用线从 Iris M1 数据冻结和 M2 双目标构建开始。平台线由 B/C 接续 DMA 隔离与 TIMING-7 确认，研究线由 E 接续双人 V08。以下日期条目保留各轮交付时的范围。
+
+**2026-11-23，Iris 三分类应用处于设计阶段。** 后续开工时可按 M1 冻结数据与独立答案，按 M2 准备 PTX 和模型／实卡两套构建。当前依据为前期 CPU 参考值，Iris 专项构建与四路执行均为 `NOT_RUN`。[项目计划与分工](IRIS_U280_PROJECT_PLAN.md)
+
+**2026-11-22，V08 第三轮本地试验已完成。** 两种三轮路径先通过计量预检，再冻结六对项目综合题。两组各 6/6。可从同一封存哈希在新目录重核 192 个私测，另用保留的 CLI 日志重算握手和重试指标。报告保留首份准备中的对照失败，正式席位使用第二份冻结回执。[第三轮结果与重核命令](V08_LOCAL_ROUND3_20261122.md)
+
+**2026-11-22，V08 本地第二轮已完成。** 先验证单、双上下文的续接计量，再冻结、发放六对新题。两组各 6/6 通过，原始命令、用量和两次隐藏重放退出码齐全。可用报告中的接收命令和新 run_id 从相同封存哈希重核。解释组间用时差时保留 T1A、T1B、T5A 的 CLI 等待记录。[第二轮报告与复现](V08_LOCAL_ROUND2_20261122.md) · [冻结回执（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-e51b4e26840c)
+
+**2026-11-22，本地独立接收 v1.4，V08 本地试验已完成。** 接收人可从独立回执定位新构建、三路模型和 LSU 日志。每路 37 次正常启动、5 次调试回放通过，包含独立的新谓词重定义程序。按复现页另取 run_id，使用固定 D5 和已封存语料。物理 U280 和人类签收未在本轮执行。[编译器验收与复现](E_V14_LOCAL_ACCEPTANCE_20261122.md) · [接收回执](../results/e-v14-review-20261122-v1/result.json)
+
+按用户的本地运行安排，E 使用自动调度版本完成六对 V08。11 份封存代码通过两次隐藏重放，T1A 因计量错误未封存，保留失败和首版调度器。统计使用逐调用回执，T4A 恢复仍计入原始墙钟。复查可直接用封存哈希和本地会话记录。若再做独立采集，先验证多轮计量并换用新题。原双人协议尚未开题。[试验结果与重放入口](V08_LOCAL_TRIAL_20261122.md)
+
+**2026-11-22，B 与 E 两项接续材料已就绪。** B 持[平台确认单](U280_PLATFORM_QUESTIONS_20261122.md)和现有时序附件，待向维护者分别确认资源可复用的完成条件、跨域复位的端点与适用模式。目前尚未外发或收到回复，物理恢复 `NOT_RUN`，旧 DMA 隔离依据 `BLOCKED`，TIMING-7 `OPEN`。
+
+E 持 [V08 冻结协议](../experiments/ai-paired-v1/protocol.md)。发题前对照[冻结回执（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-47695d48ead6)中的清单 SHA-256，登记 P/Q 并确认模型用量可计量，再按 `study.py verify` 的顺序用 `issue` 导出单卡。每席位仅交付该卡公开目录；98 项隐藏验收在提交哈希封存后执行。12 个席位均未开题，实验结果为 `NOT_RUN`。
+
+[独立答案复核](../results/ai-paired-freeze-20261122-v1/answer-review.json)逐项检查了 110 个公开与私有样例。项目规定的 Python 自测在[固定 WSL](../results/ai-paired-runner-wsl-20261122-v2/runner.json) 退出 0，Windows 盘符触发的[绑定测试错误](../results/ai-paired-freeze-20261122-v1/runner.stderr)及首次启动 WSL 的[访问拒绝记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6409a1822351)均已留存。
+
+**2026-11-22，U280 尾部逐 lane 验证停在观测门槛。** 固定 D10/D12 只能从现有 host 路径取得 CP 命令和聚合计数，镜像及实现归档无合并前 LSU lane 探针。未换镜像，未启动新板测。保留 xclbin 原始 section 表、XRT 回执、D12 符号表和上一轮大档输出复核。实卡尾部假谓词零请求仍 `NOT_RUN`。[检查范围与原件](PTX_U280_TAIL_OBSERVABILITY_20261122.md)
+
+**2026-11-22，固定 U280 已补齐 v1.3/v1.4 的设备周期和退休 warp 指令。** 原 D10/D12、六份镜像与两档输入复测。CP/VM 门禁、12 次暂存探针和 420 次完整输出与哨兵通过。两个探针先确认 base MPM 可按次差分，随后每次配对记录设备计数和主机等待。3,376 次读取和板端、SSH、本地接收均退出 0，121 份原件复核通过。六组设备周期差中位数下降，大档 vadd、affine 的设备周期折算与主机等待收益接近。[计数范围和逐组对照](PTX_U280_ALIGNED_MPM_20261122.md) · [原始回执](../results/u280-aligned-mpm-20261122-v1/result.json)
+
+**2026-11-22，固定 U280 通过对齐同谓词版的首次物理配对。** 同一 D10/D12 context 回读原始 `CP_DEV_CAPS=0x00061001` 和 `VM=0`，同队列 12 次逐字节探针通过后才放行。三算子两档的 210 对、420 次输出及哨兵通过。板端、SSH、本地接收均退出 0，回传 119 份原件。精确接收范围为这六份固定配对镜像及该板卡会话，物理故障恢复仍待平台隔离依据，`TIMING-7` 保持 `OPEN`。[结果与复现](PTX_U280_ALIGNED_BOARD_20261122.md) · [回执及文件哈希](../results/u280-aligned-board-20261122-v1/result.json)
+
+**2026-11-22，固定 D10/D12 的对齐模块装载门禁和配对执行入口已接通。** 正式 loader 要求同一次物理 context 的有效 `CP_DEV_CAPS` 原值和 `VM=0`，再在同一队列逐字节核对 `a0`、`MSCRATCH`、槽对齐、所有字段地址和值以及退休复用。放行仅覆盖固定六份镜像。原两档输入的 420 次合成配对顺序和输出核验通过。真实 XRT 读回、物理装载与配对执行均待授权设备窗口，本轮 `NOT_RUN`。[版本、入口与复现](PTX_U280_ALIGNED_LOAD_20261122.md) · [离线回执](../results/u280-aligned-load-review-20261122-v2/summary.json)
+
+**2026-11-21，U280 同谓词配对离线准备完成。** D10/D12 原件、VM 关闭配置、64 字节暂存分配路径和三个 ABI 字段布局通过离线核验。U280 lock 重建 v1.3 对齐基线与 v1.4 合并版共六份候选，逐字节复现已测模型镜像。配对包封入原六组输入、答案、逐字节地址探针和 210 对的次序。物理装载仍 `BLOCKED`，下一步需在授权窗口取得有效的 CP 能力原值、`VX_CAPS_VM_SUPPORT=0` 和真实地址探针证据，再接收物理对齐模块。U280 执行 `NOT_RUN`。[条件与复现](PTX_U280_ALIGNED_PREFLIGHT_20261121.md) · [配对包（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-01d57f652896)
+
+**2026-11-21，固定 NOXRT AFU 完成正式 v1.4 同谓词验证。** 先由 10 次独立探针确认 VM 关闭、设备槽基址 64 字节对齐、`a0` 等于 `MSCRATCH`。将这份精确 binding 纳入对齐接收清单第 2 版，再完成 P0 算子 840/840、指令见证 2/2、冻结 V03 13/13 和六组原输入的完整输出与哨兵校验。隔离 AFU 逐 lane 追踪核对 139,240 条数组请求，尾部假谓词数组请求为零。本轮证据供独立接收，U280 执行为 `NOT_RUN`。[对齐、回归与复现](PTX_SAME_PREDICATE_AFU_20261121.md) · [机器复核](../results/local-ptx-same-predicate-afu-review-20261121-v1/summary.json)
+
+**2026-11-21，正式 PTX 前端接入同谓词访存合并。** 固定 D5 对齐读取模块通过 `--predicate-lowering same-predicate-v1` 选择 v1.4 lowering。SimX、处理器 RTL 各通过 840 个 P0 算子用例、2 次指令形式见证及 13 个冻结 V03 用例。原两档输入的 48 对计数启动均节省周期，96 次输出和哨兵均通过。DEBUG3 两路各核对 278,480 条数组请求，尾部三个假 lane 的数组请求为零。本轮范围为固定两模型的本地验证，独立接收待办，NOXRT AFU 和 U280 为 `NOT_RUN`。[正式入口和复现](PTX_SAME_PREDICATE_PRODUCTION_20261121.md) · [机器复核](../results/local-ptx-same-predicate-production-review-20261121-v1/summary.json)
+
+**2026-11-21，同谓词访存合并的本地单变量实验完成。** 正式对齐版重建镜像与归档逐字节相同。隔离变体将 copy、vadd、affine 的连续同谓词语句放进一个条件块，保持每线程读写顺序。两模型在 1,024 和 16,381 元素上共 48 对计数启动，96 次输出与哨兵均通过。DEBUG3 各核对 278,480 条数组请求，16,381 元素尾部三个假 lane 的数组读写请求均为零。后续如接入正式生成器，使用 P0 和 V03 语料做版本化接收。NOXRT AFU 和 U280 执行为 `NOT_RUN`。[构建、结果与复现](PTX_SAME_PREDICATE_20261121.md) · [机器复核](../results/local-ptx-same-predicate-review-20261121-v1/summary.json)
+
+**2026-11-21，正式对齐模块完成本地回归。** 在 `ptx_module.py prepare` 使用 `--device-parameter-access vortex2-queue-args-align-v1`，随后使用固定 D5 的 SimX 或处理器 RTL runtime。默认模块保留逐字节读取，包括 NOXRT 与 U280。两模型各通过 840 个 P0 算子用例、13 个 V03 冻结用例和 24 对性能启动。U280 的对齐接收和设备性能待测。[版本、范围和复现](PTX_DEVICE_PARAMETER_ACCESS.md)
+
+**2026-11-21，对齐参数读取单变量实验收尾。** 原逐字节镜像重建后与归档逐字节一致。隔离变体只换 `ptx_read32/64`，设备探针确认暂存基址及字段对齐，96 次本地输出通过。SimX 周期下降约 60%–65%，处理器 RTL 下降约 63%–69%。若将变体接入生产，先明确启动路径的对齐保证及版本接收范围。U280 收益待测。[实验和复现](PTX_ALIGNED_PARAMETERS_20261121.md)
+
+**2026-11-21，三算子原生/PTX 本地性能归因完成。** SimX 和处理器 RTL 各 24 次启动、输出校验及计数器采集均通过。参数解码占新增退休指令的 91%–93%，其次是重复的谓词分支与收敛控制。可沿用现有镜像和输入复现，也可用独立变体量化对齐参数读取的周期影响。RTL 扩展计数器本轮不可用，新增 U280 执行为 `NOT_RUN`。[对照与复现](PTX_PERFORMANCE_ATTRIBUTION_20261121.md)
+
+**2026-11-21，完成 copy、vadd、affine 的 U280 同卡原生 Vortex / PTX 对照。** copy、affine 补跑 280 次，合并已有 vadd 的 140 次。两次使用 `b1`、D10/D12、HOST 256 MiB、实际 200 MHz，核对输入和设备身份。两规模每路 5 次预热、30 次计时，420 次启动全部通过输出核对。180 对正式样本均以执行等待为主要差距，其占 PTX 额外耗时的 98.63% 至 100.22%。接续可复用同一门禁、冻结输入和逐对计时协议。设备周期与其他配置待测，物理恢复仍需平台停止或隔离依据，`TIMING-7` 保留 `OPEN`。[分阶段结果与复现](RESEARCH_PLAN.md#2026-11-21-u280-三算子配对性能) · [最终复核](../results/u280-perf-three-operators-20261121-v2/result.json)
+
+**2026-11-21，项目负责人已在聊天中限定接收 V03。** 签收覆盖两份固定 PTX 模块的 8 个普通地址、5 个 4 GiB 专项用例，SimX、处理器 RTL、NOXRT AFU、物理 U280 各 13/13。确认原话与冻结及复现证据的 SHA-256 已归档。物理恢复、`TIMING-7` 和性能另有待办。[项目负责人签收](../results/ae-v03-signoff-20261121-v1/record.json) · [机器验收](../results/ae-v03-acceptance-20261121-v1/result.json)
+
+**2026-11-21，A/E 新语料已通过四路机器验收。** 独立 PTX 源级参考在执行前冻结 13 组输入与答案，两套目标重新编译。SimX、处理器 RTL、NOXRT AFU、物理 U280 各 13/13。SimX 与处理器 RTL 各核对 1,383 次访存请求，覆盖相邻 lane 的跨界读、写和审计写回。137 份 U280 回传原件均已核对。[冻结语料](../results/ae-v03-frozen-20261121-v1/manifest.json) · [验收结果](../results/ae-v03-acceptance-20261121-v1/result.json) · [接收与复现](D_P0_CLOSEOUT.md#ae-独立验收)
+
+**2026-11-21，B/C 已完成 4 GiB 专项板测。** 固定 U280 在同低 32 位的一低一高两个地址以两种顺序写入不同哨兵，4 份读回通过。之后 5 个 PTX 用例全部通过，包含高低双向传值及跨界读、写、audit。三个模型也各 5/5，四路完整缓冲区和参数相符。板端、SSH 和本地复核退出 0。A/E 接独立复现；B/C 等平台方确认 `TIMING-7` 和物理恢复的停止或隔离条件，性能尚待测量。[板端原件](../results/c-v03-u280-high-board-20261121-v1/result.json) · [四路复核](../results/c-v03-u280-high-closeout-20261121-v1/result.json) · [复现入口](D_P0_CLOSEOUT.md#4-gib-专项板测)
+
+**2026-11-20，B/C 已完成 V03 普通地址板测。** 两份探针在 `b1` 卡、HOST 256 MiB、实际 DATA_CLK 200 MHz 下实现 **8/8 PASS**，一个 context 完成 6 次装载及 8 次启动，回读 24 份完整数组和 8 份参数。固定 D10/D12、前后门禁、SSH 和回传复核通过。三模型也各 8/8，四路完整数组逐字节相符。下一轮 B/C 单列 4 GiB 两侧的定址分配和传输验证，A/E 接独立复现。物理恢复仍 `NOT_RUN`，TIMING-7 `OPEN`。[板测回传与退出码](../results/c-v03-u280-20261120-v1/result.json) · [四路收尾复核](../results/c-v03-u280-closeout-20261120-v1/result.json) · [复现入口](D_P0_CLOSEOUT.md#普通地址板测入口)
+
+**2026-11-20，A–D 已开始板测前接续。** C 按冻结语料在新目录重建并复跑，三个模型各 8/8，入口退出 0。两份新探针已通过固定 U280 lock 的构建和离线校验，镜像与模型字节一致。D10/D12 归档复核确认 4 GiB 两侧的模型地址落在列出的 HBM 区间。B/C 先接 8 个普通地址板测，再用不同哨兵验证物理定址分配和传输。A/E 接独立复现，D 接前端反馈。物理执行仍 `NOT_RUN`，TIMING-7 `OPEN`，旧 DMA 隔离依据 `BLOCKED`。[A–D 分工与待办](STATUS.md) · [板测输入和复现命令](D_P0_CLOSEOUT.md#u280-模块与地址预核验)
+
+**2026-11-20，V03 已完成 C runtime 三模型技术接收。** 两个 PTX 模块从冻结源重新构建，交付文件各 12/12 一致。接收脚本通过 C 的 `Context` 在 SimX、处理器 RTL、NOXRT AFU 各启动 8 次，并回读完整数组和参数。接收人可按收尾页命令重建，或从原始捕获直接复核。正式人类签收及 A/E 的独立复现待办，新增探针的物理 U280 执行为 `NOT_RUN`。[接收范围与复现入口](D_P0_CLOSEOUT.md#c-runtime-的技术接收) · [实际运行](../results/c-v03-receipt-20261120-v1/summary.json)
+
+**2026-11-20，D 已提交 P0 前端的 V03 接收包。** 交付版本为 `ptx-vx-frontend-v1.2 / p0-static-v2`。C 可从新模块目录取得 typed IR、源码映射、参数布局、生成的 C++ 和带哈希的构建记录。A 参加线程与访存语义复核，E 用独立输入与答案复现后登记接收。新增探针的三路模型已通过，物理 U280 尚未执行。收尾页列出 17 条指令各自的值、边界、拒绝证据和从项目根目录复现的命令。[V03 交付与接收责任](D_P0_CLOSEOUT.md) · [可装载模块（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-05fbcf8a43b8)
+
+**2026-11-20 D 接续已取得模型高地址实证。** 同一 PTX 探针在 SimX、处理器 RTL、NOXRT AFU 各 5/5 PASS。两个基址相差 4 GiB、低 32 位相同的缓冲区均可区分。SimX 与处理器 RTL 还观察到相邻 lane 在 4 GiB 分界两侧读写。A/E 可从 PTX 源另行冻结独立掩码、地址布局和输入，在干净目录复现。物理上板由 B/C 核对实际可分配地址窗口后接续，本轮仍为 `NOT_RUN`。[复现入口与观测层级](PTX_FRONTEND_PROGRESS.md#2026-11-20-d-的-4-gib-设备地址验证) · [原始日志复核](../results/d-high-address-review-20261120-v1/summary.json)
+
+**2026-11-20 D 已交付第一组新增语料。** `guarded_wide_offset.ptx` 组合现有 17 种 P0 源级指令形式，使用 4 GiB 宽乘积、正负位移和 lane 掩码。固定 8w×4t 候选上的 SimX、处理器 RTL、NOXRT AFU 各 6/6 PASS。D 已留存生成代码与映射、反汇编、输入与作者答案、三路输出及两路逐 lane 日志。A/E 下一步可从干净目录用新标识复现，换用独立冻结输入覆盖同一 warp 的其他掩码与地址边界。独立接收、该探针的物理 U280 执行及设备高地址观测仍待完成。[复现命令与接收范围](PTX_FRONTEND_PROGRESS.md#2026-11-20-d-的宽地址与谓词访存探针) · [运行记录](../results/d-guarded-wide-20261120-v1/summary.json)
+
+**2026-11-20 五人课题接续（归档审阅）**。以 11 月 11 日三类整数程序的四路独立接收为功能基线。D/A/E 优先补 P0 指令、地址边界和新语料的逐 lane 访存证据，由人类接收人在干净目录复现。B/C 向平台方确认固定 shell 的时钟与复位关系，以及停止或隔离旧 DMA 的可观察条件，后者具备后再安排真板故障恢复实验。E 可同步冻结 AI 成对任务、预算和验收集并组织执行。A/B/C/E 可用现有正确程序做同卡原生/PTX 计时，再视首期范围选择一个 Core 或 Cache 变量。完整结题仍需汇总测量数据、接收签字和演示版本。[阶段成果](PROJECT_PROGRESS_REPORT_20261111.md) · [研究计划](RESEARCH_PLAN.md)
+
+2026-11-11 GitHub README 增加 Mermaid 流程图，位于向量加法示例下方。发布提交为 `2aad3a0`，已核对 GitHub 页面中的节点、文档链接和发布清单。[核对记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-a4b1576614fe)
+
+2026-11-11 面向初次阅读者的 README 已同步到 GitHub `main` 的 `a897aa3`。首页用向量加法示例串联编译、运行和验证，保留已验证范围及本地自测入口。详细实验数据和上板条件见 README 链接的专题文档。本轮检查范围为文档链接、发布清单和远端文件身份。[发布记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-de1539aa17ab)
+
+2026-11-11 GitHub 同步已完成：用户批准上传后，既有验证提交 [`340c92a`](https://github.com/slishysun974/Vortex-U280/commit/340c92a2447e666d9b3ac500315004cfec2060fe) 已推送到 `main`，push 退出 0。GitHub 回读提交一致，README 与服务器导航的 blob 身份和本地一致，发布工作树干净。代码、冻结语料、选定验证证据和访问/目录说明已同步；真实连接资料继续仅保存在本地。前次受阻记录原样保留，本次没有重跑设备或登录服务器。[同步成功记录（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-b173cbc7b789)。
+
 2026-11-11 公开快照整理：当前代码、两套冻结语料、新独立四路接收与模型恢复证据纳入公开发布范围，入口见 [阶段成果](PROJECT_PROGRESS_REPORT_20261111.md)、[发布说明](PUBLICATION.md)。公开副本自测 **237 通过/32 跳过，退出 0**；四路已有 capture 离线重核各 **48/48**，冻结语料与六个生产文件共 **248 项字节一致**。这是发布验证，没有新增设备运行；完整本地自测 268/1 与公开结果分开报告。
 
 新增 [服务器访问与目录导航](SERVER_GUIDE.md)：SSH 使用方法、XRT/Vitis/GCC/Python、D10 FPGA 成品、D12 两库、C/E 板测目录均已标明。真实账号、地址和本机 WLAN 交互登录命令仅保存在本地 `environment/server-access/SERVER_ACCESS_LOCAL.md`；公开仓库使用示例。后续仍需解决物理停止/隔离依据、恢复实验与 TIMING-7，不以发布或历史输出重核扩大接收结论。
@@ -78,7 +148,7 @@ WSL 运行器自测 122 通过、1 跳过、退出 0，新增检查覆盖 affine
 
 2026-11-09 D11 最新：**归档与 runtime200 本地准备 PASS；上板就绪 BLOCKED、板上功能 NOT_RUN。** [v5（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-b0264f99ea10) 已将完整 xclbin 与 197 份原始报告取回本地并校验，见 [本地 xclbin（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-740be5623f6b)。整体时序 WNS +0.016 ns / WHS +0.006 ns，kernel 00 保持 +0.119/+0.009 ns，布线错误 0；**9 项 methodology Critical Warning** 尚未关闭，特别是 5 ns 约束和时钟模块默认 3.333 ns 的差异。新 [runtime200 输入包（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-17e0b6518b5b) 仅将宿主编译频率 400→200，Ubuntu 公共库编译 PASS；服务器 GCC 9.3.1 与六个 XRT 头文件实际存在，但真实服务器编译仍 NOT_RUN。脚本自测 103 通过/1 跳过，退出 0。网络 WinError 10013 经只读 WFP 排查发现 Surfshark Local network visibility 残留规则；用户刷新开关后两条路径 SSH 握手恢复、v5 登录/归档成功。v1-v4 原件保留。下一步按 [D11](AB_D11_PROGRESS.md) 和 [runtime 构建说明](../environment/u280-fpga/RUNTIME.md) 编译服务器库并核实平台告警/HOST/当前空闲卡；不重复提交 link，不再下载已有产物，固定源码和根 lock/caps 未修改。
 
-2026-11-09 15:56:47 最终复核：**D10 完整 FPGA 构建 PASS**。原作业 `u280-link-20261109-103830-671` 于 **15:48:08** 完成，v++ 18565.056 秒、退出 0、未超时，固定 200 MHz clock_check 退出 0（setup WNS +0.119 ns、hold WHS +0.009 ns，289539 endpoints）。[最终采集（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-81f7f83fc7c7)、[D10](AB_D10_PROGRESS.md)。服务器产物 `/home/course/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/vortex_afu.xclbin` 为 53,950,442 字节，SHA-256 `bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843`；尚未下载到本地。worker 退出 0、作业已结束，不必重新提交构建。下一步归档完整报告/元数据，准备 HOST 通路、兼容的服务器 runtime 和实际 200 MHz 频率绑定，再进行原生上板；HOST 配置、板卡加载、板上功能均 NOT_RUN。
+2026-11-09 15:56:47 最终复核：**D10 完整 FPGA 构建 PASS**。原作业 `u280-link-20261109-103830-671` 于 **15:48:08** 完成，v++ 18565.056 秒、退出 0、未超时，固定 200 MHz clock_check 退出 0（setup WNS +0.119 ns、hold WHS +0.009 ns，289539 endpoints）。[最终采集（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-81f7f83fc7c7)、[D10](AB_D10_PROGRESS.md)。服务器产物 `/home/u280user/vortex-u280-builds/u280-link-20261109-103830-671/out/vortex_afu.xclbin` 为 53,950,442 字节，SHA-256 `bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843`；尚未下载到本地。worker 退出 0、作业已结束，不必重新提交构建。下一步归档完整报告/元数据，准备 HOST 通路、兼容的服务器 runtime 和实际 200 MHz 频率绑定，再进行原生上板；HOST 配置、板卡加载、板上功能均 NOT_RUN。
 
 2026-11-09 15:27:25 最新复查：D10 原作业 `u280-link-20261109-103830-671` **RUNNING，布线完成、bitstream 生成中**。[新采集（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-56d015287cbc)观测 worker/v++ 存活约 4 小时 49 分；15:02:52 routing 完成并开始 bitstream generation，可选布线后物理优化随后显示完成。最终 xclbin/v++ 退出码/固定时钟检查仍未取得，不能提前记录完整构建 PASS；继续查询同一 BuildRun。
 
@@ -100,7 +170,7 @@ WSL 运行器自测 122 通过、1 跳过、退出 0，新增检查覆盖 affine
 
 2026-11-09 D10：**完整 link 已实际启动，启动快照 RUNNING**。用户“按此启动”已授权 [方案](../environment/u280-fpga/NEXT_LINK.md)。作业 `u280-link-20261109-103830-671` 于 10:38:41 启动，10:38:44 SSH 退出 0；实际观测到 `v++ --link` PID `95311`（worker `95131`、builder `95132`），CPU affinity `[0,1]`、nice +10、6 小时 v++ 超时，无 RAM 硬限。RAM 约 329.7 GiB/磁盘 720.9 GiB 可用，输入/XO/平台身份核验通过；[启动证据（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-6225f2ba7c23)、[D10](AB_D10_PROGRESS.md)。Linux 93 项 Python 自测通过、1 跳过，退出 0。远端目录分别在 `~/vortex-u280-link-jobs/<run_id>` 和 `~/vortex-u280-builds/<run_id>`；查询 `scripts/Invoke-U280Link.ps1 -Mode Status -BuildRun u280-link-20261109-103830-671`，用户仅在本机输入 SSH 密码，无需再次授权资源。此快照不是实时完成状态，完整结果/xclbin 尚未取得；不能重复启动已有目录，也不能将传输 PASS 当成构建 PASS。
 
-2026-11-09 D9：**真实 U280 XO PASS**。成功运行 `u280-preflight-20261109-100406-629` 的 SSH/Vivado 均退出 0，Vivado 340.708 秒；五个 IP OOC DCP/stub、U280 RTL elaboration、原模块接口 gate（13 类/22 个实例）及打包通过。服务器 XO 路径 `/home/course/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/out/vortex_afu.xo`，312,868 字节，SHA-256 `58ff5ed950d738f232f5fa70e4c4fcf82ebd2b73bb3d247cfc00133f51e66b0d`。首次 `095402` 缺 stub 失败原件保留；独立 `ip-ooc-v1` 仅修改新目录 Tcl `flow/`，gate 保持 error，固定源/根配置/D8 输入包未改。最新 HOST/platform 采集 `u280-preflight-20261109-094621-277` PASS，XSA↔8 卡 shell UUID 匹配；HOST 内存均为 0，sudo 需要密码，权限未确认。Linux 87 测试通过/1 跳过，[174/174 最终核验](../results/ab-d9-closeout-20261109-v1/result.json)通过，固定源 3329 文件零差异。[D9](AB_D9_PROGRESS.md)、[补丁](../environment/u280-fpga/PATCHES.md)、[下一阶段具体命令与资源方案](../environment/u280-fpga/NEXT_LINK.md)。完整综合/布局布线仍须先按既有要求确认资源；xclbin/板上功能未完成。
+2026-11-09 D9：**真实 U280 XO PASS**。成功运行 `u280-preflight-20261109-100406-629` 的 SSH/Vivado 均退出 0，Vivado 340.708 秒；五个 IP OOC DCP/stub、U280 RTL elaboration、原模块接口 gate（13 类/22 个实例）及打包通过。服务器 XO 路径 `/home/u280user/vortex-u280-builds/u280-preflight-20261109-100406-629/out/vortex_afu.xo`，312,868 字节，SHA-256 `58ff5ed950d738f232f5fa70e4c4fcf82ebd2b73bb3d247cfc00133f51e66b0d`。首次 `095402` 缺 stub 失败原件保留；独立 `ip-ooc-v1` 仅修改新目录 Tcl `flow/`，gate 保持 error，固定源/根配置/D8 输入包未改。最新 HOST/platform 采集 `u280-preflight-20261109-094621-277` PASS，XSA↔8 卡 shell UUID 匹配；HOST 内存均为 0，sudo 需要密码，权限未确认。Linux 87 测试通过/1 跳过，[174/174 最终核验](../results/ab-d9-closeout-20261109-v1/result.json)通过，固定源 3329 文件零差异。[D9](AB_D9_PROGRESS.md)、[补丁](../environment/u280-fpga/PATCHES.md)、[下一阶段具体命令与资源方案](../environment/u280-fpga/NEXT_LINK.md)。完整综合/布局布线仍须先按既有要求确认资源；xclbin/板上功能未完成。
 
 2026-11-09 D8：**独立 U280 FPGA 候选/实际源预处理 PASS**，见 [D8](AB_D8_PROGRESS.md)。已发现原始 U280 分支的 32 个 HBM 主接口只有端口 0 有显式连接；新 `u280-hbm32-v1` 候选启用合并接口，生成 1 个 HBM 主接口和 HOST 主接口并与连接一致。已交付 288 项 RTL 输入包与 [分阶段构建入口](../environment/u280-fpga/README.md)，[635/635 收尾核验](../results/ab-d8-closeout-20261109-v1/result.json)退出 0、Python 78 通过/1 跳过。根配置、D5、固定源码未改。本轮 SSH 在密码认证阶段退出 255，远端 HOST/platform 复查 NOT_RUN。完整 FPGA 综合/上板仍待完成，200 MHz 只是候选目标。
 
@@ -137,15 +207,13 @@ WSL 运行器自测 122 通过、1 跳过、退出 0，新增检查覆盖 affine
 
 ## 尚未完成与阻塞
 
-22:19 最新接续：用户明确要求再试另一个密码并在终端运行 `scripts/Connect-U280Server.ps1`，[实际结果（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-f9229e20536a) PASS，SSH 退出 0。远端执行 `id -un && hostname` 返回 `u280user` / `localhost`；网络与账号登录阻塞已解除，未执行工具或设备查询。默认路径超时、21:59 无密码预检与 22:01 密码失败记录均保留。详见 [登录交接（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-998b875bd224)。
 
-22:32 用户已完成授权的密码修改。`scripts/Set-U280Password.ps1` 通过用户本机 SSH TTY 执行当前用户 `passwd`，[改密结果（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-68356460adf4) PASS、退出 0；随后独立连接的 [登录结果（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-85932b77e834) PASS、退出 0，身份仍为 `u280user` / `localhost`。首次改密尝试退出 255、UNCONFIRMED 的原件保留。密码和改密终端会话未保存，后续仍由用户本机输入当前密码。改密原件的 `new_password_login=NOT_RUN` 不回写，复核以独立登录记录为准；此项不改变板卡接收状态。
 
 - G0 的原生执行与锁文件可追溯已有材料；C/D/E 的能力/ABI 和独立接收仍未完成，不宣称团队全链路已验收。
 - D4/D5 已验证三类原生 u32 程序的可见输出，D6 补原生 LSU 观察范围内的假谓词/尾线程无数组请求证据。项目 P0 runtime/前后端与 E 独立答案仍未接收；原生结果不能替代 PTX 转换语义、任意非法指针行为、整段程序严格恰执行一次、安全中止/恢复或浮点 RTL。
 - PTX 前端已有实施者自测与宿主生成代码验证入口；`Memory` 宿主审计模型的地址检查和访问 trace 不属于真实 Vortex 能力。静态类型/初始化分析与参数序列化不能替代模块装载、buffer 生命周期、launch 或故障恢复。
 - 原 WSL Ubuntu 20.04 的兼容阻塞、Docker 启动失败与 NTFS Git 检查超时保留在历史证据中；D4 未重试 Docker。实际成功路线为专用 WSL，原生 Linux 固定检出的 3329 个文件与原清单零差异。
-- U280 已核实本次功能运行的 HOST 通路和实际 200 MHz。平台既有 TIMING-7 仍为 OPEN，待 A/B 核实复位释放的跨域同步机制或取得对应平台版本维护者的结论。当前尚无板上性能对照、多 Core 或 Cache/Shared Memory 配置研究结果。[最新板上证据（本地归档）](LOCAL_ARCHIVE_INDEX.md#archive-a6f0d9f8390a)、[静态审阅](AB_D13_PROGRESS.md)
+- U280 已核实 HOST 通路和实际 200 MHz。已有固定单核配置的三算子板上性能对照，多 Core 或 Cache/Shared Memory 配置待测。平台既有 TIMING-7 仍为 OPEN，待 A/B 核实复位释放的跨域同步机制或取得对应平台版本维护者的结论。[板上性能对照](RESEARCH_PLAN.md#2026-11-21-u280-三算子配对性能) · [静态审阅](AB_D13_PROGRESS.md)
 
 ## 当前运行位置与恢复顺序
 

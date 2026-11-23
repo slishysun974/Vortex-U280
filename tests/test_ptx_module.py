@@ -11,6 +11,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import ptx_module as module
+import ptx_frontend_v14 as merged_codegen
 from ptx_launch import BufferHandle, BufferRegistry, BufferSlice
 
 PROJECT = module.frontend.PROJECT
@@ -47,6 +48,103 @@ class ModuleFixture(unittest.TestCase):
 
 
 class ModuleTests(ModuleFixture):
+    def test_same_predicate_module_keeps_its_version_at_validation(self):
+        candidate = PROJECT / "configs/candidates/block32-v1"
+        lock, hardware = candidate / "target_lock.json", candidate / "native_smoke.json"
+        out = self.root / "merged"
+        options = dict(device_parameter_access=module.ALIGNED_PARAMETER_ACCESS,
+                       predicate_lowering=module.SAME_PREDICATE_LOWERING)
+        aligned = module.prepare(self.source, self.root / "aligned", lock, hardware,
+                                 device_parameter_access=module.ALIGNED_PARAMETER_ACCESS)
+        manifest = module.prepare(self.source, out, lock, hardware, **options)
+        self.assertNotEqual(aligned["build_id"], manifest["build_id"])
+        self.assertEqual(aligned["params"], manifest["params"])
+        self.assertEqual(module.verify_sources(out, lock.read_bytes())[0], manifest)
+        manifest_path = out / "manifest.json"
+        module.write_json(manifest_path, dict(manifest, predicate_lowering=None))
+        self.reject("E_MODULE_CORRUPT", lambda: module.verify_sources(out, lock.read_bytes()))
+        module.write_json(manifest_path, {k: v for k, v in manifest.items() if k != "predicate_lowering"})
+        self.reject("E_MODULE_CORRUPT", lambda: module.verify_sources(out, lock.read_bytes()))
+        module.write_json(manifest_path, manifest)
+
+        self.reject("E_TARGET_MISMATCH", lambda: module.prepare(self.source, self.root / "wrong",
+                    lock, hardware, predicate_lowering=module.SAME_PREDICATE_LOWERING))
+        self.reject("E_TARGET_MISMATCH", lambda: module.prepare(self.source, self.root / "wrong",
+                    self.lock_path, PROJECT / "configs/native_smoke.json", **options))
+
+        elf = bytearray(64)
+        elf[:7] = b"\x7fELF\x02\x01\x01"
+        struct.pack_into("<HH", elf, 16, 2, 243)
+        build = dict(status="PASS", exit_code=0, source_commit=module.COMMIT, target_lock_hash=module.digest(lock.read_bytes()),
+                     device_parameter_access=module.ALIGNED_PARAMETER_ACCESS)
+        fixtures = {"kernel.vxbin": synthetic_image(), "kernel.elf": elf,
+                    "program.disasm": b"STRUCTURAL TEST ONLY", "compile.log": b"TEST FIXTURE"}
+        manifest.update(status="BUILT", loadable=True, image_file="kernel.vxbin",
+                        image_sha256=module.digest(fixtures["kernel.vxbin"]))
+        for lowering in (None, module.SAME_PREDICATE_LOWERING):
+            if lowering is not None:
+                build["predicate_lowering"] = lowering
+            fixtures["build.json"] = json.dumps(build).encode()
+            for name, raw in fixtures.items():
+                (out / name).write_bytes(raw)
+                manifest["files"][name] = module.digest(raw)
+            module.write_json(manifest_path, manifest)
+            if lowering is None:
+                self.reject("E_MODULE_CORRUPT", lambda: module.validate(out, lock.read_bytes()))
+            else:
+                self.assertEqual(module.validate(out, lock.read_bytes())[1], fixtures["kernel.vxbin"])
+
+    def test_same_predicate_respects_rewrites_polarity_and_memory_order(self):
+        copy = (PROJECT / "ptx/samples/copy_u32.ptx").read_text()
+        source = copy[:copy.index("  @%p ld.global")] + """
+  @%p st.global.u32 [%a4], %r0; @%p ld.global.u32 %r3, [%a4];
+  @%p setp.eq.u32 %p, %r0, 0;
+  @%p st.global.u32 [%a4], %r0;
+  @!%p ld.global.u32 %r3, [%a3];
+  add.u32 %r0, %r0, 1;
+  @!%p st.global.u32 [%a4], %r0;
+  @!%p st.global.u32 [%a4], %r0;
+  @%p add.u32 %r0, %r0, 1;
+  @%p add.u32 %r0, %r0, 1;
+  ret;
+}
+"""
+        ir = module.frontend.parse(source)
+        body, mapping = merged_codegen.emit_cpp(ir)
+        old, old_map = merged_codegen.aligned.emit_cpp(ir)
+        self.assertEqual([(r["line"], r["column"]) for r in mapping], [(r["line"], r["column"]) for r in old_map])
+        lines = [body.splitlines()[r["generated_line"] - 1] for r in mapping[-11:]]
+        self.assertEqual([line.startswith("    ") for line in lines],
+                         [True, True, False, False, False, False, True, True, False, False, False])
+        self.assertIn("memory.store32", lines[0])
+        self.assertIn("memory.load32", lines[1])
+        self.assertIn("if (v0)", lines[2])
+        self.assertIn("if (!v0)", lines[4])
+        self.assertEqual(body.count("if (!v0) {"), 2)
+        self.assertNotEqual(body, old)
+
+    def test_aligned_parameter_contract_is_opt_in_and_bound_to_d5(self):
+        candidate = PROJECT / "configs/candidates/block32-v1"
+        lock = candidate / "target_lock.json"
+        hardware = candidate / "native_smoke.json"
+        mode = module.ALIGNED_PARAMETER_ACCESS
+        portable = self.root / "portable"
+        aligned = self.root / "aligned"
+        module.prepare(self.source, portable, lock, hardware)
+        contract = module.prepare(self.source, aligned, lock, hardware, device_parameter_access=mode)
+        self.assertEqual(contract["schema_version"], module.ALIGNED_SCHEMA)
+        self.assertEqual(contract["device_parameter_access"], mode)
+        self.assertEqual((portable / "ir.json").read_bytes(), (aligned / "ir.json").read_bytes())
+        self.assertIn("p[0]", (portable / "kernel_body.hpp").read_text())
+        self.assertIn("__builtin_assume_aligned(p, 8)", (aligned / "kernel_body.hpp").read_text())
+        manifest, _ = module.verify_sources(aligned, lock.read_bytes())
+        self.assertEqual(manifest, contract)
+        contract["schema_version"] = module.SCHEMA
+        module.write_json(aligned / "manifest.json", contract)
+        self.reject("E_TARGET_MISMATCH", lambda: module.verify_sources(aligned, lock.read_bytes()))
+        self.reject("E_TARGET_MISMATCH", lambda: module.prepare(self.source, self.root / "wrong-target",
+                    self.lock_path, PROJECT / "configs/native_smoke.json", device_parameter_access=mode))
+
     def test_prepare_is_not_loadable(self):
         manifest, _ = module.verify_sources(self.out, self.lock)
         self.assertEqual(manifest["status"], "SOURCE_PREPARED")

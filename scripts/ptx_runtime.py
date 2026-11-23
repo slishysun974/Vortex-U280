@@ -11,13 +11,22 @@ from pathlib import Path
 from threading import RLock
 
 from ptx_launch import BufferRegistry, BufferSlice
-from ptx_module import COMMIT, ModuleError, digest, read_json, validate
+from ptx_module import ALIGNED_PARAMETER_ACCESS, BOARD_ALIGNED_SCHEMA, COMMIT, ModuleError, digest, read_json, validate
 from runtime_backends import BACKENDS, validate_native
 
 P = C.c_void_p
 U = C.c_uint32
 Q = C.c_uint64
 S = C.c_size_t
+VX_CAPS_VM_SUPPORT = 0xF
+ALIGNED_PARAMETER_BINDINGS_REVISION = 2
+# Exact, replayed D5 bindings. Their common runtime uses the
+# non-VM, 64-byte-aligned staging allocator for nonempty queue arguments.
+ALIGNED_PARAMETER_BINDINGS = {
+    "simx": "080a74484515b9a4416ec2e0cf16c0ad4ee4c7d7f96c06148df74c867cd52ca4",
+    "rtlsim": "4c25f428090b4f7698aa46d11d6556599d205ef17cec320e204b4b2328180321",
+    "xrtsim": "7f1bf3fc59419f7a45c827eb7b35298c315f65ecf7180e891ac2e98d33c5d915",
+}
 
 
 class QueueInfo(C.Structure):
@@ -94,7 +103,7 @@ def serialized(method):
 
 
 class Context:
-    def __init__(self, binding_path, target_lock, *, backend="simx", run_id=None):
+    def __init__(self, binding_path, target_lock, *, backend="simx", run_id=None, u280_aligned=False):
         self.backend, self.run_id = backend, run_id
         self.registry, self.mutex = BufferRegistry(), RLock()
         self.state, self.active, self.first_error = "READY", None, None
@@ -102,12 +111,17 @@ class Context:
         self.buffers, self.modules, self.events = {}, set(), set()
         self.device, self.queue, self.sequence = P(), P(), 0
         self.lock_bytes = Path(target_lock).read_bytes()
+        self.aligned_parameter_binding = False
+        self._u280_aligned_session = None
         binding_path = Path(binding_path).resolve()
         if backend == "u280-xrt":
             from ptx_u280 import open_context
-            open_context(self, binding_path)
+            open_context(self, binding_path, observe_caps=u280_aligned)
             return
-        binding = read_json(binding_path.read_bytes())
+        if u280_aligned:
+            self.fail("E_TARGET_MISMATCH", "physical staging gate requires U280", "open")
+        binding_bytes = binding_path.read_bytes()
+        binding = read_json(binding_bytes)
         if backend not in BACKENDS or binding.get("backend") != backend:
             self.fail("E_UNAVAILABLE", "requires an explicitly bound simulation backend", "open")
         driver, backend_library, simulator_library = BACKENDS[backend]
@@ -168,6 +182,7 @@ class Context:
                 self.fail("E_TARGET_MISMATCH", "loaded simulator dependency differs from binding", "open")
             info = QueueInfo(C.sizeof(QueueInfo), None, 1, 0)
             self.check(self.lib.vx_queue_create(self.device, C.byref(info), C.byref(self.queue)), "open")
+            self.aligned_parameter_binding = digest(binding_bytes) == ALIGNED_PARAMETER_BINDINGS.get(backend)
         except Exception:
             self.lib.vx_device_release(self.device)
             raise
@@ -271,6 +286,20 @@ class Context:
         manifest, image = validate(directory, self.lock_bytes)
         if manifest["launch_limits"]["max_block_x"] > self.caps["threads"] * self.caps["warps"]:
             self.fail("E_TARGET_MISMATCH", "module launch limit exceeds actual device", "load")
+        mode = manifest.get("device_parameter_access")
+        if manifest.get("schema_version") == BOARD_ALIGNED_SCHEMA:
+            from ptx_u280_aligned import require_admitted
+            require_admitted(self, manifest, image)
+        elif mode is not None:
+            if mode != ALIGNED_PARAMETER_ACCESS or not self.aligned_parameter_binding:
+                self.fail("E_TARGET_MISMATCH", "this runtime binding requires the bytewise PTX module", "load")
+            vm_support = Q()
+            self.check(self.lib.vx_device_query(self.device, VX_CAPS_VM_SUPPORT, C.byref(vm_support)), "query_vm")
+            if vm_support.value != 0:
+                self.fail("E_TARGET_MISMATCH", "aligned queue parameters require VM disabled", "load")
+        return self._load_verified_image(manifest, image)
+
+    def _load_verified_image(self, manifest, image):
         native, kernel = P(), P()
         snapshot = C.create_string_buffer(image)
         self.check(self.lib.vx_module_load_bytes(self.device, snapshot, len(image), C.byref(native)), "load")
@@ -288,6 +317,9 @@ class Context:
         self.ready("launch")
         if module not in self.modules:
             self.fail("E_MODULE_CORRUPT", "foreign or unloaded module", "launch")
+        if module.manifest.get("schema_version") == BOARD_ALIGNED_SCHEMA:
+            from ptx_u280_aligned import require_admitted
+            require_admitted(self, module.manifest)
         plan = self.registry.prepare(module.manifest, entry, grid, block, args, shared_bytes)
         payload = C.create_string_buffer(plan.payload)
         info = LaunchInfo()

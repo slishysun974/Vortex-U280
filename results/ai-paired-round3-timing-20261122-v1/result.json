@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "argv": [
+    "experiments/ai-paired-local-round3/round3.py",
+    "timing",
+    "results/ai-paired-round3-timing-20261122-v1",
+    "--trial",
+    "results/ai-paired-round3-trial-20261122-v1",
+    "--outcome",
+    "results/ai-paired-round3-receipt-20261122-v1"
+  ],
+  "trial_receipt_sha256": "72e6cc7275d1ea44eab69e41950466fae7d0146e0e248a63b3c48ebcd493274d",
+  "arms": {
+    "single": {
+      "cli_calls": 18,
+      "cli_seconds": 401.49876199977007,
+      "startup_observations": 18,
+      "startup_total_seconds": 57.70753409998724,
+      "startup_median_seconds": 2.862419199984288,
+      "handshake_observations": 18,
+      "handshake_total_seconds": 21.846010446548462,
+      "handshake_median_seconds": 1.2134774923324585,
+      "scheduled_backoff_total_seconds": 0,
+      "retry_events": 0,
+      "retry_to_connect_observations": 0,
+      "retry_to_connect_total_seconds": null,
+      "unmatched_connection_starts": 0,
+      "connection_warnings": 0
+    },
+    "multi": {
+      "cli_calls": 18,
+      "cli_seconds": 401.4825237999321,
+      "startup_observations": 18,
+      "startup_total_seconds": 62.82350839994615,
+      "startup_median_seconds": 2.835201200010488,
+      "handshake_observations": 18,
+      "handshake_total_seconds": 21.805715322494507,
+      "handshake_median_seconds": 1.2119060754776,
+      "scheduled_backoff_total_seconds": 0,
+      "retry_events": 0,
+      "retry_to_connect_observations": 0,
+      "retry_to_connect_total_seconds": null,
+      "unmatched_connection_starts": 0,
+      "connection_warnings": 0
+    }
+  }
+}

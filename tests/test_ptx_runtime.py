@@ -8,6 +8,7 @@ import sys
 import tempfile
 from threading import RLock
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import ptx_runtime as runtime
@@ -48,6 +49,8 @@ def context():
     result.buffers, result.modules, result.events = {}, set(), set()
     result.device, result.queue, result.sequence = C.c_void_p(1), C.c_void_p(2), 0
     result.lib = Transport()
+    result.lock_bytes = b'test-lock'
+    result.aligned_parameter_binding = False
     result.caps = dict(threads=4, warps=4)
     return result
 
@@ -70,6 +73,23 @@ class RuntimeTests(unittest.TestCase):
             fn()
         self.assertEqual(caught.exception.code, code)
         return caught.exception
+
+    def test_aligned_module_rejected_before_native_load_without_binding_or_with_vm(self):
+        self.ctx.modules.clear()
+        manifest = dict(self.module.manifest, device_parameter_access=runtime.ALIGNED_PARAMETER_ACCESS)
+        with patch.object(runtime, 'validate', return_value=(manifest, b'image')):
+            self.reject('E_TARGET_MISMATCH', lambda: self.ctx.load('aligned'))
+            self.assertNotIn('vx_device_query', self.ctx.lib.calls)
+            self.ctx.aligned_parameter_binding = True
+
+            def vm_enabled(device, key, result):
+                self.assertEqual(key, runtime.VX_CAPS_VM_SUPPORT)
+                C.cast(result, C.POINTER(runtime.Q))[0] = 1
+                return 0
+
+            self.ctx.lib.vx_device_query = vm_enabled
+            self.reject('E_TARGET_MISMATCH', lambda: self.ctx.load('aligned'))
+        self.assertNotIn('vx_module_load_bytes', self.ctx.lib.calls)
 
     def test_busy_operations_do_not_reach_native_api(self):
         event = self.launch()

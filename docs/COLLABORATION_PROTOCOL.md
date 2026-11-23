@@ -102,6 +102,7 @@ capability 的示例数值不能直接复制进 manifest。比如物理 warp 宽
 ### 5.2 参数约定
 
 - D 生成 PTX 参数顺序/布局；C 生成或调用同一份 packer，E 使用有类型的参数列表。小端、自然对齐、padding 清零，不依赖 host C struct 隐式布局。
+- `vortex2-queue-args-align-v1` 为单独版本化的设备读取约定。对齐模块要求固定 D5 的 Vortex2 队列暂存路径和通过核验的 SimX／处理器 RTL binding。默认模块逐字节读取，启动参数字节布局继续使用 `ptx-vx-args-v1`。[设备基址与接收约定](PTX_DEVICE_PARAMETER_ACCESS.md)
 - 指针实参是 `buffer_handle + byte_offset + declared_access_bytes + access_mode`；C 校验存活、范围、整数溢出和对齐后查询设备地址，再按 ABI 序列化。
 - 项目 payload 与上游 runtime 启动结构分开。C 的设备 wrapper 负责从 payload 取参数并建立逻辑线程上下文；grid/block 不可由各方自行塞到未约定字节中。
 - vadd 的 32-byte 示例见 [PTX profile](PTX_COMPATIBILITY_PROFILE.md)；其他 kernel 参数从源码产生，不根据 kernel 名字选择固定模板。

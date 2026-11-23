@@ -1585,3 +1585,425 @@
 ### `upstream/vortex/sw/kernel/include/vx_spawn2.h`
 
 本地文件，4530 字节。原件 SHA-256：`7865a242249cdc66d2843780ff9208b1e0970124001ea9927529acb18a5ac2ab`。
+
+## 2026-11-23 新增本地引用
+
+<a id="archive-44575cf5b285"></a>
+
+- `build`（本地归档）
+
+<a id="archive-6f4b6061748c"></a>
+
+- `experiments/ai-paired-local-round2/corpus.py`（本地归档）
+
+<a id="archive-9e9fd22b4fb9"></a>
+
+- `experiments/ai-paired-local-round3/timing.py`（本地归档）
+
+<a id="archive-37ba75f49b67"></a>
+
+- `experiments/ai-paired-local-v2/receive.py`（本地归档）
+
+<a id="archive-48bf628d0e7b"></a>
+
+- `experiments/ai-paired-v1/design.json`（本地归档）
+
+<a id="archive-0092457d675a"></a>
+
+- `experiments/ai-paired-v1/manifest.json`（本地归档）
+
+<a id="archive-3ef94297292c"></a>
+
+- `experiments/ai-paired-v1/study.py`（本地归档）
+
+<a id="archive-85c0bd5cc7b3"></a>
+
+- `ramulator.stats.log`（本地归档）
+
+<a id="archive-07a0b0962107"></a>
+
+- `references`（本地归档）
+
+<a id="archive-cccb144b8a7f"></a>
+
+- `results/ab-d8-u280-source-20261109-v1/package/src/VX_cp_axil_regfile.sv`（本地归档）
+
+<a id="archive-d665d09e3f85"></a>
+
+- `results/ab-d8-u280-source-20261109-v1/package/src/VX_cp_pkg.sv`（本地归档）
+
+<a id="archive-145f3e2a6230"></a>
+
+- `results/ab-d8-u280-source-20261109-v1/package/src/VX_lsu_slice.sv`（本地归档）
+
+<a id="archive-254d81141dce"></a>
+
+- `results/ab-d8-u280-source-20261109-v1/package/src/VX_scheduler.sv`（本地归档）
+
+<a id="archive-47695d48ead6"></a>
+
+- `results/ai-paired-freeze-20261122-v1/freeze.json`（本地归档）
+
+<a id="archive-b7f723d4c097"></a>
+
+- `results/ai-paired-local-20261122-v1/T1A/seat.json`（本地归档）
+
+<a id="archive-18a20f0a5f6d"></a>
+
+- `results/ai-paired-local-20261122-v1/T4A/interrupt-review.json`（本地归档）
+
+<a id="archive-a69e56a99d23"></a>
+
+- `results/ai-paired-local-20261122-v1/conduct-at-start.py`（本地归档）
+
+<a id="archive-9fcd9ffef6ec"></a>
+
+- `results/ai-paired-local-20261122-v1/meter-correction/start.json`（本地归档）
+
+<a id="archive-10b1aa46f1c6"></a>
+
+- `results/ai-paired-local-20261122-v1/start.json`（本地归档）
+
+<a id="archive-a0d67548783a"></a>
+
+- `results/ai-paired-local-probe-20261122-v1/stderr.txt`（本地归档）
+
+<a id="archive-c6f1516eff35"></a>
+
+- `results/ai-paired-local-probe-20261122-v2/events.jsonl`（本地归档）
+
+<a id="archive-159324f18a4b"></a>
+
+- `results/ai-paired-local-receipt-20261122-v1/T1A/meter.json`（本地归档）
+
+<a id="archive-518487c53fae"></a>
+
+- `results/ai-paired-round2-20261122-v1/T1A/draft/stderr.txt`（本地归档）
+
+<a id="archive-5f9b2a0fe1c8"></a>
+
+- `results/ai-paired-round2-20261122-v1/T1B/final/stderr.txt`（本地归档）
+
+<a id="archive-f520fb22b648"></a>
+
+- `results/ai-paired-round2-20261122-v1/T5A/review/stderr.txt`（本地归档）
+
+<a id="archive-9dcfb88b3567"></a>
+
+- `results/ai-paired-round2-20261122-v1/start.json`（本地归档）
+
+<a id="archive-e51b4e26840c"></a>
+
+- `results/ai-paired-round2-freeze-20261122-v1/freeze.json`（本地归档）
+
+<a id="archive-810ca05887ff"></a>
+
+- `results/ai-paired-round2-meter-20261122-v1/result.json`（本地归档）
+
+<a id="archive-32a5b6d5e604"></a>
+
+- `results/ai-paired-round3-freeze-20261122-v1/controls/fixture-1.command.json`（本地归档）
+
+<a id="archive-d2e0403faa26"></a>
+
+- `results/ai-paired-round3-freeze-20261122-v2/bundle/study.py`（本地归档）
+
+<a id="archive-328e9fef8fec"></a>
+
+- `results/ai-paired-round3-freeze-20261122-v2/freeze.json`（本地归档）
+
+<a id="archive-99d24932f5e9"></a>
+
+- `results/ai-paired-round3-meter-20261122-v1/result.json`（本地归档）
+
+<a id="archive-a48654a2d5c2"></a>
+
+- `results/ai-paired-round3-telemetry-control-20261122-v1/result.json`（本地归档）
+
+<a id="archive-47c77106ca72"></a>
+
+- `results/ai-paired-round3-trial-20261122-v1/start.json`（本地归档）
+
+<a id="archive-6409a1822351"></a>
+
+- `results/ai-paired-runner-wsl-20261122-v1/runner.json`（本地归档）
+
+<a id="archive-e558a80cbb43"></a>
+
+- `results/c-runtime-closeout-d-guarded-wide-20261120-v1/logs/01_unittest.log`（本地归档）
+
+<a id="archive-32f44bdf2727"></a>
+
+- `results/c-runtime-closeout-d-high-address-20261120-v1/logs/01_unittest.log`（本地归档）
+
+<a id="archive-7302ae65aba8"></a>
+
+- `results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json`（本地归档）
+
+<a id="archive-5d21584c1b43"></a>
+
+- `results/c-v03-board-kit-20261120-v1/v03-u280-input.tar.gz`（本地归档）
+
+<a id="archive-6b8008c510b3"></a>
+
+- `results/c-v03-corpus-20261120-v1/manifest.json`（本地归档）
+
+<a id="archive-421ce3f11b59"></a>
+
+- `results/c-v03-corpus-20261120-v1/oracle.py`（本地归档）
+
+<a id="archive-3e8ebde8e377"></a>
+
+- `results/c-v03-receipt-20261120-v1/rtlsim.review.json`（本地归档）
+
+<a id="archive-bfb68e111316"></a>
+
+- `results/c-v03-receipt-20261120-v1/simx.review.json`（本地归档）
+
+<a id="archive-13b9969b3e70"></a>
+
+- `results/c-v03-receipt-20261120-v1/xrtsim.review.json`（本地归档）
+
+<a id="archive-79286287144a"></a>
+
+- `results/c-v03-u280-20261120-v1/transport.json`（本地归档）
+
+<a id="archive-df05e7137397"></a>
+
+- `results/c-v03-u280-high-board-20261121-v1/transport.json`（本地归档）
+
+<a id="archive-ce8e56031069"></a>
+
+- `results/c-v03-u280-perf-20261121-v1/returned/c-v03-u280-perf-20261121-v1/u280-xrt/samples.jsonl`（本地归档）
+
+<a id="archive-48c20b0b8500"></a>
+
+- `results/c-v03-u280-perf-copy-affine-20261121-v1/returned/c-v03-u280-perf-copy-affine-20261121-v1/u280-xrt/samples.jsonl`（本地归档）
+
+<a id="archive-c1e98c776136"></a>
+
+- `results/c-v03-u280-prepare-20261120-v1/corpus/manifest.json`（本地归档）
+
+<a id="archive-0a37aa1e513a"></a>
+
+- `results/d-guarded-wide-20261120-v1/corpus.json`（本地归档）
+
+<a id="archive-2b33b0fc895c"></a>
+
+- `results/d-guarded-wide-20261120-v1/interior_hole/rtlsim/trace.json`（本地归档）
+
+<a id="archive-2d0cc5611c9c"></a>
+
+- `results/d-guarded-wide-20261120-v1/interior_hole/simx/trace.json`（本地归档）
+
+<a id="archive-a98ad539a7a0"></a>
+
+- `results/d-guarded-wide-20261120-v1/interior_hole/xrtsim/comparison.json`（本地归档）
+
+<a id="archive-62dc9dc01b0e"></a>
+
+- `results/d-guarded-wide-20261120-v1/module/manifest.json`（本地归档）
+
+<a id="archive-00d9282e687d"></a>
+
+- `results/d-guarded-wide-20261120-v1/module/program.disasm`（本地归档）
+
+<a id="archive-1ff8401a63df"></a>
+
+- `results/d-guarded-wide-20261120-v1/module/source_map.json`（本地归档）
+
+<a id="archive-5aefc8d29bde"></a>
+
+- `results/d-high-address-20261120-v2/corpus.json`（本地归档）
+
+<a id="archive-60933d8c5494"></a>
+
+- `results/d-high-address-20261120-v2/cross_read/rtlsim/reservations.json`（本地归档）
+
+<a id="archive-030f11237780"></a>
+
+- `results/d-high-address-20261120-v2/cross_read/simx/trace.json`（本地归档）
+
+<a id="archive-0cc9e9bbfd76"></a>
+
+- `results/d-high-address-20261120-v2/cross_write/rtlsim/trace.json`（本地归档）
+
+<a id="archive-737ddd4ee1b3"></a>
+
+- `results/d-high-address-20261120-v2/low_to_high/xrtsim/z.after.bin`（本地归档）
+
+<a id="archive-3bf35b20b537"></a>
+
+- `results/d-p0-forms-20261120-v1/module/build.json`（本地归档）
+
+<a id="archive-a326e0eb0773"></a>
+
+- `results/d-p0-forms-20261120-v1/module/frontend_manifest.json`（本地归档）
+
+<a id="archive-05fbcf8a43b8"></a>
+
+- `results/d-p0-forms-20261120-v1/module/manifest.json`（本地归档）
+
+<a id="archive-4cf9f1621903"></a>
+
+- `results/e-runtime-unseen-20261111-v1/result.json`（本地归档）
+
+<a id="archive-816fae1f7676"></a>
+
+- `results/e-v14-local-20261122-v1/logs/09_runner_self_test.log`（本地归档）
+
+<a id="archive-b173cbc7b789"></a>
+
+- `results/github-public-20261111-v2/result.json`（本地归档）
+
+<a id="archive-aa977e41c6c0"></a>
+
+- `results/local-ptx-align-build-20261121-v1/vadd-readers.diff`（本地归档）
+
+<a id="archive-5458b0755ef4"></a>
+
+- `results/local-ptx-align-build-20261121-v1/vadd/aligned/kernel.dump`（本地归档）
+
+<a id="archive-79ab51152c8b"></a>
+
+- `results/local-ptx-align-review-20261121-v1/host-unittest.json`（本地归档）
+
+<a id="archive-1ec6dc098901"></a>
+
+- `results/local-ptx-align-rtlsim-20261121-v1/affine/16381/alignment.json`（本地归档）
+
+<a id="archive-8ab17afdcde5"></a>
+
+- `results/local-ptx-align-rtlsim-20261121-v1/samples.jsonl`（本地归档）
+
+<a id="archive-642d4d4982c1"></a>
+
+- `results/local-ptx-align-simx-20261121-v1/copy/1024/alignment.json`（本地归档）
+
+<a id="archive-707bc73e228b"></a>
+
+- `results/local-ptx-align-simx-20261121-v1/samples.jsonl`（本地归档）
+
+<a id="archive-5808d4f1ce4b"></a>
+
+- `results/local-ptx-aligned-production-host-20261121-v1/board-target-negative.json`（本地归档）
+
+<a id="archive-78a1d7dfcdf3"></a>
+
+- `results/local-ptx-perf-attribution-20261121-v1/review-failure.json`（本地归档）
+
+<a id="archive-a9d7ead3f29b"></a>
+
+- `results/local-ptx-perf-attribution-20261121-v2/host-unittest.json`（本地归档）
+
+<a id="archive-508be2f8a1c1"></a>
+
+- `results/local-ptx-perf-rtlsim-20261121-v1/rtlsim/samples.jsonl`（本地归档）
+
+<a id="archive-053378e73ece"></a>
+
+- `results/local-ptx-perf-simx-20261121-v1/simx/samples.jsonl`（本地归档）
+
+<a id="archive-507daa0a4ff5"></a>
+
+- `results/local-ptx-same-predicate-afu-align-fixed-20261121-v2/capture.json`（本地归档）
+
+<a id="archive-83680d9d2d15"></a>
+
+- `results/local-ptx-same-predicate-review-20261121-v1/logs/01_runner_unittest.log`（本地归档）
+
+<a id="archive-a4b1576614fe"></a>
+
+- `results/readme-flowchart-20261111-v1/result.json`（本地归档）
+
+<a id="archive-de1539aa17ab"></a>
+
+- `results/readme-rewrite-20261111-v1/result.json`（本地归档）
+
+<a id="archive-4455d68315a2"></a>
+
+- `results/u280-aligned-board-20261122-v1/preparation.json`（本地归档）
+
+<a id="archive-9628e3683bc2"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/alignment.json`（本地归档）
+
+<a id="archive-24168fe977c5"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/binding/binding.json`（本地归档）
+
+<a id="archive-f4d38ea99e38"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/binding/sessions/u280-aligned-board-20261122-v1/gate.json`（本地归档）
+
+<a id="archive-fd4f97edb255"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/outputs`（本地归档）
+
+<a id="archive-bb67db85ae6b"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/probe`（本地归档）
+
+<a id="archive-6b27624839ed"></a>
+
+- `results/u280-aligned-board-20261122-v1/returned/u280-aligned-board-20261122-v1/samples.jsonl`（本地归档）
+
+<a id="archive-478a2a911d22"></a>
+
+- `results/u280-aligned-board-20261122-v1/transport.json`（本地归档）
+
+<a id="archive-25237a21bd96"></a>
+
+- `results/u280-aligned-mpm-20261122-v1/preparation.json`（本地归档）
+
+<a id="archive-158830f58615"></a>
+
+- `results/u280-aligned-mpm-20261122-v1/returned/u280-aligned-mpm-20261122-v1/binding/sessions/u280-aligned-mpm-20261122-v1/gate.json`（本地归档）
+
+<a id="archive-d0afea4ee499"></a>
+
+- `results/u280-aligned-mpm-20261122-v1/returned/u280-aligned-mpm-20261122-v1/counter-reads.jsonl`（本地归档）
+
+<a id="archive-56942f65f7c5"></a>
+
+- `results/u280-aligned-mpm-20261122-v1/returned/u280-aligned-mpm-20261122-v1/counter-status.json`（本地归档）
+
+<a id="archive-b0d7608a71dc"></a>
+
+- `results/u280-aligned-mpm-20261122-v1/returned/u280-aligned-mpm-20261122-v1/samples.jsonl`（本地归档）
+
+<a id="archive-01d57f652896"></a>
+
+- `results/u280-aligned-predicate-preflight-20261121-v1/u280-aligned-predicate-pair.tar.gz`（本地归档）
+
+<a id="archive-489b0028a27b"></a>
+
+- `results/u280-aligned-tail-observability-20261122-v2/d10-routed-debug-cells.txt`（本地归档）
+
+<a id="archive-311e27bbb5a4"></a>
+
+- `results/u280-aligned-tail-observability-20261122-v2/libvortex-xrt.so.nm.stdout`（本地归档）
+
+<a id="archive-6b58adb4b865"></a>
+
+- `results/u280-aligned-tail-observability-20261122-v2/xclbin-header-and-sections.bin`（本地归档）
+
+<a id="archive-26966b0045ab"></a>
+
+- `results/u280-aligned-tail-observability-20261122-v2/xclbin_info.stdout`（本地归档）
+
+<a id="archive-b2be74d15b21"></a>
+
+- `results/u280-perf-build-20261121-v1/board/native/kernel.dump`（本地归档）
+
+<a id="archive-8bfb383c17a0"></a>
+
+- `results/u280-perf-build-20261121-v1/board/ptx/program.disasm`（本地归档）
+
+<a id="archive-f0cb401d8f61"></a>
+
+- `results/u280-perf-three-operators-20261121-v2/host-unittest.log`（本地归档）
+
+<a id="archive-62942da74c75"></a>
+
+- `results/u280-perf-three-operators-20261121-v2/wsl-unittest.log`（本地归档）

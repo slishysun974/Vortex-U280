@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\example\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "scripts/freeze_ae_v03.py",
+    "--run-id",
+    "ae-v03-frozen-20261121-v1"
+  ],
+  "devices": "NOT_RUN",
+  "exit_code": 0,
+  "finished_at": "2026-11-21T10:58:05.440862+00:00",
+  "manifest_sha256": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+  "scope": "source oracle only",
+  "status": "PASS"
+}

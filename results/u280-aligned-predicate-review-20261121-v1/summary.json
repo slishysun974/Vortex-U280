@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "reopened_portable_preflight",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/u280-aligned-bundle-m7ro6tlk/bundle/verify_bundle.py",
+        "/tmp/u280-aligned-bundle-m7ro6tlk/bundle"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-aligned-predicate-review-20261121-v1",
+      "started_at": "2026-11-21T15:55:19.467185+00:00",
+      "timeout_seconds": 90,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_reopened_portable_preflight.log",
+      "finished_at": "2026-11-21T15:55:19.570502+00:00",
+      "elapsed_seconds": 0.074,
+      "log_sha256": "3fa9ad005b0c35511ed6bd4614a2ebeb62d7430f8f805e95118a1552634b64fe"
+    },
+    {
+      "label": "changed_sentinel_rejected",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/u280-aligned-bundle-m7ro6tlk/bundle/verify_bundle.py",
+        "/tmp/u280-aligned-bundle-m7ro6tlk/bundle"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/u280-aligned-predicate-review-20261121-v1",
+      "started_at": "2026-11-21T15:55:19.620880+00:00",
+      "timeout_seconds": 90,
+      "returncode": 1,
+      "timed_out": false,
+      "log": "logs/02_changed_sentinel_rejected.log",
+      "finished_at": "2026-11-21T15:55:19.817601+00:00",
+      "elapsed_seconds": 0.178,
+      "log_sha256": "bc4132add8620ad5e2eac22df2f69bccf7bea5dc76e63793d65a0a9c9b767d42"
+    },
+    {
+      "label": "runner_unittest",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-21T15:55:19.881668+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_runner_unittest.log",
+      "finished_at": "2026-11-21T15:56:39.984445+00:00",
+      "elapsed_seconds": 80.082,
+      "log_sha256": "6eb30c30fccb16378f1876dcdccb1dfdb7e31907442eb931c23954f2c0a8454f"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/u280-aligned-preflight/review.py",
+    "--bundle-run",
+    "results/u280-aligned-predicate-preflight-20261121-v1",
+    "--output",
+    "results/u280-aligned-predicate-review-20261121-v1"
+  ],
+  "started_at": "2026-11-21T15:55:19.320581+00:00",
+  "board_execution": "NOT_RUN",
+  "formal_aligned_load": "BLOCKED",
+  "archive": "results/u280-aligned-predicate-preflight-20261121-v1/u280-aligned-predicate-pair.tar.gz",
+  "archive_sha256": "509247d3a00189eb2643c6b1ee84ad1718d29bbafe1fff25307314ed8f4ea660",
+  "verified": {
+    "status": "PASS",
+    "members": 94,
+    "workloads": 6,
+    "candidate_images": 6,
+    "planned_pairs": 210,
+    "planned_launches": 420,
+    "board_execution": "NOT_RUN",
+    "formal_aligned_load": "BLOCKED",
+    "plan_sha256": "2ec4b4e20b49f34c1ee5b5b566850934d46679cb7c0b63a9bdef9012ba1c31ae"
+  },
+  "python36_verifier_syntax": "PASS",
+  "changed_sentinel": "PASS",
+  "physical_vm": "NOT_RUN",
+  "physical_staging_probe": "NOT_RUN",
+  "xrt_host_probe_compile": "NOT_RUN",
+  "preparation_sha256": "fad166538e00a35ec18f0fccd4222e0292c283b7d81e4d921a8167633c998bb6",
+  "runner_unittest": {
+    "total": 297,
+    "skipped": 1,
+    "exit_code": 0
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T15:56:40.107644+00:00"
+}

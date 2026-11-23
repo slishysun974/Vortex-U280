@@ -1,0 +1,136 @@
+{
+  "run_id": "c-v03-u280-20261120-v1",
+  "nonce": "f4530211db2d49878315912d585026bb",
+  "status": "PASS",
+  "exit_code": 0,
+  "board_execution": "PASS",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-20261120-v1/bundle/scripts/c_v03_board.py",
+    "run",
+    "--bundle",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-20261120-v1/bundle",
+    "--output",
+    "/home/u280user/vortex-c-v03-board/c-v03-u280-20261120-v1/c-v03-u280-20261120-v1",
+    "--bdf",
+    "0000:b1:00.1"
+  ],
+  "archive_sha256": "3203073104d79c6b119935481e8e3e4db60cb025fd173b1bc2d2a5fa07de978b",
+  "python": [
+    3,
+    6,
+    8
+  ],
+  "worker_exit_code": 0,
+  "stdout": "PASS /home/u280user/vortex-c-v03-board/c-v03-u280-20261120-v1/c-v03-u280-20261120-v1 \n",
+  "stderr": "",
+  "receipt": {
+    "status": "PASS",
+    "launches": 8,
+    "module_loads": 6,
+    "full_arrays": 24,
+    "payloads": 8,
+    "files": {
+      "partial_forms": {
+        "x.actual.bin": "1df39f5109eeacd18f1a97db460a61017888bd9c4f128f4b413a5b86cfc5d4a3",
+        "z.actual.bin": "ef9125824fc2285f86026c96e1646330c9ad28c65057614342a4685decc70d4b",
+        "audit.actual.bin": "a944e37ae4772fcfddde8e499fdb1a38766b46a0dbff7d529cd4eebc164f3e6f",
+        "params.bin": "df2eb0e75c0a66aef52fc07e8ba2f49799fb7d2b26cbab37a9a1eb9b85a327c6"
+      },
+      "second_warp": {
+        "x.actual.bin": "32d85691dbd1f0737c3204c0a2d16371cb17cdf256142a2e5172c0e23ca47a43",
+        "z.actual.bin": "49f6d449d34251cf802e2579e6bae01c35dc498552179240b945ab612dbc5f63",
+        "audit.actual.bin": "801a1fe105dbe77ba78044206583d1139115b66a0bafbac188ccc7d62a133b05",
+        "params.bin": "bd64857e30948780d847448d5b087592ef617631fe25deaf553266590174474e"
+      },
+      "full_forms": {
+        "x.actual.bin": "0dd2f5b5dabff5b090fd7d95ebd0a09d0913ae3581a105ff58d74447e8aa1009",
+        "z.actual.bin": "1e23fbf7c9e73c5683e06b61fa4e2fb7ce44611c76b2791544195a8ea1118dd2",
+        "audit.actual.bin": "5941082daa772732ae57e9fc483d802ce4c54037a0c26c01bd76b3e34c9c4e3e",
+        "params.bin": "7d129f7e8ca816d8f45ffc61a47852057cbd15cbf11d9620ee2c6c7a21159c02"
+      },
+      "seventeen": {
+        "x.actual.bin": "c482efa0cc88b5a9f5dae19cb846c74cf58748038247f042abd30fea92f74f20",
+        "z.actual.bin": "63ac523b2bd4fc7153309c35b58cb25516d06ead0179cc7b987e0c555a458c4d",
+        "audit.actual.bin": "656b4e25e9754a25bba2533977b2ec9bf353d4efe42204f005629cfc83d66bc2",
+        "params.bin": "aa134fc83eac28f0e74e807594ea74fc3e06ec42ccf15f96c7b273c730bbcbc5"
+      },
+      "single_form_lane": {
+        "x.actual.bin": "cbec4f5a9e3408574a9bf8b2df04bfe2e84cf37e480b0aa93962537bbf1d3336",
+        "z.actual.bin": "b401c6b0217268797d52d007a7b5e68e6d1d5ea883e3b9fb60fcbc48e8e55c55",
+        "audit.actual.bin": "10c178c8a62c0c0e3d88eea5561d82da82a8f81f9b81c0c80e9a779a2145357e",
+        "params.bin": "485faf38a50babf6ec44ee017f9fd79141118076bfded694e58ef997ec7a080b"
+      },
+      "max_block": {
+        "x.actual.bin": "5b775122609691b98f1d0ab17f5f86b00dab769191ccc23d3c5039a9b5f5f1f2",
+        "z.actual.bin": "c6f37204265be3bc8ba9bffd32e11557d2fe4b83801d5ddab019051adb0e2cd8",
+        "audit.actual.bin": "d05234a73e3f8097de1af7da502a888c7d2e00a8bf38dc436a7a6d41f69d6b71",
+        "params.bin": "daf8f4781285f02247ba65e26507aefdc949eb1be23a4af633b3d53c1aff6e6f"
+      },
+      "tail_hole": {
+        "x.actual.bin": "35a31f0467748047600abc863171b6c9485f9c1b831e56b3b21705e3805acb3a",
+        "z.actual.bin": "8be648dcd578cff8cd8db4f7736d1445d605c09b84f5091e97238df78fd3a1be",
+        "audit.actual.bin": "3a02dc29e1c26919c36ddeaf8fa55ba2f3adb3cd50ba302f34d5f2d2ca76bf86",
+        "params.bin": "b20a7d65af9aebde9dc85f1c501f2dba59b5f6a58ef9c62fb4571c377c44e8e5"
+      },
+      "zero_active": {
+        "x.actual.bin": "ab3914871133aa6ba7e50303290c14ac435f600af30413b880be12b9d920b216",
+        "z.actual.bin": "d1db8b628f42004411d98701c0d55c69391f57ccab027a901259efc555ceec0b",
+        "audit.actual.bin": "d26c590dde62f5a44741cdaa67f00a66f6ebc441422b06dab100dcd476b15656",
+        "params.bin": "7794ec06eba09cd51b3650675581e62521bc32ef5d87b41bd5d4ce5fb5e92237"
+      }
+    },
+    "gate_sha256": "baf84450b9dd91dcffc59f6ecee6e1e37a7fab82d9e2f8877364e96138cb1a42",
+    "capture_sha256": "b3ee841b675f0a930165c66201455c5a9d95cbada93f26f984d8b9c798cdf545"
+  },
+  "returned_files": {
+    "devices.json": "cbc44a20bafe65429efbb669a5f18ab1c9f6dd28daaa20392ec64f9f9ff2eb2b",
+    "summary.json": "7ba7c1a0287c409221dfc8e4517b7ab8d6cd9346852470ecc50ecbe83ebed694",
+    "binding/binding.json": "f8104b15a6ed210f264fca0ebdae199d83deeb557a18eb69ce339f9d4be921f6",
+    "binding/hardware.json": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+    "binding/target_lock.json": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "logs/01_ldd_libvortex.so.log": "c64358156f1d516a585ef63e37030ec9449680497749020c5ca0f4f92fe7f768",
+    "logs/02_ldd_libvortex-xrt.so.log": "c719ceb72c38076c98c5dbc3b08c41213b62072c340a83e88eb392152a976371",
+    "logs/03_compile_bdf_query.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/04_enumerate.log": "9d0e07c89fb39f6e6f4e59bf0478f91821b4302bdfa8ab90fd4e69ea9cf082d8",
+    "logs/05_capture.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "u280-xrt/capture.json": "b3ee841b675f0a930165c66201455c5a9d95cbada93f26f984d8b9c798cdf545",
+    "u280-xrt/full_forms/audit.actual.bin": "5941082daa772732ae57e9fc483d802ce4c54037a0c26c01bd76b3e34c9c4e3e",
+    "u280-xrt/full_forms/params.bin": "7d129f7e8ca816d8f45ffc61a47852057cbd15cbf11d9620ee2c6c7a21159c02",
+    "u280-xrt/full_forms/x.actual.bin": "0dd2f5b5dabff5b090fd7d95ebd0a09d0913ae3581a105ff58d74447e8aa1009",
+    "u280-xrt/full_forms/z.actual.bin": "1e23fbf7c9e73c5683e06b61fa4e2fb7ce44611c76b2791544195a8ea1118dd2",
+    "u280-xrt/max_block/audit.actual.bin": "d05234a73e3f8097de1af7da502a888c7d2e00a8bf38dc436a7a6d41f69d6b71",
+    "u280-xrt/max_block/params.bin": "daf8f4781285f02247ba65e26507aefdc949eb1be23a4af633b3d53c1aff6e6f",
+    "u280-xrt/max_block/x.actual.bin": "5b775122609691b98f1d0ab17f5f86b00dab769191ccc23d3c5039a9b5f5f1f2",
+    "u280-xrt/max_block/z.actual.bin": "c6f37204265be3bc8ba9bffd32e11557d2fe4b83801d5ddab019051adb0e2cd8",
+    "u280-xrt/partial_forms/audit.actual.bin": "a944e37ae4772fcfddde8e499fdb1a38766b46a0dbff7d529cd4eebc164f3e6f",
+    "u280-xrt/partial_forms/params.bin": "df2eb0e75c0a66aef52fc07e8ba2f49799fb7d2b26cbab37a9a1eb9b85a327c6",
+    "u280-xrt/partial_forms/x.actual.bin": "1df39f5109eeacd18f1a97db460a61017888bd9c4f128f4b413a5b86cfc5d4a3",
+    "u280-xrt/partial_forms/z.actual.bin": "ef9125824fc2285f86026c96e1646330c9ad28c65057614342a4685decc70d4b",
+    "u280-xrt/second_warp/audit.actual.bin": "801a1fe105dbe77ba78044206583d1139115b66a0bafbac188ccc7d62a133b05",
+    "u280-xrt/second_warp/params.bin": "bd64857e30948780d847448d5b087592ef617631fe25deaf553266590174474e",
+    "u280-xrt/second_warp/x.actual.bin": "32d85691dbd1f0737c3204c0a2d16371cb17cdf256142a2e5172c0e23ca47a43",
+    "u280-xrt/second_warp/z.actual.bin": "49f6d449d34251cf802e2579e6bae01c35dc498552179240b945ab612dbc5f63",
+    "u280-xrt/seventeen/audit.actual.bin": "656b4e25e9754a25bba2533977b2ec9bf353d4efe42204f005629cfc83d66bc2",
+    "u280-xrt/seventeen/params.bin": "aa134fc83eac28f0e74e807594ea74fc3e06ec42ccf15f96c7b273c730bbcbc5",
+    "u280-xrt/seventeen/x.actual.bin": "c482efa0cc88b5a9f5dae19cb846c74cf58748038247f042abd30fea92f74f20",
+    "u280-xrt/seventeen/z.actual.bin": "63ac523b2bd4fc7153309c35b58cb25516d06ead0179cc7b987e0c555a458c4d",
+    "u280-xrt/single_form_lane/audit.actual.bin": "10c178c8a62c0c0e3d88eea5561d82da82a8f81f9b81c0c80e9a779a2145357e",
+    "u280-xrt/single_form_lane/params.bin": "485faf38a50babf6ec44ee017f9fd79141118076bfded694e58ef997ec7a080b",
+    "u280-xrt/single_form_lane/x.actual.bin": "cbec4f5a9e3408574a9bf8b2df04bfe2e84cf37e480b0aa93962537bbf1d3336",
+    "u280-xrt/single_form_lane/z.actual.bin": "b401c6b0217268797d52d007a7b5e68e6d1d5ea883e3b9fb60fcbc48e8e55c55",
+    "u280-xrt/tail_hole/audit.actual.bin": "3a02dc29e1c26919c36ddeaf8fa55ba2f3adb3cd50ba302f34d5f2d2ca76bf86",
+    "u280-xrt/tail_hole/params.bin": "b20a7d65af9aebde9dc85f1c501f2dba59b5f6a58ef9c62fb4571c377c44e8e5",
+    "u280-xrt/tail_hole/x.actual.bin": "35a31f0467748047600abc863171b6c9485f9c1b831e56b3b21705e3805acb3a",
+    "u280-xrt/tail_hole/z.actual.bin": "8be648dcd578cff8cd8db4f7736d1445d605c09b84f5091e97238df78fd3a1be",
+    "u280-xrt/zero_active/audit.actual.bin": "d26c590dde62f5a44741cdaa67f00a66f6ebc441422b06dab100dcd476b15656",
+    "u280-xrt/zero_active/params.bin": "7794ec06eba09cd51b3650675581e62521bc32ef5d87b41bd5d4ce5fb5e92237",
+    "u280-xrt/zero_active/x.actual.bin": "ab3914871133aa6ba7e50303290c14ac435f600af30413b880be12b9d920b216",
+    "u280-xrt/zero_active/z.actual.bin": "d1db8b628f42004411d98701c0d55c69391f57ccab027a901259efc555ceec0b",
+    "binding/sessions/c-v03-u280-20261120-v1/device_list.json": "50200402c247fb2d9125052b6587b0a90b631d0b6dde3ee0b55206ce1e96e6cc",
+    "binding/sessions/c-v03-u280-20261120-v1/gate.json": "baf84450b9dd91dcffc59f6ecee6e1e37a7fab82d9e2f8877364e96138cb1a42",
+    "binding/sessions/c-v03-u280-20261120-v1/loaded.json": "fa50f6497fbdf67c60bac7cc2dbfa6f5a04ef5f6715757eba5dc296e3b51ee3c",
+    "binding/sessions/c-v03-u280-20261120-v1/preflight.json": "eb04105dfedc57b6ff30945f2cf2c6b3851c021871fc26fc2434a28dc6b2f676"
+  }
+}

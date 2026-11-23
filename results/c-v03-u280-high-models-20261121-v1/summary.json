@@ -1,0 +1,126 @@
+{
+  "schema": "v03-u280-fixed-high-address-v1",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/c_v03_high_board.py",
+    "simulate",
+    "--bundle",
+    "results/c-v03-u280-high-kit-20261121-v1/bundle",
+    "--output",
+    "results/c-v03-u280-high-models-20261121-v1"
+  ],
+  "run_id": "c-v03-u280-high-models-20261121-v1",
+  "started_at": "2026-11-21T10:49:12.517348+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/c_v03_high_board.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+        "--backend",
+        "simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+      "started_at": "2026-11-21T10:49:15.207507+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-21T10:49:21.360430+00:00",
+      "elapsed_seconds": 6.143,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/c_v03_high_board.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+        "--backend",
+        "rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+      "started_at": "2026-11-21T10:49:22.093080+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_rtlsim.log",
+      "finished_at": "2026-11-21T10:49:26.554866+00:00",
+      "elapsed_seconds": 4.436,
+      "log_sha256": "89ae47a5a7fa3bf3467c14b2a3bb7fbafa58fc995a77e3060c40a5fefe46d574"
+    },
+    {
+      "label": "xrtsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/c_v03_high_board.py",
+        "capture",
+        "--bundle",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-kit-20261121-v1/bundle",
+        "--output",
+        "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+        "--backend",
+        "xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/c-v03-u280-high-models-20261121-v1",
+      "started_at": "2026-11-21T10:49:27.046882+00:00",
+      "timeout_seconds": 360,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_xrtsim.log",
+      "finished_at": "2026-11-21T10:49:32.140686+00:00",
+      "elapsed_seconds": 5.086,
+      "log_sha256": "89ae47a5a7fa3bf3467c14b2a3bb7fbafa58fc995a77e3060c40a5fefe46d574"
+    }
+  ],
+  "board_execution": "NOT_RUN",
+  "alias": "NOT_RUN",
+  "independent_E": "NOT_RUN",
+  "physical_recovery": "NOT_RUN",
+  "timing7": "OPEN",
+  "models": {
+    "simx": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "cf335805c9235057f26376c46e7bb65ee7e8ba1e476dbbf062ca4853c257c045"
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "dcecfde4fd54aeecb4e6d0583d4f74e49f6c316b04a2e2b0bf80ae647955e9d6"
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "alias_readbacks": 4,
+      "launches": 5,
+      "payloads": 5,
+      "full_buffers_before": 15,
+      "full_buffers_after": 15,
+      "capture_sha256": "ae3d3d6cc613de66e9717c1daba64b699f7659ac0b7602027710913670d889ca"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-21T10:49:33.038893+00:00"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "ae-v03-human-signoff-v1",
+  "run_id": "ae-v03-signoff-20261121-v1",
+  "status": "ACCEPTED_WITH_LIMITS",
+  "decision_zh": "带限制接收",
+  "confirmation": {
+    "channel": "当前 Codex 聊天的用户确认",
+    "role_zh": "项目负责人",
+    "answer_verbatim": "以项目负责人身份限定接收",
+    "recorded_at": "2026-11-21T19:27:53+08:00",
+    "execution_basis": "用户在当前聊天中授权并委托执行的四路复现"
+  },
+  "accepted_scope": {
+    "interface": "V03",
+    "modules": ["p0_form_witness", "guarded_wide_offset"],
+    "ordinary_cases_per_backend": 8,
+    "high_address_cases_per_backend": 5,
+    "passed_by_backend": {
+      "simx": 13,
+      "rtlsim": 13,
+      "xrtsim": 13,
+      "u280-xrt": 13
+    },
+    "physical_binding": "固定 D10/D12 及本次 U280 门禁记录"
+  },
+  "evidence_sha256": {
+    "results/ae-v03-frozen-20261121-v1/manifest.json": "6a6331574453bbdd4118ab60fdb4f4b837527f28a7fed127aa8c8e8faeaaaa07",
+    "results/ae-v03-build-20261121-v1/summary.json": "13d92375a936e03777752b337e7894470535b193184b28b719b89180ddfa1261",
+    "results/ae-v03-models-20261121-v1/summary.json": "f847aef27cb48ba34027f7efb11c8fe9af28c3c43a39b00ce4a890520f50f2fa",
+    "results/ae-v03-trace-20261121-v2/summary.json": "e0a1a3ea61cdb4b2e99223be229f109bdc698d0952029087fd9d034bef69f00e",
+    "results/c-v03-u280-ae-20261121-v1/result.json": "e576682b6852a8fd65007bbe9e7ca720ae3d4c8f021edf5fdca424cd371c39b6",
+    "results/ae-v03-acceptance-20261121-v1/result.json": "80e00719809c4544acfb2dec8eaa0c85e298d2d38508f3f60e3f8939fd743858"
+  },
+  "out_of_scope": {
+    "physical_recovery": "NOT_RUN",
+    "timing7": "OPEN",
+    "performance": "NOT_MEASURED"
+  },
+  "personal_role_signatures": {
+    "A": "NOT_RECORDED",
+    "E": "NOT_RECORDED"
+  }
+}
