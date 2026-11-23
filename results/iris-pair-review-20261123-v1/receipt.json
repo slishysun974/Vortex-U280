@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "launches": 422,
+  "counter_reads": 3376,
+  "backend": "u280-xrt",
+  "groups": {
+    "45": {
+      "cycles": {
+        "native": {
+          "median": 15356.5,
+          "p95": 15520,
+          "minimum": 15299,
+          "maximum": 15656
+        },
+        "ptx": {
+          "median": 20880.0,
+          "p95": 21144,
+          "minimum": 20346,
+          "maximum": 21146
+        },
+        "ptx_minus_native": {
+          "median": 5406.0,
+          "p95": 5798,
+          "minimum": 4905,
+          "maximum": 5812
+        },
+        "ptx_over_native": 1.359684824015889
+      },
+      "instret": {
+        "native": {
+          "median": 1242.0,
+          "p95": 1242,
+          "minimum": 1242,
+          "maximum": 1242
+        },
+        "ptx": {
+          "median": 4555.0,
+          "p95": 4555,
+          "minimum": 4555,
+          "maximum": 4555
+        },
+        "ptx_minus_native": {
+          "median": 3313.0,
+          "p95": 3313,
+          "minimum": 3313,
+          "maximum": 3313
+        },
+        "ptx_over_native": 3.6674718196457325
+      }
+    },
+    "150": {
+      "cycles": {
+        "native": {
+          "median": 45992.0,
+          "p95": 46469,
+          "minimum": 45696,
+          "maximum": 46480
+        },
+        "ptx": {
+          "median": 51148.5,
+          "p95": 51445,
+          "minimum": 49775,
+          "maximum": 51653
+        },
+        "ptx_minus_native": {
+          "median": 5002.0,
+          "p95": 5635,
+          "minimum": 3546,
+          "maximum": 5722
+        },
+        "ptx_over_native": 1.1121173247521308
+      },
+      "instret": {
+        "native": {
+          "median": 3598.0,
+          "p95": 3598,
+          "minimum": 3598,
+          "maximum": 3598
+        },
+        "ptx": {
+          "median": 11581.0,
+          "p95": 11581,
+          "minimum": 11581,
+          "maximum": 11581
+        },
+        "ptx_minus_native": {
+          "median": 7983.0,
+          "p95": 7983,
+          "minimum": 7983,
+          "maximum": 7983
+        },
+        "ptx_over_native": 3.218732629238466
+      }
+    },
+    "1024": {
+      "cycles": {
+        "native": {
+          "median": 304498.0,
+          "p95": 308863,
+          "minimum": 301367,
+          "maximum": 310485
+        },
+        "ptx": {
+          "median": 311456.0,
+          "p95": 315361,
+          "minimum": 306199,
+          "maximum": 315413
+        },
+        "ptx_minus_native": {
+          "median": 7045.5,
+          "p95": 10457,
+          "minimum": -180,
+          "maximum": 12747
+        },
+        "ptx_over_native": 1.022850724799506
+      },
+      "instret": {
+        "native": {
+          "median": 23616.0,
+          "p95": 23616,
+          "minimum": 23616,
+          "maximum": 23616
+        },
+        "ptx": {
+          "median": 74048.0,
+          "p95": 74048,
+          "minimum": 74048,
+          "maximum": 74048
+        },
+        "ptx_minus_native": {
+          "median": 50432.0,
+          "p95": 50432,
+          "minimum": 50432,
+          "maximum": 50432
+        },
+        "ptx_over_native": 3.13550135501355
+      }
+    },
+    "4096": {
+      "cycles": {
+        "native": {
+          "median": 1232343.0,
+          "p95": 1242047,
+          "minimum": 1208124,
+          "maximum": 1242765
+        },
+        "ptx": {
+          "median": 1235334.5,
+          "p95": 1243484,
+          "minimum": 1220607,
+          "maximum": 1243502
+        },
+        "ptx_minus_native": {
+          "median": 5070.5,
+          "p95": 18055,
+          "minimum": -13757,
+          "maximum": 20467
+        },
+        "ptx_over_native": 1.0024274897492014
+      },
+      "instret": {
+        "native": {
+          "median": 94272.0,
+          "p95": 94272,
+          "minimum": 94272,
+          "maximum": 94272
+        },
+        "ptx": {
+          "median": 296000.0,
+          "p95": 296000,
+          "minimum": 296000,
+          "maximum": 296000
+        },
+        "ptx_minus_native": {
+          "median": 201728.0,
+          "p95": 201728,
+          "minimum": 201728,
+          "maximum": 201728
+        },
+        "ptx_over_native": 3.1398506449422947
+      }
+    },
+    "16381": {
+      "cycles": {
+        "native": {
+          "median": 4951019.0,
+          "p95": 4980177,
+          "minimum": 4887442,
+          "maximum": 4982465
+        },
+        "ptx": {
+          "median": 5028937.0,
+          "p95": 5072406,
+          "minimum": 4916610,
+          "maximum": 5091858
+        },
+        "ptx_minus_native": {
+          "median": 84503.5,
+          "p95": 137312,
+          "minimum": -20266,
+          "maximum": 145345
+        },
+        "ptx_over_native": 1.015737770345862
+      },
+      "instret": {
+        "native": {
+          "median": 376898.0,
+          "p95": 376898,
+          "minimum": 376898,
+          "maximum": 376898
+        },
+        "ptx": {
+          "median": 1183855.0,
+          "p95": 1183855,
+          "minimum": 1183855,
+          "maximum": 1183855
+        },
+        "ptx_minus_native": {
+          "median": 806957.0,
+          "p95": 806957,
+          "minimum": 806957,
+          "maximum": 806957
+        },
+        "ptx_over_native": 3.1410487718162474
+      }
+    },
+    "65533": {
+      "cycles": {
+        "native": {
+          "median": 19606469.5,
+          "p95": 19921501,
+          "minimum": 19365376,
+          "maximum": 19931129
+        },
+        "ptx": {
+          "median": 20270582.0,
+          "p95": 20466620,
+          "minimum": 20020994,
+          "maximum": 20525045
+        },
+        "ptx_minus_native": {
+          "median": 622270.5,
+          "p95": 1022680,
+          "minimum": 163146,
+          "maximum": 1094673
+        },
+        "ptx_over_native": 1.033872110427632
+      },
+      "instret": {
+        "native": {
+          "median": 1507394.0,
+          "p95": 1507394,
+          "minimum": 1507394,
+          "maximum": 1507394
+        },
+        "ptx": {
+          "median": 4735087.0,
+          "p95": 4735087,
+          "minimum": 4735087,
+          "maximum": 4735087
+        },
+        "ptx_minus_native": {
+          "median": 3227693.0,
+          "p95": 3227693,
+          "minimum": 3227693,
+          "maximum": 3227693
+        },
+        "ptx_over_native": 3.141240445430989
+      }
+    }
+  },
+  "timed_pairs": 180,
+  "warmup_pairs": 30,
+  "bdf": "0000:b1:00.1",
+  "clock_mhz": 200,
+  "image_sha256": {
+    "native": "d5757f4a9da0c3a7ac33a94e0d9fa366b38367f9193ad00a332c63bf8e8e9914",
+    "ptx": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd"
+  },
+  "verified_files": 49
+}

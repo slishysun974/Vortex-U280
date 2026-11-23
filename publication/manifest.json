@@ -1,5 +1,5 @@
 {
-  "base_commit": "00c940b207b0fe1a8a3fc2835b13ef7e3067da29",
+  "base_commit": "3d95beba78729b3afc37ea4e0b9279568d624c01",
   "date": "2026-11-23",
   "exclusions": [
     "server access files, credentials, SSH payloads and raw transport frames",
@@ -28,11 +28,11 @@
       "source_sha256": "9e03916721affbff19f9501b8cfc7b8a4b6e84bb533c92238952514aa1559829"
     },
     "README.md": {
-      "public_bytes": 5497,
-      "public_sha256": "0e43b5496d1b0cb604b911d2a57881b0fe0198889d2b8d2527aa941ef88cd9d0",
+      "public_bytes": 5718,
+      "public_sha256": "27da9765f6c7e00b8c3f00a5de896b14111867cf1776709f512bd4bc465b2898",
       "publication": "verbatim",
-      "source_bytes": 5497,
-      "source_sha256": "0e43b5496d1b0cb604b911d2a57881b0fe0198889d2b8d2527aa941ef88cd9d0"
+      "source_bytes": 5718,
+      "source_sha256": "27da9765f6c7e00b8c3f00a5de896b14111867cf1776709f512bd4bc465b2898"
     },
     "configs/acceptance/e-ptx15-v1/affine_u32/0034/x.bin": {
       "public_bytes": 68,
@@ -2043,6 +2043,13 @@
       "source_bytes": 4081,
       "source_sha256": "de45d3e7ac927d390be8fff136982baaf0545d2d2decb188dd6361ef5c28bf3a"
     },
+    "docs/IRIS_U280_NATIVE_PTX_BRIEF.md": {
+      "public_bytes": 1838,
+      "public_sha256": "8901aef5d0f3f25d46a13b522d27fe629d24d421b7b2d66e763dd8e3a803ba84",
+      "publication": "verbatim",
+      "source_bytes": 1838,
+      "source_sha256": "8901aef5d0f3f25d46a13b522d27fe629d24d421b7b2d66e763dd8e3a803ba84"
+    },
     "docs/IRIS_U280_PERFORMANCE_20261123.md": {
       "public_bytes": 9454,
       "public_sha256": "fa62216242d796a14f47877d4b9dec3f8381966775b5ef0643bf3a084118077b",
@@ -2076,11 +2083,11 @@
       "source_sha256": "2c31f1b85b5a2aedb8526e15ef7415f612b5d178329623c7996b678885d1e466"
     },
     "docs/PROJECT_HANDOFF.md": {
-      "public_bytes": 69058,
-      "public_sha256": "45b455b031c90a59538229523d5d544f400806aef709c0bbf9fecbace8a34742",
+      "public_bytes": 69225,
+      "public_sha256": "138a46913d5a1a8265e70f49f69c7819fc7fa348573b6b5241996a723907f6e5",
       "publication": "public adaptation",
-      "source_bytes": 70729,
-      "source_sha256": "775b85838a9f97225e897549ce84b4b88d2f44c7387eb4f695bfb99fc597a484"
+      "source_bytes": 71836,
+      "source_sha256": "ffe346b1fda0540301def903a3bade7a48ab467f53fb124586a7a4a982e89616"
     },
     "docs/PROJECT_MIGRATION.md": {
       "public_bytes": 3010,
@@ -2237,11 +2244,11 @@
       "source_sha256": "e082cb49bf1d41f6b8faaa6165544d4eb695a7a4dddb9aaf071a4d967263b23e"
     },
     "docs/STATUS.md": {
-      "public_bytes": 63752,
-      "public_sha256": "e6f801d8a3d92dd2222ba144e505d3413f01123ec1368268f28e6076a5377be6",
+      "public_bytes": 63975,
+      "public_sha256": "2ed722463c8d772bd7d79b771b07d23b1a24456aa588950ff83bd919e403cf19",
       "publication": "public adaptation",
-      "source_bytes": 65427,
-      "source_sha256": "9d075bd9722ab8b52dc382796672136b509a39324c57d131ecbe01a28125298c"
+      "source_bytes": 66577,
+      "source_sha256": "a6d18668818749e7df8b3bc1e5de9c7119e2d29f8d088a84d0cdceba4865e933"
     },
     "docs/TASK1_TASK2_PROGRESS_20261110.md": {
       "public_bytes": 8637,
@@ -14821,6 +14828,13 @@
       "source_bytes": 1176,
       "source_sha256": "1612f0d7e83afdfec7bcef53cc1f03993f0179c500c4bd23d6edf94a3241932a"
     },
+    "results/iris-board-pair-20261123-v2/returned/iris-board-pair-20261123-v2/u280-xrt/samples.jsonl": {
+      "public_bytes": 186713,
+      "public_sha256": "d6dc737abb48f21e4470cd3520912522b66a20fc518980d4905a73ddd0bbac15",
+      "publication": "verbatim",
+      "source_bytes": 186713,
+      "source_sha256": "d6dc737abb48f21e4470cd3520912522b66a20fc518980d4905a73ddd0bbac15"
+    },
     "results/iris-board-perf-20261123-v2/result.json": {
       "public_bytes": 13515,
       "public_sha256": "65b9b354747fc6036ee531c566c7e08a1d1d9628b2c68354a7cacf3c4e4bf6a7",
@@ -15821,6 +15835,13 @@
       "publication": "verbatim",
       "source_bytes": 14857,
       "source_sha256": "4201d62e0e8606fc55ceb42fe279f6ad91ebf4fead49e229a182c8aed46348a4"
+    },
+    "results/iris-pair-review-20261123-v1/receipt.json": {
+      "public_bytes": 6861,
+      "public_sha256": "fcbadaad985208610935ab2ad66b185c0d9b15cbfa6f89a9debe2618bbebbc47",
+      "publication": "verbatim",
+      "source_bytes": 6861,
+      "source_sha256": "fcbadaad985208610935ab2ad66b185c0d9b15cbfa6f89a9debe2618bbebbc47"
     },
     "results/iris-perf-comparison-20261123-v1/comparison.json": {
       "public_bytes": 12553,
@@ -19088,7 +19109,7 @@
   },
   "redaction_policy": "Server and workstation identifiers replaced by examples. Unpublished archive links are indexed. Historical hash fields remain unchanged. V08 timing receipt publishes aggregate data.",
   "schema": "vortex-publication-v3",
-  "scope": "Existing public snapshot plus Iris functional and performance experiments with physical board and CPU evidence.",
-  "total_bytes": 17627019,
-  "total_files": 2750
+  "scope": "Public snapshot including the Iris same-card native C++ and PTX performance report and measurements.",
+  "total_bytes": 17823042,
+  "total_files": 2753
 }
