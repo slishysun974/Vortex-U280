@@ -1,0 +1,182 @@
+{
+  "hwmon12/power1_average": {
+    "path": "/sys/class/hwmon/hwmon12/power1_average",
+    "label": "POWER",
+    "unit": "uW"
+  },
+  "hwmon12/power1_input": {
+    "path": "/sys/class/hwmon/hwmon12/power1_input",
+    "label": "POWER",
+    "unit": "uW"
+  },
+  "hwmon12/power2_input": {
+    "path": "/sys/class/hwmon/hwmon12/power2_input",
+    "label": "CS_TARGET_POWER",
+    "unit": "uW"
+  },
+  "hwmon12/temp10_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp10_input",
+    "label": "HBM TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp11_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp11_input",
+    "label": "QSPF 0",
+    "unit": "mC"
+  },
+  "hwmon12/temp12_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp12_input",
+    "label": "QSPF 1",
+    "unit": "mC"
+  },
+  "hwmon12/temp13_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp13_input",
+    "label": "QSPF 2",
+    "unit": "mC"
+  },
+  "hwmon12/temp14_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp14_input",
+    "label": "QSPF 3",
+    "unit": "mC"
+  },
+  "hwmon12/temp15_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp15_input",
+    "label": "CS_TARGET_TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp1_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp1_input",
+    "label": "PCB TOP FRONT",
+    "unit": "mC"
+  },
+  "hwmon12/temp2_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp2_input",
+    "label": "PCB TOP REAR",
+    "unit": "mC"
+  },
+  "hwmon12/temp3_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp3_input",
+    "label": "PCB BTM FRONT",
+    "unit": "mC"
+  },
+  "hwmon12/temp4_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp4_input",
+    "label": "FPGA TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp5_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp5_input",
+    "label": "TCRIT TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp6_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp6_input",
+    "label": "DIMM0 TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp7_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp7_input",
+    "label": "DIMM1 TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp8_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp8_input",
+    "label": "DIMM2 TEMP",
+    "unit": "mC"
+  },
+  "hwmon12/temp9_input": {
+    "path": "/sys/class/hwmon/hwmon12/temp9_input",
+    "label": "DIMM3 TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/power1_average": {
+    "path": "/sys/class/hwmon/hwmon13/power1_average",
+    "label": "POWER",
+    "unit": "uW"
+  },
+  "hwmon13/power1_input": {
+    "path": "/sys/class/hwmon/hwmon13/power1_input",
+    "label": "POWER",
+    "unit": "uW"
+  },
+  "hwmon13/power2_input": {
+    "path": "/sys/class/hwmon/hwmon13/power2_input",
+    "label": "CS_TARGET_POWER",
+    "unit": "uW"
+  },
+  "hwmon13/temp10_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp10_input",
+    "label": "HBM TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp11_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp11_input",
+    "label": "QSPF 0",
+    "unit": "mC"
+  },
+  "hwmon13/temp12_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp12_input",
+    "label": "QSPF 1",
+    "unit": "mC"
+  },
+  "hwmon13/temp13_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp13_input",
+    "label": "QSPF 2",
+    "unit": "mC"
+  },
+  "hwmon13/temp14_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp14_input",
+    "label": "QSPF 3",
+    "unit": "mC"
+  },
+  "hwmon13/temp15_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp15_input",
+    "label": "CS_TARGET_TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp1_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp1_input",
+    "label": "PCB TOP FRONT",
+    "unit": "mC"
+  },
+  "hwmon13/temp2_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp2_input",
+    "label": "PCB TOP REAR",
+    "unit": "mC"
+  },
+  "hwmon13/temp3_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp3_input",
+    "label": "PCB BTM FRONT",
+    "unit": "mC"
+  },
+  "hwmon13/temp4_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp4_input",
+    "label": "FPGA TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp5_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp5_input",
+    "label": "TCRIT TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp6_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp6_input",
+    "label": "DIMM0 TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp7_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp7_input",
+    "label": "DIMM1 TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp8_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp8_input",
+    "label": "DIMM2 TEMP",
+    "unit": "mC"
+  },
+  "hwmon13/temp9_input": {
+    "path": "/sys/class/hwmon/hwmon13/temp9_input",
+    "label": "DIMM3 TEMP",
+    "unit": "mC"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "stage": "selftest",
+  "run_id": "iris-selftest-perf-20261123-v1",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "runner_selftest",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/mnt/d/Vortex-U280",
+      "started_at": "2026-11-23T12:45:03.376870+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_runner_selftest.log",
+      "finished_at": "2026-11-23T12:47:24.740362+00:00",
+      "elapsed_seconds": 141.302,
+      "log_sha256": "60f39c4973b9cb9c6452842f1f18cf05f4891fd5e6303156a083df0c9189760e"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/iris-u280/run.py",
+    "selftest",
+    "perf-20261123-v1"
+  ],
+  "started_at": "2026-11-23T12:45:03.373438+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-11-23T12:47:24.808167+00:00"
+}

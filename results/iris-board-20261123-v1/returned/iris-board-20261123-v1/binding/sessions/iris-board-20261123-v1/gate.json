@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "run_id": "iris-board-20261123-v1",
+  "open_gate": "PASS",
+  "close_gate": "PASS",
+  "clock_readback": {
+    "id": "DATA_CLK",
+    "description": "Data",
+    "freq_mhz": "200"
+  },
+  "artifact_hashes": {
+    "libraries": {
+      "libvortex.so": "d3538d2fc7c695a4a0102106aa45e9ef7a9e939fc44c3b15c547ff97d0dffe3e",
+      "libvortex-xrt.so": "250769482e98c1cee84bd165a9e2af1c7b3f74a5b77dcf389ac1f4ea5aa7a8c1"
+    },
+    "xclbin": "bbac2ab73073b24ba857fb34eadf22bf1c11dc745527f064c4eec61b70d2c843",
+    "query": "124cd233ee78e08689951e32e0cdb407f67621e2815772327659c1f627e0eb36",
+    "lock": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+  },
+  "sysfs": {
+    "before": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "immediately_before_open": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "loaded": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t1\nclient pid:\n\t\t\t75712",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    },
+    "after_close": {
+      "ready": "0x1",
+      "interface_uuids": "fb2b2c5a19ed63593fea95f51fbc8eb9",
+      "kdsstat": "xclbin:\t\t\tb60ca9fb-1506-3033-c156-e03ff687f492\noutstanding execs:\t0\ntotal execs:\t\t0\ncontexts:\t\t0\nclient pid:",
+      "host_mem_size": "268435456",
+      "xclbinuuid": "b60ca9fb-1506-3033-c156-e03ff687f492"
+    }
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "capture_hash": "1f126254c67d0840d170ad05ae64d264d5ebe3fdd8d5bf0ca21205b71df3ed40",
+  "counter_reads": 1736,
+  "cpu": {
+    "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "logical_cpu": 0,
+    "model": "Intel(R) Core(TM) Ultra 7 255H",
+    "threads": 1
+  },
+  "cpu_hash": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c",
+  "folds": {
+    "confusion": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        46,
+        4
+      ],
+      [
+        0,
+        6,
+        44
+      ]
+    ],
+    "correct": 140,
+    "errors": [
+      [
+        51,
+        1,
+        2
+      ],
+      [
+        53,
+        1,
+        2
+      ],
+      [
+        77,
+        1,
+        2
+      ],
+      [
+        78,
+        1,
+        2
+      ],
+      [
+        107,
+        2,
+        1
+      ],
+      [
+        114,
+        2,
+        1
+      ],
+      [
+        120,
+        2,
+        1
+      ],
+      [
+        122,
+        2,
+        1
+      ],
+      [
+        127,
+        2,
+        1
+      ],
+      [
+        139,
+        2,
+        1
+      ]
+    ],
+    "per_fold": [
+      29,
+      26,
+      28,
+      28,
+      29
+    ],
+    "total": 150
+  },
+  "groups": {
+    "1024": {
+      "board": {
+        "cycles": {
+          "maximum": 317532,
+          "median": 310473.5,
+          "minimum": 307677,
+          "p95": 314896
+        },
+        "d2h_ns": {
+          "maximum": 206695,
+          "median": 104404.5,
+          "minimum": 90645,
+          "p95": 183631
+        },
+        "h2d_ns": {
+          "maximum": 345422,
+          "median": 274433.5,
+          "minimum": 245559,
+          "p95": 322614
+        },
+        "instret": {
+          "maximum": 74048,
+          "median": 74048.0,
+          "minimum": 74048,
+          "p95": 74048
+        },
+        "total_ns": {
+          "maximum": 2492391,
+          "median": 2278814.0,
+          "minimum": 2166901,
+          "p95": 2390243
+        },
+        "wait_ns": {
+          "maximum": 2006183,
+          "median": 1879934.5,
+          "minimum": 1830697,
+          "p95": 1932636
+        },
+        "warp_ipc": {
+          "maximum": 0.24066797323166828,
+          "median": 0.23850022654008182,
+          "minimum": 0.233198543768817,
+          "p95": 0.24059368623526506
+        }
+      },
+      "board_pipeline_rows_per_s": 449356.55125868105,
+      "board_pipeline_to_cpu_time_ratio": 408.7192180073536,
+      "cpu_ns": {
+        "maximum": 76909,
+        "median": 5575.5,
+        "minimum": 5484,
+        "p95": 9128
+      },
+      "cpu_rows_per_s": 183660658.23692942,
+      "device_busy_ns": 1552367.5,
+      "device_rows_per_s": 659637.6180253709,
+      "device_to_cpu_time_ratio": 278.42659851134425
+    },
+    "150": {
+      "board": {
+        "cycles": {
+          "maximum": 51682,
+          "median": 51161.5,
+          "minimum": 50029,
+          "p95": 51652
+        },
+        "d2h_ns": {
+          "maximum": 733744,
+          "median": 82821.5,
+          "minimum": 66577,
+          "p95": 705338
+        },
+        "h2d_ns": {
+          "maximum": 324977,
+          "median": 230663.0,
+          "minimum": 203322,
+          "p95": 269418
+        },
+        "instret": {
+          "maximum": 11581,
+          "median": 11581.0,
+          "minimum": 11581,
+          "p95": 11581
+        },
+        "total_ns": {
+          "maximum": 1629009,
+          "median": 912085.0,
+          "minimum": 824352,
+          "p95": 1547297
+        },
+        "wait_ns": {
+          "maximum": 627290,
+          "median": 582004.0,
+          "minimum": 549972,
+          "p95": 615561
+        },
+        "warp_ipc": {
+          "maximum": 0.23148573827180235,
+          "median": 0.22636161977180141,
+          "minimum": 0.22408188537595294,
+          "p95": 0.23148111133320007
+        }
+      },
+      "board_pipeline_rows_per_s": 164458.3564031861,
+      "board_pipeline_to_cpu_time_ratio": 995.1827605019095,
+      "cpu_ns": {
+        "maximum": 1732,
+        "median": 916.5,
+        "minimum": 855,
+        "p95": 1613
+      },
+      "cpu_rows_per_s": 163666121.1129296,
+      "device_busy_ns": 255807.5,
+      "device_rows_per_s": 586378.4290921885,
+      "device_to_cpu_time_ratio": 279.11347517730496
+    },
+    "16381": {
+      "board": {
+        "cycles": {
+          "maximum": 5070102,
+          "median": 5018894.5,
+          "minimum": 4942993,
+          "p95": 5068751
+        },
+        "d2h_ns": {
+          "maximum": 928965,
+          "median": 668890.0,
+          "minimum": 448565,
+          "p95": 806918
+        },
+        "h2d_ns": {
+          "maximum": 1573756,
+          "median": 1250137.0,
+          "minimum": 963177,
+          "p95": 1462942
+        },
+        "instret": {
+          "maximum": 1183855,
+          "median": 1183855.0,
+          "minimum": 1183855,
+          "p95": 1183855
+        },
+        "total_ns": {
+          "maximum": 28051555,
+          "median": 27327139.0,
+          "minimum": 26825668,
+          "p95": 27886472
+        },
+        "wait_ns": {
+          "maximum": 26023950,
+          "median": 25461545.5,
+          "minimum": 25102599,
+          "p95": 25705928
+        },
+        "warp_ipc": {
+          "maximum": 0.23950165415973682,
+          "median": 0.2358796348072843,
+          "minimum": 0.23349727480827803,
+          "p95": 0.2389455478527891
+        }
+      },
+      "board_pipeline_rows_per_s": 599440.7244754016,
+      "board_pipeline_to_cpu_time_ratio": 258.08563144573304,
+      "cpu_ns": {
+        "maximum": 196778,
+        "median": 105884.0,
+        "minimum": 86677,
+        "p95": 143103
+      },
+      "cpu_rows_per_s": 154707037.8905217,
+      "device_busy_ns": 25094472.5,
+      "device_rows_per_s": 652773.2352214218,
+      "device_to_cpu_time_ratio": 236.99966472743756
+    },
+    "4096": {
+      "board": {
+        "cycles": {
+          "maximum": 1247549,
+          "median": 1232667.5,
+          "minimum": 1221438,
+          "p95": 1243198
+        },
+        "d2h_ns": {
+          "maximum": 298522,
+          "median": 217914.0,
+          "minimum": 166430,
+          "p95": 238353
+        },
+        "h2d_ns": {
+          "maximum": 640703,
+          "median": 427885.0,
+          "minimum": 396226,
+          "p95": 564197
+        },
+        "instret": {
+          "maximum": 296000,
+          "median": 296000.0,
+          "minimum": 296000,
+          "p95": 296000
+        },
+        "total_ns": {
+          "maximum": 7394664,
+          "median": 7165728.0,
+          "minimum": 7017190,
+          "p95": 7350675
+        },
+        "wait_ns": {
+          "maximum": 6585552,
+          "median": 6514987.0,
+          "minimum": 6423492,
+          "p95": 6559328
+        },
+        "warp_ipc": {
+          "maximum": 0.24233731061257305,
+          "median": 0.2401296375546839,
+          "minimum": 0.23726522966232189,
+          "p95": 0.24187097000881685
+        }
+      },
+      "board_pipeline_rows_per_s": 571609.7513051012,
+      "board_pipeline_to_cpu_time_ratio": 324.53478260869565,
+      "cpu_ns": {
+        "maximum": 43759,
+        "median": 22080.0,
+        "minimum": 21629,
+        "p95": 34887
+      },
+      "cpu_rows_per_s": 185507246.3768116,
+      "device_busy_ns": 6163337.5,
+      "device_rows_per_s": 664574.996907114,
+      "device_to_cpu_time_ratio": 279.1366621376812
+    },
+    "45": {
+      "board": {
+        "cycles": {
+          "maximum": 21175,
+          "median": 20729.5,
+          "minimum": 20340,
+          "p95": 21023
+        },
+        "d2h_ns": {
+          "maximum": 772146,
+          "median": 667613.5,
+          "minimum": 78330,
+          "p95": 736642
+        },
+        "h2d_ns": {
+          "maximum": 346249,
+          "median": 248745.5,
+          "minimum": 224642,
+          "p95": 338919
+        },
+        "instret": {
+          "maximum": 4555,
+          "median": 4555.0,
+          "minimum": 4555,
+          "p95": 4555
+        },
+        "total_ns": {
+          "maximum": 1568767,
+          "median": 1385878.5,
+          "minimum": 738881,
+          "p95": 1489838
+        },
+        "wait_ns": {
+          "maximum": 609672,
+          "median": 442641.0,
+          "minimum": 422878,
+          "p95": 481150
+        },
+        "warp_ipc": {
+          "maximum": 0.22394296951819076,
+          "median": 0.21973516118817468,
+          "minimum": 0.215112160566706,
+          "p95": 0.22361315660284733
+        }
+      },
+      "board_pipeline_rows_per_s": 32470.378896851347,
+      "board_pipeline_to_cpu_time_ratio": 3200.6431870669744,
+      "cpu_ns": {
+        "maximum": 621,
+        "median": 433.0,
+        "minimum": 304,
+        "p95": 606
+      },
+      "cpu_rows_per_s": 103926096.99769053,
+      "device_busy_ns": 103647.5,
+      "device_rows_per_s": 434163.87274174485,
+      "device_to_cpu_time_ratio": 239.37066974595842
+    },
+    "65533": {
+      "board": {
+        "cycles": {
+          "maximum": 20472281,
+          "median": 20258057.5,
+          "minimum": 20027007,
+          "p95": 20468646
+        },
+        "d2h_ns": {
+          "maximum": 3480501,
+          "median": 2777455.0,
+          "minimum": 2729240,
+          "p95": 2853119
+        },
+        "h2d_ns": {
+          "maximum": 5434725,
+          "median": 4161911.0,
+          "minimum": 4026882,
+          "p95": 4700985
+        },
+        "instret": {
+          "maximum": 4735087,
+          "median": 4735087.0,
+          "minimum": 4735087,
+          "p95": 4735087
+        },
+        "total_ns": {
+          "maximum": 110134022,
+          "median": 108798704.5,
+          "minimum": 107501260,
+          "p95": 110095650
+        },
+        "wait_ns": {
+          "maximum": 102878826,
+          "median": 101747732.0,
+          "minimum": 100525392,
+          "p95": 102747617
+        },
+        "warp_ipc": {
+          "maximum": 0.23643507988987073,
+          "median": 0.23373847428739164,
+          "minimum": 0.2312925950948016,
+          "p95": 0.23593316103968529
+        }
+      },
+      "board_pipeline_rows_per_s": 602332.5397224744,
+      "board_pipeline_to_cpu_time_ratio": 298.33406546700945,
+      "cpu_ns": {
+        "maximum": 758700,
+        "median": 364687.5,
+        "minimum": 342039,
+        "p95": 714905
+      },
+      "cpu_rows_per_s": 179696315.33847472,
+      "device_busy_ns": 101290287.5,
+      "device_rows_per_s": 646982.0712079626,
+      "device_to_cpu_time_ratio": 277.7454327335047
+    }
+  },
+  "mpm_hash": "efe861f94841529d5f148efad9881a74fb280a0fd932c63a3b8766a378837f38",
+  "status": "PASS",
+  "telemetry": {
+    "channels": {
+      "hwmon12/power1_input": {
+        "count": 11,
+        "label": "POWER",
+        "maximum": 29.32488,
+        "median": 29.174094,
+        "minimum": 29.003744,
+        "p95": 29.32488,
+        "unit": "W"
+      },
+      "hwmon12/temp10_input": {
+        "count": 11,
+        "label": "HBM TEMP",
+        "maximum": 29.0,
+        "median": 28.0,
+        "minimum": 28.0,
+        "p95": 29.0,
+        "unit": "C"
+      },
+      "hwmon12/temp4_input": {
+        "count": 11,
+        "label": "FPGA TEMP",
+        "maximum": 34.0,
+        "median": 33.0,
+        "minimum": 33.0,
+        "p95": 34.0,
+        "unit": "C"
+      },
+      "hwmon13/power1_input": {
+        "count": 11,
+        "label": "POWER",
+        "maximum": 29.320016,
+        "median": 29.13923,
+        "minimum": 29.029662,
+        "p95": 29.320016,
+        "unit": "W"
+      },
+      "hwmon13/temp10_input": {
+        "count": 11,
+        "label": "HBM TEMP",
+        "maximum": 29.0,
+        "median": 28.0,
+        "minimum": 28.0,
+        "p95": 29.0,
+        "unit": "C"
+      },
+      "hwmon13/temp4_input": {
+        "count": 11,
+        "label": "FPGA TEMP",
+        "maximum": 34.0,
+        "median": 33.0,
+        "minimum": 33.0,
+        "p95": 34.0,
+        "unit": "C"
+      }
+    },
+    "samples": 11,
+    "span_s": 5.974368767812848,
+    "xbutil": {
+      "after": {
+        "bdf": "0000:b1:00.1",
+        "power_W": 28.786308,
+        "temperatures_C": {
+          "cage_temp_0": 32.0,
+          "cage_temp_1": 31.0,
+          "fpga0": 33.0,
+          "fpga_hbm": 28.0,
+          "pcb_top_front": 28.0,
+          "pcb_top_rear": 27.0
+        },
+        "warning": "false"
+      },
+      "before": {
+        "bdf": "0000:b1:00.1",
+        "power_W": 29.092863,
+        "temperatures_C": {
+          "cage_temp_0": 32.0,
+          "cage_temp_1": 31.0,
+          "fpga0": 34.0,
+          "fpga_hbm": 29.0,
+          "pcb_top_front": 28.0,
+          "pcb_top_rear": 27.0
+        },
+        "warning": "false"
+      }
+    }
+  }
+}

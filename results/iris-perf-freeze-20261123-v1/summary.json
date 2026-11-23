@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "experiments/iris-u280-perf/corpus.py",
+    "results/iris-perf-freeze-20261123-v1/corpus"
+  ],
+  "exit_code": 0,
+  "log": "freeze.log",
+  "status": "PASS"
+}

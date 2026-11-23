@@ -206,7 +206,19 @@ def unpack(run):
     returned = run / "returned" / run.name
     returned.mkdir(parents=True)
     decode_into(result.pop("export"), returned)
-    if prep.get("entry") == "u280_aligned_pair.py":
+    if prep.get("entry") == "board_worker.py" and run.name.startswith("iris-board-"):
+        if result["status"] == "PASS":
+            if prep.get("version") == "iris-board-perf-v1":
+                sys.path.insert(0, str(PROJECT / "experiments/iris-u280-perf"))
+                from analyze import verify_returned
+            else:
+                sys.path.insert(0, str(PROJECT / "experiments/iris-u280"))
+                from board import verify_returned
+            try:
+                result["receipt"] = verify_returned(prep, result, returned)
+            except (OSError, ValueError, RuntimeError, KeyError, TypeError) as error:
+                result.update(status="FAIL", board_execution="FAIL", exit_code=1, review_error=str(error))
+    elif prep.get("entry") == "u280_aligned_pair.py":
         from review_u280_aligned_pair import review_returned
         try:
             result.update(review_returned(prep, result, returned, PROJECT / "results"))
@@ -248,8 +260,10 @@ if __name__ == "__main__":
     parser.add_argument("--counters", action="store_true")
     parser.add_argument("--bdf", choices=["0000:" + b + ":00.1" for b in BUSES], default="0000:b1:00.1")
     options = parser.parse_args()
-    if not re.fullmatch(r"(?:c-v03-u280-|u280-aligned-)[A-Za-z0-9_-]{1,50}", options.run_id):
+    if not re.fullmatch(r"(?:c-v03-u280-|u280-aligned-|iris-board-)[A-Za-z0-9_-]{1,50}", options.run_id):
         parser.error("choose a fresh board run ID")
+    if options.run_id.startswith("iris-board-") and options.action != "unpack":
+        parser.error("prepare Iris board runs with experiments/iris-u280/board.py")
     run = PROJECT / "results" / options.run_id
     if options.action in ("prepare", "prepare-aligned"):
         if options.kit is None or options.kit.resolve().parent != PROJECT / "results":

@@ -1,0 +1,20 @@
+{
+  "schema_version": "ptx-vx-args-schema-v1",
+  "abi_version": "ptx-vx-args-v1",
+  "status": "draft",
+  "frozen": false,
+  "byte_order": "little",
+  "layout": "declaration order; natural size/alignment u32=4/u64=8; round total size to maximum alignment; zero padding",
+  "pointer_bits": 64,
+  "u64_parameter_kind": "global device pointer",
+  "logical_launch_model": "ptx-1d-v1",
+  "special_register_mapping": {"tid.x": "thread_id", "ntid.x": "block_size", "ctaid.x": "block_id", "nctaid.x": "grid_size"},
+  "semantic_body": "ptx_body(payload, PtxThread, Memory); Memory.load32/store32 use u64 addresses",
+  "artifact_schema": "ptx-vx-frontend-artifacts-v1",
+  "loadable": false,
+  "native_wrapper": "NOT_IMPLEMENTED",
+  "runtime_handle_validation": "NOT_IMPLEMENTED",
+  "payload_packer_scope": "serialize already runtime-validated unsigned device addresses/scalars; not a public V06 runtime API",
+  "device_launch_limits": null,
+  "completion_and_recovery": "NOT_IMPLEMENTED"
+}

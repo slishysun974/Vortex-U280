@@ -1,0 +1,268 @@
+{
+  "stage": "build",
+  "run_id": "iris-build-20261123-v1",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "upstream_head",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:09.249884+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_upstream_head.log",
+      "finished_at": "2026-11-23T12:21:09.313942+00:00",
+      "elapsed_seconds": 0.052,
+      "log_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    {
+      "label": "upstream_diff",
+      "argv": [
+        "git",
+        "-C",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "diff",
+        "--exit-code",
+        "HEAD",
+        "--"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:09.349104+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_upstream_diff.log",
+      "finished_at": "2026-11-23T12:21:09.581722+00:00",
+      "elapsed_seconds": 0.219,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sim_prepare",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/samples/iris_nearest_centroid_u32.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/native_smoke.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:09.637179+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_sim_prepare.log",
+      "finished_at": "2026-11-23T12:21:10.070188+00:00",
+      "elapsed_seconds": 0.421,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "sim_build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/iris-build-20261123-v1/sim",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:10.092826+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_sim_build.log",
+      "finished_at": "2026-11-23T12:21:33.917571+00:00",
+      "elapsed_seconds": 23.813,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "sim_validate",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:34.042612+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/05_sim_validate.log",
+      "finished_at": "2026-11-23T12:21:35.051301+00:00",
+      "elapsed_seconds": 0.976,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    {
+      "label": "board_prepare",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "prepare",
+        "/mnt/d/Vortex-U280/ptx/samples/iris_nearest_centroid_u32.ptx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/board",
+        "--hardware",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/fpga.json",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:36.162827+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/06_board_prepare.log",
+      "finished_at": "2026-11-23T12:21:37.124127+00:00",
+      "elapsed_seconds": 0.945,
+      "log_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    {
+      "label": "board_build",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "build",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/board",
+        "--build-root",
+        "/mnt/d/Vortex-U280/build/iris-build-20261123-v1/board",
+        "--vortex-source",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "--tooldir",
+        "/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:21:37.167545+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/07_board_build.log",
+      "finished_at": "2026-11-23T12:22:00.673074+00:00",
+      "elapsed_seconds": 23.482,
+      "log_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    {
+      "label": "board_validate",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/scripts/ptx_module.py",
+        "validate",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/board",
+        "--target-lock",
+        "/mnt/d/Vortex-U280/configs/candidates/u280-hbm32-v1/target_lock.json"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-build-20261123-v1",
+      "started_at": "2026-11-23T12:22:00.716570+00:00",
+      "timeout_seconds": 600,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/08_board_validate.log",
+      "finished_at": "2026-11-23T12:22:01.631539+00:00",
+      "elapsed_seconds": 0.9,
+      "log_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/iris-u280/run.py",
+    "build",
+    "20261123-v1"
+  ],
+  "started_at": "2026-11-23T12:21:09.245504+00:00",
+  "root_lock_sha256": "924b17abadbbda710ead2053ac0873fb0698161c983f8ff1feb9b96a16a19ffe",
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "ptx_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d",
+  "modules": {
+    "sim": {
+      "manifest_sha256": "30f79f487c84075b27d894b089f021b95273eee9ef5a062f1f1d1e07111169f3",
+      "image_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd",
+      "schema": "ptx-vx-module-v1-draft",
+      "lock_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+      "params": [
+        [
+          "x",
+          "u64",
+          0
+        ],
+        [
+          "sums",
+          "u64",
+          8
+        ],
+        [
+          "out",
+          "u64",
+          16
+        ],
+        [
+          "n",
+          "u32",
+          24
+        ]
+      ],
+      "payload_bytes": 32,
+      "compiler": "ptx-vx-frontend-v1.2"
+    },
+    "board": {
+      "manifest_sha256": "c13b0b6fa98ad88865e900cae9f4faf8cf4b130c86105399ad64e95e9d9ff6ce",
+      "image_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd",
+      "schema": "ptx-vx-module-u280-v2-draft",
+      "lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+      "params": [
+        [
+          "x",
+          "u64",
+          0
+        ],
+        [
+          "sums",
+          "u64",
+          8
+        ],
+        [
+          "out",
+          "u64",
+          16
+        ],
+        [
+          "n",
+          "u32",
+          24
+        ]
+      ],
+      "payload_bytes": 32,
+      "compiler": "ptx-vx-frontend-v1.2"
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-23T12:22:02.751206+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "backend": "u280-xrt",
+  "binding_sha256": "c4b7611c68f95be24f2fa39dadbff0fea2a35e9b3c07aa1173947053722674e1",
+  "module_sha256": "c13b0b6fa98ad88865e900cae9f4faf8cf4b130c86105399ad64e95e9d9ff6ce",
+  "lock_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "launch_attempts": 9,
+  "completed": [
+    "test45",
+    "empty",
+    "one",
+    "n31",
+    "n32",
+    "n33",
+    "permuted",
+    "ties",
+    "endpoints"
+  ],
+  "initial_caps": {
+    "threads": 4,
+    "warps": 8,
+    "cores": 1,
+    "isa_flags": 221200257320,
+    "clusters": 1,
+    "backend": "u280-xrt",
+    "device_state": "READY",
+    "generation": 0,
+    "safe_abort": false,
+    "recovery_mode": "unavailable",
+    "max_modules": 1,
+    "device_fault": null,
+    "first_error": null
+  },
+  "final_state": "CLOSED"
+}

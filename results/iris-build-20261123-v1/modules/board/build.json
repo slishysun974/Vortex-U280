@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "bash",
+        "/opt/vortex-ab/sources/vortex-7fe19369587c-v1/configure",
+        "--xlen=64",
+        "--tooldir=/opt/vortex-ab/toolchains/8c64cf921d3c6c456e80f00d24482d0aa2153a82-rtlsim-d3-v1"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "make",
+        "-j2",
+        "-C",
+        "/mnt/d/Vortex-U280/build/iris-build-20261123-v1/board/sw/kernel",
+        "XLEN=64",
+        "CONFIGS=-DPLATFORM_MERGED_MEMORY_INTERFACE=1 -DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "make",
+        "-C",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/board",
+        "ROOT_DIR=/mnt/d/Vortex-U280/build/iris-build-20261123-v1/board",
+        "VORTEX_HOME=/opt/vortex-ab/sources/vortex-7fe19369587c-v1",
+        "XLEN=64",
+        "KERNEL_LIB=vortex2",
+        "CONFIGS=-DPLATFORM_MERGED_MEMORY_INTERFACE=1 -DVX_CFG_NUM_CLUSTERS=1 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_NUM_WARPS=8",
+        "kernel.vxbin",
+        "kernel.dump"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_commit": "7fe19369587c087f902c3e2bc2add612aa910a95",
+  "target_lock_hash": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+  "toolchain_files": {
+    "libc64/include/stdio.h": "36dda63d91161ecdd42755393bc7ff827dbfe82e512b630d2f2386c1acb8dbfa",
+    "libc64/lib/libc.a": "7eb0e3b5bdc7397b6fa4d93637b29379d01107111148e8f0372a5c999e359a94",
+    "libc64/lib/libm.a": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+    "libcrt64/lib/baremetal/libclang_rt.builtins-riscv64.a": "3879b774af20a252d708fb4486eb8ef7acd567ddc900d54ef866858cad436f16",
+    "llvm-vortex/bin/clang": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/clang++": "92f2fbf93bb013f414871b9dde08174f42832b169389f59cd373451d373cf3cf",
+    "llvm-vortex/bin/llvm-objcopy": "31fab24ae51dc48a17e6a899001fc3238e2736831f0f87c6b833411df36e73ac",
+    "llvm-vortex/bin/llvm-objdump": "b7fd1a8c8d365ffb4fa28316e9cdd9d635b0a5ac1934a04f4ea0da80f03de449",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc": "1d45ae00898529ef4781942ffa2ac403abc2fe2dc559b4eb01014d170d52e408",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-gcc-ar": "afc1c8f4f9255aacf3b644d227f1a76b5712f1ad34f785fe33957f22a59f9f54",
+    "riscv64-gnu-toolchain/bin/riscv64-unknown-elf-objdump": "9287eaec3b3dc0393f793e62834c897b6d08f2b9a032260397dc0c8f42dccf5e"
+  },
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "device compilation; no execution"
+}

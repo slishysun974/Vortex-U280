@@ -1,0 +1,9 @@
+{
+  "run_id": "iris-board-perf-20261123-v2",
+  "status": "PASS",
+  "exit_code": 0,
+  "ssh_exit_code": 0,
+  "board_execution": "PASS",
+  "started_at": "2026-11-23T20:48:09.1811585+08:00",
+  "finished_at": "2026-11-23T20:49:01.6868709+08:00"
+}

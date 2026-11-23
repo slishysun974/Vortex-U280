@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "scope": "Public snapshot replay and runner checks",
+  "checks": {
+    "windows": {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": 283,
+      "skipped": 33,
+      "elapsed_seconds": 74.831,
+      "output": "Ran 316 tests in 74.831s\n\nOK (skipped=33)",
+      "log_sha256": "5c5e13844de07778b0421d68693aa3c5b7973f49c5e7694a1171dbbdc01e1eae"
+    },
+    "wsl": {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": 293,
+      "skipped": 23,
+      "elapsed_seconds": 43.033,
+      "output": "Ran 316 tests in 43.033s\n\nOK (skipped=23)",
+      "log_sha256": "d99db2622b3d9fdb4b2bfd3416dec616f7bf8564a8b6266f93aae94fa54b5d5e"
+    },
+    "regenerate": {
+      "argv": [
+        "python",
+        "-B",
+        "experiments/iris-u280-perf/corpus.py",
+        "<fresh-output>"
+      ],
+      "exit_code": 0,
+      "output": "150 out-of-fold rows; 65533 distinct synthetic vectors; 217 launches; freeze bab8e82ea2b1f23c06359f28e2dd60ee4f8a31ee80b50c1d0a620f0adc3efe96",
+      "manifest_sha256": "bab8e82ea2b1f23c06359f28e2dd60ee4f8a31ee80b50c1d0a620f0adc3efe96"
+    },
+    "replay": {
+      "argv": [
+        "python",
+        "-B",
+        "experiments/iris-u280-perf/comparison.py",
+        "results/iris-perf-freeze-20261123-v1/corpus",
+        "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt",
+        "results/iris-perf-cpu-20261123-v1",
+        "--output",
+        "<fresh-output>"
+      ],
+      "exit_code": 0,
+      "byte_identical": true,
+      "sha256": "8ab29ccc601d8071a077102bca25aea468b2569fe7de7be17c5a4a407830d8f0"
+    }
+  }
+}

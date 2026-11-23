@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "compiler",
+      "argv": [
+        "g++",
+        "--version"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1",
+      "started_at": "2026-11-23T12:49:36.251001+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_compiler.log",
+      "finished_at": "2026-11-23T12:49:36.328026+00:00",
+      "elapsed_seconds": 0.049,
+      "log_sha256": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d"
+    },
+    {
+      "label": "cpu_model",
+      "argv": [
+        "lscpu"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1",
+      "started_at": "2026-11-23T12:49:36.396168+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_cpu_model.log",
+      "finished_at": "2026-11-23T12:49:36.463188+00:00",
+      "elapsed_seconds": 0.042,
+      "log_sha256": "3f077da25cb0f03bf1dcadb024469c7ddb03b56a124c07c33586e00542897807"
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "g++",
+        "-O3",
+        "-march=native",
+        "-std=c++17",
+        "-fno-lto",
+        "-fopt-info-vec-optimized",
+        "/mnt/d/Vortex-U280/experiments/iris-u280-perf/cpu_kernel.cpp",
+        "/mnt/d/Vortex-U280/experiments/iris-u280-perf/cpu_bench.cpp",
+        "-o",
+        "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1/benchmark"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1",
+      "started_at": "2026-11-23T12:49:36.529017+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_compile.log",
+      "finished_at": "2026-11-23T12:49:39.146030+00:00",
+      "elapsed_seconds": 2.588,
+      "log_sha256": "91af32861861cbc438da7ed56d25ed67d0b66447bbca1e191d793f1d43d3346d"
+    },
+    {
+      "label": "native_run",
+      "argv": [
+        "taskset",
+        "-c",
+        "0",
+        "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1/benchmark",
+        "/mnt/d/Vortex-U280/results/iris-perf-freeze-20261123-v1/corpus",
+        "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1/schedule.txt"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-perf-cpu-20261123-v1",
+      "started_at": "2026-11-23T12:49:39.215744+00:00",
+      "timeout_seconds": 120,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/04_native_run.log",
+      "finished_at": "2026-11-23T12:49:39.764362+00:00",
+      "elapsed_seconds": 0.525,
+      "log_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c"
+    }
+  ],
+  "started_at": "2026-11-23T12:49:35.590541+00:00",
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/iris-u280-perf/cpu.py",
+    "results/iris-perf-freeze-20261123-v1/corpus",
+    "results/iris-perf-cpu-20261123-v1"
+  ],
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "cpu_model": "Intel(R) Core(TM) Ultra 7 255H",
+  "kernel": "6.6.114.1-microsoft-standard-WSL2",
+  "logical_cpu": 0,
+  "threads": 1,
+  "groups_ns": {
+    "45": {
+      "median": 433.0,
+      "p95": 606,
+      "minimum": 304,
+      "maximum": 621
+    },
+    "150": {
+      "median": 916.5,
+      "p95": 1613,
+      "minimum": 855,
+      "maximum": 1732
+    },
+    "1024": {
+      "median": 5575.5,
+      "p95": 9128,
+      "minimum": 5484,
+      "maximum": 76909
+    },
+    "4096": {
+      "median": 22080.0,
+      "p95": 34887,
+      "minimum": 21629,
+      "maximum": 43759
+    },
+    "16381": {
+      "median": 105884.0,
+      "p95": 143103,
+      "minimum": 86677,
+      "maximum": 196778
+    },
+    "65533": {
+      "median": 364687.5,
+      "p95": 714905,
+      "minimum": 342039,
+      "maximum": 758700
+    }
+  },
+  "launches": 217,
+  "timed": 180,
+  "corpus_sha256": "bab8e82ea2b1f23c06359f28e2dd60ee4f8a31ee80b50c1d0a620f0adc3efe96",
+  "samples_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c",
+  "binary_sha256": "ae26f35f82f03af3cf543fefae23e3144548db8898467f3a4043a8dd7f7374bf",
+  "source_sha256": {
+    "cpu_kernel.cpp": "aa00c9c0945e5d88b8dec9069c4132eeb3446ffc35bbcf2032a05c613b0ced50",
+    "cpu_bench.cpp": "0d46a6288aa217701ba9b3bb502a914de124330a87d6339983912bd1fe9d429e"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-23T12:49:39.879422+00:00"
+}

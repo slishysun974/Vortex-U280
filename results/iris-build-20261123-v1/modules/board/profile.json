@@ -1,0 +1,30 @@
+{
+  "schema_version": "ptx-vx-profile-v1",
+  "profile": "ptx-vx-p0-v0.2-draft",
+  "parent_design": "ptx-vx-p0-v0.1-draft",
+  "status": "draft",
+  "frozen": false,
+  "source": {"version": "7.0", "target": "sm_70", "address_size": 64},
+  "instruction_forms": [
+    "mov.u32", "mov.u64", "ld.param.u32", "ld.param.u64",
+    "add.u32", "sub.u32", "mul.lo.u32", "mul.wide.u32", "add.u64",
+    "cvta.to.global.u64", "setp.lt.u32", "setp.ge.u32", "setp.eq.u32",
+    "selp.u32", "ld.global.u32", "st.global.u32", "ret"
+  ],
+  "register_types": ["pred", "b32", "b64"],
+  "parameter_types": {"u32": "scalar", "u64": "global_device_pointer"},
+  "special_registers": ["%tid.x", "%ntid.x", "%ctaid.x", "%nctaid.x"],
+  "grammar_restrictions": [
+    "one entry; headers in version/target/address_size order",
+    "register declarations precede instructions; no nested scopes",
+    "whole scalar ld.param only; optional explicit offset zero",
+    "predicated ld.param and ret rejected; unconditional ret must be last",
+    "decimal/hex/octal/binary 64-bit integer literals, optional U and unary sign; no expressions",
+    "source up to 1 MiB, total registers up to 4096, instructions up to 65536",
+    "special registers only as mov.u32 source",
+    "conservative initializedness under identical versioned predicate or both polarities",
+    "global pointer provenance from u64 parameters through mov/cvta and pointer+integer add",
+    "all active memory accesses must be aligned and within live allocations; no memory sandbox"
+  ],
+  "acceptance": {"frontend": "see immutable run evidence", "simx": "NOT_RUN", "rtlsim": "NOT_RUN", "u280": "NOT_RUN", "independent": "NOT_RUN"}
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "freeze",
+  "run_id": "iris-freeze-20261123-v1",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "freeze",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/iris-u280/freeze.py",
+        "/mnt/d/Vortex-U280/results/iris-freeze-20261123-v1/corpus"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-freeze-20261123-v1",
+      "started_at": "2026-11-23T12:21:09.259962+00:00",
+      "timeout_seconds": 60,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_freeze.log",
+      "finished_at": "2026-11-23T12:21:10.546351+00:00",
+      "elapsed_seconds": 1.274,
+      "log_sha256": "bd2512dab0031ef09df2eb0c1ab75a6c4cc405500bade94c71fa58c1b20d090b"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/iris-u280/run.py",
+    "freeze",
+    "20261123-v1"
+  ],
+  "started_at": "2026-11-23T12:21:09.257584+00:00",
+  "manifest_sha256": "34d9c44e029649b5a2306235c7fef6765beea0d02a4e7b290a85917104deaeb2",
+  "oracle_sha256": "cedf30090945a928f88c6876c3cac6837b157a062ceac46f8f06aa3e37d3938c",
+  "exit_code": 0,
+  "finished_at": "2026-11-23T12:21:10.596277+00:00"
+}

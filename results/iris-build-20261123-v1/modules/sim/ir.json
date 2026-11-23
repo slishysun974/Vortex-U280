@@ -1,0 +1,3539 @@
+{
+  "schema_version": "ptx-vx-ir-v1",
+  "compiler_id": "ptx-vx-frontend-v1.2",
+  "profile": "ptx-vx-p0-v0.2-draft",
+  "abi_version": "ptx-vx-args-v1",
+  "source_file": "source.ptx",
+  "source_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d",
+  "source_ptx_version": "7.0",
+  "source_target": "sm_70",
+  "source_address_bits": 64,
+  "entry": "iris_nearest_centroid_u32",
+  "params": [
+    {
+      "name": "x",
+      "type": "u64",
+      "kind": "pointer",
+      "space": "global",
+      "size": 8,
+      "align": 8,
+      "offset": 0
+    },
+    {
+      "name": "sums",
+      "type": "u64",
+      "kind": "pointer",
+      "space": "global",
+      "size": 8,
+      "align": 8,
+      "offset": 8
+    },
+    {
+      "name": "out",
+      "type": "u64",
+      "kind": "pointer",
+      "space": "global",
+      "size": 8,
+      "align": 8,
+      "offset": 16
+    },
+    {
+      "name": "n",
+      "type": "u32",
+      "kind": "scalar",
+      "space": null,
+      "size": 4,
+      "align": 4,
+      "offset": 24
+    }
+  ],
+  "params_align": 8,
+  "params_size": 32,
+  "registers": {
+    "%xptr": {
+      "type": "b64",
+      "bit_width": 64,
+      "c_name": "v0",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 9,
+        "column": 15
+      }
+    },
+    "%model": {
+      "type": "b64",
+      "bit_width": 64,
+      "c_name": "v1",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 9,
+        "column": 22
+      }
+    },
+    "%dst": {
+      "type": "b64",
+      "bit_width": 64,
+      "c_name": "v2",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 9,
+        "column": 30
+      }
+    },
+    "%offset": {
+      "type": "b64",
+      "bit_width": 64,
+      "c_name": "v3",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 9,
+        "column": 36
+      }
+    },
+    "%blockid": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v4",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 10,
+        "column": 15
+      }
+    },
+    "%blocksize": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v5",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 10,
+        "column": 25
+      }
+    },
+    "%lane": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v6",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 10,
+        "column": 37
+      }
+    },
+    "%row": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v7",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 10,
+        "column": 44
+      }
+    },
+    "%count": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v8",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 10,
+        "column": 50
+      }
+    },
+    "%scaled0": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v9",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 15
+      }
+    },
+    "%scaled1": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v10",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 15
+      }
+    },
+    "%scaled2": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v11",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 15
+      }
+    },
+    "%scaled3": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v12",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 15
+      }
+    },
+    "%d0": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v13",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 27
+      }
+    },
+    "%d1": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v14",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 27
+      }
+    },
+    "%d2": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v15",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 27
+      }
+    },
+    "%s": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v16",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 34
+      }
+    },
+    "%forward": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v17",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 38
+      }
+    },
+    "%reverse": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v18",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 48
+      }
+    },
+    "%delta": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v19",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 58
+      }
+    },
+    "%square": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v20",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 11,
+        "column": 66
+      }
+    },
+    "%best": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v21",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 12,
+        "column": 15
+      }
+    },
+    "%winner": {
+      "type": "b32",
+      "bit_width": 32,
+      "c_name": "v22",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 12,
+        "column": 22
+      }
+    },
+    "%active": {
+      "type": "pred",
+      "bit_width": 1,
+      "c_name": "v23",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 13,
+        "column": 16
+      }
+    },
+    "%ge": {
+      "type": "pred",
+      "bit_width": 1,
+      "c_name": "v24",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 13,
+        "column": 25
+      }
+    },
+    "%better": {
+      "type": "pred",
+      "bit_width": 1,
+      "c_name": "v25",
+      "source_location": {
+        "file": "source.ptx",
+        "line": 13,
+        "column": 30
+      }
+    }
+  },
+  "instructions": [
+    {
+      "opcode": "ld.param.u64",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%xptr",
+          "type": "b64"
+        },
+        {
+          "kind": "parameter",
+          "name": "x",
+          "offset": 0,
+          "type": "u64"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 15,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.param.u64",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%model",
+          "type": "b64"
+        },
+        {
+          "kind": "parameter",
+          "name": "sums",
+          "offset": 8,
+          "type": "u64"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 16,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.param.u64",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%dst",
+          "type": "b64"
+        },
+        {
+          "kind": "parameter",
+          "name": "out",
+          "offset": 16,
+          "type": "u64"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 17,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.param.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%count",
+          "type": "b32"
+        },
+        {
+          "kind": "parameter",
+          "name": "n",
+          "offset": 24,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 18,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%blockid",
+          "type": "b32"
+        },
+        {
+          "kind": "special",
+          "name": "%ctaid.x",
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 19,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%blocksize",
+          "type": "b32"
+        },
+        {
+          "kind": "special",
+          "name": "%ntid.x",
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 20,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%lane",
+          "type": "b32"
+        },
+        {
+          "kind": "special",
+          "name": "%tid.x",
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 21,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%row",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%blockid",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%blocksize",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 22,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%row",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%row",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%lane",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 23,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.lt.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%active",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%row",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%count",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 24,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.wide.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%offset",
+          "type": "b64"
+        },
+        {
+          "kind": "register",
+          "name": "%row",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 16,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 25,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u64",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%xptr",
+          "type": "b64"
+        },
+        {
+          "kind": "register",
+          "name": "%xptr",
+          "type": "b64"
+        },
+        {
+          "kind": "register",
+          "name": "%offset",
+          "type": "b64"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 26,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u64",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%dst",
+          "type": "b64"
+        },
+        {
+          "kind": "register",
+          "name": "%dst",
+          "type": "b64"
+        },
+        {
+          "kind": "register",
+          "name": "%offset",
+          "type": "b64"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 27,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 29,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%xptr",
+          "offset": 0,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 30,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 35,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 31,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 32,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%xptr",
+          "offset": 4,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 33,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 35,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 34,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 35,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%xptr",
+          "offset": 8,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 36,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 35,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 37,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 38,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%xptr",
+          "offset": 12,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 39,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 35,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 40,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 41,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 44,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 0,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 45,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 46,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 47,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 48,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 49,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 50,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 51,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 4,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 52,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 53,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 54,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 55,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 56,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 57,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 58,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 8,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 59,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 60,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 61,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 62,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 63,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 64,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 65,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 12,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 66,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 67,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 68,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 69,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 70,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 71,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 72,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 75,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 16,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 76,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 77,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 78,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 79,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 80,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 81,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 82,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 20,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 83,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 84,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 85,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 86,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 87,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 88,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 89,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 24,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 90,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 91,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 92,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 93,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 94,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 95,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 96,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 28,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 97,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 98,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 99,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 100,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 101,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 102,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 103,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 106,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 32,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 107,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 108,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 109,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled0",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 110,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 111,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 112,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 113,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 36,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 114,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 115,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 116,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled1",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 117,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 118,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 119,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 120,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 40,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 121,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 122,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 123,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled2",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 124,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 125,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 126,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 127,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ld.global.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "address",
+          "name": "%model",
+          "offset": 44,
+          "space": "global",
+          "type": "u64"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 128,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.ge.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 129,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 130,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "sub.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%s",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%scaled3",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 131,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%forward",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%reverse",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%ge",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 132,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mul.lo.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%delta",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 133,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "add.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%square",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 134,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "mov.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 0,
+          "type": "u32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 136,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.lt.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%better",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 137,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%best",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%better",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 138,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 1,
+          "type": "u32"
+        },
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%better",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 139,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "setp.lt.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%better",
+          "type": "pred"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%best",
+          "type": "b32"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 140,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "selp.u32",
+      "operands": [
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        },
+        {
+          "kind": "immediate",
+          "value": 2,
+          "type": "u32"
+        },
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        },
+        {
+          "kind": "register",
+          "name": "%better",
+          "type": "pred"
+        }
+      ],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 141,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "st.global.u32",
+      "operands": [
+        {
+          "kind": "address",
+          "name": "%dst",
+          "offset": 0,
+          "space": "global",
+          "type": "u64"
+        },
+        {
+          "kind": "register",
+          "name": "%d0",
+          "type": "b32"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 142,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "st.global.u32",
+      "operands": [
+        {
+          "kind": "address",
+          "name": "%dst",
+          "offset": 4,
+          "space": "global",
+          "type": "u64"
+        },
+        {
+          "kind": "register",
+          "name": "%d1",
+          "type": "b32"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 143,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "st.global.u32",
+      "operands": [
+        {
+          "kind": "address",
+          "name": "%dst",
+          "offset": 8,
+          "space": "global",
+          "type": "u64"
+        },
+        {
+          "kind": "register",
+          "name": "%d2",
+          "type": "b32"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 144,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "st.global.u32",
+      "operands": [
+        {
+          "kind": "address",
+          "name": "%dst",
+          "offset": 12,
+          "space": "global",
+          "type": "u64"
+        },
+        {
+          "kind": "register",
+          "name": "%winner",
+          "type": "b32"
+        }
+      ],
+      "predicate": {
+        "name": "%active",
+        "negated": false
+      },
+      "source_location": {
+        "file": "source.ptx",
+        "line": 145,
+        "column": 5
+      }
+    },
+    {
+      "opcode": "ret",
+      "operands": [],
+      "predicate": null,
+      "source_location": {
+        "file": "source.ptx",
+        "line": 146,
+        "column": 5
+      }
+    }
+  ],
+  "logical_launch_model": "ptx-1d-v1",
+  "static_shared_bytes": 0,
+  "required_features": [
+    "rv64",
+    "little-endian",
+    "logical-1d-threads",
+    "predicated-memory"
+  ],
+  "memory_assumptions": [
+    "live global buffers",
+    "u32 access alignment 4",
+    "all active accesses in declared allocation",
+    "no data races"
+  ],
+  "status": "FRONTEND_ONLY",
+  "device_image": "NOT_RUN"
+}

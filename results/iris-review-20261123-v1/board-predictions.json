@@ -1,0 +1,1037 @@
+[
+  {
+    "source_line": 1,
+    "features_mm": [
+      51,
+      35,
+      14,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 16,
+    "words": [
+      2397,
+      1309034,
+      2819202,
+      0
+    ],
+    "expected": [
+      2397,
+      1309034,
+      2819202,
+      0
+    ]
+  },
+  {
+    "source_line": 4,
+    "features_mm": [
+      46,
+      31,
+      15,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 32,
+    "words": [
+      33897,
+      1331994,
+      2896062,
+      0
+    ],
+    "expected": [
+      33897,
+      1331994,
+      2896062,
+      0
+    ]
+  },
+  {
+    "source_line": 8,
+    "features_mm": [
+      50,
+      34,
+      15,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 48,
+    "words": [
+      542,
+      1247749,
+      2744057,
+      0
+    ],
+    "expected": [
+      542,
+      1247749,
+      2744057,
+      0
+    ]
+  },
+  {
+    "source_line": 11,
+    "features_mm": [
+      54,
+      37,
+      15,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 64,
+    "words": [
+      28437,
+      1224754,
+      2653302,
+      0
+    ],
+    "expected": [
+      28437,
+      1224754,
+      2653302,
+      0
+    ]
+  },
+  {
+    "source_line": 14,
+    "features_mm": [
+      43,
+      30,
+      11,
+      1
+    ],
+    "true_class": 0,
+    "output_byte_offset": 80,
+    "words": [
+      102182,
+      1757629,
+      3511887,
+      0
+    ],
+    "expected": [
+      102182,
+      1757629,
+      3511887,
+      0
+    ]
+  },
+  {
+    "source_line": 18,
+    "features_mm": [
+      51,
+      35,
+      14,
+      3
+    ],
+    "true_class": 0,
+    "output_byte_offset": 96,
+    "words": [
+      2502,
+      1282259,
+      2775487,
+      0
+    ],
+    "expected": [
+      2502,
+      1282259,
+      2775487,
+      0
+    ]
+  },
+  {
+    "source_line": 21,
+    "features_mm": [
+      54,
+      34,
+      17,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 112,
+    "words": [
+      26162,
+      1041249,
+      2415897,
+      0
+    ],
+    "expected": [
+      26162,
+      1041249,
+      2415897,
+      0
+    ]
+  },
+  {
+    "source_line": 24,
+    "features_mm": [
+      51,
+      33,
+      17,
+      5
+    ],
+    "true_class": 0,
+    "output_byte_offset": 128,
+    "words": [
+      17937,
+      1009014,
+      2379812,
+      0
+    ],
+    "expected": [
+      17937,
+      1009014,
+      2379812,
+      0
+    ]
+  },
+  {
+    "source_line": 28,
+    "features_mm": [
+      52,
+      35,
+      15,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 144,
+    "words": [
+      5617,
+      1219994,
+      2683962,
+      0
+    ],
+    "expected": [
+      5617,
+      1219994,
+      2683962,
+      0
+    ]
+  },
+  {
+    "source_line": 31,
+    "features_mm": [
+      48,
+      31,
+      16,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 160,
+    "words": [
+      20982,
+      1203019,
+      2706257,
+      0
+    ],
+    "expected": [
+      20982,
+      1203019,
+      2706257,
+      0
+    ]
+  },
+  {
+    "source_line": 34,
+    "features_mm": [
+      55,
+      42,
+      14,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 176,
+    "words": [
+      103722,
+      1418549,
+      2848637,
+      0
+    ],
+    "expected": [
+      103722,
+      1418549,
+      2848637,
+      0
+    ]
+  },
+  {
+    "source_line": 38,
+    "features_mm": [
+      49,
+      36,
+      14,
+      1
+    ],
+    "true_class": 0,
+    "output_byte_offset": 192,
+    "words": [
+      8207,
+      1404094,
+      2957382,
+      0
+    ],
+    "expected": [
+      8207,
+      1404094,
+      2957382,
+      0
+    ]
+  },
+  {
+    "source_line": 41,
+    "features_mm": [
+      50,
+      35,
+      13,
+      3
+    ],
+    "true_class": 0,
+    "output_byte_offset": 208,
+    "words": [
+      4182,
+      1376199,
+      2915627,
+      0
+    ],
+    "expected": [
+      4182,
+      1376199,
+      2915627,
+      0
+    ]
+  },
+  {
+    "source_line": 44,
+    "features_mm": [
+      50,
+      35,
+      16,
+      6
+    ],
+    "true_class": 0,
+    "output_byte_offset": 224,
+    "words": [
+      18462,
+      1104459,
+      2498357,
+      0
+    ],
+    "expected": [
+      18462,
+      1104459,
+      2498357,
+      0
+    ]
+  },
+  {
+    "source_line": 48,
+    "features_mm": [
+      46,
+      32,
+      14,
+      2
+    ],
+    "true_class": 0,
+    "output_byte_offset": 240,
+    "words": [
+      27387,
+      1408714,
+      3001272,
+      0
+    ],
+    "expected": [
+      27387,
+      1408714,
+      3001272,
+      0
+    ]
+  },
+  {
+    "source_line": 51,
+    "features_mm": [
+      70,
+      32,
+      47,
+      14
+    ],
+    "true_class": 1,
+    "output_byte_offset": 256,
+    "words": [
+      1941222,
+      169609,
+      165957,
+      2
+    ],
+    "expected": [
+      1941222,
+      169609,
+      165957,
+      2
+    ]
+  },
+  {
+    "source_line": 54,
+    "features_mm": [
+      55,
+      23,
+      40,
+      13
+    ],
+    "true_class": 1,
+    "output_byte_offset": 272,
+    "words": [
+      1111302,
+      69859,
+      551307,
+      1
+    ],
+    "expected": [
+      1111302,
+      69859,
+      551307,
+      1
+    ]
+  },
+  {
+    "source_line": 58,
+    "features_mm": [
+      49,
+      24,
+      33,
+      10
+    ],
+    "true_class": 1,
+    "output_byte_offset": 288,
+    "words": [
+      614757,
+      290744,
+      1128702,
+      1
+    ],
+    "expected": [
+      614757,
+      290744,
+      1128702,
+      1
+    ]
+  },
+  {
+    "source_line": 61,
+    "features_mm": [
+      50,
+      20,
+      35,
+      10
+    ],
+    "true_class": 1,
+    "output_byte_offset": 304,
+    "words": [
+      828502,
+      284689,
+      1057197,
+      1
+    ],
+    "expected": [
+      828502,
+      284689,
+      1057197,
+      1
+    ]
+  },
+  {
+    "source_line": 64,
+    "features_mm": [
+      61,
+      29,
+      47,
+      14
+    ],
+    "true_class": 1,
+    "output_byte_offset": 320,
+    "words": [
+      1628952,
+      27229,
+      164487,
+      1
+    ],
+    "expected": [
+      1628952,
+      27229,
+      164487,
+      1
+    ]
+  },
+  {
+    "source_line": 68,
+    "features_mm": [
+      58,
+      27,
+      41,
+      10
+    ],
+    "true_class": 1,
+    "output_byte_offset": 336,
+    "words": [
+      1064717,
+      23134,
+      467622,
+      1
+    ],
+    "expected": [
+      1064717,
+      23134,
+      467622,
+      1
+    ]
+  },
+  {
+    "source_line": 71,
+    "features_mm": [
+      59,
+      32,
+      48,
+      18
+    ],
+    "true_class": 1,
+    "output_byte_offset": 352,
+    "words": [
+      1766082,
+      80289,
+      138237,
+      1
+    ],
+    "expected": [
+      1766082,
+      80289,
+      138237,
+      1
+    ]
+  },
+  {
+    "source_line": 74,
+    "features_mm": [
+      61,
+      28,
+      47,
+      12
+    ],
+    "true_class": 1,
+    "output_byte_offset": 368,
+    "words": [
+      1591397,
+      28664,
+      202882,
+      1
+    ],
+    "expected": [
+      1591397,
+      28664,
+      202882,
+      1
+    ]
+  },
+  {
+    "source_line": 78,
+    "features_mm": [
+      67,
+      30,
+      50,
+      17
+    ],
+    "true_class": 1,
+    "output_byte_offset": 384,
+    "words": [
+      2166867,
+      151094,
+      51962,
+      2
+    ],
+    "expected": [
+      2166867,
+      151094,
+      51962,
+      2
+    ]
+  },
+  {
+    "source_line": 81,
+    "features_mm": [
+      55,
+      24,
+      38,
+      11
+    ],
+    "true_class": 1,
+    "output_byte_offset": 400,
+    "words": [
+      918627,
+      82634,
+      658022,
+      1
+    ],
+    "expected": [
+      918627,
+      82634,
+      658022,
+      1
+    ]
+  },
+  {
+    "source_line": 84,
+    "features_mm": [
+      60,
+      27,
+      51,
+      16
+    ],
+    "true_class": 1,
+    "output_byte_offset": 416,
+    "words": [
+      2032677,
+      97614,
+      95502,
+      2
+    ],
+    "expected": [
+      2032677,
+      97614,
+      95502,
+      2
+    ]
+  },
+  {
+    "source_line": 88,
+    "features_mm": [
+      63,
+      23,
+      44,
+      13
+    ],
+    "true_class": 1,
+    "output_byte_offset": 432,
+    "words": [
+      1554542,
+      48859,
+      286987,
+      1
+    ],
+    "expected": [
+      1554542,
+      48859,
+      286987,
+      1
+    ]
+  },
+  {
+    "source_line": 91,
+    "features_mm": [
+      55,
+      26,
+      44,
+      12
+    ],
+    "true_class": 1,
+    "output_byte_offset": 448,
+    "words": [
+      1283502,
+      39409,
+      402277,
+      1
+    ],
+    "expected": [
+      1283502,
+      39409,
+      402277,
+      1
+    ]
+  },
+  {
+    "source_line": 94,
+    "features_mm": [
+      50,
+      23,
+      33,
+      10
+    ],
+    "true_class": 1,
+    "output_byte_offset": 464,
+    "words": [
+      639677,
+      277094,
+      1103502,
+      1
+    ],
+    "expected": [
+      639677,
+      277094,
+      1103502,
+      1
+    ]
+  },
+  {
+    "source_line": 98,
+    "features_mm": [
+      62,
+      29,
+      43,
+      13
+    ],
+    "true_class": 1,
+    "output_byte_offset": 480,
+    "words": [
+      1331942,
+      7139,
+      272987,
+      1
+    ],
+    "expected": [
+      1331942,
+      7139,
+      272987,
+      1
+    ]
+  },
+  {
+    "source_line": 101,
+    "features_mm": [
+      63,
+      33,
+      60,
+      25
+    ],
+    "true_class": 2,
+    "output_byte_offset": 496,
+    "words": [
+      3353682,
+      577779,
+      76707,
+      2
+    ],
+    "expected": [
+      3353682,
+      577779,
+      76707,
+      2
+    ]
+  },
+  {
+    "source_line": 104,
+    "features_mm": [
+      63,
+      29,
+      56,
+      18
+    ],
+    "true_class": 2,
+    "output_byte_offset": 512,
+    "words": [
+      2633697,
+      260714,
+      16822,
+      2
+    ],
+    "expected": [
+      2633697,
+      260714,
+      16822,
+      2
+    ]
+  },
+  {
+    "source_line": 108,
+    "features_mm": [
+      73,
+      29,
+      63,
+      18
+    ],
+    "true_class": 2,
+    "output_byte_offset": 528,
+    "words": [
+      3842632,
+      752429,
+      141247,
+      2
+    ],
+    "expected": [
+      3842632,
+      752429,
+      141247,
+      2
+    ]
+  },
+  {
+    "source_line": 111,
+    "features_mm": [
+      65,
+      32,
+      51,
+      20
+    ],
+    "true_class": 2,
+    "output_byte_offset": 544,
+    "words": [
+      2278797,
+      191064,
+      32642,
+      2
+    ],
+    "expected": [
+      2278797,
+      191064,
+      32642,
+      2
+    ]
+  },
+  {
+    "source_line": 114,
+    "features_mm": [
+      57,
+      25,
+      50,
+      20
+    ],
+    "true_class": 2,
+    "output_byte_offset": 560,
+    "words": [
+      2075657,
+      143394,
+      155142,
+      1
+    ],
+    "expected": [
+      2075657,
+      143394,
+      155142,
+      1
+    ]
+  },
+  {
+    "source_line": 118,
+    "features_mm": [
+      77,
+      38,
+      67,
+      22
+    ],
+    "true_class": 2,
+    "output_byte_offset": 576,
+    "words": [
+      4735937,
+      1302104,
+      410642,
+      2
+    ],
+    "expected": [
+      4735937,
+      1302104,
+      410642,
+      2
+    ]
+  },
+  {
+    "source_line": 121,
+    "features_mm": [
+      69,
+      32,
+      57,
+      23
+    ],
+    "true_class": 2,
+    "output_byte_offset": 592,
+    "words": [
+      3163702,
+      489369,
+      32187,
+      2
+    ],
+    "expected": [
+      3163702,
+      489369,
+      32187,
+      2
+    ]
+  },
+  {
+    "source_line": 124,
+    "features_mm": [
+      63,
+      27,
+      49,
+      18
+    ],
+    "true_class": 2,
+    "output_byte_offset": 608,
+    "words": [
+      2014372,
+      91069,
+      74327,
+      2
+    ],
+    "expected": [
+      2014372,
+      91069,
+      74327,
+      2
+    ]
+  },
+  {
+    "source_line": 128,
+    "features_mm": [
+      61,
+      30,
+      49,
+      18
+    ],
+    "true_class": 2,
+    "output_byte_offset": 624,
+    "words": [
+      1913677,
+      82284,
+      85562,
+      1
+    ],
+    "expected": [
+      1913677,
+      82284,
+      85562,
+      1
+    ]
+  },
+  {
+    "source_line": 131,
+    "features_mm": [
+      74,
+      28,
+      61,
+      19
+    ],
+    "true_class": 2,
+    "output_byte_offset": 640,
+    "words": [
+      3721147,
+      702414,
+      125882,
+      2
+    ],
+    "expected": [
+      3721147,
+      702414,
+      125882,
+      2
+    ]
+  },
+  {
+    "source_line": 134,
+    "features_mm": [
+      63,
+      28,
+      51,
+      15
+    ],
+    "true_class": 2,
+    "output_byte_offset": 656,
+    "words": [
+      2068062,
+      103249,
+      71107,
+      2
+    ],
+    "expected": [
+      2068062,
+      103249,
+      71107,
+      2
+    ]
+  },
+  {
+    "source_line": 138,
+    "features_mm": [
+      64,
+      31,
+      55,
+      18
+    ],
+    "true_class": 2,
+    "output_byte_offset": 672,
+    "words": [
+      2545497,
+      246714,
+      13602,
+      2
+    ],
+    "expected": [
+      2545497,
+      246714,
+      13602,
+      2
+    ]
+  },
+  {
+    "source_line": 141,
+    "features_mm": [
+      67,
+      31,
+      56,
+      24
+    ],
+    "true_class": 2,
+    "output_byte_offset": 688,
+    "words": [
+      3031577,
+      431654,
+      21442,
+      2
+    ],
+    "expected": [
+      3031577,
+      431654,
+      21442,
+      2
+    ]
+  },
+  {
+    "source_line": 144,
+    "features_mm": [
+      68,
+      32,
+      59,
+      23
+    ],
+    "true_class": 2,
+    "output_byte_offset": 704,
+    "words": [
+      3331247,
+      543794,
+      38102,
+      2
+    ],
+    "expected": [
+      3331247,
+      543794,
+      38102,
+      2
+    ]
+  },
+  {
+    "source_line": 148,
+    "features_mm": [
+      65,
+      30,
+      52,
+      20
+    ],
+    "true_class": 2,
+    "output_byte_offset": 720,
+    "words": [
+      2385162,
+      199429,
+      15597,
+      2
+    ],
+    "expected": [
+      2385162,
+      199429,
+      15597,
+      2
+    ]
+  }
+]

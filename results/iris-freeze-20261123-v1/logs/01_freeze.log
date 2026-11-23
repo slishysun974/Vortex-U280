@@ -1,0 +1,2 @@
+150 rows; train 105, test 45; correct 40/45; confusion [[15, 0, 0], [0, 12, 3], [0, 2, 13]]
+9 cases; manifest SHA-256 34d9c44e029649b5a2306235c7fef6765beea0d02a4e7b290a85917104deaeb2

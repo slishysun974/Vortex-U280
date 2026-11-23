@@ -1,0 +1,493 @@
+{
+  "stage": "models",
+  "run_id": "iris-models-20261123-v1",
+  "status": "PASS",
+  "commands": [
+    {
+      "label": "simx",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/iris-u280/capture.py",
+        "--inputs",
+        "/mnt/d/Vortex-U280/results/iris-freeze-20261123-v1/corpus",
+        "--module",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/simx/binding.json",
+        "--backend",
+        "simx",
+        "--output",
+        "/mnt/d/Vortex-U280/results/iris-models-20261123-v1/simx"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-models-20261123-v1",
+      "started_at": "2026-11-23T12:23:06.058928+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/01_simx.log",
+      "finished_at": "2026-11-23T12:23:09.669656+00:00",
+      "elapsed_seconds": 3.583,
+      "log_sha256": "246aa6d82e99e3a390afcf3945c9e8002c120da881028babbcfb39acef0938e0"
+    },
+    {
+      "label": "rtlsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/iris-u280/capture.py",
+        "--inputs",
+        "/mnt/d/Vortex-U280/results/iris-freeze-20261123-v1/corpus",
+        "--module",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/rtlsim/binding.json",
+        "--backend",
+        "rtlsim",
+        "--output",
+        "/mnt/d/Vortex-U280/results/iris-models-20261123-v1/rtlsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-models-20261123-v1",
+      "started_at": "2026-11-23T12:23:11.890733+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/02_rtlsim.log",
+      "finished_at": "2026-11-23T12:23:15.559257+00:00",
+      "elapsed_seconds": 3.649,
+      "log_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998"
+    },
+    {
+      "label": "xrtsim",
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/mnt/d/Vortex-U280/experiments/iris-u280/capture.py",
+        "--inputs",
+        "/mnt/d/Vortex-U280/results/iris-freeze-20261123-v1/corpus",
+        "--module",
+        "/mnt/d/Vortex-U280/results/iris-build-20261123-v1/modules/sim",
+        "--lock",
+        "/mnt/d/Vortex-U280/configs/candidates/block32-v1/target_lock.json",
+        "--binding",
+        "/mnt/d/Vortex-U280/results/c-runtime-merge-20261111-v3/bindings/xrtsim/binding.json",
+        "--backend",
+        "xrtsim",
+        "--output",
+        "/mnt/d/Vortex-U280/results/iris-models-20261123-v1/xrtsim"
+      ],
+      "cwd": "/mnt/d/Vortex-U280/results/iris-models-20261123-v1",
+      "started_at": "2026-11-23T12:23:17.190513+00:00",
+      "timeout_seconds": 900,
+      "returncode": 0,
+      "timed_out": false,
+      "log": "logs/03_xrtsim.log",
+      "finished_at": "2026-11-23T12:23:21.510448+00:00",
+      "elapsed_seconds": 4.29,
+      "log_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998"
+    }
+  ],
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/iris-u280/run.py",
+    "models",
+    "20261123-v1",
+    "--frozen",
+    "results/iris-freeze-20261123-v1/corpus",
+    "--compiled",
+    "results/iris-build-20261123-v1"
+  ],
+  "started_at": "2026-11-23T12:23:05.275954+00:00",
+  "models": {
+    "simx": {
+      "status": "PASS",
+      "launches": 9,
+      "cases": [
+        {
+          "id": "test45",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8",
+          "tail_rows": 19
+        },
+        {
+          "id": "empty",
+          "status": "PASS",
+          "samples": 0,
+          "distance_words": 0,
+          "class_words": 0,
+          "output_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+          "tail_rows": 32
+        },
+        {
+          "id": "one",
+          "status": "PASS",
+          "samples": 1,
+          "distance_words": 3,
+          "class_words": 1,
+          "output_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601",
+          "tail_rows": 31
+        },
+        {
+          "id": "n31",
+          "status": "PASS",
+          "samples": 31,
+          "distance_words": 93,
+          "class_words": 31,
+          "output_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b",
+          "tail_rows": 1
+        },
+        {
+          "id": "n32",
+          "status": "PASS",
+          "samples": 32,
+          "distance_words": 96,
+          "class_words": 32,
+          "output_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f",
+          "tail_rows": 0
+        },
+        {
+          "id": "n33",
+          "status": "PASS",
+          "samples": 33,
+          "distance_words": 99,
+          "class_words": 33,
+          "output_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c",
+          "tail_rows": 31
+        },
+        {
+          "id": "permuted",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3",
+          "tail_rows": 19
+        },
+        {
+          "id": "ties",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be",
+          "tail_rows": 30
+        },
+        {
+          "id": "endpoints",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9",
+          "tail_rows": 30
+        }
+      ],
+      "negative_controls": [
+        {
+          "backend": "simx",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "D0",
+          "byte_offset": 16,
+          "expected": 2397,
+          "actual": 2396
+        },
+        {
+          "backend": "simx",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "class",
+          "byte_offset": 28,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "backend": "simx",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 45,
+          "sample": null,
+          "field": "tail",
+          "byte_offset": 736,
+          "expected": 3221356728,
+          "actual": 3221356729
+        }
+      ],
+      "capture_sha256": "868cb149d48297968c78b79501dbe7392e3e136dd1ce1af2d3d70ff72c349eeb",
+      "full_buffer_snapshots": 54
+    },
+    "rtlsim": {
+      "status": "PASS",
+      "launches": 9,
+      "cases": [
+        {
+          "id": "test45",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8",
+          "tail_rows": 19
+        },
+        {
+          "id": "empty",
+          "status": "PASS",
+          "samples": 0,
+          "distance_words": 0,
+          "class_words": 0,
+          "output_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+          "tail_rows": 32
+        },
+        {
+          "id": "one",
+          "status": "PASS",
+          "samples": 1,
+          "distance_words": 3,
+          "class_words": 1,
+          "output_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601",
+          "tail_rows": 31
+        },
+        {
+          "id": "n31",
+          "status": "PASS",
+          "samples": 31,
+          "distance_words": 93,
+          "class_words": 31,
+          "output_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b",
+          "tail_rows": 1
+        },
+        {
+          "id": "n32",
+          "status": "PASS",
+          "samples": 32,
+          "distance_words": 96,
+          "class_words": 32,
+          "output_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f",
+          "tail_rows": 0
+        },
+        {
+          "id": "n33",
+          "status": "PASS",
+          "samples": 33,
+          "distance_words": 99,
+          "class_words": 33,
+          "output_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c",
+          "tail_rows": 31
+        },
+        {
+          "id": "permuted",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3",
+          "tail_rows": 19
+        },
+        {
+          "id": "ties",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be",
+          "tail_rows": 30
+        },
+        {
+          "id": "endpoints",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9",
+          "tail_rows": 30
+        }
+      ],
+      "negative_controls": [
+        {
+          "backend": "rtlsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "D0",
+          "byte_offset": 16,
+          "expected": 2397,
+          "actual": 2396
+        },
+        {
+          "backend": "rtlsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "class",
+          "byte_offset": 28,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "backend": "rtlsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 45,
+          "sample": null,
+          "field": "tail",
+          "byte_offset": 736,
+          "expected": 3221356728,
+          "actual": 3221356729
+        }
+      ],
+      "capture_sha256": "8f55392dd64380fac9b015e70bbb751062e809022f1b43cc30de679cafdea6ea",
+      "full_buffer_snapshots": 54
+    },
+    "xrtsim": {
+      "status": "PASS",
+      "launches": 9,
+      "cases": [
+        {
+          "id": "test45",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8",
+          "tail_rows": 19
+        },
+        {
+          "id": "empty",
+          "status": "PASS",
+          "samples": 0,
+          "distance_words": 0,
+          "class_words": 0,
+          "output_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+          "tail_rows": 32
+        },
+        {
+          "id": "one",
+          "status": "PASS",
+          "samples": 1,
+          "distance_words": 3,
+          "class_words": 1,
+          "output_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601",
+          "tail_rows": 31
+        },
+        {
+          "id": "n31",
+          "status": "PASS",
+          "samples": 31,
+          "distance_words": 93,
+          "class_words": 31,
+          "output_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b",
+          "tail_rows": 1
+        },
+        {
+          "id": "n32",
+          "status": "PASS",
+          "samples": 32,
+          "distance_words": 96,
+          "class_words": 32,
+          "output_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f",
+          "tail_rows": 0
+        },
+        {
+          "id": "n33",
+          "status": "PASS",
+          "samples": 33,
+          "distance_words": 99,
+          "class_words": 33,
+          "output_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c",
+          "tail_rows": 31
+        },
+        {
+          "id": "permuted",
+          "status": "PASS",
+          "samples": 45,
+          "distance_words": 135,
+          "class_words": 45,
+          "output_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3",
+          "tail_rows": 19
+        },
+        {
+          "id": "ties",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be",
+          "tail_rows": 30
+        },
+        {
+          "id": "endpoints",
+          "status": "PASS",
+          "samples": 2,
+          "distance_words": 6,
+          "class_words": 2,
+          "output_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9",
+          "tail_rows": 30
+        }
+      ],
+      "negative_controls": [
+        {
+          "backend": "xrtsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "D0",
+          "byte_offset": 16,
+          "expected": 2397,
+          "actual": 2396
+        },
+        {
+          "backend": "xrtsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 0,
+          "sample": 1,
+          "field": "class",
+          "byte_offset": 28,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "backend": "xrtsim",
+          "case": "test45",
+          "role": "out",
+          "phase": "after",
+          "row": 45,
+          "sample": null,
+          "field": "tail",
+          "byte_offset": 736,
+          "expected": 3221356728,
+          "actual": 3221356729
+        }
+      ],
+      "capture_sha256": "dccdb40964d1a862ec6659c18590cab42b44bde3c40e8c534d74736015d314bd",
+      "full_buffer_snapshots": 54
+    }
+  },
+  "corpus_sha256": "34d9c44e029649b5a2306235c7fef6765beea0d02a4e7b290a85917104deaeb2",
+  "build_summary_sha256": "917882064f06f1f2f9bce900e49f7b5bcd3245a3410cc6c9496a25008b916225",
+  "exit_code": 0,
+  "finished_at": "2026-11-23T12:23:23.817698+00:00"
+}

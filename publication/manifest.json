@@ -1,5 +1,5 @@
 {
-  "base_commit": "2aad3a0e01cf1a28cd08df854982f5bf8b698807",
+  "base_commit": "00c940b207b0fe1a8a3fc2835b13ef7e3067da29",
   "date": "2026-11-23",
   "exclusions": [
     "server access files, credentials, SSH payloads and raw transport frames",
@@ -28,11 +28,11 @@
       "source_sha256": "9e03916721affbff19f9501b8cfc7b8a4b6e84bb533c92238952514aa1559829"
     },
     "README.md": {
-      "public_bytes": 5154,
-      "public_sha256": "719f79a0bf2b07f91306cdcc68ba5871be941c706372c8da2b5276d621291d1d",
+      "public_bytes": 5497,
+      "public_sha256": "0e43b5496d1b0cb604b911d2a57881b0fe0198889d2b8d2527aa941ef88cd9d0",
       "publication": "verbatim",
-      "source_bytes": 5154,
-      "source_sha256": "719f79a0bf2b07f91306cdcc68ba5871be941c706372c8da2b5276d621291d1d"
+      "source_bytes": 5497,
+      "source_sha256": "0e43b5496d1b0cb604b911d2a57881b0fe0198889d2b8d2527aa941ef88cd9d0"
     },
     "configs/acceptance/e-ptx15-v1/affine_u32/0034/x.bin": {
       "public_bytes": 68,
@@ -2043,12 +2043,26 @@
       "source_bytes": 4081,
       "source_sha256": "de45d3e7ac927d390be8fff136982baaf0545d2d2decb188dd6361ef5c28bf3a"
     },
-    "docs/IRIS_U280_PROJECT_PLAN.md": {
-      "public_bytes": 16726,
-      "public_sha256": "53e2fe718c771143cc72fa22d51a643169b51dca783915735bd8d3453a1b229f",
+    "docs/IRIS_U280_PERFORMANCE_20261123.md": {
+      "public_bytes": 9454,
+      "public_sha256": "fa62216242d796a14f47877d4b9dec3f8381966775b5ef0643bf3a084118077b",
       "publication": "verbatim",
-      "source_bytes": 16726,
-      "source_sha256": "53e2fe718c771143cc72fa22d51a643169b51dca783915735bd8d3453a1b229f"
+      "source_bytes": 9454,
+      "source_sha256": "fa62216242d796a14f47877d4b9dec3f8381966775b5ef0643bf3a084118077b"
+    },
+    "docs/IRIS_U280_PROJECT_PLAN.md": {
+      "public_bytes": 16888,
+      "public_sha256": "1b3b3d07c42828e0490ee94b3069b5eadcc59d883883cd147bdc4aad0a4e346e",
+      "publication": "verbatim",
+      "source_bytes": 16888,
+      "source_sha256": "1b3b3d07c42828e0490ee94b3069b5eadcc59d883883cd147bdc4aad0a4e346e"
+    },
+    "docs/IRIS_U280_RESULTS_20261123.md": {
+      "public_bytes": 8628,
+      "public_sha256": "22728d036c6045fa7a0223c20439f1132d1cc8bdfff6605894b2043e9d5cbb69",
+      "publication": "public adaptation",
+      "source_bytes": 8444,
+      "source_sha256": "ff4761045abb001f5b96e3d34b4279f27ea6257ff54cf61a7529b7c0e8298526"
     },
     "docs/LOCAL_ARCHIVE_INDEX.md": {
       "public_bytes": 69114,
@@ -2062,11 +2076,11 @@
       "source_sha256": "2c31f1b85b5a2aedb8526e15ef7415f612b5d178329623c7996b678885d1e466"
     },
     "docs/PROJECT_HANDOFF.md": {
-      "public_bytes": 68093,
-      "public_sha256": "fe57c189c896a63e8b99c38e49d617ba6a8e21c0fff1dff6b04cadd8f8e0ecda",
-      "publication": "public-copy",
-      "source_bytes": 68963,
-      "source_sha256": "407367e52eed0b9e5022be621ac9057c49c53cd677c2183718b5750467c540a5"
+      "public_bytes": 69058,
+      "public_sha256": "45b455b031c90a59538229523d5d544f400806aef709c0bbf9fecbace8a34742",
+      "publication": "public adaptation",
+      "source_bytes": 70729,
+      "source_sha256": "775b85838a9f97225e897549ce84b4b88d2f44c7387eb4f695bfb99fc597a484"
     },
     "docs/PROJECT_MIGRATION.md": {
       "public_bytes": 3010,
@@ -2076,11 +2090,11 @@
       "source_sha256": "556feaaa3edae2c49fbd1e00deb50b1c3269ea0423c2d3dc2ac21c41d7f50d31"
     },
     "docs/PROJECT_OVERVIEW.md": {
-      "public_bytes": 10234,
-      "public_sha256": "9ab5d554d620542ad27f02e7479938fb21c752ab96b6ed14136a4a5cdc03a7fa",
-      "publication": "public-copy",
-      "source_bytes": 10060,
-      "source_sha256": "9b3e493a1f4d8ca518e7519ab3f52b3a259cf5a4a8cff105d660d186f8e40f6f"
+      "public_bytes": 10464,
+      "public_sha256": "820327998da074f37c735d16e27c9ab1d4274e06c27f542d665f532b833f4652",
+      "publication": "public adaptation",
+      "source_bytes": 10290,
+      "source_sha256": "f44002a31a450a7775c5521c5f1102cedfdf5d0868258ee8006a21a973b983c1"
     },
     "docs/PROJECT_PROGRESS_REPORT_20261109.md": {
       "public_bytes": 8323,
@@ -2188,11 +2202,11 @@
       "source_sha256": "63018d720163f67d1e735df3d7e3d69435f0e17be3f93439edfe72ed690c5545"
     },
     "docs/PUBLICATION.md": {
-      "public_bytes": 4063,
-      "public_sha256": "3805d73490775ae4b96fcb32320163991c2d70c01b2655f18959fc6ef70c3da8",
-      "publication": "public-copy",
-      "source_bytes": 3186,
-      "source_sha256": "e1b64465bc0cd0b376fe4be5ea05d9f4d21c974d927140ac4a0f51ffd90e9ceb"
+      "public_bytes": 4528,
+      "public_sha256": "7644051bf861b311b340f28e8b02af18c6fa990e1fe2f44d23aff808ce4bb08c",
+      "publication": "public adaptation",
+      "source_bytes": 3772,
+      "source_sha256": "f3bc4b1b4de97a8e2851927d8163110b17f6daa0ff97c41ae31e0c82defb74e4"
     },
     "docs/RESEARCH_PLAN.md": {
       "public_bytes": 29756,
@@ -2223,11 +2237,11 @@
       "source_sha256": "e082cb49bf1d41f6b8faaa6165544d4eb695a7a4dddb9aaf071a4d967263b23e"
     },
     "docs/STATUS.md": {
-      "public_bytes": 62743,
-      "public_sha256": "33cb703a1da32b778738268a06eb38c1772227d37762cf08e0a401b0c784f85a",
-      "publication": "public-copy",
-      "source_bytes": 63412,
-      "source_sha256": "b4803f0ffaefb4998d1ced996a2dfcac4879f08eb1902ca280a8f106bd5498a5"
+      "public_bytes": 63752,
+      "public_sha256": "e6f801d8a3d92dd2222ba144e505d3413f01123ec1368268f28e6076a5377be6",
+      "publication": "public adaptation",
+      "source_bytes": 65427,
+      "source_sha256": "9d075bd9722ab8b52dc382796672136b509a39324c57d131ecbe01a28125298c"
     },
     "docs/TASK1_TASK2_PROGRESS_20261110.md": {
       "public_bytes": 8637,
@@ -2438,6 +2452,146 @@
       "publication": "verbatim",
       "source_bytes": 7348,
       "source_sha256": "fd90e368aeca7574ded6cedae860ed8ec7d48fccbe29668b7e4521c1bf7436fa"
+    },
+    "experiments/iris-u280-perf/README.md": {
+      "public_bytes": 1114,
+      "public_sha256": "5441d48fd21727a7caa369a2ad295ad7ff63860975179fb62785a5fba5c79951",
+      "publication": "verbatim",
+      "source_bytes": 1114,
+      "source_sha256": "5441d48fd21727a7caa369a2ad295ad7ff63860975179fb62785a5fba5c79951"
+    },
+    "experiments/iris-u280-perf/analyze.py": {
+      "public_bytes": 6196,
+      "public_sha256": "92772ba5a1c2de0230e909d3282c233ff15ec9996e7e799d692ede888adfe1a3",
+      "publication": "verbatim",
+      "source_bytes": 6196,
+      "source_sha256": "92772ba5a1c2de0230e909d3282c233ff15ec9996e7e799d692ede888adfe1a3"
+    },
+    "experiments/iris-u280-perf/comparison.py": {
+      "public_bytes": 5246,
+      "public_sha256": "16a3e44d19a48d023f7fd1ac64758d76a8c9172c34633af9583eb25a2c5053b9",
+      "publication": "verbatim",
+      "source_bytes": 5246,
+      "source_sha256": "16a3e44d19a48d023f7fd1ac64758d76a8c9172c34633af9583eb25a2c5053b9"
+    },
+    "experiments/iris-u280-perf/corpus.py": {
+      "public_bytes": 4617,
+      "public_sha256": "570875dae2c53f46eeb18c5e253d813194372f21e432f7cd735d8e8dd1debcaf",
+      "publication": "verbatim",
+      "source_bytes": 4617,
+      "source_sha256": "570875dae2c53f46eeb18c5e253d813194372f21e432f7cd735d8e8dd1debcaf"
+    },
+    "experiments/iris-u280-perf/cpu.py": {
+      "public_bytes": 3679,
+      "public_sha256": "8cc4dd4cb8e1ae25bd693ef5283f3369fcd6c3c87be39ac0ce80e8aa946e30a1",
+      "publication": "verbatim",
+      "source_bytes": 3679,
+      "source_sha256": "8cc4dd4cb8e1ae25bd693ef5283f3369fcd6c3c87be39ac0ce80e8aa946e30a1"
+    },
+    "experiments/iris-u280-perf/cpu_bench.cpp": {
+      "public_bytes": 2445,
+      "public_sha256": "0d46a6288aa217701ba9b3bb502a914de124330a87d6339983912bd1fe9d429e",
+      "publication": "verbatim",
+      "source_bytes": 2445,
+      "source_sha256": "0d46a6288aa217701ba9b3bb502a914de124330a87d6339983912bd1fe9d429e"
+    },
+    "experiments/iris-u280-perf/cpu_kernel.cpp": {
+      "public_bytes": 841,
+      "public_sha256": "aa00c9c0945e5d88b8dec9069c4132eeb3446ffc35bbcf2032a05c613b0ced50",
+      "publication": "verbatim",
+      "source_bytes": 841,
+      "source_sha256": "aa00c9c0945e5d88b8dec9069c4132eeb3446ffc35bbcf2032a05c613b0ced50"
+    },
+    "experiments/iris-u280-perf/measure.py": {
+      "public_bytes": 5681,
+      "public_sha256": "d2f6f87906b17995405de3ebb1a8568e57b042aba603a0004d9f4f02e0bfec0a",
+      "publication": "verbatim",
+      "source_bytes": 5681,
+      "source_sha256": "d2f6f87906b17995405de3ebb1a8568e57b042aba603a0004d9f4f02e0bfec0a"
+    },
+    "experiments/iris-u280-perf/prepare.py": {
+      "public_bytes": 4233,
+      "public_sha256": "485a29025797d175db9673843a8ee52787abe2e7dfb8bfa2ff974a467d47b768",
+      "publication": "verbatim",
+      "source_bytes": 4233,
+      "source_sha256": "485a29025797d175db9673843a8ee52787abe2e7dfb8bfa2ff974a467d47b768"
+    },
+    "experiments/iris-u280-perf/telemetry.py": {
+      "public_bytes": 2331,
+      "public_sha256": "808e61e7b5a84e27a711c12d1b28bf4e5fb32eefa7e51fe96ae8171821309709",
+      "publication": "verbatim",
+      "source_bytes": 2331,
+      "source_sha256": "808e61e7b5a84e27a711c12d1b28bf4e5fb32eefa7e51fe96ae8171821309709"
+    },
+    "experiments/iris-u280/README.md": {
+      "public_bytes": 446,
+      "public_sha256": "b76a7faad49e41d1ac93e04639732be0b1fc9842f5209a733f13e91c55612988",
+      "publication": "verbatim",
+      "source_bytes": 446,
+      "source_sha256": "b76a7faad49e41d1ac93e04639732be0b1fc9842f5209a733f13e91c55612988"
+    },
+    "experiments/iris-u280/board.py": {
+      "public_bytes": 6576,
+      "public_sha256": "0de29e62a80e433922d3923f6da30f2413f20a48264b493761b5c39e1a59fb73",
+      "publication": "verbatim",
+      "source_bytes": 6576,
+      "source_sha256": "0de29e62a80e433922d3923f6da30f2413f20a48264b493761b5c39e1a59fb73"
+    },
+    "experiments/iris-u280/board_worker.py": {
+      "public_bytes": 2789,
+      "public_sha256": "205c8684446b0661c49e1de37f65544233abd2b1ef3cf16908280cffd98e1db2",
+      "publication": "verbatim",
+      "source_bytes": 2789,
+      "source_sha256": "205c8684446b0661c49e1de37f65544233abd2b1ef3cf16908280cffd98e1db2"
+    },
+    "experiments/iris-u280/capture.py": {
+      "public_bytes": 4570,
+      "public_sha256": "e3fb332d3ae4d8c79f5e849ebbe58906aa1244e8ef9093bee20dd67ed4ff1eea",
+      "publication": "verbatim",
+      "source_bytes": 4570,
+      "source_sha256": "e3fb332d3ae4d8c79f5e849ebbe58906aa1244e8ef9093bee20dd67ed4ff1eea"
+    },
+    "experiments/iris-u280/closeout.py": {
+      "public_bytes": 5886,
+      "public_sha256": "def230f2eb77b6947dd74bc1cd4355bac80f2ffab0f01842bbe65e2f6f2c1b34",
+      "publication": "verbatim",
+      "source_bytes": 5886,
+      "source_sha256": "def230f2eb77b6947dd74bc1cd4355bac80f2ffab0f01842bbe65e2f6f2c1b34"
+    },
+    "experiments/iris-u280/data/README.md": {
+      "public_bytes": 584,
+      "public_sha256": "1cf0002525da5e053def7e93d2d7c7889b20b7f383b03b4621b03c42a5948e3c",
+      "publication": "verbatim",
+      "source_bytes": 584,
+      "source_sha256": "1cf0002525da5e053def7e93d2d7c7889b20b7f383b03b4621b03c42a5948e3c"
+    },
+    "experiments/iris-u280/data/bezdekIris.data": {
+      "public_bytes": 4551,
+      "public_sha256": "0fed2a99db77ec533a62dc66894d3ec6df3b58b6a8f3cf4a6b47e4086b7f97dc",
+      "publication": "verbatim",
+      "source_bytes": 4551,
+      "source_sha256": "0fed2a99db77ec533a62dc66894d3ec6df3b58b6a8f3cf4a6b47e4086b7f97dc"
+    },
+    "experiments/iris-u280/freeze.py": {
+      "public_bytes": 5549,
+      "public_sha256": "cedf30090945a928f88c6876c3cac6837b157a062ceac46f8f06aa3e37d3938c",
+      "publication": "verbatim",
+      "source_bytes": 5549,
+      "source_sha256": "cedf30090945a928f88c6876c3cac6837b157a062ceac46f8f06aa3e37d3938c"
+    },
+    "experiments/iris-u280/review.py": {
+      "public_bytes": 5574,
+      "public_sha256": "1b6fa2635755f0f260e157d6d79ed1d105af559a95efd3d7370b436b9678faaf",
+      "publication": "verbatim",
+      "source_bytes": 5574,
+      "source_sha256": "1b6fa2635755f0f260e157d6d79ed1d105af559a95efd3d7370b436b9678faaf"
+    },
+    "experiments/iris-u280/run.py": {
+      "public_bytes": 5843,
+      "public_sha256": "0c9a4e693cf754b06f45def829a26d830eaa88c21fea1e5ce0996c7d7407a258",
+      "publication": "verbatim",
+      "source_bytes": 5843,
+      "source_sha256": "0c9a4e693cf754b06f45def829a26d830eaa88c21fea1e5ce0996c7d7407a258"
     },
     "experiments/ptx-aligned-parameters/build.py": {
       "public_bytes": 9757,
@@ -2761,6 +2915,13 @@
       "source_bytes": 612,
       "source_sha256": "63d4ff7f35588af1617ba96d479cbf80c59893f4d96935508dc5c19ac26fd05c"
     },
+    "ptx/samples/iris_nearest_centroid_u32.ptx": {
+      "public_bytes": 5304,
+      "public_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d",
+      "publication": "verbatim",
+      "source_bytes": 5304,
+      "source_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d"
+    },
     "ptx/samples/semantics_probe.ptx": {
       "public_bytes": 1525,
       "public_sha256": "1798fc7a8eeb28efca8cc2b45bf6203e45cfe486f81062813165e2645386e07b",
@@ -2776,8 +2937,8 @@
       "source_sha256": "d5cb5a0a6d3745fede0c4375d5fb11e77babec02baa6b57a03ed914228aa7bc1"
     },
     "results/README.md": {
-      "public_bytes": 8692,
-      "public_sha256": "0abd720b80f9db5d3e7a66007185495b750051a46712cda3d9785172ed65d63b"
+      "public_bytes": 8922,
+      "public_sha256": "a19fdd6ff014a3a2e8efe4f36bdae8b9f82844c8f5d591d07a6f2500b5f2441b"
     },
     "results/ab-d1-source-20261107-v2/commands.json": {
       "public_bytes": 139014,
@@ -14065,6 +14226,2092 @@
       "source_bytes": 2955,
       "source_sha256": "8df7fa1308b22984e9a0670e9abbfc8806e0da7c9d854e0036041045ded3e0f2"
     },
+    "results/iris-board-20261123-v1/result.json": {
+      "public_bytes": 13481,
+      "public_sha256": "cf4296360e231f785bfde3ad34a0274c6f1dbbcd6c316a45a0d295c0c5781356",
+      "publication": "public adaptation",
+      "source_bytes": 14424,
+      "source_sha256": "12b56553760b885bc778cb06d5aac65115115244dc3cccf21c065239e3ee514d"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/binding/sessions/iris-board-20261123-v1/gate.json": {
+      "public_bytes": 2105,
+      "public_sha256": "53dfd028f749fb0d172ac785f03b296cae881ceb4298c3c30d14381057f2e7bd",
+      "publication": "public adaptation",
+      "source_bytes": 10951,
+      "source_sha256": "d9ef7bb69564678f74d58ded1358360f6a78c617a5814b31a684e5a33c81200d"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/capture.json": {
+      "public_bytes": 811,
+      "public_sha256": "91d30f6fbecc35a8c828a6584f210d97c149b4048044ea2667e1cfa1c8948f99",
+      "publication": "verbatim",
+      "source_bytes": 811,
+      "source_sha256": "91d30f6fbecc35a8c828a6584f210d97c149b4048044ea2667e1cfa1c8948f99"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "19200c86dc4bde3cd53e68dd034ee033a135fa004784c06c99085efc7949f987",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "19200c86dc4bde3cd53e68dd034ee033a135fa004784c06c99085efc7949f987"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "e719c7e50d87e51f2167f6cc8cd04443666ee446cab4b1c90e0063b33ff93837",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "e719c7e50d87e51f2167f6cc8cd04443666ee446cab4b1c90e0063b33ff93837"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/empty/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "02a619fc2395ea539975e354e9827b79f5feb9c9e8ffbdc945ad2722d1e24a63",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "02a619fc2395ea539975e354e9827b79f5feb9c9e8ffbdc945ad2722d1e24a63"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "2abe432b99b9d30e97bea66879be8ea1f2c67a4186908e1053318509791ca21a",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "2abe432b99b9d30e97bea66879be8ea1f2c67a4186908e1053318509791ca21a"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "57745f52616f4e7f99579f67fb00cc9f282d32ad71c5bcbab826988f5ea893d3",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "57745f52616f4e7f99579f67fb00cc9f282d32ad71c5bcbab826988f5ea893d3"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/endpoints/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "d5c69da4dbe67a62a734e60c3aa93dacd3994ceb09255518f963c082e8fec666",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "d5c69da4dbe67a62a734e60c3aa93dacd3994ceb09255518f963c082e8fec666"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "a588ff2127dd36a257ad7d0d7ff732da7715f5af8c630491ac64bc18ca04d0f4",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "a588ff2127dd36a257ad7d0d7ff732da7715f5af8c630491ac64bc18ca04d0f4"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "0b26291dedf3a94c2693f8f23f3c20fd3af9246fd3413837c557395e1cc27432",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "0b26291dedf3a94c2693f8f23f3c20fd3af9246fd3413837c557395e1cc27432"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n31/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "68be708eaad15a07e694c912f61690218d8e567722fac58215718d0f51be4258",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "68be708eaad15a07e694c912f61690218d8e567722fac58215718d0f51be4258"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0ef0d34ee17ad2a8756b420d5257f083bc289f21f9c6325e813010f4a60a905b",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0ef0d34ee17ad2a8756b420d5257f083bc289f21f9c6325e813010f4a60a905b"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "09df896a18bd9908ea944b5140b11470386d874334377fda22c10f5c5139cca0",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "09df896a18bd9908ea944b5140b11470386d874334377fda22c10f5c5139cca0"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n32/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "a8780bf5c13c044387754534fa258c311ac1b2e214e67866286a0837622260ab",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "a8780bf5c13c044387754534fa258c311ac1b2e214e67866286a0837622260ab"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/out.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/out.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "199a1e4f36eb9025dc5b3b517b9ce6e95797465c093d9308dde71c5b35676a51",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "199a1e4f36eb9025dc5b3b517b9ce6e95797465c093d9308dde71c5b35676a51"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "4626d65098ea3b8a1150278e9ba9b9cae978187ddbc8fdcd8ebcf0c7876ed23d",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "4626d65098ea3b8a1150278e9ba9b9cae978187ddbc8fdcd8ebcf0c7876ed23d"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/x.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/n33/x.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "7149844281c6a860bb1a690b6fbca4daa940d261bca4782250b16beea702c488",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "7149844281c6a860bb1a690b6fbca4daa940d261bca4782250b16beea702c488"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "966b249d1dc568d163f4df65ba63989d1a8c07883dcc1f355811cca033bb62a3",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "966b249d1dc568d163f4df65ba63989d1a8c07883dcc1f355811cca033bb62a3"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "3411f766a5979373c828233a79a5013f8222b2a878cb5e654a62eb40bafb4a5c",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "3411f766a5979373c828233a79a5013f8222b2a878cb5e654a62eb40bafb4a5c"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/one/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "a2515c9d5e0f50889678a228703945bf240ebdfbf3204563bd0a91f055058418",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "a2515c9d5e0f50889678a228703945bf240ebdfbf3204563bd0a91f055058418"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/out.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/out.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "be82ba24f2035c9c731b5d29a92e4527ed4a6904e890051dcbcf7ae58bea4989",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "be82ba24f2035c9c731b5d29a92e4527ed4a6904e890051dcbcf7ae58bea4989"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "f4aae89691d89e18f4b8633d5821b44b1fea933a494c76af47c0f1a918b3a0fd",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "f4aae89691d89e18f4b8633d5821b44b1fea933a494c76af47c0f1a918b3a0fd"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/x.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/permuted/x.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e73d622ca37a3aaf8c7c52065b09ac00b884e033d813b18fd42e57d6a2e3f739"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "d2f19f18a9b16a3f0cfd9c49f88ecf1607099949cb62941bca6af2fe29ba734b",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "d2f19f18a9b16a3f0cfd9c49f88ecf1607099949cb62941bca6af2fe29ba734b"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/out.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/out.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "6a4243fe7086382ffb603d4299f6adb3083b63b3c744c6e7e4f6c32a63fd30a1",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "6a4243fe7086382ffb603d4299f6adb3083b63b3c744c6e7e4f6c32a63fd30a1"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "f4aae89691d89e18f4b8633d5821b44b1fea933a494c76af47c0f1a918b3a0fd",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "f4aae89691d89e18f4b8633d5821b44b1fea933a494c76af47c0f1a918b3a0fd"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/x.after.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/test45/x.before.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/event.json": {
+      "public_bytes": 88,
+      "public_sha256": "116d1039b27a84bc76b504079c6502de59ee27d9c6340b93f9d6c13060d83677",
+      "publication": "verbatim",
+      "source_bytes": 88,
+      "source_sha256": "116d1039b27a84bc76b504079c6502de59ee27d9c6340b93f9d6c13060d83677"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/out.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/out.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "3955dbdc2ab123c69352e7bba4c1a1deef610e54ad8656df43f25b3910ba70a6",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "3955dbdc2ab123c69352e7bba4c1a1deef610e54ad8656df43f25b3910ba70a6"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "57745f52616f4e7f99579f67fb00cc9f282d32ad71c5bcbab826988f5ea893d3",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "57745f52616f4e7f99579f67fb00cc9f282d32ad71c5bcbab826988f5ea893d3"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/sums.after.bin": {
+      "public_bytes": 80,
+      "public_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/sums.before.bin": {
+      "public_bytes": 80,
+      "public_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/x.after.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb"
+    },
+    "results/iris-board-20261123-v1/returned/iris-board-20261123-v1/u280-xrt/ties/x.before.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb"
+    },
+    "results/iris-board-20261123-v1/transport.json": {
+      "public_bytes": 237,
+      "public_sha256": "168c7013bab196954897fe66d9e24a579be1a71856729442125c5bc29cf196e7",
+      "publication": "public adaptation",
+      "source_bytes": 1176,
+      "source_sha256": "1612f0d7e83afdfec7bcef53cc1f03993f0179c500c4bd23d6edf94a3241932a"
+    },
+    "results/iris-board-perf-20261123-v2/result.json": {
+      "public_bytes": 13515,
+      "public_sha256": "65b9b354747fc6036ee531c566c7e08a1d1d9628b2c68354a7cacf3c4e4bf6a7",
+      "publication": "public adaptation",
+      "source_bytes": 14664,
+      "source_sha256": "5d437b3da1f3035c5afb0a9bde56129cbfb897dc8c271848784333c4b171a03e"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/binding/sessions/iris-board-perf-20261123-v2/gate.json": {
+      "public_bytes": 2110,
+      "public_sha256": "3b5ffc4199ed573d65dcdc8068f7bff886b94d07f6ee4c60af5b38485f39094e",
+      "publication": "public adaptation",
+      "source_bytes": 11056,
+      "source_sha256": "c563568a3ab3f4c1751bfeac61ec370b654e0063485b48a2ce2a43c391bd67b6"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/capture.json": {
+      "public_bytes": 3494,
+      "public_sha256": "153357aa39e1e394cce0cdf6a94e73aac14e8a7437edf132450a90b11dc434ae",
+      "publication": "verbatim",
+      "source_bytes": 3494,
+      "source_sha256": "153357aa39e1e394cce0cdf6a94e73aac14e8a7437edf132450a90b11dc434ae"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/counter-reads.jsonl": {
+      "public_bytes": 261320,
+      "public_sha256": "efe861f94841529d5f148efad9881a74fb280a0fd932c63a3b8766a378837f38",
+      "publication": "verbatim",
+      "source_bytes": 261320,
+      "source_sha256": "efe861f94841529d5f148efad9881a74fb280a0fd932c63a3b8766a378837f38"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/counter-status.json": {
+      "public_bytes": 476,
+      "public_sha256": "bcbe15dc9dfb7d8580265918f1c4bbfb824d1c0b4a16819f538e09919798fb4e",
+      "publication": "verbatim",
+      "source_bytes": 476,
+      "source_sha256": "bcbe15dc9dfb7d8580265918f1c4bbfb824d1c0b4a16819f538e09919798fb4e"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold0/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold0/out.bin": {
+      "public_bytes": 544,
+      "public_sha256": "c197475edc54a4601d194b072953b02d0d14c92c65f0d9d12a41fafe8735976d",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "c197475edc54a4601d194b072953b02d0d14c92c65f0d9d12a41fafe8735976d"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold0/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "5a0ef57227b60910c446d6254f3b48e87f00cc11c7b47fda672fe246593ecf7c",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "5a0ef57227b60910c446d6254f3b48e87f00cc11c7b47fda672fe246593ecf7c"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold1/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "933b2be53343be3ceddbccde167162ea22e9a63425e1184de0479cd3fcb7dd9a",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "933b2be53343be3ceddbccde167162ea22e9a63425e1184de0479cd3fcb7dd9a"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold1/out.bin": {
+      "public_bytes": 544,
+      "public_sha256": "520262dcc13b28ad7dd09607fa6988d4a07b2d2e69299470395521e3fb57e128",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "520262dcc13b28ad7dd09607fa6988d4a07b2d2e69299470395521e3fb57e128"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold1/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "45455fc401c4aa664fb0efa51c91bb56688f274267662dfbbc59e03b690eb439",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "45455fc401c4aa664fb0efa51c91bb56688f274267662dfbbc59e03b690eb439"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold2/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "64e01f8982e225b6f99260d200eae7cd486ff171b7f240a103381f7b4fef4a4b",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "64e01f8982e225b6f99260d200eae7cd486ff171b7f240a103381f7b4fef4a4b"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold2/out.bin": {
+      "public_bytes": 544,
+      "public_sha256": "78442b501d7c5b8162dfa9f7736e84685d72d6e20704014d6b4ca5fe97d26673",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "78442b501d7c5b8162dfa9f7736e84685d72d6e20704014d6b4ca5fe97d26673"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold2/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "d1ea181eaadadb2df9ef6e835d2f7d604eb2a89ed0ef805722164be020e08100",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "d1ea181eaadadb2df9ef6e835d2f7d604eb2a89ed0ef805722164be020e08100"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold3/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "988dbb17ddd538b9ebbccfdab987150529d9cfb8ec8536252dd1a92e0c5dbb2b",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "988dbb17ddd538b9ebbccfdab987150529d9cfb8ec8536252dd1a92e0c5dbb2b"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold3/out.bin": {
+      "public_bytes": 544,
+      "public_sha256": "bdd73775628087c12d94cf67d849329730637d2f566d47bfbece0ed543fdd6bc",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "bdd73775628087c12d94cf67d849329730637d2f566d47bfbece0ed543fdd6bc"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold3/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "b27232f043b81f2c2a7222aaa7165c5a6196e9c978c4eb49f0ca9ce55b339f51",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "b27232f043b81f2c2a7222aaa7165c5a6196e9c978c4eb49f0ca9ce55b339f51"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold4/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "bb01ae04b3ca41312794e5b8015b5f34c029adbb624dae72c03967a6031980a1",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "bb01ae04b3ca41312794e5b8015b5f34c029adbb624dae72c03967a6031980a1"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold4/out.bin": {
+      "public_bytes": 544,
+      "public_sha256": "539fa9021cde5078b1b67eecfd3d313453f923cd0d903ed138fd6cc7546ecddf",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "539fa9021cde5078b1b67eecfd3d313453f923cd0d903ed138fd6cc7546ecddf"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/fold4/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "f9ef838ba232823f167ed5f1d1403fec8a81b67e23371292978739fdd745c687",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "f9ef838ba232823f167ed5f1d1403fec8a81b67e23371292978739fdd745c687"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n1024/bases.json": {
+      "public_bytes": 51,
+      "public_sha256": "d97fead7920eeea20da5a01cf5e7e665a7aba5e8c6c336c41ce4a18f647dfd8c",
+      "publication": "verbatim",
+      "source_bytes": 51,
+      "source_sha256": "d97fead7920eeea20da5a01cf5e7e665a7aba5e8c6c336c41ce4a18f647dfd8c"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n1024/out.bin": {
+      "public_bytes": 16416,
+      "public_sha256": "56344c63be6cadcdb735e0fa9cff3a1257562f0786c47c6697d5e3646c675e2e",
+      "publication": "verbatim",
+      "source_bytes": 16416,
+      "source_sha256": "56344c63be6cadcdb735e0fa9cff3a1257562f0786c47c6697d5e3646c675e2e"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n1024/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "1858b65e67dd1e92a301150c7e19523b679ab66cd23777b7202b2c11758b355c",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "1858b65e67dd1e92a301150c7e19523b679ab66cd23777b7202b2c11758b355c"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n150/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "f83e529c327809642dc5255a70be92a195aae9d3e3ee0176d567517faf367b87",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "f83e529c327809642dc5255a70be92a195aae9d3e3ee0176d567517faf367b87"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n150/out.bin": {
+      "public_bytes": 2592,
+      "public_sha256": "6180b9162ead1ccba8410e547c44e1369dbd71e5dd74ed9779efc9fefd4e1b03",
+      "publication": "verbatim",
+      "source_bytes": 2592,
+      "source_sha256": "6180b9162ead1ccba8410e547c44e1369dbd71e5dd74ed9779efc9fefd4e1b03"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n150/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "23592057ceb79e855722e52f631d5e33fdd16d42c58d2fa74a5b955e5146774b",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "23592057ceb79e855722e52f631d5e33fdd16d42c58d2fa74a5b955e5146774b"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n16381/bases.json": {
+      "public_bytes": 52,
+      "public_sha256": "bd487e62bf8ab9fc510d37f7846489b0d842ca739d8170fe143add8caf4e6ed8",
+      "publication": "verbatim",
+      "source_bytes": 52,
+      "source_sha256": "bd487e62bf8ab9fc510d37f7846489b0d842ca739d8170fe143add8caf4e6ed8"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n16381/out.bin": {
+      "public_bytes": 262176,
+      "public_sha256": "6bf7f263403f31ceee463e13563c6708329454dae5bd65f886e9fada7f5c4859",
+      "publication": "verbatim",
+      "source_bytes": 262176,
+      "source_sha256": "6bf7f263403f31ceee463e13563c6708329454dae5bd65f886e9fada7f5c4859"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n16381/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "f5b46535e1bf6a2e1a28f85968e6f287ddf94b8d1c6ca2982a417cc9eb3b7171",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "f5b46535e1bf6a2e1a28f85968e6f287ddf94b8d1c6ca2982a417cc9eb3b7171"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n4096/bases.json": {
+      "public_bytes": 52,
+      "public_sha256": "29cf62908b86a0df64c5f367b1c80f4cb85c6fd8d939179109c56da5ae745a30",
+      "publication": "verbatim",
+      "source_bytes": 52,
+      "source_sha256": "29cf62908b86a0df64c5f367b1c80f4cb85c6fd8d939179109c56da5ae745a30"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n4096/out.bin": {
+      "public_bytes": 65568,
+      "public_sha256": "65f8c8ccd64535e90002f6bf281c16807fa8a174fd0bc0ca5588987aba1933b4",
+      "publication": "verbatim",
+      "source_bytes": 65568,
+      "source_sha256": "65f8c8ccd64535e90002f6bf281c16807fa8a174fd0bc0ca5588987aba1933b4"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n4096/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "bb98af088154a7eec1a3b3de9dea20594422dcff3eb6d41d3faed4b4c4c5f9e5",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "bb98af088154a7eec1a3b3de9dea20594422dcff3eb6d41d3faed4b4c4c5f9e5"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n45/bases.json": {
+      "public_bytes": 50,
+      "public_sha256": "aaf6ffc566fdd6f6976242b2bf4ad2cff6b0b5f10f44f802e5dcb74de6e6af0c",
+      "publication": "verbatim",
+      "source_bytes": 50,
+      "source_sha256": "aaf6ffc566fdd6f6976242b2bf4ad2cff6b0b5f10f44f802e5dcb74de6e6af0c"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n45/out.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "31c7a9cec4c894d168724d80e80e7041950e144647a9e5b7ed3e1fcd9bf68056",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "31c7a9cec4c894d168724d80e80e7041950e144647a9e5b7ed3e1fcd9bf68056"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n45/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "983ae70af060695d17bd5388904d8292b2683aff034446594d5e013949314757",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "983ae70af060695d17bd5388904d8292b2683aff034446594d5e013949314757"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n65533/bases.json": {
+      "public_bytes": 53,
+      "public_sha256": "20a1ffadbb61d8dc88522bc7a3ec2ba67f930c02af4e9f2c9ad1221634268806",
+      "publication": "verbatim",
+      "source_bytes": 53,
+      "source_sha256": "20a1ffadbb61d8dc88522bc7a3ec2ba67f930c02af4e9f2c9ad1221634268806"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n65533/out.bin": {
+      "public_bytes": 1048608,
+      "public_sha256": "294be0d15273830cd717d47c5d1b2ea5850bbbd7771c9cdb4c26646990ee3045",
+      "publication": "verbatim",
+      "source_bytes": 1048608,
+      "source_sha256": "294be0d15273830cd717d47c5d1b2ea5850bbbd7771c9cdb4c26646990ee3045"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/n65533/params.bin": {
+      "public_bytes": 32,
+      "public_sha256": "906216d24356318e22c85165c74332f6c3da333ec7780db8f11459578bd2be9c",
+      "publication": "verbatim",
+      "source_bytes": 32,
+      "source_sha256": "906216d24356318e22c85165c74332f6c3da333ec7780db8f11459578bd2be9c"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/samples.jsonl": {
+      "public_bytes": 123237,
+      "public_sha256": "1f126254c67d0840d170ad05ae64d264d5ebe3fdd8d5bf0ca21205b71df3ed40",
+      "publication": "verbatim",
+      "source_bytes": 123237,
+      "source_sha256": "1f126254c67d0840d170ad05ae64d264d5ebe3fdd8d5bf0ca21205b71df3ed40"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/sensor-map.json": {
+      "public_bytes": 4630,
+      "public_sha256": "c5f48b4a8e3ecee2123c7caa2b0dd5787b019ce074c531dde90fea12447d3512",
+      "publication": "verbatim",
+      "source_bytes": 4630,
+      "source_sha256": "c5f48b4a8e3ecee2123c7caa2b0dd5787b019ce074c531dde90fea12447d3512"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/sensors-after.json": {
+      "public_bytes": 16473,
+      "public_sha256": "20d26f7b2e4fb9c6ec7b4d364cbab13b32cc0cd8a722ced0e2bfb2ab36aecd11",
+      "publication": "verbatim",
+      "source_bytes": 16473,
+      "source_sha256": "20d26f7b2e4fb9c6ec7b4d364cbab13b32cc0cd8a722ced0e2bfb2ab36aecd11"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/sensors-before.json": {
+      "public_bytes": 16473,
+      "public_sha256": "56ed84e74ef7fae415e6f7b8a855722cb9b9a5a0c7e18dd7d4b59f1179f94bb9",
+      "publication": "verbatim",
+      "source_bytes": 16473,
+      "source_sha256": "56ed84e74ef7fae415e6f7b8a855722cb9b9a5a0c7e18dd7d4b59f1179f94bb9"
+    },
+    "results/iris-board-perf-20261123-v2/returned/iris-board-perf-20261123-v2/u280-xrt/sensors.jsonl": {
+      "public_bytes": 12220,
+      "public_sha256": "7e85109cc30f649d4db05bc43cbd967987ec14ca5253c63ed343dc847af9cb72",
+      "publication": "verbatim",
+      "source_bytes": 12220,
+      "source_sha256": "7e85109cc30f649d4db05bc43cbd967987ec14ca5253c63ed343dc847af9cb72"
+    },
+    "results/iris-board-perf-20261123-v2/transport.json": {
+      "public_bytes": 242,
+      "public_sha256": "7c13596f11c8c9aec04b8a889d129f393b39bd42d2ac02b88651d8cf8ed4cc9a",
+      "publication": "public adaptation",
+      "source_bytes": 1186,
+      "source_sha256": "8568a92a737f796549b7f83358422a8442af5f496407a81831e8028075fffe6d"
+    },
+    "results/iris-build-20261123-v1/logs/01_upstream_head.log": {
+      "public_bytes": 41,
+      "public_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559",
+      "publication": "verbatim",
+      "source_bytes": 41,
+      "source_sha256": "ff004e8e0b8781e070c3501985c760b7b850d38f9add0d9cac7990e731eb1559"
+    },
+    "results/iris-build-20261123-v1/logs/02_upstream_diff.log": {
+      "public_bytes": 0,
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publication": "verbatim",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/iris-build-20261123-v1/logs/03_sim_prepare.log": {
+      "public_bytes": 107,
+      "public_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "publication": "verbatim",
+      "source_bytes": 107,
+      "source_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    "results/iris-build-20261123-v1/logs/04_sim_build.log": {
+      "public_bytes": 95,
+      "public_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "publication": "verbatim",
+      "source_bytes": 95,
+      "source_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    "results/iris-build-20261123-v1/logs/05_sim_validate.log": {
+      "public_bytes": 98,
+      "public_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "publication": "verbatim",
+      "source_bytes": 98,
+      "source_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    "results/iris-build-20261123-v1/logs/06_board_prepare.log": {
+      "public_bytes": 107,
+      "public_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf",
+      "publication": "verbatim",
+      "source_bytes": 107,
+      "source_sha256": "dacde847572c3ea2d10ea9778d01cb856dfd31dfa8b41b72de6f5b64506841bf"
+    },
+    "results/iris-build-20261123-v1/logs/07_board_build.log": {
+      "public_bytes": 95,
+      "public_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1",
+      "publication": "verbatim",
+      "source_bytes": 95,
+      "source_sha256": "b0f1f2e33a12164db00161605f06e095c52695c9d95fcea5bcba436a19a76ae1"
+    },
+    "results/iris-build-20261123-v1/logs/08_board_validate.log": {
+      "public_bytes": 98,
+      "public_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3",
+      "publication": "verbatim",
+      "source_bytes": 98,
+      "source_sha256": "744e7ecf1749e593ff248a64a6a4b10cfd05ed4f22cb0b5b69560d0e3d8043a3"
+    },
+    "results/iris-build-20261123-v1/modules/board/Makefile": {
+      "public_bytes": 376,
+      "public_sha256": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+      "publication": "verbatim",
+      "source_bytes": 376,
+      "source_sha256": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41"
+    },
+    "results/iris-build-20261123-v1/modules/board/abi.json": {
+      "public_bytes": 979,
+      "public_sha256": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404",
+      "publication": "verbatim",
+      "source_bytes": 979,
+      "source_sha256": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404"
+    },
+    "results/iris-build-20261123-v1/modules/board/build.json": {
+      "public_bytes": 2639,
+      "public_sha256": "fe24e7f4ed933139a16c6e702c05fd546ad7388b1926718845bac67730ece645",
+      "publication": "verbatim",
+      "source_bytes": 2639,
+      "source_sha256": "fe24e7f4ed933139a16c6e702c05fd546ad7388b1926718845bac67730ece645"
+    },
+    "results/iris-build-20261123-v1/modules/board/compile.log": {
+      "public_bytes": 137600,
+      "public_sha256": "9b110b1849d60875be96c7b669d36c439d2acf1749f85b68769448e4e8ea7f77",
+      "publication": "verbatim",
+      "source_bytes": 137600,
+      "source_sha256": "9b110b1849d60875be96c7b669d36c439d2acf1749f85b68769448e4e8ea7f77"
+    },
+    "results/iris-build-20261123-v1/modules/board/frontend_manifest.json": {
+      "public_bytes": 1891,
+      "public_sha256": "e6142dcbdf1506653852c361b1605ea761cd919cb9678ed6535a4c7318051d21",
+      "publication": "verbatim",
+      "source_bytes": 1891,
+      "source_sha256": "e6142dcbdf1506653852c361b1605ea761cd919cb9678ed6535a4c7318051d21"
+    },
+    "results/iris-build-20261123-v1/modules/board/hardware.json": {
+      "public_bytes": 1191,
+      "public_sha256": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+      "publication": "verbatim",
+      "source_bytes": 1191,
+      "source_sha256": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973"
+    },
+    "results/iris-build-20261123-v1/modules/board/ir.json": {
+      "public_bytes": 69360,
+      "public_sha256": "0efff6ddc3f28be4edacc00a2bca3eefef1111efccb977aef824b2b49e964ace",
+      "publication": "verbatim",
+      "source_bytes": 69360,
+      "source_sha256": "0efff6ddc3f28be4edacc00a2bca3eefef1111efccb977aef824b2b49e964ace"
+    },
+    "results/iris-build-20261123-v1/modules/board/kernel.cpp": {
+      "public_bytes": 714,
+      "public_sha256": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+      "publication": "verbatim",
+      "source_bytes": 714,
+      "source_sha256": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f"
+    },
+    "results/iris-build-20261123-v1/modules/board/kernel.elf": {
+      "public_bytes": 6816,
+      "public_sha256": "bf95fd5586d98732ffb390f4787b1197ddbab8562e119ae1d168d3f868a082ca",
+      "publication": "verbatim",
+      "source_bytes": 6816,
+      "source_sha256": "bf95fd5586d98732ffb390f4787b1197ddbab8562e119ae1d168d3f868a082ca"
+    },
+    "results/iris-build-20261123-v1/modules/board/kernel.vxbin": {
+      "public_bytes": 5360,
+      "public_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd",
+      "publication": "verbatim",
+      "source_bytes": 5360,
+      "source_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd"
+    },
+    "results/iris-build-20261123-v1/modules/board/kernel_body.hpp": {
+      "public_bytes": 5434,
+      "public_sha256": "0b2fe3509cd43efbf44d276540e24b08db34d9144a51ef1bfe8bee59bbd2fd89",
+      "publication": "verbatim",
+      "source_bytes": 5434,
+      "source_sha256": "0b2fe3509cd43efbf44d276540e24b08db34d9144a51ef1bfe8bee59bbd2fd89"
+    },
+    "results/iris-build-20261123-v1/modules/board/manifest.json": {
+      "public_bytes": 3759,
+      "public_sha256": "c13b0b6fa98ad88865e900cae9f4faf8cf4b130c86105399ad64e95e9d9ff6ce",
+      "publication": "verbatim",
+      "source_bytes": 3759,
+      "source_sha256": "c13b0b6fa98ad88865e900cae9f4faf8cf4b130c86105399ad64e95e9d9ff6ce"
+    },
+    "results/iris-build-20261123-v1/modules/board/profile.json": {
+      "public_bytes": 1662,
+      "public_sha256": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041",
+      "publication": "verbatim",
+      "source_bytes": 1662,
+      "source_sha256": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041"
+    },
+    "results/iris-build-20261123-v1/modules/board/program.disasm": {
+      "public_bytes": 24171,
+      "public_sha256": "7dd19ba3b261ac0b3262e797705f35f9fe95d35ed171656950fade9c2b7cab1f",
+      "publication": "verbatim",
+      "source_bytes": 24171,
+      "source_sha256": "7dd19ba3b261ac0b3262e797705f35f9fe95d35ed171656950fade9c2b7cab1f"
+    },
+    "results/iris-build-20261123-v1/modules/board/source.ptx": {
+      "public_bytes": 5304,
+      "public_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d",
+      "publication": "verbatim",
+      "source_bytes": 5304,
+      "source_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d"
+    },
+    "results/iris-build-20261123-v1/modules/board/source_map.json": {
+      "public_bytes": 11642,
+      "public_sha256": "8374e45a27514bfb37be7b44eb07e78dd3aaeee2cec00bf76f4021ac9bccfc27",
+      "publication": "verbatim",
+      "source_bytes": 11642,
+      "source_sha256": "8374e45a27514bfb37be7b44eb07e78dd3aaeee2cec00bf76f4021ac9bccfc27"
+    },
+    "results/iris-build-20261123-v1/modules/board/target_lock.json": {
+      "public_bytes": 5525,
+      "public_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+      "publication": "verbatim",
+      "source_bytes": 5525,
+      "source_sha256": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486"
+    },
+    "results/iris-build-20261123-v1/modules/sim/Makefile": {
+      "public_bytes": 376,
+      "public_sha256": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41",
+      "publication": "verbatim",
+      "source_bytes": 376,
+      "source_sha256": "aef0009a0b6364339615061c3d9bacaf32e0c7184711d9a00ab1ba68caaa3c41"
+    },
+    "results/iris-build-20261123-v1/modules/sim/abi.json": {
+      "public_bytes": 979,
+      "public_sha256": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404",
+      "publication": "verbatim",
+      "source_bytes": 979,
+      "source_sha256": "0c7aee793286a2db2bd75f6522a89a2cab686d6b083bce214e7d9fa710959404"
+    },
+    "results/iris-build-20261123-v1/modules/sim/build.json": {
+      "public_bytes": 2559,
+      "public_sha256": "e26c91018b05af606592c1cf86806514ca1c22be673c075013ba8ca1f826ec97",
+      "publication": "verbatim",
+      "source_bytes": 2559,
+      "source_sha256": "e26c91018b05af606592c1cf86806514ca1c22be673c075013ba8ca1f826ec97"
+    },
+    "results/iris-build-20261123-v1/modules/sim/compile.log": {
+      "public_bytes": 137247,
+      "public_sha256": "00367c3aaf66d4ada33ff39e1b11593e28a55b33c531b6f494ed13ec79a0d2b4",
+      "publication": "verbatim",
+      "source_bytes": 137247,
+      "source_sha256": "00367c3aaf66d4ada33ff39e1b11593e28a55b33c531b6f494ed13ec79a0d2b4"
+    },
+    "results/iris-build-20261123-v1/modules/sim/frontend_manifest.json": {
+      "public_bytes": 1891,
+      "public_sha256": "828d480d810ab6aff9a40bbe5d8f1254445cd4e2e65a3ae085278736514094ad",
+      "publication": "verbatim",
+      "source_bytes": 1891,
+      "source_sha256": "828d480d810ab6aff9a40bbe5d8f1254445cd4e2e65a3ae085278736514094ad"
+    },
+    "results/iris-build-20261123-v1/modules/sim/hardware.json": {
+      "public_bytes": 654,
+      "public_sha256": "34153c69d4962875a005db708e0ba6625321720f2b2e729c0f4fa387028b6952",
+      "publication": "verbatim",
+      "source_bytes": 654,
+      "source_sha256": "34153c69d4962875a005db708e0ba6625321720f2b2e729c0f4fa387028b6952"
+    },
+    "results/iris-build-20261123-v1/modules/sim/ir.json": {
+      "public_bytes": 69360,
+      "public_sha256": "0efff6ddc3f28be4edacc00a2bca3eefef1111efccb977aef824b2b49e964ace",
+      "publication": "verbatim",
+      "source_bytes": 69360,
+      "source_sha256": "0efff6ddc3f28be4edacc00a2bca3eefef1111efccb977aef824b2b49e964ace"
+    },
+    "results/iris-build-20261123-v1/modules/sim/kernel.cpp": {
+      "public_bytes": 714,
+      "public_sha256": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f",
+      "publication": "verbatim",
+      "source_bytes": 714,
+      "source_sha256": "691881b7d67f4a65c3f29ae99c28b37aef9e18edbb2a0ba68f9d7292611fc17f"
+    },
+    "results/iris-build-20261123-v1/modules/sim/kernel.elf": {
+      "public_bytes": 6816,
+      "public_sha256": "bf95fd5586d98732ffb390f4787b1197ddbab8562e119ae1d168d3f868a082ca",
+      "publication": "verbatim",
+      "source_bytes": 6816,
+      "source_sha256": "bf95fd5586d98732ffb390f4787b1197ddbab8562e119ae1d168d3f868a082ca"
+    },
+    "results/iris-build-20261123-v1/modules/sim/kernel.vxbin": {
+      "public_bytes": 5360,
+      "public_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd",
+      "publication": "verbatim",
+      "source_bytes": 5360,
+      "source_sha256": "9ae0e644040d13d558b58d2e5c8dd502a71a82017202168161bf2e09267ddcdd"
+    },
+    "results/iris-build-20261123-v1/modules/sim/kernel_body.hpp": {
+      "public_bytes": 5434,
+      "public_sha256": "0b2fe3509cd43efbf44d276540e24b08db34d9144a51ef1bfe8bee59bbd2fd89",
+      "publication": "verbatim",
+      "source_bytes": 5434,
+      "source_sha256": "0b2fe3509cd43efbf44d276540e24b08db34d9144a51ef1bfe8bee59bbd2fd89"
+    },
+    "results/iris-build-20261123-v1/modules/sim/manifest.json": {
+      "public_bytes": 3699,
+      "public_sha256": "30f79f487c84075b27d894b089f021b95273eee9ef5a062f1f1d1e07111169f3",
+      "publication": "verbatim",
+      "source_bytes": 3699,
+      "source_sha256": "30f79f487c84075b27d894b089f021b95273eee9ef5a062f1f1d1e07111169f3"
+    },
+    "results/iris-build-20261123-v1/modules/sim/profile.json": {
+      "public_bytes": 1662,
+      "public_sha256": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041",
+      "publication": "verbatim",
+      "source_bytes": 1662,
+      "source_sha256": "c9728b0faa726d9b59c215de9febd9efeb2072d09c58d819a3fc5dcd1d432041"
+    },
+    "results/iris-build-20261123-v1/modules/sim/program.disasm": {
+      "public_bytes": 24171,
+      "public_sha256": "7dd19ba3b261ac0b3262e797705f35f9fe95d35ed171656950fade9c2b7cab1f",
+      "publication": "verbatim",
+      "source_bytes": 24171,
+      "source_sha256": "7dd19ba3b261ac0b3262e797705f35f9fe95d35ed171656950fade9c2b7cab1f"
+    },
+    "results/iris-build-20261123-v1/modules/sim/source.ptx": {
+      "public_bytes": 5304,
+      "public_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d",
+      "publication": "verbatim",
+      "source_bytes": 5304,
+      "source_sha256": "ad659b5a2f2c0fd4d847b2b6b978aa18b88267ab47d0cc809ac13043d06beb8d"
+    },
+    "results/iris-build-20261123-v1/modules/sim/source_map.json": {
+      "public_bytes": 11642,
+      "public_sha256": "8374e45a27514bfb37be7b44eb07e78dd3aaeee2cec00bf76f4021ac9bccfc27",
+      "publication": "verbatim",
+      "source_bytes": 11642,
+      "source_sha256": "8374e45a27514bfb37be7b44eb07e78dd3aaeee2cec00bf76f4021ac9bccfc27"
+    },
+    "results/iris-build-20261123-v1/modules/sim/target_lock.json": {
+      "public_bytes": 5075,
+      "public_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649",
+      "publication": "verbatim",
+      "source_bytes": 5075,
+      "source_sha256": "9bf1ecd89852e54dd402e669becbfd0910752ffd16ad9e7a9f9b20e77b6c4649"
+    },
+    "results/iris-build-20261123-v1/summary.json": {
+      "public_bytes": 8847,
+      "public_sha256": "917882064f06f1f2f9bce900e49f7b5bcd3245a3410cc6c9496a25008b916225",
+      "publication": "verbatim",
+      "source_bytes": 8847,
+      "source_sha256": "917882064f06f1f2f9bce900e49f7b5bcd3245a3410cc6c9496a25008b916225"
+    },
+    "results/iris-freeze-20261123-v1/corpus/classifier.json": {
+      "public_bytes": 10231,
+      "public_sha256": "14879fa743da130168f155d51cc8da219fa023709922e5316d1a6a684eaf932f",
+      "publication": "verbatim",
+      "source_bytes": 10231,
+      "source_sha256": "14879fa743da130168f155d51cc8da219fa023709922e5316d1a6a684eaf932f"
+    },
+    "results/iris-freeze-20261123-v1/corpus/data/README.md": {
+      "public_bytes": 584,
+      "public_sha256": "1cf0002525da5e053def7e93d2d7c7889b20b7f383b03b4621b03c42a5948e3c",
+      "publication": "verbatim",
+      "source_bytes": 584,
+      "source_sha256": "1cf0002525da5e053def7e93d2d7c7889b20b7f383b03b4621b03c42a5948e3c"
+    },
+    "results/iris-freeze-20261123-v1/corpus/data/bezdekIris.data": {
+      "public_bytes": 4551,
+      "public_sha256": "0fed2a99db77ec533a62dc66894d3ec6df3b58b6a8f3cf4a6b47e4086b7f97dc",
+      "publication": "verbatim",
+      "source_bytes": 4551,
+      "source_sha256": "0fed2a99db77ec533a62dc66894d3ec6df3b58b6a8f3cf4a6b47e4086b7f97dc"
+    },
+    "results/iris-freeze-20261123-v1/corpus/empty/answers.json": {
+      "public_bytes": 3,
+      "public_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "publication": "verbatim",
+      "source_bytes": 3,
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "results/iris-freeze-20261123-v1/corpus/empty/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e"
+    },
+    "results/iris-freeze-20261123-v1/corpus/empty/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "66fb01c8a4d2cd4ff6e1d8c124e428e935f4f532756c1a1a7546d42750e5201e"
+    },
+    "results/iris-freeze-20261123-v1/corpus/empty/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "4e2b08667a99e2cbb611ad488a33ea9370ea4a4149359e0022affb844d7cf286"
+    },
+    "results/iris-freeze-20261123-v1/corpus/empty/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9bb0d77b5ae625ce13376762f3d4d19ce1695bee3ee33115a7e2ae551cb4c866"
+    },
+    "results/iris-freeze-20261123-v1/corpus/endpoints/answers.json": {
+      "public_bytes": 103,
+      "public_sha256": "739d93544459bf5de20e3607723ad497105068ca62d68cb0ed5dfada62a1c0ab",
+      "publication": "verbatim",
+      "source_bytes": 103,
+      "source_sha256": "739d93544459bf5de20e3607723ad497105068ca62d68cb0ed5dfada62a1c0ab"
+    },
+    "results/iris-freeze-20261123-v1/corpus/endpoints/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "1373cfd8db4cd9663f41f3f00c7e437092f3415abf39f8fe20ddeca444859ab9"
+    },
+    "results/iris-freeze-20261123-v1/corpus/endpoints/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "2abe432b99b9d30e97bea66879be8ea1f2c67a4186908e1053318509791ca21a",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "2abe432b99b9d30e97bea66879be8ea1f2c67a4186908e1053318509791ca21a"
+    },
+    "results/iris-freeze-20261123-v1/corpus/endpoints/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "2c68e7246151a23f3ac2ef81972355303ade52168346727b4175f2f4d4d7fb81"
+    },
+    "results/iris-freeze-20261123-v1/corpus/endpoints/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "f79606ebe892c82b642f18a0e9e843a8ce90a95286ea9c54f2d8f39cff9434c9"
+    },
+    "results/iris-freeze-20261123-v1/corpus/manifest.json": {
+      "public_bytes": 9002,
+      "public_sha256": "34d9c44e029649b5a2306235c7fef6765beea0d02a4e7b290a85917104deaeb2",
+      "publication": "verbatim",
+      "source_bytes": 9002,
+      "source_sha256": "34d9c44e029649b5a2306235c7fef6765beea0d02a4e7b290a85917104deaeb2"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n31/answers.json": {
+      "public_bytes": 1595,
+      "public_sha256": "3f419474ce5e651ee248b5c55dbe14945685170d919696b5eda43d73766d1167",
+      "publication": "verbatim",
+      "source_bytes": 1595,
+      "source_sha256": "3f419474ce5e651ee248b5c55dbe14945685170d919696b5eda43d73766d1167"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n31/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "415a2517d5c36e3b071379f2b43490a7711d107c64481c541be283c69d9c255b"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n31/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "a588ff2127dd36a257ad7d0d7ff732da7715f5af8c630491ac64bc18ca04d0f4",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "a588ff2127dd36a257ad7d0d7ff732da7715f5af8c630491ac64bc18ca04d0f4"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n31/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "26201239a3cc20f200d4bf2439b5c1f8d46f49136bc7cf6c8b86bc767dd4670b"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n31/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "54962bf6974e2d78095d741015d56990171ee158d75422eebbe9111db4221cd5"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n32/answers.json": {
+      "public_bytes": 1646,
+      "public_sha256": "9a3aed7592ef2a790dc50ec56eab042b3497623b06a2da351edd132ec27085bf",
+      "publication": "verbatim",
+      "source_bytes": 1646,
+      "source_sha256": "9a3aed7592ef2a790dc50ec56eab042b3497623b06a2da351edd132ec27085bf"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n32/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "fa6193189bb4fb67b0a7c955e427641c7209360e19d77c4907cd599cba2fd29f"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n32/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0ef0d34ee17ad2a8756b420d5257f083bc289f21f9c6325e813010f4a60a905b",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0ef0d34ee17ad2a8756b420d5257f083bc289f21f9c6325e813010f4a60a905b"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n32/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "add1e8f499afcba3fc3f271c90a18398c8a9615288944a8d01fea4ab6defa2d8"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n32/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0be695015ad32b1a857becf252705de4119e6fdd73dce8ee1e4246cd7d0d8d92"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n33/answers.json": {
+      "public_bytes": 1698,
+      "public_sha256": "f8df39631b9a28ef93c123fe93f7ecf2fdae66558301597c51ab4a2b9cc626e6",
+      "publication": "verbatim",
+      "source_bytes": 1698,
+      "source_sha256": "f8df39631b9a28ef93c123fe93f7ecf2fdae66558301597c51ab4a2b9cc626e6"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n33/out.expected.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "b09d138bc9b361d1a4e3a850d449aeca2fcc3f47c39e44012841b1c0acee800c"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n33/out.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "199a1e4f36eb9025dc5b3b517b9ce6e95797465c093d9308dde71c5b35676a51",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "199a1e4f36eb9025dc5b3b517b9ce6e95797465c093d9308dde71c5b35676a51"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n33/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "04772b7897f2e399936280565c8af49f7eff7a5cb4716ad15d5d4dd9d3f8b81a"
+    },
+    "results/iris-freeze-20261123-v1/corpus/n33/x.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "9d2b3b2c253c759e348b0b848141b85d480552ae9c26289f83d9e0315c8661de"
+    },
+    "results/iris-freeze-20261123-v1/corpus/one/answers.json": {
+      "public_bytes": 54,
+      "public_sha256": "3210deb4816964d5c6fb5fe911ca5bb50562f9ac42562912cccc56609f3d970c",
+      "publication": "verbatim",
+      "source_bytes": 54,
+      "source_sha256": "3210deb4816964d5c6fb5fe911ca5bb50562f9ac42562912cccc56609f3d970c"
+    },
+    "results/iris-freeze-20261123-v1/corpus/one/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "74cf05775c309ab9a973ddbed8b6b240e78b17ac30d052ce842d311428782601"
+    },
+    "results/iris-freeze-20261123-v1/corpus/one/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "966b249d1dc568d163f4df65ba63989d1a8c07883dcc1f355811cca033bb62a3",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "966b249d1dc568d163f4df65ba63989d1a8c07883dcc1f355811cca033bb62a3"
+    },
+    "results/iris-freeze-20261123-v1/corpus/one/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "ad297ab05e14ef4a5c8d07407fc52f493cadb23cb58908187d1ae9e580f5a272"
+    },
+    "results/iris-freeze-20261123-v1/corpus/one/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "ae3ac617426d49c87378c1340e37ad1b16276e1bf292bafe5cae7fb1343f43c2"
+    },
+    "results/iris-freeze-20261123-v1/corpus/permuted/answers.json": {
+      "public_bytes": 2312,
+      "public_sha256": "5cf6c052eadcffb4134909dd8c9f54be2c98b29f114d9dde0cca514aa8bd35f8",
+      "publication": "verbatim",
+      "source_bytes": 2312,
+      "source_sha256": "5cf6c052eadcffb4134909dd8c9f54be2c98b29f114d9dde0cca514aa8bd35f8"
+    },
+    "results/iris-freeze-20261123-v1/corpus/permuted/out.expected.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "467be6c1f9593d7503a750b4c7fcb9bdf99350dedaf6af260443ec54619cfca3"
+    },
+    "results/iris-freeze-20261123-v1/corpus/permuted/out.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "be82ba24f2035c9c731b5d29a92e4527ed4a6904e890051dcbcf7ae58bea4989",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "be82ba24f2035c9c731b5d29a92e4527ed4a6904e890051dcbcf7ae58bea4989"
+    },
+    "results/iris-freeze-20261123-v1/corpus/permuted/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "b8f1ce0941f5ca097c6be95dc5160fcedc018c78dade1c54499c00bd32fea5fd"
+    },
+    "results/iris-freeze-20261123-v1/corpus/permuted/x.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "b232d5cae57dd4d2192a1d3064715e24004fe33091ee9231185d3d12d2a5d977"
+    },
+    "results/iris-freeze-20261123-v1/corpus/split.json": {
+      "public_bytes": 1488,
+      "public_sha256": "b3c139740b545e748cde97fd3edd40013ef8f7305c9097fef8ab8d6e5e105425",
+      "publication": "verbatim",
+      "source_bytes": 1488,
+      "source_sha256": "b3c139740b545e748cde97fd3edd40013ef8f7305c9097fef8ab8d6e5e105425"
+    },
+    "results/iris-freeze-20261123-v1/corpus/test45/answers.json": {
+      "public_bytes": 2312,
+      "public_sha256": "db2ea8d7529e337df3f75e275e5c9c2b37f3f52e8e64ad4b1a56362c1f405e9b",
+      "publication": "verbatim",
+      "source_bytes": 2312,
+      "source_sha256": "db2ea8d7529e337df3f75e275e5c9c2b37f3f52e8e64ad4b1a56362c1f405e9b"
+    },
+    "results/iris-freeze-20261123-v1/corpus/test45/out.expected.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "38acd5621aae08245c9ee941bd69f96724148f1002a9c263a6b8d015a87f84e8"
+    },
+    "results/iris-freeze-20261123-v1/corpus/test45/out.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "6a4243fe7086382ffb603d4299f6adb3083b63b3c744c6e7e4f6c32a63fd30a1",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "6a4243fe7086382ffb603d4299f6adb3083b63b3c744c6e7e4f6c32a63fd30a1"
+    },
+    "results/iris-freeze-20261123-v1/corpus/test45/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "3bca518df8c65b9cabdf7ce65ce950428dca19a0ff65cd61373dc46f93683705"
+    },
+    "results/iris-freeze-20261123-v1/corpus/test45/x.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "8ae0a04fa9cb31618bd8ba1b132ea65e732466d88945ecebcd4dc9551867f314"
+    },
+    "results/iris-freeze-20261123-v1/corpus/ties/answers.json": {
+      "public_bytes": 93,
+      "public_sha256": "b7f47cb0eadf8cefd4a5892e103c68069ecd539cfbe3076a6c814f0949d62836",
+      "publication": "verbatim",
+      "source_bytes": 93,
+      "source_sha256": "b7f47cb0eadf8cefd4a5892e103c68069ecd539cfbe3076a6c814f0949d62836"
+    },
+    "results/iris-freeze-20261123-v1/corpus/ties/out.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "833c73cb997a3dd387342e4f6768dcce94c622338917434b6ab1c836705bb5be"
+    },
+    "results/iris-freeze-20261123-v1/corpus/ties/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "3955dbdc2ab123c69352e7bba4c1a1deef610e54ad8656df43f25b3910ba70a6",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "3955dbdc2ab123c69352e7bba4c1a1deef610e54ad8656df43f25b3910ba70a6"
+    },
+    "results/iris-freeze-20261123-v1/corpus/ties/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "803963c88e2df2a194bca3d4fe70ff0af5ba65f1f86e0c8fef35f249887a7dd9"
+    },
+    "results/iris-freeze-20261123-v1/corpus/ties/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "9ded37288929c290e4ffc2906adf95ac3c9cca820ff6086fef8068d21a130dbb"
+    },
+    "results/iris-freeze-20261123-v1/logs/01_freeze.log": {
+      "public_bytes": 183,
+      "public_sha256": "bd2512dab0031ef09df2eb0c1ab75a6c4cc405500bade94c71fa58c1b20d090b",
+      "publication": "verbatim",
+      "source_bytes": 183,
+      "source_sha256": "bd2512dab0031ef09df2eb0c1ab75a6c4cc405500bade94c71fa58c1b20d090b"
+    },
+    "results/iris-freeze-20261123-v1/summary.json": {
+      "public_bytes": 1168,
+      "public_sha256": "2d8cd36f3b01f826f04f4c7c23ff1d029e080a82cc49f5ce4cd425ff96b20d90",
+      "publication": "verbatim",
+      "source_bytes": 1168,
+      "source_sha256": "2d8cd36f3b01f826f04f4c7c23ff1d029e080a82cc49f5ce4cd425ff96b20d90"
+    },
+    "results/iris-models-20261123-v1/logs/01_simx.log": {
+      "public_bytes": 139,
+      "public_sha256": "246aa6d82e99e3a390afcf3945c9e8002c120da881028babbcfb39acef0938e0",
+      "publication": "verbatim",
+      "source_bytes": 139,
+      "source_sha256": "246aa6d82e99e3a390afcf3945c9e8002c120da881028babbcfb39acef0938e0"
+    },
+    "results/iris-models-20261123-v1/logs/02_rtlsim.log": {
+      "public_bytes": 263,
+      "public_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998",
+      "publication": "verbatim",
+      "source_bytes": 263,
+      "source_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998"
+    },
+    "results/iris-models-20261123-v1/logs/03_xrtsim.log": {
+      "public_bytes": 263,
+      "public_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998",
+      "publication": "verbatim",
+      "source_bytes": 263,
+      "source_sha256": "23a96fcec8c0cfc91a8d870511205cc0ac892ee009f72ad5a65c3b1af2e82998"
+    },
+    "results/iris-models-20261123-v1/summary.json": {
+      "public_bytes": 14857,
+      "public_sha256": "4201d62e0e8606fc55ceb42fe279f6ad91ebf4fead49e229a182c8aed46348a4",
+      "publication": "verbatim",
+      "source_bytes": 14857,
+      "source_sha256": "4201d62e0e8606fc55ceb42fe279f6ad91ebf4fead49e229a182c8aed46348a4"
+    },
+    "results/iris-perf-comparison-20261123-v1/comparison.json": {
+      "public_bytes": 12553,
+      "public_sha256": "8ab29ccc601d8071a077102bca25aea468b2569fe7de7be17c5a4a407830d8f0",
+      "publication": "verbatim",
+      "source_bytes": 12553,
+      "source_sha256": "8ab29ccc601d8071a077102bca25aea468b2569fe7de7be17c5a4a407830d8f0"
+    },
+    "results/iris-perf-comparison-20261123-v1/performance.png": {
+      "public_bytes": 123886,
+      "public_sha256": "938f001977dffcae6a08d59522a279317bb39a5c588803547d8a519c4a2a9b8c",
+      "publication": "verbatim",
+      "source_bytes": 123886,
+      "source_sha256": "938f001977dffcae6a08d59522a279317bb39a5c588803547d8a519c4a2a9b8c"
+    },
+    "results/iris-perf-cpu-20261123-v1/logs/01_compiler.log": {
+      "public_bytes": 246,
+      "public_sha256": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d",
+      "publication": "verbatim",
+      "source_bytes": 246,
+      "source_sha256": "9eaf9b7f4b11c2e84e2478c2ceb0e4f48f4ba88565bcfc832b3bce49847dda6d"
+    },
+    "results/iris-perf-cpu-20261123-v1/logs/02_cpu_model.log": {
+      "public_bytes": 3075,
+      "public_sha256": "3f077da25cb0f03bf1dcadb024469c7ddb03b56a124c07c33586e00542897807",
+      "publication": "verbatim",
+      "source_bytes": 3075,
+      "source_sha256": "3f077da25cb0f03bf1dcadb024469c7ddb03b56a124c07c33586e00542897807"
+    },
+    "results/iris-perf-cpu-20261123-v1/logs/03_compile.log": {
+      "public_bytes": 975,
+      "public_sha256": "91af32861861cbc438da7ed56d25ed67d0b66447bbca1e191d793f1d43d3346d",
+      "publication": "verbatim",
+      "source_bytes": 975,
+      "source_sha256": "91af32861861cbc438da7ed56d25ed67d0b66447bbca1e191d793f1d43d3346d"
+    },
+    "results/iris-perf-cpu-20261123-v1/logs/04_native_run.log": {
+      "public_bytes": 6558,
+      "public_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c",
+      "publication": "verbatim",
+      "source_bytes": 6558,
+      "source_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c"
+    },
+    "results/iris-perf-cpu-20261123-v1/samples.csv": {
+      "public_bytes": 6558,
+      "public_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c",
+      "publication": "verbatim",
+      "source_bytes": 6558,
+      "source_sha256": "fb1916006cd23c49e8ac33d75a697e90b01423c447befcd2e97bd24cdd767c3c"
+    },
+    "results/iris-perf-cpu-20261123-v1/schedule.txt": {
+      "public_bytes": 4940,
+      "public_sha256": "a2cd9640137466a03326e7a7335ae15a8c143a47feecb7cccee4d41662489e73",
+      "publication": "verbatim",
+      "source_bytes": 4940,
+      "source_sha256": "a2cd9640137466a03326e7a7335ae15a8c143a47feecb7cccee4d41662489e73"
+    },
+    "results/iris-perf-cpu-20261123-v1/summary.json": {
+      "public_bytes": 4346,
+      "public_sha256": "4e5d6fd225d0d4377141ceccc81a912562ad8b867c12914b36b13d47629cb3a9",
+      "publication": "verbatim",
+      "source_bytes": 4346,
+      "source_sha256": "4e5d6fd225d0d4377141ceccc81a912562ad8b867c12914b36b13d47629cb3a9"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/fold0.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "c197475edc54a4601d194b072953b02d0d14c92c65f0d9d12a41fafe8735976d",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "c197475edc54a4601d194b072953b02d0d14c92c65f0d9d12a41fafe8735976d"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/fold1.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "520262dcc13b28ad7dd09607fa6988d4a07b2d2e69299470395521e3fb57e128",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "520262dcc13b28ad7dd09607fa6988d4a07b2d2e69299470395521e3fb57e128"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/fold2.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "78442b501d7c5b8162dfa9f7736e84685d72d6e20704014d6b4ca5fe97d26673",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "78442b501d7c5b8162dfa9f7736e84685d72d6e20704014d6b4ca5fe97d26673"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/fold3.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "bdd73775628087c12d94cf67d849329730637d2f566d47bfbece0ed543fdd6bc",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "bdd73775628087c12d94cf67d849329730637d2f566d47bfbece0ed543fdd6bc"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/fold4.expected.bin": {
+      "public_bytes": 544,
+      "public_sha256": "539fa9021cde5078b1b67eecfd3d313453f923cd0d903ed138fd6cc7546ecddf",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "539fa9021cde5078b1b67eecfd3d313453f923cd0d903ed138fd6cc7546ecddf"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/folds.json": {
+      "public_bytes": 9883,
+      "public_sha256": "292860fa306108371e6e00ea83d9d5b5036aba6d3ba18abd2669001756c5b59b",
+      "publication": "verbatim",
+      "source_bytes": 9883,
+      "source_sha256": "292860fa306108371e6e00ea83d9d5b5036aba6d3ba18abd2669001756c5b59b"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/freeze.json": {
+      "public_bytes": 5916,
+      "public_sha256": "bab8e82ea2b1f23c06359f28e2dd60ee4f8a31ee80b50c1d0a620f0adc3efe96",
+      "publication": "verbatim",
+      "source_bytes": 5916,
+      "source_sha256": "bab8e82ea2b1f23c06359f28e2dd60ee4f8a31ee80b50c1d0a620f0adc3efe96"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold0/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "755952c7da632b5cf31c32f108de0c46d3e5c7e23c752042514054f9aff4d1c4",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "755952c7da632b5cf31c32f108de0c46d3e5c7e23c752042514054f9aff4d1c4"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold0/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "c2cdaf67970a9742605923254fd1e0053e4cf92dee0f43c5ef57953b50113492",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "c2cdaf67970a9742605923254fd1e0053e4cf92dee0f43c5ef57953b50113492"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold0/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "81c8f5ca4a64c05aefc95e9dfaf7b6cb2f62fed355522365e0f645e87deec6ab",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "81c8f5ca4a64c05aefc95e9dfaf7b6cb2f62fed355522365e0f645e87deec6ab"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold1/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "6be728b78596af9a00f1d6dbaa4f087c1a3d0a5759bf6283308ff6b5a9587c6c",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "6be728b78596af9a00f1d6dbaa4f087c1a3d0a5759bf6283308ff6b5a9587c6c"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold1/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "31de466418b926314286955b3c4c3eaf3df6c16b882883510f5c065edad0ef72",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "31de466418b926314286955b3c4c3eaf3df6c16b882883510f5c065edad0ef72"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold1/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "08cd303343d8743b012480cadb24deea2650698cae6e77507e8b19faf0b77d3d",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "08cd303343d8743b012480cadb24deea2650698cae6e77507e8b19faf0b77d3d"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold2/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "0c193f48387700fef355f90358b26ace8480672d0da7e52853ec46c3d898b29e",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "0c193f48387700fef355f90358b26ace8480672d0da7e52853ec46c3d898b29e"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold2/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "002a836eee080488dc0d35428d487863917eb25d6bef31b704b7cf476920f71f",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "002a836eee080488dc0d35428d487863917eb25d6bef31b704b7cf476920f71f"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold2/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "b87c80640ef6325013f161856783a8f690c0badfa46a60c299e0c29300c2e548",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "b87c80640ef6325013f161856783a8f690c0badfa46a60c299e0c29300c2e548"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold3/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "a3da9072c03478a64561bfe9fd1eabf5c28fc70a0b112dafe54929a1bcb75adf",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "a3da9072c03478a64561bfe9fd1eabf5c28fc70a0b112dafe54929a1bcb75adf"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold3/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "c27b40dce693d897413c0b8ebf2cde1da2a52a566041d601674486c0a49473b8",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "c27b40dce693d897413c0b8ebf2cde1da2a52a566041d601674486c0a49473b8"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold3/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "8cd6a2533754a1461a5ff7280c9e9c8bf4b38b34d14df791c0517c90d82e2bff",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "8cd6a2533754a1461a5ff7280c9e9c8bf4b38b34d14df791c0517c90d82e2bff"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold4/out.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "e64174f0113b6cd1fae73e27e05576cb45a069b7f0f421e8265c2f700e3514de",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "e64174f0113b6cd1fae73e27e05576cb45a069b7f0f421e8265c2f700e3514de"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold4/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "078f79183aaa4272728f18e90d5aeabf23dc7333c9480835b187298b3c32fe48",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "078f79183aaa4272728f18e90d5aeabf23dc7333c9480835b187298b3c32fe48"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/fold4/x.input.bin": {
+      "public_bytes": 544,
+      "public_sha256": "65656fe139dded0888d1c9c4d0de10e109effbcb218198fe24fba7d0f64b56de",
+      "publication": "verbatim",
+      "source_bytes": 544,
+      "source_sha256": "65656fe139dded0888d1c9c4d0de10e109effbcb218198fe24fba7d0f64b56de"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/manifest.json": {
+      "public_bytes": 22829,
+      "public_sha256": "0aaa730a973a6aedef451408cfb00fbf2993388a11c56e28e0dd17e25145dbda",
+      "publication": "verbatim",
+      "source_bytes": 22829,
+      "source_sha256": "0aaa730a973a6aedef451408cfb00fbf2993388a11c56e28e0dd17e25145dbda"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n1024/out.input.bin": {
+      "public_bytes": 16416,
+      "public_sha256": "5855ac7f88a94872f280922816be8ca9c005eaa29ab9db5afce32789c5ce36a3",
+      "publication": "verbatim",
+      "source_bytes": 16416,
+      "source_sha256": "5855ac7f88a94872f280922816be8ca9c005eaa29ab9db5afce32789c5ce36a3"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n1024/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "6354ae33d5618c85931e994ca9d45edd3d5e6431311cacf010f4195e7279b7b9",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "6354ae33d5618c85931e994ca9d45edd3d5e6431311cacf010f4195e7279b7b9"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n1024/x.input.bin": {
+      "public_bytes": 16416,
+      "public_sha256": "db3983970abd793eb6fff15fce606a43b0192862c0b2cdef98cc34c6a8656d38",
+      "publication": "verbatim",
+      "source_bytes": 16416,
+      "source_sha256": "db3983970abd793eb6fff15fce606a43b0192862c0b2cdef98cc34c6a8656d38"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n150/out.input.bin": {
+      "public_bytes": 2592,
+      "public_sha256": "767a81d846f3534c59d00199c5f5fc47534d0ecf0886686da26b35023e8f949b",
+      "publication": "verbatim",
+      "source_bytes": 2592,
+      "source_sha256": "767a81d846f3534c59d00199c5f5fc47534d0ecf0886686da26b35023e8f949b"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n150/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "48ab81941239c0a50dc7049fced51f47b26eb73044d1e07ba1d228d777953bcf",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "48ab81941239c0a50dc7049fced51f47b26eb73044d1e07ba1d228d777953bcf"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n150/x.input.bin": {
+      "public_bytes": 2592,
+      "public_sha256": "6360c44d694635755f032c98dab814af2eaf6b61092cff7821ae5f05353a7112",
+      "publication": "verbatim",
+      "source_bytes": 2592,
+      "source_sha256": "6360c44d694635755f032c98dab814af2eaf6b61092cff7821ae5f05353a7112"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n16381/out.input.bin": {
+      "public_bytes": 262176,
+      "public_sha256": "a4e3b38de8955f7837b3939becfe0ed3befc3c54c74aa128b2ab515c1d7d1131",
+      "publication": "verbatim",
+      "source_bytes": 262176,
+      "source_sha256": "a4e3b38de8955f7837b3939becfe0ed3befc3c54c74aa128b2ab515c1d7d1131"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n16381/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "70e8acc1e498844cbea3b1e77b7b41492d6c04f31b8f08efbc34545719db20a4",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "70e8acc1e498844cbea3b1e77b7b41492d6c04f31b8f08efbc34545719db20a4"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n16381/x.input.bin": {
+      "public_bytes": 262176,
+      "public_sha256": "ad00afd592254788db6b34b0a8db7883d23cf0f2f108efa59bb41e943cf3aed6",
+      "publication": "verbatim",
+      "source_bytes": 262176,
+      "source_sha256": "ad00afd592254788db6b34b0a8db7883d23cf0f2f108efa59bb41e943cf3aed6"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n4096/out.input.bin": {
+      "public_bytes": 65568,
+      "public_sha256": "e3a1416d9489595289632f8700d65de8b34ce3ba28b1eef2f5b84f8fcbb11767",
+      "publication": "verbatim",
+      "source_bytes": 65568,
+      "source_sha256": "e3a1416d9489595289632f8700d65de8b34ce3ba28b1eef2f5b84f8fcbb11767"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n4096/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "afaa0c41d06d1df12a46d50d528160a139fd0a58de39d02a049e7b320137228d",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "afaa0c41d06d1df12a46d50d528160a139fd0a58de39d02a049e7b320137228d"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n4096/x.input.bin": {
+      "public_bytes": 65568,
+      "public_sha256": "fb501b9a5d195380f6189bd95c9c20dab8fcd34b8d799318a8887c906e8cdeeb",
+      "publication": "verbatim",
+      "source_bytes": 65568,
+      "source_sha256": "fb501b9a5d195380f6189bd95c9c20dab8fcd34b8d799318a8887c906e8cdeeb"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n45/out.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "464a48e83f1352696aca1dfbf31400fd527016791342224b3079f1f69457a70f",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "464a48e83f1352696aca1dfbf31400fd527016791342224b3079f1f69457a70f"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n45/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "d29868288a09733b558efad48c2e67dd70508500419c99d0072eeff3879a3cd5",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "d29868288a09733b558efad48c2e67dd70508500419c99d0072eeff3879a3cd5"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n45/x.input.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "bc5334ca0a7134de8cf731228e5f6bc8c03eb6288d1ccb130cbf5b24ea69bdf3",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "bc5334ca0a7134de8cf731228e5f6bc8c03eb6288d1ccb130cbf5b24ea69bdf3"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n65533/out.input.bin": {
+      "public_bytes": 1048608,
+      "public_sha256": "21ae096acb982c3a420aebc1bf1aac93ea47142fd87973a515d37c7e8c168f15",
+      "publication": "verbatim",
+      "source_bytes": 1048608,
+      "source_sha256": "21ae096acb982c3a420aebc1bf1aac93ea47142fd87973a515d37c7e8c168f15"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n65533/sums.input.bin": {
+      "public_bytes": 80,
+      "public_sha256": "0b2733bcafb24ba194bd34e31317b12d7adffdf080ef4d38cbc0a008e66329c6",
+      "publication": "verbatim",
+      "source_bytes": 80,
+      "source_sha256": "0b2733bcafb24ba194bd34e31317b12d7adffdf080ef4d38cbc0a008e66329c6"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/inputs/n65533/x.input.bin": {
+      "public_bytes": 1048608,
+      "public_sha256": "ef1205a342429eaf9dc9d59586c982e01be835aa1cefe52ab5b010722ea6f08e",
+      "publication": "verbatim",
+      "source_bytes": 1048608,
+      "source_sha256": "ef1205a342429eaf9dc9d59586c982e01be835aa1cefe52ab5b010722ea6f08e"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n1024.expected.bin": {
+      "public_bytes": 16416,
+      "public_sha256": "56344c63be6cadcdb735e0fa9cff3a1257562f0786c47c6697d5e3646c675e2e",
+      "publication": "verbatim",
+      "source_bytes": 16416,
+      "source_sha256": "56344c63be6cadcdb735e0fa9cff3a1257562f0786c47c6697d5e3646c675e2e"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n150.expected.bin": {
+      "public_bytes": 2592,
+      "public_sha256": "6180b9162ead1ccba8410e547c44e1369dbd71e5dd74ed9779efc9fefd4e1b03",
+      "publication": "verbatim",
+      "source_bytes": 2592,
+      "source_sha256": "6180b9162ead1ccba8410e547c44e1369dbd71e5dd74ed9779efc9fefd4e1b03"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n16381.expected.bin": {
+      "public_bytes": 262176,
+      "public_sha256": "6bf7f263403f31ceee463e13563c6708329454dae5bd65f886e9fada7f5c4859",
+      "publication": "verbatim",
+      "source_bytes": 262176,
+      "source_sha256": "6bf7f263403f31ceee463e13563c6708329454dae5bd65f886e9fada7f5c4859"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n4096.expected.bin": {
+      "public_bytes": 65568,
+      "public_sha256": "65f8c8ccd64535e90002f6bf281c16807fa8a174fd0bc0ca5588987aba1933b4",
+      "publication": "verbatim",
+      "source_bytes": 65568,
+      "source_sha256": "65f8c8ccd64535e90002f6bf281c16807fa8a174fd0bc0ca5588987aba1933b4"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n45.expected.bin": {
+      "public_bytes": 1056,
+      "public_sha256": "31c7a9cec4c894d168724d80e80e7041950e144647a9e5b7ed3e1fcd9bf68056",
+      "publication": "verbatim",
+      "source_bytes": 1056,
+      "source_sha256": "31c7a9cec4c894d168724d80e80e7041950e144647a9e5b7ed3e1fcd9bf68056"
+    },
+    "results/iris-perf-freeze-20261123-v1/corpus/n65533.expected.bin": {
+      "public_bytes": 1048608,
+      "public_sha256": "294be0d15273830cd717d47c5d1b2ea5850bbbd7771c9cdb4c26646990ee3045",
+      "publication": "verbatim",
+      "source_bytes": 1048608,
+      "source_sha256": "294be0d15273830cd717d47c5d1b2ea5850bbbd7771c9cdb4c26646990ee3045"
+    },
+    "results/iris-perf-freeze-20261123-v1/freeze.log": {
+      "public_bytes": 143,
+      "public_sha256": "a2595a592ff4bc48f5a01a8e80be730fb187bdd12e1aee01a6ed875c1e6200eb",
+      "publication": "verbatim",
+      "source_bytes": 143,
+      "source_sha256": "a2595a592ff4bc48f5a01a8e80be730fb187bdd12e1aee01a6ed875c1e6200eb"
+    },
+    "results/iris-perf-freeze-20261123-v1/summary.json": {
+      "public_bytes": 210,
+      "public_sha256": "f07248c295982f11a142e51fb462f3721aab3ea7c2504ebaada9bb7125a617e4",
+      "publication": "verbatim",
+      "source_bytes": 210,
+      "source_sha256": "f07248c295982f11a142e51fb462f3721aab3ea7c2504ebaada9bb7125a617e4"
+    },
+    "results/iris-publication-20261123-v1/check.json": {
+      "public_bytes": 1882,
+      "public_sha256": "269357d31f6c58a999ac049de617f3f818ad1b09f63b279204dca78245663f51",
+      "publication": "verbatim",
+      "source_bytes": 1882,
+      "source_sha256": "269357d31f6c58a999ac049de617f3f818ad1b09f63b279204dca78245663f51"
+    },
+    "results/iris-review-20261123-v1/board-predictions.json": {
+      "public_bytes": 13387,
+      "public_sha256": "310b0f4ca66b105979b62ec638ff4e35a4fca9f0f2edd80166e77c36d4681878",
+      "publication": "verbatim",
+      "source_bytes": 13387,
+      "source_sha256": "310b0f4ca66b105979b62ec638ff4e35a4fca9f0f2edd80166e77c36d4681878"
+    },
+    "results/iris-review-20261123-v1/logs/01_recompute_oracle.log": {
+      "public_bytes": 183,
+      "public_sha256": "bd2512dab0031ef09df2eb0c1ab75a6c4cc405500bade94c71fa58c1b20d090b",
+      "publication": "verbatim",
+      "source_bytes": 183,
+      "source_sha256": "bd2512dab0031ef09df2eb0c1ab75a6c4cc405500bade94c71fa58c1b20d090b"
+    },
+    "results/iris-review-20261123-v1/logs/02_review_simx.log": {
+      "public_bytes": 3112,
+      "public_sha256": "0ed3d68f906d7d348c05e9e323b3b7360abe28a60ab77b6cba727bd14f429bfa",
+      "publication": "verbatim",
+      "source_bytes": 3112,
+      "source_sha256": "0ed3d68f906d7d348c05e9e323b3b7360abe28a60ab77b6cba727bd14f429bfa"
+    },
+    "results/iris-review-20261123-v1/logs/03_review_rtlsim.log": {
+      "public_bytes": 3118,
+      "public_sha256": "8b5669e39d318cea4a7e4d8c49661827f5010d37546ca4f6ee1eff8e38ac886a",
+      "publication": "verbatim",
+      "source_bytes": 3118,
+      "source_sha256": "8b5669e39d318cea4a7e4d8c49661827f5010d37546ca4f6ee1eff8e38ac886a"
+    },
+    "results/iris-review-20261123-v1/logs/04_review_xrtsim.log": {
+      "public_bytes": 3118,
+      "public_sha256": "ee120481d90c0534262beca50f0f7e5f9c89177a051677c3609958c2d436cf0e",
+      "publication": "verbatim",
+      "source_bytes": 3118,
+      "source_sha256": "ee120481d90c0534262beca50f0f7e5f9c89177a051677c3609958c2d436cf0e"
+    },
+    "results/iris-review-20261123-v1/logs/05_review_u280-xrt.log": {
+      "public_bytes": 3124,
+      "public_sha256": "5a8ee7e70e53ef0a07821c77e5311ef219e8e8a6c8efb57d38e43323192afe1d",
+      "publication": "verbatim",
+      "source_bytes": 3124,
+      "source_sha256": "5a8ee7e70e53ef0a07821c77e5311ef219e8e8a6c8efb57d38e43323192afe1d"
+    },
+    "results/iris-review-20261123-v1/summary.json": {
+      "public_bytes": 40086,
+      "public_sha256": "582fa92f74ea15e7fb127a812bf085d01868324fb49c0168603f432c0300c4ac",
+      "publication": "verbatim",
+      "source_bytes": 40086,
+      "source_sha256": "582fa92f74ea15e7fb127a812bf085d01868324fb49c0168603f432c0300c4ac"
+    },
+    "results/iris-selftest-20261123-v2/logs/01_runner_selftest.log": {
+      "public_bytes": 32873,
+      "public_sha256": "dea90a38108cf0eb836701bf6e914f1e60f375d1b1f944443845cfc0e2c85396",
+      "publication": "verbatim",
+      "source_bytes": 32873,
+      "source_sha256": "dea90a38108cf0eb836701bf6e914f1e60f375d1b1f944443845cfc0e2c85396"
+    },
+    "results/iris-selftest-20261123-v2/summary.json": {
+      "public_bytes": 955,
+      "public_sha256": "93e7565ad111db07fca816df9dc4f98f950a327c7e512973af63caf4634e7eca",
+      "publication": "verbatim",
+      "source_bytes": 955,
+      "source_sha256": "93e7565ad111db07fca816df9dc4f98f950a327c7e512973af63caf4634e7eca"
+    },
+    "results/iris-selftest-perf-20261123-v1/logs/01_runner_selftest.log": {
+      "public_bytes": 32873,
+      "public_sha256": "60f39c4973b9cb9c6452842f1f18cf05f4891fd5e6303156a083df0c9189760e",
+      "publication": "verbatim",
+      "source_bytes": 32873,
+      "source_sha256": "60f39c4973b9cb9c6452842f1f18cf05f4891fd5e6303156a083df0c9189760e"
+    },
+    "results/iris-selftest-perf-20261123-v1/summary.json": {
+      "public_bytes": 965,
+      "public_sha256": "1609d6bad3977b01c0ed1b576108766e77a7a0bb20072845233baf2e45c8e9de",
+      "publication": "verbatim",
+      "source_bytes": 965,
+      "source_sha256": "1609d6bad3977b01c0ed1b576108766e77a7a0bb20072845233baf2e45c8e9de"
+    },
     "results/local-ptx-align-build-20261121-v1/summary.json": {
       "public_bytes": 20173,
       "public_sha256": "557c6941aada25fc683088e17481ad9a1f0a62b0e34bd4cbfa50306b96476735",
@@ -15691,11 +17938,11 @@
       "source_sha256": "5a182e35844cc3685e1bb9263aec51559be2205b36038ba17a5f418fda0316ce"
     },
     "scripts/Invoke-CV03U280.ps1": {
-      "public_bytes": 3803,
-      "public_sha256": "e428536bc42bbeef573ae3f56f24b40ef1c4f66a4ea492e0619d1cb61a2a3e94",
+      "public_bytes": 3815,
+      "public_sha256": "f17343e787a346c865bf884bbe48ed289d143a9d11c42042b8017b3028697c43",
       "publication": "verbatim",
-      "source_bytes": 3803,
-      "source_sha256": "e428536bc42bbeef573ae3f56f24b40ef1c4f66a4ea492e0619d1cb61a2a3e94"
+      "source_bytes": 3815,
+      "source_sha256": "f17343e787a346c865bf884bbe48ed289d143a9d11c42042b8017b3028697c43"
     },
     "scripts/Invoke-EUnseenU280.ps1": {
       "public_bytes": 3659,
@@ -15789,11 +18036,11 @@
       "source_sha256": "fcd0bf22ba21056196b0217b1af9af8bdacfefc23edb3f23e260fbc4b64221b9"
     },
     "scripts/c_v03_board_transport.py": {
-      "public_bytes": 14567,
-      "public_sha256": "163fe7a4065ed8bc2253cc7ba8b4e6d1a14e8b791fa0534b457c4e6ea4a07db2",
+      "public_bytes": 15491,
+      "public_sha256": "aa4dc4b558f73c2442bccc863f6a7f8dfd8459f7682936b9712c5db21a1de146",
       "publication": "verbatim",
-      "source_bytes": 14567,
-      "source_sha256": "163fe7a4065ed8bc2253cc7ba8b4e6d1a14e8b791fa0534b457c4e6ea4a07db2"
+      "source_bytes": 15491,
+      "source_sha256": "aa4dc4b558f73c2442bccc863f6a7f8dfd8459f7682936b9712c5db21a1de146"
     },
     "scripts/c_v03_high_board.py": {
       "public_bytes": 14842,
@@ -16841,7 +19088,7 @@
   },
   "redaction_policy": "Server and workstation identifiers replaced by examples. Unpublished archive links are indexed. Historical hash fields remain unchanged. V08 timing receipt publishes aggregate data.",
   "schema": "vortex-publication-v3",
-  "scope": "Project code, current progress, frozen PTX fixtures and selected receipts, including V08 aggregate reports. No new device execution.",
-  "total_bytes": 10435477,
-  "total_files": 2429
+  "scope": "Existing public snapshot plus Iris functional and performance experiments with physical board and CPU evidence.",
+  "total_bytes": 17627019,
+  "total_files": 2750
 }

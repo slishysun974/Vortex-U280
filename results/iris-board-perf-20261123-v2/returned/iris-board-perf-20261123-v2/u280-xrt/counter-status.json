@@ -1,0 +1,29 @@
+{
+  "schema": "u280-d10-d12-launch-mpm-v1",
+  "status": "PASS",
+  "core": 0,
+  "mpm_class": 0,
+  "addresses": {
+    "cycles": 2816,
+    "instret": 2818
+  },
+  "pilots": [
+    {
+      "case": "n45",
+      "scope": "probe",
+      "seq": 1,
+      "trial": 0,
+      "cycles": 20681,
+      "instret": 4555
+    },
+    {
+      "case": "n45",
+      "scope": "probe",
+      "seq": 2,
+      "trial": 1,
+      "cycles": 20694,
+      "instret": 4555
+    }
+  ],
+  "paired_launches": 215
+}

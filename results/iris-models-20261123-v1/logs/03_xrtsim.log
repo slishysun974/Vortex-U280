@@ -1,0 +1,10 @@
+CONFIGS: num_threads=4, num_warps=8, num_cores=1, num_clusters=1, socket_size=1, local_mem_base=0x1ffff0000, num_barriers=8
+launch test45 45
+launch empty 0
+launch one 1
+launch n31 31
+launch n32 32
+launch n33 33
+launch permuted 45
+launch ties 2
+launch endpoints 2

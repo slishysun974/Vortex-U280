@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
-    [ValidatePattern('^(?:c-v03-u280-|u280-aligned-)[A-Za-z0-9_-]{1,50}$')]
+    [ValidatePattern('^(?:c-v03-u280-|u280-aligned-|iris-board-)[A-Za-z0-9_-]{1,50}$')]
     [string]$RunId,
     [Parameter(Mandatory=$true)]
     [ValidatePattern('^[a-zA-Z0-9.-]+$')]

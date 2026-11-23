@@ -1,0 +1,416 @@
+{
+  "run_id": "iris-board-perf-20261123-v2",
+  "status": "PASS",
+  "exit_code": 0,
+  "worker_exit_code": 0,
+  "board_execution": "PASS",
+  "receipt": {
+    "status": "PASS",
+    "launches": 217,
+    "counter_reads": 1736,
+    "timed": 180,
+    "accuracy_correct": 140,
+    "accuracy_total": 150,
+    "fold_correct": [
+      29,
+      26,
+      28,
+      28,
+      29
+    ],
+    "confusion": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        46,
+        4
+      ],
+      [
+        0,
+        6,
+        44
+      ]
+    ],
+    "errors": [
+      [
+        51,
+        1,
+        2
+      ],
+      [
+        53,
+        1,
+        2
+      ],
+      [
+        77,
+        1,
+        2
+      ],
+      [
+        78,
+        1,
+        2
+      ],
+      [
+        107,
+        2,
+        1
+      ],
+      [
+        114,
+        2,
+        1
+      ],
+      [
+        120,
+        2,
+        1
+      ],
+      [
+        122,
+        2,
+        1
+      ],
+      [
+        127,
+        2,
+        1
+      ],
+      [
+        139,
+        2,
+        1
+      ]
+    ],
+    "groups": {
+      "45": {
+        "h2d_ns": {
+          "median": 248745.5,
+          "p95": 338919,
+          "minimum": 224642,
+          "maximum": 346249
+        },
+        "wait_ns": {
+          "median": 442641.0,
+          "p95": 481150,
+          "minimum": 422878,
+          "maximum": 609672
+        },
+        "d2h_ns": {
+          "median": 667613.5,
+          "p95": 736642,
+          "minimum": 78330,
+          "maximum": 772146
+        },
+        "total_ns": {
+          "median": 1385878.5,
+          "p95": 1489838,
+          "minimum": 738881,
+          "maximum": 1568767
+        },
+        "cycles": {
+          "median": 20729.5,
+          "p95": 21023,
+          "minimum": 20340,
+          "maximum": 21175
+        },
+        "instret": {
+          "median": 4555.0,
+          "p95": 4555,
+          "minimum": 4555,
+          "maximum": 4555
+        },
+        "warp_ipc": {
+          "median": 0.21973516118817468,
+          "p95": 0.22361315660284733,
+          "minimum": 0.215112160566706,
+          "maximum": 0.22394296951819076
+        }
+      },
+      "150": {
+        "h2d_ns": {
+          "median": 230663.0,
+          "p95": 269418,
+          "minimum": 203322,
+          "maximum": 324977
+        },
+        "wait_ns": {
+          "median": 582004.0,
+          "p95": 615561,
+          "minimum": 549972,
+          "maximum": 627290
+        },
+        "d2h_ns": {
+          "median": 82821.5,
+          "p95": 705338,
+          "minimum": 66577,
+          "maximum": 733744
+        },
+        "total_ns": {
+          "median": 912085.0,
+          "p95": 1547297,
+          "minimum": 824352,
+          "maximum": 1629009
+        },
+        "cycles": {
+          "median": 51161.5,
+          "p95": 51652,
+          "minimum": 50029,
+          "maximum": 51682
+        },
+        "instret": {
+          "median": 11581.0,
+          "p95": 11581,
+          "minimum": 11581,
+          "maximum": 11581
+        },
+        "warp_ipc": {
+          "median": 0.22636161977180141,
+          "p95": 0.23148111133320007,
+          "minimum": 0.22408188537595294,
+          "maximum": 0.23148573827180235
+        }
+      },
+      "1024": {
+        "h2d_ns": {
+          "median": 274433.5,
+          "p95": 322614,
+          "minimum": 245559,
+          "maximum": 345422
+        },
+        "wait_ns": {
+          "median": 1879934.5,
+          "p95": 1932636,
+          "minimum": 1830697,
+          "maximum": 2006183
+        },
+        "d2h_ns": {
+          "median": 104404.5,
+          "p95": 183631,
+          "minimum": 90645,
+          "maximum": 206695
+        },
+        "total_ns": {
+          "median": 2278814.0,
+          "p95": 2390243,
+          "minimum": 2166901,
+          "maximum": 2492391
+        },
+        "cycles": {
+          "median": 310473.5,
+          "p95": 314896,
+          "minimum": 307677,
+          "maximum": 317532
+        },
+        "instret": {
+          "median": 74048.0,
+          "p95": 74048,
+          "minimum": 74048,
+          "maximum": 74048
+        },
+        "warp_ipc": {
+          "median": 0.23850022654008182,
+          "p95": 0.24059368623526506,
+          "minimum": 0.233198543768817,
+          "maximum": 0.24066797323166828
+        }
+      },
+      "4096": {
+        "h2d_ns": {
+          "median": 427885.0,
+          "p95": 564197,
+          "minimum": 396226,
+          "maximum": 640703
+        },
+        "wait_ns": {
+          "median": 6514987.0,
+          "p95": 6559328,
+          "minimum": 6423492,
+          "maximum": 6585552
+        },
+        "d2h_ns": {
+          "median": 217914.0,
+          "p95": 238353,
+          "minimum": 166430,
+          "maximum": 298522
+        },
+        "total_ns": {
+          "median": 7165728.0,
+          "p95": 7350675,
+          "minimum": 7017190,
+          "maximum": 7394664
+        },
+        "cycles": {
+          "median": 1232667.5,
+          "p95": 1243198,
+          "minimum": 1221438,
+          "maximum": 1247549
+        },
+        "instret": {
+          "median": 296000.0,
+          "p95": 296000,
+          "minimum": 296000,
+          "maximum": 296000
+        },
+        "warp_ipc": {
+          "median": 0.2401296375546839,
+          "p95": 0.24187097000881685,
+          "minimum": 0.23726522966232189,
+          "maximum": 0.24233731061257305
+        }
+      },
+      "16381": {
+        "h2d_ns": {
+          "median": 1250137.0,
+          "p95": 1462942,
+          "minimum": 963177,
+          "maximum": 1573756
+        },
+        "wait_ns": {
+          "median": 25461545.5,
+          "p95": 25705928,
+          "minimum": 25102599,
+          "maximum": 26023950
+        },
+        "d2h_ns": {
+          "median": 668890.0,
+          "p95": 806918,
+          "minimum": 448565,
+          "maximum": 928965
+        },
+        "total_ns": {
+          "median": 27327139.0,
+          "p95": 27886472,
+          "minimum": 26825668,
+          "maximum": 28051555
+        },
+        "cycles": {
+          "median": 5018894.5,
+          "p95": 5068751,
+          "minimum": 4942993,
+          "maximum": 5070102
+        },
+        "instret": {
+          "median": 1183855.0,
+          "p95": 1183855,
+          "minimum": 1183855,
+          "maximum": 1183855
+        },
+        "warp_ipc": {
+          "median": 0.2358796348072843,
+          "p95": 0.2389455478527891,
+          "minimum": 0.23349727480827803,
+          "maximum": 0.23950165415973682
+        }
+      },
+      "65533": {
+        "h2d_ns": {
+          "median": 4161911.0,
+          "p95": 4700985,
+          "minimum": 4026882,
+          "maximum": 5434725
+        },
+        "wait_ns": {
+          "median": 101747732.0,
+          "p95": 102747617,
+          "minimum": 100525392,
+          "maximum": 102878826
+        },
+        "d2h_ns": {
+          "median": 2777455.0,
+          "p95": 2853119,
+          "minimum": 2729240,
+          "maximum": 3480501
+        },
+        "total_ns": {
+          "median": 108798704.5,
+          "p95": 110095650,
+          "minimum": 107501260,
+          "maximum": 110134022
+        },
+        "cycles": {
+          "median": 20258057.5,
+          "p95": 20468646,
+          "minimum": 20027007,
+          "maximum": 20472281
+        },
+        "instret": {
+          "median": 4735087.0,
+          "p95": 4735087,
+          "minimum": 4735087,
+          "maximum": 4735087
+        },
+        "warp_ipc": {
+          "median": 0.23373847428739164,
+          "p95": 0.23593316103968529,
+          "minimum": 0.2312925950948016,
+          "maximum": 0.23643507988987073
+        }
+      }
+    }
+  },
+  "returned_files": {
+    "devices.json": "162b5b34d61c77b78c171f01539fd79f34f78f1c9310db2705a375a2dfd8a5b9",
+    "summary.json": "62386178647fc6036ac5272f4a189a663e304f0ed0df4b1c4520ef1a32eef8a1",
+    "binding/binding.json": "3d9003db0879d8c7f8c6980fc7a38de64239e9b7dc22a98c45f314d7d7c0366c",
+    "binding/hardware.json": "5a0d12ca207bdb5f703574d978f910685659b67eb482813dbd80c31338c99973",
+    "binding/target_lock.json": "e55719ecaa83d1b0f637cf212819716c58667443918f822eaed9ee2eb2aa7486",
+    "logs/01_ldd_libvortex.so.log": "9fa0d1f13c3ef5a5a1636f7c7c084d68f2c25aeec9c0b3a878f80212ef659b3b",
+    "logs/02_ldd_libvortex-xrt.so.log": "02855067490d69a7b03271eed5e0cc84cc2962b08bfa195ac84e3cbaeb2626ad",
+    "logs/03_compile_bdf_query.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/04_enumerate.log": "0a242c49adfaa8bb897946c34b943276b050987afad9c9a8189dc5be7ec6575c",
+    "logs/05_capture.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "u280-xrt/capture.json": "153357aa39e1e394cce0cdf6a94e73aac14e8a7437edf132450a90b11dc434ae",
+    "u280-xrt/counter-reads.jsonl": "efe861f94841529d5f148efad9881a74fb280a0fd932c63a3b8766a378837f38",
+    "u280-xrt/counter-status.json": "bcbe15dc9dfb7d8580265918f1c4bbfb824d1c0b4a16819f538e09919798fb4e",
+    "u280-xrt/samples.jsonl": "1f126254c67d0840d170ad05ae64d264d5ebe3fdd8d5bf0ca21205b71df3ed40",
+    "u280-xrt/sensor-map.json": "c5f48b4a8e3ecee2123c7caa2b0dd5787b019ce074c531dde90fea12447d3512",
+    "u280-xrt/sensors-after-command.json": "4fee825a8be5a0a2f219d21a5c63b381747a26dad8baef275119bd31bce15fec",
+    "u280-xrt/sensors-after.json": "20d26f7b2e4fb9c6ec7b4d364cbab13b32cc0cd8a722ced0e2bfb2ab36aecd11",
+    "u280-xrt/sensors-before-command.json": "4b7db1577d63c35480ba6383619852d9811c5b72a2c9986ef29b867be27a1247",
+    "u280-xrt/sensors-before.json": "56ed84e74ef7fae415e6f7b8a855722cb9b9a5a0c7e18dd7d4b59f1179f94bb9",
+    "u280-xrt/sensors.jsonl": "7e85109cc30f649d4db05bc43cbd967987ec14ca5253c63ed343dc847af9cb72",
+    "u280-xrt/fold0/bases.json": "e2ac85eb4be933d01ee09aa8821fb359900b17e8d75dac5532eeb37d2b9de693",
+    "u280-xrt/fold0/out.bin": "c197475edc54a4601d194b072953b02d0d14c92c65f0d9d12a41fafe8735976d",
+    "u280-xrt/fold0/params.bin": "5a0ef57227b60910c446d6254f3b48e87f00cc11c7b47fda672fe246593ecf7c",
+    "u280-xrt/fold1/bases.json": "933b2be53343be3ceddbccde167162ea22e9a63425e1184de0479cd3fcb7dd9a",
+    "u280-xrt/fold1/out.bin": "520262dcc13b28ad7dd09607fa6988d4a07b2d2e69299470395521e3fb57e128",
+    "u280-xrt/fold1/params.bin": "45455fc401c4aa664fb0efa51c91bb56688f274267662dfbbc59e03b690eb439",
+    "u280-xrt/fold2/bases.json": "64e01f8982e225b6f99260d200eae7cd486ff171b7f240a103381f7b4fef4a4b",
+    "u280-xrt/fold2/out.bin": "78442b501d7c5b8162dfa9f7736e84685d72d6e20704014d6b4ca5fe97d26673",
+    "u280-xrt/fold2/params.bin": "d1ea181eaadadb2df9ef6e835d2f7d604eb2a89ed0ef805722164be020e08100",
+    "u280-xrt/fold3/bases.json": "988dbb17ddd538b9ebbccfdab987150529d9cfb8ec8536252dd1a92e0c5dbb2b",
+    "u280-xrt/fold3/out.bin": "bdd73775628087c12d94cf67d849329730637d2f566d47bfbece0ed543fdd6bc",
+    "u280-xrt/fold3/params.bin": "b27232f043b81f2c2a7222aaa7165c5a6196e9c978c4eb49f0ca9ce55b339f51",
+    "u280-xrt/fold4/bases.json": "bb01ae04b3ca41312794e5b8015b5f34c029adbb624dae72c03967a6031980a1",
+    "u280-xrt/fold4/out.bin": "539fa9021cde5078b1b67eecfd3d313453f923cd0d903ed138fd6cc7546ecddf",
+    "u280-xrt/fold4/params.bin": "f9ef838ba232823f167ed5f1d1403fec8a81b67e23371292978739fdd745c687",
+    "u280-xrt/n1024/bases.json": "d97fead7920eeea20da5a01cf5e7e665a7aba5e8c6c336c41ce4a18f647dfd8c",
+    "u280-xrt/n1024/out.bin": "56344c63be6cadcdb735e0fa9cff3a1257562f0786c47c6697d5e3646c675e2e",
+    "u280-xrt/n1024/params.bin": "1858b65e67dd1e92a301150c7e19523b679ab66cd23777b7202b2c11758b355c",
+    "u280-xrt/n150/bases.json": "f83e529c327809642dc5255a70be92a195aae9d3e3ee0176d567517faf367b87",
+    "u280-xrt/n150/out.bin": "6180b9162ead1ccba8410e547c44e1369dbd71e5dd74ed9779efc9fefd4e1b03",
+    "u280-xrt/n150/params.bin": "23592057ceb79e855722e52f631d5e33fdd16d42c58d2fa74a5b955e5146774b",
+    "u280-xrt/n16381/bases.json": "bd487e62bf8ab9fc510d37f7846489b0d842ca739d8170fe143add8caf4e6ed8",
+    "u280-xrt/n16381/out.bin": "6bf7f263403f31ceee463e13563c6708329454dae5bd65f886e9fada7f5c4859",
+    "u280-xrt/n16381/params.bin": "f5b46535e1bf6a2e1a28f85968e6f287ddf94b8d1c6ca2982a417cc9eb3b7171",
+    "u280-xrt/n4096/bases.json": "29cf62908b86a0df64c5f367b1c80f4cb85c6fd8d939179109c56da5ae745a30",
+    "u280-xrt/n4096/out.bin": "65f8c8ccd64535e90002f6bf281c16807fa8a174fd0bc0ca5588987aba1933b4",
+    "u280-xrt/n4096/params.bin": "bb98af088154a7eec1a3b3de9dea20594422dcff3eb6d41d3faed4b4c4c5f9e5",
+    "u280-xrt/n45/bases.json": "aaf6ffc566fdd6f6976242b2bf4ad2cff6b0b5f10f44f802e5dcb74de6e6af0c",
+    "u280-xrt/n45/out.bin": "31c7a9cec4c894d168724d80e80e7041950e144647a9e5b7ed3e1fcd9bf68056",
+    "u280-xrt/n45/params.bin": "983ae70af060695d17bd5388904d8292b2683aff034446594d5e013949314757",
+    "u280-xrt/n65533/bases.json": "20a1ffadbb61d8dc88522bc7a3ec2ba67f930c02af4e9f2c9ad1221634268806",
+    "u280-xrt/n65533/out.bin": "294be0d15273830cd717d47c5d1b2ea5850bbbd7771c9cdb4c26646990ee3045",
+    "u280-xrt/n65533/params.bin": "906216d24356318e22c85165c74332f6c3da333ec7780db8f11459578bd2be9c",
+    "binding/sessions/iris-board-perf-20261123-v2/device_list.json": "9af49ee682f43fab05fad075cef318dbf9130ca8cc54f0dab072b6a83442cd40",
+    "binding/sessions/iris-board-perf-20261123-v2/gate.json": "c563568a3ab3f4c1751bfeac61ec370b654e0063485b48a2ce2a43c391bd67b6",
+    "binding/sessions/iris-board-perf-20261123-v2/loaded.json": "f8bb97e0347d750df800dd5241b4994c5539f5611bf0ce16a3b6293388e6a191",
+    "binding/sessions/iris-board-perf-20261123-v2/preflight.json": "601278bab3f3c16bfa1c7f8a711baa96d1fd2b0bc48bf385381db00b93f6d47e"
+  }
+}

@@ -1,12 +1,14 @@
 # 公开快照说明
 
+本次 Iris 更新包含真实 U280 与本机 CPU 的性能对照、六档逐次测量、传感器记录、冻结数据与复现代码。板端传输和门禁发布选定字段，SSH 会话、原始传输帧和访问资料保存在本地。扩容实验的数值、原始读数与计算输入按原字节提供。[完整报告](IRIS_U280_PERFORMANCE_20261123.md)
+
 ## 2026-11-23
 
 本轮收录 PTX v1.4 前端与运行时、V03 的四路接收、U280 同卡配对与计数结果、三轮 V08 本地试验，以及 Iris 三分类实施计划。[项目总览](PROJECT_OVERVIEW.md) · [公开证据索引](../results/README.md)
 
 V03 与 v1.4 的已完成 PTX 验收语料按原哈希保留。固定 U280 配对夹具可在普通主机上做离线重核。V08 收录协议、报告和选定统计回执，未开题的原双人试验仍按冻结协议在验收端管理。访问资料、原始会话日志与大型构建产物保存在本地归档。[本轮核对](../results/publication-check-20261123-v1/summary.json) · [逐文件发布清单](../publication/manifest.json)
 
-Iris 专项四路执行仍为 `NOT_RUN`。物理故障恢复为 `NOT_RUN`，旧 DMA 隔离依据为 `BLOCKED`，`TIMING-7` 为 `OPEN`。[当前状态](STATUS.md)
+上一版快照发布时 Iris 专项四路执行为 `NOT_RUN`。本次验证结果见[Iris 四路功能报告](IRIS_U280_RESULTS_20261123.md)。物理故障恢复为 `NOT_RUN`，旧 DMA 隔离依据为 `BLOCKED`，`TIMING-7` 为 `OPEN`。[当前状态](STATUS.md)
 
 ## 2026-11-11
 

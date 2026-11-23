@@ -1,0 +1,465 @@
+{
+    "schema_version":
+    {
+        "schema": "JSON",
+        "creation_date": "Mon Nov 23 12:48:58 2026 GMT"
+    },
+    "devices":
+    [
+        {
+            "interface_type": "pcie",
+            "device_id": "0000:b1:00.1",
+            "thermals":
+            [
+                {
+                    "location_id": "pcb_top_front",
+                    "description": "PCB Top Front",
+                    "temp_C": "28",
+                    "is_present": "true"
+                },
+                {
+                    "location_id": "pcb_top_rear",
+                    "description": "PCB Top Rear",
+                    "temp_C": "27",
+                    "is_present": "true"
+                },
+                {
+                    "location_id": "pcb_bottom_front",
+                    "description": "PCB Bottom Front",
+                    "temp_C": "0",
+                    "is_present": "false"
+                },
+                {
+                    "location_id": "cage_temp_0",
+                    "description": "Cage0",
+                    "temp_C": "32",
+                    "is_present": "true"
+                },
+                {
+                    "location_id": "cage_temp_1",
+                    "description": "Cage1",
+                    "temp_C": "31",
+                    "is_present": "true"
+                },
+                {
+                    "location_id": "cage_temp_2",
+                    "description": "Cage2",
+                    "temp_C": "0",
+                    "is_present": "false"
+                },
+                {
+                    "location_id": "cage_temp_3",
+                    "description": "Cage3",
+                    "temp_C": "0",
+                    "is_present": "false"
+                },
+                {
+                    "location_id": "fpga0",
+                    "description": "FPGA",
+                    "temp_C": "33",
+                    "is_present": "true"
+                },
+                {
+                    "location_id": "int_vcc",
+                    "description": "Int Vcc",
+                    "temp_C": "0",
+                    "is_present": "false"
+                },
+                {
+                    "location_id": "fpga_hbm",
+                    "description": "FPGA HBM",
+                    "temp_C": "28",
+                    "is_present": "true"
+                }
+            ],
+            "electrical":
+            {
+                "power_rails":
+                [
+                    {
+                        "id": "12v_aux",
+                        "description": "12 Volts Auxillary",
+                        "voltage":
+                        {
+                            "volts": "12.154",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.790",
+                            "is_present": "true"
+                        }
+                    },
+                    {
+                        "id": "12v_pex",
+                        "description": "12 Volts PCI Express",
+                        "voltage":
+                        {
+                            "volts": "12.173",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "1.576",
+                            "is_present": "true"
+                        }
+                    },
+                    {
+                        "id": "3v3_pex",
+                        "description": "3.3 Volts PCI Express",
+                        "voltage":
+                        {
+                            "volts": "3.276",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "3v3_aux",
+                        "description": "3.3 Volts Auxillary",
+                        "voltage":
+                        {
+                            "volts": "3.338",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vccint",
+                        "description": "Internal FPGA Vcc",
+                        "voltage":
+                        {
+                            "volts": "0.850",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "12.822",
+                            "is_present": "true"
+                        }
+                    },
+                    {
+                        "id": "vccint_io",
+                        "description": "Internal FPGA Vcc IO",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "ddr_vpp_btm",
+                        "description": "DDR Vpp Bottom",
+                        "voltage":
+                        {
+                            "volts": "2.500",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "ddr_vpp_top",
+                        "description": "DDR Vpp Top",
+                        "voltage":
+                        {
+                            "volts": "2.500",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "5v5_system",
+                        "description": "5.5 Volts System",
+                        "voltage":
+                        {
+                            "volts": "5.458",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "1v2_top",
+                        "description": "Vcc 1.2 Volts Top",
+                        "voltage":
+                        {
+                            "volts": "1.201",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vcc_1v2_btm",
+                        "description": "Vcc 1.2 Volts Bottom",
+                        "voltage":
+                        {
+                            "volts": "1.202",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "1v8_top",
+                        "description": "1.8 Volts Top",
+                        "voltage":
+                        {
+                            "volts": "1.804",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "0v9_vcc",
+                        "description": "0.9 Volts Vcc",
+                        "voltage":
+                        {
+                            "volts": "0.903",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "12v_sw",
+                        "description": "12 Volts SW",
+                        "voltage":
+                        {
+                            "volts": "12.146",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "mgt_vtt",
+                        "description": "Mgt Vtt",
+                        "voltage":
+                        {
+                            "volts": "1.201",
+                            "is_present": "true"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "3v3_vcc",
+                        "description": "3.3 Volts Vcc",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "hbm_1v2",
+                        "description": "1.2 Volts HBM",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vpp2v5",
+                        "description": "Vpp 2.5 Volts",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "12v_aux1",
+                        "description": "12 Volts Aux1",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vcc1v2_i",
+                        "description": "Vcc 1.2 Volts i",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "v12_in_i",
+                        "description": "V12 in i",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "v12_in_aux0_i",
+                        "description": "V12 in Aux0 i",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "v12_in_aux1_i",
+                        "description": "V12 in Aux1 i",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vcc_aux",
+                        "description": "Vcc Auxillary",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vcc_aux_pmc",
+                        "description": "Vcc Auxillary Pmc",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "vcc_ram",
+                        "description": "Vcc Ram",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    },
+                    {
+                        "id": "0v9_vccint_vcu",
+                        "description": "0.9 Volts Vcc Vcu",
+                        "voltage":
+                        {
+                            "volts": "0.000",
+                            "is_present": "false"
+                        },
+                        "current":
+                        {
+                            "amps": "0.000",
+                            "is_present": "false"
+                        }
+                    }
+                ],
+                "power_consumption_max_watts": "225",
+                "power_consumption_watts": "28.786308",
+                "power_consumption_warning": "false"
+            }
+        }
+    ]
+}
+

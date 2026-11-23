@@ -1,0 +1,147 @@
+// Iris nearest-centroid inference. Each active logical thread writes one row:
+// D0, D1, D2, and the lowest index attaining the minimum distance.
+.version 7.0
+.target sm_70
+.address_size 64
+.visible .entry iris_nearest_centroid_u32(
+    .param .u64 x, .param .u64 sums, .param .u64 out, .param .u32 n
+) {
+    .reg .b64 %xptr, %model, %dst, %offset;
+    .reg .b32 %blockid, %blocksize, %lane, %row, %count;
+    .reg .b32 %scaled<4>, %d<3>, %s, %forward, %reverse, %delta, %square;
+    .reg .b32 %best, %winner;
+    .reg .pred %active, %ge, %better;
+
+    ld.param.u64 %xptr, [x];
+    ld.param.u64 %model, [sums];
+    ld.param.u64 %dst, [out];
+    ld.param.u32 %count, [n];
+    mov.u32 %blockid, %ctaid.x;
+    mov.u32 %blocksize, %ntid.x;
+    mov.u32 %lane, %tid.x;
+    mul.lo.u32 %row, %blockid, %blocksize;
+    add.u32 %row, %row, %lane;
+    setp.lt.u32 %active, %row, %count;
+    mul.wide.u32 %offset, %row, 16;
+    add.u64 %xptr, %xptr, %offset;
+    add.u64 %dst, %dst, %offset;
+
+    mov.u32 %scaled0, 0;
+    @%active ld.global.u32 %scaled0, [%xptr+0];
+    mul.lo.u32 %scaled0, %scaled0, 35;
+    mov.u32 %scaled1, 0;
+    @%active ld.global.u32 %scaled1, [%xptr+4];
+    mul.lo.u32 %scaled1, %scaled1, 35;
+    mov.u32 %scaled2, 0;
+    @%active ld.global.u32 %scaled2, [%xptr+8];
+    mul.lo.u32 %scaled2, %scaled2, 35;
+    mov.u32 %scaled3, 0;
+    @%active ld.global.u32 %scaled3, [%xptr+12];
+    mul.lo.u32 %scaled3, %scaled3, 35;
+    mov.u32 %s, 0;
+
+    // Sum the four squared differences from model row 0.
+    mov.u32 %d0, 0;
+    @%active ld.global.u32 %s, [%model+0];
+    setp.ge.u32 %ge, %scaled0, %s;
+    sub.u32 %forward, %scaled0, %s;
+    sub.u32 %reverse, %s, %scaled0;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d0, %d0, %square;
+    @%active ld.global.u32 %s, [%model+4];
+    setp.ge.u32 %ge, %scaled1, %s;
+    sub.u32 %forward, %scaled1, %s;
+    sub.u32 %reverse, %s, %scaled1;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d0, %d0, %square;
+    @%active ld.global.u32 %s, [%model+8];
+    setp.ge.u32 %ge, %scaled2, %s;
+    sub.u32 %forward, %scaled2, %s;
+    sub.u32 %reverse, %s, %scaled2;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d0, %d0, %square;
+    @%active ld.global.u32 %s, [%model+12];
+    setp.ge.u32 %ge, %scaled3, %s;
+    sub.u32 %forward, %scaled3, %s;
+    sub.u32 %reverse, %s, %scaled3;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d0, %d0, %square;
+
+    // Sum the four squared differences from model row 1.
+    mov.u32 %d1, 0;
+    @%active ld.global.u32 %s, [%model+16];
+    setp.ge.u32 %ge, %scaled0, %s;
+    sub.u32 %forward, %scaled0, %s;
+    sub.u32 %reverse, %s, %scaled0;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d1, %d1, %square;
+    @%active ld.global.u32 %s, [%model+20];
+    setp.ge.u32 %ge, %scaled1, %s;
+    sub.u32 %forward, %scaled1, %s;
+    sub.u32 %reverse, %s, %scaled1;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d1, %d1, %square;
+    @%active ld.global.u32 %s, [%model+24];
+    setp.ge.u32 %ge, %scaled2, %s;
+    sub.u32 %forward, %scaled2, %s;
+    sub.u32 %reverse, %s, %scaled2;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d1, %d1, %square;
+    @%active ld.global.u32 %s, [%model+28];
+    setp.ge.u32 %ge, %scaled3, %s;
+    sub.u32 %forward, %scaled3, %s;
+    sub.u32 %reverse, %s, %scaled3;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d1, %d1, %square;
+
+    // Sum the four squared differences from model row 2.
+    mov.u32 %d2, 0;
+    @%active ld.global.u32 %s, [%model+32];
+    setp.ge.u32 %ge, %scaled0, %s;
+    sub.u32 %forward, %scaled0, %s;
+    sub.u32 %reverse, %s, %scaled0;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d2, %d2, %square;
+    @%active ld.global.u32 %s, [%model+36];
+    setp.ge.u32 %ge, %scaled1, %s;
+    sub.u32 %forward, %scaled1, %s;
+    sub.u32 %reverse, %s, %scaled1;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d2, %d2, %square;
+    @%active ld.global.u32 %s, [%model+40];
+    setp.ge.u32 %ge, %scaled2, %s;
+    sub.u32 %forward, %scaled2, %s;
+    sub.u32 %reverse, %s, %scaled2;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d2, %d2, %square;
+    @%active ld.global.u32 %s, [%model+44];
+    setp.ge.u32 %ge, %scaled3, %s;
+    sub.u32 %forward, %scaled3, %s;
+    sub.u32 %reverse, %s, %scaled3;
+    selp.u32 %delta, %forward, %reverse, %ge;
+    mul.lo.u32 %square, %delta, %delta;
+    add.u32 %d2, %d2, %square;
+
+    mov.u32 %winner, 0;
+    setp.lt.u32 %better, %d1, %d0;
+    selp.u32 %best, %d1, %d0, %better;
+    selp.u32 %winner, 1, %winner, %better;
+    setp.lt.u32 %better, %d2, %best;
+    selp.u32 %winner, 2, %winner, %better;
+    @%active st.global.u32 [%dst], %d0;
+    @%active st.global.u32 [%dst+4], %d1;
+    @%active st.global.u32 [%dst+8], %d2;
+    @%active st.global.u32 [%dst+12], %winner;
+    ret;
+}
