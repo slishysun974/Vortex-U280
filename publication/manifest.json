@@ -28,11 +28,11 @@
       "source_sha256": "9e03916721affbff19f9501b8cfc7b8a4b6e84bb533c92238952514aa1559829"
     },
     "README.md": {
-      "public_bytes": 2831,
-      "public_sha256": "e6dd7646e7dd282b049e01644a4b211322143236f37ca4c18788c86468cb4181",
+      "public_bytes": 5154,
+      "public_sha256": "719f79a0bf2b07f91306cdcc68ba5871be941c706372c8da2b5276d621291d1d",
       "publication": "verbatim",
-      "source_bytes": 2831,
-      "source_sha256": "e6dd7646e7dd282b049e01644a4b211322143236f37ca4c18788c86468cb4181"
+      "source_bytes": 5154,
+      "source_sha256": "719f79a0bf2b07f91306cdcc68ba5871be941c706372c8da2b5276d621291d1d"
     },
     "configs/acceptance/e-ptx15-v1/affine_u32/0034/x.bin": {
       "public_bytes": 68,
@@ -16842,6 +16842,6 @@
   "redaction_policy": "Server and workstation identifiers replaced by examples. Unpublished archive links are indexed. Historical hash fields remain unchanged. V08 timing receipt publishes aggregate data.",
   "schema": "vortex-publication-v3",
   "scope": "Project code, current progress, frozen PTX fixtures and selected receipts, including V08 aggregate reports. No new device execution.",
-  "total_bytes": 10433154,
+  "total_bytes": 10435477,
   "total_files": 2429
 }
