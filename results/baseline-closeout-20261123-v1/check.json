@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Public checkout, offline replay of archived measurements and Python runner self-tests",
+  "new_device_execution": "NOT_RUN",
+  "tag": "baseline-2026-11-23",
+  "offline": {
+    "argv": [
+      "python",
+      "-B",
+      "scripts/review_baseline.py"
+    ],
+    "exit_code": 0,
+    "output": {
+      "status": "PASS",
+      "scope": "archived measurements",
+      "operator_cases": {
+        "simx": 48,
+        "rtlsim": 48,
+        "xrtsim": 48,
+        "u280-xrt": 48
+      },
+      "iris_pair_launches": 422,
+      "iris_pair_counter_reads": 3376,
+      "iris_timed_pairs": 180,
+      "iris_sizes": [
+        45,
+        150,
+        1024,
+        4096,
+        16381,
+        65533
+      ],
+      "iris_65533_cycle_ratio": 1.033872110427632,
+      "iris_65533_warp_instruction_ratio": 3.141240445430989,
+      "iris_five_fold_correct": 140,
+      "iris_five_fold_total": 150
+    }
+  },
+  "runner": {
+    "Windows": {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "total": 316,
+      "passed": 283,
+      "skipped": 33,
+      "output": "Ran 316 tests in 69.617s\r\n\r\nOK (skipped=33)",
+      "log_sha256": "21c936dd1267aa226539c23eb42d28776345785189a32f7117f7a599f080b6d1"
+    },
+    "WSL Ubuntu 22.04": {
+      "argv": [
+        "wsl",
+        "-d",
+        "Vortex-AB-Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/Vortex-U280/build/github-public-20261123-v4",
+        "--",
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "total": 316,
+      "passed": 293,
+      "skipped": 23,
+      "output": "Ran 316 tests in 28.451s\n\nOK (skipped=23)",
+      "log_sha256": "67b4210cf884846ad7abf8e2b2184766112c3394f7c9b0f23f8012fadde6f66b"
+    }
+  },
+  "wsl_initial_attempt": {
+    "scope": "WSL process startup",
+    "status": "BLOCKED",
+    "output": "Wsl/E_ACCESSDENIED",
+    "tests": "NOT_RUN",
+    "process_returncode": 4294967295
+  }
+}

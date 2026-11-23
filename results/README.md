@@ -1,5 +1,7 @@
 # 公开验证入口
 
+从[首期实验基线](../docs/BASELINE_20261123.md)进入四路算子回读和 Iris 配对复核。六档测量使用的设备镜像与统计见[同卡回执](iris-pair-review-20261123-v1/receipt.json)。
+
 Iris 扩容实验已完成。离线复核可重算 217 次启动和六档 CPU／U280 统计。[性能报告与命令](../docs/IRIS_U280_PERFORMANCE_20261123.md) · [比较结果](iris-perf-comparison-20261123-v1/comparison.json)
 
 ## 2026-11-23
